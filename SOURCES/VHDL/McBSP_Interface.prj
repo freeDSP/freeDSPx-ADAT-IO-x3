@@ -1,0 +1,2 @@
+vhdl work "ADAT.vhd"
+vhdl work "McBSP-Dekoder_1Puffer_Parallel.vhd"

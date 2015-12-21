@@ -1,0 +1,7 @@
+vhdl work "ADAT.vhd"
+vhdl work "ADAT_BLOCKRAM.vhd"
+vhdl work "McBSP-Dekoder_1Puffer_Parallel.vhd"
+vhdl work "DynamischerADATPuffer_BRAM.vhd"
+vhdl work "ADAT_Enkoder.vhd"
+vhdl work "ADAT_Dekoder.vhd"
+vhdl work "ADAT-De-Enkoder.vhd"

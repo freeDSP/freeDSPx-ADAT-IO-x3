@@ -1,0 +1,164 @@
+Release 14.7 par P.20131013 (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+WEDASP78::  Mon May 12 15:42:13 2014
+
+par -w -intstyle ise -pl high -rl high -xe n -t 1 ADAT_De_Enkoder_map.ncd
+ADAT_De_Enkoder.ncd ADAT_De_Enkoder.pcf 
+
+
+Constraints file: ADAT_De_Enkoder.pcf.
+Loading device for application Rf_Device from file '3s200a.nph' in environment C:\Xilinx\14.7\ISE_DS\ISE\.
+   "ADAT_De_Enkoder" is an NCD, version 3.2, device xc3s200a, package vq100, speed -4
+
+Initializing temperature to 85.000 Celsius. (default - Range: 0.000 to 85.000 Celsius)
+Initializing voltage to 1.140 Volts. (default - Range: 1.140 to 1.260 Volts)
+
+
+Device speed data version:  "PRODUCTION 1.42 2013-10-13".
+
+
+
+Design Summary Report:
+
+ Number of External IOBs                          21 out of 68     30%
+
+   Number of External Input IOBs                  9
+
+      Number of External Input IBUFs              9
+        Number of LOCed External Input IBUFs      9 out of 9     100%
+
+
+   Number of External Output IOBs                12
+
+      Number of External Output IOBs             12
+        Number of LOCed External Output IOBs     12 out of 12    100%
+
+
+   Number of External Bidir IOBs                  0
+
+
+   Number of BUFGMUXs                        5 out of 24     20%
+   Number of Slices                        800 out of 1792   44%
+      Number of SLICEMs                    162 out of 896    18%
+
+
+
+Overall effort level (-ol):   Not applicable because -pl and -rl switches are used
+Router effort level (-rl):    High 
+
+Starting initial Timing Analysis.  REAL time: 4 secs 
+Finished initial Timing Analysis.  REAL time: 4 secs 
+
+WARNING:Par:288 - The signal IN_ADAT_TAKTWAHL<0>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal IN_ADAT_TAKTWAHL<1>_IBUF has no load.  PAR will not attempt to route this signal.
+Starting Router
+
+
+Phase  1  : 5049 unrouted;      REAL time: 7 secs 
+
+Phase  2  : 3530 unrouted;      REAL time: 7 secs 
+
+Phase  3  : 963 unrouted;      REAL time: 7 secs 
+
+Phase  4  : 963 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 7 secs 
+
+Phase  5  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 8 secs 
+
+Updating file: ADAT_De_Enkoder.ncd with current fully routed design.
+
+Phase  6  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 9 secs 
+
+Phase  7  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 9 secs 
+
+Phase  8  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 9 secs 
+
+Total REAL time to Router completion: 9 secs 
+Total CPU time to Router completion: 9 secs 
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+Generating "PAR" statistics.
+
+**************************
+Generating Clock Report
+**************************
+
++---------------------+--------------+------+------+------------+-------------+
+|        Clock Net    |   Resource   |Locked|Fanout|Net Skew(ns)|Max Delay(ns)|
++---------------------+--------------+------+------+------------+-------------+
+|IN_PLATINENTAKT_BUFG |              |      |      |            |             |
+|                   P | BUFGMUX_X2Y11| No   |   18 |  0.101     |  1.072      |
++---------------------+--------------+------+------+------------+-------------+
+| DEBUG_ADATTAKT_OBUF | BUFGMUX_X1Y11| No   |  334 |  0.196     |  1.160      |
++---------------------+--------------+------+------+------------+-------------+
+|DSP_CLKR_FPGA_CLKX_B |              |      |      |            |             |
+|                UFGP |  BUFGMUX_X2Y1| No   |   15 |  0.036     |  1.004      |
++---------------------+--------------+------+------+------------+-------------+
+|DSP_CLKX_FPGA_CLKR_B |              |      |      |            |             |
+|                UFGP |  BUFGMUX_X1Y1| No   |  212 |  0.151     |  1.120      |
++---------------------+--------------+------+------+------------+-------------+
+|INST_BRAM_PUFFER_MCB |              |      |      |            |             |
+|   SP_ENKODER/BR_CLK | BUFGMUX_X1Y10| No   |   98 |  0.091     |  1.055      |
++---------------------+--------------+------+------+------------+-------------+
+|ADAT_FRAME_SYNC_ENKO |              |      |      |            |             |
+|                 DER |         Local|      |    1 |  0.000     |  0.941      |
++---------------------+--------------+------+------+------------+-------------+
+
+* Net Skew is the difference between the minimum and maximum routing
+only delays for the net. Note this is different from Clock Skew which
+is reported in TRCE timing report. Clock Skew is the difference between
+the minimum and maximum path delays which includes logic delays.
+
+* The fanout is the number of component pins not the individual BEL loads,
+for example SLICE loads not FF loads.
+
+Timing Score: 0 (Setup: 0, Hold: 0, Component Switching Limit: 0)
+
+Asterisk (*) preceding a constraint indicates it was not met.
+   This may be due to a setup or hold violation.
+
+----------------------------------------------------------------------------------------------------------
+  Constraint                                |    Check    | Worst Case |  Best Case | Timing |   Timing   
+                                            |             |    Slack   | Achievable | Errors |    Score   
+----------------------------------------------------------------------------------------------------------
+  TS_in_Platinentakt = PERIOD TIMEGRP "in_P | SETUP       |    13.439ns|     6.561ns|       0|           0
+  latinentakt" 20 ns HIGH 50%               | HOLD        |     0.919ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  TS_in_AdatTakt = PERIOD TIMEGRP "in_AdatT | SETUP       |    31.973ns|    17.434ns|       0|           0
+  akt" 81.3802 ns HIGH 50%                  | HOLD        |     0.711ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+
+
+All constraints were met.
+
+
+Generating Pad Report.
+
+All signals are completely routed.
+
+WARNING:Par:283 - There are 2 loadless signals in this design. This design will cause Bitgen to issue DRC warnings.
+
+Total REAL time to PAR completion: 9 secs 
+Total CPU time to PAR completion: 9 secs 
+
+Peak Memory Usage:  203 MB
+
+Placer: Placement generated during map.
+Routing: Completed - No errors found.
+Timing: Completed - No errors found.
+
+Number of error messages: 0
+Number of warning messages: 4
+Number of info messages: 0
+
+Writing design to file ADAT_De_Enkoder.ncd
+
+
+
+PAR done!

@@ -1,0 +1,1837 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\14.7\ISE_DS\ISE\bin\nt\unwrapped\trce.exe -intstyle ise -v 3 -s 5 -n
+3 -fastpaths -xml ADAT_Out_Test.twx ADAT_Out_Test.ncd -o ADAT_Out_Test.twr
+ADAT_Out_Test.pcf -ucf xXCS3200A-4VQ100_OutTest.ucf
+
+Design file:              ADAT_Out_Test.ncd
+Physical constraint file: ADAT_Out_Test.pcf
+Device,package,speed:     xc3s200a,vq100,-5 (PRODUCTION 1.42 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+INFO:Timing:3390 - This architecture does not support a default System Jitter 
+   value, please add SYSTEM_JITTER constraint to the UCF to modify the Clock 
+   Uncertainty calculation.
+INFO:Timing:3389 - This architecture does not support 'Discrete Jitter' and 
+   'Phase Error' calculations, these terms will be zero in the Clock 
+   Uncertainty calculation.  Please make appropriate modification to 
+   SYSTEM_JITTER to account for the unsupported Discrete Jitter and Phase 
+   Error.
+
+================================================================================
+Timing constraint: TS_in_Platinentakt = PERIOD TIMEGRP "in_Platinentakt" 20 ns 
+HIGH 50%;
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 1414 paths analyzed, 114 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
+ Minimum period is   6.000ns.
+--------------------------------------------------------------------------------
+
+Paths for end point I0_4 (SLICE_X5Y50.SR), 26 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     14.350ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               I0_18 (FF)
+  Destination:          I0_4 (FF)
+  Requirement:          20.000ns
+  Data Path Delay:      5.590ns (Levels of Logic = 4)
+  Clock Path Skew:      -0.060ns (0.022 - 0.082)
+  Source Clock:         IN_PLATINENTAKT_IBUFG rising at 0.000ns
+  Destination Clock:    IN_PLATINENTAKT_IBUFG rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: I0_18 to I0_4
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X5Y57.XQ       Tcko                  0.495   I0<18>
+                                                       I0_18
+    SLICE_X7Y57.F2       net (fanout=2)        1.631   I0<18>
+    SLICE_X7Y57.COUT     Topcyf                1.026   MCOMPAR_OUT_ESLEBT_CMP_LT0000_CY<7>
+                                                       MCOMPAR_OUT_ESLEBT_CMP_LT0000_LUT<6>
+                                                       MCOMPAR_OUT_ESLEBT_CMP_LT0000_CY<6>
+                                                       MCOMPAR_OUT_ESLEBT_CMP_LT0000_CY<7>
+    SLICE_X7Y58.CIN      net (fanout=1)        0.000   MCOMPAR_OUT_ESLEBT_CMP_LT0000_CY<7>
+    SLICE_X7Y58.COUT     Tbyp                  0.130   MCOMPAR_OUT_ESLEBT_CMP_LT0000_CY<9>
+                                                       MCOMPAR_OUT_ESLEBT_CMP_LT0000_CY<8>
+                                                       MCOMPAR_OUT_ESLEBT_CMP_LT0000_CY<9>
+    SLICE_X7Y59.CIN      net (fanout=1)        0.000   MCOMPAR_OUT_ESLEBT_CMP_LT0000_CY<9>
+    SLICE_X7Y59.COUT     Tbyp                  0.130   MCOMPAR_OUT_ESLEBT_CMP_LT0000_CY<11>
+                                                       MCOMPAR_OUT_ESLEBT_CMP_LT0000_CY<10>
+                                                       MCOMPAR_OUT_ESLEBT_CMP_LT0000_CY<11>
+    SLICE_X7Y60.CIN      net (fanout=1)        0.000   MCOMPAR_OUT_ESLEBT_CMP_LT0000_CY<11>
+    SLICE_X7Y60.XB       Tcinxb                0.216   MCOMPAR_OUT_ESLEBT_CMP_LT0000_CY<12>
+                                                       MCOMPAR_OUT_ESLEBT_CMP_LT0000_CY<12>
+    SLICE_X5Y50.SR       net (fanout=18)       1.529   MCOMPAR_OUT_ESLEBT_CMP_LT0000_CY<12>
+    SLICE_X5Y50.CLK      Tsrck                 0.433   I0<4>
+                                                       I0_4
+    -------------------------------------------------  ---------------------------
+    Total                                      5.590ns (2.430ns logic, 3.160ns route)
+                                                       (43.5% logic, 56.5% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     14.559ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               I0_9 (FF)
+  Destination:          I0_4 (FF)
+  Requirement:          20.000ns
+  Data Path Delay:      5.418ns (Levels of Logic = 7)
+  Clock Path Skew:      -0.023ns (0.022 - 0.045)
+  Source Clock:         IN_PLATINENTAKT_IBUFG rising at 0.000ns
+  Destination Clock:    IN_PLATINENTAKT_IBUFG rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: I0_9 to I0_4
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X5Y52.YQ       Tcko                  0.524   I0<8>
+                                                       I0_9
+    SLICE_X7Y54.G3       net (fanout=2)        1.057   I0<9>
+    SLICE_X7Y54.COUT     Topcyg                1.009   MCOMPAR_OUT_ESLEBT_CMP_LT0000_CY<1>
+                                                       MCOMPAR_OUT_ESLEBT_CMP_LT0000_LUT<1>
+                                                       MCOMPAR_OUT_ESLEBT_CMP_LT0000_CY<1>
+    SLICE_X7Y55.CIN      net (fanout=1)        0.000   MCOMPAR_OUT_ESLEBT_CMP_LT0000_CY<1>
+    SLICE_X7Y55.COUT     Tbyp                  0.130   MCOMPAR_OUT_ESLEBT_CMP_LT0000_CY<3>
+                                                       MCOMPAR_OUT_ESLEBT_CMP_LT0000_CY<2>
+                                                       MCOMPAR_OUT_ESLEBT_CMP_LT0000_CY<3>
+    SLICE_X7Y56.CIN      net (fanout=1)        0.000   MCOMPAR_OUT_ESLEBT_CMP_LT0000_CY<3>
+    SLICE_X7Y56.COUT     Tbyp                  0.130   MCOMPAR_OUT_ESLEBT_CMP_LT0000_CY<5>
+                                                       MCOMPAR_OUT_ESLEBT_CMP_LT0000_CY<4>
+                                                       MCOMPAR_OUT_ESLEBT_CMP_LT0000_CY<5>
+    SLICE_X7Y57.CIN      net (fanout=1)        0.000   MCOMPAR_OUT_ESLEBT_CMP_LT0000_CY<5>
+    SLICE_X7Y57.COUT     Tbyp                  0.130   MCOMPAR_OUT_ESLEBT_CMP_LT0000_CY<7>
+                                                       MCOMPAR_OUT_ESLEBT_CMP_LT0000_CY<6>
+                                                       MCOMPAR_OUT_ESLEBT_CMP_LT0000_CY<7>
+    SLICE_X7Y58.CIN      net (fanout=1)        0.000   MCOMPAR_OUT_ESLEBT_CMP_LT0000_CY<7>
+    SLICE_X7Y58.COUT     Tbyp                  0.130   MCOMPAR_OUT_ESLEBT_CMP_LT0000_CY<9>
+                                                       MCOMPAR_OUT_ESLEBT_CMP_LT0000_CY<8>
+                                                       MCOMPAR_OUT_ESLEBT_CMP_LT0000_CY<9>
+    SLICE_X7Y59.CIN      net (fanout=1)        0.000   MCOMPAR_OUT_ESLEBT_CMP_LT0000_CY<9>
+    SLICE_X7Y59.COUT     Tbyp                  0.130   MCOMPAR_OUT_ESLEBT_CMP_LT0000_CY<11>
+                                                       MCOMPAR_OUT_ESLEBT_CMP_LT0000_CY<10>
+                                                       MCOMPAR_OUT_ESLEBT_CMP_LT0000_CY<11>
+    SLICE_X7Y60.CIN      net (fanout=1)        0.000   MCOMPAR_OUT_ESLEBT_CMP_LT0000_CY<11>
+    SLICE_X7Y60.XB       Tcinxb                0.216   MCOMPAR_OUT_ESLEBT_CMP_LT0000_CY<12>
+                                                       MCOMPAR_OUT_ESLEBT_CMP_LT0000_CY<12>
+    SLICE_X5Y50.SR       net (fanout=18)       1.529   MCOMPAR_OUT_ESLEBT_CMP_LT0000_CY<12>
+    SLICE_X5Y50.CLK      Tsrck                 0.433   I0<4>
+                                                       I0_4
+    -------------------------------------------------  ---------------------------
+    Total                                      5.418ns (2.832ns logic, 2.586ns route)
+                                                       (52.3% logic, 47.7% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     14.689ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               I0_21 (FF)
+  Destination:          I0_4 (FF)
+  Requirement:          20.000ns
+  Data Path Delay:      5.238ns (Levels of Logic = 4)
+  Clock Path Skew:      -0.073ns (0.022 - 0.095)
+  Source Clock:         IN_PLATINENTAKT_IBUFG rising at 0.000ns
+  Destination Clock:    IN_PLATINENTAKT_IBUFG rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: I0_21 to I0_4
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X5Y58.YQ       Tcko                  0.524   I0<20>
+                                                       I0_21
+    SLICE_X7Y57.F4       net (fanout=2)        1.250   I0<21>
+    SLICE_X7Y57.COUT     Topcyf                1.026   MCOMPAR_OUT_ESLEBT_CMP_LT0000_CY<7>
+                                                       MCOMPAR_OUT_ESLEBT_CMP_LT0000_LUT<6>
+                                                       MCOMPAR_OUT_ESLEBT_CMP_LT0000_CY<6>
+                                                       MCOMPAR_OUT_ESLEBT_CMP_LT0000_CY<7>
+    SLICE_X7Y58.CIN      net (fanout=1)        0.000   MCOMPAR_OUT_ESLEBT_CMP_LT0000_CY<7>
+    SLICE_X7Y58.COUT     Tbyp                  0.130   MCOMPAR_OUT_ESLEBT_CMP_LT0000_CY<9>
+                                                       MCOMPAR_OUT_ESLEBT_CMP_LT0000_CY<8>
+                                                       MCOMPAR_OUT_ESLEBT_CMP_LT0000_CY<9>
+    SLICE_X7Y59.CIN      net (fanout=1)        0.000   MCOMPAR_OUT_ESLEBT_CMP_LT0000_CY<9>
+    SLICE_X7Y59.COUT     Tbyp                  0.130   MCOMPAR_OUT_ESLEBT_CMP_LT0000_CY<11>
+                                                       MCOMPAR_OUT_ESLEBT_CMP_LT0000_CY<10>
+                                                       MCOMPAR_OUT_ESLEBT_CMP_LT0000_CY<11>
+    SLICE_X7Y60.CIN      net (fanout=1)        0.000   MCOMPAR_OUT_ESLEBT_CMP_LT0000_CY<11>
+    SLICE_X7Y60.XB       Tcinxb                0.216   MCOMPAR_OUT_ESLEBT_CMP_LT0000_CY<12>
+                                                       MCOMPAR_OUT_ESLEBT_CMP_LT0000_CY<12>
+    SLICE_X5Y50.SR       net (fanout=18)       1.529   MCOMPAR_OUT_ESLEBT_CMP_LT0000_CY<12>
+    SLICE_X5Y50.CLK      Tsrck                 0.433   I0<4>
+                                                       I0_4
+    -------------------------------------------------  ---------------------------
+    Total                                      5.238ns (2.459ns logic, 2.779ns route)
+                                                       (46.9% logic, 53.1% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point I0_5 (SLICE_X5Y50.SR), 26 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     14.350ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               I0_18 (FF)
+  Destination:          I0_5 (FF)
+  Requirement:          20.000ns
+  Data Path Delay:      5.590ns (Levels of Logic = 4)
+  Clock Path Skew:      -0.060ns (0.022 - 0.082)
+  Source Clock:         IN_PLATINENTAKT_IBUFG rising at 0.000ns
+  Destination Clock:    IN_PLATINENTAKT_IBUFG rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: I0_18 to I0_5
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X5Y57.XQ       Tcko                  0.495   I0<18>
+                                                       I0_18
+    SLICE_X7Y57.F2       net (fanout=2)        1.631   I0<18>
+    SLICE_X7Y57.COUT     Topcyf                1.026   MCOMPAR_OUT_ESLEBT_CMP_LT0000_CY<7>
+                                                       MCOMPAR_OUT_ESLEBT_CMP_LT0000_LUT<6>
+                                                       MCOMPAR_OUT_ESLEBT_CMP_LT0000_CY<6>
+                                                       MCOMPAR_OUT_ESLEBT_CMP_LT0000_CY<7>
+    SLICE_X7Y58.CIN      net (fanout=1)        0.000   MCOMPAR_OUT_ESLEBT_CMP_LT0000_CY<7>
+    SLICE_X7Y58.COUT     Tbyp                  0.130   MCOMPAR_OUT_ESLEBT_CMP_LT0000_CY<9>
+                                                       MCOMPAR_OUT_ESLEBT_CMP_LT0000_CY<8>
+                                                       MCOMPAR_OUT_ESLEBT_CMP_LT0000_CY<9>
+    SLICE_X7Y59.CIN      net (fanout=1)        0.000   MCOMPAR_OUT_ESLEBT_CMP_LT0000_CY<9>
+    SLICE_X7Y59.COUT     Tbyp                  0.130   MCOMPAR_OUT_ESLEBT_CMP_LT0000_CY<11>
+                                                       MCOMPAR_OUT_ESLEBT_CMP_LT0000_CY<10>
+                                                       MCOMPAR_OUT_ESLEBT_CMP_LT0000_CY<11>
+    SLICE_X7Y60.CIN      net (fanout=1)        0.000   MCOMPAR_OUT_ESLEBT_CMP_LT0000_CY<11>
+    SLICE_X7Y60.XB       Tcinxb                0.216   MCOMPAR_OUT_ESLEBT_CMP_LT0000_CY<12>
+                                                       MCOMPAR_OUT_ESLEBT_CMP_LT0000_CY<12>
+    SLICE_X5Y50.SR       net (fanout=18)       1.529   MCOMPAR_OUT_ESLEBT_CMP_LT0000_CY<12>
+    SLICE_X5Y50.CLK      Tsrck                 0.433   I0<4>
+                                                       I0_5
+    -------------------------------------------------  ---------------------------
+    Total                                      5.590ns (2.430ns logic, 3.160ns route)
+                                                       (43.5% logic, 56.5% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     14.559ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               I0_9 (FF)
+  Destination:          I0_5 (FF)
+  Requirement:          20.000ns
+  Data Path Delay:      5.418ns (Levels of Logic = 7)
+  Clock Path Skew:      -0.023ns (0.022 - 0.045)
+  Source Clock:         IN_PLATINENTAKT_IBUFG rising at 0.000ns
+  Destination Clock:    IN_PLATINENTAKT_IBUFG rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: I0_9 to I0_5
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X5Y52.YQ       Tcko                  0.524   I0<8>
+                                                       I0_9
+    SLICE_X7Y54.G3       net (fanout=2)        1.057   I0<9>
+    SLICE_X7Y54.COUT     Topcyg                1.009   MCOMPAR_OUT_ESLEBT_CMP_LT0000_CY<1>
+                                                       MCOMPAR_OUT_ESLEBT_CMP_LT0000_LUT<1>
+                                                       MCOMPAR_OUT_ESLEBT_CMP_LT0000_CY<1>
+    SLICE_X7Y55.CIN      net (fanout=1)        0.000   MCOMPAR_OUT_ESLEBT_CMP_LT0000_CY<1>
+    SLICE_X7Y55.COUT     Tbyp                  0.130   MCOMPAR_OUT_ESLEBT_CMP_LT0000_CY<3>
+                                                       MCOMPAR_OUT_ESLEBT_CMP_LT0000_CY<2>
+                                                       MCOMPAR_OUT_ESLEBT_CMP_LT0000_CY<3>
+    SLICE_X7Y56.CIN      net (fanout=1)        0.000   MCOMPAR_OUT_ESLEBT_CMP_LT0000_CY<3>
+    SLICE_X7Y56.COUT     Tbyp                  0.130   MCOMPAR_OUT_ESLEBT_CMP_LT0000_CY<5>
+                                                       MCOMPAR_OUT_ESLEBT_CMP_LT0000_CY<4>
+                                                       MCOMPAR_OUT_ESLEBT_CMP_LT0000_CY<5>
+    SLICE_X7Y57.CIN      net (fanout=1)        0.000   MCOMPAR_OUT_ESLEBT_CMP_LT0000_CY<5>
+    SLICE_X7Y57.COUT     Tbyp                  0.130   MCOMPAR_OUT_ESLEBT_CMP_LT0000_CY<7>
+                                                       MCOMPAR_OUT_ESLEBT_CMP_LT0000_CY<6>
+                                                       MCOMPAR_OUT_ESLEBT_CMP_LT0000_CY<7>
+    SLICE_X7Y58.CIN      net (fanout=1)        0.000   MCOMPAR_OUT_ESLEBT_CMP_LT0000_CY<7>
+    SLICE_X7Y58.COUT     Tbyp                  0.130   MCOMPAR_OUT_ESLEBT_CMP_LT0000_CY<9>
+                                                       MCOMPAR_OUT_ESLEBT_CMP_LT0000_CY<8>
+                                                       MCOMPAR_OUT_ESLEBT_CMP_LT0000_CY<9>
+    SLICE_X7Y59.CIN      net (fanout=1)        0.000   MCOMPAR_OUT_ESLEBT_CMP_LT0000_CY<9>
+    SLICE_X7Y59.COUT     Tbyp                  0.130   MCOMPAR_OUT_ESLEBT_CMP_LT0000_CY<11>
+                                                       MCOMPAR_OUT_ESLEBT_CMP_LT0000_CY<10>
+                                                       MCOMPAR_OUT_ESLEBT_CMP_LT0000_CY<11>
+    SLICE_X7Y60.CIN      net (fanout=1)        0.000   MCOMPAR_OUT_ESLEBT_CMP_LT0000_CY<11>
+    SLICE_X7Y60.XB       Tcinxb                0.216   MCOMPAR_OUT_ESLEBT_CMP_LT0000_CY<12>
+                                                       MCOMPAR_OUT_ESLEBT_CMP_LT0000_CY<12>
+    SLICE_X5Y50.SR       net (fanout=18)       1.529   MCOMPAR_OUT_ESLEBT_CMP_LT0000_CY<12>
+    SLICE_X5Y50.CLK      Tsrck                 0.433   I0<4>
+                                                       I0_5
+    -------------------------------------------------  ---------------------------
+    Total                                      5.418ns (2.832ns logic, 2.586ns route)
+                                                       (52.3% logic, 47.7% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     14.689ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               I0_21 (FF)
+  Destination:          I0_5 (FF)
+  Requirement:          20.000ns
+  Data Path Delay:      5.238ns (Levels of Logic = 4)
+  Clock Path Skew:      -0.073ns (0.022 - 0.095)
+  Source Clock:         IN_PLATINENTAKT_IBUFG rising at 0.000ns
+  Destination Clock:    IN_PLATINENTAKT_IBUFG rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: I0_21 to I0_5
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X5Y58.YQ       Tcko                  0.524   I0<20>
+                                                       I0_21
+    SLICE_X7Y57.F4       net (fanout=2)        1.250   I0<21>
+    SLICE_X7Y57.COUT     Topcyf                1.026   MCOMPAR_OUT_ESLEBT_CMP_LT0000_CY<7>
+                                                       MCOMPAR_OUT_ESLEBT_CMP_LT0000_LUT<6>
+                                                       MCOMPAR_OUT_ESLEBT_CMP_LT0000_CY<6>
+                                                       MCOMPAR_OUT_ESLEBT_CMP_LT0000_CY<7>
+    SLICE_X7Y58.CIN      net (fanout=1)        0.000   MCOMPAR_OUT_ESLEBT_CMP_LT0000_CY<7>
+    SLICE_X7Y58.COUT     Tbyp                  0.130   MCOMPAR_OUT_ESLEBT_CMP_LT0000_CY<9>
+                                                       MCOMPAR_OUT_ESLEBT_CMP_LT0000_CY<8>
+                                                       MCOMPAR_OUT_ESLEBT_CMP_LT0000_CY<9>
+    SLICE_X7Y59.CIN      net (fanout=1)        0.000   MCOMPAR_OUT_ESLEBT_CMP_LT0000_CY<9>
+    SLICE_X7Y59.COUT     Tbyp                  0.130   MCOMPAR_OUT_ESLEBT_CMP_LT0000_CY<11>
+                                                       MCOMPAR_OUT_ESLEBT_CMP_LT0000_CY<10>
+                                                       MCOMPAR_OUT_ESLEBT_CMP_LT0000_CY<11>
+    SLICE_X7Y60.CIN      net (fanout=1)        0.000   MCOMPAR_OUT_ESLEBT_CMP_LT0000_CY<11>
+    SLICE_X7Y60.XB       Tcinxb                0.216   MCOMPAR_OUT_ESLEBT_CMP_LT0000_CY<12>
+                                                       MCOMPAR_OUT_ESLEBT_CMP_LT0000_CY<12>
+    SLICE_X5Y50.SR       net (fanout=18)       1.529   MCOMPAR_OUT_ESLEBT_CMP_LT0000_CY<12>
+    SLICE_X5Y50.CLK      Tsrck                 0.433   I0<4>
+                                                       I0_5
+    -------------------------------------------------  ---------------------------
+    Total                                      5.238ns (2.459ns logic, 2.779ns route)
+                                                       (46.9% logic, 53.1% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point I0_6 (SLICE_X5Y51.SR), 26 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     14.350ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               I0_18 (FF)
+  Destination:          I0_6 (FF)
+  Requirement:          20.000ns
+  Data Path Delay:      5.590ns (Levels of Logic = 4)
+  Clock Path Skew:      -0.060ns (0.022 - 0.082)
+  Source Clock:         IN_PLATINENTAKT_IBUFG rising at 0.000ns
+  Destination Clock:    IN_PLATINENTAKT_IBUFG rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: I0_18 to I0_6
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X5Y57.XQ       Tcko                  0.495   I0<18>
+                                                       I0_18
+    SLICE_X7Y57.F2       net (fanout=2)        1.631   I0<18>
+    SLICE_X7Y57.COUT     Topcyf                1.026   MCOMPAR_OUT_ESLEBT_CMP_LT0000_CY<7>
+                                                       MCOMPAR_OUT_ESLEBT_CMP_LT0000_LUT<6>
+                                                       MCOMPAR_OUT_ESLEBT_CMP_LT0000_CY<6>
+                                                       MCOMPAR_OUT_ESLEBT_CMP_LT0000_CY<7>
+    SLICE_X7Y58.CIN      net (fanout=1)        0.000   MCOMPAR_OUT_ESLEBT_CMP_LT0000_CY<7>
+    SLICE_X7Y58.COUT     Tbyp                  0.130   MCOMPAR_OUT_ESLEBT_CMP_LT0000_CY<9>
+                                                       MCOMPAR_OUT_ESLEBT_CMP_LT0000_CY<8>
+                                                       MCOMPAR_OUT_ESLEBT_CMP_LT0000_CY<9>
+    SLICE_X7Y59.CIN      net (fanout=1)        0.000   MCOMPAR_OUT_ESLEBT_CMP_LT0000_CY<9>
+    SLICE_X7Y59.COUT     Tbyp                  0.130   MCOMPAR_OUT_ESLEBT_CMP_LT0000_CY<11>
+                                                       MCOMPAR_OUT_ESLEBT_CMP_LT0000_CY<10>
+                                                       MCOMPAR_OUT_ESLEBT_CMP_LT0000_CY<11>
+    SLICE_X7Y60.CIN      net (fanout=1)        0.000   MCOMPAR_OUT_ESLEBT_CMP_LT0000_CY<11>
+    SLICE_X7Y60.XB       Tcinxb                0.216   MCOMPAR_OUT_ESLEBT_CMP_LT0000_CY<12>
+                                                       MCOMPAR_OUT_ESLEBT_CMP_LT0000_CY<12>
+    SLICE_X5Y51.SR       net (fanout=18)       1.529   MCOMPAR_OUT_ESLEBT_CMP_LT0000_CY<12>
+    SLICE_X5Y51.CLK      Tsrck                 0.433   I0<6>
+                                                       I0_6
+    -------------------------------------------------  ---------------------------
+    Total                                      5.590ns (2.430ns logic, 3.160ns route)
+                                                       (43.5% logic, 56.5% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     14.559ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               I0_9 (FF)
+  Destination:          I0_6 (FF)
+  Requirement:          20.000ns
+  Data Path Delay:      5.418ns (Levels of Logic = 7)
+  Clock Path Skew:      -0.023ns (0.022 - 0.045)
+  Source Clock:         IN_PLATINENTAKT_IBUFG rising at 0.000ns
+  Destination Clock:    IN_PLATINENTAKT_IBUFG rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: I0_9 to I0_6
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X5Y52.YQ       Tcko                  0.524   I0<8>
+                                                       I0_9
+    SLICE_X7Y54.G3       net (fanout=2)        1.057   I0<9>
+    SLICE_X7Y54.COUT     Topcyg                1.009   MCOMPAR_OUT_ESLEBT_CMP_LT0000_CY<1>
+                                                       MCOMPAR_OUT_ESLEBT_CMP_LT0000_LUT<1>
+                                                       MCOMPAR_OUT_ESLEBT_CMP_LT0000_CY<1>
+    SLICE_X7Y55.CIN      net (fanout=1)        0.000   MCOMPAR_OUT_ESLEBT_CMP_LT0000_CY<1>
+    SLICE_X7Y55.COUT     Tbyp                  0.130   MCOMPAR_OUT_ESLEBT_CMP_LT0000_CY<3>
+                                                       MCOMPAR_OUT_ESLEBT_CMP_LT0000_CY<2>
+                                                       MCOMPAR_OUT_ESLEBT_CMP_LT0000_CY<3>
+    SLICE_X7Y56.CIN      net (fanout=1)        0.000   MCOMPAR_OUT_ESLEBT_CMP_LT0000_CY<3>
+    SLICE_X7Y56.COUT     Tbyp                  0.130   MCOMPAR_OUT_ESLEBT_CMP_LT0000_CY<5>
+                                                       MCOMPAR_OUT_ESLEBT_CMP_LT0000_CY<4>
+                                                       MCOMPAR_OUT_ESLEBT_CMP_LT0000_CY<5>
+    SLICE_X7Y57.CIN      net (fanout=1)        0.000   MCOMPAR_OUT_ESLEBT_CMP_LT0000_CY<5>
+    SLICE_X7Y57.COUT     Tbyp                  0.130   MCOMPAR_OUT_ESLEBT_CMP_LT0000_CY<7>
+                                                       MCOMPAR_OUT_ESLEBT_CMP_LT0000_CY<6>
+                                                       MCOMPAR_OUT_ESLEBT_CMP_LT0000_CY<7>
+    SLICE_X7Y58.CIN      net (fanout=1)        0.000   MCOMPAR_OUT_ESLEBT_CMP_LT0000_CY<7>
+    SLICE_X7Y58.COUT     Tbyp                  0.130   MCOMPAR_OUT_ESLEBT_CMP_LT0000_CY<9>
+                                                       MCOMPAR_OUT_ESLEBT_CMP_LT0000_CY<8>
+                                                       MCOMPAR_OUT_ESLEBT_CMP_LT0000_CY<9>
+    SLICE_X7Y59.CIN      net (fanout=1)        0.000   MCOMPAR_OUT_ESLEBT_CMP_LT0000_CY<9>
+    SLICE_X7Y59.COUT     Tbyp                  0.130   MCOMPAR_OUT_ESLEBT_CMP_LT0000_CY<11>
+                                                       MCOMPAR_OUT_ESLEBT_CMP_LT0000_CY<10>
+                                                       MCOMPAR_OUT_ESLEBT_CMP_LT0000_CY<11>
+    SLICE_X7Y60.CIN      net (fanout=1)        0.000   MCOMPAR_OUT_ESLEBT_CMP_LT0000_CY<11>
+    SLICE_X7Y60.XB       Tcinxb                0.216   MCOMPAR_OUT_ESLEBT_CMP_LT0000_CY<12>
+                                                       MCOMPAR_OUT_ESLEBT_CMP_LT0000_CY<12>
+    SLICE_X5Y51.SR       net (fanout=18)       1.529   MCOMPAR_OUT_ESLEBT_CMP_LT0000_CY<12>
+    SLICE_X5Y51.CLK      Tsrck                 0.433   I0<6>
+                                                       I0_6
+    -------------------------------------------------  ---------------------------
+    Total                                      5.418ns (2.832ns logic, 2.586ns route)
+                                                       (52.3% logic, 47.7% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     14.689ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               I0_21 (FF)
+  Destination:          I0_6 (FF)
+  Requirement:          20.000ns
+  Data Path Delay:      5.238ns (Levels of Logic = 4)
+  Clock Path Skew:      -0.073ns (0.022 - 0.095)
+  Source Clock:         IN_PLATINENTAKT_IBUFG rising at 0.000ns
+  Destination Clock:    IN_PLATINENTAKT_IBUFG rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: I0_21 to I0_6
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X5Y58.YQ       Tcko                  0.524   I0<20>
+                                                       I0_21
+    SLICE_X7Y57.F4       net (fanout=2)        1.250   I0<21>
+    SLICE_X7Y57.COUT     Topcyf                1.026   MCOMPAR_OUT_ESLEBT_CMP_LT0000_CY<7>
+                                                       MCOMPAR_OUT_ESLEBT_CMP_LT0000_LUT<6>
+                                                       MCOMPAR_OUT_ESLEBT_CMP_LT0000_CY<6>
+                                                       MCOMPAR_OUT_ESLEBT_CMP_LT0000_CY<7>
+    SLICE_X7Y58.CIN      net (fanout=1)        0.000   MCOMPAR_OUT_ESLEBT_CMP_LT0000_CY<7>
+    SLICE_X7Y58.COUT     Tbyp                  0.130   MCOMPAR_OUT_ESLEBT_CMP_LT0000_CY<9>
+                                                       MCOMPAR_OUT_ESLEBT_CMP_LT0000_CY<8>
+                                                       MCOMPAR_OUT_ESLEBT_CMP_LT0000_CY<9>
+    SLICE_X7Y59.CIN      net (fanout=1)        0.000   MCOMPAR_OUT_ESLEBT_CMP_LT0000_CY<9>
+    SLICE_X7Y59.COUT     Tbyp                  0.130   MCOMPAR_OUT_ESLEBT_CMP_LT0000_CY<11>
+                                                       MCOMPAR_OUT_ESLEBT_CMP_LT0000_CY<10>
+                                                       MCOMPAR_OUT_ESLEBT_CMP_LT0000_CY<11>
+    SLICE_X7Y60.CIN      net (fanout=1)        0.000   MCOMPAR_OUT_ESLEBT_CMP_LT0000_CY<11>
+    SLICE_X7Y60.XB       Tcinxb                0.216   MCOMPAR_OUT_ESLEBT_CMP_LT0000_CY<12>
+                                                       MCOMPAR_OUT_ESLEBT_CMP_LT0000_CY<12>
+    SLICE_X5Y51.SR       net (fanout=18)       1.529   MCOMPAR_OUT_ESLEBT_CMP_LT0000_CY<12>
+    SLICE_X5Y51.CLK      Tsrck                 0.433   I0<6>
+                                                       I0_6
+    -------------------------------------------------  ---------------------------
+    Total                                      5.238ns (2.459ns logic, 2.779ns route)
+                                                       (46.9% logic, 53.1% route)
+
+--------------------------------------------------------------------------------
+
+Hold Paths: TS_in_Platinentakt = PERIOD TIMEGRP "in_Platinentakt" 20 ns HIGH 50%;
+--------------------------------------------------------------------------------
+
+Paths for end point OUT_ESLEBT (P94.O1), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      0.965ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               OUT_ESLEBT_1 (FF)
+  Destination:          OUT_ESLEBT (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      0.942ns (Levels of Logic = 0)
+  Clock Path Skew:      -0.023ns (0.466 - 0.489)
+  Source Clock:         IN_PLATINENTAKT_IBUFG rising at 20.000ns
+  Destination Clock:    IN_PLATINENTAKT_IBUFG rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path: OUT_ESLEBT_1 to OUT_ESLEBT
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X4Y63.YQ       Tcko                  0.477   OUT_ESLEBT_1
+                                                       OUT_ESLEBT_1
+    P94.O1               net (fanout=2)        0.504   OUT_ESLEBT_1
+    P94.OTCLK1           Tiocko      (-Th)     0.039   OUT_ESLEBT
+                                                       OUT_ESLEBT
+    -------------------------------------------------  ---------------------------
+    Total                                      0.942ns (0.438ns logic, 0.504ns route)
+                                                       (46.5% logic, 53.5% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point OUT_ESLEBT_1 (SLICE_X4Y63.BY), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      1.059ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               OUT_ESLEBT_1 (FF)
+  Destination:          OUT_ESLEBT_1 (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      1.059ns (Levels of Logic = 0)
+  Clock Path Skew:      0.000ns
+  Source Clock:         IN_PLATINENTAKT_IBUFG rising at 20.000ns
+  Destination Clock:    IN_PLATINENTAKT_IBUFG rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path: OUT_ESLEBT_1 to OUT_ESLEBT_1
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X4Y63.YQ       Tcko                  0.477   OUT_ESLEBT_1
+                                                       OUT_ESLEBT_1
+    SLICE_X4Y63.BY       net (fanout=2)        0.445   OUT_ESLEBT_1
+    SLICE_X4Y63.CLK      Tckdi       (-Th)    -0.137   OUT_ESLEBT_1
+                                                       OUT_ESLEBT_1
+    -------------------------------------------------  ---------------------------
+    Total                                      1.059ns (0.614ns logic, 0.445ns route)
+                                                       (58.0% logic, 42.0% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point I0_8 (SLICE_X5Y52.F4), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      1.356ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               I0_8 (FF)
+  Destination:          I0_8 (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      1.356ns (Levels of Logic = 1)
+  Clock Path Skew:      0.000ns
+  Source Clock:         IN_PLATINENTAKT_IBUFG rising at 20.000ns
+  Destination Clock:    IN_PLATINENTAKT_IBUFG rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path: I0_8 to I0_8
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X5Y52.XQ       Tcko                  0.396   I0<8>
+                                                       I0_8
+    SLICE_X5Y52.F4       net (fanout=2)        0.258   I0<8>
+    SLICE_X5Y52.CLK      Tckf        (-Th)    -0.702   I0<8>
+                                                       I0<8>_rt
+                                                       MCOUNT_I0_XOR<8>
+                                                       I0_8
+    -------------------------------------------------  ---------------------------
+    Total                                      1.356ns (1.098ns logic, 0.258ns route)
+                                                       (81.0% logic, 19.0% route)
+
+--------------------------------------------------------------------------------
+
+Component Switching Limit Checks: TS_in_Platinentakt = PERIOD TIMEGRP "in_Platinentakt" 20 ns HIGH 50%;
+--------------------------------------------------------------------------------
+Slack: 14.000ns (period - (min low pulse limit / (low pulse / period)))
+  Period: 20.000ns
+  Low pulse: 10.000ns
+  Low pulse limit: 3.000ns (Tdcmpw_CLKIN_50_100)
+  Physical resource: INST_ENKODERTESTCLOCK/DCM_SP_INST/CLKIN
+  Logical resource: INST_ENKODERTESTCLOCK/DCM_SP_INST/CLKIN
+  Location pin: DCM_X0Y1.CLKIN
+  Clock network: IN_PLATINENTAKT_IBUFG1
+--------------------------------------------------------------------------------
+Slack: 14.000ns (period - (min high pulse limit / (high pulse / period)))
+  Period: 20.000ns
+  High pulse: 10.000ns
+  High pulse limit: 3.000ns (Tdcmpw_CLKIN_50_100)
+  Physical resource: INST_ENKODERTESTCLOCK/DCM_SP_INST/CLKIN
+  Logical resource: INST_ENKODERTESTCLOCK/DCM_SP_INST/CLKIN
+  Location pin: DCM_X0Y1.CLKIN
+  Clock network: IN_PLATINENTAKT_IBUFG1
+--------------------------------------------------------------------------------
+Slack: 16.430ns (period - min period limit)
+  Period: 20.000ns
+  Min period limit: 3.570ns (280.112MHz) (Tdcmpc)
+  Physical resource: INST_ENKODERTESTCLOCK/DCM_SP_INST/CLKIN
+  Logical resource: INST_ENKODERTESTCLOCK/DCM_SP_INST/CLKIN
+  Location pin: DCM_X0Y1.CLKIN
+  Clock network: IN_PLATINENTAKT_IBUFG1
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: TS_INST_ENKODERTESTCLOCK_CLKFX_BUF = PERIOD TIMEGRP         
+"INST_ENKODERTESTCLOCK_CLKFX_BUF" TS_in_Platinentakt / 0.24 HIGH 50%;
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 5356060 paths analyzed, 653 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
+ Minimum period is  20.698ns.
+--------------------------------------------------------------------------------
+
+Paths for end point PUFFERDATEN<0>.KANAELE_0_1 (SLICE_X26Y15.F1), 247547 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     62.635ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               I_0 (FF)
+  Destination:          PUFFERDATEN<0>.KANAELE_0_1 (FF)
+  Requirement:          83.333ns
+  Data Path Delay:      20.492ns (Levels of Logic = 26)
+  Clock Path Skew:      -0.206ns (0.536 - 0.742)
+  Source Clock:         DEBUG_ADAT_TAKT_OBUF rising at 0.000ns
+  Destination Clock:    DEBUG_ADAT_TAKT_OBUF rising at 83.333ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: I_0 to PUFFERDATEN<0>.KANAELE_0_1
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X17Y33.XQ      Tcko                  0.495   I<0>
+                                                       I_0
+    SLICE_X15Y32.F2      net (fanout=2)        0.423   I<0>
+    SLICE_X15Y32.COUT    Topcyf                1.026   INTERVALL_ADD0000<0>
+                                                       MADD_INTERVALL_ADD0000_LUT<0>_INV_0
+                                                       MADD_INTERVALL_ADD0000_CY<0>
+                                                       MADD_INTERVALL_ADD0000_CY<1>
+    SLICE_X15Y33.CIN     net (fanout=1)        0.000   MADD_INTERVALL_ADD0000_CY<1>
+    SLICE_X15Y33.COUT    Tbyp                  0.130   INTERVALL_ADD0000<2>
+                                                       MADD_INTERVALL_ADD0000_CY<2>
+                                                       MADD_INTERVALL_ADD0000_CY<3>
+    SLICE_X15Y34.CIN     net (fanout=1)        0.000   MADD_INTERVALL_ADD0000_CY<3>
+    SLICE_X15Y34.COUT    Tbyp                  0.130   INTERVALL_ADD0000<4>
+                                                       MADD_INTERVALL_ADD0000_CY<4>
+                                                       MADD_INTERVALL_ADD0000_CY<5>
+    SLICE_X15Y35.CIN     net (fanout=1)        0.000   MADD_INTERVALL_ADD0000_CY<5>
+    SLICE_X15Y35.COUT    Tbyp                  0.130   INTERVALL_ADD0000<6>
+                                                       MADD_INTERVALL_ADD0000_CY<6>
+                                                       MADD_INTERVALL_ADD0000_CY<7>
+    SLICE_X15Y36.CIN     net (fanout=1)        0.000   MADD_INTERVALL_ADD0000_CY<7>
+    SLICE_X15Y36.COUT    Tbyp                  0.130   INTERVALL_ADD0000<8>
+                                                       MADD_INTERVALL_ADD0000_CY<8>
+                                                       MADD_INTERVALL_ADD0000_CY<9>
+    SLICE_X15Y37.CIN     net (fanout=1)        0.000   MADD_INTERVALL_ADD0000_CY<9>
+    SLICE_X15Y37.COUT    Tbyp                  0.130   INTERVALL_ADD0000<10>
+                                                       MADD_INTERVALL_ADD0000_CY<10>
+                                                       MADD_INTERVALL_ADD0000_CY<11>
+    SLICE_X15Y38.CIN     net (fanout=1)        0.000   MADD_INTERVALL_ADD0000_CY<11>
+    SLICE_X15Y38.COUT    Tbyp                  0.130   INTERVALL_ADD0000<12>
+                                                       MADD_INTERVALL_ADD0000_CY<12>
+                                                       MADD_INTERVALL_ADD0000_CY<13>
+    SLICE_X15Y39.CIN     net (fanout=1)        0.000   MADD_INTERVALL_ADD0000_CY<13>
+    SLICE_X15Y39.COUT    Tbyp                  0.130   INTERVALL_ADD0000<14>
+                                                       MADD_INTERVALL_ADD0000_CY<14>
+                                                       MADD_INTERVALL_ADD0000_CY<15>
+    SLICE_X15Y40.CIN     net (fanout=1)        0.000   MADD_INTERVALL_ADD0000_CY<15>
+    SLICE_X15Y40.COUT    Tbyp                  0.130   INTERVALL_ADD0000<16>
+                                                       MADD_INTERVALL_ADD0000_CY<16>
+                                                       MADD_INTERVALL_ADD0000_CY<17>
+    SLICE_X15Y41.CIN     net (fanout=1)        0.000   MADD_INTERVALL_ADD0000_CY<17>
+    SLICE_X15Y41.COUT    Tbyp                  0.130   INTERVALL_ADD0000<18>
+                                                       MADD_INTERVALL_ADD0000_CY<18>
+                                                       MADD_INTERVALL_ADD0000_CY<19>
+    SLICE_X15Y42.CIN     net (fanout=1)        0.000   MADD_INTERVALL_ADD0000_CY<19>
+    SLICE_X15Y42.COUT    Tbyp                  0.130   INTERVALL_ADD0000<20>
+                                                       MADD_INTERVALL_ADD0000_CY<20>
+                                                       MADD_INTERVALL_ADD0000_CY<21>
+    SLICE_X15Y43.CIN     net (fanout=1)        0.000   MADD_INTERVALL_ADD0000_CY<21>
+    SLICE_X15Y43.COUT    Tbyp                  0.130   INTERVALL_ADD0000<22>
+                                                       MADD_INTERVALL_ADD0000_CY<22>
+                                                       MADD_INTERVALL_ADD0000_CY<23>
+    SLICE_X15Y44.CIN     net (fanout=1)        0.000   MADD_INTERVALL_ADD0000_CY<23>
+    SLICE_X15Y44.Y       Tciny                 0.664   INTERVALL_ADD0000<24>
+                                                       MADD_INTERVALL_ADD0000_CY<24>
+                                                       MADD_INTERVALL_ADD0000_XOR<25>
+    SLICE_X13Y38.G1      net (fanout=1)        0.864   INTERVALL_ADD0000<25>
+    SLICE_X13Y38.COUT    Topcyg                1.009   INTERVALL_CMP_EQ0000_WG_CY<1>
+                                                       INTERVALL_CMP_EQ0000_WG_LUT<1>
+                                                       INTERVALL_CMP_EQ0000_WG_CY<1>
+    SLICE_X13Y39.CIN     net (fanout=1)        0.000   INTERVALL_CMP_EQ0000_WG_CY<1>
+    SLICE_X13Y39.COUT    Tbyp                  0.130   INTERVALL_CMP_EQ0000_WG_CY<3>
+                                                       INTERVALL_CMP_EQ0000_WG_CY<2>
+                                                       INTERVALL_CMP_EQ0000_WG_CY<3>
+    SLICE_X13Y40.CIN     net (fanout=1)        0.000   INTERVALL_CMP_EQ0000_WG_CY<3>
+    SLICE_X13Y40.COUT    Tbyp                  0.130   INTERVALL_CMP_EQ0000_WG_CY<5>
+                                                       INTERVALL_CMP_EQ0000_WG_CY<4>
+                                                       INTERVALL_CMP_EQ0000_WG_CY<5>
+    SLICE_X13Y41.CIN     net (fanout=1)        0.000   INTERVALL_CMP_EQ0000_WG_CY<5>
+    SLICE_X13Y41.COUT    Tbyp                  0.130   INTERVALL_CMP_EQ0000
+                                                       INTERVALL_CMP_EQ0000_WG_CY<6>
+                                                       INTERVALL_CMP_EQ0000_WG_CY<7>
+    SLICE_X6Y26.F1       net (fanout=15)       1.988   INTERVALL_CMP_EQ0000
+    SLICE_X6Y26.X        Tilo                  0.601   INTERVALL_MUX0001<1>
+                                                       MMUX_INTERVALL_MUX000121
+    SLICE_X7Y21.G2       net (fanout=2)        0.782   INTERVALL_MUX0001<1>
+    SLICE_X7Y21.COUT     Topcyg                1.009   WERT_ADDSUB0002<0>
+                                                       MSUB_WERT_ADDSUB0002_LUT<1>
+                                                       MSUB_WERT_ADDSUB0002_CY<1>
+    SLICE_X7Y22.CIN      net (fanout=1)        0.000   MSUB_WERT_ADDSUB0002_CY<1>
+    SLICE_X7Y22.X        Tcinx                 0.489   WERT_ADDSUB0002<2>
+                                                       MSUB_WERT_ADDSUB0002_XOR<2>
+    SLICE_X4Y20.G4       net (fanout=21)       1.773   WERT_ADDSUB0002<2>
+    SLICE_X4Y20.X        Tif5x                 0.853   PUFFERDATEN<0>_KANAELE_0_MUX0000<10>2147
+                                                       PUFFERDATEN<0>_KANAELE_0_MUX0000<10>21472
+                                                       PUFFERDATEN<0>_KANAELE_0_MUX0000<10>2147_F5
+    SLICE_X5Y20.F3       net (fanout=2)        0.436   PUFFERDATEN<0>_KANAELE_0_MUX0000<10>2147
+    SLICE_X5Y20.X        Tif5x                 0.791   N67
+                                                       PUFFERDATEN<0>_KANAELE_0_MUX0000<10>2231_SW0_G
+                                                       PUFFERDATEN<0>_KANAELE_0_MUX0000<10>2231_SW0
+    SLICE_X4Y17.F1       net (fanout=1)        0.565   N67
+    SLICE_X4Y17.X        Tilo                  0.601   PUFFERDATEN<0>_KANAELE_0_MUX0000<10>2231
+                                                       PUFFERDATEN<0>_KANAELE_0_MUX0000<10>2231
+    SLICE_X7Y16.F2       net (fanout=1)        0.358   PUFFERDATEN<0>_KANAELE_0_MUX0000<10>2231
+    SLICE_X7Y16.X        Tilo                  0.562   PUFFERDATEN<0>_KANAELE_0_MUX0000<10>2472_2
+                                                       PUFFERDATEN<0>_KANAELE_0_MUX0000<10>2472_2
+    SLICE_X19Y15.G2      net (fanout=1)        0.630   PUFFERDATEN<0>_KANAELE_0_MUX0000<10>2472_2
+    SLICE_X19Y15.Y       Tilo                  0.561   PUFFERDATEN<0>.KANAELE_0_15
+                                                       PUFFERDATEN<0>_KANAELE_0_MUX0000<10>2472
+    SLICE_X26Y15.F1      net (fanout=10)       1.536   N7
+    SLICE_X26Y15.CLK     Tfck                  0.656   PUFFERDATEN<0>.KANAELE_0_1
+                                                       PUFFERDATEN<0>_KANAELE_0_MUX0000<22>1
+                                                       PUFFERDATEN<0>.KANAELE_0_1
+    -------------------------------------------------  ---------------------------
+    Total                                     20.492ns (11.137ns logic, 9.355ns route)
+                                                       (54.3% logic, 45.7% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     62.663ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               I_0 (FF)
+  Destination:          PUFFERDATEN<0>.KANAELE_0_1 (FF)
+  Requirement:          83.333ns
+  Data Path Delay:      20.464ns (Levels of Logic = 26)
+  Clock Path Skew:      -0.206ns (0.536 - 0.742)
+  Source Clock:         DEBUG_ADAT_TAKT_OBUF rising at 0.000ns
+  Destination Clock:    DEBUG_ADAT_TAKT_OBUF rising at 83.333ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: I_0 to PUFFERDATEN<0>.KANAELE_0_1
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X17Y33.XQ      Tcko                  0.495   I<0>
+                                                       I_0
+    SLICE_X15Y32.F2      net (fanout=2)        0.423   I<0>
+    SLICE_X15Y32.COUT    Topcyf                1.026   INTERVALL_ADD0000<0>
+                                                       MADD_INTERVALL_ADD0000_LUT<0>_INV_0
+                                                       MADD_INTERVALL_ADD0000_CY<0>
+                                                       MADD_INTERVALL_ADD0000_CY<1>
+    SLICE_X15Y33.CIN     net (fanout=1)        0.000   MADD_INTERVALL_ADD0000_CY<1>
+    SLICE_X15Y33.COUT    Tbyp                  0.130   INTERVALL_ADD0000<2>
+                                                       MADD_INTERVALL_ADD0000_CY<2>
+                                                       MADD_INTERVALL_ADD0000_CY<3>
+    SLICE_X15Y34.CIN     net (fanout=1)        0.000   MADD_INTERVALL_ADD0000_CY<3>
+    SLICE_X15Y34.COUT    Tbyp                  0.130   INTERVALL_ADD0000<4>
+                                                       MADD_INTERVALL_ADD0000_CY<4>
+                                                       MADD_INTERVALL_ADD0000_CY<5>
+    SLICE_X15Y35.CIN     net (fanout=1)        0.000   MADD_INTERVALL_ADD0000_CY<5>
+    SLICE_X15Y35.COUT    Tbyp                  0.130   INTERVALL_ADD0000<6>
+                                                       MADD_INTERVALL_ADD0000_CY<6>
+                                                       MADD_INTERVALL_ADD0000_CY<7>
+    SLICE_X15Y36.CIN     net (fanout=1)        0.000   MADD_INTERVALL_ADD0000_CY<7>
+    SLICE_X15Y36.COUT    Tbyp                  0.130   INTERVALL_ADD0000<8>
+                                                       MADD_INTERVALL_ADD0000_CY<8>
+                                                       MADD_INTERVALL_ADD0000_CY<9>
+    SLICE_X15Y37.CIN     net (fanout=1)        0.000   MADD_INTERVALL_ADD0000_CY<9>
+    SLICE_X15Y37.COUT    Tbyp                  0.130   INTERVALL_ADD0000<10>
+                                                       MADD_INTERVALL_ADD0000_CY<10>
+                                                       MADD_INTERVALL_ADD0000_CY<11>
+    SLICE_X15Y38.CIN     net (fanout=1)        0.000   MADD_INTERVALL_ADD0000_CY<11>
+    SLICE_X15Y38.COUT    Tbyp                  0.130   INTERVALL_ADD0000<12>
+                                                       MADD_INTERVALL_ADD0000_CY<12>
+                                                       MADD_INTERVALL_ADD0000_CY<13>
+    SLICE_X15Y39.CIN     net (fanout=1)        0.000   MADD_INTERVALL_ADD0000_CY<13>
+    SLICE_X15Y39.COUT    Tbyp                  0.130   INTERVALL_ADD0000<14>
+                                                       MADD_INTERVALL_ADD0000_CY<14>
+                                                       MADD_INTERVALL_ADD0000_CY<15>
+    SLICE_X15Y40.CIN     net (fanout=1)        0.000   MADD_INTERVALL_ADD0000_CY<15>
+    SLICE_X15Y40.COUT    Tbyp                  0.130   INTERVALL_ADD0000<16>
+                                                       MADD_INTERVALL_ADD0000_CY<16>
+                                                       MADD_INTERVALL_ADD0000_CY<17>
+    SLICE_X15Y41.CIN     net (fanout=1)        0.000   MADD_INTERVALL_ADD0000_CY<17>
+    SLICE_X15Y41.COUT    Tbyp                  0.130   INTERVALL_ADD0000<18>
+                                                       MADD_INTERVALL_ADD0000_CY<18>
+                                                       MADD_INTERVALL_ADD0000_CY<19>
+    SLICE_X15Y42.CIN     net (fanout=1)        0.000   MADD_INTERVALL_ADD0000_CY<19>
+    SLICE_X15Y42.COUT    Tbyp                  0.130   INTERVALL_ADD0000<20>
+                                                       MADD_INTERVALL_ADD0000_CY<20>
+                                                       MADD_INTERVALL_ADD0000_CY<21>
+    SLICE_X15Y43.CIN     net (fanout=1)        0.000   MADD_INTERVALL_ADD0000_CY<21>
+    SLICE_X15Y43.COUT    Tbyp                  0.130   INTERVALL_ADD0000<22>
+                                                       MADD_INTERVALL_ADD0000_CY<22>
+                                                       MADD_INTERVALL_ADD0000_CY<23>
+    SLICE_X15Y44.CIN     net (fanout=1)        0.000   MADD_INTERVALL_ADD0000_CY<23>
+    SLICE_X15Y44.COUT    Tbyp                  0.130   INTERVALL_ADD0000<24>
+                                                       MADD_INTERVALL_ADD0000_CY<24>
+                                                       MADD_INTERVALL_ADD0000_CY<25>
+    SLICE_X15Y45.CIN     net (fanout=1)        0.000   MADD_INTERVALL_ADD0000_CY<25>
+    SLICE_X15Y45.COUT    Tbyp                  0.130   INTERVALL_ADD0000<26>
+                                                       MADD_INTERVALL_ADD0000_CY<26>
+                                                       MADD_INTERVALL_ADD0000_CY<27>
+    SLICE_X15Y46.CIN     net (fanout=1)        0.000   MADD_INTERVALL_ADD0000_CY<27>
+    SLICE_X15Y46.COUT    Tbyp                  0.130   INTERVALL_ADD0000<28>
+                                                       MADD_INTERVALL_ADD0000_CY<28>
+                                                       MADD_INTERVALL_ADD0000_CY<29>
+    SLICE_X15Y47.CIN     net (fanout=1)        0.000   MADD_INTERVALL_ADD0000_CY<29>
+    SLICE_X15Y47.Y       Tciny                 0.664   INTERVALL_ADD0000<30>
+                                                       MADD_INTERVALL_ADD0000_CY<30>
+                                                       MADD_INTERVALL_ADD0000_XOR<31>
+    SLICE_X13Y41.G1      net (fanout=1)        0.836   INTERVALL_ADD0000<31>
+    SLICE_X13Y41.COUT    Topcyg                1.009   INTERVALL_CMP_EQ0000
+                                                       INTERVALL_CMP_EQ0000_WG_LUT<7>
+                                                       INTERVALL_CMP_EQ0000_WG_CY<7>
+    SLICE_X6Y26.F1       net (fanout=15)       1.988   INTERVALL_CMP_EQ0000
+    SLICE_X6Y26.X        Tilo                  0.601   INTERVALL_MUX0001<1>
+                                                       MMUX_INTERVALL_MUX000121
+    SLICE_X7Y21.G2       net (fanout=2)        0.782   INTERVALL_MUX0001<1>
+    SLICE_X7Y21.COUT     Topcyg                1.009   WERT_ADDSUB0002<0>
+                                                       MSUB_WERT_ADDSUB0002_LUT<1>
+                                                       MSUB_WERT_ADDSUB0002_CY<1>
+    SLICE_X7Y22.CIN      net (fanout=1)        0.000   MSUB_WERT_ADDSUB0002_CY<1>
+    SLICE_X7Y22.X        Tcinx                 0.489   WERT_ADDSUB0002<2>
+                                                       MSUB_WERT_ADDSUB0002_XOR<2>
+    SLICE_X4Y20.G4       net (fanout=21)       1.773   WERT_ADDSUB0002<2>
+    SLICE_X4Y20.X        Tif5x                 0.853   PUFFERDATEN<0>_KANAELE_0_MUX0000<10>2147
+                                                       PUFFERDATEN<0>_KANAELE_0_MUX0000<10>21472
+                                                       PUFFERDATEN<0>_KANAELE_0_MUX0000<10>2147_F5
+    SLICE_X5Y20.F3       net (fanout=2)        0.436   PUFFERDATEN<0>_KANAELE_0_MUX0000<10>2147
+    SLICE_X5Y20.X        Tif5x                 0.791   N67
+                                                       PUFFERDATEN<0>_KANAELE_0_MUX0000<10>2231_SW0_G
+                                                       PUFFERDATEN<0>_KANAELE_0_MUX0000<10>2231_SW0
+    SLICE_X4Y17.F1       net (fanout=1)        0.565   N67
+    SLICE_X4Y17.X        Tilo                  0.601   PUFFERDATEN<0>_KANAELE_0_MUX0000<10>2231
+                                                       PUFFERDATEN<0>_KANAELE_0_MUX0000<10>2231
+    SLICE_X7Y16.F2       net (fanout=1)        0.358   PUFFERDATEN<0>_KANAELE_0_MUX0000<10>2231
+    SLICE_X7Y16.X        Tilo                  0.562   PUFFERDATEN<0>_KANAELE_0_MUX0000<10>2472_2
+                                                       PUFFERDATEN<0>_KANAELE_0_MUX0000<10>2472_2
+    SLICE_X19Y15.G2      net (fanout=1)        0.630   PUFFERDATEN<0>_KANAELE_0_MUX0000<10>2472_2
+    SLICE_X19Y15.Y       Tilo                  0.561   PUFFERDATEN<0>.KANAELE_0_15
+                                                       PUFFERDATEN<0>_KANAELE_0_MUX0000<10>2472
+    SLICE_X26Y15.F1      net (fanout=10)       1.536   N7
+    SLICE_X26Y15.CLK     Tfck                  0.656   PUFFERDATEN<0>.KANAELE_0_1
+                                                       PUFFERDATEN<0>_KANAELE_0_MUX0000<22>1
+                                                       PUFFERDATEN<0>.KANAELE_0_1
+    -------------------------------------------------  ---------------------------
+    Total                                     20.464ns (11.137ns logic, 9.327ns route)
+                                                       (54.4% logic, 45.6% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     62.700ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               I_1 (FF)
+  Destination:          PUFFERDATEN<0>.KANAELE_0_1 (FF)
+  Requirement:          83.333ns
+  Data Path Delay:      20.427ns (Levels of Logic = 26)
+  Clock Path Skew:      -0.206ns (0.536 - 0.742)
+  Source Clock:         DEBUG_ADAT_TAKT_OBUF rising at 0.000ns
+  Destination Clock:    DEBUG_ADAT_TAKT_OBUF rising at 83.333ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: I_1 to PUFFERDATEN<0>.KANAELE_0_1
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X17Y33.YQ      Tcko                  0.524   I<0>
+                                                       I_1
+    SLICE_X15Y32.G4      net (fanout=2)        0.346   I<1>
+    SLICE_X15Y32.COUT    Topcyg                1.009   INTERVALL_ADD0000<0>
+                                                       I<1>_rt.1
+                                                       MADD_INTERVALL_ADD0000_CY<1>
+    SLICE_X15Y33.CIN     net (fanout=1)        0.000   MADD_INTERVALL_ADD0000_CY<1>
+    SLICE_X15Y33.COUT    Tbyp                  0.130   INTERVALL_ADD0000<2>
+                                                       MADD_INTERVALL_ADD0000_CY<2>
+                                                       MADD_INTERVALL_ADD0000_CY<3>
+    SLICE_X15Y34.CIN     net (fanout=1)        0.000   MADD_INTERVALL_ADD0000_CY<3>
+    SLICE_X15Y34.COUT    Tbyp                  0.130   INTERVALL_ADD0000<4>
+                                                       MADD_INTERVALL_ADD0000_CY<4>
+                                                       MADD_INTERVALL_ADD0000_CY<5>
+    SLICE_X15Y35.CIN     net (fanout=1)        0.000   MADD_INTERVALL_ADD0000_CY<5>
+    SLICE_X15Y35.COUT    Tbyp                  0.130   INTERVALL_ADD0000<6>
+                                                       MADD_INTERVALL_ADD0000_CY<6>
+                                                       MADD_INTERVALL_ADD0000_CY<7>
+    SLICE_X15Y36.CIN     net (fanout=1)        0.000   MADD_INTERVALL_ADD0000_CY<7>
+    SLICE_X15Y36.COUT    Tbyp                  0.130   INTERVALL_ADD0000<8>
+                                                       MADD_INTERVALL_ADD0000_CY<8>
+                                                       MADD_INTERVALL_ADD0000_CY<9>
+    SLICE_X15Y37.CIN     net (fanout=1)        0.000   MADD_INTERVALL_ADD0000_CY<9>
+    SLICE_X15Y37.COUT    Tbyp                  0.130   INTERVALL_ADD0000<10>
+                                                       MADD_INTERVALL_ADD0000_CY<10>
+                                                       MADD_INTERVALL_ADD0000_CY<11>
+    SLICE_X15Y38.CIN     net (fanout=1)        0.000   MADD_INTERVALL_ADD0000_CY<11>
+    SLICE_X15Y38.COUT    Tbyp                  0.130   INTERVALL_ADD0000<12>
+                                                       MADD_INTERVALL_ADD0000_CY<12>
+                                                       MADD_INTERVALL_ADD0000_CY<13>
+    SLICE_X15Y39.CIN     net (fanout=1)        0.000   MADD_INTERVALL_ADD0000_CY<13>
+    SLICE_X15Y39.COUT    Tbyp                  0.130   INTERVALL_ADD0000<14>
+                                                       MADD_INTERVALL_ADD0000_CY<14>
+                                                       MADD_INTERVALL_ADD0000_CY<15>
+    SLICE_X15Y40.CIN     net (fanout=1)        0.000   MADD_INTERVALL_ADD0000_CY<15>
+    SLICE_X15Y40.COUT    Tbyp                  0.130   INTERVALL_ADD0000<16>
+                                                       MADD_INTERVALL_ADD0000_CY<16>
+                                                       MADD_INTERVALL_ADD0000_CY<17>
+    SLICE_X15Y41.CIN     net (fanout=1)        0.000   MADD_INTERVALL_ADD0000_CY<17>
+    SLICE_X15Y41.COUT    Tbyp                  0.130   INTERVALL_ADD0000<18>
+                                                       MADD_INTERVALL_ADD0000_CY<18>
+                                                       MADD_INTERVALL_ADD0000_CY<19>
+    SLICE_X15Y42.CIN     net (fanout=1)        0.000   MADD_INTERVALL_ADD0000_CY<19>
+    SLICE_X15Y42.COUT    Tbyp                  0.130   INTERVALL_ADD0000<20>
+                                                       MADD_INTERVALL_ADD0000_CY<20>
+                                                       MADD_INTERVALL_ADD0000_CY<21>
+    SLICE_X15Y43.CIN     net (fanout=1)        0.000   MADD_INTERVALL_ADD0000_CY<21>
+    SLICE_X15Y43.COUT    Tbyp                  0.130   INTERVALL_ADD0000<22>
+                                                       MADD_INTERVALL_ADD0000_CY<22>
+                                                       MADD_INTERVALL_ADD0000_CY<23>
+    SLICE_X15Y44.CIN     net (fanout=1)        0.000   MADD_INTERVALL_ADD0000_CY<23>
+    SLICE_X15Y44.Y       Tciny                 0.664   INTERVALL_ADD0000<24>
+                                                       MADD_INTERVALL_ADD0000_CY<24>
+                                                       MADD_INTERVALL_ADD0000_XOR<25>
+    SLICE_X13Y38.G1      net (fanout=1)        0.864   INTERVALL_ADD0000<25>
+    SLICE_X13Y38.COUT    Topcyg                1.009   INTERVALL_CMP_EQ0000_WG_CY<1>
+                                                       INTERVALL_CMP_EQ0000_WG_LUT<1>
+                                                       INTERVALL_CMP_EQ0000_WG_CY<1>
+    SLICE_X13Y39.CIN     net (fanout=1)        0.000   INTERVALL_CMP_EQ0000_WG_CY<1>
+    SLICE_X13Y39.COUT    Tbyp                  0.130   INTERVALL_CMP_EQ0000_WG_CY<3>
+                                                       INTERVALL_CMP_EQ0000_WG_CY<2>
+                                                       INTERVALL_CMP_EQ0000_WG_CY<3>
+    SLICE_X13Y40.CIN     net (fanout=1)        0.000   INTERVALL_CMP_EQ0000_WG_CY<3>
+    SLICE_X13Y40.COUT    Tbyp                  0.130   INTERVALL_CMP_EQ0000_WG_CY<5>
+                                                       INTERVALL_CMP_EQ0000_WG_CY<4>
+                                                       INTERVALL_CMP_EQ0000_WG_CY<5>
+    SLICE_X13Y41.CIN     net (fanout=1)        0.000   INTERVALL_CMP_EQ0000_WG_CY<5>
+    SLICE_X13Y41.COUT    Tbyp                  0.130   INTERVALL_CMP_EQ0000
+                                                       INTERVALL_CMP_EQ0000_WG_CY<6>
+                                                       INTERVALL_CMP_EQ0000_WG_CY<7>
+    SLICE_X6Y26.F1       net (fanout=15)       1.988   INTERVALL_CMP_EQ0000
+    SLICE_X6Y26.X        Tilo                  0.601   INTERVALL_MUX0001<1>
+                                                       MMUX_INTERVALL_MUX000121
+    SLICE_X7Y21.G2       net (fanout=2)        0.782   INTERVALL_MUX0001<1>
+    SLICE_X7Y21.COUT     Topcyg                1.009   WERT_ADDSUB0002<0>
+                                                       MSUB_WERT_ADDSUB0002_LUT<1>
+                                                       MSUB_WERT_ADDSUB0002_CY<1>
+    SLICE_X7Y22.CIN      net (fanout=1)        0.000   MSUB_WERT_ADDSUB0002_CY<1>
+    SLICE_X7Y22.X        Tcinx                 0.489   WERT_ADDSUB0002<2>
+                                                       MSUB_WERT_ADDSUB0002_XOR<2>
+    SLICE_X4Y20.G4       net (fanout=21)       1.773   WERT_ADDSUB0002<2>
+    SLICE_X4Y20.X        Tif5x                 0.853   PUFFERDATEN<0>_KANAELE_0_MUX0000<10>2147
+                                                       PUFFERDATEN<0>_KANAELE_0_MUX0000<10>21472
+                                                       PUFFERDATEN<0>_KANAELE_0_MUX0000<10>2147_F5
+    SLICE_X5Y20.F3       net (fanout=2)        0.436   PUFFERDATEN<0>_KANAELE_0_MUX0000<10>2147
+    SLICE_X5Y20.X        Tif5x                 0.791   N67
+                                                       PUFFERDATEN<0>_KANAELE_0_MUX0000<10>2231_SW0_G
+                                                       PUFFERDATEN<0>_KANAELE_0_MUX0000<10>2231_SW0
+    SLICE_X4Y17.F1       net (fanout=1)        0.565   N67
+    SLICE_X4Y17.X        Tilo                  0.601   PUFFERDATEN<0>_KANAELE_0_MUX0000<10>2231
+                                                       PUFFERDATEN<0>_KANAELE_0_MUX0000<10>2231
+    SLICE_X7Y16.F2       net (fanout=1)        0.358   PUFFERDATEN<0>_KANAELE_0_MUX0000<10>2231
+    SLICE_X7Y16.X        Tilo                  0.562   PUFFERDATEN<0>_KANAELE_0_MUX0000<10>2472_2
+                                                       PUFFERDATEN<0>_KANAELE_0_MUX0000<10>2472_2
+    SLICE_X19Y15.G2      net (fanout=1)        0.630   PUFFERDATEN<0>_KANAELE_0_MUX0000<10>2472_2
+    SLICE_X19Y15.Y       Tilo                  0.561   PUFFERDATEN<0>.KANAELE_0_15
+                                                       PUFFERDATEN<0>_KANAELE_0_MUX0000<10>2472
+    SLICE_X26Y15.F1      net (fanout=10)       1.536   N7
+    SLICE_X26Y15.CLK     Tfck                  0.656   PUFFERDATEN<0>.KANAELE_0_1
+                                                       PUFFERDATEN<0>_KANAELE_0_MUX0000<22>1
+                                                       PUFFERDATEN<0>.KANAELE_0_1
+    -------------------------------------------------  ---------------------------
+    Total                                     20.427ns (11.149ns logic, 9.278ns route)
+                                                       (54.6% logic, 45.4% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point PUFFERDATEN<0>.KANAELE_0_3 (SLICE_X26Y8.F1), 247547 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     62.668ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               I_0 (FF)
+  Destination:          PUFFERDATEN<0>.KANAELE_0_3 (FF)
+  Requirement:          83.333ns
+  Data Path Delay:      20.479ns (Levels of Logic = 26)
+  Clock Path Skew:      -0.186ns (0.556 - 0.742)
+  Source Clock:         DEBUG_ADAT_TAKT_OBUF rising at 0.000ns
+  Destination Clock:    DEBUG_ADAT_TAKT_OBUF rising at 83.333ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: I_0 to PUFFERDATEN<0>.KANAELE_0_3
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X17Y33.XQ      Tcko                  0.495   I<0>
+                                                       I_0
+    SLICE_X15Y32.F2      net (fanout=2)        0.423   I<0>
+    SLICE_X15Y32.COUT    Topcyf                1.026   INTERVALL_ADD0000<0>
+                                                       MADD_INTERVALL_ADD0000_LUT<0>_INV_0
+                                                       MADD_INTERVALL_ADD0000_CY<0>
+                                                       MADD_INTERVALL_ADD0000_CY<1>
+    SLICE_X15Y33.CIN     net (fanout=1)        0.000   MADD_INTERVALL_ADD0000_CY<1>
+    SLICE_X15Y33.COUT    Tbyp                  0.130   INTERVALL_ADD0000<2>
+                                                       MADD_INTERVALL_ADD0000_CY<2>
+                                                       MADD_INTERVALL_ADD0000_CY<3>
+    SLICE_X15Y34.CIN     net (fanout=1)        0.000   MADD_INTERVALL_ADD0000_CY<3>
+    SLICE_X15Y34.COUT    Tbyp                  0.130   INTERVALL_ADD0000<4>
+                                                       MADD_INTERVALL_ADD0000_CY<4>
+                                                       MADD_INTERVALL_ADD0000_CY<5>
+    SLICE_X15Y35.CIN     net (fanout=1)        0.000   MADD_INTERVALL_ADD0000_CY<5>
+    SLICE_X15Y35.COUT    Tbyp                  0.130   INTERVALL_ADD0000<6>
+                                                       MADD_INTERVALL_ADD0000_CY<6>
+                                                       MADD_INTERVALL_ADD0000_CY<7>
+    SLICE_X15Y36.CIN     net (fanout=1)        0.000   MADD_INTERVALL_ADD0000_CY<7>
+    SLICE_X15Y36.COUT    Tbyp                  0.130   INTERVALL_ADD0000<8>
+                                                       MADD_INTERVALL_ADD0000_CY<8>
+                                                       MADD_INTERVALL_ADD0000_CY<9>
+    SLICE_X15Y37.CIN     net (fanout=1)        0.000   MADD_INTERVALL_ADD0000_CY<9>
+    SLICE_X15Y37.COUT    Tbyp                  0.130   INTERVALL_ADD0000<10>
+                                                       MADD_INTERVALL_ADD0000_CY<10>
+                                                       MADD_INTERVALL_ADD0000_CY<11>
+    SLICE_X15Y38.CIN     net (fanout=1)        0.000   MADD_INTERVALL_ADD0000_CY<11>
+    SLICE_X15Y38.COUT    Tbyp                  0.130   INTERVALL_ADD0000<12>
+                                                       MADD_INTERVALL_ADD0000_CY<12>
+                                                       MADD_INTERVALL_ADD0000_CY<13>
+    SLICE_X15Y39.CIN     net (fanout=1)        0.000   MADD_INTERVALL_ADD0000_CY<13>
+    SLICE_X15Y39.COUT    Tbyp                  0.130   INTERVALL_ADD0000<14>
+                                                       MADD_INTERVALL_ADD0000_CY<14>
+                                                       MADD_INTERVALL_ADD0000_CY<15>
+    SLICE_X15Y40.CIN     net (fanout=1)        0.000   MADD_INTERVALL_ADD0000_CY<15>
+    SLICE_X15Y40.COUT    Tbyp                  0.130   INTERVALL_ADD0000<16>
+                                                       MADD_INTERVALL_ADD0000_CY<16>
+                                                       MADD_INTERVALL_ADD0000_CY<17>
+    SLICE_X15Y41.CIN     net (fanout=1)        0.000   MADD_INTERVALL_ADD0000_CY<17>
+    SLICE_X15Y41.COUT    Tbyp                  0.130   INTERVALL_ADD0000<18>
+                                                       MADD_INTERVALL_ADD0000_CY<18>
+                                                       MADD_INTERVALL_ADD0000_CY<19>
+    SLICE_X15Y42.CIN     net (fanout=1)        0.000   MADD_INTERVALL_ADD0000_CY<19>
+    SLICE_X15Y42.COUT    Tbyp                  0.130   INTERVALL_ADD0000<20>
+                                                       MADD_INTERVALL_ADD0000_CY<20>
+                                                       MADD_INTERVALL_ADD0000_CY<21>
+    SLICE_X15Y43.CIN     net (fanout=1)        0.000   MADD_INTERVALL_ADD0000_CY<21>
+    SLICE_X15Y43.COUT    Tbyp                  0.130   INTERVALL_ADD0000<22>
+                                                       MADD_INTERVALL_ADD0000_CY<22>
+                                                       MADD_INTERVALL_ADD0000_CY<23>
+    SLICE_X15Y44.CIN     net (fanout=1)        0.000   MADD_INTERVALL_ADD0000_CY<23>
+    SLICE_X15Y44.Y       Tciny                 0.664   INTERVALL_ADD0000<24>
+                                                       MADD_INTERVALL_ADD0000_CY<24>
+                                                       MADD_INTERVALL_ADD0000_XOR<25>
+    SLICE_X13Y38.G1      net (fanout=1)        0.864   INTERVALL_ADD0000<25>
+    SLICE_X13Y38.COUT    Topcyg                1.009   INTERVALL_CMP_EQ0000_WG_CY<1>
+                                                       INTERVALL_CMP_EQ0000_WG_LUT<1>
+                                                       INTERVALL_CMP_EQ0000_WG_CY<1>
+    SLICE_X13Y39.CIN     net (fanout=1)        0.000   INTERVALL_CMP_EQ0000_WG_CY<1>
+    SLICE_X13Y39.COUT    Tbyp                  0.130   INTERVALL_CMP_EQ0000_WG_CY<3>
+                                                       INTERVALL_CMP_EQ0000_WG_CY<2>
+                                                       INTERVALL_CMP_EQ0000_WG_CY<3>
+    SLICE_X13Y40.CIN     net (fanout=1)        0.000   INTERVALL_CMP_EQ0000_WG_CY<3>
+    SLICE_X13Y40.COUT    Tbyp                  0.130   INTERVALL_CMP_EQ0000_WG_CY<5>
+                                                       INTERVALL_CMP_EQ0000_WG_CY<4>
+                                                       INTERVALL_CMP_EQ0000_WG_CY<5>
+    SLICE_X13Y41.CIN     net (fanout=1)        0.000   INTERVALL_CMP_EQ0000_WG_CY<5>
+    SLICE_X13Y41.COUT    Tbyp                  0.130   INTERVALL_CMP_EQ0000
+                                                       INTERVALL_CMP_EQ0000_WG_CY<6>
+                                                       INTERVALL_CMP_EQ0000_WG_CY<7>
+    SLICE_X6Y26.F1       net (fanout=15)       1.988   INTERVALL_CMP_EQ0000
+    SLICE_X6Y26.X        Tilo                  0.601   INTERVALL_MUX0001<1>
+                                                       MMUX_INTERVALL_MUX000121
+    SLICE_X7Y21.G2       net (fanout=2)        0.782   INTERVALL_MUX0001<1>
+    SLICE_X7Y21.COUT     Topcyg                1.009   WERT_ADDSUB0002<0>
+                                                       MSUB_WERT_ADDSUB0002_LUT<1>
+                                                       MSUB_WERT_ADDSUB0002_CY<1>
+    SLICE_X7Y22.CIN      net (fanout=1)        0.000   MSUB_WERT_ADDSUB0002_CY<1>
+    SLICE_X7Y22.X        Tcinx                 0.489   WERT_ADDSUB0002<2>
+                                                       MSUB_WERT_ADDSUB0002_XOR<2>
+    SLICE_X4Y20.G4       net (fanout=21)       1.773   WERT_ADDSUB0002<2>
+    SLICE_X4Y20.X        Tif5x                 0.853   PUFFERDATEN<0>_KANAELE_0_MUX0000<10>2147
+                                                       PUFFERDATEN<0>_KANAELE_0_MUX0000<10>21472
+                                                       PUFFERDATEN<0>_KANAELE_0_MUX0000<10>2147_F5
+    SLICE_X5Y20.F3       net (fanout=2)        0.436   PUFFERDATEN<0>_KANAELE_0_MUX0000<10>2147
+    SLICE_X5Y20.X        Tif5x                 0.791   N67
+                                                       PUFFERDATEN<0>_KANAELE_0_MUX0000<10>2231_SW0_G
+                                                       PUFFERDATEN<0>_KANAELE_0_MUX0000<10>2231_SW0
+    SLICE_X4Y17.F1       net (fanout=1)        0.565   N67
+    SLICE_X4Y17.X        Tilo                  0.601   PUFFERDATEN<0>_KANAELE_0_MUX0000<10>2231
+                                                       PUFFERDATEN<0>_KANAELE_0_MUX0000<10>2231
+    SLICE_X7Y16.F2       net (fanout=1)        0.358   PUFFERDATEN<0>_KANAELE_0_MUX0000<10>2231
+    SLICE_X7Y16.X        Tilo                  0.562   PUFFERDATEN<0>_KANAELE_0_MUX0000<10>2472_2
+                                                       PUFFERDATEN<0>_KANAELE_0_MUX0000<10>2472_2
+    SLICE_X19Y15.G2      net (fanout=1)        0.630   PUFFERDATEN<0>_KANAELE_0_MUX0000<10>2472_2
+    SLICE_X19Y15.Y       Tilo                  0.561   PUFFERDATEN<0>.KANAELE_0_15
+                                                       PUFFERDATEN<0>_KANAELE_0_MUX0000<10>2472
+    SLICE_X26Y8.F1       net (fanout=10)       1.523   N7
+    SLICE_X26Y8.CLK      Tfck                  0.656   PUFFERDATEN<0>.KANAELE_0_3
+                                                       PUFFERDATEN<0>_KANAELE_0_MUX0000<20>1
+                                                       PUFFERDATEN<0>.KANAELE_0_3
+    -------------------------------------------------  ---------------------------
+    Total                                     20.479ns (11.137ns logic, 9.342ns route)
+                                                       (54.4% logic, 45.6% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     62.696ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               I_0 (FF)
+  Destination:          PUFFERDATEN<0>.KANAELE_0_3 (FF)
+  Requirement:          83.333ns
+  Data Path Delay:      20.451ns (Levels of Logic = 26)
+  Clock Path Skew:      -0.186ns (0.556 - 0.742)
+  Source Clock:         DEBUG_ADAT_TAKT_OBUF rising at 0.000ns
+  Destination Clock:    DEBUG_ADAT_TAKT_OBUF rising at 83.333ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: I_0 to PUFFERDATEN<0>.KANAELE_0_3
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X17Y33.XQ      Tcko                  0.495   I<0>
+                                                       I_0
+    SLICE_X15Y32.F2      net (fanout=2)        0.423   I<0>
+    SLICE_X15Y32.COUT    Topcyf                1.026   INTERVALL_ADD0000<0>
+                                                       MADD_INTERVALL_ADD0000_LUT<0>_INV_0
+                                                       MADD_INTERVALL_ADD0000_CY<0>
+                                                       MADD_INTERVALL_ADD0000_CY<1>
+    SLICE_X15Y33.CIN     net (fanout=1)        0.000   MADD_INTERVALL_ADD0000_CY<1>
+    SLICE_X15Y33.COUT    Tbyp                  0.130   INTERVALL_ADD0000<2>
+                                                       MADD_INTERVALL_ADD0000_CY<2>
+                                                       MADD_INTERVALL_ADD0000_CY<3>
+    SLICE_X15Y34.CIN     net (fanout=1)        0.000   MADD_INTERVALL_ADD0000_CY<3>
+    SLICE_X15Y34.COUT    Tbyp                  0.130   INTERVALL_ADD0000<4>
+                                                       MADD_INTERVALL_ADD0000_CY<4>
+                                                       MADD_INTERVALL_ADD0000_CY<5>
+    SLICE_X15Y35.CIN     net (fanout=1)        0.000   MADD_INTERVALL_ADD0000_CY<5>
+    SLICE_X15Y35.COUT    Tbyp                  0.130   INTERVALL_ADD0000<6>
+                                                       MADD_INTERVALL_ADD0000_CY<6>
+                                                       MADD_INTERVALL_ADD0000_CY<7>
+    SLICE_X15Y36.CIN     net (fanout=1)        0.000   MADD_INTERVALL_ADD0000_CY<7>
+    SLICE_X15Y36.COUT    Tbyp                  0.130   INTERVALL_ADD0000<8>
+                                                       MADD_INTERVALL_ADD0000_CY<8>
+                                                       MADD_INTERVALL_ADD0000_CY<9>
+    SLICE_X15Y37.CIN     net (fanout=1)        0.000   MADD_INTERVALL_ADD0000_CY<9>
+    SLICE_X15Y37.COUT    Tbyp                  0.130   INTERVALL_ADD0000<10>
+                                                       MADD_INTERVALL_ADD0000_CY<10>
+                                                       MADD_INTERVALL_ADD0000_CY<11>
+    SLICE_X15Y38.CIN     net (fanout=1)        0.000   MADD_INTERVALL_ADD0000_CY<11>
+    SLICE_X15Y38.COUT    Tbyp                  0.130   INTERVALL_ADD0000<12>
+                                                       MADD_INTERVALL_ADD0000_CY<12>
+                                                       MADD_INTERVALL_ADD0000_CY<13>
+    SLICE_X15Y39.CIN     net (fanout=1)        0.000   MADD_INTERVALL_ADD0000_CY<13>
+    SLICE_X15Y39.COUT    Tbyp                  0.130   INTERVALL_ADD0000<14>
+                                                       MADD_INTERVALL_ADD0000_CY<14>
+                                                       MADD_INTERVALL_ADD0000_CY<15>
+    SLICE_X15Y40.CIN     net (fanout=1)        0.000   MADD_INTERVALL_ADD0000_CY<15>
+    SLICE_X15Y40.COUT    Tbyp                  0.130   INTERVALL_ADD0000<16>
+                                                       MADD_INTERVALL_ADD0000_CY<16>
+                                                       MADD_INTERVALL_ADD0000_CY<17>
+    SLICE_X15Y41.CIN     net (fanout=1)        0.000   MADD_INTERVALL_ADD0000_CY<17>
+    SLICE_X15Y41.COUT    Tbyp                  0.130   INTERVALL_ADD0000<18>
+                                                       MADD_INTERVALL_ADD0000_CY<18>
+                                                       MADD_INTERVALL_ADD0000_CY<19>
+    SLICE_X15Y42.CIN     net (fanout=1)        0.000   MADD_INTERVALL_ADD0000_CY<19>
+    SLICE_X15Y42.COUT    Tbyp                  0.130   INTERVALL_ADD0000<20>
+                                                       MADD_INTERVALL_ADD0000_CY<20>
+                                                       MADD_INTERVALL_ADD0000_CY<21>
+    SLICE_X15Y43.CIN     net (fanout=1)        0.000   MADD_INTERVALL_ADD0000_CY<21>
+    SLICE_X15Y43.COUT    Tbyp                  0.130   INTERVALL_ADD0000<22>
+                                                       MADD_INTERVALL_ADD0000_CY<22>
+                                                       MADD_INTERVALL_ADD0000_CY<23>
+    SLICE_X15Y44.CIN     net (fanout=1)        0.000   MADD_INTERVALL_ADD0000_CY<23>
+    SLICE_X15Y44.COUT    Tbyp                  0.130   INTERVALL_ADD0000<24>
+                                                       MADD_INTERVALL_ADD0000_CY<24>
+                                                       MADD_INTERVALL_ADD0000_CY<25>
+    SLICE_X15Y45.CIN     net (fanout=1)        0.000   MADD_INTERVALL_ADD0000_CY<25>
+    SLICE_X15Y45.COUT    Tbyp                  0.130   INTERVALL_ADD0000<26>
+                                                       MADD_INTERVALL_ADD0000_CY<26>
+                                                       MADD_INTERVALL_ADD0000_CY<27>
+    SLICE_X15Y46.CIN     net (fanout=1)        0.000   MADD_INTERVALL_ADD0000_CY<27>
+    SLICE_X15Y46.COUT    Tbyp                  0.130   INTERVALL_ADD0000<28>
+                                                       MADD_INTERVALL_ADD0000_CY<28>
+                                                       MADD_INTERVALL_ADD0000_CY<29>
+    SLICE_X15Y47.CIN     net (fanout=1)        0.000   MADD_INTERVALL_ADD0000_CY<29>
+    SLICE_X15Y47.Y       Tciny                 0.664   INTERVALL_ADD0000<30>
+                                                       MADD_INTERVALL_ADD0000_CY<30>
+                                                       MADD_INTERVALL_ADD0000_XOR<31>
+    SLICE_X13Y41.G1      net (fanout=1)        0.836   INTERVALL_ADD0000<31>
+    SLICE_X13Y41.COUT    Topcyg                1.009   INTERVALL_CMP_EQ0000
+                                                       INTERVALL_CMP_EQ0000_WG_LUT<7>
+                                                       INTERVALL_CMP_EQ0000_WG_CY<7>
+    SLICE_X6Y26.F1       net (fanout=15)       1.988   INTERVALL_CMP_EQ0000
+    SLICE_X6Y26.X        Tilo                  0.601   INTERVALL_MUX0001<1>
+                                                       MMUX_INTERVALL_MUX000121
+    SLICE_X7Y21.G2       net (fanout=2)        0.782   INTERVALL_MUX0001<1>
+    SLICE_X7Y21.COUT     Topcyg                1.009   WERT_ADDSUB0002<0>
+                                                       MSUB_WERT_ADDSUB0002_LUT<1>
+                                                       MSUB_WERT_ADDSUB0002_CY<1>
+    SLICE_X7Y22.CIN      net (fanout=1)        0.000   MSUB_WERT_ADDSUB0002_CY<1>
+    SLICE_X7Y22.X        Tcinx                 0.489   WERT_ADDSUB0002<2>
+                                                       MSUB_WERT_ADDSUB0002_XOR<2>
+    SLICE_X4Y20.G4       net (fanout=21)       1.773   WERT_ADDSUB0002<2>
+    SLICE_X4Y20.X        Tif5x                 0.853   PUFFERDATEN<0>_KANAELE_0_MUX0000<10>2147
+                                                       PUFFERDATEN<0>_KANAELE_0_MUX0000<10>21472
+                                                       PUFFERDATEN<0>_KANAELE_0_MUX0000<10>2147_F5
+    SLICE_X5Y20.F3       net (fanout=2)        0.436   PUFFERDATEN<0>_KANAELE_0_MUX0000<10>2147
+    SLICE_X5Y20.X        Tif5x                 0.791   N67
+                                                       PUFFERDATEN<0>_KANAELE_0_MUX0000<10>2231_SW0_G
+                                                       PUFFERDATEN<0>_KANAELE_0_MUX0000<10>2231_SW0
+    SLICE_X4Y17.F1       net (fanout=1)        0.565   N67
+    SLICE_X4Y17.X        Tilo                  0.601   PUFFERDATEN<0>_KANAELE_0_MUX0000<10>2231
+                                                       PUFFERDATEN<0>_KANAELE_0_MUX0000<10>2231
+    SLICE_X7Y16.F2       net (fanout=1)        0.358   PUFFERDATEN<0>_KANAELE_0_MUX0000<10>2231
+    SLICE_X7Y16.X        Tilo                  0.562   PUFFERDATEN<0>_KANAELE_0_MUX0000<10>2472_2
+                                                       PUFFERDATEN<0>_KANAELE_0_MUX0000<10>2472_2
+    SLICE_X19Y15.G2      net (fanout=1)        0.630   PUFFERDATEN<0>_KANAELE_0_MUX0000<10>2472_2
+    SLICE_X19Y15.Y       Tilo                  0.561   PUFFERDATEN<0>.KANAELE_0_15
+                                                       PUFFERDATEN<0>_KANAELE_0_MUX0000<10>2472
+    SLICE_X26Y8.F1       net (fanout=10)       1.523   N7
+    SLICE_X26Y8.CLK      Tfck                  0.656   PUFFERDATEN<0>.KANAELE_0_3
+                                                       PUFFERDATEN<0>_KANAELE_0_MUX0000<20>1
+                                                       PUFFERDATEN<0>.KANAELE_0_3
+    -------------------------------------------------  ---------------------------
+    Total                                     20.451ns (11.137ns logic, 9.314ns route)
+                                                       (54.5% logic, 45.5% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     62.733ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               I_1 (FF)
+  Destination:          PUFFERDATEN<0>.KANAELE_0_3 (FF)
+  Requirement:          83.333ns
+  Data Path Delay:      20.414ns (Levels of Logic = 26)
+  Clock Path Skew:      -0.186ns (0.556 - 0.742)
+  Source Clock:         DEBUG_ADAT_TAKT_OBUF rising at 0.000ns
+  Destination Clock:    DEBUG_ADAT_TAKT_OBUF rising at 83.333ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: I_1 to PUFFERDATEN<0>.KANAELE_0_3
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X17Y33.YQ      Tcko                  0.524   I<0>
+                                                       I_1
+    SLICE_X15Y32.G4      net (fanout=2)        0.346   I<1>
+    SLICE_X15Y32.COUT    Topcyg                1.009   INTERVALL_ADD0000<0>
+                                                       I<1>_rt.1
+                                                       MADD_INTERVALL_ADD0000_CY<1>
+    SLICE_X15Y33.CIN     net (fanout=1)        0.000   MADD_INTERVALL_ADD0000_CY<1>
+    SLICE_X15Y33.COUT    Tbyp                  0.130   INTERVALL_ADD0000<2>
+                                                       MADD_INTERVALL_ADD0000_CY<2>
+                                                       MADD_INTERVALL_ADD0000_CY<3>
+    SLICE_X15Y34.CIN     net (fanout=1)        0.000   MADD_INTERVALL_ADD0000_CY<3>
+    SLICE_X15Y34.COUT    Tbyp                  0.130   INTERVALL_ADD0000<4>
+                                                       MADD_INTERVALL_ADD0000_CY<4>
+                                                       MADD_INTERVALL_ADD0000_CY<5>
+    SLICE_X15Y35.CIN     net (fanout=1)        0.000   MADD_INTERVALL_ADD0000_CY<5>
+    SLICE_X15Y35.COUT    Tbyp                  0.130   INTERVALL_ADD0000<6>
+                                                       MADD_INTERVALL_ADD0000_CY<6>
+                                                       MADD_INTERVALL_ADD0000_CY<7>
+    SLICE_X15Y36.CIN     net (fanout=1)        0.000   MADD_INTERVALL_ADD0000_CY<7>
+    SLICE_X15Y36.COUT    Tbyp                  0.130   INTERVALL_ADD0000<8>
+                                                       MADD_INTERVALL_ADD0000_CY<8>
+                                                       MADD_INTERVALL_ADD0000_CY<9>
+    SLICE_X15Y37.CIN     net (fanout=1)        0.000   MADD_INTERVALL_ADD0000_CY<9>
+    SLICE_X15Y37.COUT    Tbyp                  0.130   INTERVALL_ADD0000<10>
+                                                       MADD_INTERVALL_ADD0000_CY<10>
+                                                       MADD_INTERVALL_ADD0000_CY<11>
+    SLICE_X15Y38.CIN     net (fanout=1)        0.000   MADD_INTERVALL_ADD0000_CY<11>
+    SLICE_X15Y38.COUT    Tbyp                  0.130   INTERVALL_ADD0000<12>
+                                                       MADD_INTERVALL_ADD0000_CY<12>
+                                                       MADD_INTERVALL_ADD0000_CY<13>
+    SLICE_X15Y39.CIN     net (fanout=1)        0.000   MADD_INTERVALL_ADD0000_CY<13>
+    SLICE_X15Y39.COUT    Tbyp                  0.130   INTERVALL_ADD0000<14>
+                                                       MADD_INTERVALL_ADD0000_CY<14>
+                                                       MADD_INTERVALL_ADD0000_CY<15>
+    SLICE_X15Y40.CIN     net (fanout=1)        0.000   MADD_INTERVALL_ADD0000_CY<15>
+    SLICE_X15Y40.COUT    Tbyp                  0.130   INTERVALL_ADD0000<16>
+                                                       MADD_INTERVALL_ADD0000_CY<16>
+                                                       MADD_INTERVALL_ADD0000_CY<17>
+    SLICE_X15Y41.CIN     net (fanout=1)        0.000   MADD_INTERVALL_ADD0000_CY<17>
+    SLICE_X15Y41.COUT    Tbyp                  0.130   INTERVALL_ADD0000<18>
+                                                       MADD_INTERVALL_ADD0000_CY<18>
+                                                       MADD_INTERVALL_ADD0000_CY<19>
+    SLICE_X15Y42.CIN     net (fanout=1)        0.000   MADD_INTERVALL_ADD0000_CY<19>
+    SLICE_X15Y42.COUT    Tbyp                  0.130   INTERVALL_ADD0000<20>
+                                                       MADD_INTERVALL_ADD0000_CY<20>
+                                                       MADD_INTERVALL_ADD0000_CY<21>
+    SLICE_X15Y43.CIN     net (fanout=1)        0.000   MADD_INTERVALL_ADD0000_CY<21>
+    SLICE_X15Y43.COUT    Tbyp                  0.130   INTERVALL_ADD0000<22>
+                                                       MADD_INTERVALL_ADD0000_CY<22>
+                                                       MADD_INTERVALL_ADD0000_CY<23>
+    SLICE_X15Y44.CIN     net (fanout=1)        0.000   MADD_INTERVALL_ADD0000_CY<23>
+    SLICE_X15Y44.Y       Tciny                 0.664   INTERVALL_ADD0000<24>
+                                                       MADD_INTERVALL_ADD0000_CY<24>
+                                                       MADD_INTERVALL_ADD0000_XOR<25>
+    SLICE_X13Y38.G1      net (fanout=1)        0.864   INTERVALL_ADD0000<25>
+    SLICE_X13Y38.COUT    Topcyg                1.009   INTERVALL_CMP_EQ0000_WG_CY<1>
+                                                       INTERVALL_CMP_EQ0000_WG_LUT<1>
+                                                       INTERVALL_CMP_EQ0000_WG_CY<1>
+    SLICE_X13Y39.CIN     net (fanout=1)        0.000   INTERVALL_CMP_EQ0000_WG_CY<1>
+    SLICE_X13Y39.COUT    Tbyp                  0.130   INTERVALL_CMP_EQ0000_WG_CY<3>
+                                                       INTERVALL_CMP_EQ0000_WG_CY<2>
+                                                       INTERVALL_CMP_EQ0000_WG_CY<3>
+    SLICE_X13Y40.CIN     net (fanout=1)        0.000   INTERVALL_CMP_EQ0000_WG_CY<3>
+    SLICE_X13Y40.COUT    Tbyp                  0.130   INTERVALL_CMP_EQ0000_WG_CY<5>
+                                                       INTERVALL_CMP_EQ0000_WG_CY<4>
+                                                       INTERVALL_CMP_EQ0000_WG_CY<5>
+    SLICE_X13Y41.CIN     net (fanout=1)        0.000   INTERVALL_CMP_EQ0000_WG_CY<5>
+    SLICE_X13Y41.COUT    Tbyp                  0.130   INTERVALL_CMP_EQ0000
+                                                       INTERVALL_CMP_EQ0000_WG_CY<6>
+                                                       INTERVALL_CMP_EQ0000_WG_CY<7>
+    SLICE_X6Y26.F1       net (fanout=15)       1.988   INTERVALL_CMP_EQ0000
+    SLICE_X6Y26.X        Tilo                  0.601   INTERVALL_MUX0001<1>
+                                                       MMUX_INTERVALL_MUX000121
+    SLICE_X7Y21.G2       net (fanout=2)        0.782   INTERVALL_MUX0001<1>
+    SLICE_X7Y21.COUT     Topcyg                1.009   WERT_ADDSUB0002<0>
+                                                       MSUB_WERT_ADDSUB0002_LUT<1>
+                                                       MSUB_WERT_ADDSUB0002_CY<1>
+    SLICE_X7Y22.CIN      net (fanout=1)        0.000   MSUB_WERT_ADDSUB0002_CY<1>
+    SLICE_X7Y22.X        Tcinx                 0.489   WERT_ADDSUB0002<2>
+                                                       MSUB_WERT_ADDSUB0002_XOR<2>
+    SLICE_X4Y20.G4       net (fanout=21)       1.773   WERT_ADDSUB0002<2>
+    SLICE_X4Y20.X        Tif5x                 0.853   PUFFERDATEN<0>_KANAELE_0_MUX0000<10>2147
+                                                       PUFFERDATEN<0>_KANAELE_0_MUX0000<10>21472
+                                                       PUFFERDATEN<0>_KANAELE_0_MUX0000<10>2147_F5
+    SLICE_X5Y20.F3       net (fanout=2)        0.436   PUFFERDATEN<0>_KANAELE_0_MUX0000<10>2147
+    SLICE_X5Y20.X        Tif5x                 0.791   N67
+                                                       PUFFERDATEN<0>_KANAELE_0_MUX0000<10>2231_SW0_G
+                                                       PUFFERDATEN<0>_KANAELE_0_MUX0000<10>2231_SW0
+    SLICE_X4Y17.F1       net (fanout=1)        0.565   N67
+    SLICE_X4Y17.X        Tilo                  0.601   PUFFERDATEN<0>_KANAELE_0_MUX0000<10>2231
+                                                       PUFFERDATEN<0>_KANAELE_0_MUX0000<10>2231
+    SLICE_X7Y16.F2       net (fanout=1)        0.358   PUFFERDATEN<0>_KANAELE_0_MUX0000<10>2231
+    SLICE_X7Y16.X        Tilo                  0.562   PUFFERDATEN<0>_KANAELE_0_MUX0000<10>2472_2
+                                                       PUFFERDATEN<0>_KANAELE_0_MUX0000<10>2472_2
+    SLICE_X19Y15.G2      net (fanout=1)        0.630   PUFFERDATEN<0>_KANAELE_0_MUX0000<10>2472_2
+    SLICE_X19Y15.Y       Tilo                  0.561   PUFFERDATEN<0>.KANAELE_0_15
+                                                       PUFFERDATEN<0>_KANAELE_0_MUX0000<10>2472
+    SLICE_X26Y8.F1       net (fanout=10)       1.523   N7
+    SLICE_X26Y8.CLK      Tfck                  0.656   PUFFERDATEN<0>.KANAELE_0_3
+                                                       PUFFERDATEN<0>_KANAELE_0_MUX0000<20>1
+                                                       PUFFERDATEN<0>.KANAELE_0_3
+    -------------------------------------------------  ---------------------------
+    Total                                     20.414ns (11.149ns logic, 9.265ns route)
+                                                       (54.6% logic, 45.4% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point PUFFERDATEN<0>.KANAELE_0_11 (SLICE_X27Y10.G3), 247547 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     62.774ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               I_0 (FF)
+  Destination:          PUFFERDATEN<0>.KANAELE_0_11 (FF)
+  Requirement:          83.333ns
+  Data Path Delay:      20.370ns (Levels of Logic = 26)
+  Clock Path Skew:      -0.189ns (0.553 - 0.742)
+  Source Clock:         DEBUG_ADAT_TAKT_OBUF rising at 0.000ns
+  Destination Clock:    DEBUG_ADAT_TAKT_OBUF rising at 83.333ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: I_0 to PUFFERDATEN<0>.KANAELE_0_11
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X17Y33.XQ      Tcko                  0.495   I<0>
+                                                       I_0
+    SLICE_X15Y32.F2      net (fanout=2)        0.423   I<0>
+    SLICE_X15Y32.COUT    Topcyf                1.026   INTERVALL_ADD0000<0>
+                                                       MADD_INTERVALL_ADD0000_LUT<0>_INV_0
+                                                       MADD_INTERVALL_ADD0000_CY<0>
+                                                       MADD_INTERVALL_ADD0000_CY<1>
+    SLICE_X15Y33.CIN     net (fanout=1)        0.000   MADD_INTERVALL_ADD0000_CY<1>
+    SLICE_X15Y33.COUT    Tbyp                  0.130   INTERVALL_ADD0000<2>
+                                                       MADD_INTERVALL_ADD0000_CY<2>
+                                                       MADD_INTERVALL_ADD0000_CY<3>
+    SLICE_X15Y34.CIN     net (fanout=1)        0.000   MADD_INTERVALL_ADD0000_CY<3>
+    SLICE_X15Y34.COUT    Tbyp                  0.130   INTERVALL_ADD0000<4>
+                                                       MADD_INTERVALL_ADD0000_CY<4>
+                                                       MADD_INTERVALL_ADD0000_CY<5>
+    SLICE_X15Y35.CIN     net (fanout=1)        0.000   MADD_INTERVALL_ADD0000_CY<5>
+    SLICE_X15Y35.COUT    Tbyp                  0.130   INTERVALL_ADD0000<6>
+                                                       MADD_INTERVALL_ADD0000_CY<6>
+                                                       MADD_INTERVALL_ADD0000_CY<7>
+    SLICE_X15Y36.CIN     net (fanout=1)        0.000   MADD_INTERVALL_ADD0000_CY<7>
+    SLICE_X15Y36.COUT    Tbyp                  0.130   INTERVALL_ADD0000<8>
+                                                       MADD_INTERVALL_ADD0000_CY<8>
+                                                       MADD_INTERVALL_ADD0000_CY<9>
+    SLICE_X15Y37.CIN     net (fanout=1)        0.000   MADD_INTERVALL_ADD0000_CY<9>
+    SLICE_X15Y37.COUT    Tbyp                  0.130   INTERVALL_ADD0000<10>
+                                                       MADD_INTERVALL_ADD0000_CY<10>
+                                                       MADD_INTERVALL_ADD0000_CY<11>
+    SLICE_X15Y38.CIN     net (fanout=1)        0.000   MADD_INTERVALL_ADD0000_CY<11>
+    SLICE_X15Y38.COUT    Tbyp                  0.130   INTERVALL_ADD0000<12>
+                                                       MADD_INTERVALL_ADD0000_CY<12>
+                                                       MADD_INTERVALL_ADD0000_CY<13>
+    SLICE_X15Y39.CIN     net (fanout=1)        0.000   MADD_INTERVALL_ADD0000_CY<13>
+    SLICE_X15Y39.COUT    Tbyp                  0.130   INTERVALL_ADD0000<14>
+                                                       MADD_INTERVALL_ADD0000_CY<14>
+                                                       MADD_INTERVALL_ADD0000_CY<15>
+    SLICE_X15Y40.CIN     net (fanout=1)        0.000   MADD_INTERVALL_ADD0000_CY<15>
+    SLICE_X15Y40.COUT    Tbyp                  0.130   INTERVALL_ADD0000<16>
+                                                       MADD_INTERVALL_ADD0000_CY<16>
+                                                       MADD_INTERVALL_ADD0000_CY<17>
+    SLICE_X15Y41.CIN     net (fanout=1)        0.000   MADD_INTERVALL_ADD0000_CY<17>
+    SLICE_X15Y41.COUT    Tbyp                  0.130   INTERVALL_ADD0000<18>
+                                                       MADD_INTERVALL_ADD0000_CY<18>
+                                                       MADD_INTERVALL_ADD0000_CY<19>
+    SLICE_X15Y42.CIN     net (fanout=1)        0.000   MADD_INTERVALL_ADD0000_CY<19>
+    SLICE_X15Y42.COUT    Tbyp                  0.130   INTERVALL_ADD0000<20>
+                                                       MADD_INTERVALL_ADD0000_CY<20>
+                                                       MADD_INTERVALL_ADD0000_CY<21>
+    SLICE_X15Y43.CIN     net (fanout=1)        0.000   MADD_INTERVALL_ADD0000_CY<21>
+    SLICE_X15Y43.COUT    Tbyp                  0.130   INTERVALL_ADD0000<22>
+                                                       MADD_INTERVALL_ADD0000_CY<22>
+                                                       MADD_INTERVALL_ADD0000_CY<23>
+    SLICE_X15Y44.CIN     net (fanout=1)        0.000   MADD_INTERVALL_ADD0000_CY<23>
+    SLICE_X15Y44.Y       Tciny                 0.664   INTERVALL_ADD0000<24>
+                                                       MADD_INTERVALL_ADD0000_CY<24>
+                                                       MADD_INTERVALL_ADD0000_XOR<25>
+    SLICE_X13Y38.G1      net (fanout=1)        0.864   INTERVALL_ADD0000<25>
+    SLICE_X13Y38.COUT    Topcyg                1.009   INTERVALL_CMP_EQ0000_WG_CY<1>
+                                                       INTERVALL_CMP_EQ0000_WG_LUT<1>
+                                                       INTERVALL_CMP_EQ0000_WG_CY<1>
+    SLICE_X13Y39.CIN     net (fanout=1)        0.000   INTERVALL_CMP_EQ0000_WG_CY<1>
+    SLICE_X13Y39.COUT    Tbyp                  0.130   INTERVALL_CMP_EQ0000_WG_CY<3>
+                                                       INTERVALL_CMP_EQ0000_WG_CY<2>
+                                                       INTERVALL_CMP_EQ0000_WG_CY<3>
+    SLICE_X13Y40.CIN     net (fanout=1)        0.000   INTERVALL_CMP_EQ0000_WG_CY<3>
+    SLICE_X13Y40.COUT    Tbyp                  0.130   INTERVALL_CMP_EQ0000_WG_CY<5>
+                                                       INTERVALL_CMP_EQ0000_WG_CY<4>
+                                                       INTERVALL_CMP_EQ0000_WG_CY<5>
+    SLICE_X13Y41.CIN     net (fanout=1)        0.000   INTERVALL_CMP_EQ0000_WG_CY<5>
+    SLICE_X13Y41.COUT    Tbyp                  0.130   INTERVALL_CMP_EQ0000
+                                                       INTERVALL_CMP_EQ0000_WG_CY<6>
+                                                       INTERVALL_CMP_EQ0000_WG_CY<7>
+    SLICE_X6Y26.F1       net (fanout=15)       1.988   INTERVALL_CMP_EQ0000
+    SLICE_X6Y26.X        Tilo                  0.601   INTERVALL_MUX0001<1>
+                                                       MMUX_INTERVALL_MUX000121
+    SLICE_X7Y21.G2       net (fanout=2)        0.782   INTERVALL_MUX0001<1>
+    SLICE_X7Y21.COUT     Topcyg                1.009   WERT_ADDSUB0002<0>
+                                                       MSUB_WERT_ADDSUB0002_LUT<1>
+                                                       MSUB_WERT_ADDSUB0002_CY<1>
+    SLICE_X7Y22.CIN      net (fanout=1)        0.000   MSUB_WERT_ADDSUB0002_CY<1>
+    SLICE_X7Y22.X        Tcinx                 0.489   WERT_ADDSUB0002<2>
+                                                       MSUB_WERT_ADDSUB0002_XOR<2>
+    SLICE_X4Y20.G4       net (fanout=21)       1.773   WERT_ADDSUB0002<2>
+    SLICE_X4Y20.X        Tif5x                 0.853   PUFFERDATEN<0>_KANAELE_0_MUX0000<10>2147
+                                                       PUFFERDATEN<0>_KANAELE_0_MUX0000<10>21472
+                                                       PUFFERDATEN<0>_KANAELE_0_MUX0000<10>2147_F5
+    SLICE_X5Y20.F3       net (fanout=2)        0.436   PUFFERDATEN<0>_KANAELE_0_MUX0000<10>2147
+    SLICE_X5Y20.X        Tif5x                 0.791   N67
+                                                       PUFFERDATEN<0>_KANAELE_0_MUX0000<10>2231_SW0_G
+                                                       PUFFERDATEN<0>_KANAELE_0_MUX0000<10>2231_SW0
+    SLICE_X4Y17.F1       net (fanout=1)        0.565   N67
+    SLICE_X4Y17.X        Tilo                  0.601   PUFFERDATEN<0>_KANAELE_0_MUX0000<10>2231
+                                                       PUFFERDATEN<0>_KANAELE_0_MUX0000<10>2231
+    SLICE_X7Y16.F2       net (fanout=1)        0.358   PUFFERDATEN<0>_KANAELE_0_MUX0000<10>2231
+    SLICE_X7Y16.X        Tilo                  0.562   PUFFERDATEN<0>_KANAELE_0_MUX0000<10>2472_2
+                                                       PUFFERDATEN<0>_KANAELE_0_MUX0000<10>2472_2
+    SLICE_X19Y15.G2      net (fanout=1)        0.630   PUFFERDATEN<0>_KANAELE_0_MUX0000<10>2472_2
+    SLICE_X19Y15.Y       Tilo                  0.561   PUFFERDATEN<0>.KANAELE_0_15
+                                                       PUFFERDATEN<0>_KANAELE_0_MUX0000<10>2472
+    SLICE_X27Y10.G3      net (fanout=10)       1.469   N7
+    SLICE_X27Y10.CLK     Tgck                  0.601   PUFFERDATEN<0>.KANAELE_0_11
+                                                       PUFFERDATEN<0>_KANAELE_0_MUX0000<12>1
+                                                       PUFFERDATEN<0>.KANAELE_0_11
+    -------------------------------------------------  ---------------------------
+    Total                                     20.370ns (11.082ns logic, 9.288ns route)
+                                                       (54.4% logic, 45.6% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     62.802ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               I_0 (FF)
+  Destination:          PUFFERDATEN<0>.KANAELE_0_11 (FF)
+  Requirement:          83.333ns
+  Data Path Delay:      20.342ns (Levels of Logic = 26)
+  Clock Path Skew:      -0.189ns (0.553 - 0.742)
+  Source Clock:         DEBUG_ADAT_TAKT_OBUF rising at 0.000ns
+  Destination Clock:    DEBUG_ADAT_TAKT_OBUF rising at 83.333ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: I_0 to PUFFERDATEN<0>.KANAELE_0_11
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X17Y33.XQ      Tcko                  0.495   I<0>
+                                                       I_0
+    SLICE_X15Y32.F2      net (fanout=2)        0.423   I<0>
+    SLICE_X15Y32.COUT    Topcyf                1.026   INTERVALL_ADD0000<0>
+                                                       MADD_INTERVALL_ADD0000_LUT<0>_INV_0
+                                                       MADD_INTERVALL_ADD0000_CY<0>
+                                                       MADD_INTERVALL_ADD0000_CY<1>
+    SLICE_X15Y33.CIN     net (fanout=1)        0.000   MADD_INTERVALL_ADD0000_CY<1>
+    SLICE_X15Y33.COUT    Tbyp                  0.130   INTERVALL_ADD0000<2>
+                                                       MADD_INTERVALL_ADD0000_CY<2>
+                                                       MADD_INTERVALL_ADD0000_CY<3>
+    SLICE_X15Y34.CIN     net (fanout=1)        0.000   MADD_INTERVALL_ADD0000_CY<3>
+    SLICE_X15Y34.COUT    Tbyp                  0.130   INTERVALL_ADD0000<4>
+                                                       MADD_INTERVALL_ADD0000_CY<4>
+                                                       MADD_INTERVALL_ADD0000_CY<5>
+    SLICE_X15Y35.CIN     net (fanout=1)        0.000   MADD_INTERVALL_ADD0000_CY<5>
+    SLICE_X15Y35.COUT    Tbyp                  0.130   INTERVALL_ADD0000<6>
+                                                       MADD_INTERVALL_ADD0000_CY<6>
+                                                       MADD_INTERVALL_ADD0000_CY<7>
+    SLICE_X15Y36.CIN     net (fanout=1)        0.000   MADD_INTERVALL_ADD0000_CY<7>
+    SLICE_X15Y36.COUT    Tbyp                  0.130   INTERVALL_ADD0000<8>
+                                                       MADD_INTERVALL_ADD0000_CY<8>
+                                                       MADD_INTERVALL_ADD0000_CY<9>
+    SLICE_X15Y37.CIN     net (fanout=1)        0.000   MADD_INTERVALL_ADD0000_CY<9>
+    SLICE_X15Y37.COUT    Tbyp                  0.130   INTERVALL_ADD0000<10>
+                                                       MADD_INTERVALL_ADD0000_CY<10>
+                                                       MADD_INTERVALL_ADD0000_CY<11>
+    SLICE_X15Y38.CIN     net (fanout=1)        0.000   MADD_INTERVALL_ADD0000_CY<11>
+    SLICE_X15Y38.COUT    Tbyp                  0.130   INTERVALL_ADD0000<12>
+                                                       MADD_INTERVALL_ADD0000_CY<12>
+                                                       MADD_INTERVALL_ADD0000_CY<13>
+    SLICE_X15Y39.CIN     net (fanout=1)        0.000   MADD_INTERVALL_ADD0000_CY<13>
+    SLICE_X15Y39.COUT    Tbyp                  0.130   INTERVALL_ADD0000<14>
+                                                       MADD_INTERVALL_ADD0000_CY<14>
+                                                       MADD_INTERVALL_ADD0000_CY<15>
+    SLICE_X15Y40.CIN     net (fanout=1)        0.000   MADD_INTERVALL_ADD0000_CY<15>
+    SLICE_X15Y40.COUT    Tbyp                  0.130   INTERVALL_ADD0000<16>
+                                                       MADD_INTERVALL_ADD0000_CY<16>
+                                                       MADD_INTERVALL_ADD0000_CY<17>
+    SLICE_X15Y41.CIN     net (fanout=1)        0.000   MADD_INTERVALL_ADD0000_CY<17>
+    SLICE_X15Y41.COUT    Tbyp                  0.130   INTERVALL_ADD0000<18>
+                                                       MADD_INTERVALL_ADD0000_CY<18>
+                                                       MADD_INTERVALL_ADD0000_CY<19>
+    SLICE_X15Y42.CIN     net (fanout=1)        0.000   MADD_INTERVALL_ADD0000_CY<19>
+    SLICE_X15Y42.COUT    Tbyp                  0.130   INTERVALL_ADD0000<20>
+                                                       MADD_INTERVALL_ADD0000_CY<20>
+                                                       MADD_INTERVALL_ADD0000_CY<21>
+    SLICE_X15Y43.CIN     net (fanout=1)        0.000   MADD_INTERVALL_ADD0000_CY<21>
+    SLICE_X15Y43.COUT    Tbyp                  0.130   INTERVALL_ADD0000<22>
+                                                       MADD_INTERVALL_ADD0000_CY<22>
+                                                       MADD_INTERVALL_ADD0000_CY<23>
+    SLICE_X15Y44.CIN     net (fanout=1)        0.000   MADD_INTERVALL_ADD0000_CY<23>
+    SLICE_X15Y44.COUT    Tbyp                  0.130   INTERVALL_ADD0000<24>
+                                                       MADD_INTERVALL_ADD0000_CY<24>
+                                                       MADD_INTERVALL_ADD0000_CY<25>
+    SLICE_X15Y45.CIN     net (fanout=1)        0.000   MADD_INTERVALL_ADD0000_CY<25>
+    SLICE_X15Y45.COUT    Tbyp                  0.130   INTERVALL_ADD0000<26>
+                                                       MADD_INTERVALL_ADD0000_CY<26>
+                                                       MADD_INTERVALL_ADD0000_CY<27>
+    SLICE_X15Y46.CIN     net (fanout=1)        0.000   MADD_INTERVALL_ADD0000_CY<27>
+    SLICE_X15Y46.COUT    Tbyp                  0.130   INTERVALL_ADD0000<28>
+                                                       MADD_INTERVALL_ADD0000_CY<28>
+                                                       MADD_INTERVALL_ADD0000_CY<29>
+    SLICE_X15Y47.CIN     net (fanout=1)        0.000   MADD_INTERVALL_ADD0000_CY<29>
+    SLICE_X15Y47.Y       Tciny                 0.664   INTERVALL_ADD0000<30>
+                                                       MADD_INTERVALL_ADD0000_CY<30>
+                                                       MADD_INTERVALL_ADD0000_XOR<31>
+    SLICE_X13Y41.G1      net (fanout=1)        0.836   INTERVALL_ADD0000<31>
+    SLICE_X13Y41.COUT    Topcyg                1.009   INTERVALL_CMP_EQ0000
+                                                       INTERVALL_CMP_EQ0000_WG_LUT<7>
+                                                       INTERVALL_CMP_EQ0000_WG_CY<7>
+    SLICE_X6Y26.F1       net (fanout=15)       1.988   INTERVALL_CMP_EQ0000
+    SLICE_X6Y26.X        Tilo                  0.601   INTERVALL_MUX0001<1>
+                                                       MMUX_INTERVALL_MUX000121
+    SLICE_X7Y21.G2       net (fanout=2)        0.782   INTERVALL_MUX0001<1>
+    SLICE_X7Y21.COUT     Topcyg                1.009   WERT_ADDSUB0002<0>
+                                                       MSUB_WERT_ADDSUB0002_LUT<1>
+                                                       MSUB_WERT_ADDSUB0002_CY<1>
+    SLICE_X7Y22.CIN      net (fanout=1)        0.000   MSUB_WERT_ADDSUB0002_CY<1>
+    SLICE_X7Y22.X        Tcinx                 0.489   WERT_ADDSUB0002<2>
+                                                       MSUB_WERT_ADDSUB0002_XOR<2>
+    SLICE_X4Y20.G4       net (fanout=21)       1.773   WERT_ADDSUB0002<2>
+    SLICE_X4Y20.X        Tif5x                 0.853   PUFFERDATEN<0>_KANAELE_0_MUX0000<10>2147
+                                                       PUFFERDATEN<0>_KANAELE_0_MUX0000<10>21472
+                                                       PUFFERDATEN<0>_KANAELE_0_MUX0000<10>2147_F5
+    SLICE_X5Y20.F3       net (fanout=2)        0.436   PUFFERDATEN<0>_KANAELE_0_MUX0000<10>2147
+    SLICE_X5Y20.X        Tif5x                 0.791   N67
+                                                       PUFFERDATEN<0>_KANAELE_0_MUX0000<10>2231_SW0_G
+                                                       PUFFERDATEN<0>_KANAELE_0_MUX0000<10>2231_SW0
+    SLICE_X4Y17.F1       net (fanout=1)        0.565   N67
+    SLICE_X4Y17.X        Tilo                  0.601   PUFFERDATEN<0>_KANAELE_0_MUX0000<10>2231
+                                                       PUFFERDATEN<0>_KANAELE_0_MUX0000<10>2231
+    SLICE_X7Y16.F2       net (fanout=1)        0.358   PUFFERDATEN<0>_KANAELE_0_MUX0000<10>2231
+    SLICE_X7Y16.X        Tilo                  0.562   PUFFERDATEN<0>_KANAELE_0_MUX0000<10>2472_2
+                                                       PUFFERDATEN<0>_KANAELE_0_MUX0000<10>2472_2
+    SLICE_X19Y15.G2      net (fanout=1)        0.630   PUFFERDATEN<0>_KANAELE_0_MUX0000<10>2472_2
+    SLICE_X19Y15.Y       Tilo                  0.561   PUFFERDATEN<0>.KANAELE_0_15
+                                                       PUFFERDATEN<0>_KANAELE_0_MUX0000<10>2472
+    SLICE_X27Y10.G3      net (fanout=10)       1.469   N7
+    SLICE_X27Y10.CLK     Tgck                  0.601   PUFFERDATEN<0>.KANAELE_0_11
+                                                       PUFFERDATEN<0>_KANAELE_0_MUX0000<12>1
+                                                       PUFFERDATEN<0>.KANAELE_0_11
+    -------------------------------------------------  ---------------------------
+    Total                                     20.342ns (11.082ns logic, 9.260ns route)
+                                                       (54.5% logic, 45.5% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     62.839ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               I_1 (FF)
+  Destination:          PUFFERDATEN<0>.KANAELE_0_11 (FF)
+  Requirement:          83.333ns
+  Data Path Delay:      20.305ns (Levels of Logic = 26)
+  Clock Path Skew:      -0.189ns (0.553 - 0.742)
+  Source Clock:         DEBUG_ADAT_TAKT_OBUF rising at 0.000ns
+  Destination Clock:    DEBUG_ADAT_TAKT_OBUF rising at 83.333ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: I_1 to PUFFERDATEN<0>.KANAELE_0_11
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X17Y33.YQ      Tcko                  0.524   I<0>
+                                                       I_1
+    SLICE_X15Y32.G4      net (fanout=2)        0.346   I<1>
+    SLICE_X15Y32.COUT    Topcyg                1.009   INTERVALL_ADD0000<0>
+                                                       I<1>_rt.1
+                                                       MADD_INTERVALL_ADD0000_CY<1>
+    SLICE_X15Y33.CIN     net (fanout=1)        0.000   MADD_INTERVALL_ADD0000_CY<1>
+    SLICE_X15Y33.COUT    Tbyp                  0.130   INTERVALL_ADD0000<2>
+                                                       MADD_INTERVALL_ADD0000_CY<2>
+                                                       MADD_INTERVALL_ADD0000_CY<3>
+    SLICE_X15Y34.CIN     net (fanout=1)        0.000   MADD_INTERVALL_ADD0000_CY<3>
+    SLICE_X15Y34.COUT    Tbyp                  0.130   INTERVALL_ADD0000<4>
+                                                       MADD_INTERVALL_ADD0000_CY<4>
+                                                       MADD_INTERVALL_ADD0000_CY<5>
+    SLICE_X15Y35.CIN     net (fanout=1)        0.000   MADD_INTERVALL_ADD0000_CY<5>
+    SLICE_X15Y35.COUT    Tbyp                  0.130   INTERVALL_ADD0000<6>
+                                                       MADD_INTERVALL_ADD0000_CY<6>
+                                                       MADD_INTERVALL_ADD0000_CY<7>
+    SLICE_X15Y36.CIN     net (fanout=1)        0.000   MADD_INTERVALL_ADD0000_CY<7>
+    SLICE_X15Y36.COUT    Tbyp                  0.130   INTERVALL_ADD0000<8>
+                                                       MADD_INTERVALL_ADD0000_CY<8>
+                                                       MADD_INTERVALL_ADD0000_CY<9>
+    SLICE_X15Y37.CIN     net (fanout=1)        0.000   MADD_INTERVALL_ADD0000_CY<9>
+    SLICE_X15Y37.COUT    Tbyp                  0.130   INTERVALL_ADD0000<10>
+                                                       MADD_INTERVALL_ADD0000_CY<10>
+                                                       MADD_INTERVALL_ADD0000_CY<11>
+    SLICE_X15Y38.CIN     net (fanout=1)        0.000   MADD_INTERVALL_ADD0000_CY<11>
+    SLICE_X15Y38.COUT    Tbyp                  0.130   INTERVALL_ADD0000<12>
+                                                       MADD_INTERVALL_ADD0000_CY<12>
+                                                       MADD_INTERVALL_ADD0000_CY<13>
+    SLICE_X15Y39.CIN     net (fanout=1)        0.000   MADD_INTERVALL_ADD0000_CY<13>
+    SLICE_X15Y39.COUT    Tbyp                  0.130   INTERVALL_ADD0000<14>
+                                                       MADD_INTERVALL_ADD0000_CY<14>
+                                                       MADD_INTERVALL_ADD0000_CY<15>
+    SLICE_X15Y40.CIN     net (fanout=1)        0.000   MADD_INTERVALL_ADD0000_CY<15>
+    SLICE_X15Y40.COUT    Tbyp                  0.130   INTERVALL_ADD0000<16>
+                                                       MADD_INTERVALL_ADD0000_CY<16>
+                                                       MADD_INTERVALL_ADD0000_CY<17>
+    SLICE_X15Y41.CIN     net (fanout=1)        0.000   MADD_INTERVALL_ADD0000_CY<17>
+    SLICE_X15Y41.COUT    Tbyp                  0.130   INTERVALL_ADD0000<18>
+                                                       MADD_INTERVALL_ADD0000_CY<18>
+                                                       MADD_INTERVALL_ADD0000_CY<19>
+    SLICE_X15Y42.CIN     net (fanout=1)        0.000   MADD_INTERVALL_ADD0000_CY<19>
+    SLICE_X15Y42.COUT    Tbyp                  0.130   INTERVALL_ADD0000<20>
+                                                       MADD_INTERVALL_ADD0000_CY<20>
+                                                       MADD_INTERVALL_ADD0000_CY<21>
+    SLICE_X15Y43.CIN     net (fanout=1)        0.000   MADD_INTERVALL_ADD0000_CY<21>
+    SLICE_X15Y43.COUT    Tbyp                  0.130   INTERVALL_ADD0000<22>
+                                                       MADD_INTERVALL_ADD0000_CY<22>
+                                                       MADD_INTERVALL_ADD0000_CY<23>
+    SLICE_X15Y44.CIN     net (fanout=1)        0.000   MADD_INTERVALL_ADD0000_CY<23>
+    SLICE_X15Y44.Y       Tciny                 0.664   INTERVALL_ADD0000<24>
+                                                       MADD_INTERVALL_ADD0000_CY<24>
+                                                       MADD_INTERVALL_ADD0000_XOR<25>
+    SLICE_X13Y38.G1      net (fanout=1)        0.864   INTERVALL_ADD0000<25>
+    SLICE_X13Y38.COUT    Topcyg                1.009   INTERVALL_CMP_EQ0000_WG_CY<1>
+                                                       INTERVALL_CMP_EQ0000_WG_LUT<1>
+                                                       INTERVALL_CMP_EQ0000_WG_CY<1>
+    SLICE_X13Y39.CIN     net (fanout=1)        0.000   INTERVALL_CMP_EQ0000_WG_CY<1>
+    SLICE_X13Y39.COUT    Tbyp                  0.130   INTERVALL_CMP_EQ0000_WG_CY<3>
+                                                       INTERVALL_CMP_EQ0000_WG_CY<2>
+                                                       INTERVALL_CMP_EQ0000_WG_CY<3>
+    SLICE_X13Y40.CIN     net (fanout=1)        0.000   INTERVALL_CMP_EQ0000_WG_CY<3>
+    SLICE_X13Y40.COUT    Tbyp                  0.130   INTERVALL_CMP_EQ0000_WG_CY<5>
+                                                       INTERVALL_CMP_EQ0000_WG_CY<4>
+                                                       INTERVALL_CMP_EQ0000_WG_CY<5>
+    SLICE_X13Y41.CIN     net (fanout=1)        0.000   INTERVALL_CMP_EQ0000_WG_CY<5>
+    SLICE_X13Y41.COUT    Tbyp                  0.130   INTERVALL_CMP_EQ0000
+                                                       INTERVALL_CMP_EQ0000_WG_CY<6>
+                                                       INTERVALL_CMP_EQ0000_WG_CY<7>
+    SLICE_X6Y26.F1       net (fanout=15)       1.988   INTERVALL_CMP_EQ0000
+    SLICE_X6Y26.X        Tilo                  0.601   INTERVALL_MUX0001<1>
+                                                       MMUX_INTERVALL_MUX000121
+    SLICE_X7Y21.G2       net (fanout=2)        0.782   INTERVALL_MUX0001<1>
+    SLICE_X7Y21.COUT     Topcyg                1.009   WERT_ADDSUB0002<0>
+                                                       MSUB_WERT_ADDSUB0002_LUT<1>
+                                                       MSUB_WERT_ADDSUB0002_CY<1>
+    SLICE_X7Y22.CIN      net (fanout=1)        0.000   MSUB_WERT_ADDSUB0002_CY<1>
+    SLICE_X7Y22.X        Tcinx                 0.489   WERT_ADDSUB0002<2>
+                                                       MSUB_WERT_ADDSUB0002_XOR<2>
+    SLICE_X4Y20.G4       net (fanout=21)       1.773   WERT_ADDSUB0002<2>
+    SLICE_X4Y20.X        Tif5x                 0.853   PUFFERDATEN<0>_KANAELE_0_MUX0000<10>2147
+                                                       PUFFERDATEN<0>_KANAELE_0_MUX0000<10>21472
+                                                       PUFFERDATEN<0>_KANAELE_0_MUX0000<10>2147_F5
+    SLICE_X5Y20.F3       net (fanout=2)        0.436   PUFFERDATEN<0>_KANAELE_0_MUX0000<10>2147
+    SLICE_X5Y20.X        Tif5x                 0.791   N67
+                                                       PUFFERDATEN<0>_KANAELE_0_MUX0000<10>2231_SW0_G
+                                                       PUFFERDATEN<0>_KANAELE_0_MUX0000<10>2231_SW0
+    SLICE_X4Y17.F1       net (fanout=1)        0.565   N67
+    SLICE_X4Y17.X        Tilo                  0.601   PUFFERDATEN<0>_KANAELE_0_MUX0000<10>2231
+                                                       PUFFERDATEN<0>_KANAELE_0_MUX0000<10>2231
+    SLICE_X7Y16.F2       net (fanout=1)        0.358   PUFFERDATEN<0>_KANAELE_0_MUX0000<10>2231
+    SLICE_X7Y16.X        Tilo                  0.562   PUFFERDATEN<0>_KANAELE_0_MUX0000<10>2472_2
+                                                       PUFFERDATEN<0>_KANAELE_0_MUX0000<10>2472_2
+    SLICE_X19Y15.G2      net (fanout=1)        0.630   PUFFERDATEN<0>_KANAELE_0_MUX0000<10>2472_2
+    SLICE_X19Y15.Y       Tilo                  0.561   PUFFERDATEN<0>.KANAELE_0_15
+                                                       PUFFERDATEN<0>_KANAELE_0_MUX0000<10>2472
+    SLICE_X27Y10.G3      net (fanout=10)       1.469   N7
+    SLICE_X27Y10.CLK     Tgck                  0.601   PUFFERDATEN<0>.KANAELE_0_11
+                                                       PUFFERDATEN<0>_KANAELE_0_MUX0000<12>1
+                                                       PUFFERDATEN<0>.KANAELE_0_11
+    -------------------------------------------------  ---------------------------
+    Total                                     20.305ns (11.094ns logic, 9.211ns route)
+                                                       (54.6% logic, 45.4% route)
+
+--------------------------------------------------------------------------------
+
+Hold Paths: TS_INST_ENKODERTESTCLOCK_CLKFX_BUF = PERIOD TIMEGRP
+        "INST_ENKODERTESTCLOCK_CLKFX_BUF" TS_in_Platinentakt / 0.24 HIGH 50%;
+--------------------------------------------------------------------------------
+
+Paths for end point PUFFERDATEN<1>.KANAELE_1_6 (SLICE_X27Y14.BY), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      0.855ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               PUFFERDATEN<0>.KANAELE_0_6 (FF)
+  Destination:          PUFFERDATEN<1>.KANAELE_1_6 (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      0.844ns (Levels of Logic = 0)
+  Clock Path Skew:      -0.011ns (0.006 - 0.017)
+  Source Clock:         DEBUG_ADAT_TAKT_OBUF rising at 83.333ns
+  Destination Clock:    DEBUG_ADAT_TAKT_OBUF rising at 83.333ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path: PUFFERDATEN<0>.KANAELE_0_6 to PUFFERDATEN<1>.KANAELE_1_6
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X27Y12.XQ      Tcko                  0.396   PUFFERDATEN<0>.KANAELE_0_6
+                                                       PUFFERDATEN<0>.KANAELE_0_6
+    SLICE_X27Y14.BY      net (fanout=3)        0.326   PUFFERDATEN<0>.KANAELE_0_6
+    SLICE_X27Y14.CLK     Tckdi       (-Th)    -0.122   PUFFERDATEN<1>.KANAELE_1_6
+                                                       PUFFERDATEN<1>.KANAELE_1_6
+    -------------------------------------------------  ---------------------------
+    Total                                      0.844ns (0.518ns logic, 0.326ns route)
+                                                       (61.4% logic, 38.6% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point INST_DYNAMISCHERADATPUFFER/ANFANG_0 (SLICE_X19Y20.BY), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      0.886ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               INST_DYNAMISCHERADATPUFFER/ANFANG_0 (FF)
+  Destination:          INST_DYNAMISCHERADATPUFFER/ANFANG_0 (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      0.886ns (Levels of Logic = 0)
+  Clock Path Skew:      0.000ns
+  Source Clock:         DEBUG_ADAT_TAKT_OBUF rising at 83.333ns
+  Destination Clock:    DEBUG_ADAT_TAKT_OBUF rising at 83.333ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path: INST_DYNAMISCHERADATPUFFER/ANFANG_0 to INST_DYNAMISCHERADATPUFFER/ANFANG_0
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X19Y20.YQ      Tcko                  0.419   INST_DYNAMISCHERADATPUFFER/ANFANG<0>
+                                                       INST_DYNAMISCHERADATPUFFER/ANFANG_0
+    SLICE_X19Y20.BY      net (fanout=2)        0.345   INST_DYNAMISCHERADATPUFFER/ANFANG<0>
+    SLICE_X19Y20.CLK     Tckdi       (-Th)    -0.122   INST_DYNAMISCHERADATPUFFER/ANFANG<0>
+                                                       INST_DYNAMISCHERADATPUFFER/ANFANG_0
+    -------------------------------------------------  ---------------------------
+    Total                                      0.886ns (0.541ns logic, 0.345ns route)
+                                                       (61.1% logic, 38.9% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point PUFFERDATEN<1>.KANAELE_1_19 (SLICE_X27Y13.BY), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      0.928ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               PUFFERDATEN<0>.KANAELE_0_19 (FF)
+  Destination:          PUFFERDATEN<1>.KANAELE_1_19 (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      0.925ns (Levels of Logic = 0)
+  Clock Path Skew:      -0.003ns (0.020 - 0.023)
+  Source Clock:         DEBUG_ADAT_TAKT_OBUF rising at 83.333ns
+  Destination Clock:    DEBUG_ADAT_TAKT_OBUF rising at 83.333ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path: PUFFERDATEN<0>.KANAELE_0_19 to PUFFERDATEN<1>.KANAELE_1_19
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X26Y10.YQ      Tcko                  0.477   PUFFERDATEN<0>.KANAELE_0_19
+                                                       PUFFERDATEN<0>.KANAELE_0_19
+    SLICE_X27Y13.BY      net (fanout=3)        0.326   PUFFERDATEN<0>.KANAELE_0_19
+    SLICE_X27Y13.CLK     Tckdi       (-Th)    -0.122   PUFFERDATEN<1>.KANAELE_1_19
+                                                       PUFFERDATEN<1>.KANAELE_1_19
+    -------------------------------------------------  ---------------------------
+    Total                                      0.925ns (0.599ns logic, 0.326ns route)
+                                                       (64.8% logic, 35.2% route)
+
+--------------------------------------------------------------------------------
+
+Component Switching Limit Checks: TS_INST_ENKODERTESTCLOCK_CLKFX_BUF = PERIOD TIMEGRP
+        "INST_ENKODERTESTCLOCK_CLKFX_BUF" TS_in_Platinentakt / 0.24 HIGH 50%;
+--------------------------------------------------------------------------------
+Slack: 82.005ns (period - (min low pulse limit / (low pulse / period)))
+  Period: 83.333ns
+  Low pulse: 41.666ns
+  Low pulse limit: 0.664ns (Tcl)
+  Physical resource: PUFFERDATEN<1>.KANAELE_1_14/CLK
+  Logical resource: PUFFERDATEN<1>.KANAELE_1_14/CK
+  Location pin: SLICE_X24Y17.CLK
+  Clock network: DEBUG_ADAT_TAKT_OBUF
+--------------------------------------------------------------------------------
+Slack: 82.005ns (period - (min high pulse limit / (high pulse / period)))
+  Period: 83.333ns
+  High pulse: 41.666ns
+  High pulse limit: 0.664ns (Tch)
+  Physical resource: PUFFERDATEN<1>.KANAELE_1_14/CLK
+  Logical resource: PUFFERDATEN<1>.KANAELE_1_14/CK
+  Location pin: SLICE_X24Y17.CLK
+  Clock network: DEBUG_ADAT_TAKT_OBUF
+--------------------------------------------------------------------------------
+Slack: 82.005ns (period - (min low pulse limit / (low pulse / period)))
+  Period: 83.333ns
+  Low pulse: 41.666ns
+  Low pulse limit: 0.664ns (Tcl)
+  Physical resource: PUFFERDATEN<1>.KANAELE_1_15/CLK
+  Logical resource: PUFFERDATEN<1>.KANAELE_1_15/CK
+  Location pin: SLICE_X22Y14.CLK
+  Clock network: DEBUG_ADAT_TAKT_OBUF
+--------------------------------------------------------------------------------
+
+
+Derived Constraint Report
+Derived Constraints for TS_in_Platinentakt
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+|                               |   Period    |       Actual Period       |      Timing Errors        |      Paths Analyzed       |
+|           Constraint          | Requirement |-------------+-------------|-------------+-------------|-------------+-------------|
+|                               |             |   Direct    | Derivative  |   Direct    | Derivative  |   Direct    | Derivative  |
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+|TS_in_Platinentakt             |     20.000ns|      6.000ns|      4.968ns|            0|            0|         1414|      5356060|
+| TS_INST_ENKODERTESTCLOCK_CLKFX|     83.333ns|     20.698ns|          N/A|            0|            0|      5356060|            0|
+| _BUF                          |             |             |             |             |             |             |             |
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+
+All constraints were met.
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Clock to Setup on destination clock IN_PLATINENTAKT
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+IN_PLATINENTAKT|   20.698|         |         |         |
+---------------+---------+---------+---------+---------+
+
+
+Timing summary:
+---------------
+
+Timing errors: 0  Score: 0  (Setup/Max: 0, Hold: 0)
+
+Constraints cover 5357474 paths, 0 nets, and 2451 connections
+
+Design statistics:
+   Minimum period:  20.698ns{1}   (Maximum frequency:  48.314MHz)
+
+
+------------------------------------Footnotes-----------------------------------
+1)  The minimum period statistic assumes all single cycle delays.
+
+Analysis completed Tue May 13 15:26:32 2014 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 111 MB
+
+
+

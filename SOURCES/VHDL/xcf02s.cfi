@@ -1,0 +1,11 @@
+# PROMGEN: Xilinx Prom Generator P.20131013
+# Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+SOFTWARE_VERSION P.20131013
+DATE            03/26/2015 - 12:20
+SOURCE          D:\ADAT DeEncoder\ADAT_De-Encoder\xcf02s.mcs
+DEVICE          XCF02S
+DATA_WIDTH      8
+FILL_DATA       0xFF
+SIGNATURE       0x01EF11BD
+START_ADDRESS   0x00000000 END_ADDRESS 0x00024831 DIRECTION_UP   "autosync.bit" 3s200avq100

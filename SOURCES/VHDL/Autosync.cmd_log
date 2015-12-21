@@ -1,0 +1,794 @@
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.syr" 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.syr" 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.syr" 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.syr" 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.syr" 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.syr" 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.syr" 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.syr" 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.syr" 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.syr" 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.syr" 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.syr" 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.syr" 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.syr" 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.syr" 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.syr" 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.syr" 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.syr" 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.syr" 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.syr" 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.syr" 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.syr" 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.syr" 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.syr" 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xXCS3200A-4VQ100_Autosync.ucf -p xc3s200a-vq100-5 "Autosync.ngc" Autosync.ngd  
+map -intstyle ise -p xc3s200a-vq100-5 -timing -logic_opt off -ol high -xe n -t 1 -register_duplication off -cm area -ir off -pr b -power off -o Autosync_map.ncd Autosync.ngd Autosync.pcf 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xXCS3200A-4VQ100_Autosync.ucf -p xc3s200a-vq100-5 "Autosync.ngc" Autosync.ngd  
+map -intstyle ise -p xc3s200a-vq100-5 -timing -logic_opt off -ol high -xe n -t 1 -register_duplication off -cm area -ir off -pr b -power off -o Autosync_map.ncd Autosync.ngd Autosync.pcf 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.syr" 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.syr" 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.syr" 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.syr" 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.syr" 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.syr" 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xXCS3200A-4VQ100_Autosync.ucf -p xc3s200a-vq100-5 "Autosync.ngc" Autosync.ngd  
+map -intstyle ise -p xc3s200a-vq100-5 -timing -logic_opt off -ol high -xe n -t 1 -register_duplication off -cm area -ir off -pr b -power off -o Autosync_map.ncd Autosync.ngd Autosync.pcf 
+par -w -intstyle ise -pl high -rl high -xe n -t 1 Autosync_map.ncd Autosync.ncd Autosync.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Autosync.twx Autosync.ncd -o Autosync.twr Autosync.pcf -ucf xXCS3200A-4VQ100_Autosync.ucf 
+map -intstyle ise -p xc3s200a-vq100-5 -timing -logic_opt on -ol high -xe n -t 1 -register_duplication off -cm area -detail -ir off -ignore_keep_hierarchy -pr b -bp -power off -o Autosync_map.ncd Autosync.ngd Autosync.pcf 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xXCS3200A-4VQ100_Autosync.ucf -p xc3s200a-vq100-5 "Autosync.ngc" Autosync.ngd  
+map -intstyle ise -p xc3s200a-vq100-5 -timing -logic_opt on -ol high -xe n -t 1 -register_duplication off -cm area -detail -ir off -ignore_keep_hierarchy -pr b -bp -power off -o Autosync_map.ncd Autosync.ngd Autosync.pcf 
+par -w -intstyle ise -pl high -rl high -xe n -t 1 Autosync_map.ncd Autosync.ncd Autosync.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Autosync.twx Autosync.ncd -o Autosync.twr Autosync.pcf -ucf xXCS3200A-4VQ100_Autosync.ucf 
+bitgen -intstyle ise -f Autosync.ut Autosync.ncd 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xXCS3200A-4VQ100_Autosync.ucf -p xc3s200a-vq100-5 "Autosync.ngc" Autosync.ngd  
+map -intstyle ise -p xc3s200a-vq100-5 -timing -logic_opt on -ol high -xe n -t 1 -register_duplication off -cm area -detail -ir off -ignore_keep_hierarchy -pr b -bp -power off -o Autosync_map.ncd Autosync.ngd Autosync.pcf 
+par -w -intstyle ise -pl high -rl high -xe n -t 1 Autosync_map.ncd Autosync.ncd Autosync.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Autosync.twx Autosync.ncd -o Autosync.twr Autosync.pcf -ucf xXCS3200A-4VQ100_Autosync.ucf 
+bitgen -intstyle ise -f Autosync.ut Autosync.ncd 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.syr" 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.syr" 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xXCS3200A-4VQ100_Autosync.ucf -p xc3s200a-vq100-5 "Autosync.ngc" Autosync.ngd  
+map -intstyle ise -p xc3s200a-vq100-5 -timing -logic_opt on -ol high -xe n -t 1 -register_duplication off -cm area -detail -ir off -ignore_keep_hierarchy -pr b -bp -power off -o Autosync_map.ncd Autosync.ngd Autosync.pcf 
+par -w -intstyle ise -pl high -rl high -xe n -t 1 Autosync_map.ncd Autosync.ncd Autosync.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Autosync.twx Autosync.ncd -o Autosync.twr Autosync.pcf -ucf xXCS3200A-4VQ100_Autosync.ucf 
+bitgen -intstyle ise -f Autosync.ut Autosync.ncd 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.syr" 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.syr" 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xXCS3200A-4VQ100_Autosync.ucf -p xc3s200a-vq100-5 "Autosync.ngc" Autosync.ngd  
+map -intstyle ise -p xc3s200a-vq100-5 -timing -logic_opt on -ol high -xe n -t 1 -register_duplication off -cm area -detail -ir off -ignore_keep_hierarchy -pr b -bp -power off -o Autosync_map.ncd Autosync.ngd Autosync.pcf 
+par -w -intstyle ise -pl high -rl high -xe n -t 1 Autosync_map.ncd Autosync.ncd Autosync.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Autosync.twx Autosync.ncd -o Autosync.twr Autosync.pcf -ucf xXCS3200A-4VQ100_Autosync.ucf 
+bitgen -intstyle ise -f Autosync.ut Autosync.ncd 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xXCS3200A-4VQ100_Autosync.ucf -p xc3s200a-vq100-5 "Autosync.ngc" Autosync.ngd  
+map -intstyle ise -p xc3s200a-vq100-5 -timing -logic_opt on -ol high -xe n -t 1 -register_duplication off -cm area -detail -ir off -ignore_keep_hierarchy -pr b -bp -power off -o Autosync_map.ncd Autosync.ngd Autosync.pcf 
+par -w -intstyle ise -pl high -rl high -xe n -t 1 Autosync_map.ncd Autosync.ncd Autosync.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Autosync.twx Autosync.ncd -o Autosync.twr Autosync.pcf -ucf xXCS3200A-4VQ100_Autosync.ucf 
+bitgen -intstyle ise -f Autosync.ut Autosync.ncd 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.syr" 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xXCS3200A-4VQ100_Autosync.ucf -p xc3s200a-vq100-5 "Autosync.ngc" Autosync.ngd  
+map -intstyle ise -p xc3s200a-vq100-5 -timing -logic_opt on -ol high -xe n -t 1 -register_duplication off -cm area -detail -ir off -ignore_keep_hierarchy -pr b -bp -power off -o Autosync_map.ncd Autosync.ngd Autosync.pcf 
+par -w -intstyle ise -pl high -rl high -xe n -t 1 Autosync_map.ncd Autosync.ncd Autosync.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Autosync.twx Autosync.ncd -o Autosync.twr Autosync.pcf -ucf xXCS3200A-4VQ100_Autosync.ucf 
+bitgen -intstyle ise -f Autosync.ut Autosync.ncd 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xXCS3200A-4VQ100_Autosync.ucf -p xc3s200a-vq100-5 "Autosync.ngc" Autosync.ngd  
+map -intstyle ise -p xc3s200a-vq100-5 -timing -logic_opt on -ol high -xe n -t 1 -register_duplication off -cm area -detail -ir off -ignore_keep_hierarchy -pr b -bp -power off -o Autosync_map.ncd Autosync.ngd Autosync.pcf 
+par -w -intstyle ise -pl high -rl high -xe n -t 1 Autosync_map.ncd Autosync.ncd Autosync.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Autosync.twx Autosync.ncd -o Autosync.twr Autosync.pcf -ucf xXCS3200A-4VQ100_Autosync.ucf 
+bitgen -intstyle ise -f Autosync.ut Autosync.ncd 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.syr" 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xXCS3200A-4VQ100_Autosync.ucf -p xc3s200a-vq100-5 "Autosync.ngc" Autosync.ngd  
+map -intstyle ise -p xc3s200a-vq100-5 -timing -logic_opt on -ol high -xe n -t 1 -register_duplication off -cm area -detail -ir off -ignore_keep_hierarchy -pr b -bp -power off -o Autosync_map.ncd Autosync.ngd Autosync.pcf 
+par -w -intstyle ise -pl high -rl high -xe n -t 1 Autosync_map.ncd Autosync.ncd Autosync.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Autosync.twx Autosync.ncd -o Autosync.twr Autosync.pcf -ucf xXCS3200A-4VQ100_Autosync.ucf 
+bitgen -intstyle ise -f Autosync.ut Autosync.ncd 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.syr" 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xXCS3200A-4VQ100_Autosync.ucf -p xc3s200a-vq100-5 "Autosync.ngc" Autosync.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xXCS3200A-4VQ100_Autosync.ucf -p xc3s200a-vq100-5 "Autosync.ngc" Autosync.ngd  
+map -intstyle ise -p xc3s200a-vq100-5 -timing -logic_opt on -ol high -xe n -t 1 -register_duplication off -cm area -detail -ir off -ignore_keep_hierarchy -pr b -bp -power off -o Autosync_map.ncd Autosync.ngd Autosync.pcf 
+par -w -intstyle ise -pl high -rl high -xe n -t 1 Autosync_map.ncd Autosync.ncd Autosync.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Autosync.twx Autosync.ncd -o Autosync.twr Autosync.pcf -ucf xXCS3200A-4VQ100_Autosync.ucf 
+bitgen -intstyle ise -f Autosync.ut Autosync.ncd 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xXCS3200A-4VQ100_Autosync.ucf -p xc3s200a-vq100-5 "Autosync.ngc" Autosync.ngd  
+map -intstyle ise -p xc3s200a-vq100-5 -timing -logic_opt on -ol high -xe n -t 1 -register_duplication off -cm area -detail -ir off -ignore_keep_hierarchy -pr b -bp -power off -o Autosync_map.ncd Autosync.ngd Autosync.pcf 
+par -w -intstyle ise -pl high -rl high -xe n -t 1 Autosync_map.ncd Autosync.ncd Autosync.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Autosync.twx Autosync.ncd -o Autosync.twr Autosync.pcf -ucf xXCS3200A-4VQ100_Autosync.ucf 
+bitgen -intstyle ise -f Autosync.ut Autosync.ncd 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xXCS3200A-4VQ100_Autosync.ucf -p xc3s200a-vq100-5 "Autosync.ngc" Autosync.ngd  
+map -intstyle ise -p xc3s200a-vq100-5 -timing -logic_opt on -ol high -xe n -t 1 -register_duplication off -cm area -detail -ir off -ignore_keep_hierarchy -pr b -bp -power off -o Autosync_map.ncd Autosync.ngd Autosync.pcf 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xXCS3200A-4VQ100_Autosync.ucf -p xc3s200a-vq100-5 "Autosync.ngc" Autosync.ngd  
+map -intstyle ise -p xc3s200a-vq100-5 -timing -logic_opt on -ol high -xe n -t 1 -register_duplication off -cm area -detail -ir off -ignore_keep_hierarchy -pr b -bp -power off -o Autosync_map.ncd Autosync.ngd Autosync.pcf 
+par -w -intstyle ise -pl high -rl high -xe n -t 1 Autosync_map.ncd Autosync.ncd Autosync.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Autosync.twx Autosync.ncd -o Autosync.twr Autosync.pcf -ucf xXCS3200A-4VQ100_Autosync.ucf 
+bitgen -intstyle ise -f Autosync.ut Autosync.ncd 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.syr" 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.syr" 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.syr" 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xXCS3200A-4VQ100_Autosync.ucf -p xc3s200a-vq100-5 "Autosync.ngc" Autosync.ngd  
+map -intstyle ise -p xc3s200a-vq100-5 -timing -logic_opt on -ol high -xe n -t 1 -register_duplication off -cm area -detail -ir off -ignore_keep_hierarchy -pr b -bp -power off -o Autosync_map.ncd Autosync.ngd Autosync.pcf 
+par -w -intstyle ise -pl high -rl high -xe n -t 1 Autosync_map.ncd Autosync.ncd Autosync.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Autosync.twx Autosync.ncd -o Autosync.twr Autosync.pcf -ucf xXCS3200A-4VQ100_Autosync.ucf 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.syr" 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.syr" 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.syr" 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.syr" 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xXCS3200A-4VQ100_Autosync.ucf -p xc3s200a-vq100-5 "Autosync.ngc" Autosync.ngd  
+map -intstyle ise -p xc3s200a-vq100-5 -timing -logic_opt on -ol high -xe n -t 1 -register_duplication off -cm area -detail -ir off -ignore_keep_hierarchy -pr b -bp -power off -o Autosync_map.ncd Autosync.ngd Autosync.pcf 
+par -w -intstyle ise -pl high -rl high -xe n -t 1 Autosync_map.ncd Autosync.ncd Autosync.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Autosync.twx Autosync.ncd -o Autosync.twr Autosync.pcf -ucf xXCS3200A-4VQ100_Autosync.ucf 
+bitgen -intstyle ise -f Autosync.ut Autosync.ncd 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.syr" 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xXCS3200A-4VQ100_Autosync.ucf -p xc3s200a-vq100-5 "Autosync.ngc" Autosync.ngd  
+map -intstyle ise -p xc3s200a-vq100-5 -timing -logic_opt on -ol high -xe n -t 1 -register_duplication off -cm area -detail -ir off -ignore_keep_hierarchy -pr b -bp -power off -o Autosync_map.ncd Autosync.ngd Autosync.pcf 
+par -w -intstyle ise -pl high -rl high -xe n -t 1 Autosync_map.ncd Autosync.ncd Autosync.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Autosync.twx Autosync.ncd -o Autosync.twr Autosync.pcf -ucf xXCS3200A-4VQ100_Autosync.ucf 
+bitgen -intstyle ise -f Autosync.ut Autosync.ncd 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xXCS3200A-4VQ100_Autosync.ucf -p xc3s200a-vq100-5 "Autosync.ngc" Autosync.ngd  
+map -intstyle ise -p xc3s200a-vq100-5 -timing -logic_opt on -ol high -xe n -t 1 -register_duplication off -cm area -detail -ir off -ignore_keep_hierarchy -pr b -bp -power off -o Autosync_map.ncd Autosync.ngd Autosync.pcf 
+par -w -intstyle ise -pl high -rl high -xe n -t 1 Autosync_map.ncd Autosync.ncd Autosync.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Autosync.twx Autosync.ncd -o Autosync.twr Autosync.pcf -ucf xXCS3200A-4VQ100_Autosync.ucf 
+bitgen -intstyle ise -f Autosync.ut Autosync.ncd 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xXCS3200A-4VQ100_Autosync.ucf -p xc3s200a-vq100-5 "Autosync.ngc" Autosync.ngd  
+map -intstyle ise -p xc3s200a-vq100-5 -timing -logic_opt on -ol high -xe n -t 1 -register_duplication off -cm area -detail -ir off -ignore_keep_hierarchy -pr b -bp -power off -o Autosync_map.ncd Autosync.ngd Autosync.pcf 
+par -w -intstyle ise -pl high -rl high -xe n -t 1 Autosync_map.ncd Autosync.ncd Autosync.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Autosync.twx Autosync.ncd -o Autosync.twr Autosync.pcf -ucf xXCS3200A-4VQ100_Autosync.ucf 
+bitgen -intstyle ise -f Autosync.ut Autosync.ncd 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xXCS3200A-4VQ100_Autosync.ucf -p xc3s200a-vq100-5 "Autosync.ngc" Autosync.ngd  
+map -intstyle ise -p xc3s200a-vq100-5 -timing -logic_opt on -ol high -xe n -t 1 -register_duplication off -cm area -detail -ir off -ignore_keep_hierarchy -pr b -bp -power off -o Autosync_map.ncd Autosync.ngd Autosync.pcf 
+par -w -intstyle ise -pl high -rl high -xe n -t 1 Autosync_map.ncd Autosync.ncd Autosync.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Autosync.twx Autosync.ncd -o Autosync.twr Autosync.pcf -ucf xXCS3200A-4VQ100_Autosync.ucf 
+bitgen -intstyle ise -f Autosync.ut Autosync.ncd 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xXCS3200A-4VQ100_Autosync.ucf -p xc3s200a-vq100-5 "Autosync.ngc" Autosync.ngd  
+map -intstyle ise -p xc3s200a-vq100-5 -timing -logic_opt on -ol high -xe n -t 1 -register_duplication off -cm area -detail -ir off -ignore_keep_hierarchy -pr b -bp -power off -o Autosync_map.ncd Autosync.ngd Autosync.pcf 
+par -w -intstyle ise -pl high -rl high -xe n -t 1 Autosync_map.ncd Autosync.ncd Autosync.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Autosync.twx Autosync.ncd -o Autosync.twr Autosync.pcf -ucf xXCS3200A-4VQ100_Autosync.ucf 
+bitgen -intstyle ise -f Autosync.ut Autosync.ncd 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xXCS3200A-4VQ100_Autosync.ucf -p xc3s200a-vq100-5 "Autosync.ngc" Autosync.ngd  
+map -intstyle ise -p xc3s200a-vq100-5 -timing -logic_opt on -ol high -xe n -t 1 -register_duplication off -cm area -detail -ir off -ignore_keep_hierarchy -pr b -bp -power off -o Autosync_map.ncd Autosync.ngd Autosync.pcf 
+par -w -intstyle ise -pl high -rl high -xe n -t 1 Autosync_map.ncd Autosync.ncd Autosync.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Autosync.twx Autosync.ncd -o Autosync.twr Autosync.pcf -ucf xXCS3200A-4VQ100_Autosync.ucf 
+bitgen -intstyle ise -f Autosync.ut Autosync.ncd 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xXCS3200A-4VQ100_Autosync.ucf -p xc3s200a-vq100-4 "Autosync.ngc" Autosync.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xXCS3200A-4VQ100_Autosync.ucf -p xc3s200a-vq100-4 "Autosync.ngc" Autosync.ngd  
+map -intstyle ise -p xc3s200a-vq100-4 -timing -logic_opt on -ol high -xe n -t 1 -register_duplication off -cm area -detail -ir off -ignore_keep_hierarchy -pr b -bp -power off -o Autosync_map.ncd Autosync.ngd Autosync.pcf 
+par -w -intstyle ise -pl high -rl high -xe n -t 1 Autosync_map.ncd Autosync.ncd Autosync.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Autosync.twx Autosync.ncd -o Autosync.twr Autosync.pcf -ucf xXCS3200A-4VQ100_Autosync.ucf 
+bitgen -intstyle ise -f Autosync.ut Autosync.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xXCS3200A-4VQ100_Autosync.ucf -p xc3s200a-vq100-4 "Autosync.ngc" Autosync.ngd  
+map -intstyle ise -p xc3s200a-vq100-4 -timing -logic_opt on -ol high -xe n -t 1 -register_duplication off -cm area -detail -ir off -ignore_keep_hierarchy -pr b -bp -power off -o Autosync_map.ncd Autosync.ngd Autosync.pcf 
+par -w -intstyle ise -pl high -rl high -xe n -t 1 Autosync_map.ncd Autosync.ncd Autosync.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Autosync.twx Autosync.ncd -o Autosync.twr Autosync.pcf -ucf xXCS3200A-4VQ100_Autosync.ucf 
+bitgen -intstyle ise -f Autosync.ut Autosync.ncd 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.syr" 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.syr" 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.syr" 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xXCS3200A-4VQ100_Autosync.ucf -p xc3s200a-vq100-4 "Autosync.ngc" Autosync.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xXCS3200A-4VQ100_Autosync.ucf -p xc3s200a-vq100-4 "Autosync.ngc" Autosync.ngd  
+map -intstyle ise -p xc3s200a-vq100-4 -timing -logic_opt on -ol high -xe n -t 1 -register_duplication off -cm area -detail -ir off -ignore_keep_hierarchy -pr b -bp -power off -o Autosync_map.ncd Autosync.ngd Autosync.pcf 
+par -w -intstyle ise -pl high -rl high -xe n -t 1 Autosync_map.ncd Autosync.ncd Autosync.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Autosync.twx Autosync.ncd -o Autosync.twr Autosync.pcf -ucf xXCS3200A-4VQ100_Autosync.ucf 
+bitgen -intstyle ise -f Autosync.ut Autosync.ncd 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.syr" 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.syr" 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.syr" 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xXCS3200A-4VQ100_Autosync.ucf -p xc3s200a-vq100-4 "Autosync.ngc" Autosync.ngd  
+map -intstyle ise -p xc3s200a-vq100-4 -timing -logic_opt on -ol high -xe n -t 1 -register_duplication off -cm area -detail -ir off -ignore_keep_hierarchy -pr b -bp -power off -o Autosync_map.ncd Autosync.ngd Autosync.pcf 
+par -w -intstyle ise -pl high -rl high -xe n -t 1 Autosync_map.ncd Autosync.ncd Autosync.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Autosync.twx Autosync.ncd -o Autosync.twr Autosync.pcf -ucf xXCS3200A-4VQ100_Autosync.ucf 
+bitgen -intstyle ise -f Autosync.ut Autosync.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xXCS3200A-4VQ100_Autosync.ucf -p xc3s200a-vq100-4 "Autosync.ngc" Autosync.ngd  
+map -intstyle ise -p xc3s200a-vq100-4 -timing -logic_opt on -ol high -xe n -t 1 -register_duplication off -cm area -detail -ir off -ignore_keep_hierarchy -pr b -bp -power off -o Autosync_map.ncd Autosync.ngd Autosync.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xXCS3200A-4VQ100_Autosync.ucf -p xc3s200a-vq100-4 "Autosync.ngc" Autosync.ngd  
+map -intstyle ise -p xc3s200a-vq100-4 -timing -logic_opt on -ol high -xe n -t 1 -register_duplication off -cm area -detail -ir off -ignore_keep_hierarchy -pr b -bp -power off -o Autosync_map.ncd Autosync.ngd Autosync.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xXCS3200A-4VQ100_Autosync.ucf -p xc3s200a-vq100-4 "Autosync.ngc" Autosync.ngd  
+map -intstyle ise -p xc3s200a-vq100-4 -timing -logic_opt on -ol high -xe n -t 1 -register_duplication off -cm area -detail -ir off -ignore_keep_hierarchy -pr b -bp -power off -o Autosync_map.ncd Autosync.ngd Autosync.pcf 
+par -w -intstyle ise -pl high -rl high -xe n -t 1 Autosync_map.ncd Autosync.ncd Autosync.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Autosync.twx Autosync.ncd -o Autosync.twr Autosync.pcf -ucf xXCS3200A-4VQ100_Autosync.ucf 
+bitgen -intstyle ise -f Autosync.ut Autosync.ncd 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.syr" 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xXCS3200A-4VQ100_Autosync.ucf -p xc3s200a-vq100-4 "Autosync.ngc" Autosync.ngd  
+map -intstyle ise -p xc3s200a-vq100-4 -timing -logic_opt on -ol high -xe n -t 1 -register_duplication off -cm area -detail -ir off -ignore_keep_hierarchy -pr b -bp -power off -o Autosync_map.ncd Autosync.ngd Autosync.pcf 
+par -w -intstyle ise -pl high -rl high -xe n -t 1 Autosync_map.ncd Autosync.ncd Autosync.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Autosync.twx Autosync.ncd -o Autosync.twr Autosync.pcf -ucf xXCS3200A-4VQ100_Autosync.ucf 
+bitgen -intstyle ise -f Autosync.ut Autosync.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xXCS3200A-4VQ100_Autosync.ucf -p xc3s200a-vq100-4 "Autosync.ngc" Autosync.ngd  
+map -intstyle ise -p xc3s200a-vq100-4 -timing -logic_opt on -ol high -xe n -t 1 -register_duplication off -cm area -detail -ir off -ignore_keep_hierarchy -pr b -bp -power off -o Autosync_map.ncd Autosync.ngd Autosync.pcf 
+par -w -intstyle ise -pl high -rl high -xe n -t 1 Autosync_map.ncd Autosync.ncd Autosync.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Autosync.twx Autosync.ncd -o Autosync.twr Autosync.pcf -ucf xXCS3200A-4VQ100_Autosync.ucf 
+bitgen -intstyle ise -f Autosync.ut Autosync.ncd 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xXCS3200A-4VQ100_Autosync.ucf -p xc3s200a-vq100-4 "Autosync.ngc" Autosync.ngd  
+map -intstyle ise -p xc3s200a-vq100-4 -timing -logic_opt on -ol high -xe n -t 1 -register_duplication off -cm area -detail -ir off -ignore_keep_hierarchy -pr b -bp -power off -o Autosync_map.ncd Autosync.ngd Autosync.pcf 
+par -w -intstyle ise -pl high -rl high -xe n -t 1 Autosync_map.ncd Autosync.ncd Autosync.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Autosync.twx Autosync.ncd -o Autosync.twr Autosync.pcf -ucf xXCS3200A-4VQ100_Autosync.ucf 
+bitgen -intstyle ise -f Autosync.ut Autosync.ncd 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xXCS3200A-4VQ100_Autosync.ucf -p xc3s200a-vq100-4 "Autosync.ngc" Autosync.ngd  
+map -intstyle ise -p xc3s200a-vq100-4 -timing -logic_opt on -ol high -xe n -t 1 -register_duplication off -cm area -detail -ir off -ignore_keep_hierarchy -pr b -bp -power off -o Autosync_map.ncd Autosync.ngd Autosync.pcf 
+par -w -intstyle ise -pl high -rl high -xe n -t 1 Autosync_map.ncd Autosync.ncd Autosync.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Autosync.twx Autosync.ncd -o Autosync.twr Autosync.pcf -ucf xXCS3200A-4VQ100_Autosync.ucf 
+bitgen -intstyle ise -f Autosync.ut Autosync.ncd 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xXCS3200A-4VQ100_Autosync.ucf -p xc3s200a-vq100-4 "Autosync.ngc" Autosync.ngd  
+map -intstyle ise -p xc3s200a-vq100-4 -timing -logic_opt on -ol high -xe n -t 1 -register_duplication off -cm area -detail -ir off -ignore_keep_hierarchy -pr b -bp -power off -o Autosync_map.ncd Autosync.ngd Autosync.pcf 
+par -w -intstyle ise -pl high -rl high -xe n -t 1 Autosync_map.ncd Autosync.ncd Autosync.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Autosync.twx Autosync.ncd -o Autosync.twr Autosync.pcf -ucf xXCS3200A-4VQ100_Autosync.ucf 
+bitgen -intstyle ise -f Autosync.ut Autosync.ncd 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xXCS3200A-4VQ100_Autosync.ucf -p xc3s200a-vq100-4 "Autosync.ngc" Autosync.ngd  
+map -intstyle ise -p xc3s200a-vq100-4 -timing -logic_opt on -ol high -xe n -t 1 -register_duplication off -cm area -detail -ir off -ignore_keep_hierarchy -pr b -bp -power off -o Autosync_map.ncd Autosync.ngd Autosync.pcf 
+par -w -intstyle ise -pl high -rl high -xe n -t 1 Autosync_map.ncd Autosync.ncd Autosync.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Autosync.twx Autosync.ncd -o Autosync.twr Autosync.pcf -ucf xXCS3200A-4VQ100_Autosync.ucf 
+bitgen -intstyle ise -f Autosync.ut Autosync.ncd 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xXCS3200A-4VQ100_Autosync.ucf -p xc3s200a-vq100-4 "Autosync.ngc" Autosync.ngd  
+map -intstyle ise -p xc3s200a-vq100-4 -timing -logic_opt on -ol high -xe n -t 1 -register_duplication off -cm area -detail -ir off -ignore_keep_hierarchy -pr b -bp -power off -o Autosync_map.ncd Autosync.ngd Autosync.pcf 
+par -w -intstyle ise -pl high -rl high -xe n -t 1 Autosync_map.ncd Autosync.ncd Autosync.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Autosync.twx Autosync.ncd -o Autosync.twr Autosync.pcf -ucf xXCS3200A-4VQ100_Autosync.ucf 
+bitgen -intstyle ise -f Autosync.ut Autosync.ncd 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.syr" 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xXCS3200A-4VQ100_Autosync.ucf -p xc3s200a-vq100-4 "Autosync.ngc" Autosync.ngd  
+map -intstyle ise -p xc3s200a-vq100-4 -timing -logic_opt on -ol high -xe n -t 1 -register_duplication off -cm area -detail -ir off -ignore_keep_hierarchy -pr b -bp -power off -o Autosync_map.ncd Autosync.ngd Autosync.pcf 
+par -w -intstyle ise -pl high -rl high -xe n -t 1 Autosync_map.ncd Autosync.ncd Autosync.pcf 
+bitgen -intstyle ise -f Autosync.ut Autosync.ncd 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xXCS3200A-4VQ100_Autosync.ucf -p xc3s200a-vq100-4 "Autosync.ngc" Autosync.ngd  
+map -intstyle ise -p xc3s200a-vq100-4 -timing -logic_opt on -ol high -xe n -t 1 -register_duplication off -cm area -detail -ir off -ignore_keep_hierarchy -pr b -bp -power off -o Autosync_map.ncd Autosync.ngd Autosync.pcf 
+par -w -intstyle ise -pl high -rl high -xe n -t 1 Autosync_map.ncd Autosync.ncd Autosync.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Autosync.twx Autosync.ncd -o Autosync.twr Autosync.pcf -ucf xXCS3200A-4VQ100_Autosync.ucf 
+bitgen -intstyle ise -f Autosync.ut Autosync.ncd 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.syr" 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xXCS3200A-4VQ100_Autosync.ucf -p xc3s200a-vq100-4 "Autosync.ngc" Autosync.ngd  
+map -intstyle ise -p xc3s200a-vq100-4 -timing -logic_opt on -ol high -xe n -t 1 -register_duplication off -cm area -detail -ir off -ignore_keep_hierarchy -pr b -bp -power off -o Autosync_map.ncd Autosync.ngd Autosync.pcf 
+par -w -intstyle ise -pl high -rl high -xe n -t 1 Autosync_map.ncd Autosync.ncd Autosync.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Autosync.twx Autosync.ncd -o Autosync.twr Autosync.pcf -ucf xXCS3200A-4VQ100_Autosync.ucf 
+bitgen -intstyle ise -f Autosync.ut Autosync.ncd 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xXCS3200A-4VQ100_Autosync.ucf -p xc3s200a-vq100-4 "Autosync.ngc" Autosync.ngd  
+map -intstyle ise -p xc3s200a-vq100-4 -timing -logic_opt on -ol high -xe n -t 1 -register_duplication off -cm area -detail -ir off -ignore_keep_hierarchy -pr b -bp -power off -o Autosync_map.ncd Autosync.ngd Autosync.pcf 
+par -w -intstyle ise -pl high -rl high -xe n -t 1 Autosync_map.ncd Autosync.ncd Autosync.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Autosync.twx Autosync.ncd -o Autosync.twr Autosync.pcf -ucf xXCS3200A-4VQ100_Autosync.ucf 
+bitgen -intstyle ise -f Autosync.ut Autosync.ncd 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xXCS3200A-4VQ100_Autosync.ucf -p xc3s200a-vq100-4 "Autosync.ngc" Autosync.ngd  
+map -intstyle ise -p xc3s200a-vq100-4 -timing -logic_opt on -ol high -xe n -t 1 -register_duplication off -cm area -detail -ir off -ignore_keep_hierarchy -pr b -bp -power off -o Autosync_map.ncd Autosync.ngd Autosync.pcf 
+par -w -intstyle ise -pl high -rl high -xe n -t 1 Autosync_map.ncd Autosync.ncd Autosync.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Autosync.twx Autosync.ncd -o Autosync.twr Autosync.pcf -ucf xXCS3200A-4VQ100_Autosync.ucf 
+bitgen -intstyle ise -f Autosync.ut Autosync.ncd 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.syr" 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.syr" 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.syr" 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.syr" 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.syr" 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xXCS3200A-4VQ100_Autosync.ucf -p xc3s200a-vq100-4 "Autosync.ngc" Autosync.ngd  
+map -intstyle ise -p xc3s200a-vq100-4 -timing -logic_opt on -ol high -xe n -t 1 -register_duplication off -cm area -detail -ir off -ignore_keep_hierarchy -pr b -bp -power off -o Autosync_map.ncd Autosync.ngd Autosync.pcf 
+par -w -intstyle ise -pl high -rl high -xe n -t 1 Autosync_map.ncd Autosync.ncd Autosync.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Autosync.twx Autosync.ncd -o Autosync.twr Autosync.pcf -ucf xXCS3200A-4VQ100_Autosync.ucf 
+bitgen -intstyle ise -f Autosync.ut Autosync.ncd 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xXCS3200A-4VQ100_Autosync.ucf -p xc3s200a-vq100-4 "Autosync.ngc" Autosync.ngd  
+map -intstyle ise -p xc3s200a-vq100-4 -timing -logic_opt on -ol high -xe n -t 1 -register_duplication off -cm area -detail -ir off -ignore_keep_hierarchy -pr b -bp -power off -o Autosync_map.ncd Autosync.ngd Autosync.pcf 
+par -w -intstyle ise -pl high -rl high -xe n -t 1 Autosync_map.ncd Autosync.ncd Autosync.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Autosync.twx Autosync.ncd -o Autosync.twr Autosync.pcf -ucf xXCS3200A-4VQ100_Autosync.ucf 
+bitgen -intstyle ise -f Autosync.ut Autosync.ncd 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.syr" 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.syr" 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xXCS3200A-4VQ100_Autosync.ucf -p xc3s200a-vq100-4 "Autosync.ngc" Autosync.ngd  
+map -intstyle ise -p xc3s200a-vq100-4 -timing -logic_opt on -ol high -xe n -t 1 -register_duplication off -cm area -detail -ir off -ignore_keep_hierarchy -pr b -bp -power off -o Autosync_map.ncd Autosync.ngd Autosync.pcf 
+par -w -intstyle ise -pl high -rl high -xe n -t 1 Autosync_map.ncd Autosync.ncd Autosync.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Autosync.twx Autosync.ncd -o Autosync.twr Autosync.pcf -ucf xXCS3200A-4VQ100_Autosync.ucf 
+bitgen -intstyle ise -f Autosync.ut Autosync.ncd 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xXCS3200A-4VQ100_Autosync.ucf -p xc3s200a-vq100-4 "Autosync.ngc" Autosync.ngd  
+map -intstyle ise -p xc3s200a-vq100-4 -timing -logic_opt on -ol high -xe n -t 1 -register_duplication off -cm area -detail -ir off -ignore_keep_hierarchy -pr b -bp -power off -o Autosync_map.ncd Autosync.ngd Autosync.pcf 
+par -w -intstyle ise -pl high -rl high -xe n -t 1 Autosync_map.ncd Autosync.ncd Autosync.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Autosync.twx Autosync.ncd -o Autosync.twr Autosync.pcf -ucf xXCS3200A-4VQ100_Autosync.ucf 
+bitgen -intstyle ise -f Autosync.ut Autosync.ncd 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xXCS3200A-4VQ100_Autosync.ucf -p xc3s200a-vq100-4 "Autosync.ngc" Autosync.ngd  
+map -intstyle ise -p xc3s200a-vq100-4 -timing -logic_opt on -ol high -xe n -t 1 -register_duplication off -cm area -detail -ir off -ignore_keep_hierarchy -pr b -bp -power off -o Autosync_map.ncd Autosync.ngd Autosync.pcf 
+par -w -intstyle ise -pl high -rl high -xe n -t 1 Autosync_map.ncd Autosync.ncd Autosync.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Autosync.twx Autosync.ncd -o Autosync.twr Autosync.pcf -ucf xXCS3200A-4VQ100_Autosync.ucf 
+bitgen -intstyle ise -f Autosync.ut Autosync.ncd 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xXCS3200A-4VQ100_Autosync.ucf -p xc3s200a-vq100-4 "Autosync.ngc" Autosync.ngd  
+map -intstyle ise -p xc3s200a-vq100-4 -timing -logic_opt on -ol high -xe n -t 1 -register_duplication off -cm area -detail -ir off -ignore_keep_hierarchy -pr b -bp -power off -o Autosync_map.ncd Autosync.ngd Autosync.pcf 
+par -w -intstyle ise -pl high -rl high -xe n -t 1 Autosync_map.ncd Autosync.ncd Autosync.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Autosync.twx Autosync.ncd -o Autosync.twr Autosync.pcf -ucf xXCS3200A-4VQ100_Autosync.ucf 
+bitgen -intstyle ise -f Autosync.ut Autosync.ncd 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.syr" 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.syr" 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.syr" 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xXCS3200A-4VQ100_Autosync.ucf -p xc3s200a-vq100-4 "Autosync.ngc" Autosync.ngd  
+map -intstyle ise -p xc3s200a-vq100-4 -timing -logic_opt on -ol high -xe n -t 1 -register_duplication off -cm area -detail -ir off -ignore_keep_hierarchy -pr b -bp -power off -o Autosync_map.ncd Autosync.ngd Autosync.pcf 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.syr" 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xXCS3200A-4VQ100_Autosync.ucf -p xc3s200a-vq100-4 "Autosync.ngc" Autosync.ngd  
+map -intstyle ise -p xc3s200a-vq100-4 -timing -logic_opt on -ol high -xe n -t 1 -register_duplication off -cm area -detail -ir off -ignore_keep_hierarchy -pr b -bp -power off -o Autosync_map.ncd Autosync.ngd Autosync.pcf 
+par -w -intstyle ise -pl high -rl high -xe n -t 1 Autosync_map.ncd Autosync.ncd Autosync.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Autosync.twx Autosync.ncd -o Autosync.twr Autosync.pcf -ucf xXCS3200A-4VQ100_Autosync.ucf 
+bitgen -intstyle ise -f Autosync.ut Autosync.ncd 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xXCS3200A-4VQ100_Autosync.ucf -p xc3s200a-vq100-4 "Autosync.ngc" Autosync.ngd  
+map -intstyle ise -p xc3s200a-vq100-4 -timing -logic_opt on -ol high -xe n -t 1 -register_duplication off -cm area -detail -ir off -ignore_keep_hierarchy -pr b -bp -power off -o Autosync_map.ncd Autosync.ngd Autosync.pcf 
+par -w -intstyle ise -pl high -rl high -xe n -t 1 Autosync_map.ncd Autosync.ncd Autosync.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Autosync.twx Autosync.ncd -o Autosync.twr Autosync.pcf -ucf xXCS3200A-4VQ100_Autosync.ucf 
+bitgen -intstyle ise -f Autosync.ut Autosync.ncd 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xXCS3200A-4VQ100_Autosync.ucf -p xc3s200a-vq100-4 "Autosync.ngc" Autosync.ngd  
+map -intstyle ise -p xc3s200a-vq100-4 -timing -logic_opt on -ol high -xe n -t 1 -register_duplication off -cm area -detail -ir off -ignore_keep_hierarchy -pr b -bp -power off -o Autosync_map.ncd Autosync.ngd Autosync.pcf 
+par -w -intstyle ise -pl high -rl high -xe n -t 1 Autosync_map.ncd Autosync.ncd Autosync.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Autosync.twx Autosync.ncd -o Autosync.twr Autosync.pcf -ucf xXCS3200A-4VQ100_Autosync.ucf 
+bitgen -intstyle ise -f Autosync.ut Autosync.ncd 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xXCS3200A-4VQ100_Autosync.ucf -p xc3s200a-vq100-4 "Autosync.ngc" Autosync.ngd  
+map -intstyle ise -p xc3s200a-vq100-4 -timing -logic_opt on -ol high -xe n -t 1 -register_duplication off -cm area -detail -ir off -ignore_keep_hierarchy -pr b -bp -power off -o Autosync_map.ncd Autosync.ngd Autosync.pcf 
+par -w -intstyle ise -pl high -rl high -xe n -t 1 Autosync_map.ncd Autosync.ncd Autosync.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Autosync.twx Autosync.ncd -o Autosync.twr Autosync.pcf -ucf xXCS3200A-4VQ100_Autosync.ucf 
+bitgen -intstyle ise -f Autosync.ut Autosync.ncd 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.syr" 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.syr" 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xXCS3200A-4VQ100_Autosync.ucf -p xc3s200a-vq100-4 "Autosync.ngc" Autosync.ngd  
+map -intstyle ise -p xc3s200a-vq100-4 -timing -logic_opt on -ol high -xe n -t 1 -register_duplication off -cm area -detail -ir off -ignore_keep_hierarchy -pr b -bp -power off -o Autosync_map.ncd Autosync.ngd Autosync.pcf 
+par -w -intstyle ise -pl high -rl high -xe n -t 1 Autosync_map.ncd Autosync.ncd Autosync.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Autosync.twx Autosync.ncd -o Autosync.twr Autosync.pcf -ucf xXCS3200A-4VQ100_Autosync.ucf 
+bitgen -intstyle ise -f Autosync.ut Autosync.ncd 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.syr" 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.syr" 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xXCS3200A-4VQ100_Autosync.ucf -p xc3s200a-vq100-4 "Autosync.ngc" Autosync.ngd  
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.syr" 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xXCS3200A-4VQ100_Autosync.ucf -p xc3s200a-vq100-4 "Autosync.ngc" Autosync.ngd  
+map -intstyle ise -p xc3s200a-vq100-4 -timing -logic_opt on -ol high -xe n -t 1 -register_duplication off -cm area -detail -ir off -ignore_keep_hierarchy -pr b -bp -power off -o Autosync_map.ncd Autosync.ngd Autosync.pcf 
+par -w -intstyle ise -pl high -rl high -xe n -t 1 Autosync_map.ncd Autosync.ncd Autosync.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Autosync.twx Autosync.ncd -o Autosync.twr Autosync.pcf -ucf xXCS3200A-4VQ100_Autosync.ucf 
+bitgen -intstyle ise -f Autosync.ut Autosync.ncd 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xXCS3200A-4VQ100_Autosync.ucf -p xc3s200a-vq100-4 "Autosync.ngc" Autosync.ngd  
+map -intstyle ise -p xc3s200a-vq100-4 -timing -logic_opt on -ol high -xe n -t 1 -register_duplication off -cm area -detail -ir off -ignore_keep_hierarchy -pr b -bp -power off -o Autosync_map.ncd Autosync.ngd Autosync.pcf 
+par -w -intstyle ise -pl high -rl high -xe n -t 1 Autosync_map.ncd Autosync.ncd Autosync.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Autosync.twx Autosync.ncd -o Autosync.twr Autosync.pcf -ucf xXCS3200A-4VQ100_Autosync.ucf 
+bitgen -intstyle ise -f Autosync.ut Autosync.ncd 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.syr" 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xXCS3200A-4VQ100_Autosync.ucf -p xc3s200a-vq100-4 "Autosync.ngc" Autosync.ngd  
+map -intstyle ise -p xc3s200a-vq100-4 -timing -logic_opt on -ol high -xe n -t 1 -register_duplication off -cm area -detail -ir off -ignore_keep_hierarchy -pr b -bp -power off -o Autosync_map.ncd Autosync.ngd Autosync.pcf 
+par -w -intstyle ise -pl high -rl high -xe n -t 1 Autosync_map.ncd Autosync.ncd Autosync.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Autosync.twx Autosync.ncd -o Autosync.twr Autosync.pcf -ucf xXCS3200A-4VQ100_Autosync.ucf 
+bitgen -intstyle ise -f Autosync.ut Autosync.ncd 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xXCS3200A-4VQ100_Autosync.ucf -p xc3s200a-vq100-4 "Autosync.ngc" Autosync.ngd  
+map -intstyle ise -p xc3s200a-vq100-4 -timing -logic_opt on -ol high -xe n -t 1 -register_duplication off -cm area -detail -ir off -ignore_keep_hierarchy -pr b -bp -power off -o Autosync_map.ncd Autosync.ngd Autosync.pcf 
+par -w -intstyle ise -pl high -rl high -xe n -t 1 Autosync_map.ncd Autosync.ncd Autosync.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Autosync.twx Autosync.ncd -o Autosync.twr Autosync.pcf -ucf xXCS3200A-4VQ100_Autosync.ucf 
+bitgen -intstyle ise -f Autosync.ut Autosync.ncd 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.syr" 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.syr" 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xXCS3200A-4VQ100_Autosync.ucf -p xc3s200a-vq100-4 "Autosync.ngc" Autosync.ngd  
+map -intstyle ise -p xc3s200a-vq100-4 -timing -logic_opt on -ol high -xe n -t 1 -register_duplication off -cm area -detail -ir off -ignore_keep_hierarchy -pr b -bp -power off -o Autosync_map.ncd Autosync.ngd Autosync.pcf 
+par -w -intstyle ise -pl high -rl high -xe n -t 1 Autosync_map.ncd Autosync.ncd Autosync.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Autosync.twx Autosync.ncd -o Autosync.twr Autosync.pcf -ucf xXCS3200A-4VQ100_Autosync.ucf 
+bitgen -intstyle ise -f Autosync.ut Autosync.ncd 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xXCS3200A-4VQ100_Autosync.ucf -p xc3s200a-vq100-4 "Autosync.ngc" Autosync.ngd  
+map -intstyle ise -p xc3s200a-vq100-4 -timing -logic_opt on -ol high -xe n -t 1 -register_duplication off -cm area -detail -ir off -ignore_keep_hierarchy -pr b -bp -power off -o Autosync_map.ncd Autosync.ngd Autosync.pcf 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xXCS3200A-4VQ100_Autosync.ucf -p xc3s200a-vq100-4 "Autosync.ngc" Autosync.ngd  
+map -intstyle ise -p xc3s200a-vq100-4 -timing -logic_opt on -ol high -xe n -t 1 -register_duplication off -cm area -detail -ir off -ignore_keep_hierarchy -pr b -bp -power off -o Autosync_map.ncd Autosync.ngd Autosync.pcf 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xXCS3200A-4VQ100_Autosync.ucf -p xc3s200a-vq100-4 "Autosync.ngc" Autosync.ngd  
+map -intstyle ise -p xc3s200a-vq100-4 -timing -logic_opt on -ol high -xe n -t 1 -register_duplication off -cm area -detail -ir off -ignore_keep_hierarchy -pr b -bp -power off -o Autosync_map.ncd Autosync.ngd Autosync.pcf 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xXCS3200A-4VQ100_Autosync.ucf -p xc3s200a-vq100-4 "Autosync.ngc" Autosync.ngd  
+map -intstyle ise -p xc3s200a-vq100-4 -timing -logic_opt on -ol high -xe n -t 1 -register_duplication off -cm area -detail -ir off -ignore_keep_hierarchy -pr b -bp -power off -o Autosync_map.ncd Autosync.ngd Autosync.pcf 
+par -w -intstyle ise -pl high -rl high -xe n -t 1 Autosync_map.ncd Autosync.ncd Autosync.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Autosync.twx Autosync.ncd -o Autosync.twr Autosync.pcf -ucf xXCS3200A-4VQ100_Autosync.ucf 
+bitgen -intstyle ise -f Autosync.ut Autosync.ncd 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.syr" 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.syr" 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xXCS3200A-4VQ100_Autosync.ucf -p xc3s200a-vq100-4 "Autosync.ngc" Autosync.ngd  
+map -intstyle ise -p xc3s200a-vq100-4 -timing -logic_opt on -ol high -xe n -t 1 -register_duplication off -cm area -detail -ir off -ignore_keep_hierarchy -pr b -bp -power off -o Autosync_map.ncd Autosync.ngd Autosync.pcf 
+par -w -intstyle ise -pl high -rl high -xe n -t 1 Autosync_map.ncd Autosync.ncd Autosync.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Autosync.twx Autosync.ncd -o Autosync.twr Autosync.pcf -ucf xXCS3200A-4VQ100_Autosync.ucf 
+bitgen -intstyle ise -f Autosync.ut Autosync.ncd 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xXCS3200A-4VQ100_Autosync.ucf -p xc3s200a-vq100-4 "Autosync.ngc" Autosync.ngd  
+map -intstyle ise -p xc3s200a-vq100-4 -timing -logic_opt on -ol high -xe n -t 1 -register_duplication off -cm area -detail -ir off -ignore_keep_hierarchy -pr b -bp -power off -o Autosync_map.ncd Autosync.ngd Autosync.pcf 
+par -w -intstyle ise -pl high -rl high -xe n -t 1 Autosync_map.ncd Autosync.ncd Autosync.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Autosync.twx Autosync.ncd -o Autosync.twr Autosync.pcf -ucf xXCS3200A-4VQ100_Autosync.ucf 
+bitgen -intstyle ise -f Autosync.ut Autosync.ncd 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.syr" 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xXCS3200A-4VQ100_Autosync.ucf -p xc3s200a-vq100-4 "Autosync.ngc" Autosync.ngd  
+map -intstyle ise -p xc3s200a-vq100-4 -timing -logic_opt on -ol high -xe n -t 1 -register_duplication off -cm area -detail -ir off -ignore_keep_hierarchy -pr b -bp -power off -o Autosync_map.ncd Autosync.ngd Autosync.pcf 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xXCS3200A-4VQ100_Autosync.ucf -p xc3s200a-vq100-4 "Autosync.ngc" Autosync.ngd  
+map -intstyle ise -p xc3s200a-vq100-4 -timing -logic_opt on -ol high -xe n -t 1 -register_duplication off -cm area -detail -ir off -ignore_keep_hierarchy -pr b -bp -power off -o Autosync_map.ncd Autosync.ngd Autosync.pcf 
+map -intstyle ise -p xc3s200a-vq100-4 -timing -logic_opt on -ol high -xe n -t 1 -register_duplication off -cm area -detail -ir off -ignore_keep_hierarchy -pr b XIL_PAR_ENABLE_LEGALIZER=1 -bp -power off -o Autosync_map.ncd Autosync.ngd Autosync.pcf 
+map -intstyle ise -p xc3s200a-vq100-4 -timing -logic_opt on -ol high -xe n -t 1 -register_duplication off -cm area -detail -ir off -ignore_keep_hierarchy -pr b -XIL_PAR_ENABLE_LEGALIZER=1 -bp -power off -o Autosync_map.ncd Autosync.ngd Autosync.pcf 
+map -intstyle ise -p xc3s200a-vq100-4 -timing -logic_opt on -ol high -xe n -t 1 -register_duplication off -cm area -detail -ir off -ignore_keep_hierarchy -pr b -XIL_PAR_ENABLE_LEGALIZER -bp -power off -o Autosync_map.ncd Autosync.ngd Autosync.pcf 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xXCS3200A-4VQ100_Autosync.ucf -p xc3s200a-vq100-4 "Autosync.ngc" Autosync.ngd  
+map -intstyle ise -p xc3s200a-vq100-4 -timing -logic_opt on -ol high -xe n -t 1 -register_duplication off -cm area -detail -ir off -ignore_keep_hierarchy -pr b -bp -power off -o Autosync_map.ncd Autosync.ngd Autosync.pcf 
+par -w -intstyle ise -pl high -rl high -xe n -t 1 XIL_PAR_ENABLE_LEGALIZER=1 Autosync_map.ncd Autosync.ncd Autosync.pcf 
+par -w -intstyle ise -pl high -rl high -xe n -t 1 Autosync_map.ncd Autosync.ncd Autosync.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Autosync.twx Autosync.ncd -o Autosync.twr Autosync.pcf -ucf xXCS3200A-4VQ100_Autosync.ucf 
+bitgen -intstyle ise -f Autosync.ut Autosync.ncd 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xXCS3200A-4VQ100_Autosync.ucf -p xc3s200a-vq100-4 "Autosync.ngc" Autosync.ngd  
+map -intstyle ise -p xc3s200a-vq100-4 -timing -logic_opt on -ol high -xe n -t 1 -register_duplication off -cm area -detail -ir off -ignore_keep_hierarchy -pr b -bp -power off -o Autosync_map.ncd Autosync.ngd Autosync.pcf 
+par -w -intstyle ise -pl high -rl high -xe n -t 1 Autosync_map.ncd Autosync.ncd Autosync.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Autosync.twx Autosync.ncd -o Autosync.twr Autosync.pcf -ucf xXCS3200A-4VQ100_Autosync.ucf 
+bitgen -intstyle ise -f Autosync.ut Autosync.ncd 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xXCS3200A-4VQ100_Autosync.ucf -p xc3s200a-vq100-4 "Autosync.ngc" Autosync.ngd  
+map -intstyle ise -p xc3s200a-vq100-4 -timing -logic_opt on -ol high -xe n -t 1 -register_duplication off -cm area -detail -ir off -ignore_keep_hierarchy -pr b -bp -power off -o Autosync_map.ncd Autosync.ngd Autosync.pcf 
+par -w -intstyle ise -pl high -rl high -xe n -t 1 Autosync_map.ncd Autosync.ncd Autosync.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Autosync.twx Autosync.ncd -o Autosync.twr Autosync.pcf -ucf xXCS3200A-4VQ100_Autosync.ucf 
+bitgen -intstyle ise -f Autosync.ut Autosync.ncd 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xXCS3200A-4VQ100_Autosync.ucf -p xc3s200a-vq100-4 "Autosync.ngc" Autosync.ngd  
+map -intstyle ise -p xc3s200a-vq100-4 -timing -logic_opt on -ol high -xe n -t 1 -register_duplication off -cm area -detail -ir off -ignore_keep_hierarchy -pr b -bp -power off -o Autosync_map.ncd Autosync.ngd Autosync.pcf 
+par -w -intstyle ise -pl high -rl high -xe n -t 1 Autosync_map.ncd Autosync.ncd Autosync.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Autosync.twx Autosync.ncd -o Autosync.twr Autosync.pcf -ucf xXCS3200A-4VQ100_Autosync.ucf 
+bitgen -intstyle ise -f Autosync.ut Autosync.ncd 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xXCS3200A-4VQ100_Autosync.ucf -p xc3s200a-vq100-4 "Autosync.ngc" Autosync.ngd  
+map -intstyle ise -p xc3s200a-vq100-4 -timing -logic_opt on -ol high -xe n -t 1 -register_duplication off -cm area -detail -ir off -ignore_keep_hierarchy -pr b -bp -power off -o Autosync_map.ncd Autosync.ngd Autosync.pcf 
+par -w -intstyle ise -pl high -rl high -xe n -t 1 Autosync_map.ncd Autosync.ncd Autosync.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Autosync.twx Autosync.ncd -o Autosync.twr Autosync.pcf -ucf xXCS3200A-4VQ100_Autosync.ucf 
+bitgen -intstyle ise -f Autosync.ut Autosync.ncd 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.syr" 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xXCS3200A-4VQ100_Autosync.ucf -p xc3s200a-vq100-4 "Autosync.ngc" Autosync.ngd  
+map -intstyle ise -p xc3s200a-vq100-4 -timing -logic_opt on -ol high -xe n -t 1 -register_duplication off -cm area -detail -ir off -ignore_keep_hierarchy -pr b -bp -power off -o Autosync_map.ncd Autosync.ngd Autosync.pcf 
+par -w -intstyle ise -pl high -rl high -xe n -t 1 Autosync_map.ncd Autosync.ncd Autosync.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Autosync.twx Autosync.ncd -o Autosync.twr Autosync.pcf -ucf xXCS3200A-4VQ100_Autosync.ucf 
+bitgen -intstyle ise -f Autosync.ut Autosync.ncd 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.syr" 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.syr" 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.syr" 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xXCS3200A-4VQ100_Autosync.ucf -p xc3s200a-vq100-4 "Autosync.ngc" Autosync.ngd  
+map -intstyle ise -p xc3s200a-vq100-4 -timing -logic_opt on -ol high -xe n -t 1 -register_duplication off -cm area -detail -ir off -ignore_keep_hierarchy -pr b -bp -power off -o Autosync_map.ncd Autosync.ngd Autosync.pcf 
+par -w -intstyle ise -pl high -rl high -xe n -t 1 Autosync_map.ncd Autosync.ncd Autosync.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Autosync.twx Autosync.ncd -o Autosync.twr Autosync.pcf -ucf xXCS3200A-4VQ100_Autosync.ucf 
+bitgen -intstyle ise -f Autosync.ut Autosync.ncd 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xXCS3200A-4VQ100_Autosync.ucf -p xc3s200a-vq100-4 "Autosync.ngc" Autosync.ngd  
+map -intstyle ise -p xc3s200a-vq100-4 -timing -logic_opt on -ol high -xe n -t 1 -register_duplication off -cm area -detail -ir off -ignore_keep_hierarchy -pr b -bp -power off -o Autosync_map.ncd Autosync.ngd Autosync.pcf 
+par -w -intstyle ise -pl high -rl high -xe n -t 1 Autosync_map.ncd Autosync.ncd Autosync.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Autosync.twx Autosync.ncd -o Autosync.twr Autosync.pcf -ucf xXCS3200A-4VQ100_Autosync.ucf 
+bitgen -intstyle ise -f Autosync.ut Autosync.ncd 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.syr" 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xXCS3200A-4VQ100_Autosync.ucf -p xc3s200a-vq100-4 "Autosync.ngc" Autosync.ngd  
+map -intstyle ise -p xc3s200a-vq100-4 -timing -logic_opt on -ol high -xe n -t 1 -register_duplication off -cm area -detail -ir off -ignore_keep_hierarchy -pr b -bp -power off -o Autosync_map.ncd Autosync.ngd Autosync.pcf 
+par -w -intstyle ise -pl high -rl high -xe n -t 1 Autosync_map.ncd Autosync.ncd Autosync.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Autosync.twx Autosync.ncd -o Autosync.twr Autosync.pcf -ucf xXCS3200A-4VQ100_Autosync.ucf 
+bitgen -intstyle ise -f Autosync.ut Autosync.ncd 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xXCS3200A-4VQ100_Autosync.ucf -p xc3s200a-vq100-4 "Autosync.ngc" Autosync.ngd  
+map -intstyle ise -p xc3s200a-vq100-4 -timing -logic_opt on -ol high -xe n -t 1 -register_duplication off -cm area -detail -ir off -ignore_keep_hierarchy -pr b -bp -power off -o Autosync_map.ncd Autosync.ngd Autosync.pcf 
+par -w -intstyle ise -pl high -rl high -xe n -t 1 Autosync_map.ncd Autosync.ncd Autosync.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Autosync.twx Autosync.ncd -o Autosync.twr Autosync.pcf -ucf xXCS3200A-4VQ100_Autosync.ucf 
+bitgen -intstyle ise -f Autosync.ut Autosync.ncd 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.syr" 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xXCS3200A-4VQ100_Autosync.ucf -p xc3s200a-vq100-4 "Autosync.ngc" Autosync.ngd  
+map -intstyle ise -p xc3s200a-vq100-4 -timing -logic_opt on -ol high -xe n -t 1 -register_duplication off -cm area -detail -ir off -ignore_keep_hierarchy -pr b -bp -power off -o Autosync_map.ncd Autosync.ngd Autosync.pcf 
+par -w -intstyle ise -pl high -rl high -xe n -t 1 Autosync_map.ncd Autosync.ncd Autosync.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Autosync.twx Autosync.ncd -o Autosync.twr Autosync.pcf -ucf xXCS3200A-4VQ100_Autosync.ucf 
+bitgen -intstyle ise -f Autosync.ut Autosync.ncd 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xXCS3200A-4VQ100_Autosync.ucf -p xc3s200a-vq100-4 "Autosync.ngc" Autosync.ngd  
+map -intstyle ise -p xc3s200a-vq100-4 -timing -logic_opt on -ol high -xe n -t 1 -register_duplication off -cm area -detail -ir off -ignore_keep_hierarchy -pr b -bp -power off -o Autosync_map.ncd Autosync.ngd Autosync.pcf 
+par -w -intstyle ise -pl high -rl high -xe n -t 1 Autosync_map.ncd Autosync.ncd Autosync.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Autosync.twx Autosync.ncd -o Autosync.twr Autosync.pcf -ucf xXCS3200A-4VQ100_Autosync.ucf 
+bitgen -intstyle ise -f Autosync.ut Autosync.ncd 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xXCS3200A-4VQ100_Autosync.ucf -p xc3s200a-vq100-4 "Autosync.ngc" Autosync.ngd  
+map -intstyle ise -p xc3s200a-vq100-4 -timing -logic_opt on -ol high -xe n -t 1 -register_duplication off -cm area -detail -ir off -ignore_keep_hierarchy -pr b -bp -power off -o Autosync_map.ncd Autosync.ngd Autosync.pcf 
+par -w -intstyle ise -pl high -rl high -xe n -t 1 Autosync_map.ncd Autosync.ncd Autosync.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Autosync.twx Autosync.ncd -o Autosync.twr Autosync.pcf -ucf xXCS3200A-4VQ100_Autosync.ucf 
+bitgen -intstyle ise -f Autosync.ut Autosync.ncd 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xXCS3200A-4VQ100_Autosync.ucf -p xc3s200a-vq100-4 "Autosync.ngc" Autosync.ngd  
+map -intstyle ise -p xc3s200a-vq100-4 -timing -logic_opt on -ol high -xe n -t 1 -register_duplication off -cm area -detail -ir off -ignore_keep_hierarchy -pr b -bp -power off -o Autosync_map.ncd Autosync.ngd Autosync.pcf 
+par -w -intstyle ise -pl high -rl high -xe n -t 1 Autosync_map.ncd Autosync.ncd Autosync.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Autosync.twx Autosync.ncd -o Autosync.twr Autosync.pcf -ucf xXCS3200A-4VQ100_Autosync.ucf 
+bitgen -intstyle ise -f Autosync.ut Autosync.ncd 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xXCS3200A-4VQ100_Autosync.ucf -p xc3s200a-vq100-4 "Autosync.ngc" Autosync.ngd  
+map -intstyle ise -p xc3s200a-vq100-4 -timing -logic_opt on -ol high -xe n -t 1 -register_duplication off -cm area -detail -ir off -ignore_keep_hierarchy -pr b -bp -power off -o Autosync_map.ncd Autosync.ngd Autosync.pcf 
+par -w -intstyle ise -pl high -rl high -xe n -t 1 Autosync_map.ncd Autosync.ncd Autosync.pcf 
+bitgen -intstyle ise -f Autosync.ut Autosync.ncd 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xXCS3200A-4VQ100_Autosync.ucf -p xc3s200a-vq100-4 "Autosync.ngc" Autosync.ngd  
+map -intstyle ise -p xc3s200a-vq100-4 -timing -logic_opt on -ol high -xe n -t 1 -register_duplication off -cm area -detail -ir off -ignore_keep_hierarchy -pr b -bp -power off -o Autosync_map.ncd Autosync.ngd Autosync.pcf 
+par -w -intstyle ise -pl high -rl high -xe n -t 1 Autosync_map.ncd Autosync.ncd Autosync.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Autosync.twx Autosync.ncd -o Autosync.twr Autosync.pcf -ucf xXCS3200A-4VQ100_Autosync.ucf 
+bitgen -intstyle ise -f Autosync.ut Autosync.ncd 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xXCS3200A-4VQ100_Autosync.ucf -p xc3s200a-vq100-4 "Autosync.ngc" Autosync.ngd  
+map -intstyle ise -p xc3s200a-vq100-4 -timing -logic_opt on -ol high -xe n -t 1 -register_duplication off -cm area -detail -ir off -ignore_keep_hierarchy -pr b -bp -power off -o Autosync_map.ncd Autosync.ngd Autosync.pcf 
+par -w -intstyle ise -pl high -rl high -xe n -t 1 Autosync_map.ncd Autosync.ncd Autosync.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Autosync.twx Autosync.ncd -o Autosync.twr Autosync.pcf -ucf xXCS3200A-4VQ100_Autosync.ucf 
+bitgen -intstyle ise -f Autosync.ut Autosync.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xXCS3200A-4VQ100_Autosync.ucf -p xc3s200a-vq100-4 "Autosync.ngc" Autosync.ngd  
+map -intstyle ise -p xc3s200a-vq100-4 -timing -logic_opt on -ol high -xe n -t 1 -register_duplication off -cm area -detail -ir off -ignore_keep_hierarchy -pr b -bp -power off -o Autosync_map.ncd Autosync.ngd Autosync.pcf 
+par -w -intstyle ise -pl high -rl high -xe n -t 1 Autosync_map.ncd Autosync.ncd Autosync.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Autosync.twx Autosync.ncd -o Autosync.twr Autosync.pcf -ucf xXCS3200A-4VQ100_Autosync.ucf 
+bitgen -intstyle ise -f Autosync.ut Autosync.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xXCS3200A-4VQ100_Autosync.ucf -p xc3s200a-vq100-4 "Autosync.ngc" Autosync.ngd  
+map -intstyle ise -p xc3s200a-vq100-4 -timing -logic_opt on -ol high -xe n -t 1 -register_duplication off -cm area -detail -ir off -ignore_keep_hierarchy -pr b -bp -power off -o Autosync_map.ncd Autosync.ngd Autosync.pcf 
+par -w -intstyle ise -pl high -rl high -xe n -t 1 Autosync_map.ncd Autosync.ncd Autosync.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Autosync.twx Autosync.ncd -o Autosync.twr Autosync.pcf -ucf xXCS3200A-4VQ100_Autosync.ucf 
+bitgen -intstyle ise -f Autosync.ut Autosync.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xXCS3200A-4VQ100_Autosync.ucf -p xc3s200a-vq100-4 "Autosync.ngc" Autosync.ngd  
+map -intstyle ise -p xc3s200a-vq100-4 -timing -logic_opt on -ol high -xe n -t 1 -register_duplication off -cm area -detail -ir off -ignore_keep_hierarchy -pr b -bp -power off -o Autosync_map.ncd Autosync.ngd Autosync.pcf 
+par -w -intstyle ise -pl high -rl high -xe n -t 1 Autosync_map.ncd Autosync.ncd Autosync.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Autosync.twx Autosync.ncd -o Autosync.twr Autosync.pcf -ucf xXCS3200A-4VQ100_Autosync.ucf 
+bitgen -intstyle ise -f Autosync.ut Autosync.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xXCS3200A-4VQ100_Autosync.ucf -p xc3s200a-vq100-4 "Autosync.ngc" Autosync.ngd  
+map -intstyle ise -p xc3s200a-vq100-4 -timing -logic_opt on -ol high -xe n -t 1 -register_duplication off -cm area -detail -ir off -ignore_keep_hierarchy -pr b -bp -power off -o Autosync_map.ncd Autosync.ngd Autosync.pcf 
+par -w -intstyle ise -pl high -rl high -xe n -t 1 Autosync_map.ncd Autosync.ncd Autosync.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Autosync.twx Autosync.ncd -o Autosync.twr Autosync.pcf -ucf xXCS3200A-4VQ100_Autosync.ucf 
+bitgen -intstyle ise -f Autosync.ut Autosync.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xXCS3200A-4VQ100_Autosync.ucf -p xc3s200a-vq100-4 "Autosync.ngc" Autosync.ngd  
+map -intstyle ise -p xc3s200a-vq100-4 -timing -logic_opt on -ol high -xe n -t 1 -register_duplication off -cm area -detail -ir off -ignore_keep_hierarchy -pr b -bp -power off -o Autosync_map.ncd Autosync.ngd Autosync.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xXCS3200A-4VQ100_Autosync.ucf -p xc3s200a-vq100-4 "Autosync.ngc" Autosync.ngd  
+map -intstyle ise -p xc3s200a-vq100-4 -timing -logic_opt on -ol high -xe n -t 1 -register_duplication off -cm area -detail -ir off -ignore_keep_hierarchy -pr b -bp -power off -o Autosync_map.ncd Autosync.ngd Autosync.pcf 
+par -w -intstyle ise -pl high -rl high -xe n -t 1 Autosync_map.ncd Autosync.ncd Autosync.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Autosync.twx Autosync.ncd -o Autosync.twr Autosync.pcf -ucf xXCS3200A-4VQ100_Autosync.ucf 
+bitgen -intstyle ise -f Autosync.ut Autosync.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xXCS3200A-4VQ100_Autosync.ucf -p xc3s200a-vq100-4 "Autosync.ngc" Autosync.ngd  
+map -intstyle ise -p xc3s200a-vq100-4 -timing -logic_opt on -ol high -xe n -t 1 -register_duplication off -cm area -detail -ir off -ignore_keep_hierarchy -pr b -bp -power off -o Autosync_map.ncd Autosync.ngd Autosync.pcf 
+par -w -intstyle ise -pl high -rl high -xe n -t 1 Autosync_map.ncd Autosync.ncd Autosync.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Autosync.twx Autosync.ncd -o Autosync.twr Autosync.pcf -ucf xXCS3200A-4VQ100_Autosync.ucf 
+bitgen -intstyle ise -f Autosync.ut Autosync.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xXCS3200A-4VQ100_Autosync.ucf -p xc3s200a-vq100-4 "Autosync.ngc" Autosync.ngd  
+map -intstyle ise -p xc3s200a-vq100-4 -timing -logic_opt on -ol high -xe n -t 1 -register_duplication off -cm area -detail -ir off -ignore_keep_hierarchy -pr b -bp -power off -o Autosync_map.ncd Autosync.ngd Autosync.pcf 
+par -w -intstyle ise -pl high -rl high -xe n -t 1 Autosync_map.ncd Autosync.ncd Autosync.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Autosync.twx Autosync.ncd -o Autosync.twr Autosync.pcf -ucf xXCS3200A-4VQ100_Autosync.ucf 
+bitgen -intstyle ise -f Autosync.ut Autosync.ncd 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xXCS3200A-4VQ100_Autosync.ucf -p xc3s200a-vq100-4 "Autosync.ngc" Autosync.ngd  
+map -intstyle ise -p xc3s200a-vq100-4 -timing -logic_opt on -ol high -xe n -t 1 -register_duplication off -cm area -detail -ir off -ignore_keep_hierarchy -pr b -bp -power off -o Autosync_map.ncd Autosync.ngd Autosync.pcf 
+par -w -intstyle ise -pl high -rl high -xe n -t 1 Autosync_map.ncd Autosync.ncd Autosync.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Autosync.twx Autosync.ncd -o Autosync.twr Autosync.pcf -ucf xXCS3200A-4VQ100_Autosync.ucf 
+bitgen -intstyle ise -f Autosync.ut Autosync.ncd 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xXCS3200A-4VQ100_Autosync.ucf -p xc3s200a-vq100-4 "Autosync.ngc" Autosync.ngd  
+map -intstyle ise -p xc3s200a-vq100-4 -timing -logic_opt on -ol high -xe n -t 1 -register_duplication off -cm area -detail -ir off -ignore_keep_hierarchy -pr b -bp -power off -o Autosync_map.ncd Autosync.ngd Autosync.pcf 
+par -w -intstyle ise -pl high -rl high -xe n -t 1 Autosync_map.ncd Autosync.ncd Autosync.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Autosync.twx Autosync.ncd -o Autosync.twr Autosync.pcf -ucf xXCS3200A-4VQ100_Autosync.ucf 
+bitgen -intstyle ise -f Autosync.ut Autosync.ncd 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xXCS3200A-4VQ100_Autosync.ucf -p xc3s200a-vq100-4 "Autosync.ngc" Autosync.ngd  
+map -intstyle ise -p xc3s200a-vq100-4 -timing -logic_opt on -ol high -xe n -t 1 -register_duplication off -cm area -detail -ir off -ignore_keep_hierarchy -pr b -bp -power off -o Autosync_map.ncd Autosync.ngd Autosync.pcf 
+par -w -intstyle ise -pl high -rl high -xe n -t 1 Autosync_map.ncd Autosync.ncd Autosync.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Autosync.twx Autosync.ncd -o Autosync.twr Autosync.pcf -ucf xXCS3200A-4VQ100_Autosync.ucf 
+bitgen -intstyle ise -f Autosync.ut Autosync.ncd 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.syr" 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.syr" 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.syr" 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.syr" 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.syr" 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.syr" 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.syr" 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xXCS3200A-4VQ100_Autosync.ucf -p xc3s200a-vq100-4 "Autosync.ngc" Autosync.ngd  
+map -intstyle ise -p xc3s200a-vq100-4 -timing -logic_opt on -ol high -xe n -t 1 -register_duplication off -cm area -detail -ir off -ignore_keep_hierarchy -pr b -bp -power off -o Autosync_map.ncd Autosync.ngd Autosync.pcf 
+par -w -intstyle ise -pl high -rl high -xe n -t 1 Autosync_map.ncd Autosync.ncd Autosync.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Autosync.twx Autosync.ncd -o Autosync.twr Autosync.pcf -ucf xXCS3200A-4VQ100_Autosync.ucf 
+bitgen -intstyle ise -f Autosync.ut Autosync.ncd 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xXCS3200A-4VQ100_Autosync.ucf -p xc3s200a-vq100-4 "Autosync.ngc" Autosync.ngd  
+map -intstyle ise -p xc3s200a-vq100-4 -timing -logic_opt on -ol high -xe n -t 1 -register_duplication off -cm area -detail -ir off -ignore_keep_hierarchy -pr b -bp -power off -o Autosync_map.ncd Autosync.ngd Autosync.pcf 
+par -w -intstyle ise -pl high -rl high -xe n -t 1 Autosync_map.ncd Autosync.ncd Autosync.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Autosync.twx Autosync.ncd -o Autosync.twr Autosync.pcf -ucf xXCS3200A-4VQ100_Autosync.ucf 
+bitgen -intstyle ise -f Autosync.ut Autosync.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xXCS3200A-4VQ100_Autosync.ucf -p xc3s200a-vq100-4 "Autosync.ngc" Autosync.ngd  
+map -intstyle ise -p xc3s200a-vq100-4 -timing -logic_opt on -ol high -xe n -t 1 -register_duplication off -cm area -detail -ir off -ignore_keep_hierarchy -pr b -bp -power off -o Autosync_map.ncd Autosync.ngd Autosync.pcf 
+par -w -intstyle ise -pl high -rl high -xe n -t 1 Autosync_map.ncd Autosync.ncd Autosync.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Autosync.twx Autosync.ncd -o Autosync.twr Autosync.pcf -ucf xXCS3200A-4VQ100_Autosync.ucf 
+bitgen -intstyle ise -f Autosync.ut Autosync.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xXCS3200A-4VQ100_Autosync.ucf -p xc3s200a-vq100-4 "Autosync.ngc" Autosync.ngd  
+map -intstyle ise -p xc3s200a-vq100-4 -timing -logic_opt on -ol high -xe n -t 1 -register_duplication off -cm area -detail -ir off -ignore_keep_hierarchy -pr b -bp -power off -o Autosync_map.ncd Autosync.ngd Autosync.pcf 
+par -w -intstyle ise -pl high -rl high -xe n -t 1 Autosync_map.ncd Autosync.ncd Autosync.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Autosync.twx Autosync.ncd -o Autosync.twr Autosync.pcf -ucf xXCS3200A-4VQ100_Autosync.ucf 
+bitgen -intstyle ise -f Autosync.ut Autosync.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xXCS3200A-4VQ100_Autosync.ucf -p xc3s200a-vq100-4 "Autosync.ngc" Autosync.ngd  
+map -intstyle ise -p xc3s200a-vq100-4 -timing -logic_opt on -ol high -xe n -t 1 -register_duplication off -cm area -detail -ir off -ignore_keep_hierarchy -pr b -bp -power off -o Autosync_map.ncd Autosync.ngd Autosync.pcf 
+par -w -intstyle ise -pl high -rl high -xe n -t 1 Autosync_map.ncd Autosync.ncd Autosync.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Autosync.twx Autosync.ncd -o Autosync.twr Autosync.pcf -ucf xXCS3200A-4VQ100_Autosync.ucf 
+bitgen -intstyle ise -f Autosync.ut Autosync.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xXCS3200A-4VQ100_Autosync.ucf -p xc3s200a-vq100-4 "Autosync.ngc" Autosync.ngd  
+map -intstyle ise -p xc3s200a-vq100-4 -timing -logic_opt on -ol high -xe n -t 1 -register_duplication off -cm area -detail -ir off -ignore_keep_hierarchy -pr b -bp -power off -o Autosync_map.ncd Autosync.ngd Autosync.pcf 
+par -w -intstyle ise -pl high -rl high -xe n -t 1 Autosync_map.ncd Autosync.ncd Autosync.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Autosync.twx Autosync.ncd -o Autosync.twr Autosync.pcf -ucf xXCS3200A-4VQ100_Autosync.ucf 
+bitgen -intstyle ise -f Autosync.ut Autosync.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xXCS3200A-4VQ100_Autosync.ucf -p xc3s200a-vq100-4 "Autosync.ngc" Autosync.ngd  
+map -intstyle ise -p xc3s200a-vq100-4 -timing -logic_opt on -ol high -xe n -t 1 -register_duplication off -cm area -detail -ir off -ignore_keep_hierarchy -pr b -bp -power off -o Autosync_map.ncd Autosync.ngd Autosync.pcf 
+par -w -intstyle ise -pl high -rl high -xe n -t 1 Autosync_map.ncd Autosync.ncd Autosync.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Autosync.twx Autosync.ncd -o Autosync.twr Autosync.pcf -ucf xXCS3200A-4VQ100_Autosync.ucf 
+bitgen -intstyle ise -f Autosync.ut Autosync.ncd 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xXCS3200A-4VQ100_Autosync.ucf -p xc3s200a-vq100-4 "Autosync.ngc" Autosync.ngd  
+map -intstyle ise -p xc3s200a-vq100-4 -timing -logic_opt on -ol high -xe n -t 1 -register_duplication off -cm area -detail -ir off -ignore_keep_hierarchy -pr b -bp -power off -o Autosync_map.ncd Autosync.ngd Autosync.pcf 
+par -w -intstyle ise -pl high -rl high -xe n -t 1 Autosync_map.ncd Autosync.ncd Autosync.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Autosync.twx Autosync.ncd -o Autosync.twr Autosync.pcf -ucf xXCS3200A-4VQ100_Autosync.ucf 
+bitgen -intstyle ise -f Autosync.ut Autosync.ncd 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xXCS3200A-4VQ100_Autosync.ucf -p xc3s200a-vq100-4 "Autosync.ngc" Autosync.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xXCS3200A-4VQ100_Autosync.ucf -p xc3s200a-vq100-4 "Autosync.ngc" Autosync.ngd  
+map -intstyle ise -p xc3s200a-vq100-4 -timing -logic_opt on -ol high -xe n -t 1 -register_duplication off -cm area -detail -ir off -ignore_keep_hierarchy -pr b -bp -power off -o Autosync_map.ncd Autosync.ngd Autosync.pcf 
+par -w -intstyle ise -pl high -rl high -xe n -t 1 Autosync_map.ncd Autosync.ncd Autosync.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Autosync.twx Autosync.ncd -o Autosync.twr Autosync.pcf -ucf xXCS3200A-4VQ100_Autosync.ucf 
+bitgen -intstyle ise -f Autosync.ut Autosync.ncd 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xXCS3200A-4VQ100_Autosync.ucf -p xc3s200a-vq100-4 "Autosync.ngc" Autosync.ngd  
+map -intstyle ise -p xc3s200a-vq100-4 -timing -logic_opt on -ol high -xe n -t 1 -register_duplication off -cm area -detail -ir off -ignore_keep_hierarchy -pr b -bp -power off -o Autosync_map.ncd Autosync.ngd Autosync.pcf 
+par -w -intstyle ise -pl high -rl high -xe n -t 1 Autosync_map.ncd Autosync.ncd Autosync.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Autosync.twx Autosync.ncd -o Autosync.twr Autosync.pcf -ucf xXCS3200A-4VQ100_Autosync.ucf 
+bitgen -intstyle ise -f Autosync.ut Autosync.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xXCS3200A-4VQ100_Autosync.ucf -p xc3s200a-vq100-4 "Autosync.ngc" Autosync.ngd  
+map -intstyle ise -p xc3s200a-vq100-4 -timing -logic_opt on -ol high -xe n -t 1 -register_duplication off -cm area -detail -ir off -ignore_keep_hierarchy -pr b -bp -power off -o Autosync_map.ncd Autosync.ngd Autosync.pcf 
+par -w -intstyle ise -pl high -rl high -xe n -t 1 Autosync_map.ncd Autosync.ncd Autosync.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Autosync.twx Autosync.ncd -o Autosync.twr Autosync.pcf -ucf xXCS3200A-4VQ100_Autosync.ucf 
+bitgen -intstyle ise -f Autosync.ut Autosync.ncd 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xXCS3200A-4VQ100_Autosync.ucf -p xc3s200a-vq100-4 "Autosync.ngc" Autosync.ngd  
+map -intstyle ise -p xc3s200a-vq100-4 -timing -logic_opt on -ol high -xe n -t 1 -register_duplication off -cm area -detail -ir off -ignore_keep_hierarchy -pr b -bp -power off -o Autosync_map.ncd Autosync.ngd Autosync.pcf 
+par -w -intstyle ise -pl high -rl high -xe n -t 1 Autosync_map.ncd Autosync.ncd Autosync.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Autosync.twx Autosync.ncd -o Autosync.twr Autosync.pcf -ucf xXCS3200A-4VQ100_Autosync.ucf 
+bitgen -intstyle ise -f Autosync.ut Autosync.ncd 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.syr" 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xXCS3200A-4VQ100_Autosync.ucf -p xc3s200a-vq100-4 "Autosync.ngc" Autosync.ngd  
+map -intstyle ise -p xc3s200a-vq100-4 -timing -logic_opt on -ol high -xe n -t 1 -register_duplication off -cm area -detail -ir off -ignore_keep_hierarchy -pr b -bp -power off -o Autosync_map.ncd Autosync.ngd Autosync.pcf 
+par -w -intstyle ise -pl high -rl high -xe n -t 1 Autosync_map.ncd Autosync.ncd Autosync.pcf 
+bitgen -intstyle ise -f Autosync.ut Autosync.ncd 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xXCS3200A-4VQ100_Autosync.ucf -p xc3s200a-vq100-4 "Autosync.ngc" Autosync.ngd  
+map -intstyle ise -p xc3s200a-vq100-4 -timing -logic_opt on -ol high -xe n -t 1 -register_duplication off -cm area -detail -ir off -ignore_keep_hierarchy -pr b -bp -power off -o Autosync_map.ncd Autosync.ngd Autosync.pcf 
+par -w -intstyle ise -pl high -rl high -xe n -t 1 Autosync_map.ncd Autosync.ncd Autosync.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Autosync.twx Autosync.ncd -o Autosync.twr Autosync.pcf -ucf xXCS3200A-4VQ100_Autosync.ucf 
+bitgen -intstyle ise -f Autosync.ut Autosync.ncd 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xXCS3200A-4VQ100_Autosync.ucf -p xc3s200a-vq100-4 "Autosync.ngc" Autosync.ngd  
+map -intstyle ise -p xc3s200a-vq100-4 -timing -logic_opt on -ol high -xe n -t 1 -register_duplication off -cm area -detail -ir off -ignore_keep_hierarchy -pr b -bp -power off -o Autosync_map.ncd Autosync.ngd Autosync.pcf 
+par -w -intstyle ise -pl high -rl high -xe n -t 1 Autosync_map.ncd Autosync.ncd Autosync.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Autosync.twx Autosync.ncd -o Autosync.twr Autosync.pcf -ucf xXCS3200A-4VQ100_Autosync.ucf 
+bitgen -intstyle ise -f Autosync.ut Autosync.ncd 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xXCS3200A-4VQ100_Autosync.ucf -p xc3s200a-vq100-4 "Autosync.ngc" Autosync.ngd  
+map -intstyle ise -p xc3s200a-vq100-4 -timing -logic_opt on -ol high -xe n -t 1 -register_duplication off -cm area -detail -ir off -ignore_keep_hierarchy -pr b -bp -power off -o Autosync_map.ncd Autosync.ngd Autosync.pcf 
+par -w -intstyle ise -pl high -rl high -xe n -t 1 Autosync_map.ncd Autosync.ncd Autosync.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Autosync.twx Autosync.ncd -o Autosync.twr Autosync.pcf -ucf xXCS3200A-4VQ100_Autosync.ucf 
+bitgen -intstyle ise -f Autosync.ut Autosync.ncd 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xXCS3200A-4VQ100_Autosync.ucf -p xc3s200a-vq100-4 "Autosync.ngc" Autosync.ngd  
+map -intstyle ise -p xc3s200a-vq100-4 -timing -logic_opt on -ol high -xe n -t 1 -register_duplication off -cm area -detail -ir off -ignore_keep_hierarchy -pr b -bp -power off -o Autosync_map.ncd Autosync.ngd Autosync.pcf 
+par -w -intstyle ise -pl high -rl high -xe n -t 1 Autosync_map.ncd Autosync.ncd Autosync.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Autosync.twx Autosync.ncd -o Autosync.twr Autosync.pcf -ucf xXCS3200A-4VQ100_Autosync.ucf 
+bitgen -intstyle ise -f Autosync.ut Autosync.ncd 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xXCS3200A-4VQ100_Autosync.ucf -p xc3s200a-vq100-4 "Autosync.ngc" Autosync.ngd  
+map -intstyle ise -p xc3s200a-vq100-4 -timing -logic_opt on -ol high -xe n -t 1 -register_duplication off -cm area -detail -ir off -ignore_keep_hierarchy -pr b -bp -power off -o Autosync_map.ncd Autosync.ngd Autosync.pcf 
+par -w -intstyle ise -pl high -rl high -xe n -t 1 Autosync_map.ncd Autosync.ncd Autosync.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Autosync.twx Autosync.ncd -o Autosync.twr Autosync.pcf -ucf xXCS3200A-4VQ100_Autosync.ucf 
+bitgen -intstyle ise -f Autosync.ut Autosync.ncd 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xXCS3200A-4VQ100_Autosync.ucf -p xc3s200a-vq100-4 "Autosync.ngc" Autosync.ngd  
+map -intstyle ise -p xc3s200a-vq100-4 -timing -logic_opt on -ol high -xe n -t 1 -register_duplication off -cm area -detail -ir off -ignore_keep_hierarchy -pr b -bp -power off -o Autosync_map.ncd Autosync.ngd Autosync.pcf 
+par -w -intstyle ise -pl high -rl high -xe n -t 1 Autosync_map.ncd Autosync.ncd Autosync.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Autosync.twx Autosync.ncd -o Autosync.twr Autosync.pcf -ucf xXCS3200A-4VQ100_Autosync.ucf 
+bitgen -intstyle ise -f Autosync.ut Autosync.ncd 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xXCS3200A-4VQ100_Autosync.ucf -p xc3s200a-vq100-4 "Autosync.ngc" Autosync.ngd  
+map -intstyle ise -p xc3s200a-vq100-4 -timing -logic_opt on -ol high -xe n -t 1 -register_duplication off -cm area -detail -ir off -ignore_keep_hierarchy -pr b -bp -power off -o Autosync_map.ncd Autosync.ngd Autosync.pcf 
+par -w -intstyle ise -pl high -rl high -xe n -t 1 Autosync_map.ncd Autosync.ncd Autosync.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Autosync.twx Autosync.ncd -o Autosync.twr Autosync.pcf -ucf xXCS3200A-4VQ100_Autosync.ucf 
+bitgen -intstyle ise -f Autosync.ut Autosync.ncd 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xXCS3200A-4VQ100_Autosync.ucf -p xc3s200a-vq100-4 "Autosync.ngc" Autosync.ngd  
+map -intstyle ise -p xc3s200a-vq100-4 -timing -logic_opt on -ol high -xe n -t 1 -register_duplication off -cm area -detail -ir off -ignore_keep_hierarchy -pr b -bp -power off -o Autosync_map.ncd Autosync.ngd Autosync.pcf 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xXCS3200A-4VQ100_Autosync.ucf -p xc3s200a-vq100-4 "Autosync.ngc" Autosync.ngd  
+map -intstyle ise -p xc3s200a-vq100-4 -timing -logic_opt on -ol high -xe n -t 1 -register_duplication off -cm area -detail -ir off -ignore_keep_hierarchy -pr b -bp -power off -o Autosync_map.ncd Autosync.ngd Autosync.pcf 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xXCS3200A-4VQ100_Autosync.ucf -p xc3s200a-vq100-4 "Autosync.ngc" Autosync.ngd  
+map -intstyle ise -p xc3s200a-vq100-4 -timing -logic_opt on -ol high -xe n -t 1 -register_duplication off -cm area -detail -ir off -ignore_keep_hierarchy -pr b -bp -power off -o Autosync_map.ncd Autosync.ngd Autosync.pcf 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xXCS3200A-4VQ100_Autosync.ucf -p xc3s200a-vq100-4 "Autosync.ngc" Autosync.ngd  
+map -intstyle ise -p xc3s200a-vq100-4 -timing -logic_opt on -ol high -xe n -t 1 -register_duplication off -cm area -detail -ir off -ignore_keep_hierarchy -pr b -bp -power off -o Autosync_map.ncd Autosync.ngd Autosync.pcf 
+par -w -intstyle ise -pl high -rl high -xe n -t 1 Autosync_map.ncd Autosync.ncd Autosync.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Autosync.twx Autosync.ncd -o Autosync.twr Autosync.pcf -ucf xXCS3200A-4VQ100_Autosync.ucf 
+bitgen -intstyle ise -f Autosync.ut Autosync.ncd 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xXCS3200A-4VQ100_Autosync.ucf -p xc3s200a-vq100-4 "Autosync.ngc" Autosync.ngd  
+map -intstyle ise -p xc3s200a-vq100-4 -timing -logic_opt on -ol high -xe n -t 1 -register_duplication off -cm area -detail -ir off -ignore_keep_hierarchy -pr b -bp -power off -o Autosync_map.ncd Autosync.ngd Autosync.pcf 
+par -w -intstyle ise -pl high -rl high -xe n -t 1 Autosync_map.ncd Autosync.ncd Autosync.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Autosync.twx Autosync.ncd -o Autosync.twr Autosync.pcf -ucf xXCS3200A-4VQ100_Autosync.ucf 
+bitgen -intstyle ise -f Autosync.ut Autosync.ncd 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.syr" 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xXCS3200A-4VQ100_Autosync.ucf -p xc3s200a-vq100-4 "Autosync.ngc" Autosync.ngd  
+map -intstyle ise -p xc3s200a-vq100-4 -timing -logic_opt on -ol high -xe n -t 1 -register_duplication off -cm area -detail -ir off -ignore_keep_hierarchy -pr b -bp -power off -o Autosync_map.ncd Autosync.ngd Autosync.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xXCS3200A-4VQ100_Autosync.ucf -p xc3s200a-vq100-4 "Autosync.ngc" Autosync.ngd  
+map -intstyle ise -p xc3s200a-vq100-4 -timing -logic_opt on -ol high -xe n -t 1 -register_duplication off -cm area -detail -ir off -ignore_keep_hierarchy -pr b -bp -power off -o Autosync_map.ncd Autosync.ngd Autosync.pcf 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xXCS3200A-4VQ100_Autosync.ucf -p xc3s200a-vq100-4 "Autosync.ngc" Autosync.ngd  
+map -intstyle ise -p xc3s200a-vq100-4 -timing -logic_opt on -ol high -xe n -t 1 -register_duplication off -cm area -detail -ir off -ignore_keep_hierarchy -pr b -bp -power off -o Autosync_map.ncd Autosync.ngd Autosync.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xXCS3200A-4VQ100_Autosync.ucf -p xc3s200a-vq100-4 "Autosync.ngc" Autosync.ngd  
+map -intstyle ise -p xc3s200a-vq100-4 -timing -logic_opt on -ol high -xe n -t 1 -register_duplication off -cm area -detail -ir off -ignore_keep_hierarchy -pr b -bp -power off -o Autosync_map.ncd Autosync.ngd Autosync.pcf 
+par -w -intstyle ise -pl high -rl high -xe n -t 1 Autosync_map.ncd Autosync.ncd Autosync.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Autosync.twx Autosync.ncd -o Autosync.twr Autosync.pcf -ucf xXCS3200A-4VQ100_Autosync.ucf 
+bitgen -intstyle ise -f Autosync.ut Autosync.ncd 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xXCS3200A-4VQ100_Autosync.ucf -p xc3s200a-vq100-4 "Autosync.ngc" Autosync.ngd  
+map -intstyle ise -p xc3s200a-vq100-4 -timing -logic_opt on -ol high -xe n -t 1 -register_duplication off -cm area -detail -ir off -ignore_keep_hierarchy -pr b -bp -power off -o Autosync_map.ncd Autosync.ngd Autosync.pcf 
+par -w -intstyle ise -pl high -rl high -xe n -t 1 Autosync_map.ncd Autosync.ncd Autosync.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Autosync.twx Autosync.ncd -o Autosync.twr Autosync.pcf -ucf xXCS3200A-4VQ100_Autosync.ucf 
+bitgen -intstyle ise -f Autosync.ut Autosync.ncd 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xXCS3200A-4VQ100_Autosync.ucf -p xc3s200a-vq100-4 "Autosync.ngc" Autosync.ngd  
+map -intstyle ise -p xc3s200a-vq100-4 -timing -logic_opt on -ol high -xe n -t 1 -register_duplication off -cm area -detail -ir off -ignore_keep_hierarchy -pr b -bp -power off -o Autosync_map.ncd Autosync.ngd Autosync.pcf 
+par -w -intstyle ise -pl high -rl high -xe n -t 1 Autosync_map.ncd Autosync.ncd Autosync.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Autosync.twx Autosync.ncd -o Autosync.twr Autosync.pcf -ucf xXCS3200A-4VQ100_Autosync.ucf 
+bitgen -intstyle ise -f Autosync.ut Autosync.ncd 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.syr" 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.syr" 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xXCS3200A-4VQ100_Autosync.ucf -p xc3s200a-vq100-4 "Autosync.ngc" Autosync.ngd  
+map -intstyle ise -p xc3s200a-vq100-4 -timing -logic_opt on -ol high -xe n -t 1 -register_duplication off -cm area -detail -ir off -ignore_keep_hierarchy -pr b -bp -power off -o Autosync_map.ncd Autosync.ngd Autosync.pcf 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.syr" 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xXCS3200A-4VQ100_Autosync.ucf -p xc3s200a-vq100-4 "Autosync.ngc" Autosync.ngd  
+map -intstyle ise -p xc3s200a-vq100-4 -timing -logic_opt on -ol high -xe n -t 1 -register_duplication off -cm area -detail -ir off -ignore_keep_hierarchy -pr b -bp -power off -o Autosync_map.ncd Autosync.ngd Autosync.pcf 
+par -w -intstyle ise -pl high -rl high -xe n -t 1 Autosync_map.ncd Autosync.ncd Autosync.pcf 
+bitgen -intstyle ise -f Autosync.ut Autosync.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xXCS3200A-4VQ100_Autosync.ucf -p xc3s200a-vq100-4 "Autosync.ngc" Autosync.ngd  
+map -intstyle ise -p xc3s200a-vq100-4 -timing -logic_opt on -ol high -xe n -t 1 -register_duplication off -cm area -detail -ir off -ignore_keep_hierarchy -pr b -bp -power off -o Autosync_map.ncd Autosync.ngd Autosync.pcf 
+par -w -intstyle ise -pl high -rl high -xe n -t 1 Autosync_map.ncd Autosync.ncd Autosync.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Autosync.twx Autosync.ncd -o Autosync.twr Autosync.pcf -ucf xXCS3200A-4VQ100_Autosync.ucf 
+bitgen -intstyle ise -f Autosync.ut Autosync.ncd 

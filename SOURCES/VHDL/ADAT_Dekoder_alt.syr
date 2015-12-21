@@ -1,0 +1,163 @@
+Release 14.7 - xst P.20131013 (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.13 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.13 secs
+ 
+--> Reading design: ADAT_Dekoder_alt.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "ADAT_Dekoder_alt.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : YES
+
+---- Target Parameters
+Output File Name                   : "ADAT_Dekoder_alt"
+Output Format                      : NGC
+Target Device                      : xc3s200a-4-vq100
+
+---- Source Options
+Top Module Name                    : ADAT_Dekoder_alt
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : Yes
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 500
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Move First FlipFlop Stage          : YES
+Move Last FlipFlop Stage           : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : True
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 2
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "D:/ADAT DeEncoder/ADAT_De-Encoder/ADAT.vhd" in Library work.
+Architecture adat of Entity adat is up to date.
+Compiling vhdl file "D:/ADAT DeEncoder/ADAT_De-Encoder/ADAT_DekodermitTakt.vhd" in Library work.
+ERROR:HDLParsers:3011 - "D:/ADAT DeEncoder/ADAT_De-Encoder/ADAT_DekodermitTakt.vhd" Line 57. End Identifier ADAT_Dekoder does not match declaration, ADAT_Dekoder_alt.
+ERROR:HDLParsers:3010 - "D:/ADAT DeEncoder/ADAT_De-Encoder/ADAT_DekodermitTakt.vhd" Line 59. Entity ADAT_Dekoder_alt does not exist.
+ERROR:HDLParsers:3312 - "D:/ADAT DeEncoder/ADAT_De-Encoder/ADAT_DekodermitTakt.vhd" Line 62. Undefined symbol 'clk'.
+ERROR:HDLParsers:1209 - "D:/ADAT DeEncoder/ADAT_De-Encoder/ADAT_DekodermitTakt.vhd" Line 62. clk: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "D:/ADAT DeEncoder/ADAT_De-Encoder/ADAT_DekodermitTakt.vhd" Line 64. Undefined symbol 'AdatSchnittstellen'.
+ERROR:HDLParsers:1209 - "D:/ADAT DeEncoder/ADAT_De-Encoder/ADAT_DekodermitTakt.vhd" Line 64. AdatSchnittstellen: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "D:/ADAT DeEncoder/ADAT_De-Encoder/ADAT_DekodermitTakt.vhd" Line 66. Undefined symbol 'std_logic'.
+ERROR:HDLParsers:1209 - "D:/ADAT DeEncoder/ADAT_De-Encoder/ADAT_DekodermitTakt.vhd" Line 66. std_logic: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "D:/ADAT DeEncoder/ADAT_De-Encoder/ADAT_DekodermitTakt.vhd" Line 94. Undefined symbol 'rising_edge'.
+ERROR:HDLParsers:1209 - "D:/ADAT DeEncoder/ADAT_De-Encoder/ADAT_DekodermitTakt.vhd" Line 94. rising_edge: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "D:/ADAT DeEncoder/ADAT_De-Encoder/ADAT_DekodermitTakt.vhd" Line 98. Undefined symbol 'ADAT_In_Letzter_Wert'.
+ERROR:HDLParsers:3312 - "D:/ADAT DeEncoder/ADAT_De-Encoder/ADAT_DekodermitTakt.vhd" Line 133. Undefined symbol 'ADAT_Takt'.
+ERROR:HDLParsers:1209 - "D:/ADAT DeEncoder/ADAT_De-Encoder/ADAT_DekodermitTakt.vhd" Line 139. ADAT_In_Letzter_Wert: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "D:/ADAT DeEncoder/ADAT_De-Encoder/ADAT_DekodermitTakt.vhd" Line 139. Undefined symbol 'In_ADAT'.
+ERROR:HDLParsers:1209 - "D:/ADAT DeEncoder/ADAT_De-Encoder/ADAT_DekodermitTakt.vhd" Line 139. In_ADAT: Undefined symbol (last report in this block)
+ERROR:HDLParsers:1209 - "D:/ADAT DeEncoder/ADAT_De-Encoder/ADAT_DekodermitTakt.vhd" Line 144. ADAT_Takt: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "D:/ADAT DeEncoder/ADAT_De-Encoder/ADAT_DekodermitTakt.vhd" Line 171. Undefined symbol 'ADAT_Takt_Letzer_Wert'.
+ERROR:HDLParsers:808 - "D:/ADAT DeEncoder/ADAT_De-Encoder/ADAT_DekodermitTakt.vhd" Line 173. = can not have such operands in this context.
+ERROR:HDLParsers:3312 - "D:/ADAT DeEncoder/ADAT_De-Encoder/ADAT_DekodermitTakt.vhd" Line 174. Undefined symbol 'IN_ADAT'.
+ERROR:HDLParsers:1209 - "D:/ADAT DeEncoder/ADAT_De-Encoder/ADAT_DekodermitTakt.vhd" Line 176. IN_ADAT: Undefined symbol (last report in this block)
+ERROR:HDLParsers:1217 - "D:/ADAT DeEncoder/ADAT_De-Encoder/ADAT_DekodermitTakt.vhd" Line 216. Symbol Out_Daten can't be used as a prefix in a selected name.
+ERROR:HDLParsers:1212 - "D:/ADAT DeEncoder/ADAT_De-Encoder/ADAT_DekodermitTakt.vhd" Line 216. Invalid selected name Out_Daten.UserBits.
+ERROR:HDLParsers:1217 - "D:/ADAT DeEncoder/ADAT_De-Encoder/ADAT_DekodermitTakt.vhd" Line 218. Symbol Out_Daten can't be used as a prefix in a selected name.
+ERROR:HDLParsers:1212 - "D:/ADAT DeEncoder/ADAT_De-Encoder/ADAT_DekodermitTakt.vhd" Line 218. Invalid selected name Out_Daten.Kanaele.
+ERROR:HDLParsers:1217 - "D:/ADAT DeEncoder/ADAT_De-Encoder/ADAT_DekodermitTakt.vhd" Line 219. Symbol Out_Daten can't be used as a prefix in a selected name.
+ERROR:HDLParsers:1212 - "D:/ADAT DeEncoder/ADAT_De-Encoder/ADAT_DekodermitTakt.vhd" Line 219. Invalid selected name Out_Daten.Kanaele.
+ERROR:HDLParsers:1217 - "D:/ADAT DeEncoder/ADAT_De-Encoder/ADAT_DekodermitTakt.vhd" Line 220. Symbol Out_Daten can't be used as a prefix in a selected name.
+ERROR:HDLParsers:1212 - "D:/ADAT DeEncoder/ADAT_De-Encoder/ADAT_DekodermitTakt.vhd" Line 220. Invalid selected name Out_Daten.Kanaele.
+ERROR:HDLParsers:1217 - "D:/ADAT DeEncoder/ADAT_De-Encoder/ADAT_DekodermitTakt.vhd" Line 221. Symbol Out_Daten can't be used as a prefix in a selected name.
+ERROR:HDLParsers:1212 - "D:/ADAT DeEncoder/ADAT_De-Encoder/ADAT_DekodermitTakt.vhd" Line 221. Invalid selected name Out_Daten.Kanaele.
+ERROR:HDLParsers:1217 - "D:/ADAT DeEncoder/ADAT_De-Encoder/ADAT_DekodermitTakt.vhd" Line 222. Symbol Out_Daten can't be used as a prefix in a selected name.
+ERROR:HDLParsers:1212 - "D:/ADAT DeEncoder/ADAT_De-Encoder/ADAT_DekodermitTakt.vhd" Line 222. Invalid selected name Out_Daten.Kanaele.
+ERROR:HDLParsers:1217 - "D:/ADAT DeEncoder/ADAT_De-Encoder/ADAT_DekodermitTakt.vhd" Line 223. Symbol Out_Daten can't be used as a prefix in a selected name.
+ERROR:HDLParsers:1212 - "D:/ADAT DeEncoder/ADAT_De-Encoder/ADAT_DekodermitTakt.vhd" Line 223. Invalid selected name Out_Daten.Kanaele.
+ERROR:HDLParsers:1217 - "D:/ADAT DeEncoder/ADAT_De-Encoder/ADAT_DekodermitTakt.vhd" Line 224. Symbol Out_Daten can't be used as a prefix in a selected name.
+ERROR:HDLParsers:1212 - "D:/ADAT DeEncoder/ADAT_De-Encoder/ADAT_DekodermitTakt.vhd" Line 224. Invalid selected name Out_Daten.Kanaele.
+ERROR:HDLParsers:1217 - "D:/ADAT DeEncoder/ADAT_De-Encoder/ADAT_DekodermitTakt.vhd" Line 225. Symbol Out_Daten can't be used as a prefix in a selected name.
+ERROR:HDLParsers:1212 - "D:/ADAT DeEncoder/ADAT_De-Encoder/ADAT_DekodermitTakt.vhd" Line 225. Invalid selected name Out_Daten.Kanaele.
+ERROR:HDLParsers:3312 - "D:/ADAT DeEncoder/ADAT_De-Encoder/ADAT_DekodermitTakt.vhd" Line 244. Undefined symbol 'Out_FrameOK'.
+ERROR:HDLParsers:1209 - "D:/ADAT DeEncoder/ADAT_De-Encoder/ADAT_DekodermitTakt.vhd" Line 253. ADAT_Takt_Letzer_Wert: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "D:/ADAT DeEncoder/ADAT_De-Encoder/ADAT_DekodermitTakt.vhd" Line 256. Undefined symbol 'Out_ADAT_Clock'.
+ERROR:HDLParsers:3312 - "D:/ADAT DeEncoder/ADAT_De-Encoder/ADAT_DekodermitTakt.vhd" Line 257. Undefined symbol 'Out_NeueDaten'.
+ERROR:HDLParsers:3312 - "D:/ADAT DeEncoder/ADAT_De-Encoder/ADAT_DekodermitTakt.vhd" Line 258. Undefined symbol 'Frame_Sync'.
+WARNING:HDLParsers:1406 - "D:/ADAT DeEncoder/ADAT_De-Encoder/ADAT_DekodermitTakt.vhd" Line 62. No sensitivity list and no wait in the process
+--> 
+
+Total memory usage is 143400 kilobytes
+
+Number of errors   :   43 (   0 filtered)
+Number of warnings :    1 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

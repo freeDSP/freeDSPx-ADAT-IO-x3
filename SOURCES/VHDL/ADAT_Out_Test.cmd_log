@@ -1,0 +1,12 @@
+xst -intstyle ise -ifn "Z:/ADAT DeEncoder/ADAT_De-Encoder/ADAT_Out_Test.xst" -ofn "Z:/ADAT DeEncoder/ADAT_De-Encoder/ADAT_Out_Test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s200a-vq100-5 "ADAT_Out_Test.ngc" ADAT_Out_Test.ngd  
+map -intstyle ise -p xc3s200a-vq100-5 -timing -logic_opt on -ol high -xe n -t 1 -register_duplication on -cm speed -detail -ir off -ignore_keep_hierarchy -pr b -bp -power off -o ADAT_Out_Test_map.ncd ADAT_Out_Test.ngd ADAT_Out_Test.pcf 
+par -w -intstyle ise -pl high -rl high -xe n -t 1 ADAT_Out_Test_map.ncd ADAT_Out_Test.ncd ADAT_Out_Test.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml ADAT_Out_Test.twx ADAT_Out_Test.ncd -o ADAT_Out_Test.twr ADAT_Out_Test.pcf 
+bitgen -intstyle ise -f ADAT_Out_Test.ut ADAT_Out_Test.ncd 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/ADAT_Out_Test.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/ADAT_Out_Test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xXCS3200A-4VQ100_OutTest.ucf -p xc3s200a-vq100-5 "ADAT_Out_Test.ngc" ADAT_Out_Test.ngd  
+map -intstyle ise -p xc3s200a-vq100-5 -timing -logic_opt on -ol high -xe n -t 1 -register_duplication on -cm speed -detail -ir off -ignore_keep_hierarchy -pr b -bp -power off -o ADAT_Out_Test_map.ncd ADAT_Out_Test.ngd ADAT_Out_Test.pcf 
+par -w -intstyle ise -pl high -rl high -xe n -t 1 ADAT_Out_Test_map.ncd ADAT_Out_Test.ncd ADAT_Out_Test.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml ADAT_Out_Test.twx ADAT_Out_Test.ncd -o ADAT_Out_Test.twr ADAT_Out_Test.pcf -ucf xXCS3200A-4VQ100_OutTest.ucf 
+bitgen -intstyle ise -f ADAT_Out_Test.ut ADAT_Out_Test.ncd 

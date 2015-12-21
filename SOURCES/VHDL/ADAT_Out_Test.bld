@@ -1,0 +1,48 @@
+Release 14.7 ngdbuild P.20131013 (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Command Line: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt\unwrapped\ngdbuild.exe -intstyle
+ise -dd _ngo -nt timestamp -uc xXCS3200A-4VQ100_OutTest.ucf -p xc3s200a-vq100-5
+ADAT_Out_Test.ngc ADAT_Out_Test.ngd
+
+Reading NGO file "D:/ADAT DeEncoder/ADAT_De-Encoder/ADAT_Out_Test.ngc" ...
+Gathering constraint information from source properties...
+Done.
+
+Annotating constraints to design from ucf file "xXCS3200A-4VQ100_OutTest.ucf"
+...
+Resolving constraint associations...
+Checking Constraint Associations...
+WARNING:ConstraintSystem:56 - Constraint <TIMESPEC TS_in_AdatTakt = PERIOD
+   "in_AdatTakt" 81.3802 ns HIGH 50 %;> [xXCS3200A-4VQ100_OutTest.ucf(7)]:
+   Unable to find an active 'TNM' or 'TimeGrp' constraint named 'in_AdatTakt'.
+
+INFO:ConstraintSystem:178 - TNM 'in_Platinentakt', used in period specification
+   'TS_in_Platinentakt', was traced into DCM_SP instance
+   INST_ENKODERTESTCLOCK/DCM_SP_INST. The following new TNM groups and period
+   specifications were generated at the DCM_SP output(s): 
+   CLKFX: <TIMESPEC TS_INST_ENKODERTESTCLOCK_CLKFX_BUF = PERIOD
+   "INST_ENKODERTESTCLOCK_CLKFX_BUF" TS_in_Platinentakt / 0.24 HIGH 50%>
+
+Done...
+
+Checking expanded design ...
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+NGDBUILD Design Results Summary:
+  Number of errors:     0
+  Number of warnings:   1
+
+Total memory usage is 99304 kilobytes
+
+Writing NGD file "ADAT_Out_Test.ngd" ...
+Total REAL time to NGDBUILD completion:  3 sec
+Total CPU time to NGDBUILD completion:   3 sec
+
+Writing NGDBUILD log file "ADAT_Out_Test.bld"...

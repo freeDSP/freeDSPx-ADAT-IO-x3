@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="Z:/ADAT DeEncoder/ADAT_De-Encoder/tb_Test_ADAT_Loopback_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="adat" />
+            <top_module name="numeric_std" />
+            <top_module name="std_logic_1164" />
+            <top_module name="std_logic_arith" />
+            <top_module name="std_logic_unsigned" />
+            <top_module name="tb_test_adat_loopback" />
+            <top_module name="textio" />
+            <top_module name="vcomponents" />
+            <top_module name="vital_primitives" />
+            <top_module name="vital_timing" />
+            <top_module name="vpkg" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="10" />
+   <wvobject fp_name="/tb_test_adat_loopback/platinentakt" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">platinentakt</obj_property>
+      <obj_property name="ObjectShortName">platinentakt</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_test_adat_loopback/uut/inst_ADAT_Taktgewinnung/out_adat_clock" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">out_adat_clock</obj_property>
+      <obj_property name="ObjectShortName">out_adat_clock</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_test_adat_loopback/in_adat" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">in_adat[0:2]</obj_property>
+      <obj_property name="ObjectShortName">in_adat[0:2]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_test_adat_loopback/out_puffervoll" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">out_puffervoll</obj_property>
+      <obj_property name="ObjectShortName">out_puffervoll</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#ffa500</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_test_adat_loopback/out_pufferleer" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">out_pufferleer</obj_property>
+      <obj_property name="ObjectShortName">out_pufferleer</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#ffa500</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_test_adat_loopback/out_pufferueberlauf" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">out_pufferueberlauf</obj_property>
+      <obj_property name="ObjectShortName">out_pufferueberlauf</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#ff0000</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_test_adat_loopback/out_pufferunterlauf" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">out_pufferunterlauf</obj_property>
+      <obj_property name="ObjectShortName">out_pufferunterlauf</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#ff0000</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_test_adat_loopback/out_adat" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">out_adat[0:2]</obj_property>
+      <obj_property name="ObjectShortName">out_adat[0:2]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_test_adat_loopback/out_frameok" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">out_frameok[0:2]</obj_property>
+      <obj_property name="ObjectShortName">out_frameok[0:2]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_test_adat_loopback/platinentakt_period" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">platinentakt_period</obj_property>
+      <obj_property name="ObjectShortName">platinentakt_period</obj_property>
+   </wvobject>
+</wave_config>

@@ -1,0 +1,7 @@
+vhdl isim_temp "ADAT.vhd"
+vhdl isim_temp "ADAT_BLOCKRAM.vhd"
+vhdl isim_temp "EnkoderTestClock.vhd"
+vhdl isim_temp "DynamischerADATPuffer_BRAM.vhd"
+vhdl isim_temp "ADAT_Enkoder.vhd"
+vhdl isim_temp "ADAT_Out_Test.vhd"
+vhdl isim_temp "tb_Out_Test.vhd"

@@ -1,0 +1,28 @@
+Command line:
+   DualAdress_BRAM_isim_beh.exe
+     -simmode  gui
+     -simrunnum  1
+     -socket  1257
+
+Tue Jul 15 14:25:12 2014
+
+
+ Elaboration Time: 0.28125 sec
+
+ Current Memory Usage: 648.86 Meg
+
+ Total Signals          : 7
+ Total Nets             : 2068
+ Total Signal Drivers   : 2
+ Total Blocks           : 3
+ Total Primitive Blocks : 3
+ Total Processes        : 1
+ Total Traceable Variables  : 15
+ Total Scalar Nets and Variables : 2553
+
+ Total Simulation Time: 0.28125 sec
+
+ Current Memory Usage: 649.908 Meg
+
+Tue Jul 15 14:25:15 2014
+

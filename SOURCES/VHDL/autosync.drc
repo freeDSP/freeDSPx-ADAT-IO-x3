@@ -1,0 +1,21 @@
+Release 14.7 Drc P.20131013 (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Thu Mar 26 13:45:17 2015
+
+drc -z Autosync.ncd Autosync.pcf
+
+WARNING:PhysDesignRules:812 - Dangling pin <DOA12> on
+   block:<inst_BRAM_Puffer_McBSP_Enkoder/instADAT_BLOCKRAM/Mram_RAM17>:<RAMB16BW
+   E_RAMB16BWE>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA13> on
+   block:<inst_BRAM_Puffer_McBSP_Enkoder/instADAT_BLOCKRAM/Mram_RAM17>:<RAMB16BW
+   E_RAMB16BWE>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA14> on
+   block:<inst_BRAM_Puffer_McBSP_Enkoder/instADAT_BLOCKRAM/Mram_RAM17>:<RAMB16BW
+   E_RAMB16BWE>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA15> on
+   block:<inst_BRAM_Puffer_McBSP_Enkoder/instADAT_BLOCKRAM/Mram_RAM17>:<RAMB16BW
+   E_RAMB16BWE>.
+DRC detected 0 errors and 4 warnings.  Please see the previously displayed
+individual error or warning messages for more details.

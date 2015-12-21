@@ -1,0 +1,437 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">D:/ADAT DeEncoder/ADAT_De-Encoder/ADAT_De-Enkoder__Autosync.vhd</arg>&quot; line <arg fmt="%d" index="2">199</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">debug_ADAT_CHN_FSDelay_Messung</arg>&apos; of component &apos;<arg fmt="%s" index="4">AutoSynchronisierer</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">D:/ADAT DeEncoder/ADAT_De-Encoder/ADAT_De-Enkoder__Autosync.vhd</arg>&quot; line <arg fmt="%d" index="2">199</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">debug_ADAT_CHN_FSDelay_Korrektur</arg>&apos; of component &apos;<arg fmt="%s" index="4">AutoSynchronisierer</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">D:/ADAT DeEncoder/ADAT_De-Encoder/ADAT_De-Enkoder__Autosync.vhd</arg>&quot; line <arg fmt="%d" index="2">199</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">debug_ADAT_Takt_CHN</arg>&apos; of component &apos;<arg fmt="%s" index="4">AutoSynchronisierer</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">D:/ADAT DeEncoder/ADAT_De-Encoder/ADAT_De-Enkoder__Autosync.vhd</arg>&quot; line <arg fmt="%d" index="2">199</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">debug_sLeitungsindex</arg>&apos; of component &apos;<arg fmt="%s" index="4">AutoSynchronisierer</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">D:/ADAT DeEncoder/ADAT_De-Encoder/ADAT_De-Enkoder__Autosync.vhd</arg>&quot; line <arg fmt="%d" index="2">199</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">debug_ADAT_Langsam</arg>&apos; of component &apos;<arg fmt="%s" index="4">AutoSynchronisierer</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">D:/ADAT DeEncoder/ADAT_De-Encoder/ADAT_De-Enkoder__Autosync.vhd</arg>&quot; line <arg fmt="%d" index="2">199</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">debug_ADAT_in_phasenkorrigiert</arg>&apos; of component &apos;<arg fmt="%s" index="4">AutoSynchronisierer</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">D:/ADAT DeEncoder/ADAT_De-Encoder/ADAT_De-Enkoder__Autosync.vhd</arg>&quot; line <arg fmt="%d" index="2">213</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">Out_DB0</arg>&apos; of component &apos;<arg fmt="%s" index="4">ADAT_Dekoder</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">D:/ADAT DeEncoder/ADAT_De-Encoder/ADAT_De-Enkoder__Autosync.vhd</arg>&quot; line <arg fmt="%d" index="2">244</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">dbg_R_Schnittstellennummer</arg>&apos; of component &apos;<arg fmt="%s" index="4">McBSP_Interface</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">D:/ADAT DeEncoder/ADAT_De-Encoder/ADAT_De-Enkoder__Autosync.vhd</arg>&quot; line <arg fmt="%d" index="2">244</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">dbg_R_Kanalnummer</arg>&apos; of component &apos;<arg fmt="%s" index="4">McBSP_Interface</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">D:/ADAT DeEncoder/ADAT_De-Encoder/ADAT_De-Enkoder__Autosync.vhd</arg>&quot; line <arg fmt="%d" index="2">244</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">dbg_R_Bitnummer</arg>&apos; of component &apos;<arg fmt="%s" index="4">McBSP_Interface</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">D:/ADAT DeEncoder/ADAT_De-Encoder/ADAT_De-Enkoder__Autosync.vhd</arg>&quot; line <arg fmt="%d" index="2">244</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">dbg_X_Schnittstellennummer</arg>&apos; of component &apos;<arg fmt="%s" index="4">McBSP_Interface</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">D:/ADAT DeEncoder/ADAT_De-Encoder/ADAT_De-Enkoder__Autosync.vhd</arg>&quot; line <arg fmt="%d" index="2">244</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">dbg_X_Kanalnummer</arg>&apos; of component &apos;<arg fmt="%s" index="4">McBSP_Interface</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">D:/ADAT DeEncoder/ADAT_De-Encoder/ADAT_De-Enkoder__Autosync.vhd</arg>&quot; line <arg fmt="%d" index="2">244</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">dbg_X_Bitnummer</arg>&apos; of component &apos;<arg fmt="%s" index="4">McBSP_Interface</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">D:/ADAT DeEncoder/ADAT_De-Encoder/ADAT_De-Enkoder__Autosync.vhd</arg>&quot; line <arg fmt="%d" index="2">277</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">dbg_Bitnummer</arg>&apos; of component &apos;<arg fmt="%s" index="4">ADAT_Enkoder</arg>&apos;.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="new" >Register &lt;<arg fmt="%s" index="1">ADAT_CHN_FSDelay_Messung&lt;0&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">AutoSynchronisierer</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="info" file="Xst" num="1433" delta="new" >Contents of array &lt;<arg fmt="%s" index="1">RAM</arg>&gt; may be accessed with an index that exceeds the array size. This could cause simulation mismatch.
+</msg>
+
+<msg type="info" file="Xst" num="1433" delta="new" >Contents of array &lt;<arg fmt="%s" index="1">RAM</arg>&gt; may be accessed with an index that exceeds the array size. This could cause simulation mismatch.
+</msg>
+
+<msg type="warning" file="Xst" num="790" delta="new" >&quot;<arg fmt="%s" index="1">D:/ADAT DeEncoder/ADAT_De-Encoder/McBSP-Dekoder_1Puffer_Parallel.vhd</arg>&quot; line <arg fmt="%d" index="2">125</arg>: Index value(s) does not match array range, simulation mismatch.
+</msg>
+
+<msg type="warning" file="Xst" num="790" delta="new" >&quot;<arg fmt="%s" index="1">D:/ADAT DeEncoder/ADAT_De-Encoder/McBSP-Dekoder_1Puffer_Parallel.vhd</arg>&quot; line <arg fmt="%d" index="2">142</arg>: Index value(s) does not match array range, simulation mismatch.
+</msg>
+
+<msg type="warning" file="Xst" num="790" delta="new" >&quot;<arg fmt="%s" index="1">D:/ADAT DeEncoder/ADAT_De-Encoder/McBSP-Dekoder_1Puffer_Parallel.vhd</arg>&quot; line <arg fmt="%d" index="2">153</arg>: Index value(s) does not match array range, simulation mismatch.
+</msg>
+
+<msg type="warning" file="Xst" num="1305" delta="new" >Output &lt;<arg fmt="%s" index="1">Out_DB0</arg>&gt; is never assigned. Tied to value <arg fmt="%s" index="2">0</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="new" >Signal &lt;<arg fmt="%s" index="1">ADAT_Frame&lt;0&gt;&lt;0&gt;</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="new" >Signal &lt;<arg fmt="%s" index="1">ADAT_Frame&lt;1&gt;&lt;0&gt;</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="new" >Signal &lt;<arg fmt="%s" index="1">ADAT_Frame&lt;2&gt;&lt;0&gt;</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="info" file="Xst" num="738" delta="new" >HDL ADVISOR - <arg fmt="%d" index="1">768</arg> flip-flops were inferred for signal &lt;<arg fmt="%s" index="2">ADAT_Frame</arg>&gt;. You may be trying to describe a RAM in a way that is incompatible with block and distributed RAM resources available on Xilinx devices, or with a specific template that is not supported. Please review the Xilinx resources documentation and the XST user manual for coding guidelines. Taking advantage of RAM resources will lead to improved device usage and reduced synthesis time.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="new" >Signal &lt;<arg fmt="%s" index="1">TempFiFo&lt;0&gt;</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="info" file="Xst" num="1799" delta="new" >State <arg fmt="%s" index="1">001</arg> is never reached in FSM &lt;<arg fmt="%s" index="2">Phase0</arg>&gt;.
+</msg>
+
+<msg type="info" file="Xst" num="2117" delta="new" >HDL ADVISOR - Mux Selector &lt;<arg fmt="%s" index="1">Phase$mux0000</arg>&gt; of Case statement line <arg fmt="%s" index="2">116</arg> was re-encoded using one-hot encoding. The case statement will be optimized (default statement optimization), but this optimization may lead to design initialization problems. To ensure the design works safely, you can:
+	- add an &apos;<arg fmt="%s" index="3">INIT</arg>&apos; attribute on signal &lt;<arg fmt="%s" index="4">Phase$mux0000</arg>&gt; (optimization is then done without any risk)
+	- use the attribute &apos;<arg fmt="%s" index="5">signal_encoding</arg> <arg fmt="%s" index="6">user</arg>&apos; to avoid onehot optimization
+	- use the attribute &apos;<arg fmt="%s" index="7">safe_implementation</arg> <arg fmt="%s" index="8">yes</arg>&apos; to force XST to perform a safe (but less efficient) optimization
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">addr&lt;30:3&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="new" >Signal &lt;<arg fmt="%s" index="1">t_PufferVoll</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">0</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="new" >Signal &lt;<arg fmt="%s" index="1">t_PufferUnterlauf</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">0</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="new" >Signal &lt;<arg fmt="%s" index="1">t_PufferUeberlauf</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">0</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="new" >Signal &lt;<arg fmt="%s" index="1">t_PufferLeer</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">0</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="1780" delta="new" >Signal &lt;<arg fmt="%s" index="1">Debug_McBSPTakt</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1780" delta="new" >Signal &lt;<arg fmt="%s" index="1">AdatTaktFlanke</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1780" delta="new" >Signal &lt;<arg fmt="%s" index="1">ADAT_Taktflanke_bit</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="info" file="Xst" num="1767" delta="new" >HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">BR_addr_3</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">inst_BRAM_Puffer_McBSP_Enkoder</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">27 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;BR_addr_4&gt; &lt;BR_addr_5&gt; &lt;BR_addr_6&gt; &lt;BR_addr_7&gt; &lt;BR_addr_8&gt; &lt;BR_addr_9&gt; &lt;BR_addr_10&gt; &lt;BR_addr_11&gt; &lt;BR_addr_12&gt; &lt;BR_addr_13&gt; &lt;BR_addr_14&gt; &lt;BR_addr_15&gt; &lt;BR_addr_16&gt; &lt;BR_addr_17&gt; &lt;BR_addr_18&gt; &lt;BR_addr_19&gt; &lt;BR_addr_20&gt; &lt;BR_addr_21&gt; &lt;BR_addr_22&gt; &lt;BR_addr_23&gt; &lt;BR_addr_24&gt; &lt;BR_addr_25&gt; &lt;BR_addr_26&gt; &lt;BR_addr_27&gt; &lt;BR_addr_28&gt; &lt;BR_addr_29&gt; &lt;BR_addr_30&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">komplett_empfangen</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">inst_McBSP_Interface</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;Daten_komplett_empfangen&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">Uebernommen</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">inst_ADAT_Enkoder</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;DatenUebernommen&gt; </arg>
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">Phase_1</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">inst_McBSP_Interface</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">FSR_Verz￶gerungsTimer_0</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">inst_McBSP_Interface</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">ADAT_Frame_2_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">inst_ADAT_Dekoder</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">ADAT_Frame_2_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">inst_ADAT_Dekoder</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">ADAT_Frame_0_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">inst_ADAT_Dekoder</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">ADAT_Frame_0_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">inst_ADAT_Dekoder</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">ADAT_Frame_1_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">inst_ADAT_Dekoder</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">ADAT_Frame_1_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">inst_ADAT_Dekoder</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">BR_addr_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">inst_BRAM_Puffer_McBSP_Enkoder</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">TempFiFo_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">inst_McBSP_Interface</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">Phase_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">inst_McBSP_Interface</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2404" delta="new" > FFs/Latches &lt;<arg fmt="%s" index="1">dbg_X_Schnittstellennummer</arg>&lt;<arg fmt="%d" index="2">30</arg>:<arg fmt="%d" index="3">2</arg>&gt;&gt; (without init value) have a constant value of <arg fmt="%c" index="4">0</arg> in block &lt;<arg fmt="%s" index="5">McBSP_Interface</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2404" delta="new" > FFs/Latches &lt;<arg fmt="%s" index="1">dbg_R_Bitnummer</arg>&lt;<arg fmt="%d" index="2">30</arg>:<arg fmt="%d" index="3">5</arg>&gt;&gt; (without init value) have a constant value of <arg fmt="%c" index="4">0</arg> in block &lt;<arg fmt="%s" index="5">McBSP_Interface</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2404" delta="new" > FFs/Latches &lt;<arg fmt="%s" index="1">dbg_X_Kanalnummer</arg>&lt;<arg fmt="%d" index="2">30</arg>:<arg fmt="%d" index="3">3</arg>&gt;&gt; (without init value) have a constant value of <arg fmt="%c" index="4">0</arg> in block &lt;<arg fmt="%s" index="5">McBSP_Interface</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2404" delta="new" > FFs/Latches &lt;<arg fmt="%s" index="1">dbg_R_Schnittstellennummer</arg>&lt;<arg fmt="%d" index="2">30</arg>:<arg fmt="%d" index="3">2</arg>&gt;&gt; (without init value) have a constant value of <arg fmt="%c" index="4">0</arg> in block &lt;<arg fmt="%s" index="5">McBSP_Interface</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2404" delta="new" > FFs/Latches &lt;<arg fmt="%s" index="1">dbg_X_Bitnummer</arg>&lt;<arg fmt="%d" index="2">30</arg>:<arg fmt="%d" index="3">5</arg>&gt;&gt; (without init value) have a constant value of <arg fmt="%c" index="4">0</arg> in block &lt;<arg fmt="%s" index="5">McBSP_Interface</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2404" delta="new" > FFs/Latches &lt;<arg fmt="%s" index="1">dbg_R_Kanalnummer</arg>&lt;<arg fmt="%d" index="2">30</arg>:<arg fmt="%d" index="3">3</arg>&gt;&gt; (without init value) have a constant value of <arg fmt="%c" index="4">0</arg> in block &lt;<arg fmt="%s" index="5">McBSP_Interface</arg>&gt;.
+</msg>
+
+<msg type="info" file="Xst" num="3231" delta="new" >The small RAM &lt;<arg fmt="%s" index="1">Mram_memory</arg>&gt; will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+</msg>
+
+<msg type="info" file="Xst" num="3226" delta="new" >The RAM &lt;<arg fmt="%s" index="1">instADAT_BLOCKRAM/Mram_RAM</arg>&gt; will be implemented as a BLOCK RAM, absorbing the following register(s):</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">ADAT_Frame_0_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">ADAT_Dekoder</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">ADAT_Frame_0_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">ADAT_Dekoder</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">ADAT_Frame_1_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">ADAT_Dekoder</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">ADAT_Frame_1_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">ADAT_Dekoder</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">ADAT_Frame_2_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">ADAT_Dekoder</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">ADAT_Frame_2_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">ADAT_Dekoder</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">TempFiFo_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">McBSP_Interface</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">Phase_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">McBSP_Interface</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">BR_addr_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">DynamischerADATPuffer_BRAM</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">BR_addr_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">DynamischerADATPuffer_BRAM</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">BR_addr_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">DynamischerADATPuffer_BRAM</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">BR_addr_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">DynamischerADATPuffer_BRAM</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">BR_addr_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">DynamischerADATPuffer_BRAM</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">BR_addr_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">DynamischerADATPuffer_BRAM</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">BR_addr_9</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">DynamischerADATPuffer_BRAM</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">BR_addr_10</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">DynamischerADATPuffer_BRAM</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">BR_addr_11</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">DynamischerADATPuffer_BRAM</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">BR_addr_12</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">DynamischerADATPuffer_BRAM</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">BR_addr_13</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">DynamischerADATPuffer_BRAM</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">BR_addr_14</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">DynamischerADATPuffer_BRAM</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">BR_addr_15</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">DynamischerADATPuffer_BRAM</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">BR_addr_16</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">DynamischerADATPuffer_BRAM</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">BR_addr_17</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">DynamischerADATPuffer_BRAM</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">BR_addr_18</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">DynamischerADATPuffer_BRAM</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">BR_addr_19</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">DynamischerADATPuffer_BRAM</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">BR_addr_20</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">DynamischerADATPuffer_BRAM</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">BR_addr_21</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">DynamischerADATPuffer_BRAM</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">BR_addr_22</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">DynamischerADATPuffer_BRAM</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">BR_addr_23</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">DynamischerADATPuffer_BRAM</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">BR_addr_24</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">DynamischerADATPuffer_BRAM</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">BR_addr_25</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">DynamischerADATPuffer_BRAM</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">BR_addr_26</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">DynamischerADATPuffer_BRAM</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">BR_addr_27</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">DynamischerADATPuffer_BRAM</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">BR_addr_28</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">DynamischerADATPuffer_BRAM</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">BR_addr_29</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">DynamischerADATPuffer_BRAM</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">BR_addr_30</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">DynamischerADATPuffer_BRAM</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">Phase_1</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">McBSP_Interface</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">FSR_Verz￶gerungsTimer_0</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">McBSP_Interface</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">FSX_Verz￶gerungsTimer_0</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">McBSP_Interface</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">komplett_empfangen</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">McBSP_Interface</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;Daten_komplett_empfangen&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">Uebernommen</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">ADAT_Enkoder</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;DatenUebernommen&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">Leitungsindex3_0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">AutoSynchronisierer</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;sLeitungsindex_2&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">Leitungsindex1_0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">AutoSynchronisierer</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;sLeitungsindex_1&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">Leitungsindex_0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">AutoSynchronisierer</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;sLeitungsindex_0&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">tmp</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">Autosync</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;out_WordClock&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2697" delta="new" >Unit &lt;<arg fmt="%s" index="1">DynamischerADATPuffer_BRAM</arg>&gt; : the RAMs &lt;<arg fmt="%s" index="2">instADAT_BLOCKRAM/Mram_RAM2</arg>&gt;, &lt;<arg fmt="%s" index="3">instADAT_BLOCKRAM/Mram_RAM1</arg>&gt; are packed into the single block RAM &lt;<arg fmt="%s" index="4">instADAT_BLOCKRAM/Mram_RAM21</arg>&gt;
+</msg>
+
+<msg type="info" file="Xst" num="2697" delta="new" >Unit &lt;<arg fmt="%s" index="1">DynamischerADATPuffer_BRAM</arg>&gt; : the RAMs &lt;<arg fmt="%s" index="2">instADAT_BLOCKRAM/Mram_RAM5</arg>&gt;, &lt;<arg fmt="%s" index="3">instADAT_BLOCKRAM/Mram_RAM3</arg>&gt; are packed into the single block RAM &lt;<arg fmt="%s" index="4">instADAT_BLOCKRAM/Mram_RAM51</arg>&gt;
+</msg>
+
+<msg type="info" file="Xst" num="2697" delta="new" >Unit &lt;<arg fmt="%s" index="1">DynamischerADATPuffer_BRAM</arg>&gt; : the RAMs &lt;<arg fmt="%s" index="2">instADAT_BLOCKRAM/Mram_RAM4</arg>&gt;, &lt;<arg fmt="%s" index="3">instADAT_BLOCKRAM/Mram_RAM8</arg>&gt; are packed into the single block RAM &lt;<arg fmt="%s" index="4">instADAT_BLOCKRAM/Mram_RAM41</arg>&gt;
+</msg>
+
+<msg type="info" file="Xst" num="2697" delta="new" >Unit &lt;<arg fmt="%s" index="1">DynamischerADATPuffer_BRAM</arg>&gt; : the RAMs &lt;<arg fmt="%s" index="2">instADAT_BLOCKRAM/Mram_RAM6</arg>&gt;, &lt;<arg fmt="%s" index="3">instADAT_BLOCKRAM/Mram_RAM7</arg>&gt; are packed into the single block RAM &lt;<arg fmt="%s" index="4">instADAT_BLOCKRAM/Mram_RAM61</arg>&gt;
+</msg>
+
+<msg type="info" file="Xst" num="2697" delta="new" >Unit &lt;<arg fmt="%s" index="1">DynamischerADATPuffer_BRAM</arg>&gt; : the RAMs &lt;<arg fmt="%s" index="2">instADAT_BLOCKRAM/Mram_RAM11</arg>&gt;, &lt;<arg fmt="%s" index="3">instADAT_BLOCKRAM/Mram_RAM9</arg>&gt; are packed into the single block RAM &lt;<arg fmt="%s" index="4">instADAT_BLOCKRAM/Mram_RAM111</arg>&gt;
+</msg>
+
+<msg type="info" file="Xst" num="2697" delta="new" >Unit &lt;<arg fmt="%s" index="1">DynamischerADATPuffer_BRAM</arg>&gt; : the RAMs &lt;<arg fmt="%s" index="2">instADAT_BLOCKRAM/Mram_RAM10</arg>&gt;, &lt;<arg fmt="%s" index="3">instADAT_BLOCKRAM/Mram_RAM14</arg>&gt; are packed into the single block RAM &lt;<arg fmt="%s" index="4">instADAT_BLOCKRAM/Mram_RAM101</arg>&gt;
+</msg>
+
+<msg type="info" file="Xst" num="2697" delta="new" >Unit &lt;<arg fmt="%s" index="1">DynamischerADATPuffer_BRAM</arg>&gt; : the RAMs &lt;<arg fmt="%s" index="2">instADAT_BLOCKRAM/Mram_RAM12</arg>&gt;, &lt;<arg fmt="%s" index="3">instADAT_BLOCKRAM/Mram_RAM13</arg>&gt; are packed into the single block RAM &lt;<arg fmt="%s" index="4">instADAT_BLOCKRAM/Mram_RAM121</arg>&gt;
+</msg>
+
+<msg type="info" file="Xst" num="2697" delta="new" >Unit &lt;<arg fmt="%s" index="1">DynamischerADATPuffer_BRAM</arg>&gt; : the RAMs &lt;<arg fmt="%s" index="2">instADAT_BLOCKRAM/Mram_RAM15</arg>&gt;, &lt;<arg fmt="%s" index="3">instADAT_BLOCKRAM/Mram_RAM16</arg>&gt; are packed into the single block RAM &lt;<arg fmt="%s" index="4">instADAT_BLOCKRAM/Mram_RAM151</arg>&gt;
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">inst_McBSP_Interface/dbg_X_Bitnummer_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Autosync</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">inst_McBSP_Interface/dbg_X_Bitnummer_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Autosync</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">inst_McBSP_Interface/dbg_X_Bitnummer_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Autosync</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">inst_McBSP_Interface/dbg_X_Bitnummer_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Autosync</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">inst_McBSP_Interface/dbg_X_Bitnummer_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Autosync</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">inst_McBSP_Interface/dbg_R_Schnittstellennummer_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Autosync</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">inst_McBSP_Interface/dbg_R_Schnittstellennummer_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Autosync</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">inst_McBSP_Interface/dbg_X_Kanalnummer_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Autosync</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">inst_McBSP_Interface/dbg_X_Kanalnummer_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Autosync</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">inst_McBSP_Interface/dbg_X_Kanalnummer_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Autosync</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">inst_McBSP_Interface/dbg_R_Bitnummer_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Autosync</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">inst_McBSP_Interface/dbg_R_Bitnummer_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Autosync</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">inst_McBSP_Interface/dbg_R_Bitnummer_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Autosync</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">inst_McBSP_Interface/dbg_R_Bitnummer_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Autosync</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">inst_McBSP_Interface/dbg_R_Bitnummer_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Autosync</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">inst_McBSP_Interface/dbg_X_Schnittstellennummer_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Autosync</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">inst_McBSP_Interface/dbg_X_Schnittstellennummer_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Autosync</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">inst_McBSP_Interface/dbg_R_Kanalnummer_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Autosync</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">inst_McBSP_Interface/dbg_R_Kanalnummer_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Autosync</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">inst_McBSP_Interface/dbg_R_Kanalnummer_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Autosync</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">inst_ADAT_Enkoder/dbg_Bitnummer_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Autosync</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">inst_ADAT_Enkoder/dbg_Bitnummer_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Autosync</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">inst_ADAT_Enkoder/dbg_Bitnummer_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Autosync</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">inst_ADAT_Enkoder/dbg_Bitnummer_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Autosync</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">inst_ADAT_Enkoder/dbg_Bitnummer_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Autosync</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">inst_ADAT_Enkoder/dbg_Bitnummer_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Autosync</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">inst_ADAT_Enkoder/dbg_Bitnummer_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Autosync</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">inst_ADAT_Enkoder/dbg_Bitnummer_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Autosync</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1336" delta="new" > (*) More than 100% of Device resources are used
+</msg>
+
+<msg type="info" file="Xst" num="2169" delta="new" >HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+</msg>
+
+</messages>
+

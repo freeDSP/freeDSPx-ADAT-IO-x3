@@ -1,0 +1,37 @@
+Release 14.7 ngdbuild P.20131013 (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Command Line: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt\unwrapped\ngdbuild.exe -intstyle
+ise -dd _ngo -nt timestamp -uc xXCS3200A-4VQ100_SpikeSuche.ucf -p
+xc3s200a-vq100-5 SpikeSuche.ngc SpikeSuche.ngd
+
+Reading NGO file "D:/ADAT DeEncoder/ADAT_De-Encoder/SpikeSuche.ngc" ...
+Gathering constraint information from source properties...
+Done.
+
+Annotating constraints to design from ucf file "xXCS3200A-4VQ100_SpikeSuche.ucf"
+...
+Resolving constraint associations...
+Checking Constraint Associations...
+Done...
+
+Checking expanded design ...
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+NGDBUILD Design Results Summary:
+  Number of errors:     0
+  Number of warnings:   0
+
+Total memory usage is 105448 kilobytes
+
+Writing NGD file "SpikeSuche.ngd" ...
+Total REAL time to NGDBUILD completion:  5 sec
+Total CPU time to NGDBUILD completion:   5 sec
+
+Writing NGDBUILD log file "SpikeSuche.bld"...

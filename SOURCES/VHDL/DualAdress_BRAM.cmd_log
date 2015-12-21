@@ -1,0 +1,9 @@
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/DualAdress_BRAM.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/DualAdress_BRAM.syr" 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/DualAdress_BRAM.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/DualAdress_BRAM.syr" 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/DualAdress_BRAM.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/DualAdress_BRAM.syr" 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/DualAdress_BRAM.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/DualAdress_BRAM.syr" 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/DualAdress_BRAM.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/DualAdress_BRAM.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s200a-vq100-5 "DualAdress_BRAM.ngc" DualAdress_BRAM.ngd  
+map -intstyle ise -p xc3s200a-vq100-5 -timing -logic_opt off -ol high -xe n -t 1 -register_duplication off -cm area -ir off -pr b -power off -o DualAdress_BRAM_map.ncd DualAdress_BRAM.ngd DualAdress_BRAM.pcf 
+par -w -intstyle ise -pl high -rl high -xe n -t 1 DualAdress_BRAM_map.ncd DualAdress_BRAM.ncd DualAdress_BRAM.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml DualAdress_BRAM.twx DualAdress_BRAM.ncd -o DualAdress_BRAM.twr DualAdress_BRAM.pcf 

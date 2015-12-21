@@ -1,0 +1,2092 @@
+Release 14.6 - xst P.68d (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 10.00 secs
+Total CPU time to Xst completion: 9.59 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 11.00 secs
+Total CPU time to Xst completion: 10.62 secs
+ 
+--> Reading design: McBSP_Test.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "McBSP_Test.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "McBSP_Test"
+Output Format                      : NGC
+Target Device                      : xc3s200a-5-vq100
+
+---- Source Options
+Top Module Name                    : McBSP_Test
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : Yes
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 500
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Move First FlipFlop Stage          : YES
+Move Last FlipFlop Stage           : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : YES
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : True
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 2
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : Offset_In_Before
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : YES
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Upper
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : YES
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "//vmware-host/shared folders/D/ADAT DeEncoder/ADAT_De-Encoder/ADAT.vhd" in Library work.
+Architecture adat of Entity adat is up to date.
+Compiling vhdl file "//vmware-host/shared folders/D/ADAT DeEncoder/ADAT_De-Encoder/ADAT_BLOCKRAM.vhd" in Library work.
+Architecture verhalten_nochange of Entity adat_blockram is up to date.
+Compiling vhdl file "//vmware-host/shared folders/D/ADAT DeEncoder/ADAT_De-Encoder/SchnellerTakt.vhd" in Library work.
+Architecture behavioral of Entity schnellertakt is up to date.
+Compiling vhdl file "//vmware-host/shared folders/D/ADAT DeEncoder/ADAT_De-Encoder/ADAT_Taktgewinnung.vhd" in Library work.
+Architecture verhalten of Entity adat_taktgewinnung is up to date.
+Compiling vhdl file "//vmware-host/shared folders/D/ADAT DeEncoder/ADAT_De-Encoder/ADAT_Dekoder.vhd" in Library work.
+Architecture verhalten of Entity adat_dekoder is up to date.
+Compiling vhdl file "//vmware-host/shared folders/D/ADAT DeEncoder/ADAT_De-Encoder/DynamischerADATPuffer_BRAM.vhd" in Library work.
+Architecture behavioral of Entity dynamischeradatpuffer_bram is up to date.
+Compiling vhdl file "//vmware-host/shared folders/D/ADAT DeEncoder/ADAT_De-Encoder/McBSP-Dekoder_1Puffer_Parallel.vhd" in Library work.
+Architecture mcbsp_verhalten of Entity mcbsp_interface is up to date.
+Compiling vhdl file "//vmware-host/shared folders/D/ADAT DeEncoder/ADAT_De-Encoder/ADAT_Enkoder.vhd" in Library work.
+Architecture behavioral of Entity adat_enkoder is up to date.
+Compiling vhdl file "//vmware-host/shared folders/D/ADAT DeEncoder/ADAT_De-Encoder/McBSP-Test.vhd" in Library work.
+Entity <mcbsp_test> compiled.
+Entity <mcbsp_test> (Architecture <verhalten>) compiled.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <McBSP_Test> in library <work> (architecture <verhalten>) with generics.
+	PUFFERLAENGE = 2
+	SCHNITTSTELLEN = 3
+
+Analyzing hierarchy for entity <SchnellerTakt> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <ADAT_Taktgewinnung> in library <work> (architecture <verhalten>) with generics.
+	AdatSchnittstellen = 3
+
+Analyzing hierarchy for entity <ADAT_Dekoder> in library <work> (architecture <verhalten>) with generics.
+	AdatSchnittstellen = 3
+
+Analyzing hierarchy for entity <DynamischerADATPuffer_BRAM> in library <work> (architecture <behavioral>) with generics.
+	PUFFERBREITE = 3
+	PUFFERLAENGE = 2
+
+Analyzing hierarchy for entity <McBSP_Interface> in library <work> (architecture <mcbsp_verhalten>) with generics.
+	CLKR_Aktiv = '0'
+	CLKR_Inaktiv = '1'
+	CLKX_Aktiv = '1'
+	CLKX_Inaktiv = '0'
+	FSR_Aktiv = '1'
+	FSR_Inaktiv = '0'
+	FSR_Verzögerung = 1
+	FSX_Aktiv = '1'
+	FSX_Inaktiv = '0'
+	FSX_Verzögerung = 1
+	SCHNITTSTELLEN = 3
+
+Analyzing hierarchy for entity <ADAT_Enkoder> in library <work> (architecture <behavioral>) with generics.
+	AdatSchnittstellen = 3
+
+Analyzing hierarchy for entity <ADAT_BLOCKRAM> in library <work> (architecture <verhalten_nochange>) with generics.
+	ADAT_SCHNITTSTELLEN = 3
+	PUFFER_LAENGE = 2
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing generic Entity <McBSP_Test> in library <work> (Architecture <verhalten>).
+	PUFFERLAENGE = 2
+	SCHNITTSTELLEN = 3
+WARNING:Xst:753 - "//vmware-host/shared folders/D/ADAT DeEncoder/ADAT_De-Encoder/McBSP-Test.vhd" line 221: Unconnected output port 'CLK0_out' of component 'SchnellerTakt'.
+    Set property "clock_signal = yes" for signal <clk> in unit <ADAT_Taktgewinnung>.
+    Set property "max_fanout = 2" for signal <clk> in unit <ADAT_Taktgewinnung>.
+WARNING:Xst:753 - "//vmware-host/shared folders/D/ADAT DeEncoder/ADAT_De-Encoder/McBSP-Test.vhd" line 274: Unconnected output port 'dbg_R_Schnittstellennummer' of component 'McBSP_Interface'.
+WARNING:Xst:753 - "//vmware-host/shared folders/D/ADAT DeEncoder/ADAT_De-Encoder/McBSP-Test.vhd" line 274: Unconnected output port 'dbg_R_Kanalnummer' of component 'McBSP_Interface'.
+WARNING:Xst:753 - "//vmware-host/shared folders/D/ADAT DeEncoder/ADAT_De-Encoder/McBSP-Test.vhd" line 274: Unconnected output port 'dbg_R_Bitnummer' of component 'McBSP_Interface'.
+WARNING:Xst:753 - "//vmware-host/shared folders/D/ADAT DeEncoder/ADAT_De-Encoder/McBSP-Test.vhd" line 274: Unconnected output port 'dbg_X_Schnittstellennummer' of component 'McBSP_Interface'.
+WARNING:Xst:753 - "//vmware-host/shared folders/D/ADAT DeEncoder/ADAT_De-Encoder/McBSP-Test.vhd" line 274: Unconnected output port 'dbg_X_Kanalnummer' of component 'McBSP_Interface'.
+WARNING:Xst:753 - "//vmware-host/shared folders/D/ADAT DeEncoder/ADAT_De-Encoder/McBSP-Test.vhd" line 274: Unconnected output port 'dbg_X_Bitnummer' of component 'McBSP_Interface'.
+WARNING:Xst:753 - "//vmware-host/shared folders/D/ADAT DeEncoder/ADAT_De-Encoder/McBSP-Test.vhd" line 316: Unconnected output port 'dbg_Bitnummer' of component 'ADAT_Enkoder'.
+    Set user-defined property "CLK_SEL_TYPE =  SYNC" for instance <BUFGMUX_AdatTakt> in unit <McBSP_Test>.
+    Set user-defined property "CLK_SEL_TYPE =  SYNC" for instance <BUFGMUX_AdatFramesync> in unit <McBSP_Test>.
+INFO:Xst:2679 - Register <McBSPTestdaten<0>.Kanaele<3>> in unit <McBSP_Test> has a constant value of 101000001100111000011111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <McBSPTestdaten<0>.Kanaele<0>> in unit <McBSP_Test> has a constant value of 111111111111111111111111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <McBSPTestdaten<0>.Kanaele<1>> in unit <McBSP_Test> has a constant value of 000000000000000000000000 during circuit operation. The register is replaced by logic.
+Entity <McBSP_Test> analyzed. Unit <McBSP_Test> generated.
+
+Analyzing Entity <SchnellerTakt> in library <work> (Architecture <behavioral>).
+    Set user-defined property "CLKDV_DIVIDE =  2.0000000000000000" for instance <DCM_SP_INST> in unit <SchnellerTakt>.
+    Set user-defined property "CLKFX_DIVIDE =  1" for instance <DCM_SP_INST> in unit <SchnellerTakt>.
+    Set user-defined property "CLKFX_MULTIPLY =  6" for instance <DCM_SP_INST> in unit <SchnellerTakt>.
+    Set user-defined property "CLKIN_DIVIDE_BY_2 =  FALSE" for instance <DCM_SP_INST> in unit <SchnellerTakt>.
+    Set user-defined property "CLKIN_PERIOD =  20.0000000000000000" for instance <DCM_SP_INST> in unit <SchnellerTakt>.
+    Set user-defined property "CLKOUT_PHASE_SHIFT =  NONE" for instance <DCM_SP_INST> in unit <SchnellerTakt>.
+    Set user-defined property "CLK_FEEDBACK =  1X" for instance <DCM_SP_INST> in unit <SchnellerTakt>.
+    Set user-defined property "DESKEW_ADJUST =  SYSTEM_SYNCHRONOUS" for instance <DCM_SP_INST> in unit <SchnellerTakt>.
+    Set user-defined property "DFS_FREQUENCY_MODE =  LOW" for instance <DCM_SP_INST> in unit <SchnellerTakt>.
+    Set user-defined property "DLL_FREQUENCY_MODE =  LOW" for instance <DCM_SP_INST> in unit <SchnellerTakt>.
+    Set user-defined property "DSS_MODE =  NONE" for instance <DCM_SP_INST> in unit <SchnellerTakt>.
+    Set user-defined property "DUTY_CYCLE_CORRECTION =  TRUE" for instance <DCM_SP_INST> in unit <SchnellerTakt>.
+    Set user-defined property "FACTORY_JF =  C080" for instance <DCM_SP_INST> in unit <SchnellerTakt>.
+    Set user-defined property "PHASE_SHIFT =  0" for instance <DCM_SP_INST> in unit <SchnellerTakt>.
+    Set user-defined property "STARTUP_WAIT =  FALSE" for instance <DCM_SP_INST> in unit <SchnellerTakt>.
+Entity <SchnellerTakt> analyzed. Unit <SchnellerTakt> generated.
+
+Analyzing generic Entity <ADAT_Taktgewinnung> in library <work> (Architecture <verhalten>).
+	AdatSchnittstellen = 3
+Entity <ADAT_Taktgewinnung> analyzed. Unit <ADAT_Taktgewinnung> generated.
+
+Analyzing generic Entity <ADAT_Dekoder> in library <work> (Architecture <verhalten>).
+	AdatSchnittstellen = 3
+Entity <ADAT_Dekoder> analyzed. Unit <ADAT_Dekoder> generated.
+
+Analyzing generic Entity <DynamischerADATPuffer_BRAM> in library <work> (Architecture <behavioral>).
+	PUFFERBREITE = 3
+	PUFFERLAENGE = 2
+Entity <DynamischerADATPuffer_BRAM> analyzed. Unit <DynamischerADATPuffer_BRAM> generated.
+
+Analyzing generic Entity <ADAT_BLOCKRAM> in library <work> (Architecture <verhalten_nochange>).
+	ADAT_SCHNITTSTELLEN = 3
+	PUFFER_LAENGE = 2
+INFO:Xst:1433 - Contents of array <RAM> may be accessed with an index that exceeds the array size. This could cause simulation mismatch.
+INFO:Xst:1433 - Contents of array <RAM> may be accessed with an index that exceeds the array size. This could cause simulation mismatch.
+Entity <ADAT_BLOCKRAM> analyzed. Unit <ADAT_BLOCKRAM> generated.
+
+Analyzing generic Entity <McBSP_Interface> in library <work> (Architecture <mcbsp_verhalten>).
+	CLKR_Aktiv = '0'
+	CLKR_Inaktiv = '1'
+	CLKX_Aktiv = '1'
+	CLKX_Inaktiv = '0'
+	FSR_Aktiv = '1'
+	FSR_Inaktiv = '0'
+	FSR_Verzögerung = 1
+	FSX_Aktiv = '1'
+	FSX_Inaktiv = '0'
+	FSX_Verzögerung = 1
+	SCHNITTSTELLEN = 3
+WARNING:Xst:790 - "//vmware-host/shared folders/D/ADAT DeEncoder/ADAT_De-Encoder/McBSP-Dekoder_1Puffer_Parallel.vhd" line 118: Index value(s) does not match array range, simulation mismatch.
+WARNING:Xst:790 - "//vmware-host/shared folders/D/ADAT DeEncoder/ADAT_De-Encoder/McBSP-Dekoder_1Puffer_Parallel.vhd" line 136: Index value(s) does not match array range, simulation mismatch.
+WARNING:Xst:790 - "//vmware-host/shared folders/D/ADAT DeEncoder/ADAT_De-Encoder/McBSP-Dekoder_1Puffer_Parallel.vhd" line 140: Index value(s) does not match array range, simulation mismatch.
+Entity <McBSP_Interface> analyzed. Unit <McBSP_Interface> generated.
+
+Analyzing generic Entity <ADAT_Enkoder> in library <work> (Architecture <behavioral>).
+	AdatSchnittstellen = 3
+Entity <ADAT_Enkoder> analyzed. Unit <ADAT_Enkoder> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+INFO:Xst:2679 - Register <FSR_VerzögerungsTimer> in unit <McBSP_Interface> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <FSX_VerzögerungsTimer> in unit <McBSP_Interface> has a constant value of 0 during circuit operation. The register is replaced by logic.
+
+Synthesizing Unit <ADAT_Dekoder>.
+    Related source file is "//vmware-host/shared folders/D/ADAT DeEncoder/ADAT_De-Encoder/ADAT_Dekoder.vhd".
+WARNING:Xst:646 - Signal <ADAT_Frame<0><0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ADAT_Frame<1><0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ADAT_Frame<2><0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Found 4-bit register for signal <Out_Daten<0>.UserBits>.
+    Found 4-bit register for signal <Out_Daten<1>.UserBits>.
+    Found 4-bit register for signal <Out_Daten<2>.UserBits>.
+    Found 192-bit register for signal <Out_Daten<2>.Kanaele>.
+    Found 1-bit register for signal <Out_NeueDaten>.
+    Found 192-bit register for signal <Out_Daten<1>.Kanaele>.
+    Found 3-bit register for signal <Out_FrameOK>.
+    Found 192-bit register for signal <Out_Daten<0>.Kanaele>.
+    Found 768-bit register for signal <ADAT_Frame>.
+    Found 1-bit xor2 for signal <ADAT_Frame_0$xor0000> created at line 77.
+    Found 1-bit xor2 for signal <ADAT_Frame_1$xor0000> created at line 77.
+    Found 1-bit xor2 for signal <ADAT_Frame_2$xor0000> created at line 77.
+    Found 1-bit register for signal <ADAT_Sync_Letzer_Wert>.
+    Found 8-bit register for signal <BitZaehler>.
+    Found 8-bit adder for signal <BitZaehler$add0000> created at line 155.
+    Found 3-bit register for signal <Letztes_Bit>.
+    Found 1-bit register for signal <NeueDaten>.
+INFO:Xst:738 - HDL ADVISOR - 768 flip-flops were inferred for signal <ADAT_Frame>. You may be trying to describe a RAM in a way that is incompatible with block and distributed RAM resources available on Xilinx devices, or with a specific template that is not supported. Please review the Xilinx resources documentation and the XST user manual for coding guidelines. Taking advantage of RAM resources will lead to improved device usage and reduced synthesis time.
+    Summary:
+	inferred 1373 D-type flip-flop(s).
+	inferred   1 Adder/Subtractor(s).
+Unit <ADAT_Dekoder> synthesized.
+
+
+Synthesizing Unit <McBSP_Interface>.
+    Related source file is "//vmware-host/shared folders/D/ADAT DeEncoder/ADAT_De-Encoder/McBSP-Dekoder_1Puffer_Parallel.vhd".
+WARNING:Xst:646 - Signal <TempFiFo<0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+INFO:Xst:1799 - State 001 is never reached in FSM <Phase0>.
+    Found finite state machine <FSM_0> for signal <Phase0>.
+    -----------------------------------------------------------------------
+    | States             | 3                                              |
+    | Transitions        | 10                                             |
+    | Inputs             | 5                                              |
+    | Outputs            | 4                                              |
+    | Clock              | CLKX                      (rising_edge)        |
+    | Power Up State     | 000                                            |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Using one-hot encoding for signal <Phase$mux0000>.
+INFO:Xst:2117 - HDL ADVISOR - Mux Selector <Phase$mux0000> of Case statement line 109 was re-encoded using one-hot encoding. The case statement will be optimized (default statement optimization), but this optimization may lead to design initialization problems. To ensure the design works safely, you can:
+   	- add an 'INIT' attribute on signal <Phase$mux0000> (optimization is then done without any risk)
+   	- use the attribute 'signal_encoding user' to avoid onehot optimization
+   	- use the attribute 'safe_implementation yes' to force XST to perform a safe (but less efficient) optimization
+    Found 31-bit register for signal <dbg_X_Bitnummer>.
+    Found 4-bit register for signal <Daten_Ausgang<0>.UserBits>.
+    Found 31-bit register for signal <dbg_X_Schnittstellennummer>.
+    Found 4-bit register for signal <Daten_Ausgang<1>.UserBits>.
+    Found 1-bit register for signal <DX>.
+    Found 4-bit register for signal <Daten_Ausgang<2>.UserBits>.
+    Found 1-bit register for signal <Daten_komplett_empfangen>.
+    Found 192-bit register for signal <Daten_Ausgang<2>.Kanaele>.
+    Found 31-bit register for signal <dbg_R_Bitnummer>.
+    Found 1-bit register for signal <FSX>.
+    Found 192-bit register for signal <Daten_Ausgang<1>.Kanaele>.
+    Found 31-bit register for signal <dbg_R_Schnittstellennummer>.
+    Found 31-bit register for signal <dbg_X_Kanalnummer>.
+    Found 31-bit register for signal <dbg_R_Kanalnummer>.
+    Found 192-bit register for signal <Daten_Ausgang<0>.Kanaele>.
+    Found 5-bit register for signal <Bitnummer>.
+    Found 5-bit adder for signal <Bitnummer$share0000> created at line 109.
+    Found 5-bit register for signal <Bitnummer0>.
+    Found 5-bit adder for signal <Bitnummer0$share0000> created at line 173.
+    Found 5-bit comparator less for signal <DX$cmp_lt0000> created at line 214.
+    Found 192-bit 3-to-1 multiplexer for signal <DX$mux0000<191:184>> created at line 200.
+    Found 4-bit 3-to-1 multiplexer for signal <DX$mux0002> created at line 215.
+    Found 24-bit 8-to-1 multiplexer for signal <DX$varindex0000> created at line 200.
+    Found 3-bit register for signal <Kanalnummer>.
+    Found 3-bit adder for signal <Kanalnummer$addsub0000> created at line 141.
+    Found 3-bit register for signal <Kanalnummer0>.
+    Found 3-bit adder for signal <Kanalnummer0$addsub0000> created at line 206.
+    Found 1-bit register for signal <komplett_empfangen>.
+    Found 1-bit register for signal <Neue_Daten_Zum_Senden_alt>.
+    Found 4-bit register for signal <Phase>.
+    Found 2-bit register for signal <Schnittstellennummer>.
+    Found 2-bit adder for signal <Schnittstellennummer$addsub0000> created at line 124.
+    Found 2-bit register for signal <Schnittstellennummer0>.
+    Found 2-bit adder for signal <Schnittstellennummer0$addsub0000> created at line 221.
+    Found 1-bit xor2 for signal <Schnittstellennummer0$xor0000> created at line 175.
+    Found 24-bit register for signal <TempFiFo>.
+    Summary:
+	inferred   1 Finite State Machine(s).
+	inferred 827 D-type flip-flop(s).
+	inferred   6 Adder/Subtractor(s).
+	inferred   1 Comparator(s).
+	inferred 220 Multiplexer(s).
+Unit <McBSP_Interface> synthesized.
+
+
+Synthesizing Unit <ADAT_Enkoder>.
+    Related source file is "//vmware-host/shared folders/D/ADAT DeEncoder/ADAT_De-Encoder/ADAT_Enkoder.vhd".
+    Using one-hot encoding for signal <Phase$mux0000>.
+    Found 1-bit register for signal <DatenUebernommen>.
+    Found 8-bit register for signal <dbg_Bitnummer>.
+    Found 8-bit register for signal <BitNummer>.
+    Found 8-bit adder for signal <BitNummer$addsub0000> created at line 151.
+    Found 1-bit register for signal <BitNummer_Reset>.
+    Found 1-bit register for signal <BitNummer_Reset_alt>.
+    Found 24-bit 8-to-1 multiplexer for signal <Daten<0>.Kanaele$mux0000> created at line 121.
+    Found 1-bit 24-to-1 multiplexer for signal <Daten<0>.Kanaele$mux0001> created at line 121.
+    Found 1-bit 4-to-1 multiplexer for signal <Daten<0>.UserBits$mux0000> created at line 95.
+    Found 24-bit 8-to-1 multiplexer for signal <Daten<1>.Kanaele$mux0000> created at line 121.
+    Found 1-bit 24-to-1 multiplexer for signal <Daten<1>.Kanaele$mux0001> created at line 121.
+    Found 1-bit 4-to-1 multiplexer for signal <Daten<1>.UserBits$mux0000> created at line 95.
+    Found 24-bit 8-to-1 multiplexer for signal <Daten<2>.Kanaele$mux0000> created at line 121.
+    Found 1-bit 24-to-1 multiplexer for signal <Daten<2>.Kanaele$mux0001> created at line 121.
+    Found 1-bit 4-to-1 multiplexer for signal <Daten<2>.UserBits$mux0000> created at line 95.
+    Found 3-bit register for signal <intern_ADAT>.
+    Found 3-bit register for signal <Kanalnummer>.
+    Found 3-bit adder for signal <Kanalnummer$addsub0000> created at line 129.
+    Found 5-bit register for signal <LokaleBitNummer>.
+    Found 8-bit adder for signal <LokaleBitNummer$add0000> created at line 101.
+    Found 5-bit adder for signal <LokaleBitNummer$share0000> created at line 87.
+    Found 3-bit register for signal <Phase>.
+    Found 8-bit adder for signal <Phase$add0000> created at line 136.
+    Found 1-bit xor2 for signal <Phase$xor0000> created at line 79.
+    Found 1-bit register for signal <Uebernommen>.
+    Summary:
+	inferred  34 D-type flip-flop(s).
+	inferred   5 Adder/Subtractor(s).
+	inferred  78 Multiplexer(s).
+Unit <ADAT_Enkoder> synthesized.
+
+
+Synthesizing Unit <ADAT_BLOCKRAM>.
+    Related source file is "//vmware-host/shared folders/D/ADAT DeEncoder/ADAT_De-Encoder/ADAT_BLOCKRAM.vhd".
+WARNING:Xst:647 - Input <addr<30:1>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 2x588-bit single-port RAM <Mram_RAM> for signal <RAM>.
+    Found 588-bit register for signal <do>.
+    Summary:
+	inferred   1 RAM(s).
+	inferred 588 D-type flip-flop(s).
+Unit <ADAT_BLOCKRAM> synthesized.
+
+
+Synthesizing Unit <SchnellerTakt>.
+    Related source file is "//vmware-host/shared folders/D/ADAT DeEncoder/ADAT_De-Encoder/SchnellerTakt.vhd".
+Unit <SchnellerTakt> synthesized.
+
+
+Synthesizing Unit <ADAT_Taktgewinnung>.
+    Related source file is "//vmware-host/shared folders/D/ADAT DeEncoder/ADAT_De-Encoder/ADAT_Taktgewinnung.vhd".
+    Found 1-bit register for signal <Out_ADAT_Clock>.
+    Found 1-bit register for signal <Frame_Sync>.
+    Found 1-bit register for signal <ADAT_In_Letzter_Wert>.
+    Found 1-bit register for signal <ADAT_Takt>.
+    Found 3-bit comparator equal for signal <ADAT_Takt$cmp_eq0000> created at line 128.
+    Found 3-bit comparator greatequal for signal <ADAT_Takt$cmp_ge0000> created at line 131.
+    Found 3-bit comparator less for signal <ADAT_Takt$cmp_lt0000> created at line 131.
+    Found 3-bit comparator not equal for signal <ADAT_Takt$cmp_ne0000> created at line 128.
+    Found 1-bit xor2 for signal <ADAT_Takt$xor0000> created at line 113.
+    Found 3-bit register for signal <Bitlaengen_Zaehler>.
+    Found 3-bit adder for signal <Bitlaengen_Zaehler$add0000> created at line 135.
+    Found 9-bit up counter for signal <SignalAenderungen>.
+    Found 1-bit register for signal <Sync>.
+    Found 10-bit adder for signal <Sync$add0000> created at line 74.
+    Found 10-bit comparator equal for signal <Sync$cmp_eq0000> created at line 75.
+    Found 10-bit comparator equal for signal <Sync$cmp_eq0001> created at line 75.
+    Found 3-bit register for signal <Sync_BitLaenge>.
+    Found 7-bit register for signal <Sync_ErkennungsLaenge>.
+    Found 9-bit adder for signal <Sync_ErkennungsLaenge$add0000> created at line 86.
+    Found 10-bit up counter for signal <Sync_FrameLaengeZaehler>.
+    Found 1-bit register for signal <Sync_Letzer_Wert>.
+    Found 10-bit up counter for signal <Zeit_ohne_Aenderung>.
+    Found 10-bit register for signal <Zeit_ohne_Aenderung_max>.
+    Found 10-bit comparator greater for signal <Zeit_ohne_Aenderung_max$cmp_gt0000> created at line 80.
+    Found 10-bit comparator lessequal for signal <Zeit_ohne_Aenderung_max$cmp_le0000> created at line 80.
+    Summary:
+	inferred   3 Counter(s).
+	inferred  29 D-type flip-flop(s).
+	inferred   3 Adder/Subtractor(s).
+	inferred   8 Comparator(s).
+Unit <ADAT_Taktgewinnung> synthesized.
+
+
+Synthesizing Unit <DynamischerADATPuffer_BRAM>.
+    Related source file is "//vmware-host/shared folders/D/ADAT DeEncoder/ADAT_De-Encoder/DynamischerADATPuffer_BRAM.vhd".
+    Found 1-bit register for signal <PufferVoll>.
+    Found 1-bit register for signal <PufferLeer>.
+    Found 1-bit register for signal <PufferUnterlauf>.
+    Found 1-bit register for signal <PufferUeberlauf>.
+    Found 2-bit adder for signal <$add0000> created at line 151.
+    Found 1-bit adder carry out for signal <add0001$addsub0000> created at line 179.
+    Found 1-bit register for signal <Anfang<0>>.
+    Found 1-bit register for signal <Ausgang_NaechsterDatensatz_alt>.
+    Found 31-bit register for signal <BR_addr>.
+    Found 1-bit register for signal <BR_clk>.
+    Found 1-bit register for signal <BR_we>.
+    Found 1-bit register for signal <Eingang_NeueDatenAngekommen_alt>.
+    Found 2-bit updown counter for signal <Laenge>.
+    Found 1-bit xor2 for signal <Laenge$xor0000> created at line 144.
+    Found 2-bit subtractor for signal <PufferLeer$addsub0000> created at line 180.
+    Found 1-bit xor2 for signal <PufferUnterlauf$xor0000> created at line 165.
+    Found 2-bit adder for signal <PufferVoll$addsub0000> created at line 156.
+    Found 1-bit register for signal <VerzoegerterRamTakt_noetig<0>>.
+    Summary:
+	inferred   1 Counter(s).
+	inferred  41 D-type flip-flop(s).
+	inferred   4 Adder/Subtractor(s).
+Unit <DynamischerADATPuffer_BRAM> synthesized.
+
+
+Synthesizing Unit <McBSP_Test>.
+    Related source file is "//vmware-host/shared folders/D/ADAT DeEncoder/ADAT_De-Encoder/McBSP-Test.vhd".
+WARNING:Xst:1780 - Signal <Puffer_Enkoder_DatenB<2>.UserBits> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <Puffer_Enkoder_DatenB<2>.Kanaele> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <Puffer_Enkoder_DatenB<1>.UserBits> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <Puffer_Enkoder_DatenB<1>.Kanaele> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <Puffer_Enkoder_DatenB<0>.UserBits> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <Puffer_Enkoder_DatenB<0>.Kanaele> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:653 - Signal <McBSPTestdaten<2>.UserBits> is used but never assigned. This sourceless signal will be automatically connected to value 0000.
+WARNING:Xst:653 - Signal <McBSPTestdaten<2>.Kanaele> is used but never assigned. This sourceless signal will be automatically connected to value 000000000000000000000000.
+WARNING:Xst:653 - Signal <McBSPTestdaten<1>.UserBits> is used but never assigned. This sourceless signal will be automatically connected to value 0000.
+WARNING:Xst:653 - Signal <McBSPTestdaten<1>.Kanaele> is used but never assigned. This sourceless signal will be automatically connected to value 000000000000000000000000.
+WARNING:Xst:653 - Signal <McBSPTestdaten<0>.UserBits> is used but never assigned. This sourceless signal will be automatically connected to value 0000.
+WARNING:Xst:653 - Signal <McBSPTestdaten<0>.Kanaele<4:7>> is used but never assigned. This sourceless signal will be automatically connected to value 000000000000000000000000.
+WARNING:Xst:646 - Signal <ADATDekoder_McBSP_Daten<2>.UserBits> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ADATDekoder_McBSP_Daten<2>.Kanaele> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ADATDekoder_McBSP_Daten<1>.UserBits> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ADATDekoder_McBSP_Daten<1>.Kanaele> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ADATDekoder_McBSP_Daten<0>.UserBits> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ADATDekoder_McBSP_Daten<0>.Kanaele> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Found 1-bit register for signal <out_EsLebt>.
+    Found 1-bit register for signal <ADAT_Frame_Sync_Enkoder>.
+    Found 1-bit register for signal <ADAT_Frame_Sync_Erkennung>.
+    Found 4-bit comparator greater for signal <ADAT_Frame_Sync_Erkennung$cmp_gt0000> created at line 416.
+    Found 8-bit up counter for signal <Bitnummer>.
+    Found 23-bit up counter for signal <i>.
+    Found 23-bit comparator less for signal <i$cmp_lt0000> created at line 331.
+    Found 9-bit up counter for signal <i0>.
+    Found 1-bit register for signal <in_Adat_alt>.
+    Found 1-bit xor2 for signal <in_Adat_alt$xor0000> created at line 404.
+    Found 1-bit 4-to-1 multiplexer for signal <in_ADAT_fuer_Takt>.
+    Found 24-bit register for signal <McBSPTestdaten<0>.Kanaele<2>>.
+    Found 9-bit adder for signal <McBSPTestdaten<0>.Kanaele_2$add0000> created at line 346.
+    Found 4-bit register for signal <Periode>.
+    Found 4-bit adder for signal <Periode$addsub0000> created at line 405.
+    Found 4-bit comparator less for signal <Periode$cmp_lt0000> created at line 407.
+    Found 1-bit register for signal <wert>.
+    Summary:
+	inferred   3 Counter(s).
+	inferred  33 D-type flip-flop(s).
+	inferred   2 Adder/Subtractor(s).
+	inferred   3 Comparator(s).
+	inferred   1 Multiplexer(s).
+Unit <McBSP_Test> synthesized.
+
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 1
+ 2x588-bit single-port RAM                             : 1
+# Adders/Subtractors                                   : 21
+ 1-bit adder carry out                                 : 1
+ 10-bit adder                                          : 1
+ 2-bit adder                                           : 4
+ 2-bit subtractor                                      : 1
+ 3-bit adder                                           : 4
+ 4-bit adder                                           : 1
+ 5-bit adder                                           : 3
+ 8-bit adder                                           : 4
+ 9-bit adder                                           : 2
+# Counters                                             : 7
+ 10-bit up counter                                     : 2
+ 2-bit updown counter                                  : 1
+ 23-bit up counter                                     : 1
+ 8-bit up counter                                      : 1
+ 9-bit up counter                                      : 2
+# Registers                                            : 134
+ 1-bit register                                        : 51
+ 10-bit register                                       : 1
+ 2-bit register                                        : 2
+ 24-bit register                                       : 50
+ 256-bit register                                      : 3
+ 3-bit register                                        : 7
+ 31-bit register                                       : 7
+ 4-bit register                                        : 5
+ 5-bit register                                        : 3
+ 588-bit register                                      : 1
+ 7-bit register                                        : 1
+ 8-bit register                                        : 3
+# Comparators                                          : 12
+ 10-bit comparator equal                               : 2
+ 10-bit comparator greater                             : 1
+ 10-bit comparator lessequal                           : 1
+ 23-bit comparator less                                : 1
+ 3-bit comparator equal                                : 1
+ 3-bit comparator greatequal                           : 1
+ 3-bit comparator less                                 : 1
+ 3-bit comparator not equal                            : 1
+ 4-bit comparator greater                              : 1
+ 4-bit comparator less                                 : 1
+ 5-bit comparator less                                 : 1
+# Multiplexers                                         : 20
+ 1-bit 24-to-1 multiplexer                             : 3
+ 1-bit 4-to-1 multiplexer                              : 4
+ 24-bit 3-to-1 multiplexer                             : 8
+ 24-bit 8-to-1 multiplexer                             : 4
+ 4-bit 3-to-1 multiplexer                              : 1
+# Xors                                                 : 9
+ 1-bit xor2                                            : 9
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Analyzing FSM <FSM_0> for best encoding.
+Optimizing FSM <inst_McBSP_Interface/Phase0/FSM> on signal <Phase0[1:2]> with gray encoding.
+-------------------
+ State | Encoding
+-------------------
+ 000   | 00
+ 001   | unreached
+ 010   | 01
+ 011   | 11
+-------------------
+INFO:Xst:2261 - The FF/Latch <Frame_Sync> in Unit <inst_ADAT_Taktgewinnung> is equivalent to the following FF/Latch, which will be removed : <Sync_Letzer_Wert> 
+INFO:Xst:2261 - The FF/Latch <BR_addr_1> in Unit <inst_BRAM_Puffer_McBSP_Enkoder> is equivalent to the following 29 FFs/Latches, which will be removed : <BR_addr_2> <BR_addr_3> <BR_addr_4> <BR_addr_5> <BR_addr_6> <BR_addr_7> <BR_addr_8> <BR_addr_9> <BR_addr_10> <BR_addr_11> <BR_addr_12> <BR_addr_13> <BR_addr_14> <BR_addr_15> <BR_addr_16> <BR_addr_17> <BR_addr_18> <BR_addr_19> <BR_addr_20> <BR_addr_21> <BR_addr_22> <BR_addr_23> <BR_addr_24> <BR_addr_25> <BR_addr_26> <BR_addr_27> <BR_addr_28> <BR_addr_29> <BR_addr_30> 
+INFO:Xst:2261 - The FF/Latch <komplett_empfangen> in Unit <inst_McBSP_Interface> is equivalent to the following FF/Latch, which will be removed : <Daten_komplett_empfangen> 
+INFO:Xst:2261 - The FF/Latch <Uebernommen> in Unit <inst_ADAT_Enkoder> is equivalent to the following FF/Latch, which will be removed : <DatenUebernommen> 
+WARNING:Xst:1293 - FF/Latch <Sync_BitLaenge_2> has a constant value of 0 in block <inst_ADAT_Taktgewinnung>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Phase_1> has a constant value of 0 in block <inst_McBSP_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <ADAT_Frame_1_7> of sequential type is unconnected in block <inst_ADAT_Dekoder>.
+WARNING:Xst:2677 - Node <ADAT_Frame_1_6> of sequential type is unconnected in block <inst_ADAT_Dekoder>.
+WARNING:Xst:2677 - Node <ADAT_Frame_1_5> of sequential type is unconnected in block <inst_ADAT_Dekoder>.
+WARNING:Xst:2677 - Node <ADAT_Frame_1_4> of sequential type is unconnected in block <inst_ADAT_Dekoder>.
+WARNING:Xst:2677 - Node <ADAT_Frame_1_3> of sequential type is unconnected in block <inst_ADAT_Dekoder>.
+WARNING:Xst:2677 - Node <ADAT_Frame_1_2> of sequential type is unconnected in block <inst_ADAT_Dekoder>.
+WARNING:Xst:2677 - Node <ADAT_Frame_1_1> of sequential type is unconnected in block <inst_ADAT_Dekoder>.
+WARNING:Xst:2677 - Node <ADAT_Frame_1_0> of sequential type is unconnected in block <inst_ADAT_Dekoder>.
+WARNING:Xst:2677 - Node <ADAT_Frame_0_7> of sequential type is unconnected in block <inst_ADAT_Dekoder>.
+WARNING:Xst:2677 - Node <ADAT_Frame_0_6> of sequential type is unconnected in block <inst_ADAT_Dekoder>.
+WARNING:Xst:2677 - Node <ADAT_Frame_0_5> of sequential type is unconnected in block <inst_ADAT_Dekoder>.
+WARNING:Xst:2677 - Node <ADAT_Frame_0_4> of sequential type is unconnected in block <inst_ADAT_Dekoder>.
+WARNING:Xst:2677 - Node <ADAT_Frame_0_3> of sequential type is unconnected in block <inst_ADAT_Dekoder>.
+WARNING:Xst:2677 - Node <ADAT_Frame_0_2> of sequential type is unconnected in block <inst_ADAT_Dekoder>.
+WARNING:Xst:2677 - Node <ADAT_Frame_0_1> of sequential type is unconnected in block <inst_ADAT_Dekoder>.
+WARNING:Xst:2677 - Node <ADAT_Frame_0_0> of sequential type is unconnected in block <inst_ADAT_Dekoder>.
+WARNING:Xst:2677 - Node <ADAT_Frame_2_7> of sequential type is unconnected in block <inst_ADAT_Dekoder>.
+WARNING:Xst:2677 - Node <ADAT_Frame_2_6> of sequential type is unconnected in block <inst_ADAT_Dekoder>.
+WARNING:Xst:2677 - Node <ADAT_Frame_2_5> of sequential type is unconnected in block <inst_ADAT_Dekoder>.
+WARNING:Xst:2677 - Node <ADAT_Frame_2_4> of sequential type is unconnected in block <inst_ADAT_Dekoder>.
+WARNING:Xst:2677 - Node <ADAT_Frame_2_3> of sequential type is unconnected in block <inst_ADAT_Dekoder>.
+WARNING:Xst:2677 - Node <ADAT_Frame_2_2> of sequential type is unconnected in block <inst_ADAT_Dekoder>.
+WARNING:Xst:2677 - Node <ADAT_Frame_2_1> of sequential type is unconnected in block <inst_ADAT_Dekoder>.
+WARNING:Xst:2677 - Node <ADAT_Frame_2_0> of sequential type is unconnected in block <inst_ADAT_Dekoder>.
+WARNING:Xst:2677 - Node <BR_addr_1> of sequential type is unconnected in block <inst_BRAM_Puffer_McBSP_Enkoder>.
+WARNING:Xst:2677 - Node <TempFiFo_0> of sequential type is unconnected in block <inst_McBSP_Interface>.
+WARNING:Xst:2677 - Node <Phase_0> of sequential type is unconnected in block <inst_McBSP_Interface>.
+WARNING:Xst:2404 -  FFs/Latches <dbg_X_Schnittstellennummer<30:2>> (without init value) have a constant value of 0 in block <McBSP_Interface>.
+WARNING:Xst:2404 -  FFs/Latches <dbg_X_Kanalnummer<30:3>> (without init value) have a constant value of 0 in block <McBSP_Interface>.
+WARNING:Xst:2404 -  FFs/Latches <dbg_R_Schnittstellennummer<30:2>> (without init value) have a constant value of 0 in block <McBSP_Interface>.
+WARNING:Xst:2404 -  FFs/Latches <dbg_X_Bitnummer<30:5>> (without init value) have a constant value of 0 in block <McBSP_Interface>.
+WARNING:Xst:2404 -  FFs/Latches <dbg_R_Bitnummer<30:5>> (without init value) have a constant value of 0 in block <McBSP_Interface>.
+WARNING:Xst:2404 -  FFs/Latches <dbg_R_Kanalnummer<30:3>> (without init value) have a constant value of 0 in block <McBSP_Interface>.
+
+Synthesizing (advanced) Unit <DynamischerADATPuffer_BRAM>.
+INFO:Xst:3226 - The RAM <instADAT_BLOCKRAM/Mram_RAM> will be implemented as a BLOCK RAM, absorbing the following register(s): <instADAT_BLOCKRAM/do>
+    -----------------------------------------------------------------------
+    | ram_type           | Block                               |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 2-word x 588-bit                    |          |
+    |     mode           | no-change                           |          |
+    |     clkA           | connected to signal <BR_clk>        | rise     |
+    |     weA            | connected to signal <BR_we>         | high     |
+    |     addrA          | connected to signal <BR_addr>       |          |
+    |     diA            | connected to signal <Eingang<0>_Kanaele<0>> |          |
+    |     doA            | connected to signal <BR_do>         |          |
+    -----------------------------------------------------------------------
+    | optimization       | speed                               |          |
+    -----------------------------------------------------------------------
+Unit <DynamischerADATPuffer_BRAM> synthesized (advanced).
+WARNING:Xst:2677 - Node <ADAT_Frame_0_1> of sequential type is unconnected in block <ADAT_Dekoder>.
+WARNING:Xst:2677 - Node <ADAT_Frame_0_0> of sequential type is unconnected in block <ADAT_Dekoder>.
+WARNING:Xst:2677 - Node <ADAT_Frame_1_1> of sequential type is unconnected in block <ADAT_Dekoder>.
+WARNING:Xst:2677 - Node <ADAT_Frame_1_0> of sequential type is unconnected in block <ADAT_Dekoder>.
+WARNING:Xst:2677 - Node <ADAT_Frame_2_1> of sequential type is unconnected in block <ADAT_Dekoder>.
+WARNING:Xst:2677 - Node <ADAT_Frame_2_0> of sequential type is unconnected in block <ADAT_Dekoder>.
+WARNING:Xst:2677 - Node <TempFiFo_0> of sequential type is unconnected in block <McBSP_Interface>.
+WARNING:Xst:2677 - Node <Phase_0> of sequential type is unconnected in block <McBSP_Interface>.
+WARNING:Xst:2677 - Node <BR_addr_1> of sequential type is unconnected in block <DynamischerADATPuffer_BRAM>.
+WARNING:Xst:2677 - Node <BR_addr_2> of sequential type is unconnected in block <DynamischerADATPuffer_BRAM>.
+WARNING:Xst:2677 - Node <BR_addr_3> of sequential type is unconnected in block <DynamischerADATPuffer_BRAM>.
+WARNING:Xst:2677 - Node <BR_addr_4> of sequential type is unconnected in block <DynamischerADATPuffer_BRAM>.
+WARNING:Xst:2677 - Node <BR_addr_5> of sequential type is unconnected in block <DynamischerADATPuffer_BRAM>.
+WARNING:Xst:2677 - Node <BR_addr_6> of sequential type is unconnected in block <DynamischerADATPuffer_BRAM>.
+WARNING:Xst:2677 - Node <BR_addr_7> of sequential type is unconnected in block <DynamischerADATPuffer_BRAM>.
+WARNING:Xst:2677 - Node <BR_addr_8> of sequential type is unconnected in block <DynamischerADATPuffer_BRAM>.
+WARNING:Xst:2677 - Node <BR_addr_9> of sequential type is unconnected in block <DynamischerADATPuffer_BRAM>.
+WARNING:Xst:2677 - Node <BR_addr_10> of sequential type is unconnected in block <DynamischerADATPuffer_BRAM>.
+WARNING:Xst:2677 - Node <BR_addr_11> of sequential type is unconnected in block <DynamischerADATPuffer_BRAM>.
+WARNING:Xst:2677 - Node <BR_addr_12> of sequential type is unconnected in block <DynamischerADATPuffer_BRAM>.
+WARNING:Xst:2677 - Node <BR_addr_13> of sequential type is unconnected in block <DynamischerADATPuffer_BRAM>.
+WARNING:Xst:2677 - Node <BR_addr_14> of sequential type is unconnected in block <DynamischerADATPuffer_BRAM>.
+WARNING:Xst:2677 - Node <BR_addr_15> of sequential type is unconnected in block <DynamischerADATPuffer_BRAM>.
+WARNING:Xst:2677 - Node <BR_addr_16> of sequential type is unconnected in block <DynamischerADATPuffer_BRAM>.
+WARNING:Xst:2677 - Node <BR_addr_17> of sequential type is unconnected in block <DynamischerADATPuffer_BRAM>.
+WARNING:Xst:2677 - Node <BR_addr_18> of sequential type is unconnected in block <DynamischerADATPuffer_BRAM>.
+WARNING:Xst:2677 - Node <BR_addr_19> of sequential type is unconnected in block <DynamischerADATPuffer_BRAM>.
+WARNING:Xst:2677 - Node <BR_addr_20> of sequential type is unconnected in block <DynamischerADATPuffer_BRAM>.
+WARNING:Xst:2677 - Node <BR_addr_21> of sequential type is unconnected in block <DynamischerADATPuffer_BRAM>.
+WARNING:Xst:2677 - Node <BR_addr_22> of sequential type is unconnected in block <DynamischerADATPuffer_BRAM>.
+WARNING:Xst:2677 - Node <BR_addr_23> of sequential type is unconnected in block <DynamischerADATPuffer_BRAM>.
+WARNING:Xst:2677 - Node <BR_addr_24> of sequential type is unconnected in block <DynamischerADATPuffer_BRAM>.
+WARNING:Xst:2677 - Node <BR_addr_25> of sequential type is unconnected in block <DynamischerADATPuffer_BRAM>.
+WARNING:Xst:2677 - Node <BR_addr_26> of sequential type is unconnected in block <DynamischerADATPuffer_BRAM>.
+WARNING:Xst:2677 - Node <BR_addr_27> of sequential type is unconnected in block <DynamischerADATPuffer_BRAM>.
+WARNING:Xst:2677 - Node <BR_addr_28> of sequential type is unconnected in block <DynamischerADATPuffer_BRAM>.
+WARNING:Xst:2677 - Node <BR_addr_29> of sequential type is unconnected in block <DynamischerADATPuffer_BRAM>.
+WARNING:Xst:2677 - Node <BR_addr_30> of sequential type is unconnected in block <DynamischerADATPuffer_BRAM>.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 1
+ 2x588-bit single-port block RAM                       : 1
+# Adders/Subtractors                                   : 21
+ 1-bit adder                                           : 1
+ 1-bit adder carry out                                 : 1
+ 10-bit adder                                          : 1
+ 2-bit adder                                           : 3
+ 2-bit subtractor                                      : 1
+ 3-bit adder                                           : 4
+ 4-bit adder                                           : 1
+ 5-bit adder                                           : 3
+ 8-bit adder                                           : 4
+ 9-bit adder                                           : 2
+# Counters                                             : 7
+ 10-bit up counter                                     : 2
+ 2-bit updown counter                                  : 1
+ 23-bit up counter                                     : 1
+ 8-bit up counter                                      : 1
+ 9-bit up counter                                      : 2
+# Registers                                            : 2135
+ Flip-Flops                                            : 2135
+# Comparators                                          : 12
+ 10-bit comparator equal                               : 2
+ 10-bit comparator greater                             : 1
+ 10-bit comparator lessequal                           : 1
+ 23-bit comparator less                                : 1
+ 3-bit comparator equal                                : 1
+ 3-bit comparator greatequal                           : 1
+ 3-bit comparator less                                 : 1
+ 3-bit comparator not equal                            : 1
+ 4-bit comparator greater                              : 1
+ 4-bit comparator less                                 : 1
+ 5-bit comparator less                                 : 1
+# Multiplexers                                         : 20
+ 1-bit 24-to-1 multiplexer                             : 3
+ 1-bit 4-to-1 multiplexer                              : 4
+ 24-bit 3-to-1 multiplexer                             : 8
+ 24-bit 8-to-1 multiplexer                             : 4
+ 4-bit 3-to-1 multiplexer                              : 1
+# Xors                                                 : 9
+ 1-bit xor2                                            : 9
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1293 - FF/Latch <Phase_1> has a constant value of 0 in block <McBSP_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Sync_BitLaenge_2> has a constant value of 0 in block <ADAT_Taktgewinnung>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <komplett_empfangen> in Unit <McBSP_Interface> is equivalent to the following FF/Latch, which will be removed : <Daten_komplett_empfangen> 
+INFO:Xst:2261 - The FF/Latch <Uebernommen> in Unit <ADAT_Enkoder> is equivalent to the following FF/Latch, which will be removed : <DatenUebernommen> 
+INFO:Xst:2261 - The FF/Latch <Frame_Sync> in Unit <ADAT_Taktgewinnung> is equivalent to the following FF/Latch, which will be removed : <Sync_Letzer_Wert> 
+INFO:Xst:2697 - Unit <DynamischerADATPuffer_BRAM> : the RAMs <instADAT_BLOCKRAM/Mram_RAM3>, <instADAT_BLOCKRAM/Mram_RAM1> are packed into the single block RAM <instADAT_BLOCKRAM/Mram_RAM31>
+INFO:Xst:2697 - Unit <DynamischerADATPuffer_BRAM> : the RAMs <instADAT_BLOCKRAM/Mram_RAM2>, <instADAT_BLOCKRAM/Mram_RAM6> are packed into the single block RAM <instADAT_BLOCKRAM/Mram_RAM21>
+INFO:Xst:2697 - Unit <DynamischerADATPuffer_BRAM> : the RAMs <instADAT_BLOCKRAM/Mram_RAM4>, <instADAT_BLOCKRAM/Mram_RAM5> are packed into the single block RAM <instADAT_BLOCKRAM/Mram_RAM41>
+INFO:Xst:2697 - Unit <DynamischerADATPuffer_BRAM> : the RAMs <instADAT_BLOCKRAM/Mram_RAM9>, <instADAT_BLOCKRAM/Mram_RAM7> are packed into the single block RAM <instADAT_BLOCKRAM/Mram_RAM91>
+INFO:Xst:2697 - Unit <DynamischerADATPuffer_BRAM> : the RAMs <instADAT_BLOCKRAM/Mram_RAM8>, <instADAT_BLOCKRAM/Mram_RAM12> are packed into the single block RAM <instADAT_BLOCKRAM/Mram_RAM81>
+INFO:Xst:2697 - Unit <DynamischerADATPuffer_BRAM> : the RAMs <instADAT_BLOCKRAM/Mram_RAM10>, <instADAT_BLOCKRAM/Mram_RAM11> are packed into the single block RAM <instADAT_BLOCKRAM/Mram_RAM101>
+INFO:Xst:2697 - Unit <DynamischerADATPuffer_BRAM> : the RAMs <instADAT_BLOCKRAM/Mram_RAM15>, <instADAT_BLOCKRAM/Mram_RAM13> are packed into the single block RAM <instADAT_BLOCKRAM/Mram_RAM151>
+INFO:Xst:2697 - Unit <DynamischerADATPuffer_BRAM> : the RAMs <instADAT_BLOCKRAM/Mram_RAM14>, <instADAT_BLOCKRAM/Mram_RAM16> are packed into the single block RAM <instADAT_BLOCKRAM/Mram_RAM141>
+
+Optimizing unit <McBSP_Test> ...
+
+Optimizing unit <ADAT_Dekoder> ...
+
+Optimizing unit <McBSP_Interface> ...
+
+Optimizing unit <ADAT_Enkoder> ...
+
+Optimizing unit <ADAT_Taktgewinnung> ...
+
+Optimizing unit <DynamischerADATPuffer_BRAM> ...
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<0>.Kanaele_1_23> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<0>.Kanaele_1_22> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<0>.Kanaele_1_21> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<0>.Kanaele_1_20> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<0>.Kanaele_1_19> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<0>.Kanaele_1_18> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<0>.Kanaele_1_17> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<0>.Kanaele_1_16> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<0>.Kanaele_1_15> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<0>.Kanaele_1_14> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<0>.Kanaele_1_13> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<0>.Kanaele_1_12> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<0>.Kanaele_1_11> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<0>.Kanaele_1_10> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<0>.Kanaele_1_9> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<0>.Kanaele_1_8> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<0>.Kanaele_1_7> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<0>.Kanaele_1_6> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<0>.Kanaele_1_5> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<0>.Kanaele_1_4> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<0>.Kanaele_1_3> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<0>.Kanaele_1_2> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<0>.Kanaele_1_1> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<0>.Kanaele_1_0> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<2>.Kanaele_7_23> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<2>.Kanaele_7_22> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<2>.Kanaele_7_21> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<2>.Kanaele_7_20> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<2>.Kanaele_7_19> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<2>.Kanaele_7_18> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<2>.Kanaele_7_17> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<2>.Kanaele_7_16> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<2>.Kanaele_7_15> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<2>.Kanaele_7_14> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<2>.Kanaele_7_13> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<2>.Kanaele_7_12> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<2>.Kanaele_7_11> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<2>.Kanaele_7_10> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<2>.Kanaele_7_9> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<2>.Kanaele_7_8> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<2>.Kanaele_7_7> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<2>.Kanaele_7_6> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<2>.Kanaele_7_5> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<2>.Kanaele_7_4> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<2>.Kanaele_7_3> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<2>.Kanaele_7_2> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<2>.Kanaele_7_1> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<2>.Kanaele_7_0> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<2>.UserBits_3> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<2>.UserBits_2> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<2>.UserBits_1> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<2>.UserBits_0> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<0>.Kanaele_0_23> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<0>.Kanaele_0_22> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<0>.Kanaele_0_21> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<0>.Kanaele_0_20> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<0>.Kanaele_0_19> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<0>.Kanaele_0_18> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<0>.Kanaele_0_17> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<0>.Kanaele_0_16> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<0>.Kanaele_0_15> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<0>.Kanaele_0_14> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<0>.Kanaele_0_13> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<0>.Kanaele_0_12> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<0>.Kanaele_0_11> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<0>.Kanaele_0_10> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<0>.Kanaele_0_9> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<0>.Kanaele_0_8> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<0>.Kanaele_0_7> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<0>.Kanaele_0_6> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<0>.Kanaele_0_5> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<0>.Kanaele_0_4> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<0>.Kanaele_0_3> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<0>.Kanaele_0_2> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<0>.Kanaele_0_1> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<0>.Kanaele_0_0> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<2>.Kanaele_6_23> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<2>.Kanaele_6_22> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<2>.Kanaele_6_21> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<2>.Kanaele_6_20> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<2>.Kanaele_6_19> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<2>.Kanaele_6_18> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<2>.Kanaele_6_17> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<2>.Kanaele_6_16> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<2>.Kanaele_6_15> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<2>.Kanaele_6_14> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<2>.Kanaele_6_13> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<2>.Kanaele_6_12> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<2>.Kanaele_6_11> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<2>.Kanaele_6_10> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<2>.Kanaele_6_9> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<2>.Kanaele_6_8> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<2>.Kanaele_6_7> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<2>.Kanaele_6_6> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<2>.Kanaele_6_5> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<2>.Kanaele_6_4> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<2>.Kanaele_6_3> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<2>.Kanaele_6_2> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<2>.Kanaele_6_1> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<2>.Kanaele_6_0> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<2>.Kanaele_5_23> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<2>.Kanaele_5_22> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<2>.Kanaele_5_21> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<2>.Kanaele_5_20> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<2>.Kanaele_5_19> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<2>.Kanaele_5_18> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<2>.Kanaele_5_17> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<2>.Kanaele_5_16> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<2>.Kanaele_5_15> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<2>.Kanaele_5_14> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<2>.Kanaele_5_13> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<2>.Kanaele_5_12> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<2>.Kanaele_5_11> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<2>.Kanaele_5_10> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<2>.Kanaele_5_9> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<2>.Kanaele_5_8> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<2>.Kanaele_5_7> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<2>.Kanaele_5_6> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<2>.Kanaele_5_5> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<2>.Kanaele_5_4> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<2>.Kanaele_5_3> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<2>.Kanaele_5_2> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<2>.Kanaele_5_1> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<2>.Kanaele_5_0> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<2>.Kanaele_3_23> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<2>.Kanaele_3_22> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<2>.Kanaele_3_21> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<2>.Kanaele_3_20> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<2>.Kanaele_3_19> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<2>.Kanaele_3_18> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<2>.Kanaele_3_17> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<2>.Kanaele_3_16> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<2>.Kanaele_3_15> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<2>.Kanaele_3_14> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<2>.Kanaele_3_13> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<2>.Kanaele_3_12> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<2>.Kanaele_3_11> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<2>.Kanaele_3_10> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<2>.Kanaele_3_9> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<2>.Kanaele_3_8> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<2>.Kanaele_3_7> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<2>.Kanaele_3_6> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<2>.Kanaele_3_5> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<2>.Kanaele_3_4> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<2>.Kanaele_3_3> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<2>.Kanaele_3_2> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<2>.Kanaele_3_1> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<2>.Kanaele_3_0> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<1>.UserBits_3> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<1>.UserBits_2> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<1>.UserBits_1> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<1>.UserBits_0> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<2>.Kanaele_4_23> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<2>.Kanaele_4_22> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<2>.Kanaele_4_21> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<2>.Kanaele_4_20> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<2>.Kanaele_4_19> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<2>.Kanaele_4_18> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<2>.Kanaele_4_17> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<2>.Kanaele_4_16> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<2>.Kanaele_4_15> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<2>.Kanaele_4_14> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<2>.Kanaele_4_13> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<2>.Kanaele_4_12> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<2>.Kanaele_4_11> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<2>.Kanaele_4_10> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<2>.Kanaele_4_9> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<2>.Kanaele_4_8> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<2>.Kanaele_4_7> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<2>.Kanaele_4_6> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<2>.Kanaele_4_5> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<2>.Kanaele_4_4> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<2>.Kanaele_4_3> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<2>.Kanaele_4_2> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<2>.Kanaele_4_1> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<2>.Kanaele_4_0> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<2>.Kanaele_2_23> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<2>.Kanaele_2_22> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<2>.Kanaele_2_21> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<2>.Kanaele_2_20> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<2>.Kanaele_2_19> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<2>.Kanaele_2_18> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<2>.Kanaele_2_17> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<2>.Kanaele_2_16> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<2>.Kanaele_2_15> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<2>.Kanaele_2_14> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<2>.Kanaele_2_13> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<2>.Kanaele_2_12> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<2>.Kanaele_2_11> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<2>.Kanaele_2_10> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<2>.Kanaele_2_9> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<2>.Kanaele_2_8> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<2>.Kanaele_2_7> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<2>.Kanaele_2_6> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<2>.Kanaele_2_5> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<2>.Kanaele_2_4> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<2>.Kanaele_2_3> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<2>.Kanaele_2_2> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<2>.Kanaele_2_1> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<2>.Kanaele_2_0> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<2>.Kanaele_1_23> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<2>.Kanaele_1_22> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<2>.Kanaele_1_21> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<2>.Kanaele_1_20> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<2>.Kanaele_1_19> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<2>.Kanaele_1_18> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<2>.Kanaele_1_17> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<2>.Kanaele_1_16> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<2>.Kanaele_1_15> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<2>.Kanaele_1_14> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<2>.Kanaele_1_13> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<2>.Kanaele_1_12> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<2>.Kanaele_1_11> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<2>.Kanaele_1_10> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<2>.Kanaele_1_9> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<2>.Kanaele_1_8> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<2>.Kanaele_1_7> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<2>.Kanaele_1_6> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<2>.Kanaele_1_5> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<2>.Kanaele_1_4> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<2>.Kanaele_1_3> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<2>.Kanaele_1_2> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<2>.Kanaele_1_1> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<2>.Kanaele_1_0> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<2>.Kanaele_0_23> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<2>.Kanaele_0_22> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<2>.Kanaele_0_21> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<2>.Kanaele_0_20> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<2>.Kanaele_0_19> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<2>.Kanaele_0_18> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<2>.Kanaele_0_17> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<2>.Kanaele_0_16> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<2>.Kanaele_0_15> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<2>.Kanaele_0_14> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<2>.Kanaele_0_13> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<2>.Kanaele_0_12> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<2>.Kanaele_0_11> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<2>.Kanaele_0_10> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<2>.Kanaele_0_9> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<2>.Kanaele_0_8> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<2>.Kanaele_0_7> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<2>.Kanaele_0_6> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<2>.Kanaele_0_5> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<2>.Kanaele_0_4> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<2>.Kanaele_0_3> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<2>.Kanaele_0_2> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<2>.Kanaele_0_1> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<2>.Kanaele_0_0> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<0>.UserBits_3> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<0>.UserBits_2> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<0>.UserBits_1> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<0>.UserBits_0> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<1>.Kanaele_6_23> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<1>.Kanaele_6_22> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<1>.Kanaele_6_21> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<1>.Kanaele_6_20> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<1>.Kanaele_6_19> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<1>.Kanaele_6_18> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<1>.Kanaele_6_17> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<1>.Kanaele_6_16> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<1>.Kanaele_6_15> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<1>.Kanaele_6_14> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<1>.Kanaele_6_13> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<1>.Kanaele_6_12> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<1>.Kanaele_6_11> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<1>.Kanaele_6_10> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<1>.Kanaele_6_9> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<1>.Kanaele_6_8> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<1>.Kanaele_6_7> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<1>.Kanaele_6_6> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<1>.Kanaele_6_5> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<1>.Kanaele_6_4> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<1>.Kanaele_6_3> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<1>.Kanaele_6_2> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<1>.Kanaele_6_1> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<1>.Kanaele_6_0> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<1>.Kanaele_5_23> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<1>.Kanaele_5_22> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<1>.Kanaele_5_21> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<1>.Kanaele_5_20> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<1>.Kanaele_5_19> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<1>.Kanaele_5_18> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<1>.Kanaele_5_17> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<1>.Kanaele_5_16> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<1>.Kanaele_5_15> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<1>.Kanaele_5_14> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<1>.Kanaele_5_13> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<1>.Kanaele_5_12> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<1>.Kanaele_5_11> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<1>.Kanaele_5_10> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<1>.Kanaele_5_9> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<1>.Kanaele_5_8> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<1>.Kanaele_5_7> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<1>.Kanaele_5_6> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<1>.Kanaele_5_5> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<1>.Kanaele_5_4> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<1>.Kanaele_5_3> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<1>.Kanaele_5_2> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<1>.Kanaele_5_1> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<1>.Kanaele_5_0> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<1>.Kanaele_7_23> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<1>.Kanaele_7_22> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<1>.Kanaele_7_21> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<1>.Kanaele_7_20> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<1>.Kanaele_7_19> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<1>.Kanaele_7_18> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<1>.Kanaele_7_17> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<1>.Kanaele_7_16> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<1>.Kanaele_7_15> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<1>.Kanaele_7_14> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<1>.Kanaele_7_13> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<1>.Kanaele_7_12> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<1>.Kanaele_7_11> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<1>.Kanaele_7_10> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<1>.Kanaele_7_9> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<1>.Kanaele_7_8> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<1>.Kanaele_7_7> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<1>.Kanaele_7_6> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<1>.Kanaele_7_5> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<1>.Kanaele_7_4> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<1>.Kanaele_7_3> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<1>.Kanaele_7_2> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<1>.Kanaele_7_1> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<1>.Kanaele_7_0> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<1>.Kanaele_4_23> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<1>.Kanaele_4_22> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<1>.Kanaele_4_21> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<1>.Kanaele_4_20> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<1>.Kanaele_4_19> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<1>.Kanaele_4_18> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<1>.Kanaele_4_17> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<1>.Kanaele_4_16> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<1>.Kanaele_4_15> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<1>.Kanaele_4_14> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<1>.Kanaele_4_13> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<1>.Kanaele_4_12> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<1>.Kanaele_4_11> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<1>.Kanaele_4_10> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<1>.Kanaele_4_9> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<1>.Kanaele_4_8> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<1>.Kanaele_4_7> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<1>.Kanaele_4_6> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<1>.Kanaele_4_5> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<1>.Kanaele_4_4> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<1>.Kanaele_4_3> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<1>.Kanaele_4_2> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<1>.Kanaele_4_1> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<1>.Kanaele_4_0> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<1>.Kanaele_3_23> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<1>.Kanaele_3_22> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<1>.Kanaele_3_21> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<1>.Kanaele_3_20> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<1>.Kanaele_3_19> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<1>.Kanaele_3_18> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<1>.Kanaele_3_17> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<1>.Kanaele_3_16> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<1>.Kanaele_3_15> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<1>.Kanaele_3_14> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<1>.Kanaele_3_13> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<1>.Kanaele_3_12> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<1>.Kanaele_3_11> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<1>.Kanaele_3_10> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<1>.Kanaele_3_9> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<1>.Kanaele_3_8> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<1>.Kanaele_3_7> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<1>.Kanaele_3_6> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<1>.Kanaele_3_5> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<1>.Kanaele_3_4> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<1>.Kanaele_3_3> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<1>.Kanaele_3_2> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<1>.Kanaele_3_1> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<1>.Kanaele_3_0> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<1>.Kanaele_1_23> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<1>.Kanaele_1_22> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<1>.Kanaele_1_21> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<1>.Kanaele_1_20> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<1>.Kanaele_1_19> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<1>.Kanaele_1_18> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<1>.Kanaele_1_17> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<1>.Kanaele_1_16> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<1>.Kanaele_1_15> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<1>.Kanaele_1_14> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<1>.Kanaele_1_13> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<1>.Kanaele_1_12> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<1>.Kanaele_1_11> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<1>.Kanaele_1_10> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<1>.Kanaele_1_9> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<1>.Kanaele_1_8> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<1>.Kanaele_1_7> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<1>.Kanaele_1_6> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<1>.Kanaele_1_5> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<1>.Kanaele_1_4> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<1>.Kanaele_1_3> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<1>.Kanaele_1_2> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<1>.Kanaele_1_1> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<1>.Kanaele_1_0> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<1>.Kanaele_0_23> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<1>.Kanaele_0_22> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<1>.Kanaele_0_21> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<1>.Kanaele_0_20> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<1>.Kanaele_0_19> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<1>.Kanaele_0_18> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<1>.Kanaele_0_17> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<1>.Kanaele_0_16> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<1>.Kanaele_0_15> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<1>.Kanaele_0_14> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<1>.Kanaele_0_13> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<1>.Kanaele_0_12> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<1>.Kanaele_0_11> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<1>.Kanaele_0_10> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<1>.Kanaele_0_9> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<1>.Kanaele_0_8> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<1>.Kanaele_0_7> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<1>.Kanaele_0_6> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<1>.Kanaele_0_5> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<1>.Kanaele_0_4> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<1>.Kanaele_0_3> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<1>.Kanaele_0_2> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<1>.Kanaele_0_1> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<1>.Kanaele_0_0> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<1>.Kanaele_2_23> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<1>.Kanaele_2_22> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<1>.Kanaele_2_21> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<1>.Kanaele_2_20> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<1>.Kanaele_2_19> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<1>.Kanaele_2_18> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<1>.Kanaele_2_17> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<1>.Kanaele_2_16> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<1>.Kanaele_2_15> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<1>.Kanaele_2_14> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<1>.Kanaele_2_13> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<1>.Kanaele_2_12> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<1>.Kanaele_2_11> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<1>.Kanaele_2_10> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<1>.Kanaele_2_9> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<1>.Kanaele_2_8> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<1>.Kanaele_2_7> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<1>.Kanaele_2_6> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<1>.Kanaele_2_5> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<1>.Kanaele_2_4> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<1>.Kanaele_2_3> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<1>.Kanaele_2_2> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<1>.Kanaele_2_1> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<1>.Kanaele_2_0> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<0>.Kanaele_6_23> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<0>.Kanaele_6_22> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<0>.Kanaele_6_21> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<0>.Kanaele_6_20> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<0>.Kanaele_6_19> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<0>.Kanaele_6_18> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<0>.Kanaele_6_17> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<0>.Kanaele_6_16> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<0>.Kanaele_6_15> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<0>.Kanaele_6_14> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<0>.Kanaele_6_13> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<0>.Kanaele_6_12> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<0>.Kanaele_6_11> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<0>.Kanaele_6_10> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<0>.Kanaele_6_9> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<0>.Kanaele_6_8> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<0>.Kanaele_6_7> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<0>.Kanaele_6_6> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<0>.Kanaele_6_5> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<0>.Kanaele_6_4> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<0>.Kanaele_6_3> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<0>.Kanaele_6_2> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<0>.Kanaele_6_1> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<0>.Kanaele_6_0> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<0>.Kanaele_5_23> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<0>.Kanaele_5_22> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<0>.Kanaele_5_21> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<0>.Kanaele_5_20> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<0>.Kanaele_5_19> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<0>.Kanaele_5_18> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<0>.Kanaele_5_17> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<0>.Kanaele_5_16> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<0>.Kanaele_5_15> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<0>.Kanaele_5_14> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<0>.Kanaele_5_13> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<0>.Kanaele_5_12> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<0>.Kanaele_5_11> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<0>.Kanaele_5_10> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<0>.Kanaele_5_9> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<0>.Kanaele_5_8> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<0>.Kanaele_5_7> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<0>.Kanaele_5_6> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<0>.Kanaele_5_5> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<0>.Kanaele_5_4> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<0>.Kanaele_5_3> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<0>.Kanaele_5_2> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<0>.Kanaele_5_1> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<0>.Kanaele_5_0> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<0>.Kanaele_7_23> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<0>.Kanaele_7_22> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<0>.Kanaele_7_21> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<0>.Kanaele_7_20> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<0>.Kanaele_7_19> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<0>.Kanaele_7_18> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<0>.Kanaele_7_17> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<0>.Kanaele_7_16> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<0>.Kanaele_7_15> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<0>.Kanaele_7_14> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<0>.Kanaele_7_13> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<0>.Kanaele_7_12> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<0>.Kanaele_7_11> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<0>.Kanaele_7_10> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<0>.Kanaele_7_9> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<0>.Kanaele_7_8> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<0>.Kanaele_7_7> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<0>.Kanaele_7_6> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<0>.Kanaele_7_5> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<0>.Kanaele_7_4> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<0>.Kanaele_7_3> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<0>.Kanaele_7_2> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<0>.Kanaele_7_1> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<0>.Kanaele_7_0> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<0>.Kanaele_3_23> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<0>.Kanaele_3_22> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<0>.Kanaele_3_21> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<0>.Kanaele_3_20> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<0>.Kanaele_3_19> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<0>.Kanaele_3_18> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<0>.Kanaele_3_17> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<0>.Kanaele_3_16> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<0>.Kanaele_3_15> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<0>.Kanaele_3_14> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<0>.Kanaele_3_13> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<0>.Kanaele_3_12> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<0>.Kanaele_3_11> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<0>.Kanaele_3_10> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<0>.Kanaele_3_9> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<0>.Kanaele_3_8> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<0>.Kanaele_3_7> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<0>.Kanaele_3_6> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<0>.Kanaele_3_5> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<0>.Kanaele_3_4> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<0>.Kanaele_3_3> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<0>.Kanaele_3_2> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<0>.Kanaele_3_1> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<0>.Kanaele_3_0> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<0>.Kanaele_2_23> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<0>.Kanaele_2_22> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<0>.Kanaele_2_21> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<0>.Kanaele_2_20> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<0>.Kanaele_2_19> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<0>.Kanaele_2_18> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<0>.Kanaele_2_17> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<0>.Kanaele_2_16> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<0>.Kanaele_2_15> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<0>.Kanaele_2_14> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<0>.Kanaele_2_13> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<0>.Kanaele_2_12> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<0>.Kanaele_2_11> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<0>.Kanaele_2_10> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<0>.Kanaele_2_9> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<0>.Kanaele_2_8> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<0>.Kanaele_2_7> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<0>.Kanaele_2_6> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<0>.Kanaele_2_5> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<0>.Kanaele_2_4> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<0>.Kanaele_2_3> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<0>.Kanaele_2_2> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<0>.Kanaele_2_1> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<0>.Kanaele_2_0> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<0>.Kanaele_4_23> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<0>.Kanaele_4_22> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<0>.Kanaele_4_21> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<0>.Kanaele_4_20> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<0>.Kanaele_4_19> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<0>.Kanaele_4_18> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<0>.Kanaele_4_17> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<0>.Kanaele_4_16> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<0>.Kanaele_4_15> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<0>.Kanaele_4_14> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<0>.Kanaele_4_13> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<0>.Kanaele_4_12> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<0>.Kanaele_4_11> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<0>.Kanaele_4_10> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<0>.Kanaele_4_9> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<0>.Kanaele_4_8> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<0>.Kanaele_4_7> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<0>.Kanaele_4_6> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<0>.Kanaele_4_5> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<0>.Kanaele_4_4> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<0>.Kanaele_4_3> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<0>.Kanaele_4_2> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<0>.Kanaele_4_1> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/Out_Daten<0>.Kanaele_4_0> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/ADAT_Frame_2_2> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/ADAT_Frame_2_3> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/ADAT_Frame_2_4> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/ADAT_Frame_2_5> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/ADAT_Frame_2_6> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/ADAT_Frame_2_7> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/ADAT_Frame_1_2> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/ADAT_Frame_1_3> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/ADAT_Frame_1_4> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/ADAT_Frame_1_5> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/ADAT_Frame_1_6> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/ADAT_Frame_1_7> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/ADAT_Frame_0_2> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/ADAT_Frame_0_3> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/ADAT_Frame_0_4> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/ADAT_Frame_0_5> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/ADAT_Frame_0_6> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Dekoder/ADAT_Frame_0_7> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_McBSP_Interface/dbg_X_Bitnummer_4> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_McBSP_Interface/dbg_X_Bitnummer_3> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_McBSP_Interface/dbg_X_Bitnummer_2> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_McBSP_Interface/dbg_X_Bitnummer_1> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_McBSP_Interface/dbg_X_Bitnummer_0> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_McBSP_Interface/dbg_R_Schnittstellennummer_1> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_McBSP_Interface/dbg_R_Schnittstellennummer_0> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_McBSP_Interface/dbg_X_Kanalnummer_2> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_McBSP_Interface/dbg_X_Kanalnummer_1> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_McBSP_Interface/dbg_X_Kanalnummer_0> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_McBSP_Interface/dbg_X_Schnittstellennummer_1> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_McBSP_Interface/dbg_X_Schnittstellennummer_0> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_McBSP_Interface/dbg_R_Kanalnummer_2> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_McBSP_Interface/dbg_R_Kanalnummer_1> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_McBSP_Interface/dbg_R_Kanalnummer_0> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_McBSP_Interface/dbg_R_Bitnummer_4> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_McBSP_Interface/dbg_R_Bitnummer_3> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_McBSP_Interface/dbg_R_Bitnummer_2> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_McBSP_Interface/dbg_R_Bitnummer_1> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_McBSP_Interface/dbg_R_Bitnummer_0> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Enkoder/dbg_Bitnummer_7> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Enkoder/dbg_Bitnummer_6> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Enkoder/dbg_Bitnummer_5> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Enkoder/dbg_Bitnummer_4> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Enkoder/dbg_Bitnummer_3> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Enkoder/dbg_Bitnummer_2> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Enkoder/dbg_Bitnummer_1> of sequential type is unconnected in block <McBSP_Test>.
+WARNING:Xst:2677 - Node <inst_ADAT_Enkoder/dbg_Bitnummer_0> of sequential type is unconnected in block <McBSP_Test>.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block McBSP_Test, actual ratio is 60.
+INFO:Xst:2261 - The FF/Latch <inst_ADAT_Dekoder/Letztes_Bit_0> in Unit <McBSP_Test> is equivalent to the following FF/Latch, which will be removed : <inst_ADAT_Dekoder/ADAT_Frame_0_255_BRB0> 
+INFO:Xst:2261 - The FF/Latch <inst_ADAT_Dekoder/Letztes_Bit_1> in Unit <McBSP_Test> is equivalent to the following FF/Latch, which will be removed : <inst_ADAT_Dekoder/ADAT_Frame_1_255_BRB0> 
+INFO:Xst:2261 - The FF/Latch <inst_ADAT_Dekoder/Letztes_Bit_2> in Unit <McBSP_Test> is equivalent to the following FF/Latch, which will be removed : <inst_ADAT_Dekoder/ADAT_Frame_2_255_BRB0> 
+
+Pipelining and Register Balancing Report ...
+
+Processing Unit <McBSP_Test> :
+	Register(s) inst_ADAT_Dekoder/ADAT_Frame_0_255 has(ve) been backward balanced into : inst_ADAT_Dekoder/ADAT_Frame_0_255_BRB1.
+	Register(s) inst_ADAT_Dekoder/ADAT_Frame_1_255 has(ve) been backward balanced into : inst_ADAT_Dekoder/ADAT_Frame_1_255_BRB1.
+	Register(s) inst_ADAT_Dekoder/ADAT_Frame_2_255 has(ve) been backward balanced into : inst_ADAT_Dekoder/ADAT_Frame_2_255_BRB1.
+	Register(s) inst_McBSP_Interface/Kanalnummer_2 has(ve) been backward balanced into : inst_McBSP_Interface/Kanalnummer_2_BRB0 inst_McBSP_Interface/Kanalnummer_2_BRB1 inst_McBSP_Interface/Kanalnummer_2_BRB2 inst_McBSP_Interface/Kanalnummer_2_BRB3.
+Unit <McBSP_Test> processed.
+Replicating register inst_BRAM_Puffer_McBSP_Enkoder/PufferUeberlauf to handle IOB=TRUE attribute
+Replicating register inst_McBSP_Interface/DX to handle IOB=TRUE attribute
+Replicating register inst_BRAM_Puffer_McBSP_Enkoder/PufferVoll to handle IOB=TRUE attribute
+Replicating register inst_BRAM_Puffer_McBSP_Enkoder/PufferLeer to handle IOB=TRUE attribute
+Replicating register inst_BRAM_Puffer_McBSP_Enkoder/PufferUnterlauf to handle IOB=TRUE attribute
+Replicating register inst_McBSP_Interface/FSX to handle IOB=TRUE attribute
+Replicating register inst_ADAT_Enkoder/intern_ADAT_0 to handle IOB=TRUE attribute
+Replicating register inst_ADAT_Enkoder/intern_ADAT_1 to handle IOB=TRUE attribute
+Replicating register inst_ADAT_Enkoder/intern_ADAT_2 to handle IOB=TRUE attribute
+
+
+Final Macro Processing ...
+
+Processing Unit <McBSP_Test> :
+	Found 5-bit shift register for signal <INST_ADAT_DEKODER/ADAT_FRAME_2_8>.
+	Found 5-bit shift register for signal <INST_ADAT_DEKODER/ADAT_FRAME_2_13>.
+	Found 236-bit shift register for signal <INST_ADAT_DEKODER/ADAT_FRAME_2_18>.
+	Found 5-bit shift register for signal <INST_ADAT_DEKODER/ADAT_FRAME_1_8>.
+	Found 5-bit shift register for signal <INST_ADAT_DEKODER/ADAT_FRAME_1_13>.
+	Found 236-bit shift register for signal <INST_ADAT_DEKODER/ADAT_FRAME_1_18>.
+	Found 5-bit shift register for signal <INST_ADAT_DEKODER/ADAT_FRAME_0_8>.
+	Found 5-bit shift register for signal <INST_ADAT_DEKODER/ADAT_FRAME_0_13>.
+	Found 236-bit shift register for signal <INST_ADAT_DEKODER/ADAT_FRAME_0_18>.
+Unit <McBSP_Test> processed.
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 841
+ Flip-Flops                                            : 841
+# Shift Registers                                      : 9
+ 236-bit shift register                                : 3
+ 5-bit shift register                                  : 6
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : McBSP_Test.ngr
+Top Level Output File Name         : McBSP_Test
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 27
+
+Cell Usage :
+# BELS                             : 1334
+#      GND                         : 1
+#      INV                         : 16
+#      LUT1                        : 88
+#      LUT2                        : 51
+#      LUT3                        : 87
+#      LUT3_D                      : 2
+#      LUT3_L                      : 1
+#      LUT4                        : 563
+#      LUT4_D                      : 6
+#      LUT4_L                      : 1
+#      MUXCY                       : 103
+#      MUXF5                       : 191
+#      MUXF6                       : 72
+#      MUXF7                       : 36
+#      MUXF8                       : 18
+#      VCC                         : 1
+#      XORCY                       : 97
+# FlipFlops/Latches                : 850
+#      FD                          : 38
+#      FD_1                        : 27
+#      FDE                         : 45
+#      FDE_1                       : 590
+#      FDR                         : 77
+#      FDR_1                       : 8
+#      FDRE                        : 11
+#      FDRE_1                      : 2
+#      FDS                         : 19
+#      FDS_1                       : 31
+#      FDSE                        : 2
+# RAMS                             : 9
+#      RAMB16BWE                   : 9
+# Shift Registers                  : 51
+#      SRL16                       : 9
+#      SRLC16                      : 42
+# Clock Buffers                    : 10
+#      BUFG                        : 6
+#      BUFGMUX                     : 2
+#      BUFGP                       : 2
+# IO Buffers                       : 25
+#      IBUF                        : 7
+#      IBUFG                       : 2
+#      OBUF                        : 16
+# DCMs                             : 1
+#      DCM_SP                      : 1
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s200avq100-5 
+
+ Number of Slices:                      721  out of   1792    40%  
+ Number of Slice Flip Flops:            837  out of   3584    23%  
+ Number of 4 input LUTs:                866  out of   3584    24%  
+    Number used as logic:               815
+    Number used as Shift registers:      51
+ Number of IOs:                          27
+ Number of bonded IOBs:                  27  out of     68    39%  
+    IOB Flip Flops:                      13
+ Number of BRAMs:                         9  out of     16    56%  
+ Number of GCLKs:                        10  out of     24    41%  
+ Number of DCMs:                          1  out of      4    25%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-------------------------------------+------------------------------------------------------------------+-------+
+Clock Signal                         | Clock buffer(FF name)                                            | Load  |
+-------------------------------------+------------------------------------------------------------------+-------+
+SCHNELLER_TAKT                       | BUFG                                                             | 56    |
+IN_ADATTAKT                          | IBUFG+BUFGMUX                                                    | 167   |
+INST_ADAT_DEKODER/OUT_NEUEDATEN1     | BUFG                                                             | 33    |
+DSP_CLKX_FPGA_CLKR                   | BUFGP                                                            | 627   |
+DSP_CLKR_FPGA_CLKX                   | BUFGP                                                            | 17    |
+ADAT_FRAME_SYNC_ENKODER              | NONE(INST_ADAT_ENKODER/BITNUMMER_RESET)                          | 1     |
+INST_BRAM_PUFFER_MCBSP_ENKODER/BR_CLK| NONE(INST_BRAM_PUFFER_MCBSP_ENKODER/INSTADAT_BLOCKRAM/MRAM_RAM17)| 9     |
+-------------------------------------+------------------------------------------------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -5
+
+   Minimum period: 10.567ns (Maximum Frequency: 94.632MHz)
+   Minimum input arrival time before clock: 6.122ns
+   Maximum output required time after clock: 6.274ns
+   Maximum combinational path delay: 5.815ns
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'IN_ADATTAKT'
+  Clock period: 4.439ns (frequency: 225.281MHz)
+  Total number of paths / destination ports: 19 / 15
+-------------------------------------------------------------------------
+Offset:              4.439ns (Levels of Logic = 4)
+  Source:            INST_ADAT_DEKODER/OUT_NEUEDATEN (FF)
+  Destination:       INST_MCBSP_INTERFACE/BITNUMMER0_2 (FF)
+  Source Clock:      IN_ADATTAKT rising
+  Destination Clock: DSP_CLKR_FPGA_CLKX rising
+
+  Data Path: INST_ADAT_DEKODER/OUT_NEUEDATEN to INST_MCBSP_INTERFACE/BITNUMMER0_2
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDS:C->Q              5   0.495   0.604  INST_ADAT_DEKODER/OUT_NEUEDATEN (INST_ADAT_DEKODER/OUT_NEUEDATEN1)
+     LUT3:I1->O            5   0.562   0.561  INST_MCBSP_INTERFACE/KANALNUMMER0_MUX0001<0>31 (INST_MCBSP_INTERFACE/N32)
+     LUT3:I2->O            7   0.561   0.668  INST_MCBSP_INTERFACE/BITNUMMER0_MUX0000<2>11 (INST_MCBSP_INTERFACE/N20)
+     LUT2:I1->O            1   0.562   0.000  INST_MCBSP_INTERFACE/BITNUMMER0_MUX0000<2>22 (INST_MCBSP_INTERFACE/BITNUMMER0_MUX0000<2>21)
+     MUXF5:I0->O           1   0.229   0.000  INST_MCBSP_INTERFACE/BITNUMMER0_MUX0000<2>2_F5 (INST_MCBSP_INTERFACE/BITNUMMER0_MUX0000<2>)
+     FD:D                      0.197          INST_MCBSP_INTERFACE/BITNUMMER0_2
+    ----------------------------------------
+    Total                      4.439ns (2.606ns logic, 1.833ns route)
+                                       (58.7% logic, 41.3% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'ADAT_FRAME_SYNC_ENKODER'
+  Clock period: 10.567ns (frequency: 94.632MHz)
+  Total number of paths / destination ports: 2482 / 43
+-------------------------------------------------------------------------
+Offset:              10.567ns (Levels of Logic = 8)
+  Source:            INST_ADAT_ENKODER/BITNUMMER_RESET (FF)
+  Destination:       INST_ADAT_ENKODER/LOKALEBITNUMMER_3 (FF)
+  Source Clock:      ADAT_FRAME_SYNC_ENKODER falling
+  Destination Clock: IN_ADATTAKT rising
+
+  Data Path: INST_ADAT_ENKODER/BITNUMMER_RESET to INST_ADAT_ENKODER/LOKALEBITNUMMER_3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR_1:C->Q           23   0.495   1.088  INST_ADAT_ENKODER/BITNUMMER_RESET (INST_ADAT_ENKODER/BITNUMMER_RESET)
+     LUT2:I1->O          329   0.562   1.261  INST_ADAT_ENKODER/MXOR_PHASE_XOR0000_RESULT1 (INST_ADAT_ENKODER/BITNUMMER_RESET_ALT_NOT0001_INV)
+     LUT4:I0->O            5   0.561   0.646  INST_ADAT_ENKODER/LOKALEBITNUMMER_MUX0003<0>41 (INST_ADAT_ENKODER/N38)
+     LUT3:I0->O            4   0.561   0.565  INST_ADAT_ENKODER/LOKALEBITNUMMER_CMP_EQ00511 (INST_ADAT_ENKODER/LOKALEBITNUMMER_CMP_EQ0051)
+     LUT3:I1->O            4   0.562   0.607  INST_ADAT_ENKODER/LOKALEBITNUMMER_MUX0003<0>11 (INST_ADAT_ENKODER/N2)
+     LUT4:I0->O            1   0.561   0.359  INST_ADAT_ENKODER/LOKALEBITNUMMER_MUX0003<3>1_SW0 (N90)
+     LUT4:I3->O            4   0.561   0.501  INST_ADAT_ENKODER/LOKALEBITNUMMER_MUX0003<3>1 (INST_ADAT_ENKODER/N28)
+     LUT4:I3->O            1   0.561   0.359  INST_ADAT_ENKODER/LOKALEBITNUMMER_MUX0003<1>281_SW0 (N212)
+     LUT4:I3->O            1   0.561   0.000  INST_ADAT_ENKODER/LOKALEBITNUMMER_MUX0003<1>281 (INST_ADAT_ENKODER/LOKALEBITNUMMER_MUX0003<1>28)
+     FDS:D                     0.197          INST_ADAT_ENKODER/LOKALEBITNUMMER_3
+    ----------------------------------------
+    Total                     10.567ns (5.182ns logic, 5.385ns route)
+                                       (49.0% logic, 51.0% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'DSP_CLKX_FPGA_CLKR'
+  Clock period: 4.533ns (frequency: 220.587MHz)
+  Total number of paths / destination ports: 25 / 25
+-------------------------------------------------------------------------
+Offset:              4.533ns (Levels of Logic = 3)
+  Source:            INST_MCBSP_INTERFACE/KOMPLETT_EMPFANGEN (FF)
+  Destination:       INST_BRAM_PUFFER_MCBSP_ENKODER/ANFANG_0 (FF)
+  Source Clock:      DSP_CLKX_FPGA_CLKR falling
+  Destination Clock: IN_ADATTAKT rising
+
+  Data Path: INST_MCBSP_INTERFACE/KOMPLETT_EMPFANGEN to INST_BRAM_PUFFER_MCBSP_ENKODER/ANFANG_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE_1:C->Q            8   0.495   0.709  INST_MCBSP_INTERFACE/KOMPLETT_EMPFANGEN (INST_MCBSP_INTERFACE/KOMPLETT_EMPFANGEN)
+     LUT2:I1->O            4   0.562   0.565  INST_BRAM_PUFFER_MCBSP_ENKODER/MXOR_LAENGE_XOR0000_RESULT1 (INST_BRAM_PUFFER_MCBSP_ENKODER/LAENGE_NOT0003_INV)
+     LUT4:I1->O            4   0.562   0.565  INST_BRAM_PUFFER_MCBSP_ENKODER/ANFANG_0_NOT000111 (INST_BRAM_PUFFER_MCBSP_ENKODER/PUFFERUNTERLAUF_NOT0001)
+     LUT3:I1->O            1   0.562   0.357  INST_BRAM_PUFFER_MCBSP_ENKODER/ANFANG_0_NOT00012 (INST_BRAM_PUFFER_MCBSP_ENKODER/ANFANG_0_NOT0001)
+     FDE:CE                    0.156          INST_BRAM_PUFFER_MCBSP_ENKODER/ANFANG_0
+    ----------------------------------------
+    Total                      4.533ns (2.337ns logic, 2.196ns route)
+                                       (51.6% logic, 48.4% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'INST_ADAT_DEKODER/OUT_NEUEDATEN1'
+  Clock period: 6.813ns (frequency: 146.771MHz)
+  Total number of paths / destination ports: 54 / 2
+-------------------------------------------------------------------------
+Offset:              6.813ns (Levels of Logic = 7)
+  Source:            MCBSPTESTDATEN<0>.KANAELE_2_12 (FF)
+  Destination:       INST_MCBSP_INTERFACE/DX (FF)
+  Source Clock:      INST_ADAT_DEKODER/OUT_NEUEDATEN1 falling
+  Destination Clock: DSP_CLKR_FPGA_CLKX rising
+
+  Data Path: MCBSPTESTDATEN<0>.KANAELE_2_12 to INST_MCBSP_INTERFACE/DX
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDS_1:C->Q            3   0.495   0.517  MCBSPTESTDATEN<0>.KANAELE_2_12 (MCBSPTESTDATEN<0>.KANAELE_2_12)
+     LUT4:I1->O            1   0.562   0.000  INST_MCBSP_INTERFACE/DX_MUX00042972 (INST_MCBSP_INTERFACE/DX_MUX00042972)
+     MUXF5:I0->O           1   0.229   0.380  INST_MCBSP_INTERFACE/DX_MUX0004297_F5 (INST_MCBSP_INTERFACE/DX_MUX0004297)
+     LUT3:I2->O            1   0.561   0.423  INST_MCBSP_INTERFACE/DX_MUX0004302 (INST_MCBSP_INTERFACE/DX_MUX0004302)
+     LUT4:I1->O            1   0.562   0.380  INST_MCBSP_INTERFACE/DX_MUX0004339_SW0 (N166)
+     LUT3:I2->O            1   0.561   0.359  INST_MCBSP_INTERFACE/DX_MUX0004339 (INST_MCBSP_INTERFACE/DX_MUX0004339)
+     LUT4:I3->O            1   0.561   0.465  INST_MCBSP_INTERFACE/DX_MUX0004354 (INST_MCBSP_INTERFACE/DX_MUX0004354)
+     LUT3:I0->O            2   0.561   0.000  INST_MCBSP_INTERFACE/DX_MUX00046411 (INST_MCBSP_INTERFACE/DX_MUX0004641)
+     FDS:D                     0.197          INST_MCBSP_INTERFACE/DX
+    ----------------------------------------
+    Total                      6.813ns (4.289ns logic, 2.524ns route)
+                                       (62.9% logic, 37.1% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'INST_BRAM_PUFFER_MCBSP_ENKODER/BR_CLK'
+  Clock period: 8.097ns (frequency: 123.504MHz)
+  Total number of paths / destination ports: 2328 / 12
+-------------------------------------------------------------------------
+Offset:              8.097ns (Levels of Logic = 9)
+  Source:            INST_BRAM_PUFFER_MCBSP_ENKODER/INSTADAT_BLOCKRAM/MRAM_RAM81 (RAM)
+  Destination:       INST_ADAT_ENKODER/INTERN_ADAT_1 (FF)
+  Source Clock:      INST_BRAM_PUFFER_MCBSP_ENKODER/BR_CLK rising
+  Destination Clock: IN_ADATTAKT rising
+
+  Data Path: INST_BRAM_PUFFER_MCBSP_ENKODER/INSTADAT_BLOCKRAM/MRAM_RAM81 to INST_ADAT_ENKODER/INTERN_ADAT_1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     RAMB16BWE:CLKA->DOA15    1   2.062   0.423  INST_BRAM_PUFFER_MCBSP_ENKODER/INSTADAT_BLOCKRAM/MRAM_RAM81 (PUFFER_ENKODER_DATEN<1>_KANAELE<2><23>)
+     LUT4:I1->O            1   0.562   0.000  INST_ADAT_ENKODER/MMUX_DATEN<1>.KANAELE_MUX0001_178 (INST_ADAT_ENKODER/MMUX_DATEN<1>.KANAELE_MUX0001_178)
+     MUXF5:I1->O           1   0.229   0.000  INST_ADAT_ENKODER/MMUX_DATEN<1>.KANAELE_MUX0001_16_F5_0 (INST_ADAT_ENKODER/MMUX_DATEN<1>.KANAELE_MUX0001_16_F51)
+     MUXF6:I0->O           1   0.239   0.000  INST_ADAT_ENKODER/MMUX_DATEN<1>.KANAELE_MUX0001_14_F6_0 (INST_ADAT_ENKODER/MMUX_DATEN<1>.KANAELE_MUX0001_14_F61)
+     MUXF7:I0->O           1   0.239   0.000  INST_ADAT_ENKODER/MMUX_DATEN<1>.KANAELE_MUX0001_12_F7_0 (INST_ADAT_ENKODER/MMUX_DATEN<1>.KANAELE_MUX0001_12_F71)
+     MUXF8:I0->O           1   0.239   0.423  INST_ADAT_ENKODER/MMUX_DATEN<1>.KANAELE_MUX0001_10_F8_0 (INST_ADAT_ENKODER/MMUX_DATEN<1>.KANAELE_MUX0001_10_F81)
+     LUT4:I1->O            1   0.562   0.000  INST_ADAT_ENKODER/MMUX_DATEN<1>.KANAELE_MUX0001_7 (INST_ADAT_ENKODER/MMUX_DATEN<1>.KANAELE_MUX0001_7)
+     MUXF5:I0->O           2   0.229   0.488  INST_ADAT_ENKODER/MMUX_DATEN<1>.KANAELE_MUX0001_5_F5 (INST_ADAT_ENKODER/MMUX_DATEN<1>.KANAELE_MUX0001_5_F5)
+     LUT4:I0->O            1   0.561   0.465  INST_ADAT_ENKODER/INTERN_ADAT_1_MUX000062_SW0 (N172)
+     LUT4:I0->O            2   0.561   0.380  INST_ADAT_ENKODER/INTERN_ADAT_1_MUX000062 (INST_ADAT_ENKODER/INTERN_ADAT_1_MUX000062)
+     FDS:S                     0.435          INST_ADAT_ENKODER/INTERN_ADAT_1
+    ----------------------------------------
+    Total                      8.097ns (5.918ns logic, 2.179ns route)
+                                       (73.1% logic, 26.9% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'IN_ADATTAKT'
+  Clock period: 2.696ns (frequency: 370.983MHz)
+  Total number of paths / destination ports: 85 / 85
+-------------------------------------------------------------------------
+Offset:              2.696ns (Levels of Logic = 0)
+  Source:            INST_BRAM_PUFFER_MCBSP_ENKODER/BR_WE (FF)
+  Destination:       INST_BRAM_PUFFER_MCBSP_ENKODER/INSTADAT_BLOCKRAM/MRAM_RAM141 (RAM)
+  Source Clock:      IN_ADATTAKT rising
+  Destination Clock: INST_BRAM_PUFFER_MCBSP_ENKODER/BR_CLK rising
+
+  Data Path: INST_BRAM_PUFFER_MCBSP_ENKODER/BR_WE to INST_BRAM_PUFFER_MCBSP_ENKODER/INSTADAT_BLOCKRAM/MRAM_RAM141
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q             68   0.495   1.083  INST_BRAM_PUFFER_MCBSP_ENKODER/BR_WE (INST_BRAM_PUFFER_MCBSP_ENKODER/BR_WE)
+     RAMB16BWE:WEB0            1.118          INST_BRAM_PUFFER_MCBSP_ENKODER/INSTADAT_BLOCKRAM/MRAM_RAM141
+    ----------------------------------------
+    Total                      2.696ns (1.613ns logic, 1.083ns route)
+                                       (59.8% logic, 40.2% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'DSP_CLKX_FPGA_CLKR'
+  Clock period: 1.129ns (frequency: 885.740MHz)
+  Total number of paths / destination ports: 588 / 588
+-------------------------------------------------------------------------
+Offset:              1.129ns (Levels of Logic = 0)
+  Source:            INST_MCBSP_INTERFACE/DATEN_AUSGANG<2>.KANAELE_7_11 (FF)
+  Destination:       INST_BRAM_PUFFER_MCBSP_ENKODER/INSTADAT_BLOCKRAM/MRAM_RAM141 (RAM)
+  Source Clock:      DSP_CLKX_FPGA_CLKR falling
+  Destination Clock: INST_BRAM_PUFFER_MCBSP_ENKODER/BR_CLK rising
+
+  Data Path: INST_MCBSP_INTERFACE/DATEN_AUSGANG<2>.KANAELE_7_11 to INST_BRAM_PUFFER_MCBSP_ENKODER/INSTADAT_BLOCKRAM/MRAM_RAM141
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE_1:C->Q            1   0.495   0.357  INST_MCBSP_INTERFACE/DATEN_AUSGANG<2>.KANAELE_7_11 (INST_MCBSP_INTERFACE/DATEN_AUSGANG<2>.KANAELE_7_11)
+     RAMB16BWE:DIB31           0.277          INST_BRAM_PUFFER_MCBSP_ENKODER/INSTADAT_BLOCKRAM/MRAM_RAM141
+    ----------------------------------------
+    Total                      1.129ns (0.772ns logic, 0.357ns route)
+                                       (68.4% logic, 31.6% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'IN_ADATTAKT'
+  Clock period: 10.568ns (frequency: 94.629MHz)
+  Total number of paths / destination ports: 9493 / 248
+-------------------------------------------------------------------------
+Delay:               10.568ns (Levels of Logic = 10)
+  Source:            INST_ADAT_ENKODER/BITNUMMER_4 (FF)
+  Destination:       INST_ADAT_ENKODER/KANALNUMMER_2 (FF)
+  Source Clock:      IN_ADATTAKT rising
+  Destination Clock: IN_ADATTAKT rising
+
+  Data Path: INST_ADAT_ENKODER/BITNUMMER_4 to INST_ADAT_ENKODER/KANALNUMMER_2
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q             20   0.495   1.003  INST_ADAT_ENKODER/BITNUMMER_4 (INST_ADAT_ENKODER/BITNUMMER_4)
+     LUT4:I1->O            1   0.562   0.380  INST_ADAT_ENKODER/LOKALEBITNUMMER_OR0000313 (INST_ADAT_ENKODER/LOKALEBITNUMMER_OR0000313)
+     LUT4:I2->O            1   0.561   0.359  INST_ADAT_ENKODER/LOKALEBITNUMMER_OR0000323 (INST_ADAT_ENKODER/LOKALEBITNUMMER_OR0000323)
+     LUT4:I3->O            2   0.561   0.403  INST_ADAT_ENKODER/LOKALEBITNUMMER_OR00003160 (INST_ADAT_ENKODER/N20)
+     LUT4:I2->O            1   0.561   0.000  INST_ADAT_ENKODER/LOKALEBITNUMMER_OR00003611_G (N241)
+     MUXF5:I1->O          13   0.229   0.859  INST_ADAT_ENKODER/LOKALEBITNUMMER_OR00003611 (INST_ADAT_ENKODER/LOKALEBITNUMMER_OR0000)
+     LUT4:I2->O            1   0.561   0.380  INST_ADAT_ENKODER/KANALNUMMER_MUX0003<2>1_SW1 (N206)
+     LUT4:I2->O            3   0.561   0.474  INST_ADAT_ENKODER/KANALNUMMER_MUX0003<2>1 (INST_ADAT_ENKODER/N111)
+     LUT4:I2->O            1   0.561   0.380  INST_ADAT_ENKODER/KANALNUMMER_MUX0003<0>_SW1 (N96)
+     LUT3:I2->O            1   0.561   0.359  INST_ADAT_ENKODER/KANALNUMMER_MUX0003<0>_SW2 (N208)
+     LUT4:I3->O            1   0.561   0.000  INST_ADAT_ENKODER/KANALNUMMER_MUX0003<0> (INST_ADAT_ENKODER/KANALNUMMER_MUX0003<0>)
+     FD:D                      0.197          INST_ADAT_ENKODER/KANALNUMMER_2
+    ----------------------------------------
+    Total                     10.568ns (5.971ns logic, 4.597ns route)
+                                       (56.5% logic, 43.5% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'INST_ADAT_DEKODER/OUT_NEUEDATEN1'
+  Clock period: 7.399ns (frequency: 135.153MHz)
+  Total number of paths / destination ports: 2874 / 66
+-------------------------------------------------------------------------
+Delay:               7.399ns (Levels of Logic = 10)
+  Source:            I0_1 (FF)
+  Destination:       I0_0 (FF)
+  Source Clock:      INST_ADAT_DEKODER/OUT_NEUEDATEN1 falling
+  Destination Clock: INST_ADAT_DEKODER/OUT_NEUEDATEN1 falling
+
+  Data Path: I0_1 to I0_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              2   0.495   0.488  I0_1 (I0_1)
+     LUT1:I0->O            1   0.561   0.000  MADD_MCBSPTESTDATEN<0>.KANAELE_2_ADD0000_CY<1>_RT (MADD_MCBSPTESTDATEN<0>.KANAELE_2_ADD0000_CY<1>_RT)
+     MUXCY:S->O            1   0.523   0.000  MADD_MCBSPTESTDATEN<0>.KANAELE_2_ADD0000_CY<1> (MADD_MCBSPTESTDATEN<0>.KANAELE_2_ADD0000_CY<1>)
+     MUXCY:CI->O           1   0.065   0.000  MADD_MCBSPTESTDATEN<0>.KANAELE_2_ADD0000_CY<2> (MADD_MCBSPTESTDATEN<0>.KANAELE_2_ADD0000_CY<2>)
+     MUXCY:CI->O           1   0.065   0.000  MADD_MCBSPTESTDATEN<0>.KANAELE_2_ADD0000_CY<3> (MADD_MCBSPTESTDATEN<0>.KANAELE_2_ADD0000_CY<3>)
+     MUXCY:CI->O           1   0.065   0.000  MADD_MCBSPTESTDATEN<0>.KANAELE_2_ADD0000_CY<4> (MADD_MCBSPTESTDATEN<0>.KANAELE_2_ADD0000_CY<4>)
+     MUXCY:CI->O           1   0.065   0.000  MADD_MCBSPTESTDATEN<0>.KANAELE_2_ADD0000_CY<5> (MADD_MCBSPTESTDATEN<0>.KANAELE_2_ADD0000_CY<5>)
+     XORCY:CI->O           2   0.654   0.403  MADD_MCBSPTESTDATEN<0>.KANAELE_2_ADD0000_XOR<6> (MCBSPTESTDATEN<0>_KANAELE_2_ADD0000<6>)
+     LUT3:I2->O            1   0.561   0.465  MCBSPTESTDATEN<0>_KANAELE_2_MUX0000<0>2119 (MCBSPTESTDATEN<0>_KANAELE_2_MUX0000<0>2119)
+     LUT4:I0->O            1   0.561   0.359  MCBSPTESTDATEN<0>_KANAELE_2_MUX0000<0>2131_SW0 (N160)
+     LUT4:I3->O           33   0.561   1.073  MCBSPTESTDATEN<0>_KANAELE_2_MUX0000<0>2131 (I0_CMP_EQ0000)
+     FDR:R                     0.435          I0_0
+    ----------------------------------------
+    Total                      7.399ns (4.611ns logic, 2.788ns route)
+                                       (62.3% logic, 37.7% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'DSP_CLKX_FPGA_CLKR'
+  Clock period: 6.789ns (frequency: 147.290MHz)
+  Total number of paths / destination ports: 8994 / 1198
+-------------------------------------------------------------------------
+Delay:               6.789ns (Levels of Logic = 4)
+  Source:            INST_MCBSP_INTERFACE/BITNUMMER_1 (FF)
+  Destination:       INST_MCBSP_INTERFACE/DATEN_AUSGANG<1>.KANAELE_5_23 (FF)
+  Source Clock:      DSP_CLKX_FPGA_CLKR falling
+  Destination Clock: DSP_CLKX_FPGA_CLKR falling
+
+  Data Path: INST_MCBSP_INTERFACE/BITNUMMER_1 to INST_MCBSP_INTERFACE/DATEN_AUSGANG<1>.KANAELE_5_23
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDS_1:C->Q            7   0.495   0.668  INST_MCBSP_INTERFACE/BITNUMMER_1 (INST_MCBSP_INTERFACE/BITNUMMER_1)
+     LUT3:I1->O            6   0.562   0.677  INST_MCBSP_INTERFACE/BITNUMMER_MUX0003<1>11 (INST_MCBSP_INTERFACE/N111)
+     LUT4:I0->O           16   0.561   0.881  INST_MCBSP_INTERFACE/PHASE_MUX0005<0>2 (INST_MCBSP_INTERFACE/SCHNITTSTELLENNUMMER_CMP_EQ0000)
+     LUT4_D:I3->O          7   0.561   0.604  INST_MCBSP_INTERFACE/DATEN_AUSGANG<1>_KANAELE_0_NOT000111 (INST_MCBSP_INTERFACE/N26)
+     LUT4:I3->O           24   0.561   1.064  INST_MCBSP_INTERFACE/DATEN_AUSGANG<1>_KANAELE_5_NOT00011 (INST_MCBSP_INTERFACE/DATEN_AUSGANG<1>_KANAELE_5_NOT0001)
+     FDE_1:CE                  0.156          INST_MCBSP_INTERFACE/DATEN_AUSGANG<1>.KANAELE_5_0
+    ----------------------------------------
+    Total                      6.789ns (2.896ns logic, 3.893ns route)
+                                       (42.7% logic, 57.3% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'DSP_CLKR_FPGA_CLKX'
+  Clock period: 7.762ns (frequency: 128.839MHz)
+  Total number of paths / destination ports: 455 / 25
+-------------------------------------------------------------------------
+Delay:               7.762ns (Levels of Logic = 6)
+  Source:            INST_MCBSP_INTERFACE/BITNUMMER0_1 (FF)
+  Destination:       INST_MCBSP_INTERFACE/DX (FF)
+  Source Clock:      DSP_CLKR_FPGA_CLKX rising
+  Destination Clock: DSP_CLKR_FPGA_CLKX rising
+
+  Data Path: INST_MCBSP_INTERFACE/BITNUMMER0_1 to INST_MCBSP_INTERFACE/DX
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q              21   0.495   1.025  INST_MCBSP_INTERFACE/BITNUMMER0_1 (INST_MCBSP_INTERFACE/BITNUMMER0_1)
+     LUT3:I1->O            7   0.562   0.625  INST_MCBSP_INTERFACE/DX_MUX00041111 (INST_MCBSP_INTERFACE/N14)
+     LUT3:I2->O            9   0.561   0.763  INST_MCBSP_INTERFACE/PHASE0_CMP_EQ00001 (INST_MCBSP_INTERFACE/PHASE0_CMP_EQ0000)
+     LUT3:I1->O            1   0.562   0.359  INST_MCBSP_INTERFACE/DX_MUX000425 (INST_MCBSP_INTERFACE/DX_MUX000425)
+     LUT4:I3->O            1   0.561   0.465  INST_MCBSP_INTERFACE/DX_MUX0004110 (INST_MCBSP_INTERFACE/DX_MUX0004110)
+     LUT4:I0->O            1   0.561   0.465  INST_MCBSP_INTERFACE/DX_MUX0004354 (INST_MCBSP_INTERFACE/DX_MUX0004354)
+     LUT3:I0->O            2   0.561   0.000  INST_MCBSP_INTERFACE/DX_MUX00046411 (INST_MCBSP_INTERFACE/DX_MUX0004641)
+     FDS:D                     0.197          INST_MCBSP_INTERFACE/DX
+    ----------------------------------------
+    Total                      7.762ns (4.060ns logic, 3.702ns route)
+                                       (52.3% logic, 47.7% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'SCHNELLER_TAKT'
+  Clock period: 9.757ns (frequency: 102.489MHz)
+  Total number of paths / destination ports: 9271 / 118
+-------------------------------------------------------------------------
+Delay:               9.757ns (Levels of Logic = 20)
+  Source:            INST_ADAT_TAKTGEWINNUNG/ZEIT_OHNE_AENDERUNG_1 (FF)
+  Destination:       INST_ADAT_TAKTGEWINNUNG/BITLAENGEN_ZAEHLER_2 (FF)
+  Source Clock:      SCHNELLER_TAKT rising
+  Destination Clock: SCHNELLER_TAKT rising
+
+  Data Path: INST_ADAT_TAKTGEWINNUNG/ZEIT_OHNE_AENDERUNG_1 to INST_ADAT_TAKTGEWINNUNG/BITLAENGEN_ZAEHLER_2
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              5   0.495   0.646  INST_ADAT_TAKTGEWINNUNG/ZEIT_OHNE_AENDERUNG_1 (INST_ADAT_TAKTGEWINNUNG/ZEIT_OHNE_AENDERUNG_1)
+     LUT1:I0->O            1   0.561   0.000  INST_ADAT_TAKTGEWINNUNG/MADD_SYNC_ADD0000_CY<1>_RT (INST_ADAT_TAKTGEWINNUNG/MADD_SYNC_ADD0000_CY<1>_RT)
+     MUXCY:S->O            1   0.523   0.000  INST_ADAT_TAKTGEWINNUNG/MADD_SYNC_ADD0000_CY<1> (INST_ADAT_TAKTGEWINNUNG/MADD_SYNC_ADD0000_CY<1>)
+     MUXCY:CI->O           1   0.065   0.000  INST_ADAT_TAKTGEWINNUNG/MADD_SYNC_ADD0000_CY<2> (INST_ADAT_TAKTGEWINNUNG/MADD_SYNC_ADD0000_CY<2>)
+     MUXCY:CI->O           1   0.065   0.000  INST_ADAT_TAKTGEWINNUNG/MADD_SYNC_ADD0000_CY<3> (INST_ADAT_TAKTGEWINNUNG/MADD_SYNC_ADD0000_CY<3>)
+     MUXCY:CI->O           1   0.065   0.000  INST_ADAT_TAKTGEWINNUNG/MADD_SYNC_ADD0000_CY<4> (INST_ADAT_TAKTGEWINNUNG/MADD_SYNC_ADD0000_CY<4>)
+     MUXCY:CI->O           1   0.065   0.000  INST_ADAT_TAKTGEWINNUNG/MADD_SYNC_ADD0000_CY<5> (INST_ADAT_TAKTGEWINNUNG/MADD_SYNC_ADD0000_CY<5>)
+     MUXCY:CI->O           1   0.065   0.000  INST_ADAT_TAKTGEWINNUNG/MADD_SYNC_ADD0000_CY<6> (INST_ADAT_TAKTGEWINNUNG/MADD_SYNC_ADD0000_CY<6>)
+     MUXCY:CI->O           1   0.065   0.000  INST_ADAT_TAKTGEWINNUNG/MADD_SYNC_ADD0000_CY<7> (INST_ADAT_TAKTGEWINNUNG/MADD_SYNC_ADD0000_CY<7>)
+     MUXCY:CI->O           0   0.065   0.000  INST_ADAT_TAKTGEWINNUNG/MADD_SYNC_ADD0000_CY<8> (INST_ADAT_TAKTGEWINNUNG/MADD_SYNC_ADD0000_CY<8>)
+     XORCY:CI->O           1   0.654   0.380  INST_ADAT_TAKTGEWINNUNG/MADD_SYNC_ADD0000_XOR<9> (INST_ADAT_TAKTGEWINNUNG/SYNC_ADD0000<9>)
+     LUT3:I2->O            1   0.561   0.000  INST_ADAT_TAKTGEWINNUNG/MCOMPAR_SYNC_CMP_EQ0000_LUT<0> (INST_ADAT_TAKTGEWINNUNG/MCOMPAR_SYNC_CMP_EQ0000_LUT<0>)
+     MUXCY:S->O            1   0.523   0.000  INST_ADAT_TAKTGEWINNUNG/MCOMPAR_SYNC_CMP_EQ0000_CY<0> (INST_ADAT_TAKTGEWINNUNG/MCOMPAR_SYNC_CMP_EQ0000_CY<0>)
+     MUXCY:CI->O           1   0.065   0.000  INST_ADAT_TAKTGEWINNUNG/MCOMPAR_SYNC_CMP_EQ0000_CY<1> (INST_ADAT_TAKTGEWINNUNG/MCOMPAR_SYNC_CMP_EQ0000_CY<1>)
+     MUXCY:CI->O           1   0.065   0.000  INST_ADAT_TAKTGEWINNUNG/MCOMPAR_SYNC_CMP_EQ0000_CY<2> (INST_ADAT_TAKTGEWINNUNG/MCOMPAR_SYNC_CMP_EQ0000_CY<2>)
+     MUXCY:CI->O           1   0.065   0.000  INST_ADAT_TAKTGEWINNUNG/MCOMPAR_SYNC_CMP_EQ0000_CY<3> (INST_ADAT_TAKTGEWINNUNG/MCOMPAR_SYNC_CMP_EQ0000_CY<3>)
+     MUXCY:CI->O           9   0.065   0.805  INST_ADAT_TAKTGEWINNUNG/MCOMPAR_SYNC_CMP_EQ0000_CY<4> (INST_ADAT_TAKTGEWINNUNG/MCOMPAR_SYNC_CMP_EQ0000_CY<4>)
+     LUT4:I0->O            1   0.561   0.000  INST_ADAT_TAKTGEWINNUNG/MXOR_ADAT_TAKT_XOR0000_RESULT1_SW0_G (N151)
+     MUXF5:I1->O           2   0.229   0.403  INST_ADAT_TAKTGEWINNUNG/MXOR_ADAT_TAKT_XOR0000_RESULT1_SW0 (N118)
+     LUT4:I2->O            7   0.561   0.602  INST_ADAT_TAKTGEWINNUNG/MADD_BITLAENGEN_ZAEHLER_ADD0000_XOR<2>121 (INST_ADAT_TAKTGEWINNUNG/N2)
+     MUXF5:S->O            3   0.652   0.451  INST_ADAT_TAKTGEWINNUNG/BITLAENGEN_ZAEHLER_OR00001 (INST_ADAT_TAKTGEWINNUNG/BITLAENGEN_ZAEHLER_OR0000)
+     FDR:R                     0.435          INST_ADAT_TAKTGEWINNUNG/BITLAENGEN_ZAEHLER_0
+    ----------------------------------------
+    Total                      9.757ns (6.470ns logic, 3.287ns route)
+                                       (66.3% logic, 33.7% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'ADAT_FRAME_SYNC_ENKODER'
+  Clock period: 1.952ns (frequency: 512.374MHz)
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Delay:               1.952ns (Levels of Logic = 0)
+  Source:            INST_ADAT_ENKODER/BITNUMMER_RESET (FF)
+  Destination:       INST_ADAT_ENKODER/BITNUMMER_RESET (FF)
+  Source Clock:      ADAT_FRAME_SYNC_ENKODER falling
+  Destination Clock: ADAT_FRAME_SYNC_ENKODER falling
+
+  Data Path: INST_ADAT_ENKODER/BITNUMMER_RESET to INST_ADAT_ENKODER/BITNUMMER_RESET
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR_1:C->Q           23   0.495   1.022  INST_ADAT_ENKODER/BITNUMMER_RESET (INST_ADAT_ENKODER/BITNUMMER_RESET)
+     FDR_1:R                   0.435          INST_ADAT_ENKODER/BITNUMMER_RESET
+    ----------------------------------------
+    Total                      1.952ns (0.930ns logic, 1.022ns route)
+                                       (47.7% logic, 52.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'IN_ADATTAKT'
+  Total number of paths / destination ports: 42 / 38
+-------------------------------------------------------------------------
+Offset:              4.932ns (Levels of Logic = 4)
+  Source:            BUFGMUX_ADATFRAMESYNC:O (PAD)
+  Destination:       INST_ADAT_DEKODER/BITZAEHLER_7 (FF)
+  Destination Clock: IN_ADATTAKT rising
+
+  Data Path: BUFGMUX_ADATFRAMESYNC:O to INST_ADAT_DEKODER/BITZAEHLER_7
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+    BUFGMUX:O              8   0.000   0.666  BUFGMUX_ADATFRAMESYNC (DEBUG_FRAMESYNC_OBUF)
+     LUT3_L:I2->LO         1   0.561   0.102  INST_ADAT_DEKODER/MADD_BITZAEHLER_ADD0000_XOR<4>12_SW0 (N28)
+     LUT4:I3->O            4   0.561   0.501  INST_ADAT_DEKODER/MADD_BITZAEHLER_ADD0000_XOR<4>12 (INST_ADAT_DEKODER/N71)
+     LUT4_D:I3->LO         1   0.561   0.166  INST_ADAT_DEKODER/MADD_BITZAEHLER_ADD0000_XOR<7>141 (N253)
+     LUT2:I1->O           12   0.562   0.817  INST_ADAT_DEKODER/OUT_DATEN<0>_KANAELE_2_CMP_EQ00001 (INST_ADAT_DEKODER/OUT_DATEN<0>_KANAELE_2_CMP_EQ0000)
+     FDR:R                     0.435          INST_ADAT_DEKODER/BITZAEHLER_0
+    ----------------------------------------
+    Total                      4.932ns (2.680ns logic, 2.252ns route)
+                                       (54.3% logic, 45.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'DSP_CLKX_FPGA_CLKR'
+  Total number of paths / destination ports: 657 / 638
+-------------------------------------------------------------------------
+Offset:              6.122ns (Levels of Logic = 4)
+  Source:            DSP_FSX_FPGA_FSR (PAD)
+  Destination:       INST_MCBSP_INTERFACE/DATEN_AUSGANG<1>.KANAELE_5_23 (FF)
+  Destination Clock: DSP_CLKX_FPGA_CLKR falling
+
+  Data Path: DSP_FSX_FPGA_FSR to INST_MCBSP_INTERFACE/DATEN_AUSGANG<1>.KANAELE_5_23
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            18   0.824   0.910  DSP_FSX_FPGA_FSR_IBUF (DSP_FSX_FPGA_FSR_IBUF)
+     LUT4:I3->O           16   0.561   0.881  INST_MCBSP_INTERFACE/PHASE_MUX0005<0>2 (INST_MCBSP_INTERFACE/SCHNITTSTELLENNUMMER_CMP_EQ0000)
+     LUT4_D:I3->O          7   0.561   0.604  INST_MCBSP_INTERFACE/DATEN_AUSGANG<1>_KANAELE_0_NOT000111 (INST_MCBSP_INTERFACE/N26)
+     LUT4:I3->O           24   0.561   1.064  INST_MCBSP_INTERFACE/DATEN_AUSGANG<1>_KANAELE_5_NOT00011 (INST_MCBSP_INTERFACE/DATEN_AUSGANG<1>_KANAELE_5_NOT0001)
+     FDE_1:CE                  0.156          INST_MCBSP_INTERFACE/DATEN_AUSGANG<1>.KANAELE_5_0
+    ----------------------------------------
+    Total                      6.122ns (2.663ns logic, 3.459ns route)
+                                       (43.5% logic, 56.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'SCHNELLER_TAKT'
+  Total number of paths / destination ports: 454 / 70
+-------------------------------------------------------------------------
+Offset:              5.939ns (Levels of Logic = 4)
+  Source:            IN_ADAT<0> (PAD)
+  Destination:       INST_ADAT_TAKTGEWINNUNG/SIGNALAENDERUNGEN_8 (FF)
+  Destination Clock: SCHNELLER_TAKT rising
+
+  Data Path: IN_ADAT<0> to INST_ADAT_TAKTGEWINNUNG/SIGNALAENDERUNGEN_8
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             5   0.824   0.561  IN_ADAT_0_IBUF (IN_ADAT_0_IBUF)
+     LUT3_D:I2->O          4   0.561   0.501  MMUX_IN_ADAT_FUER_TAKT2_SW0 (N75)
+     LUT4:I3->O           22   0.561   1.055  INST_ADAT_TAKTGEWINNUNG/MXOR_ADAT_TAKT_XOR0000_RESULT1_1 (INST_ADAT_TAKTGEWINNUNG/MXOR_ADAT_TAKT_XOR0000_RESULT1)
+     LUT2:I1->O           16   0.562   0.879  INST_ADAT_TAKTGEWINNUNG/SIGNALAENDERUNGEN_AND00001 (INST_ADAT_TAKTGEWINNUNG/SIGNALAENDERUNGEN_AND0000)
+     FDRE:R                    0.435          INST_ADAT_TAKTGEWINNUNG/SIGNALAENDERUNGEN_0
+    ----------------------------------------
+    Total                      5.939ns (2.943ns logic, 2.996ns route)
+                                       (49.6% logic, 50.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'IN_ADATTAKT'
+  Total number of paths / destination ports: 16 / 13
+-------------------------------------------------------------------------
+Offset:              6.274ns (Levels of Logic = 2)
+  Source:            INST_BRAM_PUFFER_MCBSP_ENKODER/PUFFERVOLL_1 (FF)
+  Destination:       OUT_PUFFERNORMAL (PAD)
+  Source Clock:      IN_ADATTAKT rising
+
+  Data Path: INST_BRAM_PUFFER_MCBSP_ENKODER/PUFFERVOLL_1 to OUT_PUFFERNORMAL
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              1   0.495   0.465  INST_BRAM_PUFFER_MCBSP_ENKODER/PUFFERVOLL_1 (INST_BRAM_PUFFER_MCBSP_ENKODER/PUFFERVOLL_1)
+     LUT4:I0->O            1   0.561   0.357  OUT_PUFFERNORMAL1 (OUT_PUFFERNORMAL_OBUF)
+     OBUF:I->O                 4.396          OUT_PUFFERNORMAL_OBUF (OUT_PUFFERNORMAL)
+    ----------------------------------------
+    Total                      6.274ns (5.452ns logic, 0.822ns route)
+                                       (86.9% logic, 13.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'DSP_CLKR_FPGA_CLKX'
+  Total number of paths / destination ports: 2 / 2
+-------------------------------------------------------------------------
+Offset:              5.248ns (Levels of Logic = 1)
+  Source:            INST_MCBSP_INTERFACE/DX (FF)
+  Destination:       DSP_DR_FPGA_DX (PAD)
+  Source Clock:      DSP_CLKR_FPGA_CLKX rising
+
+  Data Path: INST_MCBSP_INTERFACE/DX to DSP_DR_FPGA_DX
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDS:C->Q              1   0.495   0.357  INST_MCBSP_INTERFACE/DX (INST_MCBSP_INTERFACE/DX)
+     OBUF:I->O                 4.396          DSP_DR_FPGA_DX_OBUF (DSP_DR_FPGA_DX)
+    ----------------------------------------
+    Total                      5.248ns (4.891ns logic, 0.357ns route)
+                                       (93.2% logic, 6.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'SCHNELLER_TAKT'
+  Total number of paths / destination ports: 2 / 2
+-------------------------------------------------------------------------
+Offset:              1.064ns (Levels of Logic = 0)
+  Source:            INST_ADAT_TAKTGEWINNUNG/FRAME_SYNC (FF)
+  Destination:       BUFGMUX_ADATFRAMESYNC:I0 (PAD)
+  Source Clock:      SCHNELLER_TAKT rising
+
+  Data Path: INST_ADAT_TAKTGEWINNUNG/FRAME_SYNC to BUFGMUX_ADATFRAMESYNC:I0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               6   0.495   0.569  INST_ADAT_TAKTGEWINNUNG/FRAME_SYNC (INST_ADAT_TAKTGEWINNUNG/FRAME_SYNC)
+    BUFGMUX:I0                 0.000          BUFGMUX_ADATFRAMESYNC
+    ----------------------------------------
+    Total                      1.064ns (0.495ns logic, 0.569ns route)
+                                       (46.5% logic, 53.5% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 7 / 5
+-------------------------------------------------------------------------
+Delay:               5.815ns (Levels of Logic = 2)
+  Source:            IN_ADATTAKT (PAD)
+  Destination:       DEBUG_ADATTAKT (PAD)
+
+  Data Path: IN_ADATTAKT to DEBUG_ADATTAKT
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUFG:I->O            3   0.968   0.451  IN_ADATTAKT_IBUFG (DEBUG_ADATTAKT_OBUF1)
+     OBUF:I->O                 4.396          DEBUG_ADATTAKT_OBUF (DEBUG_ADATTAKT)
+    ----------------------------------------
+    Total                      5.815ns (5.364ns logic, 0.451ns route)
+                                       (92.2% logic, 7.8% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 152.00 secs
+Total CPU time to Xst completion: 151.85 secs
+ 
+--> 
+
+Total memory usage is 187948 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :  743 (   0 filtered)
+Number of infos    :   31 (   0 filtered)
+

@@ -1,0 +1,5 @@
+set -tmpdir "D:/ADAT DeEncoder/ADAT_De-Encoder/xst/projnav.tmp"
+set -xsthdpdir "D:/ADAT DeEncoder/ADAT_De-Encoder/xst"
+elaborate
+-ifn ADAT_Dekoder.prj
+-ifmt mixed

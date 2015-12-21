@@ -1,0 +1,127 @@
+ 
+#<- Speedgrade 5     ##alt:#XC3S200A-4VQ100; 
+CONFIG PART = xc3s200a-vq100-5;
+
+TIMESPEC TS_in_Platinentakt = PERIOD "in_Platinentakt" 20 ns HIGH 50 %;
+TIMESPEC TS_in_AdatTakt = PERIOD "in_AdatTakt" 81.3802 ns HIGH 50 %;
+
+##NET "LED<7>" LOC = "W21" | IOSTANDARD = LVCMOS33 | SLEW = SLOW | DRIVE = 8 ;
+##NET "LED<6>" LOC = "Y22" | IOSTANDARD = LVCMOS33 | SLEW = SLOW | DRIVE = 8 ;
+#NET "Out_EsLebt" LOC = "V20" | IOSTANDARD = LVCMOS33 | SLEW = SLOW | DRIVE = 8 ;
+#NET "Out_PufferUeberlauf" LOC = "V19" | IOSTANDARD = LVCMOS33 | SLEW = SLOW | DRIVE = 8 ;
+#NET "Out_PufferVoll" LOC = "U19" | IOSTANDARD = LVCMOS33 | SLEW = SLOW | DRIVE = 8 ;
+#NET "Out_PufferUnterlauf" LOC = "U20" | IOSTANDARD = LVCMOS33 | SLEW = SLOW | DRIVE = 8 ;
+#NET "Out_PufferLeer" LOC = "T19" | IOSTANDARD = LVCMOS33 | SLEW = SLOW | DRIVE = 8 ;
+##NET "Out_FrameOK" LOC = "R20" | IOSTANDARD = LVCMOS33 | SLEW = SLOW | DRIVE = 8 ;
+##NET "In_ADAT" LOC = "AA21" | IOSTANDARD = LVCMOS33 | SLEW = SLOW | DRIVE = 8 ;
+#NET "Out_ADAT(0)" LOC = "AB21" | IOSTANDARD = LVCMOS33 | SLEW = SLOW | DRIVE = 8 ;
+#NET "Out_ADAT(1)" LOC = "AA19" | IOSTANDARD = LVCMOS33 | SLEW = SLOW | DRIVE = 8 ;
+#NET "Out_ADAT(2)" LOC = "AB19" | IOSTANDARD = LVCMOS33 | SLEW = SLOW | DRIVE = 8 ;
+#VCCAUX# -> Info: UG625 (version 14.5) Seite 308:"VCCAUX"
+CONFIG VCCAUX  = 3.3;
+# 3.3 oder 2.5, je nach dem was an VCCAUX angelegt wurde
+
+
+
+NET "in_ADAT[0]" IOSTANDARD = LVCMOS33;
+NET "in_ADAT[1]" IOSTANDARD = LVCMOS33;
+NET "in_ADAT[2]" IOSTANDARD = LVCMOS33;
+NET "out_ADAT[0]" IOSTANDARD = LVCMOS33;
+NET "out_ADAT[1]" IOSTANDARD = LVCMOS33;
+NET "out_ADAT[2]" IOSTANDARD = LVCMOS33;
+NET "out_EsLebt" IOSTANDARD = LVCMOS33;
+NET "out_FrameOK[0]" IOSTANDARD = LVCMOS33;
+NET "out_PufferLeer" IOSTANDARD = LVCMOS33;
+NET "out_PufferUeberlauf" IOSTANDARD = LVCMOS33;
+NET "out_PufferUnterlauf" IOSTANDARD = LVCMOS33;
+NET "out_PufferVoll" IOSTANDARD = LVCMOS33;
+NET "in_Platinentakt" IOSTANDARD = LVCMOS33;
+
+
+NET "in_Platinentakt" LOC = P89;
+NET "out_ADAT[2]" LOC = P73;
+NET "in_ADAT[2]" LOC = P72;
+NET "out_ADAT[1]" LOC = P71;
+NET "in_ADAT[1]" LOC = P70;
+NET "out_ADAT[0]" LOC = P57;
+NET "in_ADAT[0]" LOC = P56;
+NET "out_EsLebt" LOC = P94;
+NET "out_PufferUnterlauf" LOC = P33;
+NET "out_PufferLeer" LOC = P32;
+NET "out_PufferVoll" LOC = P19;
+NET "out_PufferUeberlauf" LOC = P6;
+
+
+NET "in_ADAT_Taktwahl[1]" IOSTANDARD = LVCMOS33;
+NET "in_ADAT_Taktwahl[0]" IOSTANDARD = LVCMOS33;
+
+
+NET "in_ADAT_Taktwahl[0]" LOC = P27;
+NET "in_ADAT_Taktwahl[1]" LOC = P28;
+NET "out_FrameOK[0]" LOC = P3;
+NET "out_FrameOK[1]" LOC = P4;
+NET "out_FrameOK[2]" LOC = P5;
+
+
+NET "out_FrameOK[1]" IOSTANDARD = LVCMOS33;
+NET "out_FrameOK[2]" IOSTANDARD = LVCMOS33;
+
+
+NET "DSP_DR_FPGA_DX" LOC = P13;
+NET "DSP_DX_FPGA_DR" LOC = P15;
+NET "DSP_CLKX_FPGA_CLKR" LOC = P40;
+NET "DSP_FSX_FPGA_FSR" LOC = P41;
+NET "DSP_CLKR_FPGA_CLKX" LOC = P43;
+NET "DSP_FSR_FPGA_FSX" LOC = P44;
+
+
+NET "DSP_CLKR_FPGA_CLKX" IOSTANDARD = LVCMOS33;
+NET "DSP_CLKX_FPGA_CLKR" IOSTANDARD = LVCMOS33;
+NET "DSP_DR_FPGA_DX" IOSTANDARD = LVCMOS33;
+NET "DSP_DX_FPGA_DR" IOSTANDARD = LVCMOS33;
+NET "DSP_FSR_FPGA_FSX" IOSTANDARD = LVCMOS33;
+NET "DSP_FSX_FPGA_FSR" IOSTANDARD = LVCMOS33;
+NET "in_AdatTakt" IOSTANDARD = LVCMOS33;
+
+
+NET "in_AdatTakt" LOC = P90;
+NET "out_PufferNormal" LOC = P20;
+
+NET "out_PufferNormal" IOSTANDARD = LVCMOS33;
+#Created by Constraints Editor (xc3s200a-vq100-4) - 2014/01/10
+NET "in_Platinentakt" TNM_NET = "in_Platinentakt";
+NET "in_AdatTakt" TNM_NET = "in_AdatTakt";
+
+
+
+
+
+#Deaktivieren des optimalen Routings
+#NET "IN_PLATINENTAKT" CLOCK_DEDICATED_ROUTE = FALSE;
+#PIN "INST_SCHNELLERTAKT/DCM_SP_INST.CLKIN" CLOCK_DEDICATED_ROUTE = FALSE;
+
+
+
+
+# PlanAhead Generated IO constraints 
+
+NET "out_ADAT[0]" DRIVE = 16;
+NET "out_ADAT[1]" DRIVE = 16;
+NET "out_ADAT[2]" DRIVE = 16;
+
+# Debug-Pins
+NET "Debug_FrameSync" LOC = P88; #GCLK8
+NET "Debug_FrameSync" IOSTANDARD = LVCMOS33;
+
+NET "Debug_AdatTakt" LOC = P83; #GCLK4
+NET "Debug_AdatTakt" IOSTANDARD = LVCMOS33;
+
+NET "Debug_DekoderNeueDaten" LOC = P12; #LHCLK2
+NET "Debug_DekoderNeueDaten" IOSTANDARD = LVCMOS33;
+
+NET "Debug_Bit0" LOC = P9; #LHCLK0
+NET "Debug_Bit0" IOSTANDARD = LVCMOS33;
+
+NET "in_ADAT_Taktflanke(0)" LOC = P65; #RHCLK7 (FPGA-Pins A-18)
+NET "in_ADAT_Taktflanke(0)" IOSTANDARD = LVCMOS33;
+

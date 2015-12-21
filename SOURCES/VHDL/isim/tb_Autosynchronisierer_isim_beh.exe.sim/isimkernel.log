@@ -1,0 +1,28 @@
+Command line:
+   tb_Autosynchronisierer_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  1269
+
+Tue Jul 15 14:26:33 2014
+
+
+ Elaboration Time: 0.265625 sec
+
+ Current Memory Usage: 648.876 Meg
+
+ Total Signals          : 77
+ Total Nets             : 844
+ Total Signal Drivers   : 54
+ Total Blocks           : 17
+ Total Primitive Blocks : 9
+ Total Processes        : 42
+ Total Traceable Variables  : 38
+ Total Scalar Nets and Variables : 1609
+
+ Total Simulation Time: 0.828125 sec
+
+ Current Memory Usage: 334.303 Meg
+
+Tue Jul 15 14:35:52 2014
+

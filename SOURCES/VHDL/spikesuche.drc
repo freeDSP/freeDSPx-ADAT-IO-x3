@@ -1,0 +1,27 @@
+Release 14.7 Drc P.20131013 (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Thu May 22 11:33:43 2014
+
+drc -z SpikeSuche.ncd SpikeSuche.pcf
+
+WARNING:PhysDesignRules:367 - The signal <IN_ADAT_TAKTWAHL<0>_IBUF> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <IN_ADAT_TAKTWAHL<1>_IBUF> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <IN_ADAT_TAKTFLANKE<0>_IBUF> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA12> on
+   block:<INST_BRAM_PUFFER_MCBSP_ENKODER/INSTADAT_BLOCKRAM/MRAM_RAM17>:<RAMB16BW
+   E_RAMB16BWE>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA13> on
+   block:<INST_BRAM_PUFFER_MCBSP_ENKODER/INSTADAT_BLOCKRAM/MRAM_RAM17>:<RAMB16BW
+   E_RAMB16BWE>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA14> on
+   block:<INST_BRAM_PUFFER_MCBSP_ENKODER/INSTADAT_BLOCKRAM/MRAM_RAM17>:<RAMB16BW
+   E_RAMB16BWE>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA15> on
+   block:<INST_BRAM_PUFFER_MCBSP_ENKODER/INSTADAT_BLOCKRAM/MRAM_RAM17>:<RAMB16BW
+   E_RAMB16BWE>.
+DRC detected 0 errors and 7 warnings.  Please see the previously displayed
+individual error or warning messages for more details.

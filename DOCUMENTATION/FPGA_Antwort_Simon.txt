@@ -1,0 +1,24 @@
+Hallo Ludwig,
+
+„danke für die Bereitstellung der Quelldaten Ihrer beiden Projekte. :-)“
+Gleich mal als Richtigstellung: Der Class D-Verstärker ist nicht von mir, ich habe nur das Eagle-Projekt anhand der späteren Modifikationen der Platine aktualisiert...
+
+Bei meinem ADAT/FPGA/DSP Projekt dagegen kann ich gerne weiterhelfen:
+
+Als Programmer habe ich immer das "Xilinx Platform Cable USB II" benutzt.
+
+Zu den 4 Kanälen habe ich mal einen Synthese&Implementierungs-Test gemacht: Mit 4 ADAT-Kanälen (also 32 Audiokanälen) passt das derzeitige Design nicht mehr in das aktuell verwendeten FPGA-Modell XC3S200A. Man müsste ca. 12% der derzeit verwendeten FlipFlops einsparen. (461 FFs).
+
+Da die aktuelle DSP-Anbindung alle Daten eines Frames zwischenspeichert, damit der DSP sie abholen kann wann er will, bestehen hier definitiv noch Optimierungsmöglichkeiten...
+
+Optimal wäre es, wenn der FPGA die einzelnen Bits zu "beliebigen" Zeiten senden könnte. Dann wäre es möglich, die Bits direkt nach dem Empfang an euren DSP zu schicken, was nur noch extrem wenig Zwischenspeicherung bedeuten würde. Allerdings wäre es dafür dringend erforderlich, dass die DSP Schnittstelle einen Takteingang hat, der pro Bit einen Takt entgegen nimmt, wobei der Takt auch mal mehrere Takte aussetzen kann (wenn gerade mal keine Audiodaten kommen), also effektiv so eine Art SPI mit zusätzlichem Framesync.
+
+Ich habe mir das TDM-Format noch nicht so genau angeschaut, aber auf den ersten Blick sieht es recht simpel aus - ist hier eine Clock-Konfiguration mit 1 Takt pro Bit möglich?
+
+Alternativ zum Optimieren könntet ihr natürlich auch einen größeren FPGA (Vorsicht, gibts nur noch im BGA-Package) aus der gleichen Reihe nehmen, oder zwei von den aktuellen FPGAs nebeneinander setzen. Eine weitere Möglichkeit wäre das Einbauen einen zusätzlichen RAM-Chips, in den die größeren Puffer ausgelagert werden würden (das war mal für eine dritte Platinenversion angedacht, um Audiolatenzen ausgleichen zu können).
+
+„leider besteht auf unserer Seite jedoch noch wenig Erfahrung mit FPGA-Programmierung.“
+Die Einarbeitung wird etwas Zeit kosten. Zunächst einmal ist das Arbeiten mit FPGAs keine klassische "Programmierung", sondern Hardware-Entwurf mit Hilfe einer sogenannten "Hardware-Beschreibungssprache". Diese hat zwar auch von Programmiersprachen bekannte Konstrukte (if,for, while, Arrays), aber wenn man seine Funktionen einfach blind hineinprogrammiert, ohne an die Realisierung in Hardware mit FlipFlops, Look-Up-Tables und Logikverknüpfungen zu denken, wird man sehr ineffiziente, platz-verschwendende bis gar nicht lauffähige Resultate haben.
+Als Beispiel: Die erste Version des ADAT-Dekoders (Synchronisation, Speicherung und DSP-Interface man völlig außen vor gelassen) passte selbst mit einem ADAT-Kanal zunächst nicht in den FPGA, da ich zu dem Zeitpunkt noch nicht genug an die Hardware gedacht hatte und so unnötig viele Gatter und Speicherstrukturen erstellt wurden. Inzwischen passen fast 4 Instanzen von je einem Dekoder/Enkoder und die dazugehörigen AutoSync, Puffer und McBSP-Interface Strukturen in den selben FPGA. -> Immer in Hardware Denken!
+
+mfg, Simon

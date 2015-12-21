@@ -1,0 +1,1272 @@
+Release 14.7 - xst P.20131013 (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.13 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.14 secs
+ 
+--> Reading design: ADAT_De_Enkoder.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "ADAT_De_Enkoder.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "ADAT_De_Enkoder"
+Output Format                      : NGC
+Target Device                      : xc3s200a-4-vq100
+
+---- Source Options
+Top Module Name                    : ADAT_De_Enkoder
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : Yes
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 500
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Move First FlipFlop Stage          : YES
+Move Last FlipFlop Stage           : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : YES
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : True
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 2
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : Offset_In_Before
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : YES
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Upper
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : YES
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "D:/ADAT DeEncoder/ADAT_De-Encoder/ADAT.vhd" in Library work.
+Architecture adat of Entity adat is up to date.
+Compiling vhdl file "D:/ADAT DeEncoder/ADAT_De-Encoder/ADAT_BLOCKRAM.vhd" in Library work.
+Architecture verhalten_nochange of Entity adat_blockram is up to date.
+Compiling vhdl file "D:/ADAT DeEncoder/ADAT_De-Encoder/ADAT_Dekoder.vhd" in Library work.
+Architecture verhalten of Entity adat_dekoder is up to date.
+Compiling vhdl file "D:/ADAT DeEncoder/ADAT_De-Encoder/DynamischerADATPuffer_BRAM.vhd" in Library work.
+Architecture behavioral of Entity dynamischeradatpuffer_bram is up to date.
+Compiling vhdl file "D:/ADAT DeEncoder/ADAT_De-Encoder/McBSP-Dekoder_1Puffer_Parallel.vhd" in Library work.
+Architecture mcbsp_verhalten of Entity mcbsp_interface is up to date.
+Compiling vhdl file "D:/ADAT DeEncoder/ADAT_De-Encoder/ADAT_Enkoder.vhd" in Library work.
+Architecture behavioral of Entity adat_enkoder is up to date.
+Compiling vhdl file "D:/ADAT DeEncoder/ADAT_De-Encoder/ADAT-De-Enkoder.vhd" in Library work.
+Entity <adat_de_enkoder> compiled.
+Entity <adat_de_enkoder> (Architecture <verhalten>) compiled.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <ADAT_De_Enkoder> in library <work> (architecture <verhalten>) with generics.
+	PUFFERLAENGE = 2
+	SCHNITTSTELLEN = 1
+
+Analyzing hierarchy for entity <ADAT_Dekoder> in library <work> (architecture <verhalten>) with generics.
+	AdatSchnittstellen = 1
+
+Analyzing hierarchy for entity <DynamischerADATPuffer_BRAM> in library <work> (architecture <behavioral>) with generics.
+	PUFFERBREITE = 1
+	PUFFERLAENGE = 2
+
+Analyzing hierarchy for entity <McBSP_Interface> in library <work> (architecture <mcbsp_verhalten>) with generics.
+	CLKR_Aktiv = '0'
+	CLKR_Inaktiv = '1'
+	CLKX_Aktiv = '1'
+	CLKX_Inaktiv = '0'
+	FSR_Aktiv = '1'
+	FSR_Inaktiv = '0'
+	FSR_Verzögerung = 1
+	FSX_Aktiv = '1'
+	FSX_Inaktiv = '0'
+	FSX_Verzögerung = 1
+	SCHNITTSTELLEN = 1
+
+Analyzing hierarchy for entity <ADAT_Enkoder> in library <work> (architecture <behavioral>) with generics.
+	AdatSchnittstellen = 1
+
+Analyzing hierarchy for entity <ADAT_BLOCKRAM> in library <work> (architecture <verhalten_nochange>) with generics.
+	ADAT_SCHNITTSTELLEN = 1
+	PUFFER_LAENGE = 2
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing generic Entity <ADAT_De_Enkoder> in library <work> (Architecture <verhalten>).
+	PUFFERLAENGE = 2
+	SCHNITTSTELLEN = 1
+WARNING:Xst:753 - "D:/ADAT DeEncoder/ADAT_De-Encoder/ADAT-De-Enkoder.vhd" line 247: Unconnected output port 'dbg_R_Schnittstellennummer' of component 'McBSP_Interface'.
+WARNING:Xst:753 - "D:/ADAT DeEncoder/ADAT_De-Encoder/ADAT-De-Enkoder.vhd" line 247: Unconnected output port 'dbg_R_Kanalnummer' of component 'McBSP_Interface'.
+WARNING:Xst:753 - "D:/ADAT DeEncoder/ADAT_De-Encoder/ADAT-De-Enkoder.vhd" line 247: Unconnected output port 'dbg_R_Bitnummer' of component 'McBSP_Interface'.
+WARNING:Xst:753 - "D:/ADAT DeEncoder/ADAT_De-Encoder/ADAT-De-Enkoder.vhd" line 247: Unconnected output port 'dbg_X_Schnittstellennummer' of component 'McBSP_Interface'.
+WARNING:Xst:753 - "D:/ADAT DeEncoder/ADAT_De-Encoder/ADAT-De-Enkoder.vhd" line 247: Unconnected output port 'dbg_X_Kanalnummer' of component 'McBSP_Interface'.
+WARNING:Xst:753 - "D:/ADAT DeEncoder/ADAT_De-Encoder/ADAT-De-Enkoder.vhd" line 247: Unconnected output port 'dbg_X_Bitnummer' of component 'McBSP_Interface'.
+WARNING:Xst:753 - "D:/ADAT DeEncoder/ADAT_De-Encoder/ADAT-De-Enkoder.vhd" line 289: Unconnected output port 'dbg_Bitnummer' of component 'ADAT_Enkoder'.
+Entity <ADAT_De_Enkoder> analyzed. Unit <ADAT_De_Enkoder> generated.
+
+Analyzing generic Entity <ADAT_Dekoder> in library <work> (Architecture <verhalten>).
+	AdatSchnittstellen = 1
+Entity <ADAT_Dekoder> analyzed. Unit <ADAT_Dekoder> generated.
+
+Analyzing generic Entity <DynamischerADATPuffer_BRAM> in library <work> (Architecture <behavioral>).
+	PUFFERBREITE = 1
+	PUFFERLAENGE = 2
+Entity <DynamischerADATPuffer_BRAM> analyzed. Unit <DynamischerADATPuffer_BRAM> generated.
+
+Analyzing generic Entity <ADAT_BLOCKRAM> in library <work> (Architecture <verhalten_nochange>).
+	ADAT_SCHNITTSTELLEN = 1
+	PUFFER_LAENGE = 2
+INFO:Xst:1433 - Contents of array <RAM> may be accessed with an index that exceeds the array size. This could cause simulation mismatch.
+INFO:Xst:1433 - Contents of array <RAM> may be accessed with an index that exceeds the array size. This could cause simulation mismatch.
+Entity <ADAT_BLOCKRAM> analyzed. Unit <ADAT_BLOCKRAM> generated.
+
+Analyzing generic Entity <McBSP_Interface> in library <work> (Architecture <mcbsp_verhalten>).
+	CLKR_Aktiv = '0'
+	CLKR_Inaktiv = '1'
+	CLKX_Aktiv = '1'
+	CLKX_Inaktiv = '0'
+	FSR_Aktiv = '1'
+	FSR_Inaktiv = '0'
+	FSR_Verzögerung = 1
+	FSX_Aktiv = '1'
+	FSX_Inaktiv = '0'
+	FSX_Verzögerung = 1
+	SCHNITTSTELLEN = 1
+WARNING:Xst:790 - "D:/ADAT DeEncoder/ADAT_De-Encoder/McBSP-Dekoder_1Puffer_Parallel.vhd" line 118: Index value(s) does not match array range, simulation mismatch.
+WARNING:Xst:790 - "D:/ADAT DeEncoder/ADAT_De-Encoder/McBSP-Dekoder_1Puffer_Parallel.vhd" line 135: Index value(s) does not match array range, simulation mismatch.
+WARNING:Xst:790 - "D:/ADAT DeEncoder/ADAT_De-Encoder/McBSP-Dekoder_1Puffer_Parallel.vhd" line 139: Index value(s) does not match array range, simulation mismatch.
+Entity <McBSP_Interface> analyzed. Unit <McBSP_Interface> generated.
+
+Analyzing generic Entity <ADAT_Enkoder> in library <work> (Architecture <behavioral>).
+	AdatSchnittstellen = 1
+Entity <ADAT_Enkoder> analyzed. Unit <ADAT_Enkoder> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <ADAT_Dekoder>.
+    Related source file is "D:/ADAT DeEncoder/ADAT_De-Encoder/ADAT_Dekoder.vhd".
+WARNING:Xst:646 - Signal <ADAT_Frame<0><0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Found 4-bit register for signal <Out_Daten<0>.UserBits>.
+    Found 1-bit register for signal <Out_NeueDaten>.
+    Found 1-bit register for signal <Out_FrameOK<0>>.
+    Found 192-bit register for signal <Out_Daten<0>.Kanaele>.
+    Found 256-bit register for signal <ADAT_Frame<0>>.
+    Found 1-bit xor2 for signal <ADAT_Frame_0$xor0000> created at line 77.
+    Found 1-bit register for signal <ADAT_Sync_Letzer_Wert>.
+    Found 8-bit register for signal <BitZaehler>.
+    Found 8-bit adder for signal <BitZaehler$add0000> created at line 155.
+    Found 1-bit register for signal <Letztes_Bit<0>>.
+    Found 1-bit register for signal <NeueDaten>.
+INFO:Xst:738 - HDL ADVISOR - 256 flip-flops were inferred for signal <ADAT_Frame>. You may be trying to describe a RAM in a way that is incompatible with block and distributed RAM resources available on Xilinx devices, or with a specific template that is not supported. Please review the Xilinx resources documentation and the XST user manual for coding guidelines. Taking advantage of RAM resources will lead to improved device usage and reduced synthesis time.
+    Summary:
+	inferred 465 D-type flip-flop(s).
+	inferred   1 Adder/Subtractor(s).
+Unit <ADAT_Dekoder> synthesized.
+
+
+Synthesizing Unit <McBSP_Interface>.
+    Related source file is "D:/ADAT DeEncoder/ADAT_De-Encoder/McBSP-Dekoder_1Puffer_Parallel.vhd".
+WARNING:Xst:646 - Signal <TempFiFo<0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+INFO:Xst:1799 - State 001 is never reached in FSM <Phase0>.
+    Found finite state machine <FSM_0> for signal <Phase0>.
+    -----------------------------------------------------------------------
+    | States             | 3                                              |
+    | Transitions        | 10                                             |
+    | Inputs             | 6                                              |
+    | Outputs            | 5                                              |
+    | Clock              | CLKX                      (rising_edge)        |
+    | Power Up State     | 000                                            |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Using one-hot encoding for signal <Phase$mux0000>.
+INFO:Xst:2117 - HDL ADVISOR - Mux Selector <Phase$mux0000> of Case statement line 109 was re-encoded using one-hot encoding. The case statement will be optimized (default statement optimization), but this optimization may lead to design initialization problems. To ensure the design works safely, you can:
+   	- add an 'INIT' attribute on signal <Phase$mux0000> (optimization is then done without any risk)
+   	- use the attribute 'signal_encoding user' to avoid onehot optimization
+   	- use the attribute 'safe_implementation yes' to force XST to perform a safe (but less efficient) optimization
+    Found 31-bit register for signal <dbg_X_Bitnummer>.
+    Found 4-bit register for signal <Daten_Ausgang<0>.UserBits>.
+    Found 31-bit register for signal <dbg_X_Schnittstellennummer>.
+    Found 1-bit register for signal <DX>.
+    Found 1-bit register for signal <Daten_komplett_empfangen>.
+    Found 31-bit register for signal <dbg_R_Bitnummer>.
+    Found 1-bit register for signal <FSX>.
+    Found 31-bit register for signal <dbg_R_Schnittstellennummer>.
+    Found 31-bit register for signal <dbg_X_Kanalnummer>.
+    Found 31-bit register for signal <dbg_R_Kanalnummer>.
+    Found 192-bit register for signal <Daten_Ausgang<0>.Kanaele>.
+    Found 5-bit register for signal <Bitnummer>.
+    Found 5-bit adder for signal <Bitnummer$share0000> created at line 109.
+    Found 5-bit register for signal <Bitnummer0>.
+    Found 5-bit adder for signal <Bitnummer0$share0000> created at line 172.
+    Found 24-bit 8-to-1 multiplexer for signal <Daten_Eingang<0>.Kanaele$mux0000> created at line 199.
+    Found 5-bit comparator less for signal <DX$cmp_lt0000> created at line 213.
+    Found 1-bit register for signal <FSR_VerzögerungsTimer<0>>.
+    Found 1-bit register for signal <FSX_VerzögerungsTimer<0>>.
+    Found 3-bit register for signal <Kanalnummer>.
+    Found 3-bit adder for signal <Kanalnummer$addsub0000> created at line 140.
+    Found 3-bit register for signal <Kanalnummer0>.
+    Found 3-bit adder for signal <Kanalnummer0$addsub0000> created at line 205.
+    Found 1-bit register for signal <komplett_empfangen>.
+    Found 1-bit register for signal <Neue_Daten_Zum_Senden_alt>.
+    Found 4-bit register for signal <Phase>.
+    Found 1-bit register for signal <Schnittstellennummer<0>>.
+    Found 1-bit register for signal <Schnittstellennummer0<0>>.
+    Found 1-bit xor2 for signal <Schnittstellennummer0_0$xor0000> created at line 174.
+    Found 24-bit register for signal <TempFiFo>.
+    Summary:
+	inferred   1 Finite State Machine(s).
+	inferred 435 D-type flip-flop(s).
+	inferred   4 Adder/Subtractor(s).
+	inferred   1 Comparator(s).
+	inferred  24 Multiplexer(s).
+Unit <McBSP_Interface> synthesized.
+
+
+Synthesizing Unit <ADAT_Enkoder>.
+    Related source file is "D:/ADAT DeEncoder/ADAT_De-Encoder/ADAT_Enkoder.vhd".
+    Using one-hot encoding for signal <Phase$mux0000>.
+    Found 1-bit register for signal <DatenUebernommen>.
+    Found 8-bit register for signal <dbg_Bitnummer>.
+    Found 8-bit register for signal <BitNummer>.
+    Found 8-bit adder for signal <BitNummer$addsub0000> created at line 151.
+    Found 1-bit register for signal <BitNummer_Reset>.
+    Found 1-bit register for signal <BitNummer_Reset_alt>.
+    Found 24-bit 8-to-1 multiplexer for signal <Daten<0>.Kanaele$mux0000> created at line 121.
+    Found 1-bit 24-to-1 multiplexer for signal <Daten<0>.Kanaele$mux0001> created at line 121.
+    Found 1-bit 4-to-1 multiplexer for signal <Daten<0>.UserBits$mux0000> created at line 95.
+    Found 1-bit register for signal <intern_ADAT<0>>.
+    Found 3-bit register for signal <Kanalnummer>.
+    Found 3-bit adder for signal <Kanalnummer$addsub0000> created at line 129.
+    Found 5-bit register for signal <LokaleBitNummer>.
+    Found 8-bit adder for signal <LokaleBitNummer$add0000> created at line 101.
+    Found 5-bit adder for signal <LokaleBitNummer$share0000> created at line 87.
+    Found 3-bit register for signal <Phase>.
+    Found 8-bit adder for signal <Phase$add0000> created at line 136.
+    Found 1-bit xor2 for signal <Phase$xor0000> created at line 79.
+    Found 1-bit register for signal <Uebernommen>.
+    Summary:
+	inferred  32 D-type flip-flop(s).
+	inferred   5 Adder/Subtractor(s).
+	inferred  26 Multiplexer(s).
+Unit <ADAT_Enkoder> synthesized.
+
+
+Synthesizing Unit <ADAT_BLOCKRAM>.
+    Related source file is "D:/ADAT DeEncoder/ADAT_De-Encoder/ADAT_BLOCKRAM.vhd".
+WARNING:Xst:647 - Input <addr<30:1>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 2x196-bit single-port RAM <Mram_RAM> for signal <RAM>.
+    Found 196-bit register for signal <do>.
+    Summary:
+	inferred   1 RAM(s).
+	inferred 196 D-type flip-flop(s).
+Unit <ADAT_BLOCKRAM> synthesized.
+
+
+Synthesizing Unit <DynamischerADATPuffer_BRAM>.
+    Related source file is "D:/ADAT DeEncoder/ADAT_De-Encoder/DynamischerADATPuffer_BRAM.vhd".
+    Found 1-bit register for signal <PufferVoll>.
+    Found 1-bit register for signal <PufferLeer>.
+    Found 1-bit register for signal <PufferUnterlauf>.
+    Found 1-bit register for signal <PufferUeberlauf>.
+    Found 2-bit adder for signal <$add0000> created at line 151.
+    Found 1-bit adder carry out for signal <add0001$addsub0000> created at line 179.
+    Found 1-bit register for signal <Anfang<0>>.
+    Found 1-bit register for signal <Ausgang_NaechsterDatensatz_alt>.
+    Found 31-bit register for signal <BR_addr>.
+    Found 1-bit register for signal <BR_clk>.
+    Found 1-bit register for signal <BR_we>.
+    Found 1-bit register for signal <Eingang_NeueDatenAngekommen_alt>.
+    Found 2-bit updown counter for signal <Laenge>.
+    Found 1-bit xor2 for signal <Laenge$xor0000> created at line 144.
+    Found 2-bit subtractor for signal <PufferLeer$addsub0000> created at line 180.
+    Found 1-bit xor2 for signal <PufferUnterlauf$xor0000> created at line 165.
+    Found 2-bit adder for signal <PufferVoll$addsub0000> created at line 156.
+    Found 1-bit register for signal <VerzoegerterRamTakt_noetig<0>>.
+    Summary:
+	inferred   1 Counter(s).
+	inferred  41 D-type flip-flop(s).
+	inferred   4 Adder/Subtractor(s).
+Unit <DynamischerADATPuffer_BRAM> synthesized.
+
+
+Synthesizing Unit <ADAT_De_Enkoder>.
+    Related source file is "D:/ADAT DeEncoder/ADAT_De-Encoder/ADAT-De-Enkoder.vhd".
+WARNING:Xst:647 - Input <in_ADAT_Taktwahl> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:1780 - Signal <Puffer_Enkoder_DatenB<0>.UserBits> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <Puffer_Enkoder_DatenB<0>.Kanaele> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+    Found 1-bit register for signal <out_EsLebt>.
+    Found 1-bit register for signal <ADAT_Frame_Sync>.
+    Found 4-bit comparator greater for signal <ADAT_Frame_Sync$cmp_gt0000> created at line 383.
+    Found 1-bit register for signal <Adat_Frame_Sync_Enkoder>.
+    Found 8-bit up counter for signal <Bitnummer>.
+    Found 32-bit up counter for signal <i>.
+    Found 32-bit comparator less for signal <i$cmp_lt0000> created at line 318.
+    Found 1-bit register for signal <in_Adat_alt>.
+    Found 1-bit xor2 for signal <in_Adat_alt$xor0000> created at line 371.
+    Found 4-bit register for signal <Periode>.
+    Found 4-bit adder for signal <Periode$addsub0000> created at line 372.
+    Found 4-bit comparator less for signal <Periode$cmp_lt0000> created at line 374.
+    Found 1-bit register for signal <wert>.
+    Summary:
+	inferred   2 Counter(s).
+	inferred   9 D-type flip-flop(s).
+	inferred   1 Adder/Subtractor(s).
+	inferred   3 Comparator(s).
+Unit <ADAT_De_Enkoder> synthesized.
+
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 1
+ 2x196-bit single-port RAM                             : 1
+# Adders/Subtractors                                   : 15
+ 1-bit adder carry out                                 : 1
+ 2-bit adder                                           : 2
+ 2-bit subtractor                                      : 1
+ 3-bit adder                                           : 3
+ 4-bit adder                                           : 1
+ 5-bit adder                                           : 3
+ 8-bit adder                                           : 4
+# Counters                                             : 3
+ 2-bit updown counter                                  : 1
+ 32-bit up counter                                     : 1
+ 8-bit up counter                                      : 1
+# Registers                                            : 74
+ 1-bit register                                        : 34
+ 196-bit register                                      : 1
+ 24-bit register                                       : 17
+ 256-bit register                                      : 1
+ 3-bit register                                        : 4
+ 31-bit register                                       : 7
+ 4-bit register                                        : 4
+ 5-bit register                                        : 3
+ 8-bit register                                        : 3
+# Comparators                                          : 4
+ 32-bit comparator less                                : 1
+ 4-bit comparator greater                              : 1
+ 4-bit comparator less                                 : 1
+ 5-bit comparator less                                 : 1
+# Multiplexers                                         : 4
+ 1-bit 24-to-1 multiplexer                             : 1
+ 1-bit 4-to-1 multiplexer                              : 1
+ 24-bit 8-to-1 multiplexer                             : 2
+# Xors                                                 : 6
+ 1-bit xor2                                            : 6
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Analyzing FSM <FSM_0> for best encoding.
+Optimizing FSM <inst_McBSP_Interface/Phase0/FSM> on signal <Phase0[1:2]> with gray encoding.
+-------------------
+ State | Encoding
+-------------------
+ 000   | 00
+ 001   | unreached
+ 010   | 01
+ 011   | 11
+-------------------
+INFO:Xst:2261 - The FF/Latch <BR_addr_1> in Unit <inst_BRAM_Puffer_McBSP_Enkoder> is equivalent to the following 29 FFs/Latches, which will be removed : <BR_addr_2> <BR_addr_3> <BR_addr_4> <BR_addr_5> <BR_addr_6> <BR_addr_7> <BR_addr_8> <BR_addr_9> <BR_addr_10> <BR_addr_11> <BR_addr_12> <BR_addr_13> <BR_addr_14> <BR_addr_15> <BR_addr_16> <BR_addr_17> <BR_addr_18> <BR_addr_19> <BR_addr_20> <BR_addr_21> <BR_addr_22> <BR_addr_23> <BR_addr_24> <BR_addr_25> <BR_addr_26> <BR_addr_27> <BR_addr_28> <BR_addr_29> <BR_addr_30> 
+INFO:Xst:2261 - The FF/Latch <komplett_empfangen> in Unit <inst_McBSP_Interface> is equivalent to the following FF/Latch, which will be removed : <Daten_komplett_empfangen> 
+INFO:Xst:2261 - The FF/Latch <Uebernommen> in Unit <inst_ADAT_Enkoder> is equivalent to the following FF/Latch, which will be removed : <DatenUebernommen> 
+WARNING:Xst:1293 - FF/Latch <Schnittstellennummer0_0> has a constant value of 0 in block <inst_McBSP_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Phase_1> has a constant value of 0 in block <inst_McBSP_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <FSR_VerzögerungsTimer_0> has a constant value of 0 in block <inst_McBSP_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <ADAT_Frame_0_1> of sequential type is unconnected in block <inst_ADAT_Dekoder>.
+WARNING:Xst:2677 - Node <ADAT_Frame_0_0> of sequential type is unconnected in block <inst_ADAT_Dekoder>.
+WARNING:Xst:2677 - Node <BR_addr_1> of sequential type is unconnected in block <inst_BRAM_Puffer_McBSP_Enkoder>.
+WARNING:Xst:2677 - Node <TempFiFo_0> of sequential type is unconnected in block <inst_McBSP_Interface>.
+WARNING:Xst:2677 - Node <Phase_0> of sequential type is unconnected in block <inst_McBSP_Interface>.
+WARNING:Xst:2404 -  FFs/Latches <dbg_X_Schnittstellennummer<30:1>> (without init value) have a constant value of 0 in block <McBSP_Interface>.
+WARNING:Xst:2404 -  FFs/Latches <dbg_X_Kanalnummer<30:3>> (without init value) have a constant value of 0 in block <McBSP_Interface>.
+WARNING:Xst:2404 -  FFs/Latches <dbg_R_Schnittstellennummer<30:1>> (without init value) have a constant value of 0 in block <McBSP_Interface>.
+WARNING:Xst:2404 -  FFs/Latches <dbg_X_Bitnummer<30:5>> (without init value) have a constant value of 0 in block <McBSP_Interface>.
+WARNING:Xst:2404 -  FFs/Latches <dbg_R_Bitnummer<30:5>> (without init value) have a constant value of 0 in block <McBSP_Interface>.
+WARNING:Xst:2404 -  FFs/Latches <dbg_R_Kanalnummer<30:3>> (without init value) have a constant value of 0 in block <McBSP_Interface>.
+
+Synthesizing (advanced) Unit <ADAT_BLOCKRAM>.
+INFO:Xst:3231 - The small RAM <Mram_RAM> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 2-word x 196-bit                    |          |
+    |     clkA           | connected to signal <clk>           | rise     |
+    |     weA            | connected to signal <we>            | high     |
+    |     addrA          | connected to signal <addr>          |          |
+    |     diA            | connected to signal <di>            |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+Unit <ADAT_BLOCKRAM> synthesized (advanced).
+WARNING:Xst:2677 - Node <ADAT_Frame_0_1> of sequential type is unconnected in block <ADAT_Dekoder>.
+WARNING:Xst:2677 - Node <ADAT_Frame_0_0> of sequential type is unconnected in block <ADAT_Dekoder>.
+WARNING:Xst:2677 - Node <TempFiFo_0> of sequential type is unconnected in block <McBSP_Interface>.
+WARNING:Xst:2677 - Node <Phase_0> of sequential type is unconnected in block <McBSP_Interface>.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# FSMs                                                 : 1
+# RAMs                                                 : 1
+ 2x196-bit single-port distributed RAM                 : 1
+# Adders/Subtractors                                   : 15
+ 1-bit adder                                           : 1
+ 1-bit adder carry out                                 : 1
+ 2-bit adder                                           : 1
+ 2-bit subtractor                                      : 1
+ 3-bit adder                                           : 3
+ 4-bit adder                                           : 1
+ 5-bit adder                                           : 3
+ 8-bit adder                                           : 4
+# Counters                                             : 3
+ 2-bit updown counter                                  : 1
+ 32-bit up counter                                     : 1
+ 8-bit up counter                                      : 1
+# Registers                                            : 1006
+ Flip-Flops                                            : 1006
+# Comparators                                          : 4
+ 32-bit comparator less                                : 1
+ 4-bit comparator greater                              : 1
+ 4-bit comparator less                                 : 1
+ 5-bit comparator less                                 : 1
+# Multiplexers                                         : 4
+ 1-bit 24-to-1 multiplexer                             : 1
+ 1-bit 4-to-1 multiplexer                              : 1
+ 24-bit 8-to-1 multiplexer                             : 2
+# Xors                                                 : 6
+ 1-bit xor2                                            : 6
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1293 - FF/Latch <Schnittstellennummer0_0> has a constant value of 0 in block <McBSP_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Phase_1> has a constant value of 0 in block <McBSP_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <FSR_VerzögerungsTimer_0> has a constant value of 0 in block <McBSP_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <FSX_VerzögerungsTimer_0> has a constant value of 0 in block <McBSP_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dbg_X_Schnittstellennummer> (without init value) has a constant value of 0 in block <McBSP_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <BR_addr_30> has a constant value of 0 in block <DynamischerADATPuffer_BRAM>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <BR_addr_29> has a constant value of 0 in block <DynamischerADATPuffer_BRAM>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <BR_addr_28> has a constant value of 0 in block <DynamischerADATPuffer_BRAM>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <BR_addr_27> has a constant value of 0 in block <DynamischerADATPuffer_BRAM>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <BR_addr_26> has a constant value of 0 in block <DynamischerADATPuffer_BRAM>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <BR_addr_25> has a constant value of 0 in block <DynamischerADATPuffer_BRAM>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <BR_addr_24> has a constant value of 0 in block <DynamischerADATPuffer_BRAM>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <BR_addr_23> has a constant value of 0 in block <DynamischerADATPuffer_BRAM>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <BR_addr_22> has a constant value of 0 in block <DynamischerADATPuffer_BRAM>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <BR_addr_21> has a constant value of 0 in block <DynamischerADATPuffer_BRAM>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <BR_addr_20> has a constant value of 0 in block <DynamischerADATPuffer_BRAM>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <BR_addr_19> has a constant value of 0 in block <DynamischerADATPuffer_BRAM>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <BR_addr_18> has a constant value of 0 in block <DynamischerADATPuffer_BRAM>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <BR_addr_17> has a constant value of 0 in block <DynamischerADATPuffer_BRAM>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <BR_addr_16> has a constant value of 0 in block <DynamischerADATPuffer_BRAM>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <BR_addr_15> has a constant value of 0 in block <DynamischerADATPuffer_BRAM>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <BR_addr_14> has a constant value of 0 in block <DynamischerADATPuffer_BRAM>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <BR_addr_13> has a constant value of 0 in block <DynamischerADATPuffer_BRAM>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <BR_addr_12> has a constant value of 0 in block <DynamischerADATPuffer_BRAM>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <BR_addr_11> has a constant value of 0 in block <DynamischerADATPuffer_BRAM>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <BR_addr_10> has a constant value of 0 in block <DynamischerADATPuffer_BRAM>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <BR_addr_9> has a constant value of 0 in block <DynamischerADATPuffer_BRAM>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <BR_addr_8> has a constant value of 0 in block <DynamischerADATPuffer_BRAM>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <BR_addr_7> has a constant value of 0 in block <DynamischerADATPuffer_BRAM>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <BR_addr_6> has a constant value of 0 in block <DynamischerADATPuffer_BRAM>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <BR_addr_5> has a constant value of 0 in block <DynamischerADATPuffer_BRAM>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <BR_addr_4> has a constant value of 0 in block <DynamischerADATPuffer_BRAM>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <BR_addr_3> has a constant value of 0 in block <DynamischerADATPuffer_BRAM>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <BR_addr_2> has a constant value of 0 in block <DynamischerADATPuffer_BRAM>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <BR_addr_1> has a constant value of 0 in block <DynamischerADATPuffer_BRAM>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <komplett_empfangen> in Unit <McBSP_Interface> is equivalent to the following FF/Latch, which will be removed : <Daten_komplett_empfangen> 
+INFO:Xst:2261 - The FF/Latch <Uebernommen> in Unit <ADAT_Enkoder> is equivalent to the following FF/Latch, which will be removed : <DatenUebernommen> 
+
+Optimizing unit <ADAT_De_Enkoder> ...
+
+Optimizing unit <ADAT_Dekoder> ...
+
+Optimizing unit <McBSP_Interface> ...
+WARNING:Xst:1293 - FF/Latch <Schnittstellennummer_0> has a constant value of 0 in block <McBSP_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dbg_R_Schnittstellennummer> (without init value) has a constant value of 0 in block <McBSP_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Schnittstellennummer_0> has a constant value of 0 in block <McBSP_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dbg_R_Schnittstellennummer> (without init value) has a constant value of 0 in block <McBSP_Interface>. This FF/Latch will be trimmed during the optimization process.
+
+Optimizing unit <ADAT_Enkoder> ...
+
+Optimizing unit <ADAT_BLOCKRAM> ...
+
+Optimizing unit <DynamischerADATPuffer_BRAM> ...
+WARNING:Xst:2677 - Node <inst_McBSP_Interface/dbg_X_Bitnummer_4> of sequential type is unconnected in block <ADAT_De_Enkoder>.
+WARNING:Xst:2677 - Node <inst_McBSP_Interface/dbg_X_Bitnummer_3> of sequential type is unconnected in block <ADAT_De_Enkoder>.
+WARNING:Xst:2677 - Node <inst_McBSP_Interface/dbg_X_Bitnummer_2> of sequential type is unconnected in block <ADAT_De_Enkoder>.
+WARNING:Xst:2677 - Node <inst_McBSP_Interface/dbg_X_Bitnummer_1> of sequential type is unconnected in block <ADAT_De_Enkoder>.
+WARNING:Xst:2677 - Node <inst_McBSP_Interface/dbg_X_Bitnummer_0> of sequential type is unconnected in block <ADAT_De_Enkoder>.
+WARNING:Xst:2677 - Node <inst_McBSP_Interface/dbg_R_Schnittstellennummer> of sequential type is unconnected in block <ADAT_De_Enkoder>.
+WARNING:Xst:2677 - Node <inst_McBSP_Interface/dbg_X_Kanalnummer_2> of sequential type is unconnected in block <ADAT_De_Enkoder>.
+WARNING:Xst:2677 - Node <inst_McBSP_Interface/dbg_X_Kanalnummer_1> of sequential type is unconnected in block <ADAT_De_Enkoder>.
+WARNING:Xst:2677 - Node <inst_McBSP_Interface/dbg_X_Kanalnummer_0> of sequential type is unconnected in block <ADAT_De_Enkoder>.
+WARNING:Xst:2677 - Node <inst_McBSP_Interface/dbg_R_Kanalnummer_2> of sequential type is unconnected in block <ADAT_De_Enkoder>.
+WARNING:Xst:2677 - Node <inst_McBSP_Interface/dbg_R_Kanalnummer_1> of sequential type is unconnected in block <ADAT_De_Enkoder>.
+WARNING:Xst:2677 - Node <inst_McBSP_Interface/dbg_R_Kanalnummer_0> of sequential type is unconnected in block <ADAT_De_Enkoder>.
+WARNING:Xst:2677 - Node <inst_McBSP_Interface/dbg_R_Bitnummer_4> of sequential type is unconnected in block <ADAT_De_Enkoder>.
+WARNING:Xst:2677 - Node <inst_McBSP_Interface/dbg_R_Bitnummer_3> of sequential type is unconnected in block <ADAT_De_Enkoder>.
+WARNING:Xst:2677 - Node <inst_McBSP_Interface/dbg_R_Bitnummer_2> of sequential type is unconnected in block <ADAT_De_Enkoder>.
+WARNING:Xst:2677 - Node <inst_McBSP_Interface/dbg_R_Bitnummer_1> of sequential type is unconnected in block <ADAT_De_Enkoder>.
+WARNING:Xst:2677 - Node <inst_McBSP_Interface/dbg_R_Bitnummer_0> of sequential type is unconnected in block <ADAT_De_Enkoder>.
+WARNING:Xst:2677 - Node <inst_ADAT_Enkoder/dbg_Bitnummer_7> of sequential type is unconnected in block <ADAT_De_Enkoder>.
+WARNING:Xst:2677 - Node <inst_ADAT_Enkoder/dbg_Bitnummer_6> of sequential type is unconnected in block <ADAT_De_Enkoder>.
+WARNING:Xst:2677 - Node <inst_ADAT_Enkoder/dbg_Bitnummer_5> of sequential type is unconnected in block <ADAT_De_Enkoder>.
+WARNING:Xst:2677 - Node <inst_ADAT_Enkoder/dbg_Bitnummer_4> of sequential type is unconnected in block <ADAT_De_Enkoder>.
+WARNING:Xst:2677 - Node <inst_ADAT_Enkoder/dbg_Bitnummer_3> of sequential type is unconnected in block <ADAT_De_Enkoder>.
+WARNING:Xst:2677 - Node <inst_ADAT_Enkoder/dbg_Bitnummer_2> of sequential type is unconnected in block <ADAT_De_Enkoder>.
+WARNING:Xst:2677 - Node <inst_ADAT_Enkoder/dbg_Bitnummer_1> of sequential type is unconnected in block <ADAT_De_Enkoder>.
+WARNING:Xst:2677 - Node <inst_ADAT_Enkoder/dbg_Bitnummer_0> of sequential type is unconnected in block <ADAT_De_Enkoder>.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block ADAT_De_Enkoder, actual ratio is 37.
+INFO:Xst:2261 - The FF/Latch <inst_ADAT_Dekoder/Letztes_Bit_0> in Unit <ADAT_De_Enkoder> is equivalent to the following FF/Latch, which will be removed : <inst_ADAT_Dekoder/ADAT_Frame_0_255_BRB0> 
+
+Pipelining and Register Balancing Report ...
+
+Processing Unit <ADAT_De_Enkoder> :
+	Register(s) inst_ADAT_Dekoder/ADAT_Frame_0_255 has(ve) been backward balanced into : inst_ADAT_Dekoder/ADAT_Frame_0_255_BRB1.
+	Register(s) inst_McBSP_Interface/Bitnummer_0 has(ve) been backward balanced into : inst_McBSP_Interface/Bitnummer_0_BRB0 inst_McBSP_Interface/Bitnummer_0_BRB1 .
+	Register(s) inst_McBSP_Interface/Bitnummer_4 has(ve) been backward balanced into : inst_McBSP_Interface/Bitnummer_4_BRB0 inst_McBSP_Interface/Bitnummer_4_BRB1 inst_McBSP_Interface/Bitnummer_4_BRB2 inst_McBSP_Interface/Bitnummer_4_BRB3.
+	Register(s) inst_McBSP_Interface/Kanalnummer_0 has(ve) been backward balanced into : inst_McBSP_Interface/Kanalnummer_0_BRB0 inst_McBSP_Interface/Kanalnummer_0_BRB1 inst_McBSP_Interface/Kanalnummer_0_BRB2 inst_McBSP_Interface/Kanalnummer_0_BRB3.
+	Register(s) inst_McBSP_Interface/Phase_2 has(ve) been backward balanced into : inst_McBSP_Interface/Phase_2_BRB0 inst_McBSP_Interface/Phase_2_BRB1 inst_McBSP_Interface/Phase_2_BRB2 inst_McBSP_Interface/Phase_2_BRB5 inst_McBSP_Interface/Phase_2_BRB6 inst_McBSP_Interface/Phase_2_BRB8 inst_McBSP_Interface/Phase_2_BRB9 inst_McBSP_Interface/Phase_2_BRB10.
+	Register(s) inst_McBSP_Interface/Phase_3 has(ve) been backward balanced into : inst_McBSP_Interface/Phase_3_BRB0 inst_McBSP_Interface/Phase_3_BRB1 inst_McBSP_Interface/Phase_3_BRB2.
+	Register(s) inst_McBSP_Interface/Schnittstellennummer_0 has(ve) been backward balanced into : inst_McBSP_Interface/Schnittstellennummer_0_BRB1 inst_McBSP_Interface/Schnittstellennummer_0_BRB2 inst_McBSP_Interface/Schnittstellennummer_0_BRB3.
+Unit <ADAT_De_Enkoder> processed.
+Replicating register inst_BRAM_Puffer_McBSP_Enkoder/PufferUeberlauf to handle IOB=TRUE attribute
+Replicating register inst_McBSP_Interface/DX to handle IOB=TRUE attribute
+Replicating register inst_BRAM_Puffer_McBSP_Enkoder/PufferVoll to handle IOB=TRUE attribute
+Replicating register inst_BRAM_Puffer_McBSP_Enkoder/PufferLeer to handle IOB=TRUE attribute
+Replicating register inst_BRAM_Puffer_McBSP_Enkoder/PufferUnterlauf to handle IOB=TRUE attribute
+Replicating register inst_McBSP_Interface/FSX to handle IOB=TRUE attribute
+Replicating register ADAT_Frame_Sync to handle IOB=TRUE attribute
+Replicating register inst_ADAT_Enkoder/intern_ADAT_0 to handle IOB=TRUE attribute
+
+
+Final Macro Processing ...
+
+Processing Unit <ADAT_De_Enkoder> :
+	Found 2-bit shift register for signal <INST_ADAT_DEKODER/ADAT_FRAME_0_5>.
+	Found 2-bit shift register for signal <INST_ADAT_DEKODER/ADAT_FRAME_0_10>.
+	Found 2-bit shift register for signal <INST_ADAT_DEKODER/ADAT_FRAME_0_15>.
+	Found 2-bit shift register for signal <INST_ADAT_DEKODER/ADAT_FRAME_0_20>.
+	Found 2-bit shift register for signal <INST_ADAT_DEKODER/ADAT_FRAME_0_25>.
+	Found 2-bit shift register for signal <INST_ADAT_DEKODER/ADAT_FRAME_0_30>.
+	Found 2-bit shift register for signal <INST_ADAT_DEKODER/ADAT_FRAME_0_35>.
+	Found 2-bit shift register for signal <INST_ADAT_DEKODER/ADAT_FRAME_0_40>.
+	Found 2-bit shift register for signal <INST_ADAT_DEKODER/ADAT_FRAME_0_45>.
+	Found 2-bit shift register for signal <INST_ADAT_DEKODER/ADAT_FRAME_0_50>.
+	Found 2-bit shift register for signal <INST_ADAT_DEKODER/ADAT_FRAME_0_55>.
+	Found 2-bit shift register for signal <INST_ADAT_DEKODER/ADAT_FRAME_0_60>.
+	Found 2-bit shift register for signal <INST_ADAT_DEKODER/ADAT_FRAME_0_65>.
+	Found 2-bit shift register for signal <INST_ADAT_DEKODER/ADAT_FRAME_0_70>.
+	Found 2-bit shift register for signal <INST_ADAT_DEKODER/ADAT_FRAME_0_75>.
+	Found 2-bit shift register for signal <INST_ADAT_DEKODER/ADAT_FRAME_0_80>.
+	Found 2-bit shift register for signal <INST_ADAT_DEKODER/ADAT_FRAME_0_85>.
+	Found 2-bit shift register for signal <INST_ADAT_DEKODER/ADAT_FRAME_0_90>.
+	Found 2-bit shift register for signal <INST_ADAT_DEKODER/ADAT_FRAME_0_95>.
+	Found 2-bit shift register for signal <INST_ADAT_DEKODER/ADAT_FRAME_0_100>.
+	Found 2-bit shift register for signal <INST_ADAT_DEKODER/ADAT_FRAME_0_105>.
+	Found 2-bit shift register for signal <INST_ADAT_DEKODER/ADAT_FRAME_0_110>.
+	Found 2-bit shift register for signal <INST_ADAT_DEKODER/ADAT_FRAME_0_115>.
+	Found 2-bit shift register for signal <INST_ADAT_DEKODER/ADAT_FRAME_0_120>.
+	Found 2-bit shift register for signal <INST_ADAT_DEKODER/ADAT_FRAME_0_125>.
+	Found 2-bit shift register for signal <INST_ADAT_DEKODER/ADAT_FRAME_0_130>.
+	Found 2-bit shift register for signal <INST_ADAT_DEKODER/ADAT_FRAME_0_135>.
+	Found 2-bit shift register for signal <INST_ADAT_DEKODER/ADAT_FRAME_0_140>.
+	Found 2-bit shift register for signal <INST_ADAT_DEKODER/ADAT_FRAME_0_145>.
+	Found 2-bit shift register for signal <INST_ADAT_DEKODER/ADAT_FRAME_0_150>.
+	Found 2-bit shift register for signal <INST_ADAT_DEKODER/ADAT_FRAME_0_155>.
+	Found 2-bit shift register for signal <INST_ADAT_DEKODER/ADAT_FRAME_0_160>.
+	Found 2-bit shift register for signal <INST_ADAT_DEKODER/ADAT_FRAME_0_165>.
+	Found 2-bit shift register for signal <INST_ADAT_DEKODER/ADAT_FRAME_0_170>.
+	Found 2-bit shift register for signal <INST_ADAT_DEKODER/ADAT_FRAME_0_175>.
+	Found 2-bit shift register for signal <INST_ADAT_DEKODER/ADAT_FRAME_0_180>.
+	Found 2-bit shift register for signal <INST_ADAT_DEKODER/ADAT_FRAME_0_185>.
+	Found 2-bit shift register for signal <INST_ADAT_DEKODER/ADAT_FRAME_0_190>.
+	Found 2-bit shift register for signal <INST_ADAT_DEKODER/ADAT_FRAME_0_195>.
+	Found 2-bit shift register for signal <INST_ADAT_DEKODER/ADAT_FRAME_0_200>.
+	Found 2-bit shift register for signal <INST_ADAT_DEKODER/ADAT_FRAME_0_205>.
+	Found 2-bit shift register for signal <INST_ADAT_DEKODER/ADAT_FRAME_0_210>.
+	Found 2-bit shift register for signal <INST_ADAT_DEKODER/ADAT_FRAME_0_215>.
+	Found 2-bit shift register for signal <INST_ADAT_DEKODER/ADAT_FRAME_0_220>.
+	Found 2-bit shift register for signal <INST_ADAT_DEKODER/ADAT_FRAME_0_225>.
+	Found 2-bit shift register for signal <INST_ADAT_DEKODER/ADAT_FRAME_0_230>.
+	Found 2-bit shift register for signal <INST_ADAT_DEKODER/ADAT_FRAME_0_235>.
+	Found 2-bit shift register for signal <INST_ADAT_DEKODER/ADAT_FRAME_0_240>.
+	Found 9-bit shift register for signal <INST_ADAT_DEKODER/ADAT_FRAME_0_245>.
+Unit <ADAT_De_Enkoder> processed.
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 909
+ Flip-Flops                                            : 909
+# Shift Registers                                      : 49
+ 2-bit shift register                                  : 48
+ 9-bit shift register                                  : 1
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : ADAT_De_Enkoder.ngr
+Top Level Output File Name         : ADAT_De_Enkoder
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 21
+
+Cell Usage :
+# BELS                             : 809
+#      GND                         : 1
+#      INV                         : 13
+#      LUT1                        : 42
+#      LUT2                        : 21
+#      LUT2_D                      : 3
+#      LUT2_L                      : 2
+#      LUT3                        : 166
+#      LUT4                        : 268
+#      LUT4_L                      : 1
+#      MUXCY                       : 51
+#      MUXF5                       : 134
+#      MUXF6                       : 48
+#      MUXF7                       : 12
+#      MUXF8                       : 6
+#      VCC                         : 1
+#      XORCY                       : 40
+# FlipFlops/Latches                : 958
+#      FD                          : 220
+#      FD_1                        : 38
+#      FDE                         : 414
+#      FDE_1                       : 198
+#      FDR                         : 55
+#      FDR_1                       : 13
+#      FDRE                        : 1
+#      FDRE_1                      : 2
+#      FDS                         : 10
+#      FDS_1                       : 6
+#      FDSE                        : 1
+# RAMS                             : 196
+#      RAM16X1S                    : 196
+# Shift Registers                  : 49
+#      SRL16                       : 49
+# Clock Buffers                    : 5
+#      BUFG                        : 2
+#      BUFGP                       : 3
+# IO Buffers                       : 16
+#      IBUF                        : 4
+#      OBUF                        : 12
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s200avq100-4 
+
+ Number of Slices:                      681  out of   1792    38%  
+ Number of Slice Flip Flops:            948  out of   3584    26%  
+ Number of 4 input LUTs:                761  out of   3584    21%  
+    Number used as logic:               516
+    Number used as Shift registers:      49
+    Number used as RAMs:                196
+ Number of IOs:                          21
+ Number of bonded IOBs:                  19  out of     68    27%  
+    IOB Flip Flops:                      10
+ Number of GCLKs:                         5  out of     24    20%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+--------------------------------------+----------------------------------------+-------+
+Clock Signal                          | Clock buffer(FF name)                  | Load  |
+--------------------------------------+----------------------------------------+-------+
+IN_ADATTAKT                           | IBUF+BUFG                              | 512   |
+IN_PLATINENTAKT                       | BUFGP                                  | 34    |
+DSP_CLKR_FPGA_CLKX                    | BUFGP                                  | 15    |
+DSP_CLKX_FPGA_CLKR                    | BUFGP                                  | 249   |
+INST_BRAM_PUFFER_MCBSP_ENKODER/BR_CLK1| BUFG                                   | 392   |
+ADAT_FRAME_SYNC_ENKODER               | NONE(INST_ADAT_ENKODER/BITNUMMER_RESET)| 1     |
+--------------------------------------+----------------------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 15.554ns (Maximum Frequency: 64.291MHz)
+   Minimum input arrival time before clock: 5.872ns
+   Maximum output required time after clock: 6.742ns
+   Maximum combinational path delay: 5.816ns
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'IN_ADATTAKT'
+  Clock period: 7.469ns (frequency: 133.887MHz)
+  Total number of paths / destination ports: 406 / 17
+-------------------------------------------------------------------------
+Offset:              7.469ns (Levels of Logic = 8)
+  Source:            INST_ADAT_DEKODER/OUT_DATEN<0>.KANAELE_0_4 (FF)
+  Destination:       INST_MCBSP_INTERFACE/DX (FF)
+  Source Clock:      IN_ADATTAKT rising
+  Destination Clock: DSP_CLKR_FPGA_CLKX rising
+
+  Data Path: INST_ADAT_DEKODER/OUT_DATEN<0>.KANAELE_0_4 to INST_MCBSP_INTERFACE/DX
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              1   0.591   0.500  INST_ADAT_DEKODER/OUT_DATEN<0>.KANAELE_0_4 (INST_ADAT_DEKODER/OUT_DATEN<0>.KANAELE_0_4)
+     LUT3:I1->O            1   0.643   0.000  INST_MCBSP_INTERFACE/MMUX_DATEN_EINGANG<0>.KANAELE_MUX0000_618 (INST_MCBSP_INTERFACE/MMUX_DATEN_EINGANG<0>.KANAELE_MUX0000_618)
+     MUXF5:I0->O           1   0.276   0.000  INST_MCBSP_INTERFACE/MMUX_DATEN_EINGANG<0>.KANAELE_MUX0000_4_F5_17 (INST_MCBSP_INTERFACE/MMUX_DATEN_EINGANG<0>.KANAELE_MUX0000_4_F518)
+     MUXF6:I0->O           1   0.291   0.500  INST_MCBSP_INTERFACE/MMUX_DATEN_EINGANG<0>.KANAELE_MUX0000_2_F6_17 (INST_MCBSP_INTERFACE/DATEN_EINGANG<0>_KANAELE_MUX0000<4>)
+     LUT3:I1->O            1   0.643   0.000  INST_MCBSP_INTERFACE/DX_MUX0000119_G (N229)
+     MUXF5:I1->O           1   0.276   0.500  INST_MCBSP_INTERFACE/DX_MUX0000119 (INST_MCBSP_INTERFACE/DX_MUX0000119)
+     LUT3:I1->O            1   0.643   0.500  INST_MCBSP_INTERFACE/DX_MUX0000217_SW0 (N214)
+     LUT4:I1->O            1   0.643   0.563  INST_MCBSP_INTERFACE/DX_MUX0000217 (INST_MCBSP_INTERFACE/DX_MUX0000217)
+     LUT4:I0->O            2   0.648   0.000  INST_MCBSP_INTERFACE/DX_MUX00005641 (INST_MCBSP_INTERFACE/DX_MUX0000564)
+     FDS:D                     0.252          INST_MCBSP_INTERFACE/DX
+    ----------------------------------------
+    Total                      7.469ns (4.906ns logic, 2.563ns route)
+                                       (65.7% logic, 34.3% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'ADAT_FRAME_SYNC_ENKODER'
+  Clock period: 13.996ns (frequency: 71.449MHz)
+  Total number of paths / destination ports: 870 / 32
+-------------------------------------------------------------------------
+Offset:              13.996ns (Levels of Logic = 11)
+  Source:            INST_ADAT_ENKODER/BITNUMMER_RESET (FF)
+  Destination:       INST_ADAT_ENKODER/LOKALEBITNUMMER_3 (FF)
+  Source Clock:      ADAT_FRAME_SYNC_ENKODER falling
+  Destination Clock: IN_ADATTAKT rising
+
+  Data Path: INST_ADAT_ENKODER/BITNUMMER_RESET to INST_ADAT_ENKODER/LOKALEBITNUMMER_3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR_1:C->Q           21   0.591   1.208  INST_ADAT_ENKODER/BITNUMMER_RESET (INST_ADAT_ENKODER/BITNUMMER_RESET)
+     LUT2:I1->O          123   0.643   1.434  INST_ADAT_ENKODER/MXOR_PHASE_XOR0000_RESULT1 (INST_ADAT_ENKODER/BITNUMMER_RESET_ALT_NOT0001_INV)
+     LUT4:I0->O            3   0.648   0.611  INST_ADAT_ENKODER/BITNUMMER_ADDSUB0000<7>3 (INST_ADAT_ENKODER/N60)
+     LUT2:I1->O            1   0.643   0.000  INST_ADAT_ENKODER/BITNUMMER_ADDSUB0000<7>2 (INST_ADAT_ENKODER/BITNUMMER_ADDSUB0000<7>2)
+     MUXF5:I0->O           4   0.276   0.619  INST_ADAT_ENKODER/BITNUMMER_ADDSUB0000<7>_F5 (INST_ADAT_ENKODER/BITNUMMER_ADDSUB0000<7>)
+     LUT4:I2->O            2   0.648   0.479  INST_ADAT_ENKODER/LOKALEBITNUMMER_CMP_EQ0000_SW0 (N55)
+     LUT4:I2->O            6   0.648   0.701  INST_ADAT_ENKODER/LOKALEBITNUMMER_CMP_EQ0000 (INST_ADAT_ENKODER/LOKALEBITNUMMER_CMP_EQ0000)
+     LUT3:I2->O            1   0.648   0.423  INST_ADAT_ENKODER/LOKALEBITNUMMER_MUX0003<4>2_SW0 (N68)
+     LUT4:I3->O            5   0.648   0.633  INST_ADAT_ENKODER/LOKALEBITNUMMER_MUX0003<4>2 (INST_ADAT_ENKODER/N37)
+     MUXF5:S->O            1   0.756   0.563  INST_ADAT_ENKODER/LOKALEBITNUMMER_MUX0003<1>23_F5 (INST_ADAT_ENKODER/LOKALEBITNUMMER_MUX0003<1>23)
+     LUT3:I0->O            1   0.648   0.000  INST_ADAT_ENKODER/LOKALEBITNUMMER_MUX0003<1>401 (INST_ADAT_ENKODER/LOKALEBITNUMMER_MUX0003<1>40)
+     MUXF5:I1->O           1   0.276   0.000  INST_ADAT_ENKODER/LOKALEBITNUMMER_MUX0003<1>40_F5 (INST_ADAT_ENKODER/LOKALEBITNUMMER_MUX0003<1>)
+     FD:D                      0.252          INST_ADAT_ENKODER/LOKALEBITNUMMER_3
+    ----------------------------------------
+    Total                     13.996ns (7.325ns logic, 6.671ns route)
+                                       (52.3% logic, 47.7% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'IN_ADATTAKT'
+  Clock period: 4.179ns (frequency: 239.274MHz)
+  Total number of paths / destination ports: 784 / 784
+-------------------------------------------------------------------------
+Offset:              4.179ns (Levels of Logic = 1)
+  Source:            INST_BRAM_PUFFER_MCBSP_ENKODER/BR_WE (FF)
+  Destination:       INST_BRAM_PUFFER_MCBSP_ENKODER/INSTADAT_BLOCKRAM/DO_0 (FF)
+  Source Clock:      IN_ADATTAKT rising
+  Destination Clock: INST_BRAM_PUFFER_MCBSP_ENKODER/BR_CLK1 rising
+
+  Data Path: INST_BRAM_PUFFER_MCBSP_ENKODER/BR_WE to INST_BRAM_PUFFER_MCBSP_ENKODER/INSTADAT_BLOCKRAM/DO_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q            197   0.591   1.314  INST_BRAM_PUFFER_MCBSP_ENKODER/BR_WE (INST_BRAM_PUFFER_MCBSP_ENKODER/BR_WE)
+     INV:I->O            196   0.648   1.314  INST_BRAM_PUFFER_MCBSP_ENKODER/INSTADAT_BLOCKRAM/WE_INV1_INV_0 (INST_BRAM_PUFFER_MCBSP_ENKODER/INSTADAT_BLOCKRAM/WE_INV)
+     FDE:CE                    0.312          INST_BRAM_PUFFER_MCBSP_ENKODER/INSTADAT_BLOCKRAM/DO_0
+    ----------------------------------------
+    Total                      4.179ns (1.551ns logic, 2.628ns route)
+                                       (37.1% logic, 62.9% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'DSP_CLKX_FPGA_CLKR'
+  Clock period: 1.011ns (frequency: 989.120MHz)
+  Total number of paths / destination ports: 196 / 196
+-------------------------------------------------------------------------
+Offset:              1.011ns (Levels of Logic = 0)
+  Source:            INST_MCBSP_INTERFACE/DATEN_AUSGANG<0>.KANAELE_0_0 (FF)
+  Destination:       INST_BRAM_PUFFER_MCBSP_ENKODER/INSTADAT_BLOCKRAM/MRAM_RAM1 (RAM)
+  Source Clock:      DSP_CLKX_FPGA_CLKR falling
+  Destination Clock: INST_BRAM_PUFFER_MCBSP_ENKODER/BR_CLK1 rising
+
+  Data Path: INST_MCBSP_INTERFACE/DATEN_AUSGANG<0>.KANAELE_0_0 to INST_BRAM_PUFFER_MCBSP_ENKODER/INSTADAT_BLOCKRAM/MRAM_RAM1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE_1:C->Q            1   0.591   0.420  INST_MCBSP_INTERFACE/DATEN_AUSGANG<0>.KANAELE_0_0 (INST_MCBSP_INTERFACE/DATEN_AUSGANG<0>.KANAELE_0_0)
+     RAM16X1S:D               -0.063          INST_BRAM_PUFFER_MCBSP_ENKODER/INSTADAT_BLOCKRAM/MRAM_RAM1
+    ----------------------------------------
+    Total                      1.011ns (0.591ns logic, 0.420ns route)
+                                       (58.5% logic, 41.5% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'DSP_CLKX_FPGA_CLKR'
+  Clock period: 5.491ns (frequency: 182.116MHz)
+  Total number of paths / destination ports: 25 / 25
+-------------------------------------------------------------------------
+Offset:              5.491ns (Levels of Logic = 3)
+  Source:            INST_MCBSP_INTERFACE/KOMPLETT_EMPFANGEN (FF)
+  Destination:       INST_BRAM_PUFFER_MCBSP_ENKODER/ANFANG_0 (FF)
+  Source Clock:      DSP_CLKX_FPGA_CLKR falling
+  Destination Clock: IN_ADATTAKT rising
+
+  Data Path: INST_MCBSP_INTERFACE/KOMPLETT_EMPFANGEN to INST_BRAM_PUFFER_MCBSP_ENKODER/ANFANG_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE_1:C->Q            8   0.591   0.837  INST_MCBSP_INTERFACE/KOMPLETT_EMPFANGEN (INST_MCBSP_INTERFACE/KOMPLETT_EMPFANGEN)
+     LUT2:I1->O            4   0.643   0.667  INST_BRAM_PUFFER_MCBSP_ENKODER/MXOR_LAENGE_XOR0000_RESULT1 (INST_BRAM_PUFFER_MCBSP_ENKODER/LAENGE_NOT0003_INV)
+     LUT4:I1->O            4   0.643   0.730  INST_BRAM_PUFFER_MCBSP_ENKODER/ANFANG_0_NOT000111 (INST_BRAM_PUFFER_MCBSP_ENKODER/PUFFERUNTERLAUF_NOT0001)
+     LUT3:I0->O            1   0.648   0.420  INST_BRAM_PUFFER_MCBSP_ENKODER/ANFANG_0_NOT00012 (INST_BRAM_PUFFER_MCBSP_ENKODER/ANFANG_0_NOT0001)
+     FDE:CE                    0.312          INST_BRAM_PUFFER_MCBSP_ENKODER/ANFANG_0
+    ----------------------------------------
+    Total                      5.491ns (2.837ns logic, 2.654ns route)
+                                       (51.7% logic, 48.3% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'INST_BRAM_PUFFER_MCBSP_ENKODER/BR_CLK1'
+  Clock period: 8.323ns (frequency: 120.149MHz)
+  Total number of paths / destination ports: 648 / 4
+-------------------------------------------------------------------------
+Offset:              8.323ns (Levels of Logic = 11)
+  Source:            INST_BRAM_PUFFER_MCBSP_ENKODER/INSTADAT_BLOCKRAM/DO_23 (FF)
+  Destination:       INST_ADAT_ENKODER/INTERN_ADAT_0 (FF)
+  Source Clock:      INST_BRAM_PUFFER_MCBSP_ENKODER/BR_CLK1 rising
+  Destination Clock: IN_ADATTAKT rising
+
+  Data Path: INST_BRAM_PUFFER_MCBSP_ENKODER/INSTADAT_BLOCKRAM/DO_23 to INST_ADAT_ENKODER/INTERN_ADAT_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              1   0.591   0.500  INST_BRAM_PUFFER_MCBSP_ENKODER/INSTADAT_BLOCKRAM/DO_23 (INST_BRAM_PUFFER_MCBSP_ENKODER/INSTADAT_BLOCKRAM/DO_23)
+     LUT4:I1->O            1   0.643   0.000  INST_ADAT_ENKODER/MMUX_DATEN<0>.KANAELE_MUX0001_181 (INST_ADAT_ENKODER/MMUX_DATEN<0>.KANAELE_MUX0001_181)
+     MUXF5:I0->O           1   0.276   0.000  INST_ADAT_ENKODER/MMUX_DATEN<0>.KANAELE_MUX0001_16_F5_0 (INST_ADAT_ENKODER/MMUX_DATEN<0>.KANAELE_MUX0001_16_F51)
+     MUXF6:I0->O           1   0.291   0.000  INST_ADAT_ENKODER/MMUX_DATEN<0>.KANAELE_MUX0001_14_F6_0 (INST_ADAT_ENKODER/MMUX_DATEN<0>.KANAELE_MUX0001_14_F61)
+     MUXF7:I0->O           1   0.291   0.000  INST_ADAT_ENKODER/MMUX_DATEN<0>.KANAELE_MUX0001_12_F7_0 (INST_ADAT_ENKODER/MMUX_DATEN<0>.KANAELE_MUX0001_12_F71)
+     MUXF8:I0->O           1   0.291   0.500  INST_ADAT_ENKODER/MMUX_DATEN<0>.KANAELE_MUX0001_10_F8_0 (INST_ADAT_ENKODER/MMUX_DATEN<0>.KANAELE_MUX0001_10_F81)
+     LUT4:I1->O            1   0.643   0.000  INST_ADAT_ENKODER/MMUX_DATEN<0>.KANAELE_MUX0001_5_F5_F (N234)
+     MUXF5:I0->O           1   0.276   0.563  INST_ADAT_ENKODER/MMUX_DATEN<0>.KANAELE_MUX0001_5_F5 (INST_ADAT_ENKODER/MMUX_DATEN<0>.KANAELE_MUX0001_5_F5)
+     LUT4:I0->O            1   0.648   0.000  INST_ADAT_ENKODER/INTERN_ADAT_0_MUX0000125_F (N242)
+     MUXF5:I0->O           1   0.276   0.423  INST_ADAT_ENKODER/INTERN_ADAT_0_MUX0000125 (INST_ADAT_ENKODER/INTERN_ADAT_0_MUX0000125)
+     LUT4:I3->O            1   0.648   0.563  INST_ADAT_ENKODER/INTERN_ADAT_0_MUX0000171_SW0 (N206)
+     LUT3:I0->O            2   0.648   0.000  INST_ADAT_ENKODER/INTERN_ADAT_0_MUX0000171 (INST_ADAT_ENKODER/INTERN_ADAT_0_MUX0000171)
+     FDS:D                     0.252          INST_ADAT_ENKODER/INTERN_ADAT_0
+    ----------------------------------------
+    Total                      8.323ns (5.774ns logic, 2.549ns route)
+                                       (69.4% logic, 30.6% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'IN_ADATTAKT'
+  Clock period: 15.554ns (frequency: 64.291MHz)
+  Total number of paths / destination ports: 8777 / 758
+-------------------------------------------------------------------------
+Delay:               7.777ns (Levels of Logic = 4)
+  Source:            ADAT_FRAME_SYNC_1 (FF)
+  Destination:       INST_ADAT_DEKODER/BITZAEHLER_7 (FF)
+  Source Clock:      IN_ADATTAKT falling
+  Destination Clock: IN_ADATTAKT rising
+
+  Data Path: ADAT_FRAME_SYNC_1 to INST_ADAT_DEKODER/BITZAEHLER_7
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE_1:C->Q           8   0.591   0.789  ADAT_FRAME_SYNC_1 (ADAT_FRAME_SYNC_1)
+     LUT3:I2->O            1   0.648   0.423  INST_ADAT_DEKODER/MADD_BITZAEHLER_ADD0000_XOR<4>12_SW0 (N83)
+     LUT4:I3->O            4   0.648   0.590  INST_ADAT_DEKODER/MADD_BITZAEHLER_ADD0000_XOR<4>12 (INST_ADAT_DEKODER/N71)
+     LUT4:I3->O            3   0.648   0.611  INST_ADAT_DEKODER/MADD_BITZAEHLER_ADD0000_XOR<7>141 (INST_ADAT_DEKODER/N61)
+     LUT2:I1->O          206   0.643   1.317  INST_ADAT_DEKODER/OUT_DATEN<0>_KANAELE_2_CMP_EQ00001 (INST_ADAT_DEKODER/OUT_DATEN<0>_KANAELE_2_CMP_EQ0000)
+     FDR:R                     0.869          INST_ADAT_DEKODER/BITZAEHLER_0
+    ----------------------------------------
+    Total                      7.777ns (4.047ns logic, 3.730ns route)
+                                       (52.0% logic, 48.0% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'IN_PLATINENTAKT'
+  Clock period: 5.449ns (frequency: 183.525MHz)
+  Total number of paths / destination ports: 1414 / 68
+-------------------------------------------------------------------------
+Delay:               5.449ns (Levels of Logic = 14)
+  Source:            I_6 (FF)
+  Destination:       I_0 (FF)
+  Source Clock:      IN_PLATINENTAKT rising
+  Destination Clock: IN_PLATINENTAKT rising
+
+  Data Path: I_6 to I_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              2   0.591   0.590  I_6 (I_6)
+     LUT1:I0->O            1   0.648   0.000  MCOMPAR_I_CMP_LT0000_CY<0>_RT (MCOMPAR_I_CMP_LT0000_CY<0>_RT)
+     MUXCY:S->O            1   0.632   0.000  MCOMPAR_I_CMP_LT0000_CY<0> (MCOMPAR_I_CMP_LT0000_CY<0>)
+     MUXCY:CI->O           1   0.065   0.000  MCOMPAR_I_CMP_LT0000_CY<1> (MCOMPAR_I_CMP_LT0000_CY<1>)
+     MUXCY:CI->O           1   0.065   0.000  MCOMPAR_I_CMP_LT0000_CY<2> (MCOMPAR_I_CMP_LT0000_CY<2>)
+     MUXCY:CI->O           1   0.065   0.000  MCOMPAR_I_CMP_LT0000_CY<3> (MCOMPAR_I_CMP_LT0000_CY<3>)
+     MUXCY:CI->O           1   0.065   0.000  MCOMPAR_I_CMP_LT0000_CY<4> (MCOMPAR_I_CMP_LT0000_CY<4>)
+     MUXCY:CI->O           1   0.065   0.000  MCOMPAR_I_CMP_LT0000_CY<5> (MCOMPAR_I_CMP_LT0000_CY<5>)
+     MUXCY:CI->O           1   0.065   0.000  MCOMPAR_I_CMP_LT0000_CY<6> (MCOMPAR_I_CMP_LT0000_CY<6>)
+     MUXCY:CI->O           1   0.065   0.000  MCOMPAR_I_CMP_LT0000_CY<7> (MCOMPAR_I_CMP_LT0000_CY<7>)
+     MUXCY:CI->O           1   0.065   0.000  MCOMPAR_I_CMP_LT0000_CY<8> (MCOMPAR_I_CMP_LT0000_CY<8>)
+     MUXCY:CI->O           1   0.065   0.000  MCOMPAR_I_CMP_LT0000_CY<9> (MCOMPAR_I_CMP_LT0000_CY<9>)
+     MUXCY:CI->O           1   0.065   0.000  MCOMPAR_I_CMP_LT0000_CY<10> (MCOMPAR_I_CMP_LT0000_CY<10>)
+     MUXCY:CI->O           1   0.065   0.000  MCOMPAR_I_CMP_LT0000_CY<11> (MCOMPAR_I_CMP_LT0000_CY<11>)
+     MUXCY:CI->O          34   0.141   1.263  MCOMPAR_I_CMP_LT0000_CY<12> (MCOMPAR_I_CMP_LT0000_CY<12>)
+     FDR:R                     0.869          I_0
+    ----------------------------------------
+    Total                      5.449ns (3.596ns logic, 1.853ns route)
+                                       (66.0% logic, 34.0% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'DSP_CLKR_FPGA_CLKX'
+  Clock period: 8.401ns (frequency: 119.029MHz)
+  Total number of paths / destination ports: 640 / 21
+-------------------------------------------------------------------------
+Delay:               8.401ns (Levels of Logic = 8)
+  Source:            INST_MCBSP_INTERFACE/KANALNUMMER0_0 (FF)
+  Destination:       INST_MCBSP_INTERFACE/DX (FF)
+  Source Clock:      DSP_CLKR_FPGA_CLKX rising
+  Destination Clock: DSP_CLKR_FPGA_CLKX rising
+
+  Data Path: INST_MCBSP_INTERFACE/KANALNUMMER0_0 to INST_MCBSP_INTERFACE/DX
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q             102   0.591   1.427  INST_MCBSP_INTERFACE/KANALNUMMER0_0 (INST_MCBSP_INTERFACE/KANALNUMMER0_0)
+     LUT3:I0->O            1   0.648   0.000  INST_MCBSP_INTERFACE/MMUX_DATEN_EINGANG<0>.KANAELE_MUX0000_418 (INST_MCBSP_INTERFACE/MMUX_DATEN_EINGANG<0>.KANAELE_MUX0000_418)
+     MUXF5:I1->O           1   0.276   0.000  INST_MCBSP_INTERFACE/MMUX_DATEN_EINGANG<0>.KANAELE_MUX0000_3_F5_17 (INST_MCBSP_INTERFACE/MMUX_DATEN_EINGANG<0>.KANAELE_MUX0000_3_F518)
+     MUXF6:I1->O           1   0.291   0.500  INST_MCBSP_INTERFACE/MMUX_DATEN_EINGANG<0>.KANAELE_MUX0000_2_F6_17 (INST_MCBSP_INTERFACE/DATEN_EINGANG<0>_KANAELE_MUX0000<4>)
+     LUT3:I1->O            1   0.643   0.000  INST_MCBSP_INTERFACE/DX_MUX0000119_G (N229)
+     MUXF5:I1->O           1   0.276   0.500  INST_MCBSP_INTERFACE/DX_MUX0000119 (INST_MCBSP_INTERFACE/DX_MUX0000119)
+     LUT3:I1->O            1   0.643   0.500  INST_MCBSP_INTERFACE/DX_MUX0000217_SW0 (N214)
+     LUT4:I1->O            1   0.643   0.563  INST_MCBSP_INTERFACE/DX_MUX0000217 (INST_MCBSP_INTERFACE/DX_MUX0000217)
+     LUT4:I0->O            2   0.648   0.000  INST_MCBSP_INTERFACE/DX_MUX00005641 (INST_MCBSP_INTERFACE/DX_MUX0000564)
+     FDS:D                     0.252          INST_MCBSP_INTERFACE/DX
+    ----------------------------------------
+    Total                      8.401ns (4.911ns logic, 3.490ns route)
+                                       (58.5% logic, 41.5% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'DSP_CLKX_FPGA_CLKR'
+  Clock period: 7.899ns (frequency: 126.598MHz)
+  Total number of paths / destination ports: 6111 / 443
+-------------------------------------------------------------------------
+Delay:               7.899ns (Levels of Logic = 4)
+  Source:            INST_MCBSP_INTERFACE/KANALNUMMER_0_BRB0 (FF)
+  Destination:       INST_MCBSP_INTERFACE/DATEN_AUSGANG<0>.KANAELE_6_23 (FF)
+  Source Clock:      DSP_CLKX_FPGA_CLKR falling
+  Destination Clock: DSP_CLKX_FPGA_CLKR falling
+
+  Data Path: INST_MCBSP_INTERFACE/KANALNUMMER_0_BRB0 to INST_MCBSP_INTERFACE/DATEN_AUSGANG<0>.KANAELE_6_23
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD_1:C->Q             3   0.591   0.674  INST_MCBSP_INTERFACE/KANALNUMMER_0_BRB0 (INST_MCBSP_INTERFACE/KANALNUMMER_0_BRB0)
+     LUT4:I0->O            1   0.648   0.452  INST_MCBSP_INTERFACE/PHASE_MUX0005<1>21_SW0 (N141)
+     LUT4:I2->O           13   0.648   1.126  INST_MCBSP_INTERFACE/PHASE_MUX0005<1>311 (INST_MCBSP_INTERFACE/PHASE_2)
+     LUT4:I0->O            8   0.648   0.900  INST_MCBSP_INTERFACE/KANALNUMMER_MUX0002<0>21 (INST_MCBSP_INTERFACE/N50)
+     LUT4:I0->O           24   0.648   1.252  INST_MCBSP_INTERFACE/DATEN_AUSGANG<0>_KANAELE_6_NOT00011 (INST_MCBSP_INTERFACE/DATEN_AUSGANG<0>_KANAELE_6_NOT0001)
+     FDE_1:CE                  0.312          INST_MCBSP_INTERFACE/DATEN_AUSGANG<0>.KANAELE_6_0
+    ----------------------------------------
+    Total                      7.899ns (3.495ns logic, 4.404ns route)
+                                       (44.2% logic, 55.8% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'INST_BRAM_PUFFER_MCBSP_ENKODER/BR_CLK1'
+  Clock period: 2.349ns (frequency: 425.713MHz)
+  Total number of paths / destination ports: 196 / 196
+-------------------------------------------------------------------------
+Delay:               2.349ns (Levels of Logic = 0)
+  Source:            INST_BRAM_PUFFER_MCBSP_ENKODER/INSTADAT_BLOCKRAM/MRAM_RAM1 (RAM)
+  Destination:       INST_BRAM_PUFFER_MCBSP_ENKODER/INSTADAT_BLOCKRAM/DO_0 (FF)
+  Source Clock:      INST_BRAM_PUFFER_MCBSP_ENKODER/BR_CLK1 rising
+  Destination Clock: INST_BRAM_PUFFER_MCBSP_ENKODER/BR_CLK1 rising
+
+  Data Path: INST_BRAM_PUFFER_MCBSP_ENKODER/INSTADAT_BLOCKRAM/MRAM_RAM1 to INST_BRAM_PUFFER_MCBSP_ENKODER/INSTADAT_BLOCKRAM/DO_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     RAM16X1S:WCLK->O      1   1.677   0.420  INST_BRAM_PUFFER_MCBSP_ENKODER/INSTADAT_BLOCKRAM/MRAM_RAM1 (INST_BRAM_PUFFER_MCBSP_ENKODER/INSTADAT_BLOCKRAM/_VARINDEX0000<0>)
+     FDE:D                     0.252          INST_BRAM_PUFFER_MCBSP_ENKODER/INSTADAT_BLOCKRAM/DO_0
+    ----------------------------------------
+    Total                      2.349ns (1.929ns logic, 0.420ns route)
+                                       (82.1% logic, 17.9% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'ADAT_FRAME_SYNC_ENKODER'
+  Clock period: 2.588ns (frequency: 386.399MHz)
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Delay:               2.588ns (Levels of Logic = 0)
+  Source:            INST_ADAT_ENKODER/BITNUMMER_RESET (FF)
+  Destination:       INST_ADAT_ENKODER/BITNUMMER_RESET (FF)
+  Source Clock:      ADAT_FRAME_SYNC_ENKODER falling
+  Destination Clock: ADAT_FRAME_SYNC_ENKODER falling
+
+  Data Path: INST_ADAT_ENKODER/BITNUMMER_RESET to INST_ADAT_ENKODER/BITNUMMER_RESET
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR_1:C->Q           21   0.591   1.128  INST_ADAT_ENKODER/BITNUMMER_RESET (INST_ADAT_ENKODER/BITNUMMER_RESET)
+     FDR_1:R                   0.869          INST_ADAT_ENKODER/BITNUMMER_RESET
+    ----------------------------------------
+    Total                      2.588ns (1.460ns logic, 1.128ns route)
+                                       (56.4% logic, 43.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'IN_ADATTAKT'
+  Total number of paths / destination ports: 39 / 15
+-------------------------------------------------------------------------
+Offset:              5.068ns (Levels of Logic = 3)
+  Source:            IN_ADAT<0> (PAD)
+  Destination:       PERIODE_0 (FF)
+  Destination Clock: IN_ADATTAKT falling
+
+  Data Path: IN_ADAT<0> to PERIODE_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             7   0.849   0.711  IN_ADAT_0_IBUF (IN_ADAT_0_IBUF)
+     LUT4:I3->O            3   0.648   0.674  PERIODE_MUX0000<0>2 (PERIODE_MUX0000<0>)
+     LUT4:I0->O            6   0.648   0.669  ADAT_FRAME_SYNC_CMP_EQ00001 (ADAT_FRAME_SYNC_CMP_EQ0000)
+     FDR_1:R                   0.869          PERIODE_0
+    ----------------------------------------
+    Total                      5.068ns (3.014ns logic, 2.054ns route)
+                                       (59.5% logic, 40.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'DSP_CLKX_FPGA_CLKR'
+  Total number of paths / destination ports: 754 / 235
+-------------------------------------------------------------------------
+Offset:              5.872ns (Levels of Logic = 3)
+  Source:            DSP_FSX_FPGA_FSR (PAD)
+  Destination:       INST_MCBSP_INTERFACE/DATEN_AUSGANG<0>.KANAELE_6_23 (FF)
+  Destination Clock: DSP_CLKX_FPGA_CLKR falling
+
+  Data Path: DSP_FSX_FPGA_FSR to INST_MCBSP_INTERFACE/DATEN_AUSGANG<0>.KANAELE_6_23
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            26   0.849   1.263  DSP_FSX_FPGA_FSR_IBUF (DSP_FSX_FPGA_FSR_IBUF)
+     LUT4:I3->O            8   0.648   0.900  INST_MCBSP_INTERFACE/KANALNUMMER_MUX0002<0>21 (INST_MCBSP_INTERFACE/N50)
+     LUT4:I0->O           24   0.648   1.252  INST_MCBSP_INTERFACE/DATEN_AUSGANG<0>_KANAELE_6_NOT00011 (INST_MCBSP_INTERFACE/DATEN_AUSGANG<0>_KANAELE_6_NOT0001)
+     FDE_1:CE                  0.312          INST_MCBSP_INTERFACE/DATEN_AUSGANG<0>.KANAELE_6_0
+    ----------------------------------------
+    Total                      5.872ns (2.457ns logic, 3.415ns route)
+                                       (41.8% logic, 58.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'IN_ADATTAKT'
+  Total number of paths / destination ports: 11 / 8
+-------------------------------------------------------------------------
+Offset:              6.742ns (Levels of Logic = 2)
+  Source:            INST_BRAM_PUFFER_MCBSP_ENKODER/PUFFERVOLL_1 (FF)
+  Destination:       OUT_PUFFERNORMAL (PAD)
+  Source Clock:      IN_ADATTAKT rising
+
+  Data Path: INST_BRAM_PUFFER_MCBSP_ENKODER/PUFFERVOLL_1 to OUT_PUFFERNORMAL
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              1   0.591   0.563  INST_BRAM_PUFFER_MCBSP_ENKODER/PUFFERVOLL_1 (INST_BRAM_PUFFER_MCBSP_ENKODER/PUFFERVOLL_1)
+     LUT4:I0->O            1   0.648   0.420  OUT_PUFFERNORMAL1 (OUT_PUFFERNORMAL_OBUF)
+     OBUF:I->O                 4.520          OUT_PUFFERNORMAL_OBUF (OUT_PUFFERNORMAL)
+    ----------------------------------------
+    Total                      6.742ns (5.759ns logic, 0.983ns route)
+                                       (85.4% logic, 14.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'DSP_CLKR_FPGA_CLKX'
+  Total number of paths / destination ports: 2 / 2
+-------------------------------------------------------------------------
+Offset:              5.531ns (Levels of Logic = 1)
+  Source:            INST_MCBSP_INTERFACE/DX (FF)
+  Destination:       DSP_DR_FPGA_DX (PAD)
+  Source Clock:      DSP_CLKR_FPGA_CLKX rising
+
+  Data Path: INST_MCBSP_INTERFACE/DX to DSP_DR_FPGA_DX
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDS:C->Q              1   0.591   0.420  INST_MCBSP_INTERFACE/DX (INST_MCBSP_INTERFACE/DX)
+     OBUF:I->O                 4.520          DSP_DR_FPGA_DX_OBUF (DSP_DR_FPGA_DX)
+    ----------------------------------------
+    Total                      5.531ns (5.111ns logic, 0.420ns route)
+                                       (92.4% logic, 7.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'IN_PLATINENTAKT'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              5.531ns (Levels of Logic = 1)
+  Source:            OUT_ESLEBT (FF)
+  Destination:       OUT_ESLEBT (PAD)
+  Source Clock:      IN_PLATINENTAKT rising
+
+  Data Path: OUT_ESLEBT to OUT_ESLEBT
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              1   0.591   0.420  OUT_ESLEBT (OUT_ESLEBT_OBUF)
+     OBUF:I->O                 4.520          OUT_ESLEBT_OBUF (OUT_ESLEBT)
+    ----------------------------------------
+    Total                      5.531ns (5.111ns logic, 0.420ns route)
+                                       (92.4% logic, 7.6% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Delay:               5.816ns (Levels of Logic = 2)
+  Source:            IN_ADATTAKT (PAD)
+  Destination:       DEBUG_ADATTAKT (PAD)
+
+  Data Path: IN_ADATTAKT to DEBUG_ADATTAKT
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             2   0.849   0.447  IN_ADATTAKT_IBUF (DEBUG_ADATTAKT_OBUF1)
+     OBUF:I->O                 4.520          DEBUG_ADATTAKT_OBUF (DEBUG_ADATTAKT)
+    ----------------------------------------
+    Total                      5.816ns (5.369ns logic, 0.447ns route)
+                                       (92.3% logic, 7.7% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 16.00 secs
+Total CPU time to Xst completion: 15.83 secs
+ 
+--> 
+
+Total memory usage is 180980 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   98 (   0 filtered)
+Number of infos    :   14 (   0 filtered)
+

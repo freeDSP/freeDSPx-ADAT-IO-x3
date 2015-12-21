@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/ADAT_Dekoder_alt.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/ADAT_Dekoder_alt.syr" 

@@ -1,0 +1,6 @@
+vhdl work "ADAT.vhd"
+vhdl work "ADAT_BLOCKRAM.vhd"
+vhdl work "EnkoderTestClock.vhd"
+vhdl work "DynamischerADATPuffer_BRAM.vhd"
+vhdl work "ADAT_Enkoder.vhd"
+vhdl work "ADAT_Out_Test.vhd"

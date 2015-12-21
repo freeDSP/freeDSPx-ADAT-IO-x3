@@ -1,0 +1,58 @@
+xst -intstyle ise -ifn "Z:/ADAT DeEncoder/ADAT_De-Encoder/McBSP_Test.xst" -ofn "Z:/ADAT DeEncoder/ADAT_De-Encoder/McBSP_Test.syr" 
+xst -intstyle ise -ifn "Z:/ADAT DeEncoder/ADAT_De-Encoder/McBSP_Test.xst" -ofn "Z:/ADAT DeEncoder/ADAT_De-Encoder/McBSP_Test.syr" 
+xst -intstyle ise -ifn "Z:/ADAT DeEncoder/ADAT_De-Encoder/McBSP_Test.xst" -ofn "Z:/ADAT DeEncoder/ADAT_De-Encoder/McBSP_Test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s200a-vq100-5 "McBSP_Test.ngc" McBSP_Test.ngd  
+map -intstyle ise -p xc3s200a-vq100-5 -timing -logic_opt on -ol high -xe n -t 1 -register_duplication on -cm speed -detail -ir off -ignore_keep_hierarchy -pr b -bp -power off -o McBSP_Test_map.ncd McBSP_Test.ngd McBSP_Test.pcf 
+par -w -intstyle ise -pl high -rl high -xe n -t 1 McBSP_Test_map.ncd McBSP_Test.ncd McBSP_Test.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml McBSP_Test.twx McBSP_Test.ncd -o McBSP_Test.twr McBSP_Test.pcf 
+bitgen -intstyle ise -f McBSP_Test.ut McBSP_Test.ncd 
+xst -intstyle ise -ifn "Z:/ADAT DeEncoder/ADAT_De-Encoder/McBSP_Test.xst" -ofn "Z:/ADAT DeEncoder/ADAT_De-Encoder/McBSP_Test.syr" 
+xst -intstyle ise -ifn "Z:/ADAT DeEncoder/ADAT_De-Encoder/McBSP_Test.xst" -ofn "Z:/ADAT DeEncoder/ADAT_De-Encoder/McBSP_Test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s200a-vq100-5 "McBSP_Test.ngc" McBSP_Test.ngd  
+map -intstyle ise -p xc3s200a-vq100-5 -timing -logic_opt on -ol high -xe n -t 1 -register_duplication on -cm speed -detail -ir off -ignore_keep_hierarchy -pr b -bp -power off -o McBSP_Test_map.ncd McBSP_Test.ngd McBSP_Test.pcf 
+par -w -intstyle ise -pl high -rl high -xe n -t 1 McBSP_Test_map.ncd McBSP_Test.ncd McBSP_Test.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml McBSP_Test.twx McBSP_Test.ncd -o McBSP_Test.twr McBSP_Test.pcf 
+bitgen -intstyle ise -f McBSP_Test.ut McBSP_Test.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xXCS3200A-4VQ100-mcbsptest.ucf -p xc3s200a-vq100-5 "McBSP_Test.ngc" McBSP_Test.ngd  
+map -intstyle ise -p xc3s200a-vq100-5 -timing -logic_opt on -ol high -xe n -t 1 -register_duplication on -cm speed -detail -ir off -ignore_keep_hierarchy -pr b -bp -power off -o McBSP_Test_map.ncd McBSP_Test.ngd McBSP_Test.pcf 
+par -w -intstyle ise -pl high -rl high -xe n -t 1 McBSP_Test_map.ncd McBSP_Test.ncd McBSP_Test.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml McBSP_Test.twx McBSP_Test.ncd -o McBSP_Test.twr McBSP_Test.pcf -ucf xXCS3200A-4VQ100-mcbsptest.ucf 
+bitgen -intstyle ise -f McBSP_Test.ut McBSP_Test.ncd 
+xst -intstyle ise -ifn "Z:/ADAT DeEncoder/ADAT_De-Encoder/McBSP_Test.xst" -ofn "Z:/ADAT DeEncoder/ADAT_De-Encoder/McBSP_Test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s200a-vq100-5 "McBSP_Test.ngc" McBSP_Test.ngd  
+map -intstyle ise -p xc3s200a-vq100-5 -timing -logic_opt on -ol high -xe n -t 1 -register_duplication on -cm speed -detail -ir off -ignore_keep_hierarchy -pr b -bp -power off -o McBSP_Test_map.ncd McBSP_Test.ngd McBSP_Test.pcf 
+par -w -intstyle ise -pl high -rl high -xe n -t 1 McBSP_Test_map.ncd McBSP_Test.ncd McBSP_Test.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml McBSP_Test.twx McBSP_Test.ncd -o McBSP_Test.twr McBSP_Test.pcf 
+bitgen -intstyle ise -f McBSP_Test.ut McBSP_Test.ncd 
+xst -intstyle ise -ifn "Z:/D/ADAT DeEncoder/ADAT_De-Encoder/McBSP_Test.xst" -ofn "Z:/D/ADAT DeEncoder/ADAT_De-Encoder/McBSP_Test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s200a-vq100-5 "McBSP_Test.ngc" McBSP_Test.ngd  
+map -intstyle ise -p xc3s200a-vq100-5 -timing -logic_opt on -ol high -xe n -t 1 -register_duplication on -cm speed -detail -ir off -ignore_keep_hierarchy -pr b -bp -power off -o McBSP_Test_map.ncd McBSP_Test.ngd McBSP_Test.pcf 
+par -w -intstyle ise -pl high -rl high -xe n -t 1 McBSP_Test_map.ncd McBSP_Test.ncd McBSP_Test.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml McBSP_Test.twx McBSP_Test.ncd -o McBSP_Test.twr McBSP_Test.pcf 
+bitgen -intstyle ise -f McBSP_Test.ut McBSP_Test.ncd 
+xst -intstyle ise -ifn "Z:/D/ADAT DeEncoder/ADAT_De-Encoder/McBSP_Test.xst" -ofn "Z:/D/ADAT DeEncoder/ADAT_De-Encoder/McBSP_Test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xXCS3200A-4VQ100-mcbsptest.ucf -p xc3s200a-vq100-5 "McBSP_Test.ngc" McBSP_Test.ngd  
+map -intstyle ise -p xc3s200a-vq100-5 -timing -logic_opt on -ol high -xe n -t 1 -register_duplication on -cm speed -detail -ir off -ignore_keep_hierarchy -pr b -bp -power off -o McBSP_Test_map.ncd McBSP_Test.ngd McBSP_Test.pcf 
+par -w -intstyle ise -pl high -rl high -xe n -t 1 McBSP_Test_map.ncd McBSP_Test.ncd McBSP_Test.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml McBSP_Test.twx McBSP_Test.ncd -o McBSP_Test.twr McBSP_Test.pcf -ucf xXCS3200A-4VQ100-mcbsptest.ucf 
+bitgen -intstyle ise -f McBSP_Test.ut McBSP_Test.ncd 
+xst -intstyle ise -ifn "Z:/D/ADAT DeEncoder/ADAT_De-Encoder/McBSP_Test.xst" -ofn "Z:/D/ADAT DeEncoder/ADAT_De-Encoder/McBSP_Test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xXCS3200A-4VQ100-mcbsptest.ucf -p xc3s200a-vq100-5 "McBSP_Test.ngc" McBSP_Test.ngd  
+map -intstyle ise -p xc3s200a-vq100-5 -timing -logic_opt on -ol high -xe n -t 1 -register_duplication on -cm speed -detail -ir off -ignore_keep_hierarchy -pr b -bp -power off -o McBSP_Test_map.ncd McBSP_Test.ngd McBSP_Test.pcf 
+map -intstyle ise -p xc3s200a-vq100-5 -timing -logic_opt on -ol high -xe n -t 1 -register_duplication on -cm speed -detail -ir off -ignore_keep_hierarchy -pr b -bp -power off -o McBSP_Test_map.ncd McBSP_Test.ngd McBSP_Test.pcf 
+par -w -intstyle ise -pl high -rl high -xe n -t 1 McBSP_Test_map.ncd McBSP_Test.ncd McBSP_Test.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml McBSP_Test.twx McBSP_Test.ncd -o McBSP_Test.twr McBSP_Test.pcf -ucf xXCS3200A-4VQ100-mcbsptest.ucf 
+xst -intstyle ise -ifn "Z:/D/ADAT DeEncoder/ADAT_De-Encoder/McBSP_Test.xst" -ofn "Z:/D/ADAT DeEncoder/ADAT_De-Encoder/McBSP_Test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xXCS3200A-4VQ100-mcbsptest.ucf -p xc3s200a-vq100-5 "McBSP_Test.ngc" McBSP_Test.ngd  
+map -intstyle ise -p xc3s200a-vq100-5 -timing -logic_opt on -ol high -xe n -t 1 -register_duplication on -cm speed -detail -ir off -ignore_keep_hierarchy -pr b -bp -power off -o McBSP_Test_map.ncd McBSP_Test.ngd McBSP_Test.pcf 
+par -w -intstyle ise -pl high -rl high -xe n -t 1 McBSP_Test_map.ncd McBSP_Test.ncd McBSP_Test.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml McBSP_Test.twx McBSP_Test.ncd -o McBSP_Test.twr McBSP_Test.pcf -ucf xXCS3200A-4VQ100-mcbsptest.ucf 
+bitgen -intstyle ise -f McBSP_Test.ut McBSP_Test.ncd 
+xst -intstyle ise -ifn "Z:/D/ADAT DeEncoder/ADAT_De-Encoder/McBSP_Test.xst" -ofn "Z:/D/ADAT DeEncoder/ADAT_De-Encoder/McBSP_Test.syr" 
+xst -intstyle ise -ifn "Z:/D/ADAT DeEncoder/ADAT_De-Encoder/McBSP_Test.xst" -ofn "Z:/D/ADAT DeEncoder/ADAT_De-Encoder/McBSP_Test.syr" 
+xst -intstyle ise -ifn "Z:/D/ADAT DeEncoder/ADAT_De-Encoder/McBSP_Test.xst" -ofn "Z:/D/ADAT DeEncoder/ADAT_De-Encoder/McBSP_Test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xXCS3200A-4VQ100-mcbsptest.ucf -p xc3s200a-vq100-5 "McBSP_Test.ngc" McBSP_Test.ngd  
+map -intstyle ise -p xc3s200a-vq100-5 -timing -logic_opt on -ol high -xe n -t 1 -register_duplication on -cm speed -detail -ir off -ignore_keep_hierarchy -pr b -bp -power off -o McBSP_Test_map.ncd McBSP_Test.ngd McBSP_Test.pcf 
+par -w -intstyle ise -pl high -rl high -xe n -t 1 McBSP_Test_map.ncd McBSP_Test.ncd McBSP_Test.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml McBSP_Test.twx McBSP_Test.ncd -o McBSP_Test.twr McBSP_Test.pcf -ucf xXCS3200A-4VQ100-mcbsptest.ucf 
+bitgen -intstyle ise -f McBSP_Test.ut McBSP_Test.ncd 

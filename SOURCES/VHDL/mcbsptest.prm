@@ -1,0 +1,17 @@
+PROMGEN: Xilinx Prom Generator P.68d
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+promgen -w -p mcs -c FF -o "Z:\D\ADAT DeEncoder\ADAT_De-Encoder\//mcbsptest" -x xcf02s -u 00000000 "Z:/D/ADAT DeEncoder/ADAT_De-Encoder/mcbsp_test.bit" 
+
+PROM \\vmware-host\shared folders\D\ADAT DeEncoder\ADAT_De-Encoder\mcbsptest.prm map: Tue Apr 01 13:16:45 2014
+
+Calculating PROM checksum with fill value ff
+
+Format        Mcs86 (32-bit)
+Size          256K
+PROM start    0000:0000
+PROM end      0003:ffff
+PROM checksum 01d3db4a
+
+        Addr1        Addr2                     Date File(s)
+    0000:0000    0002:4831     Apr 01 13:11:35 2014 Z:/D/ADAT DeEncoder/ADAT_De-Encoder/mcbsp_test.bit

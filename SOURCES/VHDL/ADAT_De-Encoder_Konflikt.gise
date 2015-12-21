@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<generated_project xmlns="http://www.xilinx.com/XMLSchema" xmlns:xil_pn="http://www.xilinx.com/XMLSchema">
+
+  <!--                                                          -->
+
+  <!--             For tool use only. Do not edit.              -->
+
+  <!--                                                          -->
+
+  <!-- ProjectNavigator created generated project file.         -->
+
+  <!-- For use in tracking generated file and other information -->
+
+  <!-- allowing preservation of process status.                 -->
+
+  <!--                                                          -->
+
+  <!-- Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved. -->
+
+  <version xmlns="http://www.xilinx.com/XMLSchema">11.1</version>
+
+  <sourceproject xmlns="http://www.xilinx.com/XMLSchema" xil_pn:fileType="FILE_XISE" xil_pn:name="ADAT_De-Encoder_Konflikt.xise"/>
+
+  <files xmlns="http://www.xilinx.com/XMLSchema">
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGDBUILD_LOG" xil_pn:name="ADAT_De_Enkoder.bld"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="ADAT_De_Enkoder.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="ADAT_De_Enkoder.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="ADAT_De_Enkoder.ncd" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="ADAT_De_Enkoder.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGD" xil_pn:name="ADAT_De_Enkoder.ngd"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="ADAT_De_Enkoder.ngr"/>
+    <file xil_pn:fileType="FILE_PAD_MISC" xil_pn:name="ADAT_De_Enkoder.pad"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAR_REPORT" xil_pn:name="ADAT_De_Enkoder.par" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PCF" xil_pn:name="ADAT_De_Enkoder.pcf" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="ADAT_De_Enkoder.prj"/>
+    <file xil_pn:fileType="FILE_TRCE_MISC" xil_pn:name="ADAT_De_Enkoder.ptwx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="ADAT_De_Enkoder.stx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="ADAT_De_Enkoder.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_TXT_REPORT" xil_pn:name="ADAT_De_Enkoder.twr" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_XML_REPORT" xil_pn:name="ADAT_De_Enkoder.twx" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_UNROUTES" xil_pn:name="ADAT_De_Enkoder.unroutes" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_REPORT" xil_pn:name="ADAT_De_Enkoder.ut" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:fileType="FILE_XPI" xil_pn:name="ADAT_De_Enkoder.xpi"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="ADAT_De_Enkoder.xst"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="ADAT_De_Enkoder_envsettings.html"/>
+    <file xil_pn:fileType="FILE_NCD" xil_pn:name="ADAT_De_Enkoder_guide.ncd" xil_pn:origination="imported"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="ADAT_De_Enkoder_map.map" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="ADAT_De_Enkoder_map.mrp" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="ADAT_De_Enkoder_map.ncd" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGM" xil_pn:name="ADAT_De_Enkoder_map.ngm" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_EXCEL_REPORT" xil_pn:name="ADAT_De_Enkoder_pad.csv" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_TXT_REPORT" xil_pn:name="ADAT_De_Enkoder_pad.txt" xil_pn:subbranch="Par"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="ADAT_De_Enkoder_par.xrpt"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="ADAT_De_Enkoder_summary.html"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="ADAT_De_Enkoder_vhdl.prj"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="ADAT_De_Enkoder_xst.xrpt"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGDBUILD_LOG" xil_pn:name="McBSP_Interface.bld"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="McBSP_Interface.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="McBSP_Interface.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="McBSP_Interface.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGD" xil_pn:name="McBSP_Interface.ngd"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="McBSP_Interface.ngr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="McBSP_Interface.prj"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="McBSP_Interface.stx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="McBSP_Interface.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="McBSP_Interface.xst"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="McBSP_Interface_envsettings.html"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="McBSP_Interface_map.map" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="McBSP_Interface_map.mrp" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGM" xil_pn:name="McBSP_Interface_map.ngm" xil_pn:subbranch="Map"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="McBSP_Interface_map.xrpt"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="McBSP_Interface_ngdbuild.xrpt"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="McBSP_Interface_summary.html"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="McBSP_Interface_vhdl.prj"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="McBSP_Interface_xst.xrpt"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_VHDL" xil_pn:name="SchnellerTakt.vhd"/>
+    <file xil_pn:fileType="FILE_UCF" xil_pn:name="SchnellerTakt_arwz.ucf" xil_pn:origination="imported"/>
+    <file xil_pn:fileType="FILE_LOG" xil_pn:name="_impactbatch.log"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="_ngo"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/bitgen.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/map.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/par.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/trce.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/xst.xmsgs"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_REPORT" xil_pn:name="adat_de_enkoder.bgn" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BIT" xil_pn:name="adat_de_enkoder.bit" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_DRC" xil_pn:name="adat_de_enkoder.drc" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:fileType="FILE_CMD" xil_pn:name="ise_impact.cmd"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="usage_statistics_webtalk.html"/>
+    <file xil_pn:fileType="FILE_LOG" xil_pn:name="webtalk.log"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="webtalk_pn.xml"/>
+    <file xil_pn:fileType="FILE_LOG" xil_pn:name="xaw2vhdl.log"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xlnx_auto_0_xdb"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xst"/>
+  </files>
+
+  <transforms xmlns="http://www.xilinx.com/XMLSchema">
+    <transform xil_pn:end_ts="1391447953" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1391447950">
+      <status xil_pn:value="SuccessfullyRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1391449060" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="-8850514866727124560" xil_pn:start_ts="1391449060">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1391449060" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="-5904204057929073732" xil_pn:start_ts="1391449060">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1391449060" xil_pn:name="TRAN_SubProjectAbstractToPreProxy" xil_pn:start_ts="1391449060">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1391449060" xil_pn:in_ck="7295906014051761506" xil_pn:name="TRAN_xawsTohdl" xil_pn:prop_ck="2179215476004958344" xil_pn:start_ts="1391449060">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="SchnellerTakt.vhd"/>
+    </transform>
+    <transform xil_pn:end_ts="1391449060" xil_pn:name="TRAN_SubProjectPreToStructuralProxy" xil_pn:prop_ck="8569866560980815065" xil_pn:start_ts="1391449060">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1391449060" xil_pn:name="TRAN_platgen" xil_pn:prop_ck="6327300407174824262" xil_pn:start_ts="1391449060">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1391449084" xil_pn:in_ck="7216267788336865311" xil_pn:name="TRANEXT_xstsynthesize_spartan3e" xil_pn:prop_ck="2572254761203877510" xil_pn:start_ts="1391449060">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="McBSP_Interface.lso"/>
+      <outfile xil_pn:name="McBSP_Interface.ngc"/>
+      <outfile xil_pn:name="McBSP_Interface.ngr"/>
+      <outfile xil_pn:name="McBSP_Interface.prj"/>
+      <outfile xil_pn:name="McBSP_Interface.stx"/>
+      <outfile xil_pn:name="McBSP_Interface.syr"/>
+      <outfile xil_pn:name="McBSP_Interface.xst"/>
+      <outfile xil_pn:name="McBSP_Interface_vhdl.prj"/>
+      <outfile xil_pn:name="McBSP_Interface_xst.xrpt"/>
+      <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
+      <outfile xil_pn:name="webtalk_pn.xml"/>
+      <outfile xil_pn:name="xst"/>
+    </transform>
+    <transform xil_pn:end_ts="1391448945" xil_pn:in_ck="1090392836530589087" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="-932086949001603139" xil_pn:start_ts="1391448945">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1391449097" xil_pn:in_ck="-1359325655394652263" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="6210540109463205171" xil_pn:start_ts="1391449084">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="McBSP_Interface.bld"/>
+      <outfile xil_pn:name="McBSP_Interface.ngd"/>
+      <outfile xil_pn:name="McBSP_Interface_ngdbuild.xrpt"/>
+      <outfile xil_pn:name="_ngo"/>
+      <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
+    </transform>
+    <transform xil_pn:end_ts="1391449116" xil_pn:in_ck="6735278419088813755" xil_pn:name="TRANEXT_map_spartan3" xil_pn:prop_ck="-6757896578387757026" xil_pn:start_ts="1391449097">
+      <status xil_pn:value="FailedRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="McBSP_Interface_map.map"/>
+      <outfile xil_pn:name="McBSP_Interface_map.mrp"/>
+      <outfile xil_pn:name="McBSP_Interface_map.ngm"/>
+      <outfile xil_pn:name="McBSP_Interface_map.xrpt"/>
+      <outfile xil_pn:name="_xmsgs/map.xmsgs"/>
+    </transform>
+  </transforms>
+
+</generated_project>

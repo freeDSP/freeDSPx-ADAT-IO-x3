@@ -1,0 +1,6 @@
+xst -intstyle ise -ifn "Z:/D/ADAT DeEncoder/ADAT_De-Encoder/McBSP_Interface.xst" -ofn "Z:/D/ADAT DeEncoder/ADAT_De-Encoder/McBSP_Interface.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s200a-vq100-5 "McBSP_Interface.ngc" McBSP_Interface.ngd  
+map -intstyle ise -p xc3s200a-vq100-5 -timing -logic_opt on -ol high -xe n -t 1 -register_duplication on -cm speed -detail -ir off -ignore_keep_hierarchy -pr b -bp -power off -o McBSP_Interface_map.ncd McBSP_Interface.ngd McBSP_Interface.pcf 
+xst -intstyle ise -ifn "Z:/D/ADAT DeEncoder/ADAT_De-Encoder/McBSP_Interface.xst" -ofn "Z:/D/ADAT DeEncoder/ADAT_De-Encoder/McBSP_Interface.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s200a-vq100-5 "McBSP_Interface.ngc" McBSP_Interface.ngd  
+map -intstyle ise -p xc3s200a-vq100-5 -timing -logic_opt on -ol high -xe n -t 1 -register_duplication on -cm speed -detail -ir off -ignore_keep_hierarchy -pr b -bp -power off -o McBSP_Interface_map.ncd McBSP_Interface.ngd McBSP_Interface.pcf 

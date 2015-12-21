@@ -1,0 +1,759 @@
+Release 14.6 - xst P.68d (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.41 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.42 secs
+ 
+--> Reading design: McBSP_Interface.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "McBSP_Interface.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "McBSP_Interface"
+Output Format                      : NGC
+Target Device                      : xc3s200a-5-vq100
+
+---- Source Options
+Top Module Name                    : McBSP_Interface
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : Yes
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 500
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Move First FlipFlop Stage          : YES
+Move Last FlipFlop Stage           : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : YES
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : True
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 2
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : Offset_In_Before
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : YES
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Upper
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : YES
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "//vmware-host/shared folders/D/ADAT DeEncoder/ADAT_De-Encoder/ADAT.vhd" in Library work.
+Architecture adat of Entity adat is up to date.
+Compiling vhdl file "//vmware-host/shared folders/D/ADAT DeEncoder/ADAT_De-Encoder/McBSP-Dekoder_1Puffer_Parallel.vhd" in Library work.
+Architecture mcbsp_verhalten of Entity mcbsp_interface is up to date.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <McBSP_Interface> in library <work> (architecture <mcbsp_verhalten>) with generics.
+	CLKR_Aktiv = '0'
+	CLKX_Aktiv = '1'
+	FSR_Aktiv = '1'
+	FSR_Verzögerung = 1
+	FSX_Aktiv = '1'
+	FSX_Verzögerung = 1
+	SCHNITTSTELLEN = 3
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing generic Entity <McBSP_Interface> in library <work> (Architecture <mcbsp_verhalten>).
+	CLKR_Aktiv = '0'
+	CLKX_Aktiv = '1'
+	FSR_Aktiv = '1'
+	FSR_Verzögerung = 1
+	FSX_Aktiv = '1'
+	FSX_Verzögerung = 1
+	SCHNITTSTELLEN = 3
+WARNING:Xst:790 - "//vmware-host/shared folders/D/ADAT DeEncoder/ADAT_De-Encoder/McBSP-Dekoder_1Puffer_Parallel.vhd" line 118: Index value(s) does not match array range, simulation mismatch.
+WARNING:Xst:790 - "//vmware-host/shared folders/D/ADAT DeEncoder/ADAT_De-Encoder/McBSP-Dekoder_1Puffer_Parallel.vhd" line 136: Index value(s) does not match array range, simulation mismatch.
+WARNING:Xst:790 - "//vmware-host/shared folders/D/ADAT DeEncoder/ADAT_De-Encoder/McBSP-Dekoder_1Puffer_Parallel.vhd" line 140: Index value(s) does not match array range, simulation mismatch.
+Entity <McBSP_Interface> analyzed. Unit <McBSP_Interface> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <McBSP_Interface>.
+    Related source file is "//vmware-host/shared folders/D/ADAT DeEncoder/ADAT_De-Encoder/McBSP-Dekoder_1Puffer_Parallel.vhd".
+WARNING:Xst:646 - Signal <TempFiFo<0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+INFO:Xst:1799 - State 001 is never reached in FSM <Phase0>.
+    Found finite state machine <FSM_0> for signal <Phase0>.
+    -----------------------------------------------------------------------
+    | States             | 3                                              |
+    | Transitions        | 10                                             |
+    | Inputs             | 6                                              |
+    | Outputs            | 5                                              |
+    | Clock              | CLKX                      (rising_edge)        |
+    | Power Up State     | 000                                            |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Using one-hot encoding for signal <Phase$mux0000>.
+INFO:Xst:2117 - HDL ADVISOR - Mux Selector <Phase$mux0000> of Case statement line 109 was re-encoded using one-hot encoding. The case statement will be optimized (default statement optimization), but this optimization may lead to design initialization problems. To ensure the design works safely, you can:
+   	- add an 'INIT' attribute on signal <Phase$mux0000> (optimization is then done without any risk)
+   	- use the attribute 'signal_encoding user' to avoid onehot optimization
+   	- use the attribute 'safe_implementation yes' to force XST to perform a safe (but less efficient) optimization
+    Found 1-bit register for signal <FSX>.
+    Found 1-bit register for signal <DX>.
+    Found 1-bit register for signal <Daten_komplett_empfangen>.
+    Found 192-bit register for signal <Daten_Ausgang<0>.Kanaele>.
+    Found 4-bit register for signal <Daten_Ausgang<0>.UserBits>.
+    Found 192-bit register for signal <Daten_Ausgang<1>.Kanaele>.
+    Found 4-bit register for signal <Daten_Ausgang<1>.UserBits>.
+    Found 192-bit register for signal <Daten_Ausgang<2>.Kanaele>.
+    Found 4-bit register for signal <Daten_Ausgang<2>.UserBits>.
+    Found 31-bit register for signal <dbg_R_Schnittstellennummer>.
+    Found 31-bit register for signal <dbg_R_Kanalnummer>.
+    Found 31-bit register for signal <dbg_R_Bitnummer>.
+    Found 31-bit register for signal <dbg_X_Schnittstellennummer>.
+    Found 31-bit register for signal <dbg_X_Kanalnummer>.
+    Found 31-bit register for signal <dbg_X_Bitnummer>.
+    Found 5-bit register for signal <Bitnummer>.
+    Found 5-bit adder for signal <Bitnummer$share0000> created at line 109.
+    Found 5-bit register for signal <Bitnummer0>.
+    Found 5-bit adder for signal <Bitnummer0$share0000> created at line 173.
+    Found 5-bit comparator less for signal <DX$cmp_lt0000> created at line 214.
+    Found 192-bit 3-to-1 multiplexer for signal <DX$mux0000<191:184>> created at line 200.
+    Found 4-bit 3-to-1 multiplexer for signal <DX$mux0002> created at line 215.
+    Found 24-bit 8-to-1 multiplexer for signal <DX$varindex0000> created at line 200.
+    Found 1-bit register for signal <FSR_VerzögerungsTimer<0>>.
+    Found 1-bit register for signal <FSX_VerzögerungsTimer<0>>.
+    Found 3-bit register for signal <Kanalnummer>.
+    Found 3-bit adder for signal <Kanalnummer$addsub0000> created at line 141.
+    Found 3-bit register for signal <Kanalnummer0>.
+    Found 3-bit adder for signal <Kanalnummer0$addsub0000> created at line 206.
+    Found 1-bit register for signal <komplett_empfangen>.
+    Found 1-bit register for signal <Neue_Daten_Zum_Senden_alt>.
+    Found 4-bit register for signal <Phase>.
+    Found 2-bit register for signal <Schnittstellennummer>.
+    Found 2-bit adder for signal <Schnittstellennummer$addsub0000> created at line 124.
+    Found 2-bit register for signal <Schnittstellennummer0>.
+    Found 2-bit adder for signal <Schnittstellennummer0$addsub0000> created at line 221.
+    Found 1-bit xor2 for signal <Schnittstellennummer0$xor0000> created at line 175.
+    Found 24-bit register for signal <TempFiFo>.
+    Summary:
+	inferred   1 Finite State Machine(s).
+	inferred 829 D-type flip-flop(s).
+	inferred   6 Adder/Subtractor(s).
+	inferred   1 Comparator(s).
+	inferred 220 Multiplexer(s).
+Unit <McBSP_Interface> synthesized.
+
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 6
+ 2-bit adder                                           : 2
+ 3-bit adder                                           : 2
+ 5-bit adder                                           : 2
+# Registers                                            : 57
+ 1-bit register                                        : 19
+ 2-bit register                                        : 2
+ 24-bit register                                       : 25
+ 3-bit register                                        : 2
+ 31-bit register                                       : 6
+ 4-bit register                                        : 1
+ 5-bit register                                        : 2
+# Comparators                                          : 1
+ 5-bit comparator less                                 : 1
+# Multiplexers                                         : 10
+ 24-bit 3-to-1 multiplexer                             : 8
+ 24-bit 8-to-1 multiplexer                             : 1
+ 4-bit 3-to-1 multiplexer                              : 1
+# Xors                                                 : 1
+ 1-bit xor2                                            : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Analyzing FSM <FSM_0> for best encoding.
+Optimizing FSM <Phase0/FSM> on signal <Phase0[1:2]> with gray encoding.
+-------------------
+ State | Encoding
+-------------------
+ 000   | 00
+ 001   | unreached
+ 010   | 01
+ 011   | 11
+-------------------
+WARNING:Xst:1710 - FF/Latch <dbg_X_Kanalnummer_23> (without init value) has a constant value of 0 in block <McBSP_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dbg_X_Kanalnummer_24> (without init value) has a constant value of 0 in block <McBSP_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dbg_X_Kanalnummer_25> (without init value) has a constant value of 0 in block <McBSP_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dbg_X_Kanalnummer_26> (without init value) has a constant value of 0 in block <McBSP_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dbg_X_Kanalnummer_27> (without init value) has a constant value of 0 in block <McBSP_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dbg_X_Kanalnummer_28> (without init value) has a constant value of 0 in block <McBSP_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dbg_X_Kanalnummer_29> (without init value) has a constant value of 0 in block <McBSP_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dbg_X_Kanalnummer_30> (without init value) has a constant value of 0 in block <McBSP_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dbg_R_Schnittstellennummer_2> (without init value) has a constant value of 0 in block <McBSP_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dbg_R_Schnittstellennummer_3> (without init value) has a constant value of 0 in block <McBSP_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dbg_R_Schnittstellennummer_4> (without init value) has a constant value of 0 in block <McBSP_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dbg_R_Schnittstellennummer_5> (without init value) has a constant value of 0 in block <McBSP_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dbg_R_Schnittstellennummer_6> (without init value) has a constant value of 0 in block <McBSP_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dbg_R_Schnittstellennummer_7> (without init value) has a constant value of 0 in block <McBSP_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dbg_R_Schnittstellennummer_8> (without init value) has a constant value of 0 in block <McBSP_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dbg_R_Schnittstellennummer_9> (without init value) has a constant value of 0 in block <McBSP_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dbg_R_Schnittstellennummer_10> (without init value) has a constant value of 0 in block <McBSP_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dbg_R_Schnittstellennummer_11> (without init value) has a constant value of 0 in block <McBSP_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dbg_R_Schnittstellennummer_12> (without init value) has a constant value of 0 in block <McBSP_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dbg_R_Schnittstellennummer_13> (without init value) has a constant value of 0 in block <McBSP_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dbg_R_Schnittstellennummer_14> (without init value) has a constant value of 0 in block <McBSP_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dbg_X_Schnittstellennummer_30> (without init value) has a constant value of 0 in block <McBSP_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dbg_X_Kanalnummer_3> (without init value) has a constant value of 0 in block <McBSP_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dbg_X_Kanalnummer_4> (without init value) has a constant value of 0 in block <McBSP_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dbg_X_Kanalnummer_5> (without init value) has a constant value of 0 in block <McBSP_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dbg_X_Kanalnummer_6> (without init value) has a constant value of 0 in block <McBSP_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dbg_X_Kanalnummer_7> (without init value) has a constant value of 0 in block <McBSP_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dbg_X_Kanalnummer_8> (without init value) has a constant value of 0 in block <McBSP_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dbg_X_Kanalnummer_9> (without init value) has a constant value of 0 in block <McBSP_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dbg_X_Kanalnummer_10> (without init value) has a constant value of 0 in block <McBSP_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dbg_X_Kanalnummer_11> (without init value) has a constant value of 0 in block <McBSP_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dbg_X_Kanalnummer_12> (without init value) has a constant value of 0 in block <McBSP_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dbg_X_Kanalnummer_13> (without init value) has a constant value of 0 in block <McBSP_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dbg_X_Kanalnummer_14> (without init value) has a constant value of 0 in block <McBSP_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dbg_X_Kanalnummer_15> (without init value) has a constant value of 0 in block <McBSP_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dbg_X_Kanalnummer_16> (without init value) has a constant value of 0 in block <McBSP_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dbg_X_Kanalnummer_17> (without init value) has a constant value of 0 in block <McBSP_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dbg_X_Kanalnummer_18> (without init value) has a constant value of 0 in block <McBSP_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dbg_X_Kanalnummer_19> (without init value) has a constant value of 0 in block <McBSP_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dbg_X_Kanalnummer_20> (without init value) has a constant value of 0 in block <McBSP_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dbg_X_Kanalnummer_21> (without init value) has a constant value of 0 in block <McBSP_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dbg_X_Kanalnummer_22> (without init value) has a constant value of 0 in block <McBSP_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dbg_X_Bitnummer_10> (without init value) has a constant value of 0 in block <McBSP_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dbg_X_Bitnummer_11> (without init value) has a constant value of 0 in block <McBSP_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dbg_X_Bitnummer_12> (without init value) has a constant value of 0 in block <McBSP_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dbg_X_Bitnummer_13> (without init value) has a constant value of 0 in block <McBSP_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dbg_X_Bitnummer_14> (without init value) has a constant value of 0 in block <McBSP_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dbg_X_Bitnummer_15> (without init value) has a constant value of 0 in block <McBSP_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dbg_X_Bitnummer_16> (without init value) has a constant value of 0 in block <McBSP_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dbg_X_Bitnummer_17> (without init value) has a constant value of 0 in block <McBSP_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dbg_X_Bitnummer_18> (without init value) has a constant value of 0 in block <McBSP_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dbg_X_Bitnummer_19> (without init value) has a constant value of 0 in block <McBSP_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dbg_X_Bitnummer_20> (without init value) has a constant value of 0 in block <McBSP_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dbg_X_Bitnummer_21> (without init value) has a constant value of 0 in block <McBSP_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dbg_X_Bitnummer_22> (without init value) has a constant value of 0 in block <McBSP_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dbg_X_Bitnummer_23> (without init value) has a constant value of 0 in block <McBSP_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dbg_X_Bitnummer_24> (without init value) has a constant value of 0 in block <McBSP_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dbg_X_Bitnummer_25> (without init value) has a constant value of 0 in block <McBSP_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dbg_X_Bitnummer_26> (without init value) has a constant value of 0 in block <McBSP_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dbg_X_Bitnummer_27> (without init value) has a constant value of 0 in block <McBSP_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dbg_X_Bitnummer_28> (without init value) has a constant value of 0 in block <McBSP_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dbg_X_Bitnummer_29> (without init value) has a constant value of 0 in block <McBSP_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dbg_X_Bitnummer_30> (without init value) has a constant value of 0 in block <McBSP_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dbg_R_Schnittstellennummer_15> (without init value) has a constant value of 0 in block <McBSP_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dbg_R_Schnittstellennummer_16> (without init value) has a constant value of 0 in block <McBSP_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dbg_R_Schnittstellennummer_17> (without init value) has a constant value of 0 in block <McBSP_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dbg_R_Schnittstellennummer_18> (without init value) has a constant value of 0 in block <McBSP_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dbg_R_Schnittstellennummer_19> (without init value) has a constant value of 0 in block <McBSP_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dbg_R_Schnittstellennummer_20> (without init value) has a constant value of 0 in block <McBSP_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dbg_R_Schnittstellennummer_21> (without init value) has a constant value of 0 in block <McBSP_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dbg_R_Schnittstellennummer_22> (without init value) has a constant value of 0 in block <McBSP_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dbg_R_Schnittstellennummer_23> (without init value) has a constant value of 0 in block <McBSP_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dbg_R_Schnittstellennummer_24> (without init value) has a constant value of 0 in block <McBSP_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dbg_R_Schnittstellennummer_25> (without init value) has a constant value of 0 in block <McBSP_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dbg_R_Schnittstellennummer_26> (without init value) has a constant value of 0 in block <McBSP_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dbg_R_Schnittstellennummer_27> (without init value) has a constant value of 0 in block <McBSP_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dbg_R_Schnittstellennummer_28> (without init value) has a constant value of 0 in block <McBSP_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dbg_R_Schnittstellennummer_29> (without init value) has a constant value of 0 in block <McBSP_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dbg_R_Schnittstellennummer_30> (without init value) has a constant value of 0 in block <McBSP_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dbg_X_Bitnummer_5> (without init value) has a constant value of 0 in block <McBSP_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dbg_X_Bitnummer_6> (without init value) has a constant value of 0 in block <McBSP_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dbg_X_Bitnummer_7> (without init value) has a constant value of 0 in block <McBSP_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dbg_X_Bitnummer_8> (without init value) has a constant value of 0 in block <McBSP_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dbg_X_Bitnummer_9> (without init value) has a constant value of 0 in block <McBSP_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dbg_R_Bitnummer_26> (without init value) has a constant value of 0 in block <McBSP_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dbg_R_Bitnummer_27> (without init value) has a constant value of 0 in block <McBSP_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dbg_R_Bitnummer_28> (without init value) has a constant value of 0 in block <McBSP_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dbg_R_Bitnummer_29> (without init value) has a constant value of 0 in block <McBSP_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dbg_R_Bitnummer_30> (without init value) has a constant value of 0 in block <McBSP_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dbg_R_Kanalnummer_3> (without init value) has a constant value of 0 in block <McBSP_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dbg_R_Kanalnummer_4> (without init value) has a constant value of 0 in block <McBSP_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dbg_R_Kanalnummer_5> (without init value) has a constant value of 0 in block <McBSP_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dbg_R_Kanalnummer_6> (without init value) has a constant value of 0 in block <McBSP_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dbg_R_Kanalnummer_7> (without init value) has a constant value of 0 in block <McBSP_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dbg_R_Kanalnummer_8> (without init value) has a constant value of 0 in block <McBSP_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dbg_R_Kanalnummer_9> (without init value) has a constant value of 0 in block <McBSP_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dbg_R_Kanalnummer_10> (without init value) has a constant value of 0 in block <McBSP_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dbg_R_Kanalnummer_11> (without init value) has a constant value of 0 in block <McBSP_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dbg_R_Kanalnummer_12> (without init value) has a constant value of 0 in block <McBSP_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dbg_R_Kanalnummer_13> (without init value) has a constant value of 0 in block <McBSP_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dbg_R_Kanalnummer_14> (without init value) has a constant value of 0 in block <McBSP_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dbg_R_Kanalnummer_15> (without init value) has a constant value of 0 in block <McBSP_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dbg_R_Kanalnummer_16> (without init value) has a constant value of 0 in block <McBSP_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dbg_R_Kanalnummer_17> (without init value) has a constant value of 0 in block <McBSP_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dbg_R_Kanalnummer_18> (without init value) has a constant value of 0 in block <McBSP_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dbg_R_Bitnummer_5> (without init value) has a constant value of 0 in block <McBSP_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dbg_R_Bitnummer_6> (without init value) has a constant value of 0 in block <McBSP_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dbg_R_Bitnummer_7> (without init value) has a constant value of 0 in block <McBSP_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dbg_R_Bitnummer_8> (without init value) has a constant value of 0 in block <McBSP_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dbg_R_Bitnummer_9> (without init value) has a constant value of 0 in block <McBSP_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dbg_R_Bitnummer_10> (without init value) has a constant value of 0 in block <McBSP_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dbg_R_Bitnummer_11> (without init value) has a constant value of 0 in block <McBSP_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dbg_R_Bitnummer_12> (without init value) has a constant value of 0 in block <McBSP_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dbg_R_Bitnummer_13> (without init value) has a constant value of 0 in block <McBSP_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dbg_R_Bitnummer_14> (without init value) has a constant value of 0 in block <McBSP_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dbg_R_Bitnummer_15> (without init value) has a constant value of 0 in block <McBSP_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dbg_R_Bitnummer_16> (without init value) has a constant value of 0 in block <McBSP_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dbg_R_Bitnummer_17> (without init value) has a constant value of 0 in block <McBSP_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dbg_R_Bitnummer_18> (without init value) has a constant value of 0 in block <McBSP_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dbg_R_Bitnummer_19> (without init value) has a constant value of 0 in block <McBSP_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dbg_R_Bitnummer_20> (without init value) has a constant value of 0 in block <McBSP_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dbg_R_Bitnummer_21> (without init value) has a constant value of 0 in block <McBSP_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dbg_R_Bitnummer_22> (without init value) has a constant value of 0 in block <McBSP_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dbg_R_Bitnummer_23> (without init value) has a constant value of 0 in block <McBSP_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dbg_R_Bitnummer_24> (without init value) has a constant value of 0 in block <McBSP_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dbg_R_Bitnummer_25> (without init value) has a constant value of 0 in block <McBSP_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dbg_X_Schnittstellennummer_9> (without init value) has a constant value of 0 in block <McBSP_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dbg_X_Schnittstellennummer_10> (without init value) has a constant value of 0 in block <McBSP_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dbg_X_Schnittstellennummer_11> (without init value) has a constant value of 0 in block <McBSP_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dbg_X_Schnittstellennummer_12> (without init value) has a constant value of 0 in block <McBSP_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dbg_X_Schnittstellennummer_13> (without init value) has a constant value of 0 in block <McBSP_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dbg_X_Schnittstellennummer_14> (without init value) has a constant value of 0 in block <McBSP_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dbg_X_Schnittstellennummer_15> (without init value) has a constant value of 0 in block <McBSP_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dbg_X_Schnittstellennummer_16> (without init value) has a constant value of 0 in block <McBSP_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dbg_X_Schnittstellennummer_17> (without init value) has a constant value of 0 in block <McBSP_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dbg_X_Schnittstellennummer_18> (without init value) has a constant value of 0 in block <McBSP_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dbg_X_Schnittstellennummer_19> (without init value) has a constant value of 0 in block <McBSP_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dbg_X_Schnittstellennummer_20> (without init value) has a constant value of 0 in block <McBSP_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dbg_X_Schnittstellennummer_21> (without init value) has a constant value of 0 in block <McBSP_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dbg_X_Schnittstellennummer_22> (without init value) has a constant value of 0 in block <McBSP_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dbg_X_Schnittstellennummer_23> (without init value) has a constant value of 0 in block <McBSP_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dbg_X_Schnittstellennummer_24> (without init value) has a constant value of 0 in block <McBSP_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dbg_X_Schnittstellennummer_25> (without init value) has a constant value of 0 in block <McBSP_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dbg_X_Schnittstellennummer_26> (without init value) has a constant value of 0 in block <McBSP_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dbg_X_Schnittstellennummer_27> (without init value) has a constant value of 0 in block <McBSP_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dbg_X_Schnittstellennummer_28> (without init value) has a constant value of 0 in block <McBSP_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dbg_X_Schnittstellennummer_29> (without init value) has a constant value of 0 in block <McBSP_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dbg_R_Kanalnummer_19> (without init value) has a constant value of 0 in block <McBSP_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dbg_R_Kanalnummer_20> (without init value) has a constant value of 0 in block <McBSP_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dbg_R_Kanalnummer_21> (without init value) has a constant value of 0 in block <McBSP_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dbg_R_Kanalnummer_22> (without init value) has a constant value of 0 in block <McBSP_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dbg_R_Kanalnummer_23> (without init value) has a constant value of 0 in block <McBSP_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dbg_R_Kanalnummer_24> (without init value) has a constant value of 0 in block <McBSP_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dbg_R_Kanalnummer_25> (without init value) has a constant value of 0 in block <McBSP_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dbg_R_Kanalnummer_26> (without init value) has a constant value of 0 in block <McBSP_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dbg_R_Kanalnummer_27> (without init value) has a constant value of 0 in block <McBSP_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dbg_R_Kanalnummer_28> (without init value) has a constant value of 0 in block <McBSP_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dbg_R_Kanalnummer_29> (without init value) has a constant value of 0 in block <McBSP_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dbg_R_Kanalnummer_30> (without init value) has a constant value of 0 in block <McBSP_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Phase_1> has a constant value of 0 in block <McBSP_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <FSR_VerzögerungsTimer_0> has a constant value of 0 in block <McBSP_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dbg_X_Schnittstellennummer_2> (without init value) has a constant value of 0 in block <McBSP_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dbg_X_Schnittstellennummer_3> (without init value) has a constant value of 0 in block <McBSP_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dbg_X_Schnittstellennummer_4> (without init value) has a constant value of 0 in block <McBSP_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dbg_X_Schnittstellennummer_5> (without init value) has a constant value of 0 in block <McBSP_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dbg_X_Schnittstellennummer_6> (without init value) has a constant value of 0 in block <McBSP_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dbg_X_Schnittstellennummer_7> (without init value) has a constant value of 0 in block <McBSP_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dbg_X_Schnittstellennummer_8> (without init value) has a constant value of 0 in block <McBSP_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <TempFiFo_0> of sequential type is unconnected in block <McBSP_Interface>.
+WARNING:Xst:2677 - Node <Phase_0> of sequential type is unconnected in block <McBSP_Interface>.
+WARNING:Xst:2404 -  FFs/Latches <dbg_X_Schnittstellennummer<30:2>> (without init value) have a constant value of 0 in block <McBSP_Interface>.
+WARNING:Xst:2404 -  FFs/Latches <dbg_X_Kanalnummer<30:3>> (without init value) have a constant value of 0 in block <McBSP_Interface>.
+WARNING:Xst:2404 -  FFs/Latches <dbg_R_Schnittstellennummer<30:2>> (without init value) have a constant value of 0 in block <McBSP_Interface>.
+WARNING:Xst:2404 -  FFs/Latches <dbg_X_Bitnummer<30:5>> (without init value) have a constant value of 0 in block <McBSP_Interface>.
+WARNING:Xst:2404 -  FFs/Latches <dbg_R_Bitnummer<30:5>> (without init value) have a constant value of 0 in block <McBSP_Interface>.
+WARNING:Xst:2404 -  FFs/Latches <dbg_R_Kanalnummer<30:3>> (without init value) have a constant value of 0 in block <McBSP_Interface>.
+WARNING:Xst:2677 - Node <TempFiFo_0> of sequential type is unconnected in block <McBSP_Interface>.
+WARNING:Xst:2677 - Node <Phase_0> of sequential type is unconnected in block <McBSP_Interface>.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# FSMs                                                 : 1
+# Adders/Subtractors                                   : 6
+ 2-bit adder                                           : 2
+ 3-bit adder                                           : 2
+ 5-bit adder                                           : 2
+# Registers                                            : 661
+ Flip-Flops                                            : 661
+# Comparators                                          : 1
+ 5-bit comparator less                                 : 1
+# Multiplexers                                         : 10
+ 24-bit 3-to-1 multiplexer                             : 8
+ 24-bit 8-to-1 multiplexer                             : 1
+ 4-bit 3-to-1 multiplexer                              : 1
+# Xors                                                 : 1
+ 1-bit xor2                                            : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1293 - FF/Latch <Phase_1> has a constant value of 0 in block <McBSP_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <FSR_VerzögerungsTimer_0> has a constant value of 0 in block <McBSP_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <FSX_VerzögerungsTimer_0> has a constant value of 0 in block <McBSP_Interface>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <komplett_empfangen> in Unit <McBSP_Interface> is equivalent to the following FF/Latch, which will be removed : <Daten_komplett_empfangen> 
+
+Optimizing unit <McBSP_Interface> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block McBSP_Interface, actual ratio is 15.
+Replicating register DX to handle IOB=TRUE attribute
+Replicating register komplett_empfangen to handle IOB=TRUE attribute
+Replicating register FSX to handle IOB=TRUE attribute
+
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 662
+ Flip-Flops                                            : 662
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : McBSP_Interface.ngr
+Top Level Output File Name         : McBSP_Interface
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 1370
+
+Cell Usage :
+# BELS                             : 693
+#      GND                         : 1
+#      INV                         : 1
+#      LUT2                        : 19
+#      LUT2_D                      : 2
+#      LUT3                        : 404
+#      LUT3_D                      : 3
+#      LUT4                        : 74
+#      LUT4_D                      : 6
+#      LUT4_L                      : 6
+#      MUXF5                       : 107
+#      MUXF6                       : 48
+#      MUXF7                       : 22
+# FlipFlops/Latches                : 662
+#      FD                          : 20
+#      FD_1                        : 38
+#      FDE                         : 2
+#      FDE_1                       : 590
+#      FDR_1                       : 2
+#      FDS                         : 4
+#      FDS_1                       : 5
+#      FDSE                        : 1
+# Clock Buffers                    : 2
+#      BUFGP                       : 2
+# IO Buffers                       : 1368
+#      IBUF                        : 591
+#      OBUF                        : 777
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s200avq100-5 
+
+ Number of Slices:                      275  out of   1792    15%  
+ Number of Slice Flip Flops:             51  out of   3584     1%  
+ Number of 4 input LUTs:                515  out of   3584    14%  
+ Number of IOs:                        1370
+ Number of bonded IOBs:                1370  out of     68   2014% (*) 
+    IOB Flip Flops:                     611
+ Number of GCLKs:                         2  out of     24     8%  
+
+WARNING:Xst:1336 -  (*) More than 100% of Device resources are used
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+CLKR                               | BUFGP                  | 635   |
+CLKX                               | BUFGP                  | 27    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -5
+
+   Minimum period: 8.102ns (Maximum Frequency: 123.430MHz)
+   Minimum input arrival time before clock: 7.628ns
+   Maximum output required time after clock: 5.248ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'CLKR'
+  Clock period: 6.076ns (frequency: 164.572MHz)
+  Total number of paths / destination ports: 7234 / 1205
+-------------------------------------------------------------------------
+Delay:               6.076ns (Levels of Logic = 4)
+  Source:            BITNUMMER_2 (FF)
+  Destination:       DATEN_AUSGANG<2>.KANAELE_0_0 (FF)
+  Source Clock:      CLKR falling
+  Destination Clock: CLKR falling
+
+  Data Path: BITNUMMER_2 to DATEN_AUSGANG<2>.KANAELE_0_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDS_1:C->Q            3   0.495   0.559  BITNUMMER_2 (BITNUMMER_2)
+     LUT4_D:I0->LO         1   0.561   0.102  SCHNITTSTELLENNUMMER_CMP_EQ000011 (N70)
+     LUT4:I3->O           14   0.561   0.852  SCHNITTSTELLENNUMMER_CMP_EQ00001 (SCHNITTSTELLENNUMMER_CMP_EQ0000)
+     LUT4_D:I3->O          7   0.561   0.604  DATEN_AUSGANG<2>_KANAELE_0_NOT000111 (N9)
+     LUT4:I3->O           24   0.561   1.064  DATEN_AUSGANG<2>_KANAELE_6_NOT00011 (DATEN_AUSGANG<2>_KANAELE_6_NOT0001)
+     FDE_1:CE                  0.156          DATEN_AUSGANG<2>.KANAELE_6_0
+    ----------------------------------------
+    Total                      6.076ns (2.895ns logic, 3.181ns route)
+                                       (47.6% logic, 52.4% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'CLKX'
+  Clock period: 8.102ns (frequency: 123.430MHz)
+  Total number of paths / destination ports: 1485 / 34
+-------------------------------------------------------------------------
+Delay:               8.102ns (Levels of Logic = 10)
+  Source:            SCHNITTSTELLENNUMMER0_0 (FF)
+  Destination:       DX (FF)
+  Source Clock:      CLKX rising
+  Destination Clock: CLKX rising
+
+  Data Path: SCHNITTSTELLENNUMMER0_0 to DX
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q             203   0.495   1.227  SCHNITTSTELLENNUMMER0_0 (SCHNITTSTELLENNUMMER0_0)
+     LUT3:I0->O            1   0.561   0.380  SCHNITTSTELLENNUMMER0<0>871 (SCHNITTSTELLENNUMMER0<0>88)
+     LUT3:I2->O            1   0.561   0.000  MMUX_DX_VARINDEX0000_810 (MMUX_DX_VARINDEX0000_810)
+     MUXF5:I0->O           1   0.229   0.000  MMUX_DX_VARINDEX0000_6_F5_9 (MMUX_DX_VARINDEX0000_6_F510)
+     MUXF6:I0->O           1   0.239   0.000  MMUX_DX_VARINDEX0000_4_F6_9 (MMUX_DX_VARINDEX0000_4_F610)
+     MUXF7:I0->O           1   0.239   0.423  MMUX_DX_VARINDEX0000_2_F7_9 (DX_VARINDEX0000<19>)
+     LUT3:I1->O            1   0.562   0.000  DX_MUX0004613_G (N38)
+     MUXF5:I1->O           1   0.229   0.359  DX_MUX0004613 (DX_MUX0004613)
+     LUT4:I3->O            1   0.561   0.359  DX_MUX0004644 (DX_MUX0004644)
+     LUT4:I3->O            1   0.561   0.359  DX_MUX0004690 (DX_MUX0004690)
+     LUT4:I3->O            2   0.561   0.000  DX_MUX00047311 (DX_MUX0004731)
+     FDS:D                     0.197          DX
+    ----------------------------------------
+    Total                      8.102ns (4.995ns logic, 3.107ns route)
+                                       (61.7% logic, 38.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'CLKR'
+  Total number of paths / destination ports: 4647 / 642
+-------------------------------------------------------------------------
+Offset:              6.920ns (Levels of Logic = 5)
+  Source:            FSR (PAD)
+  Destination:       DATEN_AUSGANG<2>.KANAELE_0_0 (FF)
+  Destination Clock: CLKR falling
+
+  Data Path: FSR to DATEN_AUSGANG<2>.KANAELE_0_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            30   0.824   1.074  FSR_IBUF (FSR_IBUF)
+     LUT4_D:I3->LO         1   0.561   0.102  SCHNITTSTELLENNUMMER_CMP_EQ000011 (N70)
+     LUT4:I3->O           14   0.561   0.852  SCHNITTSTELLENNUMMER_CMP_EQ00001 (SCHNITTSTELLENNUMMER_CMP_EQ0000)
+     LUT4_D:I3->O          7   0.561   0.604  DATEN_AUSGANG<2>_KANAELE_0_NOT000111 (N9)
+     LUT4:I3->O           24   0.561   1.064  DATEN_AUSGANG<2>_KANAELE_6_NOT00011 (DATEN_AUSGANG<2>_KANAELE_6_NOT0001)
+     FDE_1:CE                  0.156          DATEN_AUSGANG<2>.KANAELE_6_0
+    ----------------------------------------
+    Total                      6.920ns (3.224ns logic, 3.696ns route)
+                                       (46.6% logic, 53.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'CLKX'
+  Total number of paths / destination ports: 1193 / 19
+-------------------------------------------------------------------------
+Offset:              7.628ns (Levels of Logic = 11)
+  Source:            DATEN_EINGANG<0>_KANAELE<0><23> (PAD)
+  Destination:       DX (FF)
+  Destination Clock: CLKX rising
+
+  Data Path: DATEN_EINGANG<0>_KANAELE<0><23> to DX
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   0.824   0.423  DATEN_EINGANG_0__KANAELE_0__23_IBUF (DATEN_EINGANG_0__KANAELE_0__23_IBUF)
+     LUT3:I1->O            1   0.562   0.380  SCHNITTSTELLENNUMMER0<0>1271 (SCHNITTSTELLENNUMMER0<0>128)
+     LUT3:I2->O            1   0.561   0.000  MMUX_DX_VARINDEX0000_815 (MMUX_DX_VARINDEX0000_815)
+     MUXF5:I0->O           1   0.229   0.000  MMUX_DX_VARINDEX0000_6_F5_14 (MMUX_DX_VARINDEX0000_6_F515)
+     MUXF6:I0->O           1   0.239   0.000  MMUX_DX_VARINDEX0000_4_F6_14 (MMUX_DX_VARINDEX0000_4_F615)
+     MUXF7:I0->O           1   0.239   0.423  MMUX_DX_VARINDEX0000_2_F7_14 (DX_VARINDEX0000<23>)
+     LUT3:I1->O            1   0.562   0.000  DX_MUX0004613_F (N37)
+     MUXF5:I0->O           1   0.229   0.359  DX_MUX0004613 (DX_MUX0004613)
+     LUT4:I3->O            1   0.561   0.359  DX_MUX0004644 (DX_MUX0004644)
+     LUT4:I3->O            1   0.561   0.359  DX_MUX0004690 (DX_MUX0004690)
+     LUT4:I3->O            2   0.561   0.000  DX_MUX00047311 (DX_MUX0004731)
+     FDS:D                     0.197          DX
+    ----------------------------------------
+    Total                      7.628ns (5.325ns logic, 2.303ns route)
+                                       (69.8% logic, 30.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'CLKX'
+  Total number of paths / destination ports: 12 / 12
+-------------------------------------------------------------------------
+Offset:              5.248ns (Levels of Logic = 1)
+  Source:            DX (FF)
+  Destination:       DX (PAD)
+  Source Clock:      CLKX rising
+
+  Data Path: DX to DX
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDS:C->Q              1   0.495   0.357  DX (DX_OBUF)
+     OBUF:I->O                 4.396          DX_OBUF (DX)
+    ----------------------------------------
+    Total                      5.248ns (4.891ns logic, 0.357ns route)
+                                       (93.2% logic, 6.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'CLKR'
+  Total number of paths / destination ports: 599 / 599
+-------------------------------------------------------------------------
+Offset:              5.248ns (Levels of Logic = 1)
+  Source:            KOMPLETT_EMPFANGEN (FF)
+  Destination:       DATEN_KOMPLETT_EMPFANGEN (PAD)
+  Source Clock:      CLKR falling
+
+  Data Path: KOMPLETT_EMPFANGEN to DATEN_KOMPLETT_EMPFANGEN
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE_1:C->Q            1   0.495   0.357  KOMPLETT_EMPFANGEN (KOMPLETT_EMPFANGEN)
+     OBUF:I->O                 4.396          DATEN_KOMPLETT_EMPFANGEN_OBUF (DATEN_KOMPLETT_EMPFANGEN)
+    ----------------------------------------
+    Total                      5.248ns (4.891ns logic, 0.357ns route)
+                                       (93.2% logic, 6.8% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 15.00 secs
+Total CPU time to Xst completion: 15.52 secs
+ 
+--> 
+
+Total memory usage is 161772 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :  186 (   0 filtered)
+Number of infos    :    4 (   0 filtered)
+

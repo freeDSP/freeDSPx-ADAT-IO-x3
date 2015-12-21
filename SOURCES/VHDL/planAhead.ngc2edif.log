@@ -1,0 +1,425 @@
+Release 14.6 - ngc2edif P.68d (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design ADAT_De_Enkoder.ngc ...
+WARNING:NetListWriters:298 - No output is written to ADAT_De_Enkoder.xncf,
+   ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus Mcompar_i_cmp_lt0000_lut<7 : 1> on block
+   ADAT_De_Enkoder is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus
+   inst_ADAT_Dekoder/Madd_BitZaehler_add0000_cy<5 : 0> on block ADAT_De_Enkoder
+   is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus inst_ADAT_Enkoder/Kanalnummer_mux0003<2
+   : 0> on block ADAT_De_Enkoder is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   inst_ADAT_Enkoder/Madd_BitNummer_addsub0000_cy<5 : 0> on block
+   ADAT_De_Enkoder is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus
+   inst_ADAT_Enkoder/Madd_BitNummer_addsub0000_lut<7 : 1> on block
+   ADAT_De_Enkoder is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus
+   inst_ADAT_Enkoder/Madd_LokaleBitNummer_share0000_cy<2 : 0> on block
+   ADAT_De_Enkoder is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus inst_McBSP_Interface/Bitnummer_mux0003<4
+   : 0> on block ADAT_De_Enkoder is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   inst_McBSP_Interface/Madd_Bitnummer_share0000_lut<4 : 2> on block
+   ADAT_De_Enkoder is not reconstructed, because there are some missing bus
+   signals.
+  finished :Prep
+Writing EDIF netlist file ADAT_De_Enkoder.edif ...
+ngc2edif: Total memory usage is 47084 kilobytes
+
+Release 14.6 - ngc2edif P.68d (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design ADAT_De_Enkoder.ngc ...
+WARNING:NetListWriters:298 - No output is written to ADAT_De_Enkoder.xncf,
+   ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus Mcompar_i_cmp_lt0000_lut<7 : 1> on block
+   ADAT_De_Enkoder is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus
+   inst_ADAT_Dekoder/Madd_BitZaehler_add0000_cy<5 : 0> on block ADAT_De_Enkoder
+   is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus inst_ADAT_Enkoder/Kanalnummer_mux0003<2
+   : 0> on block ADAT_De_Enkoder is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   inst_ADAT_Enkoder/Madd_BitNummer_addsub0000_cy<5 : 0> on block
+   ADAT_De_Enkoder is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus
+   inst_ADAT_Enkoder/Madd_BitNummer_addsub0000_lut<7 : 1> on block
+   ADAT_De_Enkoder is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus
+   inst_ADAT_Enkoder/Madd_LokaleBitNummer_share0000_cy<2 : 0> on block
+   ADAT_De_Enkoder is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus inst_McBSP_Interface/Bitnummer_mux0003<4
+   : 0> on block ADAT_De_Enkoder is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   inst_McBSP_Interface/Madd_Bitnummer_share0000_lut<4 : 2> on block
+   ADAT_De_Enkoder is not reconstructed, because there are some missing bus
+   signals.
+  finished :Prep
+Writing EDIF netlist file ADAT_De_Enkoder.edif ...
+ngc2edif: Total memory usage is 47084 kilobytes
+
+Release 14.6 - ngc2edif P.68d (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design ADAT_De_Enkoder.ngc ...
+WARNING:NetListWriters:298 - No output is written to ADAT_De_Enkoder.xncf,
+   ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus Mcompar_i_cmp_lt0000_lut<7 : 1> on block
+   ADAT_De_Enkoder is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus
+   inst_ADAT_Dekoder/Madd_BitZaehler_add0000_cy<5 : 0> on block ADAT_De_Enkoder
+   is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus inst_ADAT_Enkoder/Kanalnummer_mux0003<2
+   : 0> on block ADAT_De_Enkoder is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   inst_ADAT_Enkoder/Madd_BitNummer_addsub0000_cy<5 : 0> on block
+   ADAT_De_Enkoder is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus
+   inst_ADAT_Enkoder/Madd_BitNummer_addsub0000_lut<7 : 1> on block
+   ADAT_De_Enkoder is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus
+   inst_ADAT_Enkoder/Madd_LokaleBitNummer_share0000_cy<2 : 0> on block
+   ADAT_De_Enkoder is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus inst_McBSP_Interface/Bitnummer_mux0003<4
+   : 0> on block ADAT_De_Enkoder is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   inst_McBSP_Interface/Madd_Bitnummer_share0000_lut<4 : 2> on block
+   ADAT_De_Enkoder is not reconstructed, because there are some missing bus
+   signals.
+  finished :Prep
+Writing EDIF netlist file ADAT_De_Enkoder.edif ...
+ngc2edif: Total memory usage is 47084 kilobytes
+
+Release 14.6 - ngc2edif P.68d (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design ADAT_De_Enkoder.ngc ...
+WARNING:NetListWriters:298 - No output is written to ADAT_De_Enkoder.xncf,
+   ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus Mcompar_i_cmp_lt0000_lut<7 : 1> on block
+   ADAT_De_Enkoder is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus
+   inst_ADAT_Dekoder/Madd_BitZaehler_add0000_cy<5 : 0> on block ADAT_De_Enkoder
+   is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus inst_ADAT_Enkoder/Kanalnummer_mux0003<2
+   : 0> on block ADAT_De_Enkoder is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   inst_ADAT_Enkoder/Madd_BitNummer_addsub0000_cy<5 : 0> on block
+   ADAT_De_Enkoder is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus
+   inst_ADAT_Enkoder/Madd_BitNummer_addsub0000_lut<7 : 1> on block
+   ADAT_De_Enkoder is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus
+   inst_ADAT_Enkoder/Madd_LokaleBitNummer_share0000_cy<2 : 0> on block
+   ADAT_De_Enkoder is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus inst_McBSP_Interface/Bitnummer_mux0003<4
+   : 0> on block ADAT_De_Enkoder is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   inst_McBSP_Interface/Madd_Bitnummer_share0000_lut<4 : 2> on block
+   ADAT_De_Enkoder is not reconstructed, because there are some missing bus
+   signals.
+  finished :Prep
+Writing EDIF netlist file ADAT_De_Enkoder.edif ...
+ngc2edif: Total memory usage is 47084 kilobytes
+
+Release 14.6 - ngc2edif P.68d (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design ADAT_De_Enkoder.ngc ...
+WARNING:NetListWriters:298 - No output is written to ADAT_De_Enkoder.xncf,
+   ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus Mcompar_i_cmp_lt0000_lut<7 : 1> on block
+   ADAT_De_Enkoder is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus
+   inst_ADAT_Dekoder/Madd_BitZaehler_add0000_cy<5 : 0> on block ADAT_De_Enkoder
+   is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus inst_ADAT_Enkoder/Kanalnummer_mux0003<2
+   : 0> on block ADAT_De_Enkoder is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   inst_ADAT_Enkoder/Madd_BitNummer_addsub0000_cy<5 : 0> on block
+   ADAT_De_Enkoder is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus
+   inst_ADAT_Enkoder/Madd_BitNummer_addsub0000_lut<7 : 1> on block
+   ADAT_De_Enkoder is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus
+   inst_ADAT_Enkoder/Madd_LokaleBitNummer_share0000_cy<2 : 0> on block
+   ADAT_De_Enkoder is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus inst_McBSP_Interface/Bitnummer_mux0003<4
+   : 0> on block ADAT_De_Enkoder is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   inst_McBSP_Interface/Madd_Bitnummer_share0000_lut<4 : 2> on block
+   ADAT_De_Enkoder is not reconstructed, because there are some missing bus
+   signals.
+  finished :Prep
+Writing EDIF netlist file ADAT_De_Enkoder.edif ...
+ngc2edif: Total memory usage is 47084 kilobytes
+
+Release 14.6 - ngc2edif P.68d (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design ADAT_De_Enkoder.ngc ...
+WARNING:NetListWriters:298 - No output is written to ADAT_De_Enkoder.xncf,
+   ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus Mcompar_i_cmp_lt0000_lut<7 : 1> on block
+   ADAT_De_Enkoder is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus
+   inst_ADAT_Dekoder/Madd_BitZaehler_add0000_cy<5 : 0> on block ADAT_De_Enkoder
+   is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus inst_ADAT_Enkoder/Kanalnummer_mux0003<2
+   : 0> on block ADAT_De_Enkoder is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   inst_ADAT_Enkoder/Madd_BitNummer_addsub0000_cy<5 : 0> on block
+   ADAT_De_Enkoder is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus
+   inst_ADAT_Enkoder/Madd_BitNummer_addsub0000_lut<7 : 1> on block
+   ADAT_De_Enkoder is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus
+   inst_ADAT_Enkoder/Madd_LokaleBitNummer_share0000_cy<2 : 0> on block
+   ADAT_De_Enkoder is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus inst_McBSP_Interface/Bitnummer_mux0003<4
+   : 0> on block ADAT_De_Enkoder is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   inst_McBSP_Interface/Madd_Bitnummer_share0000_lut<4 : 2> on block
+   ADAT_De_Enkoder is not reconstructed, because there are some missing bus
+   signals.
+  finished :Prep
+Writing EDIF netlist file ADAT_De_Enkoder.edif ...
+ngc2edif: Total memory usage is 47084 kilobytes
+
+Release 14.6 - ngc2edif P.68d (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design ADAT_De_Enkoder.ngc ...
+WARNING:NetListWriters:298 - No output is written to ADAT_De_Enkoder.xncf,
+   ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus Mcompar_i_cmp_lt0000_lut<7 : 1> on block
+   ADAT_De_Enkoder is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus
+   inst_ADAT_Dekoder/Madd_BitZaehler_add0000_cy<5 : 0> on block ADAT_De_Enkoder
+   is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus inst_ADAT_Enkoder/Kanalnummer_mux0003<2
+   : 0> on block ADAT_De_Enkoder is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   inst_ADAT_Enkoder/Madd_BitNummer_addsub0000_cy<5 : 0> on block
+   ADAT_De_Enkoder is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus
+   inst_ADAT_Enkoder/Madd_BitNummer_addsub0000_lut<7 : 1> on block
+   ADAT_De_Enkoder is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus
+   inst_ADAT_Enkoder/Madd_LokaleBitNummer_share0000_cy<2 : 0> on block
+   ADAT_De_Enkoder is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus inst_McBSP_Interface/Bitnummer_mux0003<4
+   : 0> on block ADAT_De_Enkoder is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   inst_McBSP_Interface/Madd_Bitnummer_share0000_lut<4 : 2> on block
+   ADAT_De_Enkoder is not reconstructed, because there are some missing bus
+   signals.
+  finished :Prep
+Writing EDIF netlist file ADAT_De_Enkoder.edif ...
+ngc2edif: Total memory usage is 47084 kilobytes
+
+Release 14.6 - ngc2edif P.68d (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design ADAT_De_Enkoder.ngc ...
+WARNING:NetListWriters:298 - No output is written to ADAT_De_Enkoder.xncf,
+   ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus Mcompar_i_cmp_lt0000_lut<7 : 1> on block
+   ADAT_De_Enkoder is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus inst_McBSP_Interface/Bitnummer_mux0003<4
+   : 0> on block ADAT_De_Enkoder is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   inst_McBSP_Interface/Madd_Bitnummer_share0000_lut<4 : 2> on block
+   ADAT_De_Enkoder is not reconstructed, because there are some missing bus
+   signals.
+  finished :Prep
+Writing EDIF netlist file ADAT_De_Enkoder.edif ...
+ngc2edif: Total memory usage is 47084 kilobytes
+
+Release 14.6 - ngc2edif P.68d (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design ADAT_De_Enkoder.ngc ...
+WARNING:NetListWriters:298 - No output is written to ADAT_De_Enkoder.xncf,
+   ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus Mcompar_i_cmp_lt0000_lut<7 : 1> on block
+   ADAT_De_Enkoder is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus inst_McBSP_Interface/Bitnummer_mux0003<4
+   : 0> on block ADAT_De_Enkoder is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   inst_McBSP_Interface/Madd_Bitnummer_share0000_lut<4 : 2> on block
+   ADAT_De_Enkoder is not reconstructed, because there are some missing bus
+   signals.
+  finished :Prep
+Writing EDIF netlist file ADAT_De_Enkoder.edif ...
+ngc2edif: Total memory usage is 47084 kilobytes
+
+Release 14.6 - ngc2edif P.68d (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design ADAT_De_Enkoder.ngc ...
+WARNING:NetListWriters:298 - No output is written to ADAT_De_Enkoder.xncf,
+   ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus Mcompar_i_cmp_lt0000_lut<7 : 1> on block
+   ADAT_De_Enkoder is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus inst_McBSP_Interface/Bitnummer_mux0003<4
+   : 0> on block ADAT_De_Enkoder is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   inst_McBSP_Interface/Madd_Bitnummer_share0000_lut<4 : 2> on block
+   ADAT_De_Enkoder is not reconstructed, because there are some missing bus
+   signals.
+  finished :Prep
+Writing EDIF netlist file ADAT_De_Enkoder.edif ...
+ngc2edif: Total memory usage is 47084 kilobytes
+
+Release 14.6 - ngc2edif P.68d (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design ADAT_De_Enkoder.ngc ...
+WARNING:NetListWriters:298 - No output is written to ADAT_De_Enkoder.xncf,
+   ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus INST_MCBSP_INTERFACE/BITNUMMER_MUX0003<4
+   : 0> on block ADAT_De_Enkoder is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus MCOMPAR_I_CMP_LT0000_LUT<7 : 1> on block
+   ADAT_De_Enkoder is not reconstructed, because there are some missing bus
+   signals.
+  finished :Prep
+Writing EDIF netlist file ADAT_De_Enkoder.edif ...
+ngc2edif: Total memory usage is 47084 kilobytes
+
+Release 14.6 - ngc2edif P.68d (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design ADAT_De_Enkoder.ngc ...
+WARNING:NetListWriters:298 - No output is written to ADAT_De_Enkoder.xncf,
+   ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus
+   INST_MCBSP_INTERFACE/MADD_BITNUMMER_SHARE0000_CY<2 : 0> on block
+   ADAT_De_Enkoder is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus MCOMPAR_I_CMP_LT0000_LUT<7 : 1> on block
+   ADAT_De_Enkoder is not reconstructed, because there are some missing bus
+   signals.
+  finished :Prep
+Writing EDIF netlist file ADAT_De_Enkoder.edif ...
+ngc2edif: Total memory usage is 47084 kilobytes
+
+Release 14.6 - ngc2edif P.68d (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design ADAT_De_Enkoder.ngc ...
+WARNING:NetListWriters:298 - No output is written to ADAT_De_Enkoder.xncf,
+   ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus
+   INST_MCBSP_INTERFACE/MADD_BITNUMMER_SHARE0000_CY<2 : 0> on block
+   ADAT_De_Enkoder is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus MCOMPAR_I_CMP_LT0000_LUT<7 : 1> on block
+   ADAT_De_Enkoder is not reconstructed, because there are some missing bus
+   signals.
+  finished :Prep
+Writing EDIF netlist file ADAT_De_Enkoder.edif ...
+ngc2edif: Total memory usage is 47084 kilobytes
+
+Release 14.7 - ngc2edif P.20131013 (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design Autosync.ngc ...
+WARNING:NetListWriters:298 - No output is written to Autosync.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus Mcompar_esLebt_cmp_lt0000_lut<12 : 1> on
+   block Autosync is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus
+   inst_Autosync/temp_negative_max_mux0005<7 : 4> on block Autosync is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus inst_McBSP_Interface/Bitnummer_mux0002<4
+   : 0> on block Autosync is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus inst_McBSP_Interface/DX_varindex0000<23
+   : 1> on block Autosync is not reconstructed, because there are some missing
+   bus signals.
+  finished :Prep
+Writing EDIF netlist file Autosync.edif ...
+ngc2edif: Total memory usage is 47072 kilobytes
+

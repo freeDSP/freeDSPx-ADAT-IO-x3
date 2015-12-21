@@ -1,0 +1,21 @@
+Release 14.7 Drc P.20131013 (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Tue May 13 15:35:40 2014
+
+drc -z Test_ADAT_Loopback.ncd Test_ADAT_Loopback.pcf
+
+WARNING:PhysDesignRules:812 - Dangling pin <DOA12> on
+   block:<INST_DYNAMISCHERADATPUFFERBRAM/INSTADAT_BLOCKRAM/MRAM_RAM17>:<RAMB16BW
+   E_RAMB16BWE>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA13> on
+   block:<INST_DYNAMISCHERADATPUFFERBRAM/INSTADAT_BLOCKRAM/MRAM_RAM17>:<RAMB16BW
+   E_RAMB16BWE>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA14> on
+   block:<INST_DYNAMISCHERADATPUFFERBRAM/INSTADAT_BLOCKRAM/MRAM_RAM17>:<RAMB16BW
+   E_RAMB16BWE>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA15> on
+   block:<INST_DYNAMISCHERADATPUFFERBRAM/INSTADAT_BLOCKRAM/MRAM_RAM17>:<RAMB16BW
+   E_RAMB16BWE>.
+DRC detected 0 errors and 4 warnings.  Please see the previously displayed
+individual error or warning messages for more details.

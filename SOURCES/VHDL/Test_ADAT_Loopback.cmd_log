@@ -1,0 +1,196 @@
+xst -intstyle ise -ifn "Z:/ADAT DeEncoder/ADAT_De-Encoder/Test_ADAT_Loopback.xst" -ofn "Z:/ADAT DeEncoder/ADAT_De-Encoder/Test_ADAT_Loopback.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xXCS3200A-4VQ100_LoopbackTest.ucf -p xc3s200a-vq100-5 "Test_ADAT_Loopback.ngc" Test_ADAT_Loopback.ngd  
+map -intstyle ise -p xc3s200a-vq100-5 -timing -logic_opt on -ol high -xe n -t 1 -register_duplication on -cm speed -detail -ir off -ignore_keep_hierarchy -pr b -bp -power off -o Test_ADAT_Loopback_map.ncd Test_ADAT_Loopback.ngd Test_ADAT_Loopback.pcf 
+par -w -intstyle ise -pl high -rl high -xe n -t 1 Test_ADAT_Loopback_map.ncd Test_ADAT_Loopback.ncd Test_ADAT_Loopback.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Test_ADAT_Loopback.twx Test_ADAT_Loopback.ncd -o Test_ADAT_Loopback.twr Test_ADAT_Loopback.pcf -ucf xXCS3200A-4VQ100_LoopbackTest.ucf 
+bitgen -intstyle ise -f Test_ADAT_Loopback.ut Test_ADAT_Loopback.ncd 
+xst -intstyle ise -ifn "Z:/ADAT DeEncoder/ADAT_De-Encoder/Test_ADAT_Loopback.xst" -ofn "Z:/ADAT DeEncoder/ADAT_De-Encoder/Test_ADAT_Loopback.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xXCS3200A-4VQ100_LoopbackTest.ucf -p xc3s200a-vq100-5 "Test_ADAT_Loopback.ngc" Test_ADAT_Loopback.ngd  
+map -intstyle ise -p xc3s200a-vq100-5 -timing -logic_opt on -ol high -xe n -t 1 -register_duplication on -cm speed -detail -ir off -ignore_keep_hierarchy -pr b -bp -power off -o Test_ADAT_Loopback_map.ncd Test_ADAT_Loopback.ngd Test_ADAT_Loopback.pcf 
+par -w -intstyle ise -pl high -rl high -xe n -t 1 Test_ADAT_Loopback_map.ncd Test_ADAT_Loopback.ncd Test_ADAT_Loopback.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Test_ADAT_Loopback.twx Test_ADAT_Loopback.ncd -o Test_ADAT_Loopback.twr Test_ADAT_Loopback.pcf -ucf xXCS3200A-4VQ100_LoopbackTest.ucf 
+bitgen -intstyle ise -f Test_ADAT_Loopback.ut Test_ADAT_Loopback.ncd 
+xst -intstyle ise -ifn "Z:/ADAT DeEncoder/ADAT_De-Encoder/Test_ADAT_Loopback.xst" -ofn "Z:/ADAT DeEncoder/ADAT_De-Encoder/Test_ADAT_Loopback.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xXCS3200A-4VQ100_LoopbackTest.ucf -p xc3s200a-vq100-5 "Test_ADAT_Loopback.ngc" Test_ADAT_Loopback.ngd  
+map -intstyle ise -p xc3s200a-vq100-5 -timing -logic_opt on -ol high -xe n -t 1 -register_duplication on -cm speed -detail -ir off -ignore_keep_hierarchy -pr b -bp -power off -o Test_ADAT_Loopback_map.ncd Test_ADAT_Loopback.ngd Test_ADAT_Loopback.pcf 
+par -w -intstyle ise -pl high -rl high -xe n -t 1 Test_ADAT_Loopback_map.ncd Test_ADAT_Loopback.ncd Test_ADAT_Loopback.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Test_ADAT_Loopback.twx Test_ADAT_Loopback.ncd -o Test_ADAT_Loopback.twr Test_ADAT_Loopback.pcf -ucf xXCS3200A-4VQ100_LoopbackTest.ucf 
+bitgen -intstyle ise -f Test_ADAT_Loopback.ut Test_ADAT_Loopback.ncd 
+xst -intstyle ise -ifn "Z:/ADAT DeEncoder/ADAT_De-Encoder/Test_ADAT_Loopback.xst" -ofn "Z:/ADAT DeEncoder/ADAT_De-Encoder/Test_ADAT_Loopback.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xXCS3200A-4VQ100_LoopbackTest.ucf -p xc3s200a-vq100-5 "Test_ADAT_Loopback.ngc" Test_ADAT_Loopback.ngd  
+map -intstyle ise -p xc3s200a-vq100-5 -timing -logic_opt on -ol high -xe n -t 1 -register_duplication on -cm speed -detail -ir off -ignore_keep_hierarchy -pr b -bp -power off -o Test_ADAT_Loopback_map.ncd Test_ADAT_Loopback.ngd Test_ADAT_Loopback.pcf 
+par -w -intstyle ise -pl high -rl high -xe n -t 1 Test_ADAT_Loopback_map.ncd Test_ADAT_Loopback.ncd Test_ADAT_Loopback.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Test_ADAT_Loopback.twx Test_ADAT_Loopback.ncd -o Test_ADAT_Loopback.twr Test_ADAT_Loopback.pcf -ucf xXCS3200A-4VQ100_LoopbackTest.ucf 
+bitgen -intstyle ise -f Test_ADAT_Loopback.ut Test_ADAT_Loopback.ncd 
+xst -intstyle ise -ifn "Z:/ADAT DeEncoder/ADAT_De-Encoder/Test_ADAT_Loopback.xst" -ofn "Z:/ADAT DeEncoder/ADAT_De-Encoder/Test_ADAT_Loopback.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xXCS3200A-4VQ100_LoopbackTest.ucf -p xc3s200a-vq100-5 "Test_ADAT_Loopback.ngc" Test_ADAT_Loopback.ngd  
+map -intstyle ise -p xc3s200a-vq100-5 -timing -logic_opt on -ol high -xe n -t 1 -register_duplication on -cm speed -detail -ir off -ignore_keep_hierarchy -pr b -bp -power off -o Test_ADAT_Loopback_map.ncd Test_ADAT_Loopback.ngd Test_ADAT_Loopback.pcf 
+par -w -intstyle ise -pl high -rl high -xe n -t 1 Test_ADAT_Loopback_map.ncd Test_ADAT_Loopback.ncd Test_ADAT_Loopback.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Test_ADAT_Loopback.twx Test_ADAT_Loopback.ncd -o Test_ADAT_Loopback.twr Test_ADAT_Loopback.pcf -ucf xXCS3200A-4VQ100_LoopbackTest.ucf 
+bitgen -intstyle ise -f Test_ADAT_Loopback.ut Test_ADAT_Loopback.ncd 
+xst -intstyle ise -ifn "Z:/ADAT DeEncoder/ADAT_De-Encoder/Test_ADAT_Loopback.xst" -ofn "Z:/ADAT DeEncoder/ADAT_De-Encoder/Test_ADAT_Loopback.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xXCS3200A-4VQ100_LoopbackTest.ucf -p xc3s200a-vq100-5 "Test_ADAT_Loopback.ngc" Test_ADAT_Loopback.ngd  
+map -intstyle ise -p xc3s200a-vq100-5 -timing -logic_opt on -ol high -xe n -t 1 -register_duplication on -cm speed -detail -ir off -ignore_keep_hierarchy -pr b -bp -power off -o Test_ADAT_Loopback_map.ncd Test_ADAT_Loopback.ngd Test_ADAT_Loopback.pcf 
+par -w -intstyle ise -pl high -rl high -xe n -t 1 Test_ADAT_Loopback_map.ncd Test_ADAT_Loopback.ncd Test_ADAT_Loopback.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Test_ADAT_Loopback.twx Test_ADAT_Loopback.ncd -o Test_ADAT_Loopback.twr Test_ADAT_Loopback.pcf -ucf xXCS3200A-4VQ100_LoopbackTest.ucf 
+bitgen -intstyle ise -f Test_ADAT_Loopback.ut Test_ADAT_Loopback.ncd 
+xst -intstyle ise -ifn "Z:/ADAT DeEncoder/ADAT_De-Encoder/Test_ADAT_Loopback.xst" -ofn "Z:/ADAT DeEncoder/ADAT_De-Encoder/Test_ADAT_Loopback.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xXCS3200A-4VQ100_LoopbackTest.ucf -p xc3s200a-vq100-5 "Test_ADAT_Loopback.ngc" Test_ADAT_Loopback.ngd  
+map -intstyle ise -p xc3s200a-vq100-5 -timing -logic_opt on -ol high -xe n -t 1 -register_duplication on -cm speed -detail -ir off -ignore_keep_hierarchy -pr b -bp -power off -o Test_ADAT_Loopback_map.ncd Test_ADAT_Loopback.ngd Test_ADAT_Loopback.pcf 
+par -w -intstyle ise -pl high -rl high -xe n -t 1 Test_ADAT_Loopback_map.ncd Test_ADAT_Loopback.ncd Test_ADAT_Loopback.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Test_ADAT_Loopback.twx Test_ADAT_Loopback.ncd -o Test_ADAT_Loopback.twr Test_ADAT_Loopback.pcf -ucf xXCS3200A-4VQ100_LoopbackTest.ucf 
+bitgen -intstyle ise -f Test_ADAT_Loopback.ut Test_ADAT_Loopback.ncd 
+bitgen -intstyle ise -f Test_ADAT_Loopback.ut Test_ADAT_Loopback.ncd 
+xst -intstyle ise -ifn "Z:/ADAT DeEncoder/ADAT_De-Encoder/Test_ADAT_Loopback.xst" -ofn "Z:/ADAT DeEncoder/ADAT_De-Encoder/Test_ADAT_Loopback.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xXCS3200A-4VQ100_LoopbackTest.ucf -p xc3s200a-vq100-5 "Test_ADAT_Loopback.ngc" Test_ADAT_Loopback.ngd  
+map -intstyle ise -p xc3s200a-vq100-5 -timing -logic_opt on -ol high -xe n -t 1 -register_duplication on -cm speed -detail -ir off -ignore_keep_hierarchy -pr b -bp -power off -o Test_ADAT_Loopback_map.ncd Test_ADAT_Loopback.ngd Test_ADAT_Loopback.pcf 
+par -w -intstyle ise -pl high -rl high -xe n -t 1 Test_ADAT_Loopback_map.ncd Test_ADAT_Loopback.ncd Test_ADAT_Loopback.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Test_ADAT_Loopback.twx Test_ADAT_Loopback.ncd -o Test_ADAT_Loopback.twr Test_ADAT_Loopback.pcf -ucf xXCS3200A-4VQ100_LoopbackTest.ucf 
+bitgen -intstyle ise -f Test_ADAT_Loopback.ut Test_ADAT_Loopback.ncd 
+xst -intstyle ise -ifn "Z:/ADAT DeEncoder/ADAT_De-Encoder/Test_ADAT_Loopback.xst" -ofn "Z:/ADAT DeEncoder/ADAT_De-Encoder/Test_ADAT_Loopback.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xXCS3200A-4VQ100_LoopbackTest.ucf -p xc3s200a-vq100-5 "Test_ADAT_Loopback.ngc" Test_ADAT_Loopback.ngd  
+map -intstyle ise -p xc3s200a-vq100-5 -timing -logic_opt on -ol high -xe n -t 1 -register_duplication on -cm speed -detail -ir off -ignore_keep_hierarchy -pr b -bp -power off -o Test_ADAT_Loopback_map.ncd Test_ADAT_Loopback.ngd Test_ADAT_Loopback.pcf 
+par -w -intstyle ise -pl high -rl high -xe n -t 1 Test_ADAT_Loopback_map.ncd Test_ADAT_Loopback.ncd Test_ADAT_Loopback.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Test_ADAT_Loopback.twx Test_ADAT_Loopback.ncd -o Test_ADAT_Loopback.twr Test_ADAT_Loopback.pcf -ucf xXCS3200A-4VQ100_LoopbackTest.ucf 
+bitgen -intstyle ise -f Test_ADAT_Loopback.ut Test_ADAT_Loopback.ncd 
+xst -intstyle ise -ifn "Z:/ADAT DeEncoder/ADAT_De-Encoder/Test_ADAT_Loopback.xst" -ofn "Z:/ADAT DeEncoder/ADAT_De-Encoder/Test_ADAT_Loopback.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xXCS3200A-4VQ100_LoopbackTest.ucf -p xc3s200a-vq100-5 "Test_ADAT_Loopback.ngc" Test_ADAT_Loopback.ngd  
+map -intstyle ise -p xc3s200a-vq100-5 -timing -logic_opt on -ol high -xe n -t 1 -register_duplication on -cm speed -detail -ir off -ignore_keep_hierarchy -pr b -bp -power off -o Test_ADAT_Loopback_map.ncd Test_ADAT_Loopback.ngd Test_ADAT_Loopback.pcf 
+par -w -intstyle ise -pl high -rl high -xe n -t 1 Test_ADAT_Loopback_map.ncd Test_ADAT_Loopback.ncd Test_ADAT_Loopback.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Test_ADAT_Loopback.twx Test_ADAT_Loopback.ncd -o Test_ADAT_Loopback.twr Test_ADAT_Loopback.pcf -ucf xXCS3200A-4VQ100_LoopbackTest.ucf 
+bitgen -intstyle ise -f Test_ADAT_Loopback.ut Test_ADAT_Loopback.ncd 
+xst -intstyle ise -ifn "Z:/ADAT DeEncoder/ADAT_De-Encoder/Test_ADAT_Loopback.xst" -ofn "Z:/ADAT DeEncoder/ADAT_De-Encoder/Test_ADAT_Loopback.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xXCS3200A-4VQ100_LoopbackTest.ucf -p xc3s200a-vq100-5 "Test_ADAT_Loopback.ngc" Test_ADAT_Loopback.ngd  
+map -intstyle ise -p xc3s200a-vq100-5 -timing -logic_opt on -ol high -xe n -t 1 -register_duplication on -cm speed -detail -ir off -ignore_keep_hierarchy -pr b -bp -power off -o Test_ADAT_Loopback_map.ncd Test_ADAT_Loopback.ngd Test_ADAT_Loopback.pcf 
+par -w -intstyle ise -pl high -rl high -xe n -t 1 Test_ADAT_Loopback_map.ncd Test_ADAT_Loopback.ncd Test_ADAT_Loopback.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Test_ADAT_Loopback.twx Test_ADAT_Loopback.ncd -o Test_ADAT_Loopback.twr Test_ADAT_Loopback.pcf -ucf xXCS3200A-4VQ100_LoopbackTest.ucf 
+bitgen -intstyle ise -f Test_ADAT_Loopback.ut Test_ADAT_Loopback.ncd 
+xst -intstyle ise -ifn "Z:/ADAT DeEncoder/ADAT_De-Encoder/Test_ADAT_Loopback.xst" -ofn "Z:/ADAT DeEncoder/ADAT_De-Encoder/Test_ADAT_Loopback.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xXCS3200A-4VQ100_LoopbackTest.ucf -p xc3s200a-vq100-5 "Test_ADAT_Loopback.ngc" Test_ADAT_Loopback.ngd  
+map -intstyle ise -p xc3s200a-vq100-5 -timing -logic_opt on -ol high -xe n -t 1 -register_duplication on -cm speed -detail -ir off -ignore_keep_hierarchy -pr b -bp -power off -o Test_ADAT_Loopback_map.ncd Test_ADAT_Loopback.ngd Test_ADAT_Loopback.pcf 
+par -w -intstyle ise -pl high -rl high -xe n -t 1 Test_ADAT_Loopback_map.ncd Test_ADAT_Loopback.ncd Test_ADAT_Loopback.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Test_ADAT_Loopback.twx Test_ADAT_Loopback.ncd -o Test_ADAT_Loopback.twr Test_ADAT_Loopback.pcf -ucf xXCS3200A-4VQ100_LoopbackTest.ucf 
+bitgen -intstyle ise -f Test_ADAT_Loopback.ut Test_ADAT_Loopback.ncd 
+xst -intstyle ise -ifn "Z:/ADAT DeEncoder/ADAT_De-Encoder/Test_ADAT_Loopback.xst" -ofn "Z:/ADAT DeEncoder/ADAT_De-Encoder/Test_ADAT_Loopback.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xXCS3200A-4VQ100_LoopbackTest.ucf -p xc3s200a-vq100-5 "Test_ADAT_Loopback.ngc" Test_ADAT_Loopback.ngd  
+map -intstyle ise -p xc3s200a-vq100-5 -timing -logic_opt on -ol high -xe n -t 1 -register_duplication on -cm speed -detail -ir off -ignore_keep_hierarchy -pr b -bp -power off -o Test_ADAT_Loopback_map.ncd Test_ADAT_Loopback.ngd Test_ADAT_Loopback.pcf 
+par -w -intstyle ise -pl high -rl high -xe n -t 1 Test_ADAT_Loopback_map.ncd Test_ADAT_Loopback.ncd Test_ADAT_Loopback.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Test_ADAT_Loopback.twx Test_ADAT_Loopback.ncd -o Test_ADAT_Loopback.twr Test_ADAT_Loopback.pcf -ucf xXCS3200A-4VQ100_LoopbackTest.ucf 
+bitgen -intstyle ise -f Test_ADAT_Loopback.ut Test_ADAT_Loopback.ncd 
+xst -intstyle ise -ifn "Z:/ADAT DeEncoder/ADAT_De-Encoder/Test_ADAT_Loopback.xst" -ofn "Z:/ADAT DeEncoder/ADAT_De-Encoder/Test_ADAT_Loopback.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xXCS3200A-4VQ100_LoopbackTest.ucf -p xc3s200a-vq100-5 "Test_ADAT_Loopback.ngc" Test_ADAT_Loopback.ngd  
+map -intstyle ise -p xc3s200a-vq100-5 -timing -logic_opt on -ol high -xe n -t 1 -register_duplication on -cm speed -detail -ir off -ignore_keep_hierarchy -pr b -bp -power off -o Test_ADAT_Loopback_map.ncd Test_ADAT_Loopback.ngd Test_ADAT_Loopback.pcf 
+par -w -intstyle ise -pl high -rl high -xe n -t 1 Test_ADAT_Loopback_map.ncd Test_ADAT_Loopback.ncd Test_ADAT_Loopback.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Test_ADAT_Loopback.twx Test_ADAT_Loopback.ncd -o Test_ADAT_Loopback.twr Test_ADAT_Loopback.pcf -ucf xXCS3200A-4VQ100_LoopbackTest.ucf 
+bitgen -intstyle ise -f Test_ADAT_Loopback.ut Test_ADAT_Loopback.ncd 
+xst -intstyle ise -ifn "Z:/ADAT DeEncoder/ADAT_De-Encoder/Test_ADAT_Loopback.xst" -ofn "Z:/ADAT DeEncoder/ADAT_De-Encoder/Test_ADAT_Loopback.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xXCS3200A-4VQ100_LoopbackTest.ucf -p xc3s200a-vq100-5 "Test_ADAT_Loopback.ngc" Test_ADAT_Loopback.ngd  
+map -intstyle ise -p xc3s200a-vq100-5 -timing -logic_opt on -ol high -xe n -t 1 -register_duplication on -cm speed -detail -ir off -ignore_keep_hierarchy -pr b -bp -power off -o Test_ADAT_Loopback_map.ncd Test_ADAT_Loopback.ngd Test_ADAT_Loopback.pcf 
+par -w -intstyle ise -pl high -rl high -xe n -t 1 Test_ADAT_Loopback_map.ncd Test_ADAT_Loopback.ncd Test_ADAT_Loopback.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Test_ADAT_Loopback.twx Test_ADAT_Loopback.ncd -o Test_ADAT_Loopback.twr Test_ADAT_Loopback.pcf -ucf xXCS3200A-4VQ100_LoopbackTest.ucf 
+bitgen -intstyle ise -f Test_ADAT_Loopback.ut Test_ADAT_Loopback.ncd 
+xst -intstyle ise -ifn "Z:/ADAT DeEncoder/ADAT_De-Encoder/Test_ADAT_Loopback.xst" -ofn "Z:/ADAT DeEncoder/ADAT_De-Encoder/Test_ADAT_Loopback.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xXCS3200A-4VQ100_LoopbackTest.ucf -p xc3s200a-vq100-5 "Test_ADAT_Loopback.ngc" Test_ADAT_Loopback.ngd  
+map -intstyle ise -p xc3s200a-vq100-5 -timing -logic_opt on -ol high -xe n -t 1 -register_duplication on -cm speed -detail -ir off -ignore_keep_hierarchy -pr b -bp -power off -o Test_ADAT_Loopback_map.ncd Test_ADAT_Loopback.ngd Test_ADAT_Loopback.pcf 
+par -w -intstyle ise -pl high -rl high -xe n -t 1 Test_ADAT_Loopback_map.ncd Test_ADAT_Loopback.ncd Test_ADAT_Loopback.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Test_ADAT_Loopback.twx Test_ADAT_Loopback.ncd -o Test_ADAT_Loopback.twr Test_ADAT_Loopback.pcf -ucf xXCS3200A-4VQ100_LoopbackTest.ucf 
+bitgen -intstyle ise -f Test_ADAT_Loopback.ut Test_ADAT_Loopback.ncd 
+xst -intstyle ise -ifn "Z:/ADAT DeEncoder/ADAT_De-Encoder/Test_ADAT_Loopback.xst" -ofn "Z:/ADAT DeEncoder/ADAT_De-Encoder/Test_ADAT_Loopback.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xXCS3200A-4VQ100_LoopbackTest.ucf -p xc3s200a-vq100-5 "Test_ADAT_Loopback.ngc" Test_ADAT_Loopback.ngd  
+map -intstyle ise -p xc3s200a-vq100-5 -timing -logic_opt on -ol high -xe n -t 1 -register_duplication on -cm speed -detail -ir off -ignore_keep_hierarchy -pr b -bp -power off -o Test_ADAT_Loopback_map.ncd Test_ADAT_Loopback.ngd Test_ADAT_Loopback.pcf 
+par -w -intstyle ise -pl high -rl high -xe n -t 1 Test_ADAT_Loopback_map.ncd Test_ADAT_Loopback.ncd Test_ADAT_Loopback.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Test_ADAT_Loopback.twx Test_ADAT_Loopback.ncd -o Test_ADAT_Loopback.twr Test_ADAT_Loopback.pcf -ucf xXCS3200A-4VQ100_LoopbackTest.ucf 
+bitgen -intstyle ise -f Test_ADAT_Loopback.ut Test_ADAT_Loopback.ncd 
+xst -intstyle ise -ifn "Z:/ADAT DeEncoder/ADAT_De-Encoder/Test_ADAT_Loopback.xst" -ofn "Z:/ADAT DeEncoder/ADAT_De-Encoder/Test_ADAT_Loopback.syr" 
+xst -intstyle ise -ifn "Z:/ADAT DeEncoder/ADAT_De-Encoder/Test_ADAT_Loopback.xst" -ofn "Z:/ADAT DeEncoder/ADAT_De-Encoder/Test_ADAT_Loopback.syr" 
+xst -intstyle ise -ifn "Z:/ADAT DeEncoder/ADAT_De-Encoder/Test_ADAT_Loopback.xst" -ofn "Z:/ADAT DeEncoder/ADAT_De-Encoder/Test_ADAT_Loopback.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xXCS3200A-4VQ100_LoopbackTest.ucf -p xc3s200a-vq100-5 "Test_ADAT_Loopback.ngc" Test_ADAT_Loopback.ngd  
+map -intstyle ise -p xc3s200a-vq100-5 -timing -logic_opt on -ol high -xe n -t 1 -register_duplication on -cm speed -detail -ir off -ignore_keep_hierarchy -pr b -bp -power off -o Test_ADAT_Loopback_map.ncd Test_ADAT_Loopback.ngd Test_ADAT_Loopback.pcf 
+par -w -intstyle ise -pl high -rl high -xe n -t 1 Test_ADAT_Loopback_map.ncd Test_ADAT_Loopback.ncd Test_ADAT_Loopback.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Test_ADAT_Loopback.twx Test_ADAT_Loopback.ncd -o Test_ADAT_Loopback.twr Test_ADAT_Loopback.pcf -ucf xXCS3200A-4VQ100_LoopbackTest.ucf 
+bitgen -intstyle ise -f Test_ADAT_Loopback.ut Test_ADAT_Loopback.ncd 
+xst -intstyle ise -ifn "Z:/ADAT DeEncoder/ADAT_De-Encoder/Test_ADAT_Loopback.xst" -ofn "Z:/ADAT DeEncoder/ADAT_De-Encoder/Test_ADAT_Loopback.syr" 
+xst -intstyle ise -ifn "Z:/ADAT DeEncoder/ADAT_De-Encoder/Test_ADAT_Loopback.xst" -ofn "Z:/ADAT DeEncoder/ADAT_De-Encoder/Test_ADAT_Loopback.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xXCS3200A-4VQ100_LoopbackTest.ucf -p xc3s200a-vq100-5 "Test_ADAT_Loopback.ngc" Test_ADAT_Loopback.ngd  
+map -intstyle ise -p xc3s200a-vq100-5 -timing -logic_opt on -ol high -xe n -t 1 -register_duplication on -cm speed -detail -ir off -ignore_keep_hierarchy -pr b -bp -power off -o Test_ADAT_Loopback_map.ncd Test_ADAT_Loopback.ngd Test_ADAT_Loopback.pcf 
+par -w -intstyle ise -pl high -rl high -xe n -t 1 Test_ADAT_Loopback_map.ncd Test_ADAT_Loopback.ncd Test_ADAT_Loopback.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Test_ADAT_Loopback.twx Test_ADAT_Loopback.ncd -o Test_ADAT_Loopback.twr Test_ADAT_Loopback.pcf -ucf xXCS3200A-4VQ100_LoopbackTest.ucf 
+bitgen -intstyle ise -f Test_ADAT_Loopback.ut Test_ADAT_Loopback.ncd 
+xst -intstyle ise -ifn "Z:/ADAT DeEncoder/ADAT_De-Encoder/Test_ADAT_Loopback.xst" -ofn "Z:/ADAT DeEncoder/ADAT_De-Encoder/Test_ADAT_Loopback.syr" 
+xst -intstyle ise -ifn "Z:/ADAT DeEncoder/ADAT_De-Encoder/Test_ADAT_Loopback.xst" -ofn "Z:/ADAT DeEncoder/ADAT_De-Encoder/Test_ADAT_Loopback.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xXCS3200A-4VQ100_LoopbackTest.ucf -p xc3s200a-vq100-5 "Test_ADAT_Loopback.ngc" Test_ADAT_Loopback.ngd  
+map -intstyle ise -p xc3s200a-vq100-5 -timing -logic_opt on -ol high -xe n -t 1 -register_duplication on -cm speed -detail -ir off -ignore_keep_hierarchy -pr b -bp -power off -o Test_ADAT_Loopback_map.ncd Test_ADAT_Loopback.ngd Test_ADAT_Loopback.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xXCS3200A-4VQ100_LoopbackTest.ucf -p xc3s200a-vq100-5 "Test_ADAT_Loopback.ngc" Test_ADAT_Loopback.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xXCS3200A-4VQ100_LoopbackTest.ucf -p xc3s200a-vq100-5 "Test_ADAT_Loopback.ngc" Test_ADAT_Loopback.ngd  
+map -intstyle ise -p xc3s200a-vq100-5 -timing -logic_opt on -ol high -xe n -t 1 -register_duplication on -cm speed -detail -ir off -ignore_keep_hierarchy -pr b -bp -power off -o Test_ADAT_Loopback_map.ncd Test_ADAT_Loopback.ngd Test_ADAT_Loopback.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xXCS3200A-4VQ100_LoopbackTest.ucf -p xc3s200a-vq100-5 "Test_ADAT_Loopback.ngc" Test_ADAT_Loopback.ngd  
+map -intstyle ise -p xc3s200a-vq100-5 -timing -logic_opt on -ol high -xe n -t 1 -register_duplication on -cm speed -detail -ir off -ignore_keep_hierarchy -pr b -bp -power off -o Test_ADAT_Loopback_map.ncd Test_ADAT_Loopback.ngd Test_ADAT_Loopback.pcf 
+xst -intstyle ise -ifn "Z:/ADAT DeEncoder/ADAT_De-Encoder/Test_ADAT_Loopback.xst" -ofn "Z:/ADAT DeEncoder/ADAT_De-Encoder/Test_ADAT_Loopback.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xXCS3200A-4VQ100_LoopbackTest.ucf -p xc3s200a-vq100-5 "Test_ADAT_Loopback.ngc" Test_ADAT_Loopback.ngd  
+map -intstyle ise -p xc3s200a-vq100-5 -timing -logic_opt on -ol high -xe n -t 1 -register_duplication on -cm speed -detail -ir off -ignore_keep_hierarchy -pr b -bp -power off -o Test_ADAT_Loopback_map.ncd Test_ADAT_Loopback.ngd Test_ADAT_Loopback.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xXCS3200A-4VQ100_LoopbackTest.ucf -p xc3s200a-vq100-5 "Test_ADAT_Loopback.ngc" Test_ADAT_Loopback.ngd  
+map -intstyle ise -p xc3s200a-vq100-5 -timing -logic_opt on -ol high -xe n -t 1 -register_duplication on -cm speed -detail -ir off -ignore_keep_hierarchy -pr b -bp -power off -o Test_ADAT_Loopback_map.ncd Test_ADAT_Loopback.ngd Test_ADAT_Loopback.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xXCS3200A-4VQ100_LoopbackTest.ucf -p xc3s200a-vq100-5 "Test_ADAT_Loopback.ngc" Test_ADAT_Loopback.ngd  
+map -intstyle ise -p xc3s200a-vq100-5 -timing -logic_opt on -ol high -xe n -t 1 -register_duplication on -cm speed -detail -ir off -ignore_keep_hierarchy -pr b -bp -power off -o Test_ADAT_Loopback_map.ncd Test_ADAT_Loopback.ngd Test_ADAT_Loopback.pcf 
+par -w -intstyle ise -pl high -rl high -xe n -t 1 Test_ADAT_Loopback_map.ncd Test_ADAT_Loopback.ncd Test_ADAT_Loopback.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Test_ADAT_Loopback.twx Test_ADAT_Loopback.ncd -o Test_ADAT_Loopback.twr Test_ADAT_Loopback.pcf -ucf xXCS3200A-4VQ100_LoopbackTest.ucf 
+bitgen -intstyle ise -f Test_ADAT_Loopback.ut Test_ADAT_Loopback.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xXCS3200A-4VQ100_LoopbackTest.ucf -p xc3s200a-vq100-5 "Test_ADAT_Loopback.ngc" Test_ADAT_Loopback.ngd  
+map -intstyle ise -p xc3s200a-vq100-5 -timing -logic_opt on -ol high -xe n -t 1 -register_duplication on -cm speed -detail -ir off -ignore_keep_hierarchy -pr b -bp -power off -o Test_ADAT_Loopback_map.ncd Test_ADAT_Loopback.ngd Test_ADAT_Loopback.pcf 
+par -w -intstyle ise -pl high -rl high -xe n -t 1 Test_ADAT_Loopback_map.ncd Test_ADAT_Loopback.ncd Test_ADAT_Loopback.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Test_ADAT_Loopback.twx Test_ADAT_Loopback.ncd -o Test_ADAT_Loopback.twr Test_ADAT_Loopback.pcf -ucf xXCS3200A-4VQ100_LoopbackTest.ucf 
+bitgen -intstyle ise -f Test_ADAT_Loopback.ut Test_ADAT_Loopback.ncd 
+xst -intstyle ise -ifn "Z:/ADAT DeEncoder/ADAT_De-Encoder/Test_ADAT_Loopback.xst" -ofn "Z:/ADAT DeEncoder/ADAT_De-Encoder/Test_ADAT_Loopback.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xXCS3200A-4VQ100_LoopbackTest.ucf -p xc3s200a-vq100-5 "Test_ADAT_Loopback.ngc" Test_ADAT_Loopback.ngd  
+map -intstyle ise -p xc3s200a-vq100-5 -timing -logic_opt on -ol high -xe n -t 1 -register_duplication on -cm speed -detail -ir off -ignore_keep_hierarchy -pr b -bp -power off -o Test_ADAT_Loopback_map.ncd Test_ADAT_Loopback.ngd Test_ADAT_Loopback.pcf 
+par -w -intstyle ise -pl high -rl high -xe n -t 1 Test_ADAT_Loopback_map.ncd Test_ADAT_Loopback.ncd Test_ADAT_Loopback.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Test_ADAT_Loopback.twx Test_ADAT_Loopback.ncd -o Test_ADAT_Loopback.twr Test_ADAT_Loopback.pcf -ucf xXCS3200A-4VQ100_LoopbackTest.ucf 
+bitgen -intstyle ise -f Test_ADAT_Loopback.ut Test_ADAT_Loopback.ncd 
+xst -intstyle ise -ifn "Z:/ADAT DeEncoder/ADAT_De-Encoder/Test_ADAT_Loopback.xst" -ofn "Z:/ADAT DeEncoder/ADAT_De-Encoder/Test_ADAT_Loopback.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xXCS3200A-4VQ100_LoopbackTest.ucf -p xc3s200a-vq100-5 "Test_ADAT_Loopback.ngc" Test_ADAT_Loopback.ngd  
+map -intstyle ise -p xc3s200a-vq100-5 -timing -logic_opt on -ol high -xe n -t 1 -register_duplication on -cm speed -detail -ir off -ignore_keep_hierarchy -pr b -bp -power off -o Test_ADAT_Loopback_map.ncd Test_ADAT_Loopback.ngd Test_ADAT_Loopback.pcf 
+par -w -intstyle ise -pl high -rl high -xe n -t 1 Test_ADAT_Loopback_map.ncd Test_ADAT_Loopback.ncd Test_ADAT_Loopback.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Test_ADAT_Loopback.twx Test_ADAT_Loopback.ncd -o Test_ADAT_Loopback.twr Test_ADAT_Loopback.pcf -ucf xXCS3200A-4VQ100_LoopbackTest.ucf 
+bitgen -intstyle ise -f Test_ADAT_Loopback.ut Test_ADAT_Loopback.ncd 
+xst -intstyle ise -ifn "Z:/ADAT DeEncoder/ADAT_De-Encoder/Test_ADAT_Loopback.xst" -ofn "Z:/ADAT DeEncoder/ADAT_De-Encoder/Test_ADAT_Loopback.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xXCS3200A-4VQ100_LoopbackTest.ucf -p xc3s200a-vq100-5 "Test_ADAT_Loopback.ngc" Test_ADAT_Loopback.ngd  
+map -intstyle ise -p xc3s200a-vq100-5 -timing -logic_opt on -ol high -xe n -t 1 -register_duplication on -cm speed -detail -ir off -ignore_keep_hierarchy -pr b -bp -power off -o Test_ADAT_Loopback_map.ncd Test_ADAT_Loopback.ngd Test_ADAT_Loopback.pcf 
+par -w -intstyle ise -pl high -rl high -xe n -t 1 Test_ADAT_Loopback_map.ncd Test_ADAT_Loopback.ncd Test_ADAT_Loopback.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Test_ADAT_Loopback.twx Test_ADAT_Loopback.ncd -o Test_ADAT_Loopback.twr Test_ADAT_Loopback.pcf -ucf xXCS3200A-4VQ100_LoopbackTest.ucf 
+bitgen -intstyle ise -f Test_ADAT_Loopback.ut Test_ADAT_Loopback.ncd 
+xst -intstyle ise -ifn "Z:/ADAT DeEncoder/ADAT_De-Encoder/Test_ADAT_Loopback.xst" -ofn "Z:/ADAT DeEncoder/ADAT_De-Encoder/Test_ADAT_Loopback.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xXCS3200A-4VQ100_LoopbackTest.ucf -p xc3s200a-vq100-5 "Test_ADAT_Loopback.ngc" Test_ADAT_Loopback.ngd  
+map -intstyle ise -p xc3s200a-vq100-5 -timing -logic_opt on -ol high -xe n -t 1 -register_duplication on -cm speed -detail -ir off -ignore_keep_hierarchy -pr b -bp -power off -o Test_ADAT_Loopback_map.ncd Test_ADAT_Loopback.ngd Test_ADAT_Loopback.pcf 
+par -w -intstyle ise -pl high -rl high -xe n -t 1 Test_ADAT_Loopback_map.ncd Test_ADAT_Loopback.ncd Test_ADAT_Loopback.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Test_ADAT_Loopback.twx Test_ADAT_Loopback.ncd -o Test_ADAT_Loopback.twr Test_ADAT_Loopback.pcf -ucf xXCS3200A-4VQ100_LoopbackTest.ucf 
+bitgen -intstyle ise -f Test_ADAT_Loopback.ut Test_ADAT_Loopback.ncd 
+xst -intstyle ise -ifn "Z:/ADAT DeEncoder/ADAT_De-Encoder/Test_ADAT_Loopback.xst" -ofn "Z:/ADAT DeEncoder/ADAT_De-Encoder/Test_ADAT_Loopback.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xXCS3200A-4VQ100_LoopbackTest.ucf -p xc3s200a-vq100-5 "Test_ADAT_Loopback.ngc" Test_ADAT_Loopback.ngd  
+map -intstyle ise -p xc3s200a-vq100-5 -timing -logic_opt on -ol high -xe n -t 1 -register_duplication on -cm speed -detail -ir off -ignore_keep_hierarchy -pr b -bp -power off -o Test_ADAT_Loopback_map.ncd Test_ADAT_Loopback.ngd Test_ADAT_Loopback.pcf 
+par -w -intstyle ise -pl high -rl high -xe n -t 1 Test_ADAT_Loopback_map.ncd Test_ADAT_Loopback.ncd Test_ADAT_Loopback.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Test_ADAT_Loopback.twx Test_ADAT_Loopback.ncd -o Test_ADAT_Loopback.twr Test_ADAT_Loopback.pcf -ucf xXCS3200A-4VQ100_LoopbackTest.ucf 
+bitgen -intstyle ise -f Test_ADAT_Loopback.ut Test_ADAT_Loopback.ncd 
+xst -intstyle ise -ifn "Z:/ADAT DeEncoder/ADAT_De-Encoder/Test_ADAT_Loopback.xst" -ofn "Z:/ADAT DeEncoder/ADAT_De-Encoder/Test_ADAT_Loopback.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xXCS3200A-4VQ100_LoopbackTest.ucf -p xc3s200a-vq100-5 "Test_ADAT_Loopback.ngc" Test_ADAT_Loopback.ngd  
+map -intstyle ise -p xc3s200a-vq100-5 -timing -logic_opt on -ol high -xe n -t 1 -register_duplication on -cm speed -detail -ir off -ignore_keep_hierarchy -pr b -bp -power off -o Test_ADAT_Loopback_map.ncd Test_ADAT_Loopback.ngd Test_ADAT_Loopback.pcf 
+par -w -intstyle ise -pl high -rl high -xe n -t 1 Test_ADAT_Loopback_map.ncd Test_ADAT_Loopback.ncd Test_ADAT_Loopback.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Test_ADAT_Loopback.twx Test_ADAT_Loopback.ncd -o Test_ADAT_Loopback.twr Test_ADAT_Loopback.pcf -ucf xXCS3200A-4VQ100_LoopbackTest.ucf 
+bitgen -intstyle ise -f Test_ADAT_Loopback.ut Test_ADAT_Loopback.ncd 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/Test_ADAT_Loopback.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/Test_ADAT_Loopback.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xXCS3200A-4VQ100_LoopbackTest.ucf -p xc3s200a-vq100-5 "Test_ADAT_Loopback.ngc" Test_ADAT_Loopback.ngd  
+map -intstyle ise -p xc3s200a-vq100-5 -timing -logic_opt on -ol high -xe n -t 1 -register_duplication on -cm speed -detail -ir off -ignore_keep_hierarchy -pr b -bp -power off -o Test_ADAT_Loopback_map.ncd Test_ADAT_Loopback.ngd Test_ADAT_Loopback.pcf 
+par -w -intstyle ise -pl high -rl high -xe n -t 1 Test_ADAT_Loopback_map.ncd Test_ADAT_Loopback.ncd Test_ADAT_Loopback.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Test_ADAT_Loopback.twx Test_ADAT_Loopback.ncd -o Test_ADAT_Loopback.twr Test_ADAT_Loopback.pcf -ucf xXCS3200A-4VQ100_LoopbackTest.ucf 
+bitgen -intstyle ise -f Test_ADAT_Loopback.ut Test_ADAT_Loopback.ncd 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/Test_ADAT_Loopback.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/Test_ADAT_Loopback.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xXCS3200A-4VQ100_LoopbackTest.ucf -p xc3s200a-vq100-5 "Test_ADAT_Loopback.ngc" Test_ADAT_Loopback.ngd  
+map -intstyle ise -p xc3s200a-vq100-5 -timing -logic_opt on -ol high -xe n -t 1 -register_duplication on -cm speed -detail -ir off -ignore_keep_hierarchy -pr b -bp -power off -o Test_ADAT_Loopback_map.ncd Test_ADAT_Loopback.ngd Test_ADAT_Loopback.pcf 
+par -w -intstyle ise -pl high -rl high -xe n -t 1 Test_ADAT_Loopback_map.ncd Test_ADAT_Loopback.ncd Test_ADAT_Loopback.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Test_ADAT_Loopback.twx Test_ADAT_Loopback.ncd -o Test_ADAT_Loopback.twr Test_ADAT_Loopback.pcf -ucf xXCS3200A-4VQ100_LoopbackTest.ucf 
+bitgen -intstyle ise -f Test_ADAT_Loopback.ut Test_ADAT_Loopback.ncd 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/Test_ADAT_Loopback.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/Test_ADAT_Loopback.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xXCS3200A-4VQ100_LoopbackTest.ucf -p xc3s200a-vq100-5 "Test_ADAT_Loopback.ngc" Test_ADAT_Loopback.ngd  
+map -intstyle ise -p xc3s200a-vq100-5 -timing -logic_opt on -ol high -xe n -t 1 -register_duplication on -cm speed -detail -ir off -ignore_keep_hierarchy -pr b -bp -power off -o Test_ADAT_Loopback_map.ncd Test_ADAT_Loopback.ngd Test_ADAT_Loopback.pcf 
+par -w -intstyle ise -pl high -rl high -xe n -t 1 Test_ADAT_Loopback_map.ncd Test_ADAT_Loopback.ncd Test_ADAT_Loopback.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Test_ADAT_Loopback.twx Test_ADAT_Loopback.ncd -o Test_ADAT_Loopback.twr Test_ADAT_Loopback.pcf -ucf xXCS3200A-4VQ100_LoopbackTest.ucf 
+bitgen -intstyle ise -f Test_ADAT_Loopback.ut Test_ADAT_Loopback.ncd 

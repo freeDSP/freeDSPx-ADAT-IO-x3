@@ -1,0 +1,6 @@
+vhdl work "D:\ADAT DeEncoder\ADAT_De-Encoder\ADAT.vhd"
+vhdl work "D:\ADAT DeEncoder\ADAT_De-Encoder\ADAT_BLOCKRAM.vhd"
+vhdl work "D:\ADAT DeEncoder\ADAT_De-Encoder\EnkoderTestClock.vhd"
+vhdl work "D:\ADAT DeEncoder\ADAT_De-Encoder\DynamischerADATPuffer_BRAM.vhd"
+vhdl work "D:\ADAT DeEncoder\ADAT_De-Encoder\ADAT_Enkoder.vhd"
+vhdl work "D:\ADAT DeEncoder\ADAT_De-Encoder\ADAT_Out_Test.vhd"

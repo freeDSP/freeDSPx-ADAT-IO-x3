@@ -1,0 +1,1249 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\14.7\ISE_DS\ISE\bin\nt\unwrapped\trce.exe -intstyle ise -v 3 -s 5 -n
+3 -fastpaths -xml SpikeSuche.twx SpikeSuche.ncd -o SpikeSuche.twr
+SpikeSuche.pcf -ucf xXCS3200A-4VQ100_SpikeSuche.ucf
+
+Design file:              SpikeSuche.ncd
+Physical constraint file: SpikeSuche.pcf
+Device,package,speed:     xc3s200a,vq100,-5 (PRODUCTION 1.42 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+INFO:Timing:3390 - This architecture does not support a default System Jitter 
+   value, please add SYSTEM_JITTER constraint to the UCF to modify the Clock 
+   Uncertainty calculation.
+INFO:Timing:3389 - This architecture does not support 'Discrete Jitter' and 
+   'Phase Error' calculations, these terms will be zero in the Clock 
+   Uncertainty calculation.  Please make appropriate modification to 
+   SYSTEM_JITTER to account for the unsupported Discrete Jitter and Phase 
+   Error.
+
+================================================================================
+Timing constraint: TS_in_Platinentakt = PERIOD TIMEGRP "in_Platinentakt" 20 ns 
+HIGH 50%;
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 1414 paths analyzed, 114 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
+ Minimum period is   5.498ns.
+--------------------------------------------------------------------------------
+
+Paths for end point i_4 (SLICE_X7Y50.SR), 26 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     14.502ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               i_11 (FF)
+  Destination:          i_4 (FF)
+  Requirement:          20.000ns
+  Data Path Delay:      5.476ns (Levels of Logic = 6)
+  Clock Path Skew:      -0.022ns (0.022 - 0.044)
+  Source Clock:         in_Platinentakt_BUFGP rising at 0.000ns
+  Destination Clock:    in_Platinentakt_BUFGP rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: i_11 to i_4
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X7Y53.YQ       Tcko                  0.524   i<10>
+                                                       i_11
+    SLICE_X5Y58.F1       net (fanout=2)        1.392   i<11>
+    SLICE_X5Y58.COUT     Topcyf                1.026   inst_McBSP_Interface/Daten_Ausgang<1>.Kanaele_0_19
+                                                       Mcompar_i_cmp_lt0000_lut<2>
+                                                       Mcompar_i_cmp_lt0000_cy<2>
+                                                       Mcompar_i_cmp_lt0000_cy<3>
+    SLICE_X5Y59.CIN      net (fanout=1)        0.000   Mcompar_i_cmp_lt0000_cy<3>
+    SLICE_X5Y59.COUT     Tbyp                  0.130   inst_McBSP_Interface/Daten_Ausgang<1>.Kanaele_1_9
+                                                       Mcompar_i_cmp_lt0000_cy<4>
+                                                       Mcompar_i_cmp_lt0000_cy<5>
+    SLICE_X5Y60.CIN      net (fanout=1)        0.000   Mcompar_i_cmp_lt0000_cy<5>
+    SLICE_X5Y60.COUT     Tbyp                  0.130   inst_McBSP_Interface/Daten_Ausgang<1>.Kanaele_4_9
+                                                       Mcompar_i_cmp_lt0000_cy<6>
+                                                       Mcompar_i_cmp_lt0000_cy<7>
+    SLICE_X5Y61.CIN      net (fanout=1)        0.000   Mcompar_i_cmp_lt0000_cy<7>
+    SLICE_X5Y61.COUT     Tbyp                  0.130   inst_McBSP_Interface/Daten_Ausgang<1>.Kanaele_2_11
+                                                       Mcompar_i_cmp_lt0000_cy<8>
+                                                       Mcompar_i_cmp_lt0000_cy<9>
+    SLICE_X5Y62.CIN      net (fanout=1)        0.000   Mcompar_i_cmp_lt0000_cy<9>
+    SLICE_X5Y62.COUT     Tbyp                  0.130   inst_McBSP_Interface/Daten_Ausgang<1>.Kanaele_0_10
+                                                       Mcompar_i_cmp_lt0000_cy<10>
+                                                       Mcompar_i_cmp_lt0000_cy<11>
+    SLICE_X5Y63.CIN      net (fanout=1)        0.000   Mcompar_i_cmp_lt0000_cy<11>
+    SLICE_X5Y63.XB       Tcinxb                0.216   inst_McBSP_Interface/Daten_Ausgang<1>.Kanaele_0_16
+                                                       Mcompar_i_cmp_lt0000_cy<12>
+    SLICE_X7Y50.SR       net (fanout=18)       1.365   Mcompar_i_cmp_lt0000_cy<12>
+    SLICE_X7Y50.CLK      Tsrck                 0.433   i<4>
+                                                       i_4
+    -------------------------------------------------  ---------------------------
+    Total                                      5.476ns (2.719ns logic, 2.757ns route)
+                                                       (49.7% logic, 50.3% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     14.839ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               i_10 (FF)
+  Destination:          i_4 (FF)
+  Requirement:          20.000ns
+  Data Path Delay:      5.139ns (Levels of Logic = 7)
+  Clock Path Skew:      -0.022ns (0.022 - 0.044)
+  Source Clock:         in_Platinentakt_BUFGP rising at 0.000ns
+  Destination Clock:    in_Platinentakt_BUFGP rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: i_10 to i_4
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X7Y53.XQ       Tcko                  0.495   i<10>
+                                                       i_10
+    SLICE_X5Y57.G1       net (fanout=2)        0.971   i<10>
+    SLICE_X5Y57.COUT     Topcyg                1.009   inst_McBSP_Interface/Daten_Ausgang<1>.Kanaele_1_19
+                                                       Mcompar_i_cmp_lt0000_lut<1>
+                                                       Mcompar_i_cmp_lt0000_cy<1>
+    SLICE_X5Y58.CIN      net (fanout=1)        0.000   Mcompar_i_cmp_lt0000_cy<1>
+    SLICE_X5Y58.COUT     Tbyp                  0.130   inst_McBSP_Interface/Daten_Ausgang<1>.Kanaele_0_19
+                                                       Mcompar_i_cmp_lt0000_cy<2>
+                                                       Mcompar_i_cmp_lt0000_cy<3>
+    SLICE_X5Y59.CIN      net (fanout=1)        0.000   Mcompar_i_cmp_lt0000_cy<3>
+    SLICE_X5Y59.COUT     Tbyp                  0.130   inst_McBSP_Interface/Daten_Ausgang<1>.Kanaele_1_9
+                                                       Mcompar_i_cmp_lt0000_cy<4>
+                                                       Mcompar_i_cmp_lt0000_cy<5>
+    SLICE_X5Y60.CIN      net (fanout=1)        0.000   Mcompar_i_cmp_lt0000_cy<5>
+    SLICE_X5Y60.COUT     Tbyp                  0.130   inst_McBSP_Interface/Daten_Ausgang<1>.Kanaele_4_9
+                                                       Mcompar_i_cmp_lt0000_cy<6>
+                                                       Mcompar_i_cmp_lt0000_cy<7>
+    SLICE_X5Y61.CIN      net (fanout=1)        0.000   Mcompar_i_cmp_lt0000_cy<7>
+    SLICE_X5Y61.COUT     Tbyp                  0.130   inst_McBSP_Interface/Daten_Ausgang<1>.Kanaele_2_11
+                                                       Mcompar_i_cmp_lt0000_cy<8>
+                                                       Mcompar_i_cmp_lt0000_cy<9>
+    SLICE_X5Y62.CIN      net (fanout=1)        0.000   Mcompar_i_cmp_lt0000_cy<9>
+    SLICE_X5Y62.COUT     Tbyp                  0.130   inst_McBSP_Interface/Daten_Ausgang<1>.Kanaele_0_10
+                                                       Mcompar_i_cmp_lt0000_cy<10>
+                                                       Mcompar_i_cmp_lt0000_cy<11>
+    SLICE_X5Y63.CIN      net (fanout=1)        0.000   Mcompar_i_cmp_lt0000_cy<11>
+    SLICE_X5Y63.XB       Tcinxb                0.216   inst_McBSP_Interface/Daten_Ausgang<1>.Kanaele_0_16
+                                                       Mcompar_i_cmp_lt0000_cy<12>
+    SLICE_X7Y50.SR       net (fanout=18)       1.365   Mcompar_i_cmp_lt0000_cy<12>
+    SLICE_X7Y50.CLK      Tsrck                 0.433   i<4>
+                                                       i_4
+    -------------------------------------------------  ---------------------------
+    Total                                      5.139ns (2.803ns logic, 2.336ns route)
+                                                       (54.5% logic, 45.5% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     14.967ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               i_7 (FF)
+  Destination:          i_4 (FF)
+  Requirement:          20.000ns
+  Data Path Delay:      5.030ns (Levels of Logic = 7)
+  Clock Path Skew:      -0.003ns (0.022 - 0.025)
+  Source Clock:         in_Platinentakt_BUFGP rising at 0.000ns
+  Destination Clock:    in_Platinentakt_BUFGP rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: i_7 to i_4
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X7Y51.YQ       Tcko                  0.524   i<6>
+                                                       i_7
+    SLICE_X5Y57.G4       net (fanout=2)        0.833   i<7>
+    SLICE_X5Y57.COUT     Topcyg                1.009   inst_McBSP_Interface/Daten_Ausgang<1>.Kanaele_1_19
+                                                       Mcompar_i_cmp_lt0000_lut<1>
+                                                       Mcompar_i_cmp_lt0000_cy<1>
+    SLICE_X5Y58.CIN      net (fanout=1)        0.000   Mcompar_i_cmp_lt0000_cy<1>
+    SLICE_X5Y58.COUT     Tbyp                  0.130   inst_McBSP_Interface/Daten_Ausgang<1>.Kanaele_0_19
+                                                       Mcompar_i_cmp_lt0000_cy<2>
+                                                       Mcompar_i_cmp_lt0000_cy<3>
+    SLICE_X5Y59.CIN      net (fanout=1)        0.000   Mcompar_i_cmp_lt0000_cy<3>
+    SLICE_X5Y59.COUT     Tbyp                  0.130   inst_McBSP_Interface/Daten_Ausgang<1>.Kanaele_1_9
+                                                       Mcompar_i_cmp_lt0000_cy<4>
+                                                       Mcompar_i_cmp_lt0000_cy<5>
+    SLICE_X5Y60.CIN      net (fanout=1)        0.000   Mcompar_i_cmp_lt0000_cy<5>
+    SLICE_X5Y60.COUT     Tbyp                  0.130   inst_McBSP_Interface/Daten_Ausgang<1>.Kanaele_4_9
+                                                       Mcompar_i_cmp_lt0000_cy<6>
+                                                       Mcompar_i_cmp_lt0000_cy<7>
+    SLICE_X5Y61.CIN      net (fanout=1)        0.000   Mcompar_i_cmp_lt0000_cy<7>
+    SLICE_X5Y61.COUT     Tbyp                  0.130   inst_McBSP_Interface/Daten_Ausgang<1>.Kanaele_2_11
+                                                       Mcompar_i_cmp_lt0000_cy<8>
+                                                       Mcompar_i_cmp_lt0000_cy<9>
+    SLICE_X5Y62.CIN      net (fanout=1)        0.000   Mcompar_i_cmp_lt0000_cy<9>
+    SLICE_X5Y62.COUT     Tbyp                  0.130   inst_McBSP_Interface/Daten_Ausgang<1>.Kanaele_0_10
+                                                       Mcompar_i_cmp_lt0000_cy<10>
+                                                       Mcompar_i_cmp_lt0000_cy<11>
+    SLICE_X5Y63.CIN      net (fanout=1)        0.000   Mcompar_i_cmp_lt0000_cy<11>
+    SLICE_X5Y63.XB       Tcinxb                0.216   inst_McBSP_Interface/Daten_Ausgang<1>.Kanaele_0_16
+                                                       Mcompar_i_cmp_lt0000_cy<12>
+    SLICE_X7Y50.SR       net (fanout=18)       1.365   Mcompar_i_cmp_lt0000_cy<12>
+    SLICE_X7Y50.CLK      Tsrck                 0.433   i<4>
+                                                       i_4
+    -------------------------------------------------  ---------------------------
+    Total                                      5.030ns (2.832ns logic, 2.198ns route)
+                                                       (56.3% logic, 43.7% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point i_5 (SLICE_X7Y50.SR), 26 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     14.502ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               i_11 (FF)
+  Destination:          i_5 (FF)
+  Requirement:          20.000ns
+  Data Path Delay:      5.476ns (Levels of Logic = 6)
+  Clock Path Skew:      -0.022ns (0.022 - 0.044)
+  Source Clock:         in_Platinentakt_BUFGP rising at 0.000ns
+  Destination Clock:    in_Platinentakt_BUFGP rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: i_11 to i_5
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X7Y53.YQ       Tcko                  0.524   i<10>
+                                                       i_11
+    SLICE_X5Y58.F1       net (fanout=2)        1.392   i<11>
+    SLICE_X5Y58.COUT     Topcyf                1.026   inst_McBSP_Interface/Daten_Ausgang<1>.Kanaele_0_19
+                                                       Mcompar_i_cmp_lt0000_lut<2>
+                                                       Mcompar_i_cmp_lt0000_cy<2>
+                                                       Mcompar_i_cmp_lt0000_cy<3>
+    SLICE_X5Y59.CIN      net (fanout=1)        0.000   Mcompar_i_cmp_lt0000_cy<3>
+    SLICE_X5Y59.COUT     Tbyp                  0.130   inst_McBSP_Interface/Daten_Ausgang<1>.Kanaele_1_9
+                                                       Mcompar_i_cmp_lt0000_cy<4>
+                                                       Mcompar_i_cmp_lt0000_cy<5>
+    SLICE_X5Y60.CIN      net (fanout=1)        0.000   Mcompar_i_cmp_lt0000_cy<5>
+    SLICE_X5Y60.COUT     Tbyp                  0.130   inst_McBSP_Interface/Daten_Ausgang<1>.Kanaele_4_9
+                                                       Mcompar_i_cmp_lt0000_cy<6>
+                                                       Mcompar_i_cmp_lt0000_cy<7>
+    SLICE_X5Y61.CIN      net (fanout=1)        0.000   Mcompar_i_cmp_lt0000_cy<7>
+    SLICE_X5Y61.COUT     Tbyp                  0.130   inst_McBSP_Interface/Daten_Ausgang<1>.Kanaele_2_11
+                                                       Mcompar_i_cmp_lt0000_cy<8>
+                                                       Mcompar_i_cmp_lt0000_cy<9>
+    SLICE_X5Y62.CIN      net (fanout=1)        0.000   Mcompar_i_cmp_lt0000_cy<9>
+    SLICE_X5Y62.COUT     Tbyp                  0.130   inst_McBSP_Interface/Daten_Ausgang<1>.Kanaele_0_10
+                                                       Mcompar_i_cmp_lt0000_cy<10>
+                                                       Mcompar_i_cmp_lt0000_cy<11>
+    SLICE_X5Y63.CIN      net (fanout=1)        0.000   Mcompar_i_cmp_lt0000_cy<11>
+    SLICE_X5Y63.XB       Tcinxb                0.216   inst_McBSP_Interface/Daten_Ausgang<1>.Kanaele_0_16
+                                                       Mcompar_i_cmp_lt0000_cy<12>
+    SLICE_X7Y50.SR       net (fanout=18)       1.365   Mcompar_i_cmp_lt0000_cy<12>
+    SLICE_X7Y50.CLK      Tsrck                 0.433   i<4>
+                                                       i_5
+    -------------------------------------------------  ---------------------------
+    Total                                      5.476ns (2.719ns logic, 2.757ns route)
+                                                       (49.7% logic, 50.3% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     14.839ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               i_10 (FF)
+  Destination:          i_5 (FF)
+  Requirement:          20.000ns
+  Data Path Delay:      5.139ns (Levels of Logic = 7)
+  Clock Path Skew:      -0.022ns (0.022 - 0.044)
+  Source Clock:         in_Platinentakt_BUFGP rising at 0.000ns
+  Destination Clock:    in_Platinentakt_BUFGP rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: i_10 to i_5
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X7Y53.XQ       Tcko                  0.495   i<10>
+                                                       i_10
+    SLICE_X5Y57.G1       net (fanout=2)        0.971   i<10>
+    SLICE_X5Y57.COUT     Topcyg                1.009   inst_McBSP_Interface/Daten_Ausgang<1>.Kanaele_1_19
+                                                       Mcompar_i_cmp_lt0000_lut<1>
+                                                       Mcompar_i_cmp_lt0000_cy<1>
+    SLICE_X5Y58.CIN      net (fanout=1)        0.000   Mcompar_i_cmp_lt0000_cy<1>
+    SLICE_X5Y58.COUT     Tbyp                  0.130   inst_McBSP_Interface/Daten_Ausgang<1>.Kanaele_0_19
+                                                       Mcompar_i_cmp_lt0000_cy<2>
+                                                       Mcompar_i_cmp_lt0000_cy<3>
+    SLICE_X5Y59.CIN      net (fanout=1)        0.000   Mcompar_i_cmp_lt0000_cy<3>
+    SLICE_X5Y59.COUT     Tbyp                  0.130   inst_McBSP_Interface/Daten_Ausgang<1>.Kanaele_1_9
+                                                       Mcompar_i_cmp_lt0000_cy<4>
+                                                       Mcompar_i_cmp_lt0000_cy<5>
+    SLICE_X5Y60.CIN      net (fanout=1)        0.000   Mcompar_i_cmp_lt0000_cy<5>
+    SLICE_X5Y60.COUT     Tbyp                  0.130   inst_McBSP_Interface/Daten_Ausgang<1>.Kanaele_4_9
+                                                       Mcompar_i_cmp_lt0000_cy<6>
+                                                       Mcompar_i_cmp_lt0000_cy<7>
+    SLICE_X5Y61.CIN      net (fanout=1)        0.000   Mcompar_i_cmp_lt0000_cy<7>
+    SLICE_X5Y61.COUT     Tbyp                  0.130   inst_McBSP_Interface/Daten_Ausgang<1>.Kanaele_2_11
+                                                       Mcompar_i_cmp_lt0000_cy<8>
+                                                       Mcompar_i_cmp_lt0000_cy<9>
+    SLICE_X5Y62.CIN      net (fanout=1)        0.000   Mcompar_i_cmp_lt0000_cy<9>
+    SLICE_X5Y62.COUT     Tbyp                  0.130   inst_McBSP_Interface/Daten_Ausgang<1>.Kanaele_0_10
+                                                       Mcompar_i_cmp_lt0000_cy<10>
+                                                       Mcompar_i_cmp_lt0000_cy<11>
+    SLICE_X5Y63.CIN      net (fanout=1)        0.000   Mcompar_i_cmp_lt0000_cy<11>
+    SLICE_X5Y63.XB       Tcinxb                0.216   inst_McBSP_Interface/Daten_Ausgang<1>.Kanaele_0_16
+                                                       Mcompar_i_cmp_lt0000_cy<12>
+    SLICE_X7Y50.SR       net (fanout=18)       1.365   Mcompar_i_cmp_lt0000_cy<12>
+    SLICE_X7Y50.CLK      Tsrck                 0.433   i<4>
+                                                       i_5
+    -------------------------------------------------  ---------------------------
+    Total                                      5.139ns (2.803ns logic, 2.336ns route)
+                                                       (54.5% logic, 45.5% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     14.967ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               i_7 (FF)
+  Destination:          i_5 (FF)
+  Requirement:          20.000ns
+  Data Path Delay:      5.030ns (Levels of Logic = 7)
+  Clock Path Skew:      -0.003ns (0.022 - 0.025)
+  Source Clock:         in_Platinentakt_BUFGP rising at 0.000ns
+  Destination Clock:    in_Platinentakt_BUFGP rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: i_7 to i_5
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X7Y51.YQ       Tcko                  0.524   i<6>
+                                                       i_7
+    SLICE_X5Y57.G4       net (fanout=2)        0.833   i<7>
+    SLICE_X5Y57.COUT     Topcyg                1.009   inst_McBSP_Interface/Daten_Ausgang<1>.Kanaele_1_19
+                                                       Mcompar_i_cmp_lt0000_lut<1>
+                                                       Mcompar_i_cmp_lt0000_cy<1>
+    SLICE_X5Y58.CIN      net (fanout=1)        0.000   Mcompar_i_cmp_lt0000_cy<1>
+    SLICE_X5Y58.COUT     Tbyp                  0.130   inst_McBSP_Interface/Daten_Ausgang<1>.Kanaele_0_19
+                                                       Mcompar_i_cmp_lt0000_cy<2>
+                                                       Mcompar_i_cmp_lt0000_cy<3>
+    SLICE_X5Y59.CIN      net (fanout=1)        0.000   Mcompar_i_cmp_lt0000_cy<3>
+    SLICE_X5Y59.COUT     Tbyp                  0.130   inst_McBSP_Interface/Daten_Ausgang<1>.Kanaele_1_9
+                                                       Mcompar_i_cmp_lt0000_cy<4>
+                                                       Mcompar_i_cmp_lt0000_cy<5>
+    SLICE_X5Y60.CIN      net (fanout=1)        0.000   Mcompar_i_cmp_lt0000_cy<5>
+    SLICE_X5Y60.COUT     Tbyp                  0.130   inst_McBSP_Interface/Daten_Ausgang<1>.Kanaele_4_9
+                                                       Mcompar_i_cmp_lt0000_cy<6>
+                                                       Mcompar_i_cmp_lt0000_cy<7>
+    SLICE_X5Y61.CIN      net (fanout=1)        0.000   Mcompar_i_cmp_lt0000_cy<7>
+    SLICE_X5Y61.COUT     Tbyp                  0.130   inst_McBSP_Interface/Daten_Ausgang<1>.Kanaele_2_11
+                                                       Mcompar_i_cmp_lt0000_cy<8>
+                                                       Mcompar_i_cmp_lt0000_cy<9>
+    SLICE_X5Y62.CIN      net (fanout=1)        0.000   Mcompar_i_cmp_lt0000_cy<9>
+    SLICE_X5Y62.COUT     Tbyp                  0.130   inst_McBSP_Interface/Daten_Ausgang<1>.Kanaele_0_10
+                                                       Mcompar_i_cmp_lt0000_cy<10>
+                                                       Mcompar_i_cmp_lt0000_cy<11>
+    SLICE_X5Y63.CIN      net (fanout=1)        0.000   Mcompar_i_cmp_lt0000_cy<11>
+    SLICE_X5Y63.XB       Tcinxb                0.216   inst_McBSP_Interface/Daten_Ausgang<1>.Kanaele_0_16
+                                                       Mcompar_i_cmp_lt0000_cy<12>
+    SLICE_X7Y50.SR       net (fanout=18)       1.365   Mcompar_i_cmp_lt0000_cy<12>
+    SLICE_X7Y50.CLK      Tsrck                 0.433   i<4>
+                                                       i_5
+    -------------------------------------------------  ---------------------------
+    Total                                      5.030ns (2.832ns logic, 2.198ns route)
+                                                       (56.3% logic, 43.7% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point i_6 (SLICE_X7Y51.SR), 26 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     14.502ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               i_11 (FF)
+  Destination:          i_6 (FF)
+  Requirement:          20.000ns
+  Data Path Delay:      5.476ns (Levels of Logic = 6)
+  Clock Path Skew:      -0.022ns (0.022 - 0.044)
+  Source Clock:         in_Platinentakt_BUFGP rising at 0.000ns
+  Destination Clock:    in_Platinentakt_BUFGP rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: i_11 to i_6
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X7Y53.YQ       Tcko                  0.524   i<10>
+                                                       i_11
+    SLICE_X5Y58.F1       net (fanout=2)        1.392   i<11>
+    SLICE_X5Y58.COUT     Topcyf                1.026   inst_McBSP_Interface/Daten_Ausgang<1>.Kanaele_0_19
+                                                       Mcompar_i_cmp_lt0000_lut<2>
+                                                       Mcompar_i_cmp_lt0000_cy<2>
+                                                       Mcompar_i_cmp_lt0000_cy<3>
+    SLICE_X5Y59.CIN      net (fanout=1)        0.000   Mcompar_i_cmp_lt0000_cy<3>
+    SLICE_X5Y59.COUT     Tbyp                  0.130   inst_McBSP_Interface/Daten_Ausgang<1>.Kanaele_1_9
+                                                       Mcompar_i_cmp_lt0000_cy<4>
+                                                       Mcompar_i_cmp_lt0000_cy<5>
+    SLICE_X5Y60.CIN      net (fanout=1)        0.000   Mcompar_i_cmp_lt0000_cy<5>
+    SLICE_X5Y60.COUT     Tbyp                  0.130   inst_McBSP_Interface/Daten_Ausgang<1>.Kanaele_4_9
+                                                       Mcompar_i_cmp_lt0000_cy<6>
+                                                       Mcompar_i_cmp_lt0000_cy<7>
+    SLICE_X5Y61.CIN      net (fanout=1)        0.000   Mcompar_i_cmp_lt0000_cy<7>
+    SLICE_X5Y61.COUT     Tbyp                  0.130   inst_McBSP_Interface/Daten_Ausgang<1>.Kanaele_2_11
+                                                       Mcompar_i_cmp_lt0000_cy<8>
+                                                       Mcompar_i_cmp_lt0000_cy<9>
+    SLICE_X5Y62.CIN      net (fanout=1)        0.000   Mcompar_i_cmp_lt0000_cy<9>
+    SLICE_X5Y62.COUT     Tbyp                  0.130   inst_McBSP_Interface/Daten_Ausgang<1>.Kanaele_0_10
+                                                       Mcompar_i_cmp_lt0000_cy<10>
+                                                       Mcompar_i_cmp_lt0000_cy<11>
+    SLICE_X5Y63.CIN      net (fanout=1)        0.000   Mcompar_i_cmp_lt0000_cy<11>
+    SLICE_X5Y63.XB       Tcinxb                0.216   inst_McBSP_Interface/Daten_Ausgang<1>.Kanaele_0_16
+                                                       Mcompar_i_cmp_lt0000_cy<12>
+    SLICE_X7Y51.SR       net (fanout=18)       1.365   Mcompar_i_cmp_lt0000_cy<12>
+    SLICE_X7Y51.CLK      Tsrck                 0.433   i<6>
+                                                       i_6
+    -------------------------------------------------  ---------------------------
+    Total                                      5.476ns (2.719ns logic, 2.757ns route)
+                                                       (49.7% logic, 50.3% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     14.839ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               i_10 (FF)
+  Destination:          i_6 (FF)
+  Requirement:          20.000ns
+  Data Path Delay:      5.139ns (Levels of Logic = 7)
+  Clock Path Skew:      -0.022ns (0.022 - 0.044)
+  Source Clock:         in_Platinentakt_BUFGP rising at 0.000ns
+  Destination Clock:    in_Platinentakt_BUFGP rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: i_10 to i_6
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X7Y53.XQ       Tcko                  0.495   i<10>
+                                                       i_10
+    SLICE_X5Y57.G1       net (fanout=2)        0.971   i<10>
+    SLICE_X5Y57.COUT     Topcyg                1.009   inst_McBSP_Interface/Daten_Ausgang<1>.Kanaele_1_19
+                                                       Mcompar_i_cmp_lt0000_lut<1>
+                                                       Mcompar_i_cmp_lt0000_cy<1>
+    SLICE_X5Y58.CIN      net (fanout=1)        0.000   Mcompar_i_cmp_lt0000_cy<1>
+    SLICE_X5Y58.COUT     Tbyp                  0.130   inst_McBSP_Interface/Daten_Ausgang<1>.Kanaele_0_19
+                                                       Mcompar_i_cmp_lt0000_cy<2>
+                                                       Mcompar_i_cmp_lt0000_cy<3>
+    SLICE_X5Y59.CIN      net (fanout=1)        0.000   Mcompar_i_cmp_lt0000_cy<3>
+    SLICE_X5Y59.COUT     Tbyp                  0.130   inst_McBSP_Interface/Daten_Ausgang<1>.Kanaele_1_9
+                                                       Mcompar_i_cmp_lt0000_cy<4>
+                                                       Mcompar_i_cmp_lt0000_cy<5>
+    SLICE_X5Y60.CIN      net (fanout=1)        0.000   Mcompar_i_cmp_lt0000_cy<5>
+    SLICE_X5Y60.COUT     Tbyp                  0.130   inst_McBSP_Interface/Daten_Ausgang<1>.Kanaele_4_9
+                                                       Mcompar_i_cmp_lt0000_cy<6>
+                                                       Mcompar_i_cmp_lt0000_cy<7>
+    SLICE_X5Y61.CIN      net (fanout=1)        0.000   Mcompar_i_cmp_lt0000_cy<7>
+    SLICE_X5Y61.COUT     Tbyp                  0.130   inst_McBSP_Interface/Daten_Ausgang<1>.Kanaele_2_11
+                                                       Mcompar_i_cmp_lt0000_cy<8>
+                                                       Mcompar_i_cmp_lt0000_cy<9>
+    SLICE_X5Y62.CIN      net (fanout=1)        0.000   Mcompar_i_cmp_lt0000_cy<9>
+    SLICE_X5Y62.COUT     Tbyp                  0.130   inst_McBSP_Interface/Daten_Ausgang<1>.Kanaele_0_10
+                                                       Mcompar_i_cmp_lt0000_cy<10>
+                                                       Mcompar_i_cmp_lt0000_cy<11>
+    SLICE_X5Y63.CIN      net (fanout=1)        0.000   Mcompar_i_cmp_lt0000_cy<11>
+    SLICE_X5Y63.XB       Tcinxb                0.216   inst_McBSP_Interface/Daten_Ausgang<1>.Kanaele_0_16
+                                                       Mcompar_i_cmp_lt0000_cy<12>
+    SLICE_X7Y51.SR       net (fanout=18)       1.365   Mcompar_i_cmp_lt0000_cy<12>
+    SLICE_X7Y51.CLK      Tsrck                 0.433   i<6>
+                                                       i_6
+    -------------------------------------------------  ---------------------------
+    Total                                      5.139ns (2.803ns logic, 2.336ns route)
+                                                       (54.5% logic, 45.5% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     14.970ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               i_7 (FF)
+  Destination:          i_6 (FF)
+  Requirement:          20.000ns
+  Data Path Delay:      5.030ns (Levels of Logic = 7)
+  Clock Path Skew:      0.000ns
+  Source Clock:         in_Platinentakt_BUFGP rising at 0.000ns
+  Destination Clock:    in_Platinentakt_BUFGP rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: i_7 to i_6
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X7Y51.YQ       Tcko                  0.524   i<6>
+                                                       i_7
+    SLICE_X5Y57.G4       net (fanout=2)        0.833   i<7>
+    SLICE_X5Y57.COUT     Topcyg                1.009   inst_McBSP_Interface/Daten_Ausgang<1>.Kanaele_1_19
+                                                       Mcompar_i_cmp_lt0000_lut<1>
+                                                       Mcompar_i_cmp_lt0000_cy<1>
+    SLICE_X5Y58.CIN      net (fanout=1)        0.000   Mcompar_i_cmp_lt0000_cy<1>
+    SLICE_X5Y58.COUT     Tbyp                  0.130   inst_McBSP_Interface/Daten_Ausgang<1>.Kanaele_0_19
+                                                       Mcompar_i_cmp_lt0000_cy<2>
+                                                       Mcompar_i_cmp_lt0000_cy<3>
+    SLICE_X5Y59.CIN      net (fanout=1)        0.000   Mcompar_i_cmp_lt0000_cy<3>
+    SLICE_X5Y59.COUT     Tbyp                  0.130   inst_McBSP_Interface/Daten_Ausgang<1>.Kanaele_1_9
+                                                       Mcompar_i_cmp_lt0000_cy<4>
+                                                       Mcompar_i_cmp_lt0000_cy<5>
+    SLICE_X5Y60.CIN      net (fanout=1)        0.000   Mcompar_i_cmp_lt0000_cy<5>
+    SLICE_X5Y60.COUT     Tbyp                  0.130   inst_McBSP_Interface/Daten_Ausgang<1>.Kanaele_4_9
+                                                       Mcompar_i_cmp_lt0000_cy<6>
+                                                       Mcompar_i_cmp_lt0000_cy<7>
+    SLICE_X5Y61.CIN      net (fanout=1)        0.000   Mcompar_i_cmp_lt0000_cy<7>
+    SLICE_X5Y61.COUT     Tbyp                  0.130   inst_McBSP_Interface/Daten_Ausgang<1>.Kanaele_2_11
+                                                       Mcompar_i_cmp_lt0000_cy<8>
+                                                       Mcompar_i_cmp_lt0000_cy<9>
+    SLICE_X5Y62.CIN      net (fanout=1)        0.000   Mcompar_i_cmp_lt0000_cy<9>
+    SLICE_X5Y62.COUT     Tbyp                  0.130   inst_McBSP_Interface/Daten_Ausgang<1>.Kanaele_0_10
+                                                       Mcompar_i_cmp_lt0000_cy<10>
+                                                       Mcompar_i_cmp_lt0000_cy<11>
+    SLICE_X5Y63.CIN      net (fanout=1)        0.000   Mcompar_i_cmp_lt0000_cy<11>
+    SLICE_X5Y63.XB       Tcinxb                0.216   inst_McBSP_Interface/Daten_Ausgang<1>.Kanaele_0_16
+                                                       Mcompar_i_cmp_lt0000_cy<12>
+    SLICE_X7Y51.SR       net (fanout=18)       1.365   Mcompar_i_cmp_lt0000_cy<12>
+    SLICE_X7Y51.CLK      Tsrck                 0.433   i<6>
+                                                       i_6
+    -------------------------------------------------  ---------------------------
+    Total                                      5.030ns (2.832ns logic, 2.198ns route)
+                                                       (56.3% logic, 43.7% route)
+
+--------------------------------------------------------------------------------
+
+Hold Paths: TS_in_Platinentakt = PERIOD TIMEGRP "in_Platinentakt" 20 ns HIGH 50%;
+--------------------------------------------------------------------------------
+
+Paths for end point out_EsLebt (P94.O1), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      1.109ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               wert (FF)
+  Destination:          out_EsLebt (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      1.083ns (Levels of Logic = 0)
+  Clock Path Skew:      -0.026ns (0.466 - 0.492)
+  Source Clock:         in_Platinentakt_BUFGP rising at 20.000ns
+  Destination Clock:    in_Platinentakt_BUFGP rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path: wert to out_EsLebt
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X6Y62.YQ       Tcko                  0.477   wert
+                                                       wert
+    P94.O1               net (fanout=2)        0.645   wert
+    P94.OTCLK1           Tiocko      (-Th)     0.039   out_EsLebt
+                                                       out_EsLebt
+    -------------------------------------------------  ---------------------------
+    Total                                      1.083ns (0.438ns logic, 0.645ns route)
+                                                       (40.4% logic, 59.6% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point wert (SLICE_X6Y62.BY), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      1.166ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               wert (FF)
+  Destination:          wert (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      1.166ns (Levels of Logic = 0)
+  Clock Path Skew:      0.000ns
+  Source Clock:         in_Platinentakt_BUFGP rising at 20.000ns
+  Destination Clock:    in_Platinentakt_BUFGP rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path: wert to wert
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X6Y62.YQ       Tcko                  0.477   wert
+                                                       wert
+    SLICE_X6Y62.BY       net (fanout=2)        0.552   wert
+    SLICE_X6Y62.CLK      Tckdi       (-Th)    -0.137   wert
+                                                       wert
+    -------------------------------------------------  ---------------------------
+    Total                                      1.166ns (0.614ns logic, 0.552ns route)
+                                                       (52.7% logic, 47.3% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point i_4 (SLICE_X7Y50.F3), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      1.352ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               i_4 (FF)
+  Destination:          i_4 (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      1.352ns (Levels of Logic = 1)
+  Clock Path Skew:      0.000ns
+  Source Clock:         in_Platinentakt_BUFGP rising at 20.000ns
+  Destination Clock:    in_Platinentakt_BUFGP rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path: i_4 to i_4
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X7Y50.XQ       Tcko                  0.396   i<4>
+                                                       i_4
+    SLICE_X7Y50.F3       net (fanout=1)        0.254   i<4>
+    SLICE_X7Y50.CLK      Tckf        (-Th)    -0.702   i<4>
+                                                       i<4>_rt
+                                                       Mcount_i_xor<4>
+                                                       i_4
+    -------------------------------------------------  ---------------------------
+    Total                                      1.352ns (1.098ns logic, 0.254ns route)
+                                                       (81.2% logic, 18.8% route)
+
+--------------------------------------------------------------------------------
+
+Component Switching Limit Checks: TS_in_Platinentakt = PERIOD TIMEGRP "in_Platinentakt" 20 ns HIGH 50%;
+--------------------------------------------------------------------------------
+Slack: 18.672ns (period - (min low pulse limit / (low pulse / period)))
+  Period: 20.000ns
+  Low pulse: 10.000ns
+  Low pulse limit: 0.664ns (Tcl)
+  Physical resource: wert/CLK
+  Logical resource: wert/CK
+  Location pin: SLICE_X6Y62.CLK
+  Clock network: in_Platinentakt_BUFGP
+--------------------------------------------------------------------------------
+Slack: 18.672ns (period - (min high pulse limit / (high pulse / period)))
+  Period: 20.000ns
+  High pulse: 10.000ns
+  High pulse limit: 0.664ns (Tch)
+  Physical resource: wert/CLK
+  Logical resource: wert/CK
+  Location pin: SLICE_X6Y62.CLK
+  Clock network: in_Platinentakt_BUFGP
+--------------------------------------------------------------------------------
+Slack: 18.672ns (period - min period limit)
+  Period: 20.000ns
+  Min period limit: 1.328ns (753.012MHz) (Tcp)
+  Physical resource: wert/CLK
+  Logical resource: wert/CK
+  Location pin: SLICE_X6Y62.CLK
+  Clock network: in_Platinentakt_BUFGP
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: TS_in_AdatTakt = PERIOD TIMEGRP "in_AdatTakt" 81.3802 ns 
+HIGH 50%;
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 18201 paths analyzed, 2161 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
+ Minimum period is  13.354ns.
+--------------------------------------------------------------------------------
+
+Paths for end point inst_ADAT_Enkoder/intern_ADAT_0 (P57.O1), 1305 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     68.026ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               inst_ADAT_Enkoder/BitNummer_Reset_alt (FF)
+  Destination:          inst_ADAT_Enkoder/intern_ADAT_0 (FF)
+  Requirement:          81.380ns
+  Data Path Delay:      13.256ns (Levels of Logic = 8)
+  Clock Path Skew:      -0.098ns (0.553 - 0.651)
+  Source Clock:         in_AdatTakt_IBUF rising at 0.000ns
+  Destination Clock:    in_AdatTakt_IBUF rising at 81.380ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: inst_ADAT_Enkoder/BitNummer_Reset_alt to inst_ADAT_Enkoder/intern_ADAT_0
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X24Y50.YQ      Tcko                  0.596   inst_ADAT_Enkoder/BitNummer_Reset_alt
+                                                       inst_ADAT_Enkoder/BitNummer_Reset_alt
+    SLICE_X27Y53.G1      net (fanout=21)       0.541   inst_ADAT_Enkoder/BitNummer_Reset_alt
+    SLICE_X27Y53.Y       Tilo                  0.561   inst_ADAT_Enkoder/Kanalnummer_2_BRB1
+                                                       inst_ADAT_Enkoder/Mxor_Phase_xor0000_Result1
+    SLICE_X8Y14.G1       net (fanout=308)      4.108   inst_ADAT_Enkoder/BitNummer_Reset_alt_not0001_inv
+    SLICE_X8Y14.F5       Tif5                  0.709   inst_ADAT_Enkoder/Mmux_Daten<0>.Kanaele_mux0001_14_f515
+                                                       inst_ADAT_Enkoder/Mmux_Daten<0>.Kanaele_mux0001_1627
+                                                       inst_ADAT_Enkoder/Mmux_Daten<0>.Kanaele_mux0001_14_f5_14
+    SLICE_X8Y14.FXINA    net (fanout=1)        0.000   inst_ADAT_Enkoder/Mmux_Daten<0>.Kanaele_mux0001_14_f515
+    SLICE_X8Y14.FX       Tinafx                0.200   inst_ADAT_Enkoder/Mmux_Daten<0>.Kanaele_mux0001_14_f515
+                                                       inst_ADAT_Enkoder/Mmux_Daten<0>.Kanaele_mux0001_13_f6_7
+    SLICE_X8Y15.FXINA    net (fanout=1)        0.000   inst_ADAT_Enkoder/Mmux_Daten<0>.Kanaele_mux0001_13_f68
+    SLICE_X8Y15.FX       Tinafx                0.200   inst_ADAT_Enkoder/Mmux_Daten<0>.Kanaele_mux0001_15_f512
+                                                       inst_ADAT_Enkoder/Mmux_Daten<0>.Kanaele_mux0001_12_f7_2
+    SLICE_X9Y13.FXINB    net (fanout=1)        0.000   inst_ADAT_Enkoder/Mmux_Daten<0>.Kanaele_mux0001_12_f73
+    SLICE_X9Y13.Y        Tif6y                 0.239   inst_ADAT_Enkoder/Mmux_Daten<0>.Kanaele_mux0001_10_f82
+                                                       inst_ADAT_Enkoder/Mmux_Daten<0>.Kanaele_mux0001_10_f8_1
+    SLICE_X21Y19.F2      net (fanout=1)        0.862   inst_ADAT_Enkoder/Mmux_Daten<0>.Kanaele_mux0001_10_f82
+    SLICE_X21Y19.X       Tilo                  0.562   inst_ADAT_Dekoder/Out_Daten<0>.Kanaele_5_3
+                                                       inst_ADAT_Enkoder/intern_ADAT_0_mux0000211
+    SLICE_X27Y27.F3      net (fanout=2)        0.852   inst_ADAT_Enkoder/N25
+    SLICE_X27Y27.X       Tif5x                 0.791   inst_McBSP_Interface/TempFiFo<2>
+                                                       inst_ADAT_Enkoder/intern_ADAT_0_mux0000101_G
+                                                       inst_ADAT_Enkoder/intern_ADAT_0_mux0000101
+    SLICE_X29Y26.G1      net (fanout=1)        0.725   inst_ADAT_Enkoder/intern_ADAT_0_mux0000101
+    SLICE_X29Y26.Y       Tilo                  0.561   inst_ADAT_Enkoder/intern_ADAT_0_1
+                                                       inst_ADAT_Enkoder/intern_ADAT_0_mux00001171
+    P57.O1               net (fanout=1)        1.041   inst_ADAT_Enkoder/intern_ADAT_0_mux0000117
+    P57.OTCLK1           Tioock                0.708   out_ADAT<0>
+                                                       inst_ADAT_Enkoder/intern_ADAT_0
+    -------------------------------------------------  ---------------------------
+    Total                                     13.256ns (5.127ns logic, 8.129ns route)
+                                                       (38.7% logic, 61.3% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     68.245ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               inst_ADAT_Enkoder/BitNummer_Reset_alt (FF)
+  Destination:          inst_ADAT_Enkoder/intern_ADAT_0 (FF)
+  Requirement:          81.380ns
+  Data Path Delay:      13.037ns (Levels of Logic = 8)
+  Clock Path Skew:      -0.098ns (0.553 - 0.651)
+  Source Clock:         in_AdatTakt_IBUF rising at 0.000ns
+  Destination Clock:    in_AdatTakt_IBUF rising at 81.380ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: inst_ADAT_Enkoder/BitNummer_Reset_alt to inst_ADAT_Enkoder/intern_ADAT_0
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X24Y50.YQ      Tcko                  0.596   inst_ADAT_Enkoder/BitNummer_Reset_alt
+                                                       inst_ADAT_Enkoder/BitNummer_Reset_alt
+    SLICE_X27Y53.G1      net (fanout=21)       0.541   inst_ADAT_Enkoder/BitNummer_Reset_alt
+    SLICE_X27Y53.Y       Tilo                  0.561   inst_ADAT_Enkoder/Kanalnummer_2_BRB1
+                                                       inst_ADAT_Enkoder/Mxor_Phase_xor0000_Result1
+    SLICE_X8Y14.G1       net (fanout=308)      4.108   inst_ADAT_Enkoder/BitNummer_Reset_alt_not0001_inv
+    SLICE_X8Y14.F5       Tif5                  0.709   inst_ADAT_Enkoder/Mmux_Daten<0>.Kanaele_mux0001_14_f515
+                                                       inst_ADAT_Enkoder/Mmux_Daten<0>.Kanaele_mux0001_1627
+                                                       inst_ADAT_Enkoder/Mmux_Daten<0>.Kanaele_mux0001_14_f5_14
+    SLICE_X8Y14.FXINA    net (fanout=1)        0.000   inst_ADAT_Enkoder/Mmux_Daten<0>.Kanaele_mux0001_14_f515
+    SLICE_X8Y14.FX       Tinafx                0.200   inst_ADAT_Enkoder/Mmux_Daten<0>.Kanaele_mux0001_14_f515
+                                                       inst_ADAT_Enkoder/Mmux_Daten<0>.Kanaele_mux0001_13_f6_7
+    SLICE_X8Y15.FXINA    net (fanout=1)        0.000   inst_ADAT_Enkoder/Mmux_Daten<0>.Kanaele_mux0001_13_f68
+    SLICE_X8Y15.FX       Tinafx                0.200   inst_ADAT_Enkoder/Mmux_Daten<0>.Kanaele_mux0001_15_f512
+                                                       inst_ADAT_Enkoder/Mmux_Daten<0>.Kanaele_mux0001_12_f7_2
+    SLICE_X9Y13.FXINB    net (fanout=1)        0.000   inst_ADAT_Enkoder/Mmux_Daten<0>.Kanaele_mux0001_12_f73
+    SLICE_X9Y13.Y        Tif6y                 0.239   inst_ADAT_Enkoder/Mmux_Daten<0>.Kanaele_mux0001_10_f82
+                                                       inst_ADAT_Enkoder/Mmux_Daten<0>.Kanaele_mux0001_10_f8_1
+    SLICE_X21Y19.F2      net (fanout=1)        0.862   inst_ADAT_Enkoder/Mmux_Daten<0>.Kanaele_mux0001_10_f82
+    SLICE_X21Y19.X       Tilo                  0.562   inst_ADAT_Dekoder/Out_Daten<0>.Kanaele_5_3
+                                                       inst_ADAT_Enkoder/intern_ADAT_0_mux0000211
+    SLICE_X26Y27.F2      net (fanout=2)        0.882   inst_ADAT_Enkoder/N25
+    SLICE_X26Y27.X       Tif5x                 0.853   inst_ADAT_Enkoder/intern_ADAT_0_mux000053
+                                                       inst_ADAT_Enkoder/intern_ADAT_0_mux000053_G
+                                                       inst_ADAT_Enkoder/intern_ADAT_0_mux000053
+    SLICE_X29Y26.G3      net (fanout=1)        0.414   inst_ADAT_Enkoder/intern_ADAT_0_mux000053
+    SLICE_X29Y26.Y       Tilo                  0.561   inst_ADAT_Enkoder/intern_ADAT_0_1
+                                                       inst_ADAT_Enkoder/intern_ADAT_0_mux00001171
+    P57.O1               net (fanout=1)        1.041   inst_ADAT_Enkoder/intern_ADAT_0_mux0000117
+    P57.OTCLK1           Tioock                0.708   out_ADAT<0>
+                                                       inst_ADAT_Enkoder/intern_ADAT_0
+    -------------------------------------------------  ---------------------------
+    Total                                     13.037ns (5.189ns logic, 7.848ns route)
+                                                       (39.8% logic, 60.2% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     68.319ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               inst_ADAT_Enkoder/BitNummer_Reset_alt (FF)
+  Destination:          inst_ADAT_Enkoder/intern_ADAT_0 (FF)
+  Requirement:          81.380ns
+  Data Path Delay:      12.963ns (Levels of Logic = 8)
+  Clock Path Skew:      -0.098ns (0.553 - 0.651)
+  Source Clock:         in_AdatTakt_IBUF rising at 0.000ns
+  Destination Clock:    in_AdatTakt_IBUF rising at 81.380ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: inst_ADAT_Enkoder/BitNummer_Reset_alt to inst_ADAT_Enkoder/intern_ADAT_0
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X24Y50.YQ      Tcko                  0.596   inst_ADAT_Enkoder/BitNummer_Reset_alt
+                                                       inst_ADAT_Enkoder/BitNummer_Reset_alt
+    SLICE_X27Y53.G1      net (fanout=21)       0.541   inst_ADAT_Enkoder/BitNummer_Reset_alt
+    SLICE_X27Y53.Y       Tilo                  0.561   inst_ADAT_Enkoder/Kanalnummer_2_BRB1
+                                                       inst_ADAT_Enkoder/Mxor_Phase_xor0000_Result1
+    SLICE_X9Y14.F2       net (fanout=308)      3.834   inst_ADAT_Enkoder/BitNummer_Reset_alt_not0001_inv
+    SLICE_X9Y14.F5       Tif5                  0.688   inst_ADAT_Enkoder/Mmux_Daten<0>.Kanaele_mux0001_15_f513
+                                                       inst_ADAT_Enkoder/Mmux_Daten<0>.Kanaele_mux0001_1629
+                                                       inst_ADAT_Enkoder/Mmux_Daten<0>.Kanaele_mux0001_15_f5_12
+    SLICE_X9Y14.FXINA    net (fanout=1)        0.000   inst_ADAT_Enkoder/Mmux_Daten<0>.Kanaele_mux0001_15_f513
+    SLICE_X9Y14.FX       Tinafx                0.202   inst_ADAT_Enkoder/Mmux_Daten<0>.Kanaele_mux0001_15_f513
+                                                       inst_ADAT_Enkoder/Mmux_Daten<0>.Kanaele_mux0001_14_f6_3
+    SLICE_X8Y15.FXINB    net (fanout=1)        0.000   inst_ADAT_Enkoder/Mmux_Daten<0>.Kanaele_mux0001_14_f64
+    SLICE_X8Y15.FX       Tinbfx                0.200   inst_ADAT_Enkoder/Mmux_Daten<0>.Kanaele_mux0001_15_f512
+                                                       inst_ADAT_Enkoder/Mmux_Daten<0>.Kanaele_mux0001_12_f7_2
+    SLICE_X9Y13.FXINB    net (fanout=1)        0.000   inst_ADAT_Enkoder/Mmux_Daten<0>.Kanaele_mux0001_12_f73
+    SLICE_X9Y13.Y        Tif6y                 0.239   inst_ADAT_Enkoder/Mmux_Daten<0>.Kanaele_mux0001_10_f82
+                                                       inst_ADAT_Enkoder/Mmux_Daten<0>.Kanaele_mux0001_10_f8_1
+    SLICE_X21Y19.F2      net (fanout=1)        0.862   inst_ADAT_Enkoder/Mmux_Daten<0>.Kanaele_mux0001_10_f82
+    SLICE_X21Y19.X       Tilo                  0.562   inst_ADAT_Dekoder/Out_Daten<0>.Kanaele_5_3
+                                                       inst_ADAT_Enkoder/intern_ADAT_0_mux0000211
+    SLICE_X27Y27.F3      net (fanout=2)        0.852   inst_ADAT_Enkoder/N25
+    SLICE_X27Y27.X       Tif5x                 0.791   inst_McBSP_Interface/TempFiFo<2>
+                                                       inst_ADAT_Enkoder/intern_ADAT_0_mux0000101_G
+                                                       inst_ADAT_Enkoder/intern_ADAT_0_mux0000101
+    SLICE_X29Y26.G1      net (fanout=1)        0.725   inst_ADAT_Enkoder/intern_ADAT_0_mux0000101
+    SLICE_X29Y26.Y       Tilo                  0.561   inst_ADAT_Enkoder/intern_ADAT_0_1
+                                                       inst_ADAT_Enkoder/intern_ADAT_0_mux00001171
+    P57.O1               net (fanout=1)        1.041   inst_ADAT_Enkoder/intern_ADAT_0_mux0000117
+    P57.OTCLK1           Tioock                0.708   out_ADAT<0>
+                                                       inst_ADAT_Enkoder/intern_ADAT_0
+    -------------------------------------------------  ---------------------------
+    Total                                     12.963ns (5.108ns logic, 7.855ns route)
+                                                       (39.4% logic, 60.6% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point inst_ADAT_Enkoder/intern_ADAT_2 (P73.O1), 1305 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     69.108ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               inst_ADAT_Enkoder/BitNummer_Reset_alt (FF)
+  Destination:          inst_ADAT_Enkoder/intern_ADAT_2 (FF)
+  Requirement:          81.380ns
+  Data Path Delay:      12.206ns (Levels of Logic = 8)
+  Clock Path Skew:      -0.066ns (0.423 - 0.489)
+  Source Clock:         in_AdatTakt_IBUF rising at 0.000ns
+  Destination Clock:    in_AdatTakt_IBUF rising at 81.380ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: inst_ADAT_Enkoder/BitNummer_Reset_alt to inst_ADAT_Enkoder/intern_ADAT_2
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X24Y50.YQ      Tcko                  0.596   inst_ADAT_Enkoder/BitNummer_Reset_alt
+                                                       inst_ADAT_Enkoder/BitNummer_Reset_alt
+    SLICE_X21Y48.G4      net (fanout=21)       0.655   inst_ADAT_Enkoder/BitNummer_Reset_alt
+    SLICE_X21Y48.Y       Tilo                  0.561   inst_McBSP_Interface/Daten_Ausgang<2>.Kanaele_0_18
+                                                       inst_ADAT_Enkoder/Kanalnummer_mux0000<1>1
+    SLICE_X29Y36.BX      net (fanout=144)      4.470   inst_ADAT_Enkoder/Madd_Kanalnummer_addsub0000_lut<1>
+    SLICE_X29Y36.F5      Tbxf5                 0.524   inst_ADAT_Enkoder/Mmux_Daten<2>.Kanaele_mux0001_14_f52
+                                                       inst_ADAT_Enkoder/Mmux_Daten<2>.Kanaele_mux0001_14_f5_1
+    SLICE_X29Y36.FXINA   net (fanout=1)        0.000   inst_ADAT_Enkoder/Mmux_Daten<2>.Kanaele_mux0001_14_f52
+    SLICE_X29Y36.FX      Tinafx                0.202   inst_ADAT_Enkoder/Mmux_Daten<2>.Kanaele_mux0001_14_f52
+                                                       inst_ADAT_Enkoder/Mmux_Daten<2>.Kanaele_mux0001_13_f6
+    SLICE_X28Y37.FXINB   net (fanout=1)        0.000   inst_ADAT_Enkoder/Mmux_Daten<2>.Kanaele_mux0001_13_f6
+    SLICE_X28Y37.FX      Tinbfx                0.200   inst_ADAT_Enkoder/Mmux_Daten<2>.Kanaele_mux0001_14_f51
+                                                       inst_ADAT_Enkoder/Mmux_Daten<2>.Kanaele_mux0001_11_f7
+    SLICE_X29Y35.FXINB   net (fanout=1)        0.000   inst_ADAT_Enkoder/Mmux_Daten<2>.Kanaele_mux0001_11_f7
+    SLICE_X29Y35.Y       Tif6y                 0.239   inst_ADAT_Enkoder/Mmux_Daten<2>.Kanaele_mux0001_9_f8
+                                                       inst_ADAT_Enkoder/Mmux_Daten<2>.Kanaele_mux0001_9_f8
+    SLICE_X29Y46.F4      net (fanout=1)        0.528   inst_ADAT_Enkoder/Mmux_Daten<2>.Kanaele_mux0001_9_f8
+    SLICE_X29Y46.X       Tif5x                 0.791   inst_McBSP_Interface/TempFiFo<8>
+                                                       inst_ADAT_Enkoder/Mmux_Daten<2>.Kanaele_mux0001_6
+                                                       inst_ADAT_Enkoder/Mmux_Daten<2>.Kanaele_mux0001_5_f5
+    SLICE_X29Y50.G2      net (fanout=2)        0.310   inst_ADAT_Enkoder/Mmux_Daten<2>.Kanaele_mux0001_5_f5
+    SLICE_X29Y50.X       Tif5x                 0.791   inst_McBSP_Interface/Daten_Ausgang<2>.Kanaele_6_17
+                                                       inst_ADAT_Enkoder/intern_ADAT_2_mux0000101_F
+                                                       inst_ADAT_Enkoder/intern_ADAT_2_mux0000101
+    SLICE_X29Y51.G2      net (fanout=1)        0.075   inst_ADAT_Enkoder/intern_ADAT_2_mux0000101
+    SLICE_X29Y51.Y       Tilo                  0.561   inst_ADAT_Enkoder/intern_ADAT_2_1
+                                                       inst_ADAT_Enkoder/intern_ADAT_2_mux00001171
+    P73.O1               net (fanout=1)        0.995   inst_ADAT_Enkoder/intern_ADAT_2_mux0000117
+    P73.OTCLK1           Tioock                0.708   out_ADAT<2>
+                                                       inst_ADAT_Enkoder/intern_ADAT_2
+    -------------------------------------------------  ---------------------------
+    Total                                     12.206ns (5.173ns logic, 7.033ns route)
+                                                       (42.4% logic, 57.6% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     69.149ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               inst_ADAT_Enkoder/BitNummer_Reset_alt (FF)
+  Destination:          inst_ADAT_Enkoder/intern_ADAT_2 (FF)
+  Requirement:          81.380ns
+  Data Path Delay:      12.165ns (Levels of Logic = 8)
+  Clock Path Skew:      -0.066ns (0.423 - 0.489)
+  Source Clock:         in_AdatTakt_IBUF rising at 0.000ns
+  Destination Clock:    in_AdatTakt_IBUF rising at 81.380ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: inst_ADAT_Enkoder/BitNummer_Reset_alt to inst_ADAT_Enkoder/intern_ADAT_2
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X24Y50.YQ      Tcko                  0.596   inst_ADAT_Enkoder/BitNummer_Reset_alt
+                                                       inst_ADAT_Enkoder/BitNummer_Reset_alt
+    SLICE_X21Y48.G4      net (fanout=21)       0.655   inst_ADAT_Enkoder/BitNummer_Reset_alt
+    SLICE_X21Y48.Y       Tilo                  0.561   inst_McBSP_Interface/Daten_Ausgang<2>.Kanaele_0_18
+                                                       inst_ADAT_Enkoder/Kanalnummer_mux0000<1>1
+    SLICE_X29Y36.BX      net (fanout=144)      4.470   inst_ADAT_Enkoder/Madd_Kanalnummer_addsub0000_lut<1>
+    SLICE_X29Y36.F5      Tbxf5                 0.524   inst_ADAT_Enkoder/Mmux_Daten<2>.Kanaele_mux0001_14_f52
+                                                       inst_ADAT_Enkoder/Mmux_Daten<2>.Kanaele_mux0001_14_f5_1
+    SLICE_X29Y36.FXINA   net (fanout=1)        0.000   inst_ADAT_Enkoder/Mmux_Daten<2>.Kanaele_mux0001_14_f52
+    SLICE_X29Y36.FX      Tinafx                0.202   inst_ADAT_Enkoder/Mmux_Daten<2>.Kanaele_mux0001_14_f52
+                                                       inst_ADAT_Enkoder/Mmux_Daten<2>.Kanaele_mux0001_13_f6
+    SLICE_X28Y37.FXINB   net (fanout=1)        0.000   inst_ADAT_Enkoder/Mmux_Daten<2>.Kanaele_mux0001_13_f6
+    SLICE_X28Y37.FX      Tinbfx                0.200   inst_ADAT_Enkoder/Mmux_Daten<2>.Kanaele_mux0001_14_f51
+                                                       inst_ADAT_Enkoder/Mmux_Daten<2>.Kanaele_mux0001_11_f7
+    SLICE_X29Y35.FXINB   net (fanout=1)        0.000   inst_ADAT_Enkoder/Mmux_Daten<2>.Kanaele_mux0001_11_f7
+    SLICE_X29Y35.Y       Tif6y                 0.239   inst_ADAT_Enkoder/Mmux_Daten<2>.Kanaele_mux0001_9_f8
+                                                       inst_ADAT_Enkoder/Mmux_Daten<2>.Kanaele_mux0001_9_f8
+    SLICE_X29Y46.F4      net (fanout=1)        0.528   inst_ADAT_Enkoder/Mmux_Daten<2>.Kanaele_mux0001_9_f8
+    SLICE_X29Y46.X       Tif5x                 0.791   inst_McBSP_Interface/TempFiFo<8>
+                                                       inst_ADAT_Enkoder/Mmux_Daten<2>.Kanaele_mux0001_6
+                                                       inst_ADAT_Enkoder/Mmux_Daten<2>.Kanaele_mux0001_5_f5
+    SLICE_X28Y50.G3      net (fanout=2)        0.258   inst_ADAT_Enkoder/Mmux_Daten<2>.Kanaele_mux0001_5_f5
+    SLICE_X28Y50.X       Tif5x                 0.853   inst_McBSP_Interface/Daten_Ausgang<2>.Kanaele_2_9
+                                                       inst_ADAT_Enkoder/intern_ADAT_2_mux000053_F
+                                                       inst_ADAT_Enkoder/intern_ADAT_2_mux000053
+    SLICE_X29Y51.G4      net (fanout=1)        0.024   inst_ADAT_Enkoder/intern_ADAT_2_mux000053
+    SLICE_X29Y51.Y       Tilo                  0.561   inst_ADAT_Enkoder/intern_ADAT_2_1
+                                                       inst_ADAT_Enkoder/intern_ADAT_2_mux00001171
+    P73.O1               net (fanout=1)        0.995   inst_ADAT_Enkoder/intern_ADAT_2_mux0000117
+    P73.OTCLK1           Tioock                0.708   out_ADAT<2>
+                                                       inst_ADAT_Enkoder/intern_ADAT_2
+    -------------------------------------------------  ---------------------------
+    Total                                     12.165ns (5.235ns logic, 6.930ns route)
+                                                       (43.0% logic, 57.0% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     69.300ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               inst_ADAT_Enkoder/BitNummer_Reset_alt (FF)
+  Destination:          inst_ADAT_Enkoder/intern_ADAT_2 (FF)
+  Requirement:          81.380ns
+  Data Path Delay:      12.014ns (Levels of Logic = 8)
+  Clock Path Skew:      -0.066ns (0.423 - 0.489)
+  Source Clock:         in_AdatTakt_IBUF rising at 0.000ns
+  Destination Clock:    in_AdatTakt_IBUF rising at 81.380ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: inst_ADAT_Enkoder/BitNummer_Reset_alt to inst_ADAT_Enkoder/intern_ADAT_2
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X24Y50.YQ      Tcko                  0.596   inst_ADAT_Enkoder/BitNummer_Reset_alt
+                                                       inst_ADAT_Enkoder/BitNummer_Reset_alt
+    SLICE_X21Y48.G4      net (fanout=21)       0.655   inst_ADAT_Enkoder/BitNummer_Reset_alt
+    SLICE_X21Y48.Y       Tilo                  0.561   inst_McBSP_Interface/Daten_Ausgang<2>.Kanaele_0_18
+                                                       inst_ADAT_Enkoder/Kanalnummer_mux0000<1>1
+    SLICE_X28Y36.BX      net (fanout=144)      4.243   inst_ADAT_Enkoder/Madd_Kanalnummer_addsub0000_lut<1>
+    SLICE_X28Y36.F5      Tbxf5                 0.561   inst_ADAT_Enkoder/Mmux_Daten<2>.Kanaele_mux0001_13_f52
+                                                       inst_ADAT_Enkoder/Mmux_Daten<2>.Kanaele_mux0001_13_f5_1
+    SLICE_X28Y36.FXINA   net (fanout=1)        0.000   inst_ADAT_Enkoder/Mmux_Daten<2>.Kanaele_mux0001_13_f52
+    SLICE_X28Y36.FX      Tinafx                0.200   inst_ADAT_Enkoder/Mmux_Daten<2>.Kanaele_mux0001_13_f52
+                                                       inst_ADAT_Enkoder/Mmux_Daten<2>.Kanaele_mux0001_12_f6_0
+    SLICE_X28Y37.FXINA   net (fanout=1)        0.000   inst_ADAT_Enkoder/Mmux_Daten<2>.Kanaele_mux0001_12_f61
+    SLICE_X28Y37.FX      Tinafx                0.200   inst_ADAT_Enkoder/Mmux_Daten<2>.Kanaele_mux0001_14_f51
+                                                       inst_ADAT_Enkoder/Mmux_Daten<2>.Kanaele_mux0001_11_f7
+    SLICE_X29Y35.FXINB   net (fanout=1)        0.000   inst_ADAT_Enkoder/Mmux_Daten<2>.Kanaele_mux0001_11_f7
+    SLICE_X29Y35.Y       Tif6y                 0.239   inst_ADAT_Enkoder/Mmux_Daten<2>.Kanaele_mux0001_9_f8
+                                                       inst_ADAT_Enkoder/Mmux_Daten<2>.Kanaele_mux0001_9_f8
+    SLICE_X29Y46.F4      net (fanout=1)        0.528   inst_ADAT_Enkoder/Mmux_Daten<2>.Kanaele_mux0001_9_f8
+    SLICE_X29Y46.X       Tif5x                 0.791   inst_McBSP_Interface/TempFiFo<8>
+                                                       inst_ADAT_Enkoder/Mmux_Daten<2>.Kanaele_mux0001_6
+                                                       inst_ADAT_Enkoder/Mmux_Daten<2>.Kanaele_mux0001_5_f5
+    SLICE_X29Y50.G2      net (fanout=2)        0.310   inst_ADAT_Enkoder/Mmux_Daten<2>.Kanaele_mux0001_5_f5
+    SLICE_X29Y50.X       Tif5x                 0.791   inst_McBSP_Interface/Daten_Ausgang<2>.Kanaele_6_17
+                                                       inst_ADAT_Enkoder/intern_ADAT_2_mux0000101_F
+                                                       inst_ADAT_Enkoder/intern_ADAT_2_mux0000101
+    SLICE_X29Y51.G2      net (fanout=1)        0.075   inst_ADAT_Enkoder/intern_ADAT_2_mux0000101
+    SLICE_X29Y51.Y       Tilo                  0.561   inst_ADAT_Enkoder/intern_ADAT_2_1
+                                                       inst_ADAT_Enkoder/intern_ADAT_2_mux00001171
+    P73.O1               net (fanout=1)        0.995   inst_ADAT_Enkoder/intern_ADAT_2_mux0000117
+    P73.OTCLK1           Tioock                0.708   out_ADAT<2>
+                                                       inst_ADAT_Enkoder/intern_ADAT_2
+    -------------------------------------------------  ---------------------------
+    Total                                     12.014ns (5.208ns logic, 6.806ns route)
+                                                       (43.3% logic, 56.7% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point inst_ADAT_Enkoder/intern_ADAT_1 (P71.O1), 1305 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     69.157ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               inst_ADAT_Enkoder/Kanalnummer_2_BRB3 (FF)
+  Destination:          inst_ADAT_Enkoder/intern_ADAT_1 (FF)
+  Requirement:          81.380ns
+  Data Path Delay:      12.173ns (Levels of Logic = 8)
+  Clock Path Skew:      -0.050ns (0.420 - 0.470)
+  Source Clock:         in_AdatTakt_IBUF rising at 0.000ns
+  Destination Clock:    in_AdatTakt_IBUF rising at 81.380ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: inst_ADAT_Enkoder/Kanalnummer_2_BRB3 to inst_ADAT_Enkoder/intern_ADAT_1
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X23Y49.XQ      Tcko                  0.495   inst_ADAT_Enkoder/Kanalnummer_2_BRB3
+                                                       inst_ADAT_Enkoder/Kanalnummer_2_BRB3
+    SLICE_X23Y52.G1      net (fanout=1)        0.631   inst_ADAT_Enkoder/Kanalnummer_2_BRB3
+    SLICE_X23Y52.Y       Tilo                  0.561   inst_ADAT_Enkoder/Kanalnummer_2_BRB0
+                                                       inst_ADAT_Enkoder/Kanalnummer_mux0003<0>
+    SLICE_X23Y52.F3      net (fanout=1)        0.021   inst_ADAT_Enkoder/Kanalnummer<2>
+    SLICE_X23Y52.X       Tilo                  0.562   inst_ADAT_Enkoder/Kanalnummer_2_BRB0
+                                                       inst_ADAT_Enkoder/Kanalnummer_mux0000<2>1
+    SLICE_X3Y38.BY       net (fanout=72)       3.042   inst_ADAT_Enkoder/Madd_Kanalnummer_addsub0000_lut<2>
+    SLICE_X3Y38.FX       Tbyfx                 0.612   inst_ADAT_Enkoder/Mmux_Daten<1>.Kanaele_mux0001_15_f513
+                                                       inst_ADAT_Enkoder/Mmux_Daten<1>.Kanaele_mux0001_14_f6_3
+    SLICE_X2Y39.FXINB    net (fanout=1)        0.000   inst_ADAT_Enkoder/Mmux_Daten<1>.Kanaele_mux0001_14_f64
+    SLICE_X2Y39.FX       Tinbfx                0.200   inst_ADAT_Enkoder/Mmux_Daten<1>.Kanaele_mux0001_15_f512
+                                                       inst_ADAT_Enkoder/Mmux_Daten<1>.Kanaele_mux0001_12_f7_2
+    SLICE_X3Y37.FXINB    net (fanout=1)        0.000   inst_ADAT_Enkoder/Mmux_Daten<1>.Kanaele_mux0001_12_f73
+    SLICE_X3Y37.Y        Tif6y                 0.239   inst_ADAT_Enkoder/Mmux_Daten<1>.Kanaele_mux0001_10_f82
+                                                       inst_ADAT_Enkoder/Mmux_Daten<1>.Kanaele_mux0001_10_f8_1
+    SLICE_X5Y49.F2       net (fanout=1)        1.015   inst_ADAT_Enkoder/Mmux_Daten<1>.Kanaele_mux0001_10_f82
+    SLICE_X5Y49.X        Tilo                  0.562   inst_McBSP_Interface/Daten_Ausgang<1>.Kanaele_2_12
+                                                       inst_ADAT_Enkoder/intern_ADAT_1_mux0000111
+    SLICE_X22Y50.F4      net (fanout=2)        0.924   inst_ADAT_Enkoder/N26
+    SLICE_X22Y50.X       Tif5x                 0.853   inst_McBSP_Interface/Daten_Ausgang<2>.Kanaele_3_2
+                                                       inst_ADAT_Enkoder/intern_ADAT_1_mux0000101_G
+                                                       inst_ADAT_Enkoder/intern_ADAT_1_mux0000101
+    SLICE_X23Y50.F4      net (fanout=1)        0.022   inst_ADAT_Enkoder/intern_ADAT_1_mux0000101
+    SLICE_X23Y50.X       Tilo                  0.562   inst_ADAT_Enkoder/intern_ADAT_1_1
+                                                       inst_ADAT_Enkoder/intern_ADAT_1_mux00001171
+    P71.O1               net (fanout=1)        1.164   inst_ADAT_Enkoder/intern_ADAT_1_mux0000117
+    P71.OTCLK1           Tioock                0.708   out_ADAT<1>
+                                                       inst_ADAT_Enkoder/intern_ADAT_1
+    -------------------------------------------------  ---------------------------
+    Total                                     12.173ns (5.354ns logic, 6.819ns route)
+                                                       (44.0% logic, 56.0% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     69.158ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               inst_ADAT_Enkoder/Kanalnummer_2_BRB3 (FF)
+  Destination:          inst_ADAT_Enkoder/intern_ADAT_1 (FF)
+  Requirement:          81.380ns
+  Data Path Delay:      12.172ns (Levels of Logic = 8)
+  Clock Path Skew:      -0.050ns (0.420 - 0.470)
+  Source Clock:         in_AdatTakt_IBUF rising at 0.000ns
+  Destination Clock:    in_AdatTakt_IBUF rising at 81.380ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: inst_ADAT_Enkoder/Kanalnummer_2_BRB3 to inst_ADAT_Enkoder/intern_ADAT_1
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X23Y49.XQ      Tcko                  0.495   inst_ADAT_Enkoder/Kanalnummer_2_BRB3
+                                                       inst_ADAT_Enkoder/Kanalnummer_2_BRB3
+    SLICE_X23Y52.G1      net (fanout=1)        0.631   inst_ADAT_Enkoder/Kanalnummer_2_BRB3
+    SLICE_X23Y52.Y       Tilo                  0.561   inst_ADAT_Enkoder/Kanalnummer_2_BRB0
+                                                       inst_ADAT_Enkoder/Kanalnummer_mux0003<0>
+    SLICE_X23Y52.F3      net (fanout=1)        0.021   inst_ADAT_Enkoder/Kanalnummer<2>
+    SLICE_X23Y52.X       Tilo                  0.562   inst_ADAT_Enkoder/Kanalnummer_2_BRB0
+                                                       inst_ADAT_Enkoder/Kanalnummer_mux0000<2>1
+    SLICE_X3Y38.BY       net (fanout=72)       3.042   inst_ADAT_Enkoder/Madd_Kanalnummer_addsub0000_lut<2>
+    SLICE_X3Y38.FX       Tbyfx                 0.612   inst_ADAT_Enkoder/Mmux_Daten<1>.Kanaele_mux0001_15_f513
+                                                       inst_ADAT_Enkoder/Mmux_Daten<1>.Kanaele_mux0001_14_f6_3
+    SLICE_X2Y39.FXINB    net (fanout=1)        0.000   inst_ADAT_Enkoder/Mmux_Daten<1>.Kanaele_mux0001_14_f64
+    SLICE_X2Y39.FX       Tinbfx                0.200   inst_ADAT_Enkoder/Mmux_Daten<1>.Kanaele_mux0001_15_f512
+                                                       inst_ADAT_Enkoder/Mmux_Daten<1>.Kanaele_mux0001_12_f7_2
+    SLICE_X3Y37.FXINB    net (fanout=1)        0.000   inst_ADAT_Enkoder/Mmux_Daten<1>.Kanaele_mux0001_12_f73
+    SLICE_X3Y37.Y        Tif6y                 0.239   inst_ADAT_Enkoder/Mmux_Daten<1>.Kanaele_mux0001_10_f82
+                                                       inst_ADAT_Enkoder/Mmux_Daten<1>.Kanaele_mux0001_10_f8_1
+    SLICE_X5Y49.F2       net (fanout=1)        1.015   inst_ADAT_Enkoder/Mmux_Daten<1>.Kanaele_mux0001_10_f82
+    SLICE_X5Y49.X        Tilo                  0.562   inst_McBSP_Interface/Daten_Ausgang<1>.Kanaele_2_12
+                                                       inst_ADAT_Enkoder/intern_ADAT_1_mux0000111
+    SLICE_X22Y51.F4      net (fanout=2)        0.924   inst_ADAT_Enkoder/N26
+    SLICE_X22Y51.X       Tif5x                 0.853   inst_McBSP_Interface/Daten_Ausgang<2>.Kanaele_0_12
+                                                       inst_ADAT_Enkoder/intern_ADAT_1_mux000053_G
+                                                       inst_ADAT_Enkoder/intern_ADAT_1_mux000053
+    SLICE_X23Y50.F3      net (fanout=1)        0.021   inst_ADAT_Enkoder/intern_ADAT_1_mux000053
+    SLICE_X23Y50.X       Tilo                  0.562   inst_ADAT_Enkoder/intern_ADAT_1_1
+                                                       inst_ADAT_Enkoder/intern_ADAT_1_mux00001171
+    P71.O1               net (fanout=1)        1.164   inst_ADAT_Enkoder/intern_ADAT_1_mux0000117
+    P71.OTCLK1           Tioock                0.708   out_ADAT<1>
+                                                       inst_ADAT_Enkoder/intern_ADAT_1
+    -------------------------------------------------  ---------------------------
+    Total                                     12.172ns (5.354ns logic, 6.818ns route)
+                                                       (44.0% logic, 56.0% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     69.171ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               inst_ADAT_Enkoder/Kanalnummer_2_BRB1 (FF)
+  Destination:          inst_ADAT_Enkoder/intern_ADAT_1 (FF)
+  Requirement:          81.380ns
+  Data Path Delay:      12.144ns (Levels of Logic = 8)
+  Clock Path Skew:      -0.065ns (0.420 - 0.485)
+  Source Clock:         in_AdatTakt_IBUF rising at 0.000ns
+  Destination Clock:    in_AdatTakt_IBUF rising at 81.380ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: inst_ADAT_Enkoder/Kanalnummer_2_BRB1 to inst_ADAT_Enkoder/intern_ADAT_1
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X27Y53.YQ      Tcko                  0.524   inst_ADAT_Enkoder/Kanalnummer_2_BRB1
+                                                       inst_ADAT_Enkoder/Kanalnummer_2_BRB1
+    SLICE_X23Y52.G3      net (fanout=1)        0.573   inst_ADAT_Enkoder/Kanalnummer_2_BRB1
+    SLICE_X23Y52.Y       Tilo                  0.561   inst_ADAT_Enkoder/Kanalnummer_2_BRB0
+                                                       inst_ADAT_Enkoder/Kanalnummer_mux0003<0>
+    SLICE_X23Y52.F3      net (fanout=1)        0.021   inst_ADAT_Enkoder/Kanalnummer<2>
+    SLICE_X23Y52.X       Tilo                  0.562   inst_ADAT_Enkoder/Kanalnummer_2_BRB0
+                                                       inst_ADAT_Enkoder/Kanalnummer_mux0000<2>1
+    SLICE_X3Y38.BY       net (fanout=72)       3.042   inst_ADAT_Enkoder/Madd_Kanalnummer_addsub0000_lut<2>
+    SLICE_X3Y38.FX       Tbyfx                 0.612   inst_ADAT_Enkoder/Mmux_Daten<1>.Kanaele_mux0001_15_f513
+                                                       inst_ADAT_Enkoder/Mmux_Daten<1>.Kanaele_mux0001_14_f6_3
+    SLICE_X2Y39.FXINB    net (fanout=1)        0.000   inst_ADAT_Enkoder/Mmux_Daten<1>.Kanaele_mux0001_14_f64
+    SLICE_X2Y39.FX       Tinbfx                0.200   inst_ADAT_Enkoder/Mmux_Daten<1>.Kanaele_mux0001_15_f512
+                                                       inst_ADAT_Enkoder/Mmux_Daten<1>.Kanaele_mux0001_12_f7_2
+    SLICE_X3Y37.FXINB    net (fanout=1)        0.000   inst_ADAT_Enkoder/Mmux_Daten<1>.Kanaele_mux0001_12_f73
+    SLICE_X3Y37.Y        Tif6y                 0.239   inst_ADAT_Enkoder/Mmux_Daten<1>.Kanaele_mux0001_10_f82
+                                                       inst_ADAT_Enkoder/Mmux_Daten<1>.Kanaele_mux0001_10_f8_1
+    SLICE_X5Y49.F2       net (fanout=1)        1.015   inst_ADAT_Enkoder/Mmux_Daten<1>.Kanaele_mux0001_10_f82
+    SLICE_X5Y49.X        Tilo                  0.562   inst_McBSP_Interface/Daten_Ausgang<1>.Kanaele_2_12
+                                                       inst_ADAT_Enkoder/intern_ADAT_1_mux0000111
+    SLICE_X22Y50.F4      net (fanout=2)        0.924   inst_ADAT_Enkoder/N26
+    SLICE_X22Y50.X       Tif5x                 0.853   inst_McBSP_Interface/Daten_Ausgang<2>.Kanaele_3_2
+                                                       inst_ADAT_Enkoder/intern_ADAT_1_mux0000101_G
+                                                       inst_ADAT_Enkoder/intern_ADAT_1_mux0000101
+    SLICE_X23Y50.F4      net (fanout=1)        0.022   inst_ADAT_Enkoder/intern_ADAT_1_mux0000101
+    SLICE_X23Y50.X       Tilo                  0.562   inst_ADAT_Enkoder/intern_ADAT_1_1
+                                                       inst_ADAT_Enkoder/intern_ADAT_1_mux00001171
+    P71.O1               net (fanout=1)        1.164   inst_ADAT_Enkoder/intern_ADAT_1_mux0000117
+    P71.OTCLK1           Tioock                0.708   out_ADAT<1>
+                                                       inst_ADAT_Enkoder/intern_ADAT_1
+    -------------------------------------------------  ---------------------------
+    Total                                     12.144ns (5.383ns logic, 6.761ns route)
+                                                       (44.3% logic, 55.7% route)
+
+--------------------------------------------------------------------------------
+
+Hold Paths: TS_in_AdatTakt = PERIOD TIMEGRP "in_AdatTakt" 81.3802 ns HIGH 50%;
+--------------------------------------------------------------------------------
+
+Paths for end point inst_ADAT_Dekoder/Mshreg_ADAT_Frame_2_125/SRL16E (SLICE_X16Y33.BX), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      0.517ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               inst_ADAT_Dekoder/ADAT_Frame_2_127 (FF)
+  Destination:          inst_ADAT_Dekoder/Mshreg_ADAT_Frame_2_125/SRL16E (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      0.539ns (Levels of Logic = 1)
+  Clock Path Skew:      0.022ns (0.100 - 0.078)
+  Source Clock:         Debug_AdatTakt_OBUF rising at 81.380ns
+  Destination Clock:    Debug_AdatTakt_OBUF rising at 81.380ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path: inst_ADAT_Dekoder/ADAT_Frame_2_127 to inst_ADAT_Dekoder/Mshreg_ADAT_Frame_2_125/SRL16E
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X17Y34.XQ      Tcko                  0.396   inst_ADAT_Dekoder/ADAT_Frame_2_127
+                                                       inst_ADAT_Dekoder/ADAT_Frame_2_127
+    SLICE_X16Y33.BX      net (fanout=2)        0.295   inst_ADAT_Dekoder/ADAT_Frame_2_127
+    SLICE_X16Y33.CLK     Tdh         (-Th)     0.152   inst_ADAT_Dekoder/ADAT_Frame_2_125
+                                                       inst_ADAT_Dekoder/Mshreg_ADAT_Frame_2_125/SRL16E
+    -------------------------------------------------  ---------------------------
+    Total                                      0.539ns (0.244ns logic, 0.295ns route)
+                                                       (45.3% logic, 54.7% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point inst_ADAT_Dekoder/Mshreg_ADAT_Frame_1_80/SRL16E (SLICE_X2Y5.BY), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      0.519ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               inst_ADAT_Dekoder/ADAT_Frame_1_82 (FF)
+  Destination:          inst_ADAT_Dekoder/Mshreg_ADAT_Frame_1_80/SRL16E (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      0.592ns (Levels of Logic = 1)
+  Clock Path Skew:      0.073ns (0.435 - 0.362)
+  Source Clock:         Debug_AdatTakt_OBUF rising at 81.380ns
+  Destination Clock:    Debug_AdatTakt_OBUF rising at 81.380ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path: inst_ADAT_Dekoder/ADAT_Frame_1_82 to inst_ADAT_Dekoder/Mshreg_ADAT_Frame_1_80/SRL16E
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X1Y4.XQ        Tcko                  0.396   inst_ADAT_Dekoder/ADAT_Frame_1_82
+                                                       inst_ADAT_Dekoder/ADAT_Frame_1_82
+    SLICE_X2Y5.BY        net (fanout=2)        0.326   inst_ADAT_Dekoder/ADAT_Frame_1_82
+    SLICE_X2Y5.CLK       Tdh         (-Th)     0.130   inst_ADAT_Dekoder/ADAT_Frame_0_173
+                                                       inst_ADAT_Dekoder/Mshreg_ADAT_Frame_1_80/SRL16E
+    -------------------------------------------------  ---------------------------
+    Total                                      0.592ns (0.266ns logic, 0.326ns route)
+                                                       (44.9% logic, 55.1% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point inst_ADAT_Dekoder/Mshreg_ADAT_Frame_2_40/SRL16E (SLICE_X12Y47.BY), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      0.535ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               inst_ADAT_Dekoder/ADAT_Frame_2_42 (FF)
+  Destination:          inst_ADAT_Dekoder/Mshreg_ADAT_Frame_2_40/SRL16E (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      0.578ns (Levels of Logic = 1)
+  Clock Path Skew:      0.043ns (0.262 - 0.219)
+  Source Clock:         Debug_AdatTakt_OBUF rising at 81.380ns
+  Destination Clock:    Debug_AdatTakt_OBUF rising at 81.380ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path: inst_ADAT_Dekoder/ADAT_Frame_2_42 to inst_ADAT_Dekoder/Mshreg_ADAT_Frame_2_40/SRL16E
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X11Y46.XQ      Tcko                  0.396   inst_ADAT_Dekoder/ADAT_Frame_2_42
+                                                       inst_ADAT_Dekoder/ADAT_Frame_2_42
+    SLICE_X12Y47.BY      net (fanout=2)        0.312   inst_ADAT_Dekoder/ADAT_Frame_2_42
+    SLICE_X12Y47.CLK     Tdh         (-Th)     0.130   inst_ADAT_Dekoder/ADAT_Frame_1_70
+                                                       inst_ADAT_Dekoder/Mshreg_ADAT_Frame_2_40/SRL16E
+    -------------------------------------------------  ---------------------------
+    Total                                      0.578ns (0.266ns logic, 0.312ns route)
+                                                       (46.0% logic, 54.0% route)
+
+--------------------------------------------------------------------------------
+
+Component Switching Limit Checks: TS_in_AdatTakt = PERIOD TIMEGRP "in_AdatTakt" 81.3802 ns HIGH 50%;
+--------------------------------------------------------------------------------
+Slack: 78.884ns (period - (min low pulse limit / (low pulse / period)))
+  Period: 81.380ns
+  Low pulse: 40.690ns
+  Low pulse limit: 1.248ns (Trpw)
+  Physical resource: out_ADAT<0>/SR
+  Logical resource: inst_ADAT_Enkoder/intern_ADAT_0/SR
+  Location pin: P57.SR
+  Clock network: inst_ADAT_Enkoder/intern_ADAT_0_mux000030
+--------------------------------------------------------------------------------
+Slack: 78.884ns (period - (min high pulse limit / (high pulse / period)))
+  Period: 81.380ns
+  High pulse: 40.690ns
+  High pulse limit: 1.248ns (Trpw)
+  Physical resource: out_ADAT<0>/SR
+  Logical resource: inst_ADAT_Enkoder/intern_ADAT_0/SR
+  Location pin: P57.SR
+  Clock network: inst_ADAT_Enkoder/intern_ADAT_0_mux000030
+--------------------------------------------------------------------------------
+Slack: 78.884ns (period - (min low pulse limit / (low pulse / period)))
+  Period: 81.380ns
+  Low pulse: 40.690ns
+  Low pulse limit: 1.248ns (Trpw)
+  Physical resource: out_ADAT<1>/SR
+  Logical resource: inst_ADAT_Enkoder/intern_ADAT_1/SR
+  Location pin: P71.SR
+  Clock network: inst_ADAT_Enkoder/intern_ADAT_1_mux000030
+--------------------------------------------------------------------------------
+
+
+All constraints were met.
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Clock to Setup on destination clock in_AdatTakt
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+in_AdatTakt    |   13.354|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock in_Platinentakt
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+in_Platinentakt|    5.498|         |         |         |
+---------------+---------+---------+---------+---------+
+
+
+Timing summary:
+---------------
+
+Timing errors: 0  Score: 0  (Setup/Max: 0, Hold: 0)
+
+Constraints cover 19615 paths, 0 nets, and 4356 connections
+
+Design statistics:
+   Minimum period:  13.354ns{1}   (Maximum frequency:  74.884MHz)
+
+
+------------------------------------Footnotes-----------------------------------
+1)  The minimum period statistic assumes all single cycle delays.
+
+Analysis completed Tue Jun 24 15:17:38 2014 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 122 MB
+
+
+

@@ -1,0 +1,1308 @@
+Release 14.7 Map P.20131013 (nt)
+Xilinx Mapping Report File for Design 'ADAT_Out_Test'
+
+Design Information
+------------------
+Command Line   : map -intstyle ise -p xc3s200a-vq100-5 -timing -logic_opt on -ol
+high -xe n -t 1 -register_duplication on -cm speed -detail -ir off
+-ignore_keep_hierarchy -pr b -bp -power off -o ADAT_Out_Test_map.ncd
+ADAT_Out_Test.ngd ADAT_Out_Test.pcf 
+Target Device  : xc3s200a
+Target Package : vq100
+Target Speed   : -5
+Mapper Version : spartan3a -- $Revision: 1.55 $
+Mapped Date    : Tue May 13 15:26:04 2014
+
+Design Summary
+--------------
+Number of errors:      0
+Number of warnings:  197
+Logic Utilization:
+  Number of Slice Flip Flops:           193 out of   3,584    5%
+  Number of 4 input LUTs:               588 out of   3,584   16%
+Logic Distribution:
+  Number of occupied Slices:            434 out of   1,792   24%
+    Number of Slices containing only related logic:     434 out of     434 100%
+    Number of Slices containing unrelated logic:          0 out of     434   0%
+      *See NOTES below for an explanation of the effects of unrelated logic.
+  Total Number of 4 input LUTs:         757 out of   3,584   21%
+    Number used as logic:               588
+    Number used as a route-thru:        169
+
+  The Slice Logic Distribution report is not meaningful if the design is
+  over-mapped for a non-slice resource or if Placement fails.
+
+  Number of bonded IOBs:                 11 out of      68   16%
+    IOB Flip Flops:                       8
+  Number of BUFGMUXs:                     3 out of      24   12%
+  Number of DCMs:                         1 out of       4   25%
+  Number of RAMB16BWEs:                   5 out of      16   31%
+
+Average Fanout of Non-Clock Nets:                2.80
+
+Peak Memory Usage:  234 MB
+Total REAL time to MAP completion:  13 secs 
+Total CPU time to MAP completion:   12 secs 
+
+Table of Contents
+-----------------
+Section 1 - Errors
+Section 2 - Warnings
+Section 3 - Informational
+Section 4 - Removed Logic Summary
+Section 5 - Removed Logic
+Section 6 - IOB Properties
+Section 7 - RPMs
+Section 8 - Guide Report
+Section 9 - Area Group and Partition Summary
+Section 10 - Timing Report
+Section 11 - Configuration String Information
+Section 12 - Control Set Information
+Section 13 - Utilization by Hierarchy
+
+Section 1 - Errors
+------------------
+
+Section 2 - Warnings
+--------------------
+WARNING:Pack:2780 - The register "INTERVALL_10" has the property IOB=TRUE, but
+   it did not join an IO component because it is not connected to any IO
+   element.
+WARNING:Pack:2780 - The register "INTERVALL_11" has the property IOB=TRUE, but
+   it did not join an IO component because it is not connected to any IO
+   element.
+WARNING:Pack:2780 - The register "INTERVALL_20" has the property IOB=TRUE, but
+   it did not join an IO component because it is not connected to any IO
+   element.
+WARNING:Pack:2780 - The register "INTERVALL_12" has the property IOB=TRUE, but
+   it did not join an IO component because it is not connected to any IO
+   element.
+WARNING:Pack:2780 - The register "INTERVALL_21" has the property IOB=TRUE, but
+   it did not join an IO component because it is not connected to any IO
+   element.
+WARNING:Pack:2780 - The register "INTERVALL_13" has the property IOB=TRUE, but
+   it did not join an IO component because it is not connected to any IO
+   element.
+WARNING:Pack:2780 - The register "INTERVALL_30" has the property IOB=TRUE, but
+   it did not join an IO component because it is not connected to any IO
+   element.
+WARNING:Pack:2780 - The register "INTERVALL_22" has the property IOB=TRUE, but
+   it did not join an IO component because it is not connected to any IO
+   element.
+WARNING:Pack:2780 - The register "INTERVALL_14" has the property IOB=TRUE, but
+   it did not join an IO component because it is not connected to any IO
+   element.
+WARNING:Pack:2780 - The register "INTERVALL_31" has the property IOB=TRUE, but
+   it did not join an IO component because it is not connected to any IO
+   element.
+WARNING:Pack:2780 - The register "INTERVALL_23" has the property IOB=TRUE, but
+   it did not join an IO component because it is not connected to any IO
+   element.
+WARNING:Pack:2780 - The register "INTERVALL_15" has the property IOB=TRUE, but
+   it did not join an IO component because it is not connected to any IO
+   element.
+WARNING:Pack:2780 - The register "INTERVALL_24" has the property IOB=TRUE, but
+   it did not join an IO component because it is not connected to any IO
+   element.
+WARNING:Pack:2780 - The register "INTERVALL_16" has the property IOB=TRUE, but
+   it did not join an IO component because it is not connected to any IO
+   element.
+WARNING:Pack:2780 - The register "INTERVALL_25" has the property IOB=TRUE, but
+   it did not join an IO component because it is not connected to any IO
+   element.
+WARNING:Pack:2780 - The register "INTERVALL_17" has the property IOB=TRUE, but
+   it did not join an IO component because it is not connected to any IO
+   element.
+WARNING:Pack:2780 - The register "INTERVALL_26" has the property IOB=TRUE, but
+   it did not join an IO component because it is not connected to any IO
+   element.
+WARNING:Pack:2780 - The register "INTERVALL_18" has the property IOB=TRUE, but
+   it did not join an IO component because it is not connected to any IO
+   element.
+WARNING:Pack:2780 - The register "INTERVALL_27" has the property IOB=TRUE, but
+   it did not join an IO component because it is not connected to any IO
+   element.
+WARNING:Pack:2780 - The register "INTERVALL_19" has the property IOB=TRUE, but
+   it did not join an IO component because it is not connected to any IO
+   element.
+WARNING:Pack:2780 - The register "INTERVALL_28" has the property IOB=TRUE, but
+   it did not join an IO component because it is not connected to any IO
+   element.
+WARNING:Pack:2780 - The register "INTERVALL_29" has the property IOB=TRUE, but
+   it did not join an IO component because it is not connected to any IO
+   element.
+WARNING:Pack:2780 - The register "I_0" has the property IOB=TRUE, but it did not
+   join an IO component because it is not connected to any IO element.
+WARNING:Pack:2780 - The register "I_1" has the property IOB=TRUE, but it did not
+   join an IO component because it is not connected to any IO element.
+WARNING:Pack:2780 - The register "I_2" has the property IOB=TRUE, but it did not
+   join an IO component because it is not connected to any IO element.
+WARNING:Pack:2780 - The register "I_3" has the property IOB=TRUE, but it did not
+   join an IO component because it is not connected to any IO element.
+WARNING:Pack:2780 - The register "I_4" has the property IOB=TRUE, but it did not
+   join an IO component because it is not connected to any IO element.
+WARNING:Pack:2780 - The register "I_5" has the property IOB=TRUE, but it did not
+   join an IO component because it is not connected to any IO element.
+WARNING:Pack:2780 - The register "I_6" has the property IOB=TRUE, but it did not
+   join an IO component because it is not connected to any IO element.
+WARNING:Pack:2780 - The register "I_7" has the property IOB=TRUE, but it did not
+   join an IO component because it is not connected to any IO element.
+WARNING:Pack:2780 - The register "I_8" has the property IOB=TRUE, but it did not
+   join an IO component because it is not connected to any IO element.
+WARNING:Pack:2780 - The register "I_9" has the property IOB=TRUE, but it did not
+   join an IO component because it is not connected to any IO element.
+WARNING:Pack:2780 - The register "INST_DYNAMISCHERADATPUFFER/BR_ADDR_0" has the
+   property IOB=TRUE, but it did not join an IO component because it is not
+   connected to any IO element.
+WARNING:Pack:2780 - The register "PUFFERDATEN<1>.KANAELE_1_0" has the property
+   IOB=TRUE, but it did not join an IO component because it is not connected to
+   any IO element.
+WARNING:Pack:2780 - The register "PUFFERDATEN<1>.KANAELE_1_1" has the property
+   IOB=TRUE, but it did not join an IO component because it is not connected to
+   any IO element.
+WARNING:Pack:2780 - The register "PUFFERDATEN<1>.KANAELE_1_2" has the property
+   IOB=TRUE, but it did not join an IO component because it is not connected to
+   any IO element.
+WARNING:Pack:2780 - The register "PUFFERDATEN<1>.KANAELE_1_3" has the property
+   IOB=TRUE, but it did not join an IO component because it is not connected to
+   any IO element.
+WARNING:Pack:2780 - The register "PUFFERDATEN<1>.KANAELE_1_4" has the property
+   IOB=TRUE, but it did not join an IO component because it is not connected to
+   any IO element.
+WARNING:Pack:2780 - The register "PUFFERDATEN<1>.KANAELE_1_5" has the property
+   IOB=TRUE, but it did not join an IO component because it is not connected to
+   any IO element.
+WARNING:Pack:2780 - The register "PUFFERDATEN<1>.KANAELE_1_6" has the property
+   IOB=TRUE, but it did not join an IO component because it is not connected to
+   any IO element.
+WARNING:Pack:2780 - The register "PUFFERDATEN<1>.KANAELE_1_7" has the property
+   IOB=TRUE, but it did not join an IO component because it is not connected to
+   any IO element.
+WARNING:Pack:2780 - The register "PUFFERDATEN<1>.KANAELE_1_8" has the property
+   IOB=TRUE, but it did not join an IO component because it is not connected to
+   any IO element.
+WARNING:Pack:2780 - The register "PUFFERDATEN<1>.KANAELE_1_9" has the property
+   IOB=TRUE, but it did not join an IO component because it is not connected to
+   any IO element.
+WARNING:Pack:2780 - The register "INST_DYNAMISCHERADATPUFFER/BR_CLK" has the
+   property IOB=TRUE, but it did not join an IO component because it is not
+   connected to any IO element.
+WARNING:Pack:2780 - The register "I0_0" has the property IOB=TRUE, but it did
+   not join an IO component because it is not connected to any IO element.
+WARNING:Pack:2780 - The register "I0_1" has the property IOB=TRUE, but it did
+   not join an IO component because it is not connected to any IO element.
+WARNING:Pack:2780 - The register "I0_2" has the property IOB=TRUE, but it did
+   not join an IO component because it is not connected to any IO element.
+WARNING:Pack:2780 - The register "I0_3" has the property IOB=TRUE, but it did
+   not join an IO component because it is not connected to any IO element.
+WARNING:Pack:2780 - The register "I0_4" has the property IOB=TRUE, but it did
+   not join an IO component because it is not connected to any IO element.
+WARNING:Pack:2780 - The register "I0_5" has the property IOB=TRUE, but it did
+   not join an IO component because it is not connected to any IO element.
+WARNING:Pack:2780 - The register "I0_6" has the property IOB=TRUE, but it did
+   not join an IO component because it is not connected to any IO element.
+WARNING:Pack:2780 - The register "I0_7" has the property IOB=TRUE, but it did
+   not join an IO component because it is not connected to any IO element.
+WARNING:Pack:2780 - The register "I0_8" has the property IOB=TRUE, but it did
+   not join an IO component because it is not connected to any IO element.
+WARNING:Pack:2780 - The register "I0_9" has the property IOB=TRUE, but it did
+   not join an IO component because it is not connected to any IO element.
+WARNING:Pack:2780 - The register "I_10" has the property IOB=TRUE, but it did
+   not join an IO component because it is not connected to any IO element.
+WARNING:Pack:2780 - The register "I_11" has the property IOB=TRUE, but it did
+   not join an IO component because it is not connected to any IO element.
+WARNING:Pack:2780 - The register "I_20" has the property IOB=TRUE, but it did
+   not join an IO component because it is not connected to any IO element.
+WARNING:Pack:2780 - The register "I_12" has the property IOB=TRUE, but it did
+   not join an IO component because it is not connected to any IO element.
+WARNING:Pack:2780 - The register "I_21" has the property IOB=TRUE, but it did
+   not join an IO component because it is not connected to any IO element.
+WARNING:Pack:2780 - The register "I_13" has the property IOB=TRUE, but it did
+   not join an IO component because it is not connected to any IO element.
+WARNING:Pack:2780 - The register "I_30" has the property IOB=TRUE, but it did
+   not join an IO component because it is not connected to any IO element.
+WARNING:Pack:2780 - The register "I_22" has the property IOB=TRUE, but it did
+   not join an IO component because it is not connected to any IO element.
+WARNING:Pack:2780 - The register "I_14" has the property IOB=TRUE, but it did
+   not join an IO component because it is not connected to any IO element.
+WARNING:Pack:2780 - The register "I_31" has the property IOB=TRUE, but it did
+   not join an IO component because it is not connected to any IO element.
+WARNING:Pack:2780 - The register "I_23" has the property IOB=TRUE, but it did
+   not join an IO component because it is not connected to any IO element.
+WARNING:Pack:2780 - The register "I_15" has the property IOB=TRUE, but it did
+   not join an IO component because it is not connected to any IO element.
+WARNING:Pack:2780 - The register "I_24" has the property IOB=TRUE, but it did
+   not join an IO component because it is not connected to any IO element.
+WARNING:Pack:2780 - The register "I_16" has the property IOB=TRUE, but it did
+   not join an IO component because it is not connected to any IO element.
+WARNING:Pack:2780 - The register "I_25" has the property IOB=TRUE, but it did
+   not join an IO component because it is not connected to any IO element.
+WARNING:Pack:2780 - The register "I_17" has the property IOB=TRUE, but it did
+   not join an IO component because it is not connected to any IO element.
+WARNING:Pack:2780 - The register "I_26" has the property IOB=TRUE, but it did
+   not join an IO component because it is not connected to any IO element.
+WARNING:Pack:2780 - The register "I_18" has the property IOB=TRUE, but it did
+   not join an IO component because it is not connected to any IO element.
+WARNING:Pack:2780 - The register "I_27" has the property IOB=TRUE, but it did
+   not join an IO component because it is not connected to any IO element.
+WARNING:Pack:2780 - The register "I_19" has the property IOB=TRUE, but it did
+   not join an IO component because it is not connected to any IO element.
+WARNING:Pack:2780 - The register "I_28" has the property IOB=TRUE, but it did
+   not join an IO component because it is not connected to any IO element.
+WARNING:Pack:2780 - The register "I_29" has the property IOB=TRUE, but it did
+   not join an IO component because it is not connected to any IO element.
+WARNING:Pack:2780 - The register "INST_DYNAMISCHERADATPUFFER/BR_WE" has the
+   property IOB=TRUE, but it did not join an IO component because it is not
+   connected to any IO element.
+WARNING:Pack:2780 - The register "STEIGEND_0" has the property IOB=TRUE, but it
+   did not join an IO component because it is not connected to any IO element.
+WARNING:Pack:2780 - The register "PUFFERDATEN<1>.KANAELE_1_10" has the property
+   IOB=TRUE, but it did not join an IO component because it is not connected to
+   any IO element.
+WARNING:Pack:2780 - The register "PUFFERDATEN<1>.KANAELE_1_11" has the property
+   IOB=TRUE, but it did not join an IO component because it is not connected to
+   any IO element.
+WARNING:Pack:2780 - The register "PUFFERDATEN<1>.KANAELE_1_20" has the property
+   IOB=TRUE, but it did not join an IO component because it is not connected to
+   any IO element.
+WARNING:Pack:2780 - The register "PUFFERDATEN<1>.KANAELE_1_12" has the property
+   IOB=TRUE, but it did not join an IO component because it is not connected to
+   any IO element.
+WARNING:Pack:2780 - The register "PUFFERDATEN<1>.KANAELE_1_21" has the property
+   IOB=TRUE, but it did not join an IO component because it is not connected to
+   any IO element.
+WARNING:Pack:2780 - The register "PUFFERDATEN<1>.KANAELE_1_13" has the property
+   IOB=TRUE, but it did not join an IO component because it is not connected to
+   any IO element.
+WARNING:Pack:2780 - The register "PUFFERDATEN<1>.KANAELE_1_22" has the property
+   IOB=TRUE, but it did not join an IO component because it is not connected to
+   any IO element.
+WARNING:Pack:2780 - The register "PUFFERDATEN<1>.KANAELE_1_14" has the property
+   IOB=TRUE, but it did not join an IO component because it is not connected to
+   any IO element.
+WARNING:Pack:2780 - The register "PUFFERDATEN<1>.KANAELE_1_23" has the property
+   IOB=TRUE, but it did not join an IO component because it is not connected to
+   any IO element.
+WARNING:Pack:2780 - The register "PUFFERDATEN<1>.KANAELE_1_15" has the property
+   IOB=TRUE, but it did not join an IO component because it is not connected to
+   any IO element.
+WARNING:Pack:2780 - The register "PUFFERDATEN<1>.KANAELE_1_16" has the property
+   IOB=TRUE, but it did not join an IO component because it is not connected to
+   any IO element.
+WARNING:Pack:2780 - The register "PUFFERDATEN<1>.KANAELE_1_17" has the property
+   IOB=TRUE, but it did not join an IO component because it is not connected to
+   any IO element.
+WARNING:Pack:2780 - The register "PUFFERDATEN<1>.KANAELE_1_18" has the property
+   IOB=TRUE, but it did not join an IO component because it is not connected to
+   any IO element.
+WARNING:Pack:2780 - The register "PUFFERDATEN<1>.KANAELE_1_19" has the property
+   IOB=TRUE, but it did not join an IO component because it is not connected to
+   any IO element.
+WARNING:Pack:2780 - The register "I0_10" has the property IOB=TRUE, but it did
+   not join an IO component because it is not connected to any IO element.
+WARNING:Pack:2780 - The register "I0_11" has the property IOB=TRUE, but it did
+   not join an IO component because it is not connected to any IO element.
+WARNING:Pack:2780 - The register "I0_20" has the property IOB=TRUE, but it did
+   not join an IO component because it is not connected to any IO element.
+WARNING:Pack:2780 - The register "I0_12" has the property IOB=TRUE, but it did
+   not join an IO component because it is not connected to any IO element.
+WARNING:Pack:2780 - The register "I0_21" has the property IOB=TRUE, but it did
+   not join an IO component because it is not connected to any IO element.
+WARNING:Pack:2780 - The register "I0_13" has the property IOB=TRUE, but it did
+   not join an IO component because it is not connected to any IO element.
+WARNING:Pack:2780 - The register "I0_30" has the property IOB=TRUE, but it did
+   not join an IO component because it is not connected to any IO element.
+WARNING:Pack:2780 - The register "I0_22" has the property IOB=TRUE, but it did
+   not join an IO component because it is not connected to any IO element.
+WARNING:Pack:2780 - The register "I0_14" has the property IOB=TRUE, but it did
+   not join an IO component because it is not connected to any IO element.
+WARNING:Pack:2780 - The register "I0_31" has the property IOB=TRUE, but it did
+   not join an IO component because it is not connected to any IO element.
+WARNING:Pack:2780 - The register "I0_23" has the property IOB=TRUE, but it did
+   not join an IO component because it is not connected to any IO element.
+WARNING:Pack:2780 - The register "I0_15" has the property IOB=TRUE, but it did
+   not join an IO component because it is not connected to any IO element.
+WARNING:Pack:2780 - The register "I0_24" has the property IOB=TRUE, but it did
+   not join an IO component because it is not connected to any IO element.
+WARNING:Pack:2780 - The register "I0_16" has the property IOB=TRUE, but it did
+   not join an IO component because it is not connected to any IO element.
+WARNING:Pack:2780 - The register "I0_25" has the property IOB=TRUE, but it did
+   not join an IO component because it is not connected to any IO element.
+WARNING:Pack:2780 - The register "I0_17" has the property IOB=TRUE, but it did
+   not join an IO component because it is not connected to any IO element.
+WARNING:Pack:2780 - The register "I0_26" has the property IOB=TRUE, but it did
+   not join an IO component because it is not connected to any IO element.
+WARNING:Pack:2780 - The register "I0_18" has the property IOB=TRUE, but it did
+   not join an IO component because it is not connected to any IO element.
+WARNING:Pack:2780 - The register "I0_27" has the property IOB=TRUE, but it did
+   not join an IO component because it is not connected to any IO element.
+WARNING:Pack:2780 - The register "I0_19" has the property IOB=TRUE, but it did
+   not join an IO component because it is not connected to any IO element.
+WARNING:Pack:2780 - The register "I0_28" has the property IOB=TRUE, but it did
+   not join an IO component because it is not connected to any IO element.
+WARNING:Pack:2780 - The register "I0_29" has the property IOB=TRUE, but it did
+   not join an IO component because it is not connected to any IO element.
+WARNING:Pack:2780 - The register "INST_ADAT_ENKODER/PHASE_0" has the property
+   IOB=TRUE, but it did not join an IO component because it is not connected to
+   any IO element.
+WARNING:Pack:2780 - The register "INST_ADAT_ENKODER/PHASE_1" has the property
+   IOB=TRUE, but it did not join an IO component because it is not connected to
+   any IO element.
+WARNING:Pack:2780 - The register "INST_ADAT_ENKODER/PHASE_2" has the property
+   IOB=TRUE, but it did not join an IO component because it is not connected to
+   any IO element.
+WARNING:Pack:2780 - The register "PUFFERDATEN<0>.KANAELE_0_0" has the property
+   IOB=TRUE, but it did not join an IO component because it is not connected to
+   any IO element.
+WARNING:Pack:2780 - The register "PUFFERDATEN<0>.KANAELE_0_1" has the property
+   IOB=TRUE, but it did not join an IO component because it is not connected to
+   any IO element.
+WARNING:Pack:2780 - The register "PUFFERDATEN<0>.KANAELE_0_2" has the property
+   IOB=TRUE, but it did not join an IO component because it is not connected to
+   any IO element.
+WARNING:Pack:2780 - The register "PUFFERDATEN<0>.KANAELE_0_3" has the property
+   IOB=TRUE, but it did not join an IO component because it is not connected to
+   any IO element.
+WARNING:Pack:2780 - The register "PUFFERDATEN<0>.KANAELE_0_4" has the property
+   IOB=TRUE, but it did not join an IO component because it is not connected to
+   any IO element.
+WARNING:Pack:2780 - The register "PUFFERDATEN<0>.KANAELE_0_5" has the property
+   IOB=TRUE, but it did not join an IO component because it is not connected to
+   any IO element.
+WARNING:Pack:2780 - The register "PUFFERDATEN<0>.KANAELE_0_6" has the property
+   IOB=TRUE, but it did not join an IO component because it is not connected to
+   any IO element.
+WARNING:Pack:2780 - The register "PUFFERDATEN<0>.KANAELE_0_7" has the property
+   IOB=TRUE, but it did not join an IO component because it is not connected to
+   any IO element.
+WARNING:Pack:2780 - The register "PUFFERDATEN<0>.KANAELE_0_8" has the property
+   IOB=TRUE, but it did not join an IO component because it is not connected to
+   any IO element.
+WARNING:Pack:2780 - The register "PUFFERDATEN<0>.KANAELE_0_9" has the property
+   IOB=TRUE, but it did not join an IO component because it is not connected to
+   any IO element.
+WARNING:Pack:2780 - The register "INST_ADAT_ENKODER/LOKALEBITNUMMER_0" has the
+   property IOB=TRUE, but it did not join an IO component because it is not
+   connected to any IO element.
+WARNING:Pack:2780 - The register "INST_ADAT_ENKODER/LOKALEBITNUMMER_1" has the
+   property IOB=TRUE, but it did not join an IO component because it is not
+   connected to any IO element.
+WARNING:Pack:2780 - The register "INST_ADAT_ENKODER/LOKALEBITNUMMER_2" has the
+   property IOB=TRUE, but it did not join an IO component because it is not
+   connected to any IO element.
+WARNING:Pack:2780 - The register "INST_ADAT_ENKODER/LOKALEBITNUMMER_3" has the
+   property IOB=TRUE, but it did not join an IO component because it is not
+   connected to any IO element.
+WARNING:Pack:2780 - The register "INST_ADAT_ENKODER/LOKALEBITNUMMER_4" has the
+   property IOB=TRUE, but it did not join an IO component because it is not
+   connected to any IO element.
+WARNING:Pack:2780 - The register
+   "INST_DYNAMISCHERADATPUFFER/AUSGANG_NAECHSTERDATENSATZ_ALT" has the property
+   IOB=TRUE, but it did not join an IO component because it is not connected to
+   any IO element.
+WARNING:Pack:2780 - The register "INST_ADAT_ENKODER/BITNUMMER_0" has the
+   property IOB=TRUE, but it did not join an IO component because it is not
+   connected to any IO element.
+WARNING:Pack:2780 - The register "INST_ADAT_ENKODER/BITNUMMER_1" has the
+   property IOB=TRUE, but it did not join an IO component because it is not
+   connected to any IO element.
+WARNING:Pack:2780 - The register "INST_ADAT_ENKODER/BITNUMMER_2" has the
+   property IOB=TRUE, but it did not join an IO component because it is not
+   connected to any IO element.
+WARNING:Pack:2780 - The register "INST_ADAT_ENKODER/BITNUMMER_3" has the
+   property IOB=TRUE, but it did not join an IO component because it is not
+   connected to any IO element.
+WARNING:Pack:2780 - The register "INST_ADAT_ENKODER/BITNUMMER_4" has the
+   property IOB=TRUE, but it did not join an IO component because it is not
+   connected to any IO element.
+WARNING:Pack:2780 - The register "INST_ADAT_ENKODER/BITNUMMER_5" has the
+   property IOB=TRUE, but it did not join an IO component because it is not
+   connected to any IO element.
+WARNING:Pack:2780 - The register "INST_ADAT_ENKODER/BITNUMMER_6" has the
+   property IOB=TRUE, but it did not join an IO component because it is not
+   connected to any IO element.
+WARNING:Pack:2780 - The register "INST_ADAT_ENKODER/BITNUMMER_7" has the
+   property IOB=TRUE, but it did not join an IO component because it is not
+   connected to any IO element.
+WARNING:Pack:2780 - The register
+   "INST_DYNAMISCHERADATPUFFER/VERZOEGERTERRAMTAKT_NOETIG_0" has the property
+   IOB=TRUE, but it did not join an IO component because it is not connected to
+   any IO element.
+WARNING:Pack:2780 - The register "INST_DYNAMISCHERADATPUFFER/ANFANG_0" has the
+   property IOB=TRUE, but it did not join an IO component because it is not
+   connected to any IO element.
+WARNING:Pack:2780 - The register "BITS_0" has the property IOB=TRUE, but it did
+   not join an IO component because it is not connected to any IO element.
+WARNING:Pack:2780 - The register "BITS_1" has the property IOB=TRUE, but it did
+   not join an IO component because it is not connected to any IO element.
+WARNING:Pack:2780 - The register "BITS_2" has the property IOB=TRUE, but it did
+   not join an IO component because it is not connected to any IO element.
+WARNING:Pack:2780 - The register "BITS_3" has the property IOB=TRUE, but it did
+   not join an IO component because it is not connected to any IO element.
+WARNING:Pack:2780 - The register "BITS_4" has the property IOB=TRUE, but it did
+   not join an IO component because it is not connected to any IO element.
+WARNING:Pack:2780 - The register "BITS_5" has the property IOB=TRUE, but it did
+   not join an IO component because it is not connected to any IO element.
+WARNING:Pack:2780 - The register "BITS_6" has the property IOB=TRUE, but it did
+   not join an IO component because it is not connected to any IO element.
+WARNING:Pack:2780 - The register "BITS_7" has the property IOB=TRUE, but it did
+   not join an IO component because it is not connected to any IO element.
+WARNING:Pack:2780 - The register "OUT_ESLEBT_1" has the property IOB=TRUE, but
+   it did not join an IO component because it is not connected to any IO
+   element.
+WARNING:Pack:2780 - The register "INST_DYNAMISCHERADATPUFFER/LAENGE_0" has the
+   property IOB=TRUE, but it did not join an IO component because it is not
+   connected to any IO element.
+WARNING:Pack:2780 - The register "INST_DYNAMISCHERADATPUFFER/LAENGE_1" has the
+   property IOB=TRUE, but it did not join an IO component because it is not
+   connected to any IO element.
+WARNING:Pack:2780 - The register "INST_ADAT_ENKODER/INTERN_ADAT_0_1" has the
+   property IOB=TRUE, but it did not join an IO component because it is not
+   connected to any IO element.
+WARNING:Pack:2780 - The register "INST_ADAT_ENKODER/INTERN_ADAT_1_1" has the
+   property IOB=TRUE, but it did not join an IO component because it is not
+   connected to any IO element.
+WARNING:Pack:2780 - The register "INST_ADAT_ENKODER/INTERN_ADAT_2_1" has the
+   property IOB=TRUE, but it did not join an IO component because it is not
+   connected to any IO element.
+WARNING:Pack:2780 - The register "INTERVALL_0" has the property IOB=TRUE, but it
+   did not join an IO component because it is not connected to any IO element.
+WARNING:Pack:2780 - The register "INTERVALL_1" has the property IOB=TRUE, but it
+   did not join an IO component because it is not connected to any IO element.
+WARNING:Pack:2780 - The register "INTERVALL_2" has the property IOB=TRUE, but it
+   did not join an IO component because it is not connected to any IO element.
+WARNING:Pack:2780 - The register "INTERVALL_3" has the property IOB=TRUE, but it
+   did not join an IO component because it is not connected to any IO element.
+WARNING:Pack:2780 - The register "INTERVALL_4" has the property IOB=TRUE, but it
+   did not join an IO component because it is not connected to any IO element.
+WARNING:Pack:2780 - The register "INTERVALL_5" has the property IOB=TRUE, but it
+   did not join an IO component because it is not connected to any IO element.
+WARNING:Pack:2780 - The register "INTERVALL_6" has the property IOB=TRUE, but it
+   did not join an IO component because it is not connected to any IO element.
+WARNING:Pack:2780 - The register "INTERVALL_7" has the property IOB=TRUE, but it
+   did not join an IO component because it is not connected to any IO element.
+WARNING:Pack:2780 - The register "INTERVALL_8" has the property IOB=TRUE, but it
+   did not join an IO component because it is not connected to any IO element.
+WARNING:Pack:2780 - The register "WERT_0" has the property IOB=TRUE, but it did
+   not join an IO component because it is not connected to any IO element.
+WARNING:Pack:2780 - The register "INTERVALL_9" has the property IOB=TRUE, but it
+   did not join an IO component because it is not connected to any IO element.
+WARNING:Pack:2780 - The register "WERT_1" has the property IOB=TRUE, but it did
+   not join an IO component because it is not connected to any IO element.
+WARNING:Pack:2780 - The register "WERT_2" has the property IOB=TRUE, but it did
+   not join an IO component because it is not connected to any IO element.
+WARNING:Pack:2780 - The register "WERT_3" has the property IOB=TRUE, but it did
+   not join an IO component because it is not connected to any IO element.
+WARNING:Pack:2780 - The register "WERT_4" has the property IOB=TRUE, but it did
+   not join an IO component because it is not connected to any IO element.
+WARNING:Pack:2780 - The register "WERT_5" has the property IOB=TRUE, but it did
+   not join an IO component because it is not connected to any IO element.
+WARNING:Pack:2780 - The register "INST_ADAT_ENKODER/UEBERNOMMEN" has the
+   property IOB=TRUE, but it did not join an IO component because it is not
+   connected to any IO element.
+WARNING:Pack:2780 - The register "PUFFERDATEN<0>.KANAELE_0_10" has the property
+   IOB=TRUE, but it did not join an IO component because it is not connected to
+   any IO element.
+WARNING:Pack:2780 - The register "PUFFERDATEN<0>.KANAELE_0_11" has the property
+   IOB=TRUE, but it did not join an IO component because it is not connected to
+   any IO element.
+WARNING:Pack:2780 - The register "PUFFERDATEN<0>.KANAELE_0_20" has the property
+   IOB=TRUE, but it did not join an IO component because it is not connected to
+   any IO element.
+WARNING:Pack:2780 - The register "PUFFERDATEN<0>.KANAELE_0_12" has the property
+   IOB=TRUE, but it did not join an IO component because it is not connected to
+   any IO element.
+WARNING:Pack:2780 - The register "PUFFERDATEN<0>.KANAELE_0_21" has the property
+   IOB=TRUE, but it did not join an IO component because it is not connected to
+   any IO element.
+WARNING:Pack:2780 - The register "PUFFERDATEN<0>.KANAELE_0_13" has the property
+   IOB=TRUE, but it did not join an IO component because it is not connected to
+   any IO element.
+WARNING:Pack:2780 - The register "PUFFERDATEN<0>.KANAELE_0_22" has the property
+   IOB=TRUE, but it did not join an IO component because it is not connected to
+   any IO element.
+WARNING:Pack:2780 - The register "PUFFERDATEN<0>.KANAELE_0_14" has the property
+   IOB=TRUE, but it did not join an IO component because it is not connected to
+   any IO element.
+WARNING:Pack:2780 - The register "PUFFERDATEN<0>.KANAELE_0_23" has the property
+   IOB=TRUE, but it did not join an IO component because it is not connected to
+   any IO element.
+WARNING:Pack:2780 - The register "PUFFERDATEN<0>.KANAELE_0_15" has the property
+   IOB=TRUE, but it did not join an IO component because it is not connected to
+   any IO element.
+WARNING:Pack:2780 - The register "PUFFERDATEN<0>.KANAELE_0_16" has the property
+   IOB=TRUE, but it did not join an IO component because it is not connected to
+   any IO element.
+WARNING:Pack:2780 - The register "PUFFERDATEN<0>.KANAELE_0_17" has the property
+   IOB=TRUE, but it did not join an IO component because it is not connected to
+   any IO element.
+WARNING:Pack:2780 - The register "PUFFERDATEN<0>.KANAELE_0_18" has the property
+   IOB=TRUE, but it did not join an IO component because it is not connected to
+   any IO element.
+WARNING:Pack:2780 - The register "PUFFERDATEN<0>.KANAELE_0_19" has the property
+   IOB=TRUE, but it did not join an IO component because it is not connected to
+   any IO element.
+WARNING:Pack:2780 - The register
+   "INST_DYNAMISCHERADATPUFFER/EINGANG_NEUEDATENANGEKOMMEN_ALT" has the property
+   IOB=TRUE, but it did not join an IO component because it is not connected to
+   any IO element.
+WARNING:Pack:2780 - The register "INST_ADAT_ENKODER/KANALNUMMER_0" has the
+   property IOB=TRUE, but it did not join an IO component because it is not
+   connected to any IO element.
+WARNING:Pack:2780 - The register "INST_ADAT_ENKODER/KANALNUMMER_1" has the
+   property IOB=TRUE, but it did not join an IO component because it is not
+   connected to any IO element.
+WARNING:Pack:2780 - The register "INST_ADAT_ENKODER/KANALNUMMER_2" has the
+   property IOB=TRUE, but it did not join an IO component because it is not
+   connected to any IO element.
+WARNING:Pack:2780 - The register "PUFFERNEUEDATEN" has the property IOB=TRUE,
+   but it did not join an IO component because it is not connected to any IO
+   element.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA12> on
+   block:<INST_DYNAMISCHERADATPUFFER/INSTADAT_BLOCKRAM/MRAM_RAM17>:<RAMB16BWE_RA
+   MB16BWE>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA13> on
+   block:<INST_DYNAMISCHERADATPUFFER/INSTADAT_BLOCKRAM/MRAM_RAM17>:<RAMB16BWE_RA
+   MB16BWE>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA14> on
+   block:<INST_DYNAMISCHERADATPUFFER/INSTADAT_BLOCKRAM/MRAM_RAM17>:<RAMB16BWE_RA
+   MB16BWE>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA15> on
+   block:<INST_DYNAMISCHERADATPUFFER/INSTADAT_BLOCKRAM/MRAM_RAM17>:<RAMB16BWE_RA
+   MB16BWE>.
+
+Section 3 - Informational
+-------------------------
+INFO:MapLib:562 - No environment variables are currently set.
+INFO:LIT:244 - All of the single ended outputs in this design are using slew
+   rate limited output drivers. The delay on speed critical single ended outputs
+   can be dramatically reduced by designating them as fast outputs.
+INFO:Pack:1716 - Initializing temperature to 85.000 Celsius. (default - Range:
+   0.000 to 85.000 Celsius)
+INFO:Pack:1720 - Initializing voltage to 1.140 Volts. (default - Range: 1.140 to
+   1.260 Volts)
+INFO:Place:834 - Only a subset of IOs are locked. Out of 7 IOs, 5 are locked and
+   2 are not locked. If you would like to print the names of these IOs, please
+   set the environment variable XIL_PAR_DESIGN_CHECK_VERBOSE to 1. 
+INFO:Pack:1650 - Map created a placed design.
+INFO:PhysDesignRules:772 - To achieve optimal frequency synthesis performance
+   with the CLKFX and CLKFX180 outputs of the DCM comp
+   INST_ENKODERTESTCLOCK/DCM_SP_INST, consult the device Interactive Data Sheet.
+
+Section 4 - Removed Logic Summary
+---------------------------------
+   2 block(s) optimized away
+ 172 Block(s) redundant
+
+Section 5 - Removed Logic
+-------------------------
+
+Optimized Block(s):
+TYPE 		BLOCK
+GND 		XST_GND
+VCC 		XST_VCC
+
+Redundant Block(s):
+TYPE 		BLOCK
+LUT1 		MADD_INTERVALL_ADD0000_CY<1>_RT
+LUT1 		MCOUNT_I_CY<1>_RT
+LUT1 		MADD_INTERVALL_ADD0000_CY<2>_RT
+LUT1 		MCOUNT_I_CY<2>_RT
+LUT1 		MADD_INTERVALL_ADD0000_CY<3>_RT
+LUT1 		MCOUNT_I_CY<3>_RT
+LUT1 		MADD_INTERVALL_ADD0000_CY<4>_RT
+LUT1 		MCOUNT_I_CY<4>_RT
+LUT1 		MADD_INTERVALL_ADD0000_CY<5>_RT
+LUT1 		MCOUNT_I_CY<5>_RT
+LUT1 		MADD_INTERVALL_ADD0000_CY<6>_RT
+LUT1 		MCOUNT_I_CY<6>_RT
+LUT1 		MADD_INTERVALL_ADD0000_CY<7>_RT
+LUT1 		MCOUNT_I_CY<7>_RT
+LUT1 		MADD_INTERVALL_ADD0000_CY<8>_RT
+LUT1 		MCOUNT_I_CY<8>_RT
+LUT1 		MADD_INTERVALL_ADD0000_CY<9>_RT
+LUT1 		MCOUNT_I_CY<9>_RT
+LUT1 		MADD_INTERVALL_ADD0000_CY<10>_RT
+LUT1 		MCOUNT_I_CY<10>_RT
+LUT1 		MADD_INTERVALL_ADD0000_CY<11>_RT
+LUT1 		MCOUNT_I_CY<11>_RT
+LUT1 		MADD_INTERVALL_ADD0000_CY<12>_RT
+LUT1 		MCOUNT_I_CY<12>_RT
+LUT1 		MADD_INTERVALL_ADD0000_CY<13>_RT
+LUT1 		MCOUNT_I_CY<13>_RT
+LUT1 		MADD_INTERVALL_ADD0000_CY<14>_RT
+LUT1 		MCOUNT_I_CY<14>_RT
+LUT1 		MADD_INTERVALL_ADD0000_CY<15>_RT
+LUT1 		MCOUNT_I_CY<15>_RT
+LUT1 		MADD_INTERVALL_ADD0000_CY<16>_RT
+LUT1 		MCOUNT_I_CY<16>_RT
+LUT1 		MADD_INTERVALL_ADD0000_CY<17>_RT
+LUT1 		MCOUNT_I_CY<17>_RT
+LUT1 		MADD_INTERVALL_ADD0000_CY<18>_RT
+LUT1 		MCOUNT_I_CY<18>_RT
+LUT1 		MADD_INTERVALL_ADD0000_CY<19>_RT
+LUT1 		MCOUNT_I_CY<19>_RT
+LUT1 		MADD_INTERVALL_ADD0000_CY<20>_RT
+LUT1 		MCOUNT_I_CY<20>_RT
+LUT1 		MADD_INTERVALL_ADD0000_CY<21>_RT
+LUT1 		MCOUNT_I_CY<21>_RT
+LUT1 		MADD_INTERVALL_ADD0000_CY<22>_RT
+LUT1 		MCOUNT_I_CY<22>_RT
+LUT1 		MADD_INTERVALL_ADD0000_CY<23>_RT
+LUT1 		MCOUNT_I_CY<23>_RT
+LUT1 		MADD_INTERVALL_ADD0000_CY<24>_RT
+LUT1 		MCOUNT_I_CY<24>_RT
+LUT1 		MADD_INTERVALL_ADD0000_CY<25>_RT
+LUT1 		MCOUNT_I_CY<25>_RT
+LUT1 		MADD_INTERVALL_ADD0000_CY<26>_RT
+LUT1 		MCOUNT_I_CY<26>_RT
+LUT1 		MADD_INTERVALL_ADD0000_CY<27>_RT
+LUT1 		MCOUNT_I_CY<27>_RT
+LUT1 		MADD_INTERVALL_ADD0000_CY<28>_RT
+LUT1 		MCOUNT_I_CY<28>_RT
+LUT1 		MADD_INTERVALL_ADD0000_CY<29>_RT
+LUT1 		MCOUNT_I_CY<29>_RT
+LUT1 		MADD_INTERVALL_ADD0000_CY<30>_RT
+LUT1 		MCOUNT_I_CY<30>_RT
+LUT1 		MADD_INTERVALL_ADD0001_CY<1>_RT
+LUT1 		MCOUNT_INTERVALL_CY<1>_RT
+LUT1 		MADD_INTERVALL_ADD0001_CY<2>_RT
+LUT1 		MCOUNT_INTERVALL_CY<2>_RT
+LUT1 		MADD_INTERVALL_ADD0001_CY<3>_RT
+LUT1 		MCOUNT_INTERVALL_CY<3>_RT
+LUT1 		MADD_INTERVALL_ADD0001_CY<4>_RT
+LUT1 		MCOUNT_INTERVALL_CY<4>_RT
+LUT1 		MADD_INTERVALL_ADD0001_CY<5>_RT
+LUT1 		MCOUNT_INTERVALL_CY<5>_RT
+LUT1 		MADD_INTERVALL_ADD0001_CY<6>_RT
+LUT1 		MCOUNT_INTERVALL_CY<6>_RT
+LUT1 		MADD_INTERVALL_ADD0001_CY<7>_RT
+LUT1 		MCOUNT_INTERVALL_CY<7>_RT
+LUT1 		MADD_INTERVALL_ADD0001_CY<8>_RT
+LUT1 		MCOUNT_INTERVALL_CY<8>_RT
+LUT1 		MADD_INTERVALL_ADD0001_CY<9>_RT
+LUT1 		MCOUNT_INTERVALL_CY<9>_RT
+LUT1 		MADD_INTERVALL_ADD0001_CY<10>_RT
+LUT1 		MCOUNT_INTERVALL_CY<10>_RT
+LUT1 		MADD_INTERVALL_ADD0001_CY<11>_RT
+LUT1 		MCOUNT_INTERVALL_CY<11>_RT
+LUT1 		MADD_INTERVALL_ADD0001_CY<12>_RT
+LUT1 		MCOUNT_INTERVALL_CY<12>_RT
+LUT1 		MADD_INTERVALL_ADD0001_CY<13>_RT
+LUT1 		MCOUNT_INTERVALL_CY<13>_RT
+LUT1 		MADD_INTERVALL_ADD0001_CY<14>_RT
+LUT1 		MCOUNT_INTERVALL_CY<14>_RT
+LUT1 		MADD_INTERVALL_ADD0001_CY<15>_RT
+LUT1 		MCOUNT_INTERVALL_CY<15>_RT
+LUT1 		MADD_INTERVALL_ADD0001_CY<16>_RT
+LUT1 		MCOUNT_INTERVALL_CY<16>_RT
+LUT1 		MADD_INTERVALL_ADD0001_CY<17>_RT
+LUT1 		MCOUNT_INTERVALL_CY<17>_RT
+LUT1 		MADD_INTERVALL_ADD0001_CY<18>_RT
+LUT1 		MCOUNT_INTERVALL_CY<18>_RT
+LUT1 		MADD_INTERVALL_ADD0001_CY<19>_RT
+LUT1 		MCOUNT_INTERVALL_CY<19>_RT
+LUT1 		MADD_INTERVALL_ADD0001_CY<20>_RT
+LUT1 		MCOUNT_INTERVALL_CY<20>_RT
+LUT1 		MADD_INTERVALL_ADD0001_CY<21>_RT
+LUT1 		MCOUNT_INTERVALL_CY<21>_RT
+LUT1 		MADD_INTERVALL_ADD0001_CY<22>_RT
+LUT1 		MCOUNT_INTERVALL_CY<22>_RT
+LUT1 		MADD_INTERVALL_ADD0001_CY<23>_RT
+LUT1 		MCOUNT_INTERVALL_CY<23>_RT
+LUT1 		MADD_INTERVALL_ADD0001_CY<24>_RT
+LUT1 		MCOUNT_INTERVALL_CY<24>_RT
+LUT1 		MADD_INTERVALL_ADD0001_CY<25>_RT
+LUT1 		MCOUNT_INTERVALL_CY<25>_RT
+LUT1 		MADD_INTERVALL_ADD0001_CY<26>_RT
+LUT1 		MCOUNT_INTERVALL_CY<26>_RT
+LUT1 		MADD_INTERVALL_ADD0001_CY<27>_RT
+LUT1 		MCOUNT_INTERVALL_CY<27>_RT
+LUT1 		MADD_INTERVALL_ADD0001_CY<28>_RT
+LUT1 		MCOUNT_INTERVALL_CY<28>_RT
+LUT1 		MADD_INTERVALL_ADD0001_CY<29>_RT
+LUT1 		MCOUNT_INTERVALL_CY<29>_RT
+LUT1 		MADD_INTERVALL_ADD0001_CY<30>_RT
+LUT1 		MCOUNT_INTERVALL_CY<30>_RT
+LUT1 		MCOMPAR_OUT_ESLEBT_CMP_LT0000_CY<0>_RT
+LUT1 		MCOUNT_I0_CY<6>_RT
+LUT1 		MCOMPAR_OUT_ESLEBT_CMP_LT0000_CY<4>_RT
+LUT1 		MCOUNT_I0_CY<16>_RT
+LUT1 		MCOMPAR_OUT_ESLEBT_CMP_LT0000_CY<7>_RT
+LUT1 		MCOUNT_I0_CY<22>_RT
+LUT1 		MCOMPAR_OUT_ESLEBT_CMP_LT0000_CY<9>_RT
+LUT1 		MCOUNT_I0_CY<24>_RT
+LUT1 		MCOUNT_I0_CY<1>_RT
+LUT1 		MCOUNT_I0_CY<2>_RT
+LUT1 		MCOUNT_I0_CY<3>_RT
+LUT1 		MCOUNT_I0_CY<4>_RT
+LUT1 		MCOUNT_I0_CY<5>_RT
+LUT1 		MCOUNT_I0_CY<7>_RT
+LUT1 		MCOUNT_I0_CY<8>_RT
+LUT1 		MCOUNT_I0_CY<9>_RT
+LUT1 		MCOUNT_I0_CY<10>_RT
+LUT1 		MCOUNT_I0_CY<11>_RT
+LUT1 		MCOUNT_I0_CY<12>_RT
+LUT1 		MCOUNT_I0_CY<13>_RT
+LUT1 		MCOUNT_I0_CY<14>_RT
+LUT1 		MCOUNT_I0_CY<15>_RT
+LUT1 		MCOUNT_I0_CY<17>_RT
+LUT1 		MCOUNT_I0_CY<18>_RT
+LUT1 		MCOUNT_I0_CY<19>_RT
+LUT1 		MCOUNT_I0_CY<20>_RT
+LUT1 		MCOUNT_I0_CY<21>_RT
+LUT1 		MCOUNT_I0_CY<23>_RT
+LUT1 		MCOUNT_I0_CY<25>_RT
+LUT1 		MCOUNT_I0_CY<26>_RT
+LUT1 		MCOUNT_I0_CY<27>_RT
+LUT1 		MCOUNT_I0_CY<28>_RT
+LUT1 		MCOUNT_I0_CY<29>_RT
+LUT1 		MCOUNT_I0_CY<30>_RT
+LUT1 		MCOUNT_BITS_CY<1>_RT
+LUT1 		MCOUNT_BITS_CY<2>_RT
+LUT1 		MCOUNT_BITS_CY<3>_RT
+LUT1 		MCOUNT_BITS_CY<4>_RT
+LUT1 		MCOUNT_BITS_CY<5>_RT
+LUT1 		MCOUNT_BITS_CY<6>_RT
+LUT1 		MADD_INTERVALL_ADD0000_XOR<31>_RT
+LUT1 		MCOUNT_I_XOR<31>_RT
+LUT1 		MADD_INTERVALL_ADD0001_XOR<31>_RT
+LUT1 		MCOUNT_INTERVALL_XOR<31>_RT
+LUT1 		MCOUNT_I0_XOR<31>_RT
+LUT1 		MCOUNT_BITS_XOR<7>_RT
+INV 		PUFFERNEUEDATEN_NOT00011_INV_0
+INV 		INST_DYNAMISCHERADATPUFFER/VERZOEGERTERRAMTAKT_NOETIG_0_MUX00001_INV_0
+INV 		INST_DYNAMISCHERADATPUFFER/MADD_ADD0001_ADDSUB0000_XOR<0>11_INV_0
+INV 		INST_ADAT_ENKODER/UEBERNOMMEN_NOT00031_INV_0
+INV 		OUT_ESLEBT_NOT00031_INV_0
+INV 		INST_DYNAMISCHERADATPUFFER/MCOUNT_LAENGE_XOR<0>11_INV_0
+
+Section 6 - IOB Properties
+--------------------------
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| IOB Name                           | Type             | Direction | IO Standard          | Diff  | Drive    | Slew    | Reg (s)      | Resistor | IBUF/IFD | SUSPEND          |
+|                                    |                  |           |                      | Term  | Strength | Rate    |              |          | Delay    |                  |
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| DEBUG_ADAT_TAKT                    | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW    |              |          | 0 / 0    | 3STATE           |
+| DEBUG_SCHNELLER_TAKT               | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW    |              |          | 0 / 0    | 3STATE           |
+| IN_PLATINENTAKT                    | IBUF             | INPUT     | LVCMOS33             |       |          |         |              |          | 0 / 0    |                  |
+| OUT_ADAT<0>                        | IOBLR            | OUTPUT    | LVCMOS25             |       | 16       | SLOW    | OFF1         |          | 0 / 0    | 3STATE           |
+| OUT_ADAT<1>                        | IOBLR            | OUTPUT    | LVCMOS25             |       | 16       | SLOW    | OFF1         |          | 0 / 0    | 3STATE           |
+| OUT_ADAT<2>                        | IOBLR            | OUTPUT    | LVCMOS25             |       | 16       | SLOW    | OFF1         |          | 0 / 0    | 3STATE           |
+| OUT_ESLEBT                         | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW    | OFF1         |          | 0 / 0    | 3STATE           |
+| OUT_PUFFERLEER                     | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW    | OFF1         |          | 0 / 0    | 3STATE           |
+| OUT_PUFFERUEBERLAUF                | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW    | OFF1         |          | 0 / 0    | 3STATE           |
+| OUT_PUFFERUNTERLAUF                | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW    | OFF1         |          | 0 / 0    | 3STATE           |
+| OUT_PUFFERVOLL                     | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW    | OFF1         |          | 0 / 0    | 3STATE           |
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+Section 7 - RPMs
+----------------
+
+Section 8 - Guide Report
+------------------------
+Guide not run on this design.
+
+Section 9 - Area Group and Partition Summary
+--------------------------------------------
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+Area Group Information
+----------------------
+
+  No area groups were found in this design.
+
+----------------------
+
+Section 10 - Timing Report
+--------------------------
+A logic-level (pre-route) timing report can be generated by using Xilinx static
+timing analysis tools, Timing Analyzer (GUI) or TRCE (command line), with the
+mapped NCD and PCF files. Please note that this timing report will be generated
+using estimated delay information. For accurate numbers, please generate a
+timing report with the post Place and Route NCD file.
+
+For more information about the Timing Analyzer, consult the Xilinx Timing
+Analyzer Reference Manual; for more information about TRCE, consult the Xilinx
+Command Line Tools User Guide "TRACE" chapter.
+
+Section 11 - Configuration String Details
+-----------------------------------------
+RAMB16BWE "INST_DYNAMISCHERADATPUFFER/INSTADAT_BLOCKRAM/MRAM_RAM141":
+DATA_WIDTH_A:36
+DATA_WIDTH_B:36
+WRITE_MODE_A:NO_CHANGE
+WRITE_MODE_B:NO_CHANGE
+INITP_00 = 0000000000000000000000000000000000000000000000000000000000000000
+INITP_01 = 0000000000000000000000000000000000000000000000000000000000000000
+INITP_02 = 0000000000000000000000000000000000000000000000000000000000000000
+INITP_03 = 0000000000000000000000000000000000000000000000000000000000000000
+INITP_04 = 0000000000000000000000000000000000000000000000000000000000000000
+INITP_05 = 0000000000000000000000000000000000000000000000000000000000000000
+INITP_06 = 0000000000000000000000000000000000000000000000000000000000000000
+INITP_07 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_00 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_01 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_02 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_03 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_04 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_05 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_06 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_07 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_08 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_09 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_0A = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_0B = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_0C = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_0D = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_0E = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_0F = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_10 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_11 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_12 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_13 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_14 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_15 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_16 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_17 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_18 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_19 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_1A = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_1B = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_1C = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_1D = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_1E = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_1F = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_20 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_21 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_22 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_23 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_24 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_25 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_26 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_27 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_28 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_29 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_2A = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_2B = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_2C = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_2D = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_2E = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_2F = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_30 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_31 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_32 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_33 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_34 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_35 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_36 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_37 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_38 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_39 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_3A = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_3B = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_3C = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_3D = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_3E = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_3F = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_A = 000000000
+INIT_B = 000000000
+SRVAL_A = 000000000
+SRVAL_B = 000000000
+
+
+RAMB16BWE "INST_DYNAMISCHERADATPUFFER/INSTADAT_BLOCKRAM/MRAM_RAM151":
+DATA_WIDTH_A:36
+DATA_WIDTH_B:36
+WRITE_MODE_A:NO_CHANGE
+WRITE_MODE_B:NO_CHANGE
+INITP_00 = 0000000000000000000000000000000000000000000000000000000000000000
+INITP_01 = 0000000000000000000000000000000000000000000000000000000000000000
+INITP_02 = 0000000000000000000000000000000000000000000000000000000000000000
+INITP_03 = 0000000000000000000000000000000000000000000000000000000000000000
+INITP_04 = 0000000000000000000000000000000000000000000000000000000000000000
+INITP_05 = 0000000000000000000000000000000000000000000000000000000000000000
+INITP_06 = 0000000000000000000000000000000000000000000000000000000000000000
+INITP_07 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_00 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_01 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_02 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_03 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_04 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_05 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_06 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_07 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_08 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_09 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_0A = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_0B = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_0C = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_0D = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_0E = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_0F = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_10 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_11 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_12 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_13 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_14 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_15 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_16 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_17 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_18 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_19 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_1A = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_1B = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_1C = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_1D = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_1E = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_1F = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_20 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_21 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_22 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_23 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_24 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_25 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_26 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_27 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_28 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_29 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_2A = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_2B = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_2C = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_2D = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_2E = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_2F = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_30 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_31 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_32 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_33 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_34 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_35 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_36 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_37 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_38 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_39 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_3A = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_3B = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_3C = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_3D = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_3E = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_3F = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_A = 000000000
+INIT_B = 000000000
+SRVAL_A = 000000000
+SRVAL_B = 000000000
+
+
+RAMB16BWE "INST_DYNAMISCHERADATPUFFER/INSTADAT_BLOCKRAM/MRAM_RAM17":
+DATA_WIDTH_A:18
+DATA_WIDTH_B:0
+WRITE_MODE_A:NO_CHANGE
+WRITE_MODE_B:WRITE_FIRST
+INITP_00 = 0000000000000000000000000000000000000000000000000000000000000000
+INITP_01 = 0000000000000000000000000000000000000000000000000000000000000000
+INITP_02 = 0000000000000000000000000000000000000000000000000000000000000000
+INITP_03 = 0000000000000000000000000000000000000000000000000000000000000000
+INITP_04 = 0000000000000000000000000000000000000000000000000000000000000000
+INITP_05 = 0000000000000000000000000000000000000000000000000000000000000000
+INITP_06 = 0000000000000000000000000000000000000000000000000000000000000000
+INITP_07 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_00 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_01 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_02 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_03 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_04 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_05 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_06 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_07 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_08 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_09 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_0A = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_0B = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_0C = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_0D = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_0E = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_0F = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_10 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_11 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_12 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_13 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_14 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_15 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_16 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_17 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_18 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_19 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_1A = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_1B = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_1C = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_1D = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_1E = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_1F = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_20 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_21 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_22 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_23 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_24 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_25 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_26 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_27 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_28 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_29 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_2A = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_2B = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_2C = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_2D = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_2E = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_2F = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_30 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_31 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_32 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_33 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_34 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_35 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_36 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_37 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_38 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_39 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_3A = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_3B = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_3C = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_3D = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_3E = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_3F = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_A = 000000000
+INIT_B = 000000000
+SRVAL_A = 000000000
+SRVAL_B = 000000000
+
+
+RAMB16BWE "INST_DYNAMISCHERADATPUFFER/INSTADAT_BLOCKRAM/MRAM_RAM31":
+DATA_WIDTH_A:36
+DATA_WIDTH_B:36
+WRITE_MODE_A:NO_CHANGE
+WRITE_MODE_B:NO_CHANGE
+INITP_00 = 0000000000000000000000000000000000000000000000000000000000000000
+INITP_01 = 0000000000000000000000000000000000000000000000000000000000000000
+INITP_02 = 0000000000000000000000000000000000000000000000000000000000000000
+INITP_03 = 0000000000000000000000000000000000000000000000000000000000000000
+INITP_04 = 0000000000000000000000000000000000000000000000000000000000000000
+INITP_05 = 0000000000000000000000000000000000000000000000000000000000000000
+INITP_06 = 0000000000000000000000000000000000000000000000000000000000000000
+INITP_07 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_00 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_01 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_02 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_03 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_04 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_05 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_06 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_07 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_08 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_09 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_0A = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_0B = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_0C = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_0D = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_0E = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_0F = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_10 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_11 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_12 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_13 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_14 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_15 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_16 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_17 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_18 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_19 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_1A = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_1B = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_1C = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_1D = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_1E = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_1F = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_20 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_21 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_22 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_23 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_24 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_25 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_26 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_27 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_28 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_29 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_2A = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_2B = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_2C = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_2D = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_2E = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_2F = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_30 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_31 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_32 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_33 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_34 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_35 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_36 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_37 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_38 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_39 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_3A = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_3B = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_3C = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_3D = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_3E = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_3F = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_A = 000000000
+INIT_B = 000000000
+SRVAL_A = 000000000
+SRVAL_B = 000000000
+
+
+RAMB16BWE "INST_DYNAMISCHERADATPUFFER/INSTADAT_BLOCKRAM/MRAM_RAM91":
+DATA_WIDTH_A:36
+DATA_WIDTH_B:36
+WRITE_MODE_A:NO_CHANGE
+WRITE_MODE_B:NO_CHANGE
+INITP_00 = 0000000000000000000000000000000000000000000000000000000000000000
+INITP_01 = 0000000000000000000000000000000000000000000000000000000000000000
+INITP_02 = 0000000000000000000000000000000000000000000000000000000000000000
+INITP_03 = 0000000000000000000000000000000000000000000000000000000000000000
+INITP_04 = 0000000000000000000000000000000000000000000000000000000000000000
+INITP_05 = 0000000000000000000000000000000000000000000000000000000000000000
+INITP_06 = 0000000000000000000000000000000000000000000000000000000000000000
+INITP_07 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_00 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_01 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_02 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_03 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_04 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_05 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_06 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_07 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_08 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_09 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_0A = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_0B = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_0C = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_0D = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_0E = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_0F = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_10 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_11 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_12 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_13 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_14 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_15 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_16 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_17 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_18 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_19 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_1A = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_1B = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_1C = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_1D = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_1E = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_1F = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_20 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_21 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_22 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_23 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_24 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_25 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_26 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_27 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_28 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_29 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_2A = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_2B = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_2C = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_2D = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_2E = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_2F = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_30 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_31 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_32 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_33 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_34 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_35 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_36 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_37 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_38 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_39 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_3A = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_3B = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_3C = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_3D = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_3E = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_3F = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_A = 000000000
+INIT_B = 000000000
+SRVAL_A = 000000000
+SRVAL_B = 000000000
+
+
+BUFGMUX "INST_ENKODERTESTCLOCK/CLK0_BUFG_INST":
+DISABLE_ATTR:LOW
+
+
+
+BUFGMUX "INST_ENKODERTESTCLOCK/CLKFX_BUFG_INST":
+DISABLE_ATTR:LOW
+
+
+
+DCM "INST_ENKODERTESTCLOCK/DCM_SP_INST":
+CLKDV_DIVIDE:2
+CLKOUT_PHASE_SHIFT:NONE
+CLK_FEEDBACK:1X
+DESKEW_ADJUST:10
+DFS_FREQUENCY_MODE:LOW
+DLL_FREQUENCY_MODE:LOW
+DUTY_CYCLE_CORRECTION:TRUE
+FACTORY_JF1:0XC0
+FACTORY_JF2:0X80
+CLKFX_DIVIDE = 25
+CLKFX_MULTIPLY = 6
+PHASE_SHIFT = 0
+X_CLKIN_PERIOD = 20.0000000000000000
+
+
+BUFGMUX "IN_PLATINENTAKT_IBUFG_BUFG":
+DISABLE_ATTR:LOW
+
+
+
+
+Section 12 - Control Set Information
+------------------------------------
+No control set information for this architecture.
+
+Section 13 - Utilization by Hierarchy
+-------------------------------------
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Module                      | Partition | Slices        | Slice Reg     | LUTs          | LUTRAM        | BRAM      | MULT18X18 | BUFG  | DCM   | Full Hierarchical Name                                      |
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| ADAT_Out_Test/              |           | 207/428       | 161/193       | 339/741       | 0/0           | 0/5       | 0/0       | 1/3   | 0/1   | ADAT_Out_Test                                               |
+| +INST_ADAT_ENKODER          |           | 204/204       | 23/23         | 387/387       | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | ADAT_Out_Test/INST_ADAT_ENKODER                             |
+| +INST_DYNAMISCHERADATPUFFER |           | 17/17         | 9/9           | 15/15         | 0/0           | 0/5       | 0/0       | 0/0   | 0/0   | ADAT_Out_Test/INST_DYNAMISCHERADATPUFFER                    |
+| ++INSTADAT_BLOCKRAM         |           | 0/0           | 0/0           | 0/0           | 0/0           | 5/5       | 0/0       | 0/0   | 0/0   | ADAT_Out_Test/INST_DYNAMISCHERADATPUFFER/INSTADAT_BLOCKRAM  |
+| +INST_ENKODERTESTCLOCK      |           | 0/0           | 0/0           | 0/0           | 0/0           | 0/0       | 0/0       | 2/2   | 1/1   | ADAT_Out_Test/INST_ENKODERTESTCLOCK                         |
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+* Slices can be packed with basic elements from multiple hierarchies.
+  Therefore, a slice will be counted in every hierarchical module
+  that each of its packed basic elements belong to.
+** For each column, there are two numbers reported <A>/<B>.
+   <A> is the number of elements that belong to that specific hierarchical module.
+   <B> is the total number of elements from that hierarchical module and any lower level
+   hierarchical modules below.
+*** The LUTRAM column counts all LUTs used as memory including RAM, ROM, and shift registers.

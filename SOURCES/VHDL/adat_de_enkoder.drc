@@ -1,0 +1,13 @@
+Release 14.7 Drc P.20131013 (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Mon May 12 15:42:29 2014
+
+drc -z ADAT_De_Enkoder.ncd ADAT_De_Enkoder.pcf
+
+WARNING:PhysDesignRules:367 - The signal <IN_ADAT_TAKTWAHL<0>_IBUF> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <IN_ADAT_TAKTWAHL<1>_IBUF> is
+   incomplete. The signal does not drive any load pins in the design.
+DRC detected 0 errors and 2 warnings.  Please see the previously displayed
+individual error or warning messages for more details.

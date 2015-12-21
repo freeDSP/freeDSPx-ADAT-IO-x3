@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=D:\ADAT DeEncoder\ADAT_De-Encoder\SpikeSuche.ncd
+OUTFILE=D:\ADAT DeEncoder\ADAT_De-Encoder\SpikeSuche.bit
+FAMILY=Spartan3A and Spartan3AN
+PART=xc3s200a-5vq100
+WORKINGDIR=D:\ADAT DeEncoder\ADAT_De-Encoder
+LICENSE=ISE
+USER_INFO=174154210_178259100_210572967_244

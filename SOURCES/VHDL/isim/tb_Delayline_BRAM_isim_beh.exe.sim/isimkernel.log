@@ -1,0 +1,28 @@
+Command line:
+   tb_Delayline_BRAM_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  1725
+
+Tue Jun 24 17:02:34 2014
+
+
+ Elaboration Time: 0.265625 sec
+
+ Current Memory Usage: 648.86 Meg
+
+ Total Signals          : 22
+ Total Nets             : 781
+ Total Signal Drivers   : 9
+ Total Blocks           : 5
+ Total Primitive Blocks : 3
+ Total Processes        : 4
+ Total Traceable Variables  : 21
+ Total Scalar Nets and Variables : 1272
+
+ Total Simulation Time: 3.65625 sec
+
+ Current Memory Usage: 334.287 Meg
+
+Tue Jun 24 17:10:59 2014
+

@@ -1,0 +1,11 @@
+# PROMGEN: Xilinx Prom Generator P.68d
+# Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+SOFTWARE_VERSION P.68d
+DATE            01/20/2014 - 17:35
+SOURCE          \\vmware-host\shared folders\ADAT DeEncoder\ADAT_De-Encoder\AdatDeEnkoder_Flashprom.mcs
+DEVICE          XC17V01
+DATA_WIDTH      8
+FILL_DATA       0xFF
+SIGNATURE       0x011F556B
+START_ADDRESS   0x00000000 END_ADDRESS 0x00024831 DIRECTION_UP   "Z:/ADAT DeEncoder/ADAT_De-Encoder/adat_de_enkoder.bit" 3s200avq100

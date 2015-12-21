@@ -1,0 +1,28 @@
+Command line:
+   tb_ADAT_Dekoder_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  1281
+
+Thu Dec 18 14:05:47 2014
+
+
+ Elaboration Time: 0.25 sec
+
+ Current Memory Usage: 649.032 Meg
+
+ Total Signals          : 47
+ Total Nets             : 627
+ Total Signal Drivers   : 10
+ Total Blocks           : 8
+ Total Primitive Blocks : 6
+ Total Processes        : 6
+ Total Traceable Variables  : 17
+ Total Scalar Nets and Variables : 1114
+
+ Total Simulation Time: 1.375 sec
+
+ Current Memory Usage: 650.08 Meg
+
+Thu Dec 18 14:07:16 2014
+

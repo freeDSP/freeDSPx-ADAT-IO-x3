@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="D:/ADAT DeEncoder/ADAT_De-Encoder/tb_McBSP_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="adat" />
+            <top_module name="std_logic_1164" />
+            <top_module name="tb_mcbsp" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="3" />
+   <wvobject fp_name="group23" type="group">
+      <obj_property name="label">Empfang vom MCBSP</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="divider63" type="divider">
+         <obj_property name="label">Empfangen</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="BkColor">#ffff00</obj_property>
+         <obj_property name="TextColor">230 230 230</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_mcbsp/clkr" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">clkr</obj_property>
+         <obj_property name="ObjectShortName">clkr</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+         <obj_property name="CustomSignalColor">#008000</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_mcbsp/fsr" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">fsr</obj_property>
+         <obj_property name="ObjectShortName">fsr</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+         <obj_property name="CustomSignalColor">#008000</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_mcbsp/dr" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">dr</obj_property>
+         <obj_property name="ObjectShortName">dr</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+         <obj_property name="CustomSignalColor">#00ff00</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_mcbsp/dbg_r_schnittstellennummer" type="other" db_ref_id="1">
+         <obj_property name="ElementShortName">dbg_r_schnittstellennummer</obj_property>
+         <obj_property name="ObjectShortName">dbg_r_schnittstellennummer</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+         <obj_property name="CustomSignalColor">#808080</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_mcbsp/dbg_r_kanalnummer" type="other" db_ref_id="1">
+         <obj_property name="ElementShortName">dbg_r_kanalnummer</obj_property>
+         <obj_property name="ObjectShortName">dbg_r_kanalnummer</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+         <obj_property name="CustomSignalColor">#808080</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_mcbsp/dbg_r_bitnummer" type="other" db_ref_id="1">
+         <obj_property name="ElementShortName">dbg_r_bitnummer</obj_property>
+         <obj_property name="ObjectShortName">dbg_r_bitnummer</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+         <obj_property name="CustomSignalColor">#808080</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_mcbsp/daten_ausgang" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">daten_ausgang[0:2]</obj_property>
+         <obj_property name="ObjectShortName">daten_ausgang[0:2]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+         <obj_property name="CustomSignalColor">#ff0000</obj_property>
+         <wvobject fp_name="/tb_mcbsp/daten_ausgang[0]" type="array" db_ref_id="1">
+            <obj_property name="ElementShortName">[0]</obj_property>
+            <obj_property name="ObjectShortName">daten_ausgang[0]</obj_property>
+            <obj_property name="Radix">HEXRADIX</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_mcbsp/daten_ausgang[1]" type="array" db_ref_id="1">
+            <obj_property name="ElementShortName">[1]</obj_property>
+            <obj_property name="ObjectShortName">daten_ausgang[1]</obj_property>
+            <obj_property name="Radix">HEXRADIX</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_mcbsp/daten_ausgang[2]" type="array" db_ref_id="1">
+            <obj_property name="ElementShortName">[2]</obj_property>
+            <obj_property name="ObjectShortName">daten_ausgang[2]</obj_property>
+            <obj_property name="Radix">HEXRADIX</obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject fp_name="/tb_mcbsp/daten_komplett_empfangen" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">daten_komplett_empfangen</obj_property>
+         <obj_property name="ObjectShortName">daten_komplett_empfangen</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+         <obj_property name="CustomSignalColor">#ff0000</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group24" type="group">
+      <obj_property name="label">Senden zum McBSP</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="divider64" type="divider">
+         <obj_property name="label">Senden</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="BkColor">#ffa500</obj_property>
+         <obj_property name="TextColor">230 230 230</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_mcbsp/daten_eingang" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">daten_eingang[0:2]</obj_property>
+         <obj_property name="ObjectShortName">daten_eingang[0:2]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+         <obj_property name="CustomSignalColor">#ff0000</obj_property>
+         <wvobject fp_name="/tb_mcbsp/daten_eingang[0]" type="array" db_ref_id="1">
+            <obj_property name="ElementShortName">[0]</obj_property>
+            <obj_property name="ObjectShortName">daten_eingang[0]</obj_property>
+            <obj_property name="Radix">HEXRADIX</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_mcbsp/daten_eingang[1]" type="array" db_ref_id="1">
+            <obj_property name="ElementShortName">[1]</obj_property>
+            <obj_property name="ObjectShortName">daten_eingang[1]</obj_property>
+            <obj_property name="Radix">HEXRADIX</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_mcbsp/daten_eingang[2]" type="array" db_ref_id="1">
+            <obj_property name="ElementShortName">[2]</obj_property>
+            <obj_property name="ObjectShortName">daten_eingang[2]</obj_property>
+            <obj_property name="Radix">HEXRADIX</obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject fp_name="/tb_mcbsp/neue_daten_zum_senden" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">neue_daten_zum_senden</obj_property>
+         <obj_property name="ObjectShortName">neue_daten_zum_senden</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+         <obj_property name="CustomSignalColor">#ff0000</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_mcbsp/clkx" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">clkx</obj_property>
+         <obj_property name="ObjectShortName">clkx</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+         <obj_property name="CustomSignalColor">#008000</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_mcbsp/fsx" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">fsx</obj_property>
+         <obj_property name="ObjectShortName">fsx</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+         <obj_property name="CustomSignalColor">#008000</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_mcbsp/dx" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">dx</obj_property>
+         <obj_property name="ObjectShortName">dx</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+         <obj_property name="CustomSignalColor">#00ff00</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_mcbsp/dbg_x_schnittstellennummer" type="other" db_ref_id="1">
+         <obj_property name="ElementShortName">dbg_x_schnittstellennummer</obj_property>
+         <obj_property name="ObjectShortName">dbg_x_schnittstellennummer</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+         <obj_property name="CustomSignalColor">#808080</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_mcbsp/dbg_x_kanalnummer" type="other" db_ref_id="1">
+         <obj_property name="ElementShortName">dbg_x_kanalnummer</obj_property>
+         <obj_property name="ObjectShortName">dbg_x_kanalnummer</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+         <obj_property name="CustomSignalColor">#808080</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_mcbsp/dbg_x_bitnummer" type="other" db_ref_id="1">
+         <obj_property name="ElementShortName">dbg_x_bitnummer</obj_property>
+         <obj_property name="ObjectShortName">dbg_x_bitnummer</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+         <obj_property name="CustomSignalColor">#808080</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group25" type="group">
+      <obj_property name="label">Sonstiges</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="divider65" type="divider">
+         <obj_property name="label">Sonstiges</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="BkColor">128 128 255</obj_property>
+         <obj_property name="TextColor">230 230 230</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_mcbsp/schnittstellen" type="other" db_ref_id="1">
+         <obj_property name="ElementShortName">schnittstellen</obj_property>
+         <obj_property name="ObjectShortName">schnittstellen</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+         <obj_property name="CustomSignalColor">#808080</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_mcbsp/clkr_period" type="other" db_ref_id="1">
+         <obj_property name="ElementShortName">clkr_period</obj_property>
+         <obj_property name="ObjectShortName">clkr_period</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+         <obj_property name="CustomSignalColor">#808080</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_mcbsp/clkx_period" type="other" db_ref_id="1">
+         <obj_property name="ElementShortName">clkx_period</obj_property>
+         <obj_property name="ObjectShortName">clkx_period</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+         <obj_property name="CustomSignalColor">#808080</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_mcbsp/clks_period" type="other" db_ref_id="1">
+         <obj_property name="ElementShortName">clks_period</obj_property>
+         <obj_property name="ObjectShortName">clks_period</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+         <obj_property name="CustomSignalColor">#808080</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_mcbsp/daten" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">daten[0:23]</obj_property>
+         <obj_property name="ObjectShortName">daten[0:23]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+         <obj_property name="CustomSignalColor">#808080</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_mcbsp/clks" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">clks</obj_property>
+         <obj_property name="ObjectShortName">clks</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+         <obj_property name="CustomSignalColor">#808080</obj_property>
+      </wvobject>
+   </wvobject>
+</wave_config>

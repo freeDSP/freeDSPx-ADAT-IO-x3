@@ -1,0 +1,615 @@
+Release 14.7 Map P.20131013 (nt)
+Xilinx Map Application Log File for Design 'ADAT_Out_Test'
+
+Design Information
+------------------
+Command Line   : map -intstyle ise -p xc3s200a-vq100-5 -timing -logic_opt on -ol
+high -xe n -t 1 -register_duplication on -cm speed -detail -ir off
+-ignore_keep_hierarchy -pr b -bp -power off -o ADAT_Out_Test_map.ncd
+ADAT_Out_Test.ngd ADAT_Out_Test.pcf 
+Target Device  : xc3s200a
+Target Package : vq100
+Target Speed   : -5
+Mapper Version : spartan3a -- $Revision: 1.55 $
+Mapped Date    : Tue May 13 15:26:04 2014
+
+Mapping design into LUTs...
+Running directed packing...
+WARNING:Pack:2780 - The register "INTERVALL_10" has the property IOB=TRUE, but
+   it did not join an IO component because it is not connected to any IO
+   element.
+WARNING:Pack:2780 - The register "INTERVALL_11" has the property IOB=TRUE, but
+   it did not join an IO component because it is not connected to any IO
+   element.
+WARNING:Pack:2780 - The register "INTERVALL_20" has the property IOB=TRUE, but
+   it did not join an IO component because it is not connected to any IO
+   element.
+WARNING:Pack:2780 - The register "INTERVALL_12" has the property IOB=TRUE, but
+   it did not join an IO component because it is not connected to any IO
+   element.
+WARNING:Pack:2780 - The register "INTERVALL_21" has the property IOB=TRUE, but
+   it did not join an IO component because it is not connected to any IO
+   element.
+WARNING:Pack:2780 - The register "INTERVALL_13" has the property IOB=TRUE, but
+   it did not join an IO component because it is not connected to any IO
+   element.
+WARNING:Pack:2780 - The register "INTERVALL_30" has the property IOB=TRUE, but
+   it did not join an IO component because it is not connected to any IO
+   element.
+WARNING:Pack:2780 - The register "INTERVALL_22" has the property IOB=TRUE, but
+   it did not join an IO component because it is not connected to any IO
+   element.
+WARNING:Pack:2780 - The register "INTERVALL_14" has the property IOB=TRUE, but
+   it did not join an IO component because it is not connected to any IO
+   element.
+WARNING:Pack:2780 - The register "INTERVALL_31" has the property IOB=TRUE, but
+   it did not join an IO component because it is not connected to any IO
+   element.
+WARNING:Pack:2780 - The register "INTERVALL_23" has the property IOB=TRUE, but
+   it did not join an IO component because it is not connected to any IO
+   element.
+WARNING:Pack:2780 - The register "INTERVALL_15" has the property IOB=TRUE, but
+   it did not join an IO component because it is not connected to any IO
+   element.
+WARNING:Pack:2780 - The register "INTERVALL_24" has the property IOB=TRUE, but
+   it did not join an IO component because it is not connected to any IO
+   element.
+WARNING:Pack:2780 - The register "INTERVALL_16" has the property IOB=TRUE, but
+   it did not join an IO component because it is not connected to any IO
+   element.
+WARNING:Pack:2780 - The register "INTERVALL_25" has the property IOB=TRUE, but
+   it did not join an IO component because it is not connected to any IO
+   element.
+WARNING:Pack:2780 - The register "INTERVALL_17" has the property IOB=TRUE, but
+   it did not join an IO component because it is not connected to any IO
+   element.
+WARNING:Pack:2780 - The register "INTERVALL_26" has the property IOB=TRUE, but
+   it did not join an IO component because it is not connected to any IO
+   element.
+WARNING:Pack:2780 - The register "INTERVALL_18" has the property IOB=TRUE, but
+   it did not join an IO component because it is not connected to any IO
+   element.
+WARNING:Pack:2780 - The register "INTERVALL_27" has the property IOB=TRUE, but
+   it did not join an IO component because it is not connected to any IO
+   element.
+WARNING:Pack:2780 - The register "INTERVALL_19" has the property IOB=TRUE, but
+   it did not join an IO component because it is not connected to any IO
+   element.
+WARNING:Pack:2780 - The register "INTERVALL_28" has the property IOB=TRUE, but
+   it did not join an IO component because it is not connected to any IO
+   element.
+WARNING:Pack:2780 - The register "INTERVALL_29" has the property IOB=TRUE, but
+   it did not join an IO component because it is not connected to any IO
+   element.
+WARNING:Pack:2780 - The register "I_0" has the property IOB=TRUE, but it did not
+   join an IO component because it is not connected to any IO element.
+WARNING:Pack:2780 - The register "I_1" has the property IOB=TRUE, but it did not
+   join an IO component because it is not connected to any IO element.
+WARNING:Pack:2780 - The register "I_2" has the property IOB=TRUE, but it did not
+   join an IO component because it is not connected to any IO element.
+WARNING:Pack:2780 - The register "I_3" has the property IOB=TRUE, but it did not
+   join an IO component because it is not connected to any IO element.
+WARNING:Pack:2780 - The register "I_4" has the property IOB=TRUE, but it did not
+   join an IO component because it is not connected to any IO element.
+WARNING:Pack:2780 - The register "I_5" has the property IOB=TRUE, but it did not
+   join an IO component because it is not connected to any IO element.
+WARNING:Pack:2780 - The register "I_6" has the property IOB=TRUE, but it did not
+   join an IO component because it is not connected to any IO element.
+WARNING:Pack:2780 - The register "I_7" has the property IOB=TRUE, but it did not
+   join an IO component because it is not connected to any IO element.
+WARNING:Pack:2780 - The register "I_8" has the property IOB=TRUE, but it did not
+   join an IO component because it is not connected to any IO element.
+WARNING:Pack:2780 - The register "I_9" has the property IOB=TRUE, but it did not
+   join an IO component because it is not connected to any IO element.
+WARNING:Pack:2780 - The register "INST_DYNAMISCHERADATPUFFER/BR_ADDR_0" has the
+   property IOB=TRUE, but it did not join an IO component because it is not
+   connected to any IO element.
+WARNING:Pack:2780 - The register "PUFFERDATEN<1>.KANAELE_1_0" has the property
+   IOB=TRUE, but it did not join an IO component because it is not connected to
+   any IO element.
+WARNING:Pack:2780 - The register "PUFFERDATEN<1>.KANAELE_1_1" has the property
+   IOB=TRUE, but it did not join an IO component because it is not connected to
+   any IO element.
+WARNING:Pack:2780 - The register "PUFFERDATEN<1>.KANAELE_1_2" has the property
+   IOB=TRUE, but it did not join an IO component because it is not connected to
+   any IO element.
+WARNING:Pack:2780 - The register "PUFFERDATEN<1>.KANAELE_1_3" has the property
+   IOB=TRUE, but it did not join an IO component because it is not connected to
+   any IO element.
+WARNING:Pack:2780 - The register "PUFFERDATEN<1>.KANAELE_1_4" has the property
+   IOB=TRUE, but it did not join an IO component because it is not connected to
+   any IO element.
+WARNING:Pack:2780 - The register "PUFFERDATEN<1>.KANAELE_1_5" has the property
+   IOB=TRUE, but it did not join an IO component because it is not connected to
+   any IO element.
+WARNING:Pack:2780 - The register "PUFFERDATEN<1>.KANAELE_1_6" has the property
+   IOB=TRUE, but it did not join an IO component because it is not connected to
+   any IO element.
+WARNING:Pack:2780 - The register "PUFFERDATEN<1>.KANAELE_1_7" has the property
+   IOB=TRUE, but it did not join an IO component because it is not connected to
+   any IO element.
+WARNING:Pack:2780 - The register "PUFFERDATEN<1>.KANAELE_1_8" has the property
+   IOB=TRUE, but it did not join an IO component because it is not connected to
+   any IO element.
+WARNING:Pack:2780 - The register "PUFFERDATEN<1>.KANAELE_1_9" has the property
+   IOB=TRUE, but it did not join an IO component because it is not connected to
+   any IO element.
+WARNING:Pack:2780 - The register "INST_DYNAMISCHERADATPUFFER/BR_CLK" has the
+   property IOB=TRUE, but it did not join an IO component because it is not
+   connected to any IO element.
+WARNING:Pack:2780 - The register "I0_0" has the property IOB=TRUE, but it did
+   not join an IO component because it is not connected to any IO element.
+WARNING:Pack:2780 - The register "I0_1" has the property IOB=TRUE, but it did
+   not join an IO component because it is not connected to any IO element.
+WARNING:Pack:2780 - The register "I0_2" has the property IOB=TRUE, but it did
+   not join an IO component because it is not connected to any IO element.
+WARNING:Pack:2780 - The register "I0_3" has the property IOB=TRUE, but it did
+   not join an IO component because it is not connected to any IO element.
+WARNING:Pack:2780 - The register "I0_4" has the property IOB=TRUE, but it did
+   not join an IO component because it is not connected to any IO element.
+WARNING:Pack:2780 - The register "I0_5" has the property IOB=TRUE, but it did
+   not join an IO component because it is not connected to any IO element.
+WARNING:Pack:2780 - The register "I0_6" has the property IOB=TRUE, but it did
+   not join an IO component because it is not connected to any IO element.
+WARNING:Pack:2780 - The register "I0_7" has the property IOB=TRUE, but it did
+   not join an IO component because it is not connected to any IO element.
+WARNING:Pack:2780 - The register "I0_8" has the property IOB=TRUE, but it did
+   not join an IO component because it is not connected to any IO element.
+WARNING:Pack:2780 - The register "I0_9" has the property IOB=TRUE, but it did
+   not join an IO component because it is not connected to any IO element.
+WARNING:Pack:2780 - The register "I_10" has the property IOB=TRUE, but it did
+   not join an IO component because it is not connected to any IO element.
+WARNING:Pack:2780 - The register "I_11" has the property IOB=TRUE, but it did
+   not join an IO component because it is not connected to any IO element.
+WARNING:Pack:2780 - The register "I_20" has the property IOB=TRUE, but it did
+   not join an IO component because it is not connected to any IO element.
+WARNING:Pack:2780 - The register "I_12" has the property IOB=TRUE, but it did
+   not join an IO component because it is not connected to any IO element.
+WARNING:Pack:2780 - The register "I_21" has the property IOB=TRUE, but it did
+   not join an IO component because it is not connected to any IO element.
+WARNING:Pack:2780 - The register "I_13" has the property IOB=TRUE, but it did
+   not join an IO component because it is not connected to any IO element.
+WARNING:Pack:2780 - The register "I_30" has the property IOB=TRUE, but it did
+   not join an IO component because it is not connected to any IO element.
+WARNING:Pack:2780 - The register "I_22" has the property IOB=TRUE, but it did
+   not join an IO component because it is not connected to any IO element.
+WARNING:Pack:2780 - The register "I_14" has the property IOB=TRUE, but it did
+   not join an IO component because it is not connected to any IO element.
+WARNING:Pack:2780 - The register "I_31" has the property IOB=TRUE, but it did
+   not join an IO component because it is not connected to any IO element.
+WARNING:Pack:2780 - The register "I_23" has the property IOB=TRUE, but it did
+   not join an IO component because it is not connected to any IO element.
+WARNING:Pack:2780 - The register "I_15" has the property IOB=TRUE, but it did
+   not join an IO component because it is not connected to any IO element.
+WARNING:Pack:2780 - The register "I_24" has the property IOB=TRUE, but it did
+   not join an IO component because it is not connected to any IO element.
+WARNING:Pack:2780 - The register "I_16" has the property IOB=TRUE, but it did
+   not join an IO component because it is not connected to any IO element.
+WARNING:Pack:2780 - The register "I_25" has the property IOB=TRUE, but it did
+   not join an IO component because it is not connected to any IO element.
+WARNING:Pack:2780 - The register "I_17" has the property IOB=TRUE, but it did
+   not join an IO component because it is not connected to any IO element.
+WARNING:Pack:2780 - The register "I_26" has the property IOB=TRUE, but it did
+   not join an IO component because it is not connected to any IO element.
+WARNING:Pack:2780 - The register "I_18" has the property IOB=TRUE, but it did
+   not join an IO component because it is not connected to any IO element.
+WARNING:Pack:2780 - The register "I_27" has the property IOB=TRUE, but it did
+   not join an IO component because it is not connected to any IO element.
+WARNING:Pack:2780 - The register "I_19" has the property IOB=TRUE, but it did
+   not join an IO component because it is not connected to any IO element.
+WARNING:Pack:2780 - The register "I_28" has the property IOB=TRUE, but it did
+   not join an IO component because it is not connected to any IO element.
+WARNING:Pack:2780 - The register "I_29" has the property IOB=TRUE, but it did
+   not join an IO component because it is not connected to any IO element.
+WARNING:Pack:2780 - The register "INST_DYNAMISCHERADATPUFFER/BR_WE" has the
+   property IOB=TRUE, but it did not join an IO component because it is not
+   connected to any IO element.
+WARNING:Pack:2780 - The register "STEIGEND_0" has the property IOB=TRUE, but it
+   did not join an IO component because it is not connected to any IO element.
+WARNING:Pack:2780 - The register "PUFFERDATEN<1>.KANAELE_1_10" has the property
+   IOB=TRUE, but it did not join an IO component because it is not connected to
+   any IO element.
+WARNING:Pack:2780 - The register "PUFFERDATEN<1>.KANAELE_1_11" has the property
+   IOB=TRUE, but it did not join an IO component because it is not connected to
+   any IO element.
+WARNING:Pack:2780 - The register "PUFFERDATEN<1>.KANAELE_1_20" has the property
+   IOB=TRUE, but it did not join an IO component because it is not connected to
+   any IO element.
+WARNING:Pack:2780 - The register "PUFFERDATEN<1>.KANAELE_1_12" has the property
+   IOB=TRUE, but it did not join an IO component because it is not connected to
+   any IO element.
+WARNING:Pack:2780 - The register "PUFFERDATEN<1>.KANAELE_1_21" has the property
+   IOB=TRUE, but it did not join an IO component because it is not connected to
+   any IO element.
+WARNING:Pack:2780 - The register "PUFFERDATEN<1>.KANAELE_1_13" has the property
+   IOB=TRUE, but it did not join an IO component because it is not connected to
+   any IO element.
+WARNING:Pack:2780 - The register "PUFFERDATEN<1>.KANAELE_1_22" has the property
+   IOB=TRUE, but it did not join an IO component because it is not connected to
+   any IO element.
+WARNING:Pack:2780 - The register "PUFFERDATEN<1>.KANAELE_1_14" has the property
+   IOB=TRUE, but it did not join an IO component because it is not connected to
+   any IO element.
+WARNING:Pack:2780 - The register "PUFFERDATEN<1>.KANAELE_1_23" has the property
+   IOB=TRUE, but it did not join an IO component because it is not connected to
+   any IO element.
+WARNING:Pack:2780 - The register "PUFFERDATEN<1>.KANAELE_1_15" has the property
+   IOB=TRUE, but it did not join an IO component because it is not connected to
+   any IO element.
+WARNING:Pack:2780 - The register "PUFFERDATEN<1>.KANAELE_1_16" has the property
+   IOB=TRUE, but it did not join an IO component because it is not connected to
+   any IO element.
+WARNING:Pack:2780 - The register "PUFFERDATEN<1>.KANAELE_1_17" has the property
+   IOB=TRUE, but it did not join an IO component because it is not connected to
+   any IO element.
+WARNING:Pack:2780 - The register "PUFFERDATEN<1>.KANAELE_1_18" has the property
+   IOB=TRUE, but it did not join an IO component because it is not connected to
+   any IO element.
+WARNING:Pack:2780 - The register "PUFFERDATEN<1>.KANAELE_1_19" has the property
+   IOB=TRUE, but it did not join an IO component because it is not connected to
+   any IO element.
+WARNING:Pack:2780 - The register "I0_10" has the property IOB=TRUE, but it did
+   not join an IO component because it is not connected to any IO element.
+WARNING:Pack:2780 - The register "I0_11" has the property IOB=TRUE, but it did
+   not join an IO component because it is not connected to any IO element.
+WARNING:Pack:2780 - The register "I0_20" has the property IOB=TRUE, but it did
+   not join an IO component because it is not connected to any IO element.
+WARNING:Pack:2780 - The register "I0_12" has the property IOB=TRUE, but it did
+   not join an IO component because it is not connected to any IO element.
+WARNING:Pack:2780 - The register "I0_21" has the property IOB=TRUE, but it did
+   not join an IO component because it is not connected to any IO element.
+WARNING:Pack:2780 - The register "I0_13" has the property IOB=TRUE, but it did
+   not join an IO component because it is not connected to any IO element.
+WARNING:Pack:2780 - The register "I0_30" has the property IOB=TRUE, but it did
+   not join an IO component because it is not connected to any IO element.
+WARNING:Pack:2780 - The register "I0_22" has the property IOB=TRUE, but it did
+   not join an IO component because it is not connected to any IO element.
+WARNING:Pack:2780 - The register "I0_14" has the property IOB=TRUE, but it did
+   not join an IO component because it is not connected to any IO element.
+WARNING:Pack:2780 - The register "I0_31" has the property IOB=TRUE, but it did
+   not join an IO component because it is not connected to any IO element.
+WARNING:Pack:2780 - The register "I0_23" has the property IOB=TRUE, but it did
+   not join an IO component because it is not connected to any IO element.
+WARNING:Pack:2780 - The register "I0_15" has the property IOB=TRUE, but it did
+   not join an IO component because it is not connected to any IO element.
+WARNING:Pack:2780 - The register "I0_24" has the property IOB=TRUE, but it did
+   not join an IO component because it is not connected to any IO element.
+WARNING:Pack:2780 - The register "I0_16" has the property IOB=TRUE, but it did
+   not join an IO component because it is not connected to any IO element.
+WARNING:Pack:2780 - The register "I0_25" has the property IOB=TRUE, but it did
+   not join an IO component because it is not connected to any IO element.
+WARNING:Pack:2780 - The register "I0_17" has the property IOB=TRUE, but it did
+   not join an IO component because it is not connected to any IO element.
+WARNING:Pack:2780 - The register "I0_26" has the property IOB=TRUE, but it did
+   not join an IO component because it is not connected to any IO element.
+WARNING:Pack:2780 - The register "I0_18" has the property IOB=TRUE, but it did
+   not join an IO component because it is not connected to any IO element.
+WARNING:Pack:2780 - The register "I0_27" has the property IOB=TRUE, but it did
+   not join an IO component because it is not connected to any IO element.
+WARNING:Pack:2780 - The register "I0_19" has the property IOB=TRUE, but it did
+   not join an IO component because it is not connected to any IO element.
+WARNING:Pack:2780 - The register "I0_28" has the property IOB=TRUE, but it did
+   not join an IO component because it is not connected to any IO element.
+WARNING:Pack:2780 - The register "I0_29" has the property IOB=TRUE, but it did
+   not join an IO component because it is not connected to any IO element.
+WARNING:Pack:2780 - The register "INST_ADAT_ENKODER/PHASE_0" has the property
+   IOB=TRUE, but it did not join an IO component because it is not connected to
+   any IO element.
+WARNING:Pack:2780 - The register "INST_ADAT_ENKODER/PHASE_1" has the property
+   IOB=TRUE, but it did not join an IO component because it is not connected to
+   any IO element.
+WARNING:Pack:2780 - The register "INST_ADAT_ENKODER/PHASE_2" has the property
+   IOB=TRUE, but it did not join an IO component because it is not connected to
+   any IO element.
+WARNING:Pack:2780 - The register "PUFFERDATEN<0>.KANAELE_0_0" has the property
+   IOB=TRUE, but it did not join an IO component because it is not connected to
+   any IO element.
+WARNING:Pack:2780 - The register "PUFFERDATEN<0>.KANAELE_0_1" has the property
+   IOB=TRUE, but it did not join an IO component because it is not connected to
+   any IO element.
+WARNING:Pack:2780 - The register "PUFFERDATEN<0>.KANAELE_0_2" has the property
+   IOB=TRUE, but it did not join an IO component because it is not connected to
+   any IO element.
+WARNING:Pack:2780 - The register "PUFFERDATEN<0>.KANAELE_0_3" has the property
+   IOB=TRUE, but it did not join an IO component because it is not connected to
+   any IO element.
+WARNING:Pack:2780 - The register "PUFFERDATEN<0>.KANAELE_0_4" has the property
+   IOB=TRUE, but it did not join an IO component because it is not connected to
+   any IO element.
+WARNING:Pack:2780 - The register "PUFFERDATEN<0>.KANAELE_0_5" has the property
+   IOB=TRUE, but it did not join an IO component because it is not connected to
+   any IO element.
+WARNING:Pack:2780 - The register "PUFFERDATEN<0>.KANAELE_0_6" has the property
+   IOB=TRUE, but it did not join an IO component because it is not connected to
+   any IO element.
+WARNING:Pack:2780 - The register "PUFFERDATEN<0>.KANAELE_0_7" has the property
+   IOB=TRUE, but it did not join an IO component because it is not connected to
+   any IO element.
+WARNING:Pack:2780 - The register "PUFFERDATEN<0>.KANAELE_0_8" has the property
+   IOB=TRUE, but it did not join an IO component because it is not connected to
+   any IO element.
+WARNING:Pack:2780 - The register "PUFFERDATEN<0>.KANAELE_0_9" has the property
+   IOB=TRUE, but it did not join an IO component because it is not connected to
+   any IO element.
+WARNING:Pack:2780 - The register "INST_ADAT_ENKODER/LOKALEBITNUMMER_0" has the
+   property IOB=TRUE, but it did not join an IO component because it is not
+   connected to any IO element.
+WARNING:Pack:2780 - The register "INST_ADAT_ENKODER/LOKALEBITNUMMER_1" has the
+   property IOB=TRUE, but it did not join an IO component because it is not
+   connected to any IO element.
+WARNING:Pack:2780 - The register "INST_ADAT_ENKODER/LOKALEBITNUMMER_2" has the
+   property IOB=TRUE, but it did not join an IO component because it is not
+   connected to any IO element.
+WARNING:Pack:2780 - The register "INST_ADAT_ENKODER/LOKALEBITNUMMER_3" has the
+   property IOB=TRUE, but it did not join an IO component because it is not
+   connected to any IO element.
+WARNING:Pack:2780 - The register "INST_ADAT_ENKODER/LOKALEBITNUMMER_4" has the
+   property IOB=TRUE, but it did not join an IO component because it is not
+   connected to any IO element.
+WARNING:Pack:2780 - The register
+   "INST_DYNAMISCHERADATPUFFER/AUSGANG_NAECHSTERDATENSATZ_ALT" has the property
+   IOB=TRUE, but it did not join an IO component because it is not connected to
+   any IO element.
+WARNING:Pack:2780 - The register "INST_ADAT_ENKODER/BITNUMMER_0" has the
+   property IOB=TRUE, but it did not join an IO component because it is not
+   connected to any IO element.
+WARNING:Pack:2780 - The register "INST_ADAT_ENKODER/BITNUMMER_1" has the
+   property IOB=TRUE, but it did not join an IO component because it is not
+   connected to any IO element.
+WARNING:Pack:2780 - The register "INST_ADAT_ENKODER/BITNUMMER_2" has the
+   property IOB=TRUE, but it did not join an IO component because it is not
+   connected to any IO element.
+WARNING:Pack:2780 - The register "INST_ADAT_ENKODER/BITNUMMER_3" has the
+   property IOB=TRUE, but it did not join an IO component because it is not
+   connected to any IO element.
+WARNING:Pack:2780 - The register "INST_ADAT_ENKODER/BITNUMMER_4" has the
+   property IOB=TRUE, but it did not join an IO component because it is not
+   connected to any IO element.
+WARNING:Pack:2780 - The register "INST_ADAT_ENKODER/BITNUMMER_5" has the
+   property IOB=TRUE, but it did not join an IO component because it is not
+   connected to any IO element.
+WARNING:Pack:2780 - The register "INST_ADAT_ENKODER/BITNUMMER_6" has the
+   property IOB=TRUE, but it did not join an IO component because it is not
+   connected to any IO element.
+WARNING:Pack:2780 - The register "INST_ADAT_ENKODER/BITNUMMER_7" has the
+   property IOB=TRUE, but it did not join an IO component because it is not
+   connected to any IO element.
+WARNING:Pack:2780 - The register
+   "INST_DYNAMISCHERADATPUFFER/VERZOEGERTERRAMTAKT_NOETIG_0" has the property
+   IOB=TRUE, but it did not join an IO component because it is not connected to
+   any IO element.
+WARNING:Pack:2780 - The register "INST_DYNAMISCHERADATPUFFER/ANFANG_0" has the
+   property IOB=TRUE, but it did not join an IO component because it is not
+   connected to any IO element.
+WARNING:Pack:2780 - The register "BITS_0" has the property IOB=TRUE, but it did
+   not join an IO component because it is not connected to any IO element.
+WARNING:Pack:2780 - The register "BITS_1" has the property IOB=TRUE, but it did
+   not join an IO component because it is not connected to any IO element.
+WARNING:Pack:2780 - The register "BITS_2" has the property IOB=TRUE, but it did
+   not join an IO component because it is not connected to any IO element.
+WARNING:Pack:2780 - The register "BITS_3" has the property IOB=TRUE, but it did
+   not join an IO component because it is not connected to any IO element.
+WARNING:Pack:2780 - The register "BITS_4" has the property IOB=TRUE, but it did
+   not join an IO component because it is not connected to any IO element.
+WARNING:Pack:2780 - The register "BITS_5" has the property IOB=TRUE, but it did
+   not join an IO component because it is not connected to any IO element.
+WARNING:Pack:2780 - The register "BITS_6" has the property IOB=TRUE, but it did
+   not join an IO component because it is not connected to any IO element.
+WARNING:Pack:2780 - The register "BITS_7" has the property IOB=TRUE, but it did
+   not join an IO component because it is not connected to any IO element.
+WARNING:Pack:2780 - The register "OUT_ESLEBT_1" has the property IOB=TRUE, but
+   it did not join an IO component because it is not connected to any IO
+   element.
+WARNING:Pack:2780 - The register "INST_DYNAMISCHERADATPUFFER/LAENGE_0" has the
+   property IOB=TRUE, but it did not join an IO component because it is not
+   connected to any IO element.
+WARNING:Pack:2780 - The register "INST_DYNAMISCHERADATPUFFER/LAENGE_1" has the
+   property IOB=TRUE, but it did not join an IO component because it is not
+   connected to any IO element.
+WARNING:Pack:2780 - The register "INST_ADAT_ENKODER/INTERN_ADAT_0_1" has the
+   property IOB=TRUE, but it did not join an IO component because it is not
+   connected to any IO element.
+WARNING:Pack:2780 - The register "INST_ADAT_ENKODER/INTERN_ADAT_1_1" has the
+   property IOB=TRUE, but it did not join an IO component because it is not
+   connected to any IO element.
+WARNING:Pack:2780 - The register "INST_ADAT_ENKODER/INTERN_ADAT_2_1" has the
+   property IOB=TRUE, but it did not join an IO component because it is not
+   connected to any IO element.
+WARNING:Pack:2780 - The register "INTERVALL_0" has the property IOB=TRUE, but it
+   did not join an IO component because it is not connected to any IO element.
+WARNING:Pack:2780 - The register "INTERVALL_1" has the property IOB=TRUE, but it
+   did not join an IO component because it is not connected to any IO element.
+WARNING:Pack:2780 - The register "INTERVALL_2" has the property IOB=TRUE, but it
+   did not join an IO component because it is not connected to any IO element.
+WARNING:Pack:2780 - The register "INTERVALL_3" has the property IOB=TRUE, but it
+   did not join an IO component because it is not connected to any IO element.
+WARNING:Pack:2780 - The register "INTERVALL_4" has the property IOB=TRUE, but it
+   did not join an IO component because it is not connected to any IO element.
+WARNING:Pack:2780 - The register "INTERVALL_5" has the property IOB=TRUE, but it
+   did not join an IO component because it is not connected to any IO element.
+WARNING:Pack:2780 - The register "INTERVALL_6" has the property IOB=TRUE, but it
+   did not join an IO component because it is not connected to any IO element.
+WARNING:Pack:2780 - The register "INTERVALL_7" has the property IOB=TRUE, but it
+   did not join an IO component because it is not connected to any IO element.
+WARNING:Pack:2780 - The register "INTERVALL_8" has the property IOB=TRUE, but it
+   did not join an IO component because it is not connected to any IO element.
+WARNING:Pack:2780 - The register "WERT_0" has the property IOB=TRUE, but it did
+   not join an IO component because it is not connected to any IO element.
+WARNING:Pack:2780 - The register "INTERVALL_9" has the property IOB=TRUE, but it
+   did not join an IO component because it is not connected to any IO element.
+WARNING:Pack:2780 - The register "WERT_1" has the property IOB=TRUE, but it did
+   not join an IO component because it is not connected to any IO element.
+WARNING:Pack:2780 - The register "WERT_2" has the property IOB=TRUE, but it did
+   not join an IO component because it is not connected to any IO element.
+WARNING:Pack:2780 - The register "WERT_3" has the property IOB=TRUE, but it did
+   not join an IO component because it is not connected to any IO element.
+WARNING:Pack:2780 - The register "WERT_4" has the property IOB=TRUE, but it did
+   not join an IO component because it is not connected to any IO element.
+WARNING:Pack:2780 - The register "WERT_5" has the property IOB=TRUE, but it did
+   not join an IO component because it is not connected to any IO element.
+WARNING:Pack:2780 - The register "INST_ADAT_ENKODER/UEBERNOMMEN" has the
+   property IOB=TRUE, but it did not join an IO component because it is not
+   connected to any IO element.
+WARNING:Pack:2780 - The register "PUFFERDATEN<0>.KANAELE_0_10" has the property
+   IOB=TRUE, but it did not join an IO component because it is not connected to
+   any IO element.
+WARNING:Pack:2780 - The register "PUFFERDATEN<0>.KANAELE_0_11" has the property
+   IOB=TRUE, but it did not join an IO component because it is not connected to
+   any IO element.
+WARNING:Pack:2780 - The register "PUFFERDATEN<0>.KANAELE_0_20" has the property
+   IOB=TRUE, but it did not join an IO component because it is not connected to
+   any IO element.
+WARNING:Pack:2780 - The register "PUFFERDATEN<0>.KANAELE_0_12" has the property
+   IOB=TRUE, but it did not join an IO component because it is not connected to
+   any IO element.
+WARNING:Pack:2780 - The register "PUFFERDATEN<0>.KANAELE_0_21" has the property
+   IOB=TRUE, but it did not join an IO component because it is not connected to
+   any IO element.
+WARNING:Pack:2780 - The register "PUFFERDATEN<0>.KANAELE_0_13" has the property
+   IOB=TRUE, but it did not join an IO component because it is not connected to
+   any IO element.
+WARNING:Pack:2780 - The register "PUFFERDATEN<0>.KANAELE_0_22" has the property
+   IOB=TRUE, but it did not join an IO component because it is not connected to
+   any IO element.
+WARNING:Pack:2780 - The register "PUFFERDATEN<0>.KANAELE_0_14" has the property
+   IOB=TRUE, but it did not join an IO component because it is not connected to
+   any IO element.
+WARNING:Pack:2780 - The register "PUFFERDATEN<0>.KANAELE_0_23" has the property
+   IOB=TRUE, but it did not join an IO component because it is not connected to
+   any IO element.
+WARNING:Pack:2780 - The register "PUFFERDATEN<0>.KANAELE_0_15" has the property
+   IOB=TRUE, but it did not join an IO component because it is not connected to
+   any IO element.
+WARNING:Pack:2780 - The register "PUFFERDATEN<0>.KANAELE_0_16" has the property
+   IOB=TRUE, but it did not join an IO component because it is not connected to
+   any IO element.
+WARNING:Pack:2780 - The register "PUFFERDATEN<0>.KANAELE_0_17" has the property
+   IOB=TRUE, but it did not join an IO component because it is not connected to
+   any IO element.
+WARNING:Pack:2780 - The register "PUFFERDATEN<0>.KANAELE_0_18" has the property
+   IOB=TRUE, but it did not join an IO component because it is not connected to
+   any IO element.
+WARNING:Pack:2780 - The register "PUFFERDATEN<0>.KANAELE_0_19" has the property
+   IOB=TRUE, but it did not join an IO component because it is not connected to
+   any IO element.
+WARNING:Pack:2780 - The register
+   "INST_DYNAMISCHERADATPUFFER/EINGANG_NEUEDATENANGEKOMMEN_ALT" has the property
+   IOB=TRUE, but it did not join an IO component because it is not connected to
+   any IO element.
+WARNING:Pack:2780 - The register "INST_ADAT_ENKODER/KANALNUMMER_0" has the
+   property IOB=TRUE, but it did not join an IO component because it is not
+   connected to any IO element.
+WARNING:Pack:2780 - The register "INST_ADAT_ENKODER/KANALNUMMER_1" has the
+   property IOB=TRUE, but it did not join an IO component because it is not
+   connected to any IO element.
+WARNING:Pack:2780 - The register "INST_ADAT_ENKODER/KANALNUMMER_2" has the
+   property IOB=TRUE, but it did not join an IO component because it is not
+   connected to any IO element.
+WARNING:Pack:2780 - The register "PUFFERNEUEDATEN" has the property IOB=TRUE,
+   but it did not join an IO component because it is not connected to any IO
+   element.
+Running delay-based LUT packing...
+Updating timing models...
+Running timing-driven placement...
+Total REAL time at the beginning of Placer: 4 secs 
+Total CPU  time at the beginning of Placer: 3 secs 
+
+Phase 1.1  Initial Placement Analysis
+Phase 1.1  Initial Placement Analysis (Checksum:d906035e) REAL time: 4 secs 
+
+Phase 2.7  Design Feasibility Check
+INFO:Place:834 - Only a subset of IOs are locked. Out of 7 IOs, 5 are locked and
+   2 are not locked. If you would like to print the names of these IOs, please
+   set the environment variable XIL_PAR_DESIGN_CHECK_VERBOSE to 1. 
+Phase 2.7  Design Feasibility Check (Checksum:d906035e) REAL time: 4 secs 
+
+Phase 3.31  Local Placement Optimization
+Phase 3.31  Local Placement Optimization (Checksum:d906035e) REAL time: 4 secs 
+
+Phase 4.2  Initial Clock and IO Placement
+
+Phase 4.2  Initial Clock and IO Placement (Checksum:3ca865f4) REAL time: 7 secs 
+
+Phase 5.30  Global Clock Region Assignment
+Phase 5.30  Global Clock Region Assignment (Checksum:3ca865f4) REAL time: 7 secs 
+
+Phase 6.36  Local Placement Optimization
+Phase 6.36  Local Placement Optimization (Checksum:3ca865f4) REAL time: 7 secs 
+
+Phase 7.3  Local Placement Optimization
+
+Phase 7.3  Local Placement Optimization (Checksum:ba79bfd7) REAL time: 7 secs 
+
+Phase 8.5  Local Placement Optimization
+Phase 8.5  Local Placement Optimization (Checksum:5f565aab) REAL time: 7 secs 
+
+Phase 9.8  Global Placement
+.................
+.....................
+..
+............
+Phase 9.8  Global Placement (Checksum:1a259cac) REAL time: 8 secs 
+
+Phase 10.5  Local Placement Optimization
+Phase 10.5  Local Placement Optimization (Checksum:1a259cac) REAL time: 8 secs 
+
+Phase 11.18  Placement Optimization
+Phase 11.18  Placement Optimization (Checksum:24888a0c) REAL time: 10 secs 
+
+Phase 12.5  Local Placement Optimization
+Phase 12.5  Local Placement Optimization (Checksum:24888a0c) REAL time: 10 secs 
+
+Total REAL time to Placer completion: 10 secs 
+Total CPU  time to Placer completion: 9 secs 
+Running physical synthesis...
+
+Physical synthesis completed.
+Running post-placement packing...
+WARNING:PhysDesignRules:812 - Dangling pin <DOA12> on
+   block:<INST_DYNAMISCHERADATPUFFER/INSTADAT_BLOCKRAM/MRAM_RAM17>:<RAMB16BWE_RA
+   MB16BWE>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA13> on
+   block:<INST_DYNAMISCHERADATPUFFER/INSTADAT_BLOCKRAM/MRAM_RAM17>:<RAMB16BWE_RA
+   MB16BWE>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA14> on
+   block:<INST_DYNAMISCHERADATPUFFER/INSTADAT_BLOCKRAM/MRAM_RAM17>:<RAMB16BWE_RA
+   MB16BWE>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA15> on
+   block:<INST_DYNAMISCHERADATPUFFER/INSTADAT_BLOCKRAM/MRAM_RAM17>:<RAMB16BWE_RA
+   MB16BWE>.
+
+Design Summary
+--------------
+
+Design Summary:
+Number of errors:      0
+Number of warnings:  197
+Logic Utilization:
+  Number of Slice Flip Flops:           193 out of   3,584    5%
+  Number of 4 input LUTs:               588 out of   3,584   16%
+Logic Distribution:
+  Number of occupied Slices:            434 out of   1,792   24%
+    Number of Slices containing only related logic:     434 out of     434 100%
+    Number of Slices containing unrelated logic:          0 out of     434   0%
+      *See NOTES below for an explanation of the effects of unrelated logic.
+  Total Number of 4 input LUTs:         757 out of   3,584   21%
+    Number used as logic:               588
+    Number used as a route-thru:        169
+
+  The Slice Logic Distribution report is not meaningful if the design is
+  over-mapped for a non-slice resource or if Placement fails.
+
+  Number of bonded IOBs:                 11 out of      68   16%
+    IOB Flip Flops:                       8
+  Number of BUFGMUXs:                     3 out of      24   12%
+  Number of DCMs:                         1 out of       4   25%
+  Number of RAMB16BWEs:                   5 out of      16   31%
+
+Average Fanout of Non-Clock Nets:                2.80
+
+Peak Memory Usage:  234 MB
+Total REAL time to MAP completion:  13 secs 
+Total CPU time to MAP completion:   12 secs 
+
+Mapping completed.
+See MAP report file "ADAT_Out_Test_map.mrp" for details.

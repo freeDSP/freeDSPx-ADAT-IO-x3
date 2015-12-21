@@ -1,0 +1,3 @@
+vhdl isim_temp "ADAT.vhd"
+vhdl isim_temp "Autosync.vhd"
+vhdl isim_temp "tb_Autosynchronisierer.vhd"

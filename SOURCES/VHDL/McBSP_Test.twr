@@ -1,0 +1,1321 @@
+--------------------------------------------------------------------------------
+Release 14.6 Trace  (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\14.6\ISE_DS\ISE\bin\nt\unwrapped\trce.exe -intstyle ise -v 3 -s 5 -n
+3 -fastpaths -xml McBSP_Test.twx McBSP_Test.ncd -o McBSP_Test.twr
+McBSP_Test.pcf -ucf xXCS3200A-4VQ100-mcbsptest.ucf
+
+Design file:              McBSP_Test.ncd
+Physical constraint file: McBSP_Test.pcf
+Device,package,speed:     xc3s200a,vq100,-5 (PRODUCTION 1.42 2013-06-08)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+INFO:Timing:3390 - This architecture does not support a default System Jitter 
+   value, please add SYSTEM_JITTER constraint to the UCF to modify the Clock 
+   Uncertainty calculation.
+INFO:Timing:3389 - This architecture does not support 'Discrete Jitter' and 
+   'Phase Error' calculations, these terms will be zero in the Clock 
+   Uncertainty calculation.  Please make appropriate modification to 
+   SYSTEM_JITTER to account for the unsupported Discrete Jitter and Phase 
+   Error.
+
+================================================================================
+Timing constraint: TS_in_Platinentakt = PERIOD TIMEGRP "in_Platinentakt" 20 ns 
+HIGH 50%;
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 0 paths analyzed, 0 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 component switching limit errors)
+ Minimum period is   6.000ns.
+--------------------------------------------------------------------------------
+
+Component Switching Limit Checks: TS_in_Platinentakt = PERIOD TIMEGRP "in_Platinentakt" 20 ns HIGH 50%;
+--------------------------------------------------------------------------------
+Slack: 0.331ns (period - min period limit)
+  Period: 3.333ns
+  Min period limit: 3.002ns (333.111MHz) ()
+  Physical resource: INST_SCHNELLERTAKT/DCM_SP_INST/CLKFX
+  Logical resource: INST_SCHNELLERTAKT/DCM_SP_INST/CLKFX
+  Location pin: DCM_X0Y1.CLKFX
+  Clock network: INST_SCHNELLERTAKT/CLKFX_BUF
+--------------------------------------------------------------------------------
+Slack: 14.000ns (period - (min low pulse limit / (low pulse / period)))
+  Period: 20.000ns
+  Low pulse: 10.000ns
+  Low pulse limit: 3.000ns (Tdcmpw_CLKIN_50_100)
+  Physical resource: INST_SCHNELLERTAKT/DCM_SP_INST/CLKIN
+  Logical resource: INST_SCHNELLERTAKT/DCM_SP_INST/CLKIN
+  Location pin: DCM_X0Y1.CLKIN
+  Clock network: IN_PLATINENTAKT_IBUFG
+--------------------------------------------------------------------------------
+Slack: 14.000ns (period - (min high pulse limit / (high pulse / period)))
+  Period: 20.000ns
+  High pulse: 10.000ns
+  High pulse limit: 3.000ns (Tdcmpw_CLKIN_50_100)
+  Physical resource: INST_SCHNELLERTAKT/DCM_SP_INST/CLKIN
+  Logical resource: INST_SCHNELLERTAKT/DCM_SP_INST/CLKIN
+  Location pin: DCM_X0Y1.CLKIN
+  Clock network: IN_PLATINENTAKT_IBUFG
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: TS_in_AdatTakt = PERIOD TIMEGRP "in_AdatTakt" 81.3802 ns 
+HIGH 50%;
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 9490 paths analyzed, 399 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
+ Minimum period is  20.944ns.
+--------------------------------------------------------------------------------
+
+Paths for end point INST_ADAT_DEKODER/OUT_FRAMEOK_1 (P4.OCE), 10 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     30.218ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               ADAT_FRAME_SYNC_ERKENNUNG (FF)
+  Destination:          INST_ADAT_DEKODER/OUT_FRAMEOK_1 (FF)
+  Requirement:          40.690ns
+  Data Path Delay:      10.262ns (Levels of Logic = 5)
+  Clock Path Skew:      -0.210ns (0.939 - 1.149)
+  Source Clock:         DEBUG_ADATTAKT_OBUF falling at 40.690ns
+  Destination Clock:    ADAT_BIT_TAKT rising at 81.380ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: ADAT_FRAME_SYNC_ERKENNUNG to INST_ADAT_DEKODER/OUT_FRAMEOK_1
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X28Y19.YQ      Tcko                  0.596   ADAT_FRAME_SYNC_ERKENNUNG
+                                                       ADAT_FRAME_SYNC_ERKENNUNG
+    BUFGMUX_X3Y4.I1      net (fanout=1)        1.937   ADAT_FRAME_SYNC_ERKENNUNG
+    BUFGMUX_X3Y4.O       Tgi1o                 0.212   BUFGMUX_ADATFRAMESYNC
+                                                       BUFGMUX_ADATFRAMESYNC.GCLKMUX
+                                                       BUFGMUX_ADATFRAMESYNC
+    SLICE_X23Y34.G2      net (fanout=8)        2.124   DEBUG_FRAMESYNC_OBUF
+    SLICE_X23Y34.Y       Tilo                  0.561   INST_ADAT_DEKODER/ADAT_SYNC_LETZER_WERT
+                                                       INST_ADAT_DEKODER/MADD_BITZAEHLER_ADD0000_XOR<4>12_SW0
+    SLICE_X23Y34.F3      net (fanout=1)        0.021   INST_ADAT_DEKODER/MADD_BITZAEHLER_ADD0000_XOR<4>12_SW0/O
+    SLICE_X23Y34.X       Tilo                  0.562   INST_ADAT_DEKODER/ADAT_SYNC_LETZER_WERT
+                                                       INST_ADAT_DEKODER/MADD_BITZAEHLER_ADD0000_XOR<4>12
+    SLICE_X17Y32.G4      net (fanout=4)        0.561   INST_ADAT_DEKODER/N71
+    SLICE_X17Y32.Y       Tilo                  0.561   INST_ADAT_DEKODER/NEUEDATEN
+                                                       INST_ADAT_DEKODER/MADD_BITZAEHLER_ADD0000_XOR<7>141
+    SLICE_X17Y32.F3      net (fanout=3)        0.064   INST_ADAT_DEKODER/N61
+    SLICE_X17Y32.X       Tilo                  0.562   INST_ADAT_DEKODER/NEUEDATEN
+                                                       INST_ADAT_DEKODER/OUT_DATEN<0>_KANAELE_2_CMP_EQ00001
+    P4.OCE               net (fanout=11)       1.963   INST_ADAT_DEKODER/OUT_DATEN<0>_KANAELE_2_CMP_EQ0000
+    P4.OTCLK1            Tiooceck              0.538   OUT_FRAMEOK<1>
+                                                       INST_ADAT_DEKODER/OUT_FRAMEOK_1
+    -------------------------------------------------  ---------------------------
+    Total                                     10.262ns (3.592ns logic, 6.670ns route)
+                                                       (35.0% logic, 65.0% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     74.807ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               INST_ADAT_DEKODER/BITZAEHLER_0 (FF)
+  Destination:          INST_ADAT_DEKODER/OUT_FRAMEOK_1 (FF)
+  Requirement:          81.380ns
+  Data Path Delay:      6.484ns (Levels of Logic = 4)
+  Clock Path Skew:      -0.089ns (0.580 - 0.669)
+  Source Clock:         ADAT_BIT_TAKT rising at 0.000ns
+  Destination Clock:    ADAT_BIT_TAKT rising at 81.380ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: INST_ADAT_DEKODER/BITZAEHLER_0 to INST_ADAT_DEKODER/OUT_FRAMEOK_1
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X22Y34.XQ      Tcko                  0.521   INST_ADAT_DEKODER/BITZAEHLER<0>
+                                                       INST_ADAT_DEKODER/BITZAEHLER_0
+    SLICE_X23Y34.G3      net (fanout=6)        0.570   INST_ADAT_DEKODER/BITZAEHLER<0>
+    SLICE_X23Y34.Y       Tilo                  0.561   INST_ADAT_DEKODER/ADAT_SYNC_LETZER_WERT
+                                                       INST_ADAT_DEKODER/MADD_BITZAEHLER_ADD0000_XOR<4>12_SW0
+    SLICE_X23Y34.F3      net (fanout=1)        0.021   INST_ADAT_DEKODER/MADD_BITZAEHLER_ADD0000_XOR<4>12_SW0/O
+    SLICE_X23Y34.X       Tilo                  0.562   INST_ADAT_DEKODER/ADAT_SYNC_LETZER_WERT
+                                                       INST_ADAT_DEKODER/MADD_BITZAEHLER_ADD0000_XOR<4>12
+    SLICE_X17Y32.G4      net (fanout=4)        0.561   INST_ADAT_DEKODER/N71
+    SLICE_X17Y32.Y       Tilo                  0.561   INST_ADAT_DEKODER/NEUEDATEN
+                                                       INST_ADAT_DEKODER/MADD_BITZAEHLER_ADD0000_XOR<7>141
+    SLICE_X17Y32.F3      net (fanout=3)        0.064   INST_ADAT_DEKODER/N61
+    SLICE_X17Y32.X       Tilo                  0.562   INST_ADAT_DEKODER/NEUEDATEN
+                                                       INST_ADAT_DEKODER/OUT_DATEN<0>_KANAELE_2_CMP_EQ00001
+    P4.OCE               net (fanout=11)       1.963   INST_ADAT_DEKODER/OUT_DATEN<0>_KANAELE_2_CMP_EQ0000
+    P4.OTCLK1            Tiooceck              0.538   OUT_FRAMEOK<1>
+                                                       INST_ADAT_DEKODER/OUT_FRAMEOK_1
+    -------------------------------------------------  ---------------------------
+    Total                                      6.484ns (3.305ns logic, 3.179ns route)
+                                                       (51.0% logic, 49.0% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     74.936ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               INST_ADAT_DEKODER/BITZAEHLER_1 (FF)
+  Destination:          INST_ADAT_DEKODER/OUT_FRAMEOK_1 (FF)
+  Requirement:          81.380ns
+  Data Path Delay:      6.355ns (Levels of Logic = 3)
+  Clock Path Skew:      -0.089ns (0.580 - 0.669)
+  Source Clock:         ADAT_BIT_TAKT rising at 0.000ns
+  Destination Clock:    ADAT_BIT_TAKT rising at 81.380ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: INST_ADAT_DEKODER/BITZAEHLER_1 to INST_ADAT_DEKODER/OUT_FRAMEOK_1
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X22Y34.YQ      Tcko                  0.596   INST_ADAT_DEKODER/BITZAEHLER<0>
+                                                       INST_ADAT_DEKODER/BITZAEHLER_1
+    SLICE_X23Y34.F4      net (fanout=5)        0.948   INST_ADAT_DEKODER/BITZAEHLER<1>
+    SLICE_X23Y34.X       Tilo                  0.562   INST_ADAT_DEKODER/ADAT_SYNC_LETZER_WERT
+                                                       INST_ADAT_DEKODER/MADD_BITZAEHLER_ADD0000_XOR<4>12
+    SLICE_X17Y32.G4      net (fanout=4)        0.561   INST_ADAT_DEKODER/N71
+    SLICE_X17Y32.Y       Tilo                  0.561   INST_ADAT_DEKODER/NEUEDATEN
+                                                       INST_ADAT_DEKODER/MADD_BITZAEHLER_ADD0000_XOR<7>141
+    SLICE_X17Y32.F3      net (fanout=3)        0.064   INST_ADAT_DEKODER/N61
+    SLICE_X17Y32.X       Tilo                  0.562   INST_ADAT_DEKODER/NEUEDATEN
+                                                       INST_ADAT_DEKODER/OUT_DATEN<0>_KANAELE_2_CMP_EQ00001
+    P4.OCE               net (fanout=11)       1.963   INST_ADAT_DEKODER/OUT_DATEN<0>_KANAELE_2_CMP_EQ0000
+    P4.OTCLK1            Tiooceck              0.538   OUT_FRAMEOK<1>
+                                                       INST_ADAT_DEKODER/OUT_FRAMEOK_1
+    -------------------------------------------------  ---------------------------
+    Total                                      6.355ns (2.819ns logic, 3.536ns route)
+                                                       (44.4% logic, 55.6% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point INST_ADAT_DEKODER/OUT_FRAMEOK_0 (P3.OCE), 10 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     30.233ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               ADAT_FRAME_SYNC_ERKENNUNG (FF)
+  Destination:          INST_ADAT_DEKODER/OUT_FRAMEOK_0 (FF)
+  Requirement:          40.690ns
+  Data Path Delay:      10.247ns (Levels of Logic = 5)
+  Clock Path Skew:      -0.210ns (0.939 - 1.149)
+  Source Clock:         DEBUG_ADATTAKT_OBUF falling at 40.690ns
+  Destination Clock:    ADAT_BIT_TAKT rising at 81.380ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: ADAT_FRAME_SYNC_ERKENNUNG to INST_ADAT_DEKODER/OUT_FRAMEOK_0
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X28Y19.YQ      Tcko                  0.596   ADAT_FRAME_SYNC_ERKENNUNG
+                                                       ADAT_FRAME_SYNC_ERKENNUNG
+    BUFGMUX_X3Y4.I1      net (fanout=1)        1.937   ADAT_FRAME_SYNC_ERKENNUNG
+    BUFGMUX_X3Y4.O       Tgi1o                 0.212   BUFGMUX_ADATFRAMESYNC
+                                                       BUFGMUX_ADATFRAMESYNC.GCLKMUX
+                                                       BUFGMUX_ADATFRAMESYNC
+    SLICE_X23Y34.G2      net (fanout=8)        2.124   DEBUG_FRAMESYNC_OBUF
+    SLICE_X23Y34.Y       Tilo                  0.561   INST_ADAT_DEKODER/ADAT_SYNC_LETZER_WERT
+                                                       INST_ADAT_DEKODER/MADD_BITZAEHLER_ADD0000_XOR<4>12_SW0
+    SLICE_X23Y34.F3      net (fanout=1)        0.021   INST_ADAT_DEKODER/MADD_BITZAEHLER_ADD0000_XOR<4>12_SW0/O
+    SLICE_X23Y34.X       Tilo                  0.562   INST_ADAT_DEKODER/ADAT_SYNC_LETZER_WERT
+                                                       INST_ADAT_DEKODER/MADD_BITZAEHLER_ADD0000_XOR<4>12
+    SLICE_X17Y32.G4      net (fanout=4)        0.561   INST_ADAT_DEKODER/N71
+    SLICE_X17Y32.Y       Tilo                  0.561   INST_ADAT_DEKODER/NEUEDATEN
+                                                       INST_ADAT_DEKODER/MADD_BITZAEHLER_ADD0000_XOR<7>141
+    SLICE_X17Y32.F3      net (fanout=3)        0.064   INST_ADAT_DEKODER/N61
+    SLICE_X17Y32.X       Tilo                  0.562   INST_ADAT_DEKODER/NEUEDATEN
+                                                       INST_ADAT_DEKODER/OUT_DATEN<0>_KANAELE_2_CMP_EQ00001
+    P3.OCE               net (fanout=11)       1.948   INST_ADAT_DEKODER/OUT_DATEN<0>_KANAELE_2_CMP_EQ0000
+    P3.OTCLK1            Tiooceck              0.538   OUT_FRAMEOK<0>
+                                                       INST_ADAT_DEKODER/OUT_FRAMEOK_0
+    -------------------------------------------------  ---------------------------
+    Total                                     10.247ns (3.592ns logic, 6.655ns route)
+                                                       (35.1% logic, 64.9% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     74.822ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               INST_ADAT_DEKODER/BITZAEHLER_0 (FF)
+  Destination:          INST_ADAT_DEKODER/OUT_FRAMEOK_0 (FF)
+  Requirement:          81.380ns
+  Data Path Delay:      6.469ns (Levels of Logic = 4)
+  Clock Path Skew:      -0.089ns (0.580 - 0.669)
+  Source Clock:         ADAT_BIT_TAKT rising at 0.000ns
+  Destination Clock:    ADAT_BIT_TAKT rising at 81.380ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: INST_ADAT_DEKODER/BITZAEHLER_0 to INST_ADAT_DEKODER/OUT_FRAMEOK_0
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X22Y34.XQ      Tcko                  0.521   INST_ADAT_DEKODER/BITZAEHLER<0>
+                                                       INST_ADAT_DEKODER/BITZAEHLER_0
+    SLICE_X23Y34.G3      net (fanout=6)        0.570   INST_ADAT_DEKODER/BITZAEHLER<0>
+    SLICE_X23Y34.Y       Tilo                  0.561   INST_ADAT_DEKODER/ADAT_SYNC_LETZER_WERT
+                                                       INST_ADAT_DEKODER/MADD_BITZAEHLER_ADD0000_XOR<4>12_SW0
+    SLICE_X23Y34.F3      net (fanout=1)        0.021   INST_ADAT_DEKODER/MADD_BITZAEHLER_ADD0000_XOR<4>12_SW0/O
+    SLICE_X23Y34.X       Tilo                  0.562   INST_ADAT_DEKODER/ADAT_SYNC_LETZER_WERT
+                                                       INST_ADAT_DEKODER/MADD_BITZAEHLER_ADD0000_XOR<4>12
+    SLICE_X17Y32.G4      net (fanout=4)        0.561   INST_ADAT_DEKODER/N71
+    SLICE_X17Y32.Y       Tilo                  0.561   INST_ADAT_DEKODER/NEUEDATEN
+                                                       INST_ADAT_DEKODER/MADD_BITZAEHLER_ADD0000_XOR<7>141
+    SLICE_X17Y32.F3      net (fanout=3)        0.064   INST_ADAT_DEKODER/N61
+    SLICE_X17Y32.X       Tilo                  0.562   INST_ADAT_DEKODER/NEUEDATEN
+                                                       INST_ADAT_DEKODER/OUT_DATEN<0>_KANAELE_2_CMP_EQ00001
+    P3.OCE               net (fanout=11)       1.948   INST_ADAT_DEKODER/OUT_DATEN<0>_KANAELE_2_CMP_EQ0000
+    P3.OTCLK1            Tiooceck              0.538   OUT_FRAMEOK<0>
+                                                       INST_ADAT_DEKODER/OUT_FRAMEOK_0
+    -------------------------------------------------  ---------------------------
+    Total                                      6.469ns (3.305ns logic, 3.164ns route)
+                                                       (51.1% logic, 48.9% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     74.951ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               INST_ADAT_DEKODER/BITZAEHLER_1 (FF)
+  Destination:          INST_ADAT_DEKODER/OUT_FRAMEOK_0 (FF)
+  Requirement:          81.380ns
+  Data Path Delay:      6.340ns (Levels of Logic = 3)
+  Clock Path Skew:      -0.089ns (0.580 - 0.669)
+  Source Clock:         ADAT_BIT_TAKT rising at 0.000ns
+  Destination Clock:    ADAT_BIT_TAKT rising at 81.380ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: INST_ADAT_DEKODER/BITZAEHLER_1 to INST_ADAT_DEKODER/OUT_FRAMEOK_0
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X22Y34.YQ      Tcko                  0.596   INST_ADAT_DEKODER/BITZAEHLER<0>
+                                                       INST_ADAT_DEKODER/BITZAEHLER_1
+    SLICE_X23Y34.F4      net (fanout=5)        0.948   INST_ADAT_DEKODER/BITZAEHLER<1>
+    SLICE_X23Y34.X       Tilo                  0.562   INST_ADAT_DEKODER/ADAT_SYNC_LETZER_WERT
+                                                       INST_ADAT_DEKODER/MADD_BITZAEHLER_ADD0000_XOR<4>12
+    SLICE_X17Y32.G4      net (fanout=4)        0.561   INST_ADAT_DEKODER/N71
+    SLICE_X17Y32.Y       Tilo                  0.561   INST_ADAT_DEKODER/NEUEDATEN
+                                                       INST_ADAT_DEKODER/MADD_BITZAEHLER_ADD0000_XOR<7>141
+    SLICE_X17Y32.F3      net (fanout=3)        0.064   INST_ADAT_DEKODER/N61
+    SLICE_X17Y32.X       Tilo                  0.562   INST_ADAT_DEKODER/NEUEDATEN
+                                                       INST_ADAT_DEKODER/OUT_DATEN<0>_KANAELE_2_CMP_EQ00001
+    P3.OCE               net (fanout=11)       1.948   INST_ADAT_DEKODER/OUT_DATEN<0>_KANAELE_2_CMP_EQ0000
+    P3.OTCLK1            Tiooceck              0.538   OUT_FRAMEOK<0>
+                                                       INST_ADAT_DEKODER/OUT_FRAMEOK_0
+    -------------------------------------------------  ---------------------------
+    Total                                      6.340ns (2.819ns logic, 3.521ns route)
+                                                       (44.5% logic, 55.5% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point INST_ADAT_DEKODER/OUT_FRAMEOK_2 (P5.OCE), 10 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     30.352ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               ADAT_FRAME_SYNC_ERKENNUNG (FF)
+  Destination:          INST_ADAT_DEKODER/OUT_FRAMEOK_2 (FF)
+  Requirement:          40.690ns
+  Data Path Delay:      10.122ns (Levels of Logic = 5)
+  Clock Path Skew:      -0.216ns (0.933 - 1.149)
+  Source Clock:         DEBUG_ADATTAKT_OBUF falling at 40.690ns
+  Destination Clock:    ADAT_BIT_TAKT rising at 81.380ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: ADAT_FRAME_SYNC_ERKENNUNG to INST_ADAT_DEKODER/OUT_FRAMEOK_2
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X28Y19.YQ      Tcko                  0.596   ADAT_FRAME_SYNC_ERKENNUNG
+                                                       ADAT_FRAME_SYNC_ERKENNUNG
+    BUFGMUX_X3Y4.I1      net (fanout=1)        1.937   ADAT_FRAME_SYNC_ERKENNUNG
+    BUFGMUX_X3Y4.O       Tgi1o                 0.212   BUFGMUX_ADATFRAMESYNC
+                                                       BUFGMUX_ADATFRAMESYNC.GCLKMUX
+                                                       BUFGMUX_ADATFRAMESYNC
+    SLICE_X23Y34.G2      net (fanout=8)        2.124   DEBUG_FRAMESYNC_OBUF
+    SLICE_X23Y34.Y       Tilo                  0.561   INST_ADAT_DEKODER/ADAT_SYNC_LETZER_WERT
+                                                       INST_ADAT_DEKODER/MADD_BITZAEHLER_ADD0000_XOR<4>12_SW0
+    SLICE_X23Y34.F3      net (fanout=1)        0.021   INST_ADAT_DEKODER/MADD_BITZAEHLER_ADD0000_XOR<4>12_SW0/O
+    SLICE_X23Y34.X       Tilo                  0.562   INST_ADAT_DEKODER/ADAT_SYNC_LETZER_WERT
+                                                       INST_ADAT_DEKODER/MADD_BITZAEHLER_ADD0000_XOR<4>12
+    SLICE_X17Y32.G4      net (fanout=4)        0.561   INST_ADAT_DEKODER/N71
+    SLICE_X17Y32.Y       Tilo                  0.561   INST_ADAT_DEKODER/NEUEDATEN
+                                                       INST_ADAT_DEKODER/MADD_BITZAEHLER_ADD0000_XOR<7>141
+    SLICE_X17Y32.F3      net (fanout=3)        0.064   INST_ADAT_DEKODER/N61
+    SLICE_X17Y32.X       Tilo                  0.562   INST_ADAT_DEKODER/NEUEDATEN
+                                                       INST_ADAT_DEKODER/OUT_DATEN<0>_KANAELE_2_CMP_EQ00001
+    P5.OCE               net (fanout=11)       1.823   INST_ADAT_DEKODER/OUT_DATEN<0>_KANAELE_2_CMP_EQ0000
+    P5.OTCLK1            Tiooceck              0.538   OUT_FRAMEOK<2>
+                                                       INST_ADAT_DEKODER/OUT_FRAMEOK_2
+    -------------------------------------------------  ---------------------------
+    Total                                     10.122ns (3.592ns logic, 6.530ns route)
+                                                       (35.5% logic, 64.5% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     74.941ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               INST_ADAT_DEKODER/BITZAEHLER_0 (FF)
+  Destination:          INST_ADAT_DEKODER/OUT_FRAMEOK_2 (FF)
+  Requirement:          81.380ns
+  Data Path Delay:      6.344ns (Levels of Logic = 4)
+  Clock Path Skew:      -0.095ns (0.574 - 0.669)
+  Source Clock:         ADAT_BIT_TAKT rising at 0.000ns
+  Destination Clock:    ADAT_BIT_TAKT rising at 81.380ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: INST_ADAT_DEKODER/BITZAEHLER_0 to INST_ADAT_DEKODER/OUT_FRAMEOK_2
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X22Y34.XQ      Tcko                  0.521   INST_ADAT_DEKODER/BITZAEHLER<0>
+                                                       INST_ADAT_DEKODER/BITZAEHLER_0
+    SLICE_X23Y34.G3      net (fanout=6)        0.570   INST_ADAT_DEKODER/BITZAEHLER<0>
+    SLICE_X23Y34.Y       Tilo                  0.561   INST_ADAT_DEKODER/ADAT_SYNC_LETZER_WERT
+                                                       INST_ADAT_DEKODER/MADD_BITZAEHLER_ADD0000_XOR<4>12_SW0
+    SLICE_X23Y34.F3      net (fanout=1)        0.021   INST_ADAT_DEKODER/MADD_BITZAEHLER_ADD0000_XOR<4>12_SW0/O
+    SLICE_X23Y34.X       Tilo                  0.562   INST_ADAT_DEKODER/ADAT_SYNC_LETZER_WERT
+                                                       INST_ADAT_DEKODER/MADD_BITZAEHLER_ADD0000_XOR<4>12
+    SLICE_X17Y32.G4      net (fanout=4)        0.561   INST_ADAT_DEKODER/N71
+    SLICE_X17Y32.Y       Tilo                  0.561   INST_ADAT_DEKODER/NEUEDATEN
+                                                       INST_ADAT_DEKODER/MADD_BITZAEHLER_ADD0000_XOR<7>141
+    SLICE_X17Y32.F3      net (fanout=3)        0.064   INST_ADAT_DEKODER/N61
+    SLICE_X17Y32.X       Tilo                  0.562   INST_ADAT_DEKODER/NEUEDATEN
+                                                       INST_ADAT_DEKODER/OUT_DATEN<0>_KANAELE_2_CMP_EQ00001
+    P5.OCE               net (fanout=11)       1.823   INST_ADAT_DEKODER/OUT_DATEN<0>_KANAELE_2_CMP_EQ0000
+    P5.OTCLK1            Tiooceck              0.538   OUT_FRAMEOK<2>
+                                                       INST_ADAT_DEKODER/OUT_FRAMEOK_2
+    -------------------------------------------------  ---------------------------
+    Total                                      6.344ns (3.305ns logic, 3.039ns route)
+                                                       (52.1% logic, 47.9% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     75.070ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               INST_ADAT_DEKODER/BITZAEHLER_1 (FF)
+  Destination:          INST_ADAT_DEKODER/OUT_FRAMEOK_2 (FF)
+  Requirement:          81.380ns
+  Data Path Delay:      6.215ns (Levels of Logic = 3)
+  Clock Path Skew:      -0.095ns (0.574 - 0.669)
+  Source Clock:         ADAT_BIT_TAKT rising at 0.000ns
+  Destination Clock:    ADAT_BIT_TAKT rising at 81.380ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: INST_ADAT_DEKODER/BITZAEHLER_1 to INST_ADAT_DEKODER/OUT_FRAMEOK_2
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X22Y34.YQ      Tcko                  0.596   INST_ADAT_DEKODER/BITZAEHLER<0>
+                                                       INST_ADAT_DEKODER/BITZAEHLER_1
+    SLICE_X23Y34.F4      net (fanout=5)        0.948   INST_ADAT_DEKODER/BITZAEHLER<1>
+    SLICE_X23Y34.X       Tilo                  0.562   INST_ADAT_DEKODER/ADAT_SYNC_LETZER_WERT
+                                                       INST_ADAT_DEKODER/MADD_BITZAEHLER_ADD0000_XOR<4>12
+    SLICE_X17Y32.G4      net (fanout=4)        0.561   INST_ADAT_DEKODER/N71
+    SLICE_X17Y32.Y       Tilo                  0.561   INST_ADAT_DEKODER/NEUEDATEN
+                                                       INST_ADAT_DEKODER/MADD_BITZAEHLER_ADD0000_XOR<7>141
+    SLICE_X17Y32.F3      net (fanout=3)        0.064   INST_ADAT_DEKODER/N61
+    SLICE_X17Y32.X       Tilo                  0.562   INST_ADAT_DEKODER/NEUEDATEN
+                                                       INST_ADAT_DEKODER/OUT_DATEN<0>_KANAELE_2_CMP_EQ00001
+    P5.OCE               net (fanout=11)       1.823   INST_ADAT_DEKODER/OUT_DATEN<0>_KANAELE_2_CMP_EQ0000
+    P5.OTCLK1            Tiooceck              0.538   OUT_FRAMEOK<2>
+                                                       INST_ADAT_DEKODER/OUT_FRAMEOK_2
+    -------------------------------------------------  ---------------------------
+    Total                                      6.215ns (2.819ns logic, 3.396ns route)
+                                                       (45.4% logic, 54.6% route)
+
+--------------------------------------------------------------------------------
+
+Hold Paths: TS_in_AdatTakt = PERIOD TIMEGRP "in_AdatTakt" 81.3802 ns HIGH 50%;
+--------------------------------------------------------------------------------
+
+Paths for end point INST_ADAT_DEKODER/MSHREG_ADAT_FRAME_1_8/SRL16E (SLICE_X4Y63.BX), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      0.644ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               INST_ADAT_DEKODER/ADAT_FRAME_1_13 (FF)
+  Destination:          INST_ADAT_DEKODER/MSHREG_ADAT_FRAME_1_8/SRL16E (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      0.644ns (Levels of Logic = 1)
+  Clock Path Skew:      0.000ns
+  Source Clock:         ADAT_BIT_TAKT rising at 81.380ns
+  Destination Clock:    ADAT_BIT_TAKT rising at 81.380ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path: INST_ADAT_DEKODER/ADAT_FRAME_1_13 to INST_ADAT_DEKODER/MSHREG_ADAT_FRAME_1_8/SRL16E
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X4Y63.YQ       Tcko                  0.477   INST_ADAT_DEKODER/ADAT_FRAME_1_8
+                                                       INST_ADAT_DEKODER/ADAT_FRAME_1_13
+    SLICE_X4Y63.BX       net (fanout=2)        0.319   INST_ADAT_DEKODER/ADAT_FRAME_1_13
+    SLICE_X4Y63.CLK      Tdh         (-Th)     0.152   INST_ADAT_DEKODER/ADAT_FRAME_1_8
+                                                       INST_ADAT_DEKODER/MSHREG_ADAT_FRAME_1_8/SRL16E
+    -------------------------------------------------  ---------------------------
+    Total                                      0.644ns (0.325ns logic, 0.319ns route)
+                                                       (50.5% logic, 49.5% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point INST_ADAT_DEKODER/MSHREG_ADAT_FRAME_0_8/SRL16E (SLICE_X0Y56.BY), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      0.690ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               INST_ADAT_DEKODER/ADAT_FRAME_0_13 (FF)
+  Destination:          INST_ADAT_DEKODER/MSHREG_ADAT_FRAME_0_8/SRL16E (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      0.692ns (Levels of Logic = 1)
+  Clock Path Skew:      0.002ns (0.014 - 0.012)
+  Source Clock:         ADAT_BIT_TAKT rising at 81.380ns
+  Destination Clock:    ADAT_BIT_TAKT rising at 81.380ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path: INST_ADAT_DEKODER/ADAT_FRAME_0_13 to INST_ADAT_DEKODER/MSHREG_ADAT_FRAME_0_8/SRL16E
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X0Y57.YQ       Tcko                  0.477   INST_ADAT_DEKODER/ADAT_FRAME_0_13
+                                                       INST_ADAT_DEKODER/ADAT_FRAME_0_13
+    SLICE_X0Y56.BY       net (fanout=2)        0.345   INST_ADAT_DEKODER/ADAT_FRAME_0_13
+    SLICE_X0Y56.CLK      Tdh         (-Th)     0.130   INST_ADAT_DEKODER/ADAT_FRAME_0_8
+                                                       INST_ADAT_DEKODER/MSHREG_ADAT_FRAME_0_8/SRL16E
+    -------------------------------------------------  ---------------------------
+    Total                                      0.692ns (0.347ns logic, 0.345ns route)
+                                                       (50.1% logic, 49.9% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point INST_ADAT_DEKODER/MSHREG_ADAT_FRAME_2_13/SRL16E (SLICE_X6Y51.BY), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      0.706ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               INST_ADAT_DEKODER/ADAT_FRAME_2_18 (FF)
+  Destination:          INST_ADAT_DEKODER/MSHREG_ADAT_FRAME_2_13/SRL16E (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      0.711ns (Levels of Logic = 1)
+  Clock Path Skew:      0.005ns (0.008 - 0.003)
+  Source Clock:         ADAT_BIT_TAKT rising at 81.380ns
+  Destination Clock:    ADAT_BIT_TAKT rising at 81.380ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path: INST_ADAT_DEKODER/ADAT_FRAME_2_18 to INST_ADAT_DEKODER/MSHREG_ADAT_FRAME_2_13/SRL16E
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X6Y48.YQ       Tcko                  0.477   INST_ADAT_DEKODER/ADAT_FRAME_2_18
+                                                       INST_ADAT_DEKODER/ADAT_FRAME_2_18
+    SLICE_X6Y51.BY       net (fanout=2)        0.364   INST_ADAT_DEKODER/ADAT_FRAME_2_18
+    SLICE_X6Y51.CLK      Tdh         (-Th)     0.130   INST_ADAT_DEKODER/ADAT_FRAME_2_13
+                                                       INST_ADAT_DEKODER/MSHREG_ADAT_FRAME_2_13/SRL16E
+    -------------------------------------------------  ---------------------------
+    Total                                      0.711ns (0.347ns logic, 0.364ns route)
+                                                       (48.8% logic, 51.2% route)
+
+--------------------------------------------------------------------------------
+
+Component Switching Limit Checks: TS_in_AdatTakt = PERIOD TIMEGRP "in_AdatTakt" 81.3802 ns HIGH 50%;
+--------------------------------------------------------------------------------
+Slack: 78.884ns (period - (min low pulse limit / (low pulse / period)))
+  Period: 81.380ns
+  Low pulse: 40.690ns
+  Low pulse limit: 1.248ns (Trpw)
+  Physical resource: OUT_ADAT<0>/SR
+  Logical resource: INST_ADAT_ENKODER/INTERN_ADAT_0/SR
+  Location pin: P57.SR
+  Clock network: INST_ADAT_ENKODER/INTERN_ADAT_0_MUX000062
+--------------------------------------------------------------------------------
+Slack: 78.884ns (period - (min high pulse limit / (high pulse / period)))
+  Period: 81.380ns
+  High pulse: 40.690ns
+  High pulse limit: 1.248ns (Trpw)
+  Physical resource: OUT_ADAT<0>/SR
+  Logical resource: INST_ADAT_ENKODER/INTERN_ADAT_0/SR
+  Location pin: P57.SR
+  Clock network: INST_ADAT_ENKODER/INTERN_ADAT_0_MUX000062
+--------------------------------------------------------------------------------
+Slack: 78.884ns (period - (min low pulse limit / (low pulse / period)))
+  Period: 81.380ns
+  Low pulse: 40.690ns
+  Low pulse limit: 1.248ns (Trpw)
+  Physical resource: OUT_ADAT<1>/SR
+  Logical resource: INST_ADAT_ENKODER/INTERN_ADAT_1/SR
+  Location pin: P71.SR
+  Clock network: INST_ADAT_ENKODER/INTERN_ADAT_1_MUX000062
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: TS_INST_SCHNELLERTAKT_CLKFX_BUF = PERIOD TIMEGRP         
+"INST_SCHNELLERTAKT_CLKFX_BUF" TS_in_Platinentakt / 6 HIGH 50%;
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 9273 paths analyzed, 198 endpoints analyzed, 79 failing endpoints
+ 79 timing errors detected. (79 setup errors, 0 hold errors, 0 component switching limit errors)
+ Minimum period is   8.925ns.
+--------------------------------------------------------------------------------
+
+Paths for end point INST_ADAT_TAKTGEWINNUNG/BITLAENGEN_ZAEHLER_1 (SLICE_X13Y45.SR), 266 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     -5.592ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               INST_ADAT_TAKTGEWINNUNG/ZEIT_OHNE_AENDERUNG_1 (FF)
+  Destination:          INST_ADAT_TAKTGEWINNUNG/BITLAENGEN_ZAEHLER_1 (FF)
+  Requirement:          3.333ns
+  Data Path Delay:      8.905ns (Levels of Logic = 11)(Component delays alone exceeds constraint)
+  Clock Path Skew:      -0.020ns (0.225 - 0.245)
+  Source Clock:         INST_ADAT_TAKTGEWINNUNG/TAKT rising at 0.000ns
+  Destination Clock:    INST_ADAT_TAKTGEWINNUNG/TAKT rising at 3.333ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: INST_ADAT_TAKTGEWINNUNG/ZEIT_OHNE_AENDERUNG_1 to INST_ADAT_TAKTGEWINNUNG/BITLAENGEN_ZAEHLER_1
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X7Y43.YQ       Tcko                  0.524   INST_ADAT_TAKTGEWINNUNG/ZEIT_OHNE_AENDERUNG<0>
+                                                       INST_ADAT_TAKTGEWINNUNG/ZEIT_OHNE_AENDERUNG_1
+    SLICE_X9Y43.G4       net (fanout=5)        0.398   INST_ADAT_TAKTGEWINNUNG/ZEIT_OHNE_AENDERUNG<1>
+    SLICE_X9Y43.COUT     Topcyg                1.009   INST_ADAT_TAKTGEWINNUNG/SYNC_ADD0000<0>
+                                                       INST_ADAT_TAKTGEWINNUNG/ZEIT_OHNE_AENDERUNG<1>_rt.1
+                                                       INST_ADAT_TAKTGEWINNUNG/MADD_SYNC_ADD0000_CY<1>
+    SLICE_X9Y44.CIN      net (fanout=1)        0.000   INST_ADAT_TAKTGEWINNUNG/MADD_SYNC_ADD0000_CY<1>
+    SLICE_X9Y44.COUT     Tbyp                  0.130   INST_ADAT_TAKTGEWINNUNG/SYNC_ADD0000<2>
+                                                       INST_ADAT_TAKTGEWINNUNG/MADD_SYNC_ADD0000_CY<2>
+                                                       INST_ADAT_TAKTGEWINNUNG/MADD_SYNC_ADD0000_CY<3>
+    SLICE_X9Y45.CIN      net (fanout=1)        0.000   INST_ADAT_TAKTGEWINNUNG/MADD_SYNC_ADD0000_CY<3>
+    SLICE_X9Y45.COUT     Tbyp                  0.130   INST_ADAT_TAKTGEWINNUNG/SYNC_ADD0000<4>
+                                                       INST_ADAT_TAKTGEWINNUNG/MADD_SYNC_ADD0000_CY<4>
+                                                       INST_ADAT_TAKTGEWINNUNG/MADD_SYNC_ADD0000_CY<5>
+    SLICE_X9Y46.CIN      net (fanout=1)        0.000   INST_ADAT_TAKTGEWINNUNG/MADD_SYNC_ADD0000_CY<5>
+    SLICE_X9Y46.COUT     Tbyp                  0.130   INST_ADAT_TAKTGEWINNUNG/SYNC_ADD0000<6>
+                                                       INST_ADAT_TAKTGEWINNUNG/MADD_SYNC_ADD0000_CY<6>
+                                                       INST_ADAT_TAKTGEWINNUNG/MADD_SYNC_ADD0000_CY<7>
+    SLICE_X9Y47.CIN      net (fanout=1)        0.000   INST_ADAT_TAKTGEWINNUNG/MADD_SYNC_ADD0000_CY<7>
+    SLICE_X9Y47.X        Tcinx                 0.489   INST_ADAT_TAKTGEWINNUNG/SYNC_ADD0000<8>
+                                                       INST_ADAT_TAKTGEWINNUNG/MADD_SYNC_ADD0000_XOR<8>
+    SLICE_X11Y44.F3      net (fanout=1)        0.469   INST_ADAT_TAKTGEWINNUNG/SYNC_ADD0000<8>
+    SLICE_X11Y44.COUT    Topcyf                1.026   INST_ADAT_TAKTGEWINNUNG/MCOMPAR_SYNC_CMP_EQ0000_CY<1>
+                                                       INST_ADAT_TAKTGEWINNUNG/MCOMPAR_SYNC_CMP_EQ0000_LUT<0>
+                                                       INST_ADAT_TAKTGEWINNUNG/MCOMPAR_SYNC_CMP_EQ0000_CY<0>
+                                                       INST_ADAT_TAKTGEWINNUNG/MCOMPAR_SYNC_CMP_EQ0000_CY<1>
+    SLICE_X11Y45.CIN     net (fanout=1)        0.000   INST_ADAT_TAKTGEWINNUNG/MCOMPAR_SYNC_CMP_EQ0000_CY<1>
+    SLICE_X11Y45.COUT    Tbyp                  0.130   INST_ADAT_TAKTGEWINNUNG/MCOMPAR_SYNC_CMP_EQ0000_CY<3>
+                                                       INST_ADAT_TAKTGEWINNUNG/MCOMPAR_SYNC_CMP_EQ0000_CY<2>
+                                                       INST_ADAT_TAKTGEWINNUNG/MCOMPAR_SYNC_CMP_EQ0000_CY<3>
+    SLICE_X11Y46.CIN     net (fanout=1)        0.000   INST_ADAT_TAKTGEWINNUNG/MCOMPAR_SYNC_CMP_EQ0000_CY<3>
+    SLICE_X11Y46.XB      Tcinxb                0.216   INST_ADAT_TAKTGEWINNUNG/MCOMPAR_SYNC_CMP_EQ0000_CY<4>
+                                                       INST_ADAT_TAKTGEWINNUNG/MCOMPAR_SYNC_CMP_EQ0000_CY<4>
+    SLICE_X12Y44.G3      net (fanout=10)       0.458   INST_ADAT_TAKTGEWINNUNG/MCOMPAR_SYNC_CMP_EQ0000_CY<4>
+    SLICE_X12Y44.X       Tif5x                 0.853   INST_ADAT_TAKTGEWINNUNG/SYNC
+                                                       INST_ADAT_TAKTGEWINNUNG/MXOR_ADAT_TAKT_XOR0000_RESULT1_SW1_F
+                                                       INST_ADAT_TAKTGEWINNUNG/MXOR_ADAT_TAKT_XOR0000_RESULT1_SW1
+    SLICE_X13Y42.G4      net (fanout=2)        0.259   N119
+    SLICE_X13Y42.Y       Tilo                  0.561   INST_ADAT_TAKTGEWINNUNG/BITLAENGEN_ZAEHLER<0>
+                                                       INST_ADAT_TAKTGEWINNUNG/MADD_BITLAENGEN_ZAEHLER_ADD0000_XOR<2>121
+    SLICE_X12Y40.BX      net (fanout=7)        0.407   INST_ADAT_TAKTGEWINNUNG/N2
+    SLICE_X12Y40.X       Tbxx                  0.705   INST_ADAT_TAKTGEWINNUNG/BITLAENGEN_ZAEHLER_OR0000
+                                                       INST_ADAT_TAKTGEWINNUNG/BITLAENGEN_ZAEHLER_OR00001
+    SLICE_X13Y45.SR      net (fanout=3)        0.578   INST_ADAT_TAKTGEWINNUNG/BITLAENGEN_ZAEHLER_OR0000
+    SLICE_X13Y45.CLK     Tsrck                 0.433   INST_ADAT_TAKTGEWINNUNG/BITLAENGEN_ZAEHLER<1>
+                                                       INST_ADAT_TAKTGEWINNUNG/BITLAENGEN_ZAEHLER_1
+    -------------------------------------------------  ---------------------------
+    Total                                      8.905ns (6.336ns logic, 2.569ns route)
+                                                       (71.2% logic, 28.8% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     -5.591ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               INST_ADAT_TAKTGEWINNUNG/ZEIT_OHNE_AENDERUNG_1 (FF)
+  Destination:          INST_ADAT_TAKTGEWINNUNG/BITLAENGEN_ZAEHLER_1 (FF)
+  Requirement:          3.333ns
+  Data Path Delay:      8.904ns (Levels of Logic = 11)(Component delays alone exceeds constraint)
+  Clock Path Skew:      -0.020ns (0.225 - 0.245)
+  Source Clock:         INST_ADAT_TAKTGEWINNUNG/TAKT rising at 0.000ns
+  Destination Clock:    INST_ADAT_TAKTGEWINNUNG/TAKT rising at 3.333ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: INST_ADAT_TAKTGEWINNUNG/ZEIT_OHNE_AENDERUNG_1 to INST_ADAT_TAKTGEWINNUNG/BITLAENGEN_ZAEHLER_1
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X7Y43.YQ       Tcko                  0.524   INST_ADAT_TAKTGEWINNUNG/ZEIT_OHNE_AENDERUNG<0>
+                                                       INST_ADAT_TAKTGEWINNUNG/ZEIT_OHNE_AENDERUNG_1
+    SLICE_X9Y43.G4       net (fanout=5)        0.398   INST_ADAT_TAKTGEWINNUNG/ZEIT_OHNE_AENDERUNG<1>
+    SLICE_X9Y43.COUT     Topcyg                1.009   INST_ADAT_TAKTGEWINNUNG/SYNC_ADD0000<0>
+                                                       INST_ADAT_TAKTGEWINNUNG/ZEIT_OHNE_AENDERUNG<1>_rt.1
+                                                       INST_ADAT_TAKTGEWINNUNG/MADD_SYNC_ADD0000_CY<1>
+    SLICE_X9Y44.CIN      net (fanout=1)        0.000   INST_ADAT_TAKTGEWINNUNG/MADD_SYNC_ADD0000_CY<1>
+    SLICE_X9Y44.COUT     Tbyp                  0.130   INST_ADAT_TAKTGEWINNUNG/SYNC_ADD0000<2>
+                                                       INST_ADAT_TAKTGEWINNUNG/MADD_SYNC_ADD0000_CY<2>
+                                                       INST_ADAT_TAKTGEWINNUNG/MADD_SYNC_ADD0000_CY<3>
+    SLICE_X9Y45.CIN      net (fanout=1)        0.000   INST_ADAT_TAKTGEWINNUNG/MADD_SYNC_ADD0000_CY<3>
+    SLICE_X9Y45.COUT     Tbyp                  0.130   INST_ADAT_TAKTGEWINNUNG/SYNC_ADD0000<4>
+                                                       INST_ADAT_TAKTGEWINNUNG/MADD_SYNC_ADD0000_CY<4>
+                                                       INST_ADAT_TAKTGEWINNUNG/MADD_SYNC_ADD0000_CY<5>
+    SLICE_X9Y46.CIN      net (fanout=1)        0.000   INST_ADAT_TAKTGEWINNUNG/MADD_SYNC_ADD0000_CY<5>
+    SLICE_X9Y46.COUT     Tbyp                  0.130   INST_ADAT_TAKTGEWINNUNG/SYNC_ADD0000<6>
+                                                       INST_ADAT_TAKTGEWINNUNG/MADD_SYNC_ADD0000_CY<6>
+                                                       INST_ADAT_TAKTGEWINNUNG/MADD_SYNC_ADD0000_CY<7>
+    SLICE_X9Y47.CIN      net (fanout=1)        0.000   INST_ADAT_TAKTGEWINNUNG/MADD_SYNC_ADD0000_CY<7>
+    SLICE_X9Y47.X        Tcinx                 0.489   INST_ADAT_TAKTGEWINNUNG/SYNC_ADD0000<8>
+                                                       INST_ADAT_TAKTGEWINNUNG/MADD_SYNC_ADD0000_XOR<8>
+    SLICE_X11Y44.F3      net (fanout=1)        0.469   INST_ADAT_TAKTGEWINNUNG/SYNC_ADD0000<8>
+    SLICE_X11Y44.COUT    Topcyf                1.026   INST_ADAT_TAKTGEWINNUNG/MCOMPAR_SYNC_CMP_EQ0000_CY<1>
+                                                       INST_ADAT_TAKTGEWINNUNG/MCOMPAR_SYNC_CMP_EQ0000_LUT<0>
+                                                       INST_ADAT_TAKTGEWINNUNG/MCOMPAR_SYNC_CMP_EQ0000_CY<0>
+                                                       INST_ADAT_TAKTGEWINNUNG/MCOMPAR_SYNC_CMP_EQ0000_CY<1>
+    SLICE_X11Y45.CIN     net (fanout=1)        0.000   INST_ADAT_TAKTGEWINNUNG/MCOMPAR_SYNC_CMP_EQ0000_CY<1>
+    SLICE_X11Y45.COUT    Tbyp                  0.130   INST_ADAT_TAKTGEWINNUNG/MCOMPAR_SYNC_CMP_EQ0000_CY<3>
+                                                       INST_ADAT_TAKTGEWINNUNG/MCOMPAR_SYNC_CMP_EQ0000_CY<2>
+                                                       INST_ADAT_TAKTGEWINNUNG/MCOMPAR_SYNC_CMP_EQ0000_CY<3>
+    SLICE_X11Y46.CIN     net (fanout=1)        0.000   INST_ADAT_TAKTGEWINNUNG/MCOMPAR_SYNC_CMP_EQ0000_CY<3>
+    SLICE_X11Y46.XB      Tcinxb                0.216   INST_ADAT_TAKTGEWINNUNG/MCOMPAR_SYNC_CMP_EQ0000_CY<4>
+                                                       INST_ADAT_TAKTGEWINNUNG/MCOMPAR_SYNC_CMP_EQ0000_CY<4>
+    SLICE_X12Y44.F3      net (fanout=10)       0.457   INST_ADAT_TAKTGEWINNUNG/MCOMPAR_SYNC_CMP_EQ0000_CY<4>
+    SLICE_X12Y44.X       Tif5x                 0.853   INST_ADAT_TAKTGEWINNUNG/SYNC
+                                                       INST_ADAT_TAKTGEWINNUNG/MXOR_ADAT_TAKT_XOR0000_RESULT1_SW1_G
+                                                       INST_ADAT_TAKTGEWINNUNG/MXOR_ADAT_TAKT_XOR0000_RESULT1_SW1
+    SLICE_X13Y42.G4      net (fanout=2)        0.259   N119
+    SLICE_X13Y42.Y       Tilo                  0.561   INST_ADAT_TAKTGEWINNUNG/BITLAENGEN_ZAEHLER<0>
+                                                       INST_ADAT_TAKTGEWINNUNG/MADD_BITLAENGEN_ZAEHLER_ADD0000_XOR<2>121
+    SLICE_X12Y40.BX      net (fanout=7)        0.407   INST_ADAT_TAKTGEWINNUNG/N2
+    SLICE_X12Y40.X       Tbxx                  0.705   INST_ADAT_TAKTGEWINNUNG/BITLAENGEN_ZAEHLER_OR0000
+                                                       INST_ADAT_TAKTGEWINNUNG/BITLAENGEN_ZAEHLER_OR00001
+    SLICE_X13Y45.SR      net (fanout=3)        0.578   INST_ADAT_TAKTGEWINNUNG/BITLAENGEN_ZAEHLER_OR0000
+    SLICE_X13Y45.CLK     Tsrck                 0.433   INST_ADAT_TAKTGEWINNUNG/BITLAENGEN_ZAEHLER<1>
+                                                       INST_ADAT_TAKTGEWINNUNG/BITLAENGEN_ZAEHLER_1
+    -------------------------------------------------  ---------------------------
+    Total                                      8.904ns (6.336ns logic, 2.568ns route)
+                                                       (71.2% logic, 28.8% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     -5.582ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               INST_ADAT_TAKTGEWINNUNG/ZEIT_OHNE_AENDERUNG_1 (FF)
+  Destination:          INST_ADAT_TAKTGEWINNUNG/BITLAENGEN_ZAEHLER_1 (FF)
+  Requirement:          3.333ns
+  Data Path Delay:      8.895ns (Levels of Logic = 11)(Component delays alone exceeds constraint)
+  Clock Path Skew:      -0.020ns (0.225 - 0.245)
+  Source Clock:         INST_ADAT_TAKTGEWINNUNG/TAKT rising at 0.000ns
+  Destination Clock:    INST_ADAT_TAKTGEWINNUNG/TAKT rising at 3.333ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: INST_ADAT_TAKTGEWINNUNG/ZEIT_OHNE_AENDERUNG_1 to INST_ADAT_TAKTGEWINNUNG/BITLAENGEN_ZAEHLER_1
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X7Y43.YQ       Tcko                  0.524   INST_ADAT_TAKTGEWINNUNG/ZEIT_OHNE_AENDERUNG<0>
+                                                       INST_ADAT_TAKTGEWINNUNG/ZEIT_OHNE_AENDERUNG_1
+    SLICE_X9Y43.G4       net (fanout=5)        0.398   INST_ADAT_TAKTGEWINNUNG/ZEIT_OHNE_AENDERUNG<1>
+    SLICE_X9Y43.COUT     Topcyg                1.009   INST_ADAT_TAKTGEWINNUNG/SYNC_ADD0000<0>
+                                                       INST_ADAT_TAKTGEWINNUNG/ZEIT_OHNE_AENDERUNG<1>_rt.1
+                                                       INST_ADAT_TAKTGEWINNUNG/MADD_SYNC_ADD0000_CY<1>
+    SLICE_X9Y44.CIN      net (fanout=1)        0.000   INST_ADAT_TAKTGEWINNUNG/MADD_SYNC_ADD0000_CY<1>
+    SLICE_X9Y44.COUT     Tbyp                  0.130   INST_ADAT_TAKTGEWINNUNG/SYNC_ADD0000<2>
+                                                       INST_ADAT_TAKTGEWINNUNG/MADD_SYNC_ADD0000_CY<2>
+                                                       INST_ADAT_TAKTGEWINNUNG/MADD_SYNC_ADD0000_CY<3>
+    SLICE_X9Y45.CIN      net (fanout=1)        0.000   INST_ADAT_TAKTGEWINNUNG/MADD_SYNC_ADD0000_CY<3>
+    SLICE_X9Y45.COUT     Tbyp                  0.130   INST_ADAT_TAKTGEWINNUNG/SYNC_ADD0000<4>
+                                                       INST_ADAT_TAKTGEWINNUNG/MADD_SYNC_ADD0000_CY<4>
+                                                       INST_ADAT_TAKTGEWINNUNG/MADD_SYNC_ADD0000_CY<5>
+    SLICE_X9Y46.CIN      net (fanout=1)        0.000   INST_ADAT_TAKTGEWINNUNG/MADD_SYNC_ADD0000_CY<5>
+    SLICE_X9Y46.COUT     Tbyp                  0.130   INST_ADAT_TAKTGEWINNUNG/SYNC_ADD0000<6>
+                                                       INST_ADAT_TAKTGEWINNUNG/MADD_SYNC_ADD0000_CY<6>
+                                                       INST_ADAT_TAKTGEWINNUNG/MADD_SYNC_ADD0000_CY<7>
+    SLICE_X9Y47.CIN      net (fanout=1)        0.000   INST_ADAT_TAKTGEWINNUNG/MADD_SYNC_ADD0000_CY<7>
+    SLICE_X9Y47.Y        Tciny                 0.664   INST_ADAT_TAKTGEWINNUNG/SYNC_ADD0000<8>
+                                                       INST_ADAT_TAKTGEWINNUNG/MADD_SYNC_ADD0000_CY<8>
+                                                       INST_ADAT_TAKTGEWINNUNG/MADD_SYNC_ADD0000_XOR<9>
+    SLICE_X11Y44.F4      net (fanout=1)        0.284   INST_ADAT_TAKTGEWINNUNG/SYNC_ADD0000<9>
+    SLICE_X11Y44.COUT    Topcyf                1.026   INST_ADAT_TAKTGEWINNUNG/MCOMPAR_SYNC_CMP_EQ0000_CY<1>
+                                                       INST_ADAT_TAKTGEWINNUNG/MCOMPAR_SYNC_CMP_EQ0000_LUT<0>
+                                                       INST_ADAT_TAKTGEWINNUNG/MCOMPAR_SYNC_CMP_EQ0000_CY<0>
+                                                       INST_ADAT_TAKTGEWINNUNG/MCOMPAR_SYNC_CMP_EQ0000_CY<1>
+    SLICE_X11Y45.CIN     net (fanout=1)        0.000   INST_ADAT_TAKTGEWINNUNG/MCOMPAR_SYNC_CMP_EQ0000_CY<1>
+    SLICE_X11Y45.COUT    Tbyp                  0.130   INST_ADAT_TAKTGEWINNUNG/MCOMPAR_SYNC_CMP_EQ0000_CY<3>
+                                                       INST_ADAT_TAKTGEWINNUNG/MCOMPAR_SYNC_CMP_EQ0000_CY<2>
+                                                       INST_ADAT_TAKTGEWINNUNG/MCOMPAR_SYNC_CMP_EQ0000_CY<3>
+    SLICE_X11Y46.CIN     net (fanout=1)        0.000   INST_ADAT_TAKTGEWINNUNG/MCOMPAR_SYNC_CMP_EQ0000_CY<3>
+    SLICE_X11Y46.XB      Tcinxb                0.216   INST_ADAT_TAKTGEWINNUNG/MCOMPAR_SYNC_CMP_EQ0000_CY<4>
+                                                       INST_ADAT_TAKTGEWINNUNG/MCOMPAR_SYNC_CMP_EQ0000_CY<4>
+    SLICE_X12Y44.G3      net (fanout=10)       0.458   INST_ADAT_TAKTGEWINNUNG/MCOMPAR_SYNC_CMP_EQ0000_CY<4>
+    SLICE_X12Y44.X       Tif5x                 0.853   INST_ADAT_TAKTGEWINNUNG/SYNC
+                                                       INST_ADAT_TAKTGEWINNUNG/MXOR_ADAT_TAKT_XOR0000_RESULT1_SW1_F
+                                                       INST_ADAT_TAKTGEWINNUNG/MXOR_ADAT_TAKT_XOR0000_RESULT1_SW1
+    SLICE_X13Y42.G4      net (fanout=2)        0.259   N119
+    SLICE_X13Y42.Y       Tilo                  0.561   INST_ADAT_TAKTGEWINNUNG/BITLAENGEN_ZAEHLER<0>
+                                                       INST_ADAT_TAKTGEWINNUNG/MADD_BITLAENGEN_ZAEHLER_ADD0000_XOR<2>121
+    SLICE_X12Y40.BX      net (fanout=7)        0.407   INST_ADAT_TAKTGEWINNUNG/N2
+    SLICE_X12Y40.X       Tbxx                  0.705   INST_ADAT_TAKTGEWINNUNG/BITLAENGEN_ZAEHLER_OR0000
+                                                       INST_ADAT_TAKTGEWINNUNG/BITLAENGEN_ZAEHLER_OR00001
+    SLICE_X13Y45.SR      net (fanout=3)        0.578   INST_ADAT_TAKTGEWINNUNG/BITLAENGEN_ZAEHLER_OR0000
+    SLICE_X13Y45.CLK     Tsrck                 0.433   INST_ADAT_TAKTGEWINNUNG/BITLAENGEN_ZAEHLER<1>
+                                                       INST_ADAT_TAKTGEWINNUNG/BITLAENGEN_ZAEHLER_1
+    -------------------------------------------------  ---------------------------
+    Total                                      8.895ns (6.511ns logic, 2.384ns route)
+                                                       (73.2% logic, 26.8% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point INST_ADAT_TAKTGEWINNUNG/BITLAENGEN_ZAEHLER_2 (SLICE_X12Y41.SR), 266 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     -5.555ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               INST_ADAT_TAKTGEWINNUNG/ZEIT_OHNE_AENDERUNG_1 (FF)
+  Destination:          INST_ADAT_TAKTGEWINNUNG/BITLAENGEN_ZAEHLER_2 (FF)
+  Requirement:          3.333ns
+  Data Path Delay:      8.893ns (Levels of Logic = 11)(Component delays alone exceeds constraint)
+  Clock Path Skew:      0.005ns (0.250 - 0.245)
+  Source Clock:         INST_ADAT_TAKTGEWINNUNG/TAKT rising at 0.000ns
+  Destination Clock:    INST_ADAT_TAKTGEWINNUNG/TAKT rising at 3.333ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: INST_ADAT_TAKTGEWINNUNG/ZEIT_OHNE_AENDERUNG_1 to INST_ADAT_TAKTGEWINNUNG/BITLAENGEN_ZAEHLER_2
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X7Y43.YQ       Tcko                  0.524   INST_ADAT_TAKTGEWINNUNG/ZEIT_OHNE_AENDERUNG<0>
+                                                       INST_ADAT_TAKTGEWINNUNG/ZEIT_OHNE_AENDERUNG_1
+    SLICE_X9Y43.G4       net (fanout=5)        0.398   INST_ADAT_TAKTGEWINNUNG/ZEIT_OHNE_AENDERUNG<1>
+    SLICE_X9Y43.COUT     Topcyg                1.009   INST_ADAT_TAKTGEWINNUNG/SYNC_ADD0000<0>
+                                                       INST_ADAT_TAKTGEWINNUNG/ZEIT_OHNE_AENDERUNG<1>_rt.1
+                                                       INST_ADAT_TAKTGEWINNUNG/MADD_SYNC_ADD0000_CY<1>
+    SLICE_X9Y44.CIN      net (fanout=1)        0.000   INST_ADAT_TAKTGEWINNUNG/MADD_SYNC_ADD0000_CY<1>
+    SLICE_X9Y44.COUT     Tbyp                  0.130   INST_ADAT_TAKTGEWINNUNG/SYNC_ADD0000<2>
+                                                       INST_ADAT_TAKTGEWINNUNG/MADD_SYNC_ADD0000_CY<2>
+                                                       INST_ADAT_TAKTGEWINNUNG/MADD_SYNC_ADD0000_CY<3>
+    SLICE_X9Y45.CIN      net (fanout=1)        0.000   INST_ADAT_TAKTGEWINNUNG/MADD_SYNC_ADD0000_CY<3>
+    SLICE_X9Y45.COUT     Tbyp                  0.130   INST_ADAT_TAKTGEWINNUNG/SYNC_ADD0000<4>
+                                                       INST_ADAT_TAKTGEWINNUNG/MADD_SYNC_ADD0000_CY<4>
+                                                       INST_ADAT_TAKTGEWINNUNG/MADD_SYNC_ADD0000_CY<5>
+    SLICE_X9Y46.CIN      net (fanout=1)        0.000   INST_ADAT_TAKTGEWINNUNG/MADD_SYNC_ADD0000_CY<5>
+    SLICE_X9Y46.COUT     Tbyp                  0.130   INST_ADAT_TAKTGEWINNUNG/SYNC_ADD0000<6>
+                                                       INST_ADAT_TAKTGEWINNUNG/MADD_SYNC_ADD0000_CY<6>
+                                                       INST_ADAT_TAKTGEWINNUNG/MADD_SYNC_ADD0000_CY<7>
+    SLICE_X9Y47.CIN      net (fanout=1)        0.000   INST_ADAT_TAKTGEWINNUNG/MADD_SYNC_ADD0000_CY<7>
+    SLICE_X9Y47.X        Tcinx                 0.489   INST_ADAT_TAKTGEWINNUNG/SYNC_ADD0000<8>
+                                                       INST_ADAT_TAKTGEWINNUNG/MADD_SYNC_ADD0000_XOR<8>
+    SLICE_X11Y44.F3      net (fanout=1)        0.469   INST_ADAT_TAKTGEWINNUNG/SYNC_ADD0000<8>
+    SLICE_X11Y44.COUT    Topcyf                1.026   INST_ADAT_TAKTGEWINNUNG/MCOMPAR_SYNC_CMP_EQ0000_CY<1>
+                                                       INST_ADAT_TAKTGEWINNUNG/MCOMPAR_SYNC_CMP_EQ0000_LUT<0>
+                                                       INST_ADAT_TAKTGEWINNUNG/MCOMPAR_SYNC_CMP_EQ0000_CY<0>
+                                                       INST_ADAT_TAKTGEWINNUNG/MCOMPAR_SYNC_CMP_EQ0000_CY<1>
+    SLICE_X11Y45.CIN     net (fanout=1)        0.000   INST_ADAT_TAKTGEWINNUNG/MCOMPAR_SYNC_CMP_EQ0000_CY<1>
+    SLICE_X11Y45.COUT    Tbyp                  0.130   INST_ADAT_TAKTGEWINNUNG/MCOMPAR_SYNC_CMP_EQ0000_CY<3>
+                                                       INST_ADAT_TAKTGEWINNUNG/MCOMPAR_SYNC_CMP_EQ0000_CY<2>
+                                                       INST_ADAT_TAKTGEWINNUNG/MCOMPAR_SYNC_CMP_EQ0000_CY<3>
+    SLICE_X11Y46.CIN     net (fanout=1)        0.000   INST_ADAT_TAKTGEWINNUNG/MCOMPAR_SYNC_CMP_EQ0000_CY<3>
+    SLICE_X11Y46.XB      Tcinxb                0.216   INST_ADAT_TAKTGEWINNUNG/MCOMPAR_SYNC_CMP_EQ0000_CY<4>
+                                                       INST_ADAT_TAKTGEWINNUNG/MCOMPAR_SYNC_CMP_EQ0000_CY<4>
+    SLICE_X12Y44.G3      net (fanout=10)       0.458   INST_ADAT_TAKTGEWINNUNG/MCOMPAR_SYNC_CMP_EQ0000_CY<4>
+    SLICE_X12Y44.X       Tif5x                 0.853   INST_ADAT_TAKTGEWINNUNG/SYNC
+                                                       INST_ADAT_TAKTGEWINNUNG/MXOR_ADAT_TAKT_XOR0000_RESULT1_SW1_F
+                                                       INST_ADAT_TAKTGEWINNUNG/MXOR_ADAT_TAKT_XOR0000_RESULT1_SW1
+    SLICE_X13Y42.G4      net (fanout=2)        0.259   N119
+    SLICE_X13Y42.Y       Tilo                  0.561   INST_ADAT_TAKTGEWINNUNG/BITLAENGEN_ZAEHLER<0>
+                                                       INST_ADAT_TAKTGEWINNUNG/MADD_BITLAENGEN_ZAEHLER_ADD0000_XOR<2>121
+    SLICE_X12Y40.BX      net (fanout=7)        0.407   INST_ADAT_TAKTGEWINNUNG/N2
+    SLICE_X12Y40.X       Tbxx                  0.705   INST_ADAT_TAKTGEWINNUNG/BITLAENGEN_ZAEHLER_OR0000
+                                                       INST_ADAT_TAKTGEWINNUNG/BITLAENGEN_ZAEHLER_OR00001
+    SLICE_X12Y41.SR      net (fanout=3)        0.566   INST_ADAT_TAKTGEWINNUNG/BITLAENGEN_ZAEHLER_OR0000
+    SLICE_X12Y41.CLK     Tsrck                 0.433   INST_ADAT_TAKTGEWINNUNG/BITLAENGEN_ZAEHLER<2>
+                                                       INST_ADAT_TAKTGEWINNUNG/BITLAENGEN_ZAEHLER_2
+    -------------------------------------------------  ---------------------------
+    Total                                      8.893ns (6.336ns logic, 2.557ns route)
+                                                       (71.2% logic, 28.8% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     -5.554ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               INST_ADAT_TAKTGEWINNUNG/ZEIT_OHNE_AENDERUNG_1 (FF)
+  Destination:          INST_ADAT_TAKTGEWINNUNG/BITLAENGEN_ZAEHLER_2 (FF)
+  Requirement:          3.333ns
+  Data Path Delay:      8.892ns (Levels of Logic = 11)(Component delays alone exceeds constraint)
+  Clock Path Skew:      0.005ns (0.250 - 0.245)
+  Source Clock:         INST_ADAT_TAKTGEWINNUNG/TAKT rising at 0.000ns
+  Destination Clock:    INST_ADAT_TAKTGEWINNUNG/TAKT rising at 3.333ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: INST_ADAT_TAKTGEWINNUNG/ZEIT_OHNE_AENDERUNG_1 to INST_ADAT_TAKTGEWINNUNG/BITLAENGEN_ZAEHLER_2
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X7Y43.YQ       Tcko                  0.524   INST_ADAT_TAKTGEWINNUNG/ZEIT_OHNE_AENDERUNG<0>
+                                                       INST_ADAT_TAKTGEWINNUNG/ZEIT_OHNE_AENDERUNG_1
+    SLICE_X9Y43.G4       net (fanout=5)        0.398   INST_ADAT_TAKTGEWINNUNG/ZEIT_OHNE_AENDERUNG<1>
+    SLICE_X9Y43.COUT     Topcyg                1.009   INST_ADAT_TAKTGEWINNUNG/SYNC_ADD0000<0>
+                                                       INST_ADAT_TAKTGEWINNUNG/ZEIT_OHNE_AENDERUNG<1>_rt.1
+                                                       INST_ADAT_TAKTGEWINNUNG/MADD_SYNC_ADD0000_CY<1>
+    SLICE_X9Y44.CIN      net (fanout=1)        0.000   INST_ADAT_TAKTGEWINNUNG/MADD_SYNC_ADD0000_CY<1>
+    SLICE_X9Y44.COUT     Tbyp                  0.130   INST_ADAT_TAKTGEWINNUNG/SYNC_ADD0000<2>
+                                                       INST_ADAT_TAKTGEWINNUNG/MADD_SYNC_ADD0000_CY<2>
+                                                       INST_ADAT_TAKTGEWINNUNG/MADD_SYNC_ADD0000_CY<3>
+    SLICE_X9Y45.CIN      net (fanout=1)        0.000   INST_ADAT_TAKTGEWINNUNG/MADD_SYNC_ADD0000_CY<3>
+    SLICE_X9Y45.COUT     Tbyp                  0.130   INST_ADAT_TAKTGEWINNUNG/SYNC_ADD0000<4>
+                                                       INST_ADAT_TAKTGEWINNUNG/MADD_SYNC_ADD0000_CY<4>
+                                                       INST_ADAT_TAKTGEWINNUNG/MADD_SYNC_ADD0000_CY<5>
+    SLICE_X9Y46.CIN      net (fanout=1)        0.000   INST_ADAT_TAKTGEWINNUNG/MADD_SYNC_ADD0000_CY<5>
+    SLICE_X9Y46.COUT     Tbyp                  0.130   INST_ADAT_TAKTGEWINNUNG/SYNC_ADD0000<6>
+                                                       INST_ADAT_TAKTGEWINNUNG/MADD_SYNC_ADD0000_CY<6>
+                                                       INST_ADAT_TAKTGEWINNUNG/MADD_SYNC_ADD0000_CY<7>
+    SLICE_X9Y47.CIN      net (fanout=1)        0.000   INST_ADAT_TAKTGEWINNUNG/MADD_SYNC_ADD0000_CY<7>
+    SLICE_X9Y47.X        Tcinx                 0.489   INST_ADAT_TAKTGEWINNUNG/SYNC_ADD0000<8>
+                                                       INST_ADAT_TAKTGEWINNUNG/MADD_SYNC_ADD0000_XOR<8>
+    SLICE_X11Y44.F3      net (fanout=1)        0.469   INST_ADAT_TAKTGEWINNUNG/SYNC_ADD0000<8>
+    SLICE_X11Y44.COUT    Topcyf                1.026   INST_ADAT_TAKTGEWINNUNG/MCOMPAR_SYNC_CMP_EQ0000_CY<1>
+                                                       INST_ADAT_TAKTGEWINNUNG/MCOMPAR_SYNC_CMP_EQ0000_LUT<0>
+                                                       INST_ADAT_TAKTGEWINNUNG/MCOMPAR_SYNC_CMP_EQ0000_CY<0>
+                                                       INST_ADAT_TAKTGEWINNUNG/MCOMPAR_SYNC_CMP_EQ0000_CY<1>
+    SLICE_X11Y45.CIN     net (fanout=1)        0.000   INST_ADAT_TAKTGEWINNUNG/MCOMPAR_SYNC_CMP_EQ0000_CY<1>
+    SLICE_X11Y45.COUT    Tbyp                  0.130   INST_ADAT_TAKTGEWINNUNG/MCOMPAR_SYNC_CMP_EQ0000_CY<3>
+                                                       INST_ADAT_TAKTGEWINNUNG/MCOMPAR_SYNC_CMP_EQ0000_CY<2>
+                                                       INST_ADAT_TAKTGEWINNUNG/MCOMPAR_SYNC_CMP_EQ0000_CY<3>
+    SLICE_X11Y46.CIN     net (fanout=1)        0.000   INST_ADAT_TAKTGEWINNUNG/MCOMPAR_SYNC_CMP_EQ0000_CY<3>
+    SLICE_X11Y46.XB      Tcinxb                0.216   INST_ADAT_TAKTGEWINNUNG/MCOMPAR_SYNC_CMP_EQ0000_CY<4>
+                                                       INST_ADAT_TAKTGEWINNUNG/MCOMPAR_SYNC_CMP_EQ0000_CY<4>
+    SLICE_X12Y44.F3      net (fanout=10)       0.457   INST_ADAT_TAKTGEWINNUNG/MCOMPAR_SYNC_CMP_EQ0000_CY<4>
+    SLICE_X12Y44.X       Tif5x                 0.853   INST_ADAT_TAKTGEWINNUNG/SYNC
+                                                       INST_ADAT_TAKTGEWINNUNG/MXOR_ADAT_TAKT_XOR0000_RESULT1_SW1_G
+                                                       INST_ADAT_TAKTGEWINNUNG/MXOR_ADAT_TAKT_XOR0000_RESULT1_SW1
+    SLICE_X13Y42.G4      net (fanout=2)        0.259   N119
+    SLICE_X13Y42.Y       Tilo                  0.561   INST_ADAT_TAKTGEWINNUNG/BITLAENGEN_ZAEHLER<0>
+                                                       INST_ADAT_TAKTGEWINNUNG/MADD_BITLAENGEN_ZAEHLER_ADD0000_XOR<2>121
+    SLICE_X12Y40.BX      net (fanout=7)        0.407   INST_ADAT_TAKTGEWINNUNG/N2
+    SLICE_X12Y40.X       Tbxx                  0.705   INST_ADAT_TAKTGEWINNUNG/BITLAENGEN_ZAEHLER_OR0000
+                                                       INST_ADAT_TAKTGEWINNUNG/BITLAENGEN_ZAEHLER_OR00001
+    SLICE_X12Y41.SR      net (fanout=3)        0.566   INST_ADAT_TAKTGEWINNUNG/BITLAENGEN_ZAEHLER_OR0000
+    SLICE_X12Y41.CLK     Tsrck                 0.433   INST_ADAT_TAKTGEWINNUNG/BITLAENGEN_ZAEHLER<2>
+                                                       INST_ADAT_TAKTGEWINNUNG/BITLAENGEN_ZAEHLER_2
+    -------------------------------------------------  ---------------------------
+    Total                                      8.892ns (6.336ns logic, 2.556ns route)
+                                                       (71.3% logic, 28.7% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     -5.545ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               INST_ADAT_TAKTGEWINNUNG/ZEIT_OHNE_AENDERUNG_1 (FF)
+  Destination:          INST_ADAT_TAKTGEWINNUNG/BITLAENGEN_ZAEHLER_2 (FF)
+  Requirement:          3.333ns
+  Data Path Delay:      8.883ns (Levels of Logic = 11)(Component delays alone exceeds constraint)
+  Clock Path Skew:      0.005ns (0.250 - 0.245)
+  Source Clock:         INST_ADAT_TAKTGEWINNUNG/TAKT rising at 0.000ns
+  Destination Clock:    INST_ADAT_TAKTGEWINNUNG/TAKT rising at 3.333ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: INST_ADAT_TAKTGEWINNUNG/ZEIT_OHNE_AENDERUNG_1 to INST_ADAT_TAKTGEWINNUNG/BITLAENGEN_ZAEHLER_2
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X7Y43.YQ       Tcko                  0.524   INST_ADAT_TAKTGEWINNUNG/ZEIT_OHNE_AENDERUNG<0>
+                                                       INST_ADAT_TAKTGEWINNUNG/ZEIT_OHNE_AENDERUNG_1
+    SLICE_X9Y43.G4       net (fanout=5)        0.398   INST_ADAT_TAKTGEWINNUNG/ZEIT_OHNE_AENDERUNG<1>
+    SLICE_X9Y43.COUT     Topcyg                1.009   INST_ADAT_TAKTGEWINNUNG/SYNC_ADD0000<0>
+                                                       INST_ADAT_TAKTGEWINNUNG/ZEIT_OHNE_AENDERUNG<1>_rt.1
+                                                       INST_ADAT_TAKTGEWINNUNG/MADD_SYNC_ADD0000_CY<1>
+    SLICE_X9Y44.CIN      net (fanout=1)        0.000   INST_ADAT_TAKTGEWINNUNG/MADD_SYNC_ADD0000_CY<1>
+    SLICE_X9Y44.COUT     Tbyp                  0.130   INST_ADAT_TAKTGEWINNUNG/SYNC_ADD0000<2>
+                                                       INST_ADAT_TAKTGEWINNUNG/MADD_SYNC_ADD0000_CY<2>
+                                                       INST_ADAT_TAKTGEWINNUNG/MADD_SYNC_ADD0000_CY<3>
+    SLICE_X9Y45.CIN      net (fanout=1)        0.000   INST_ADAT_TAKTGEWINNUNG/MADD_SYNC_ADD0000_CY<3>
+    SLICE_X9Y45.COUT     Tbyp                  0.130   INST_ADAT_TAKTGEWINNUNG/SYNC_ADD0000<4>
+                                                       INST_ADAT_TAKTGEWINNUNG/MADD_SYNC_ADD0000_CY<4>
+                                                       INST_ADAT_TAKTGEWINNUNG/MADD_SYNC_ADD0000_CY<5>
+    SLICE_X9Y46.CIN      net (fanout=1)        0.000   INST_ADAT_TAKTGEWINNUNG/MADD_SYNC_ADD0000_CY<5>
+    SLICE_X9Y46.COUT     Tbyp                  0.130   INST_ADAT_TAKTGEWINNUNG/SYNC_ADD0000<6>
+                                                       INST_ADAT_TAKTGEWINNUNG/MADD_SYNC_ADD0000_CY<6>
+                                                       INST_ADAT_TAKTGEWINNUNG/MADD_SYNC_ADD0000_CY<7>
+    SLICE_X9Y47.CIN      net (fanout=1)        0.000   INST_ADAT_TAKTGEWINNUNG/MADD_SYNC_ADD0000_CY<7>
+    SLICE_X9Y47.Y        Tciny                 0.664   INST_ADAT_TAKTGEWINNUNG/SYNC_ADD0000<8>
+                                                       INST_ADAT_TAKTGEWINNUNG/MADD_SYNC_ADD0000_CY<8>
+                                                       INST_ADAT_TAKTGEWINNUNG/MADD_SYNC_ADD0000_XOR<9>
+    SLICE_X11Y44.F4      net (fanout=1)        0.284   INST_ADAT_TAKTGEWINNUNG/SYNC_ADD0000<9>
+    SLICE_X11Y44.COUT    Topcyf                1.026   INST_ADAT_TAKTGEWINNUNG/MCOMPAR_SYNC_CMP_EQ0000_CY<1>
+                                                       INST_ADAT_TAKTGEWINNUNG/MCOMPAR_SYNC_CMP_EQ0000_LUT<0>
+                                                       INST_ADAT_TAKTGEWINNUNG/MCOMPAR_SYNC_CMP_EQ0000_CY<0>
+                                                       INST_ADAT_TAKTGEWINNUNG/MCOMPAR_SYNC_CMP_EQ0000_CY<1>
+    SLICE_X11Y45.CIN     net (fanout=1)        0.000   INST_ADAT_TAKTGEWINNUNG/MCOMPAR_SYNC_CMP_EQ0000_CY<1>
+    SLICE_X11Y45.COUT    Tbyp                  0.130   INST_ADAT_TAKTGEWINNUNG/MCOMPAR_SYNC_CMP_EQ0000_CY<3>
+                                                       INST_ADAT_TAKTGEWINNUNG/MCOMPAR_SYNC_CMP_EQ0000_CY<2>
+                                                       INST_ADAT_TAKTGEWINNUNG/MCOMPAR_SYNC_CMP_EQ0000_CY<3>
+    SLICE_X11Y46.CIN     net (fanout=1)        0.000   INST_ADAT_TAKTGEWINNUNG/MCOMPAR_SYNC_CMP_EQ0000_CY<3>
+    SLICE_X11Y46.XB      Tcinxb                0.216   INST_ADAT_TAKTGEWINNUNG/MCOMPAR_SYNC_CMP_EQ0000_CY<4>
+                                                       INST_ADAT_TAKTGEWINNUNG/MCOMPAR_SYNC_CMP_EQ0000_CY<4>
+    SLICE_X12Y44.G3      net (fanout=10)       0.458   INST_ADAT_TAKTGEWINNUNG/MCOMPAR_SYNC_CMP_EQ0000_CY<4>
+    SLICE_X12Y44.X       Tif5x                 0.853   INST_ADAT_TAKTGEWINNUNG/SYNC
+                                                       INST_ADAT_TAKTGEWINNUNG/MXOR_ADAT_TAKT_XOR0000_RESULT1_SW1_F
+                                                       INST_ADAT_TAKTGEWINNUNG/MXOR_ADAT_TAKT_XOR0000_RESULT1_SW1
+    SLICE_X13Y42.G4      net (fanout=2)        0.259   N119
+    SLICE_X13Y42.Y       Tilo                  0.561   INST_ADAT_TAKTGEWINNUNG/BITLAENGEN_ZAEHLER<0>
+                                                       INST_ADAT_TAKTGEWINNUNG/MADD_BITLAENGEN_ZAEHLER_ADD0000_XOR<2>121
+    SLICE_X12Y40.BX      net (fanout=7)        0.407   INST_ADAT_TAKTGEWINNUNG/N2
+    SLICE_X12Y40.X       Tbxx                  0.705   INST_ADAT_TAKTGEWINNUNG/BITLAENGEN_ZAEHLER_OR0000
+                                                       INST_ADAT_TAKTGEWINNUNG/BITLAENGEN_ZAEHLER_OR00001
+    SLICE_X12Y41.SR      net (fanout=3)        0.566   INST_ADAT_TAKTGEWINNUNG/BITLAENGEN_ZAEHLER_OR0000
+    SLICE_X12Y41.CLK     Tsrck                 0.433   INST_ADAT_TAKTGEWINNUNG/BITLAENGEN_ZAEHLER<2>
+                                                       INST_ADAT_TAKTGEWINNUNG/BITLAENGEN_ZAEHLER_2
+    -------------------------------------------------  ---------------------------
+    Total                                      8.883ns (6.511ns logic, 2.372ns route)
+                                                       (73.3% logic, 26.7% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point INST_ADAT_TAKTGEWINNUNG/BITLAENGEN_ZAEHLER_0 (SLICE_X13Y42.SR), 266 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     -5.530ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               INST_ADAT_TAKTGEWINNUNG/ZEIT_OHNE_AENDERUNG_1 (FF)
+  Destination:          INST_ADAT_TAKTGEWINNUNG/BITLAENGEN_ZAEHLER_0 (FF)
+  Requirement:          3.333ns
+  Data Path Delay:      8.857ns (Levels of Logic = 11)(Component delays alone exceeds constraint)
+  Clock Path Skew:      -0.006ns (0.239 - 0.245)
+  Source Clock:         INST_ADAT_TAKTGEWINNUNG/TAKT rising at 0.000ns
+  Destination Clock:    INST_ADAT_TAKTGEWINNUNG/TAKT rising at 3.333ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: INST_ADAT_TAKTGEWINNUNG/ZEIT_OHNE_AENDERUNG_1 to INST_ADAT_TAKTGEWINNUNG/BITLAENGEN_ZAEHLER_0
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X7Y43.YQ       Tcko                  0.524   INST_ADAT_TAKTGEWINNUNG/ZEIT_OHNE_AENDERUNG<0>
+                                                       INST_ADAT_TAKTGEWINNUNG/ZEIT_OHNE_AENDERUNG_1
+    SLICE_X9Y43.G4       net (fanout=5)        0.398   INST_ADAT_TAKTGEWINNUNG/ZEIT_OHNE_AENDERUNG<1>
+    SLICE_X9Y43.COUT     Topcyg                1.009   INST_ADAT_TAKTGEWINNUNG/SYNC_ADD0000<0>
+                                                       INST_ADAT_TAKTGEWINNUNG/ZEIT_OHNE_AENDERUNG<1>_rt.1
+                                                       INST_ADAT_TAKTGEWINNUNG/MADD_SYNC_ADD0000_CY<1>
+    SLICE_X9Y44.CIN      net (fanout=1)        0.000   INST_ADAT_TAKTGEWINNUNG/MADD_SYNC_ADD0000_CY<1>
+    SLICE_X9Y44.COUT     Tbyp                  0.130   INST_ADAT_TAKTGEWINNUNG/SYNC_ADD0000<2>
+                                                       INST_ADAT_TAKTGEWINNUNG/MADD_SYNC_ADD0000_CY<2>
+                                                       INST_ADAT_TAKTGEWINNUNG/MADD_SYNC_ADD0000_CY<3>
+    SLICE_X9Y45.CIN      net (fanout=1)        0.000   INST_ADAT_TAKTGEWINNUNG/MADD_SYNC_ADD0000_CY<3>
+    SLICE_X9Y45.COUT     Tbyp                  0.130   INST_ADAT_TAKTGEWINNUNG/SYNC_ADD0000<4>
+                                                       INST_ADAT_TAKTGEWINNUNG/MADD_SYNC_ADD0000_CY<4>
+                                                       INST_ADAT_TAKTGEWINNUNG/MADD_SYNC_ADD0000_CY<5>
+    SLICE_X9Y46.CIN      net (fanout=1)        0.000   INST_ADAT_TAKTGEWINNUNG/MADD_SYNC_ADD0000_CY<5>
+    SLICE_X9Y46.COUT     Tbyp                  0.130   INST_ADAT_TAKTGEWINNUNG/SYNC_ADD0000<6>
+                                                       INST_ADAT_TAKTGEWINNUNG/MADD_SYNC_ADD0000_CY<6>
+                                                       INST_ADAT_TAKTGEWINNUNG/MADD_SYNC_ADD0000_CY<7>
+    SLICE_X9Y47.CIN      net (fanout=1)        0.000   INST_ADAT_TAKTGEWINNUNG/MADD_SYNC_ADD0000_CY<7>
+    SLICE_X9Y47.X        Tcinx                 0.489   INST_ADAT_TAKTGEWINNUNG/SYNC_ADD0000<8>
+                                                       INST_ADAT_TAKTGEWINNUNG/MADD_SYNC_ADD0000_XOR<8>
+    SLICE_X11Y44.F3      net (fanout=1)        0.469   INST_ADAT_TAKTGEWINNUNG/SYNC_ADD0000<8>
+    SLICE_X11Y44.COUT    Topcyf                1.026   INST_ADAT_TAKTGEWINNUNG/MCOMPAR_SYNC_CMP_EQ0000_CY<1>
+                                                       INST_ADAT_TAKTGEWINNUNG/MCOMPAR_SYNC_CMP_EQ0000_LUT<0>
+                                                       INST_ADAT_TAKTGEWINNUNG/MCOMPAR_SYNC_CMP_EQ0000_CY<0>
+                                                       INST_ADAT_TAKTGEWINNUNG/MCOMPAR_SYNC_CMP_EQ0000_CY<1>
+    SLICE_X11Y45.CIN     net (fanout=1)        0.000   INST_ADAT_TAKTGEWINNUNG/MCOMPAR_SYNC_CMP_EQ0000_CY<1>
+    SLICE_X11Y45.COUT    Tbyp                  0.130   INST_ADAT_TAKTGEWINNUNG/MCOMPAR_SYNC_CMP_EQ0000_CY<3>
+                                                       INST_ADAT_TAKTGEWINNUNG/MCOMPAR_SYNC_CMP_EQ0000_CY<2>
+                                                       INST_ADAT_TAKTGEWINNUNG/MCOMPAR_SYNC_CMP_EQ0000_CY<3>
+    SLICE_X11Y46.CIN     net (fanout=1)        0.000   INST_ADAT_TAKTGEWINNUNG/MCOMPAR_SYNC_CMP_EQ0000_CY<3>
+    SLICE_X11Y46.XB      Tcinxb                0.216   INST_ADAT_TAKTGEWINNUNG/MCOMPAR_SYNC_CMP_EQ0000_CY<4>
+                                                       INST_ADAT_TAKTGEWINNUNG/MCOMPAR_SYNC_CMP_EQ0000_CY<4>
+    SLICE_X12Y44.G3      net (fanout=10)       0.458   INST_ADAT_TAKTGEWINNUNG/MCOMPAR_SYNC_CMP_EQ0000_CY<4>
+    SLICE_X12Y44.X       Tif5x                 0.853   INST_ADAT_TAKTGEWINNUNG/SYNC
+                                                       INST_ADAT_TAKTGEWINNUNG/MXOR_ADAT_TAKT_XOR0000_RESULT1_SW1_F
+                                                       INST_ADAT_TAKTGEWINNUNG/MXOR_ADAT_TAKT_XOR0000_RESULT1_SW1
+    SLICE_X13Y42.G4      net (fanout=2)        0.259   N119
+    SLICE_X13Y42.Y       Tilo                  0.561   INST_ADAT_TAKTGEWINNUNG/BITLAENGEN_ZAEHLER<0>
+                                                       INST_ADAT_TAKTGEWINNUNG/MADD_BITLAENGEN_ZAEHLER_ADD0000_XOR<2>121
+    SLICE_X12Y40.BX      net (fanout=7)        0.407   INST_ADAT_TAKTGEWINNUNG/N2
+    SLICE_X12Y40.X       Tbxx                  0.705   INST_ADAT_TAKTGEWINNUNG/BITLAENGEN_ZAEHLER_OR0000
+                                                       INST_ADAT_TAKTGEWINNUNG/BITLAENGEN_ZAEHLER_OR00001
+    SLICE_X13Y42.SR      net (fanout=3)        0.530   INST_ADAT_TAKTGEWINNUNG/BITLAENGEN_ZAEHLER_OR0000
+    SLICE_X13Y42.CLK     Tsrck                 0.433   INST_ADAT_TAKTGEWINNUNG/BITLAENGEN_ZAEHLER<0>
+                                                       INST_ADAT_TAKTGEWINNUNG/BITLAENGEN_ZAEHLER_0
+    -------------------------------------------------  ---------------------------
+    Total                                      8.857ns (6.336ns logic, 2.521ns route)
+                                                       (71.5% logic, 28.5% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     -5.529ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               INST_ADAT_TAKTGEWINNUNG/ZEIT_OHNE_AENDERUNG_1 (FF)
+  Destination:          INST_ADAT_TAKTGEWINNUNG/BITLAENGEN_ZAEHLER_0 (FF)
+  Requirement:          3.333ns
+  Data Path Delay:      8.856ns (Levels of Logic = 11)(Component delays alone exceeds constraint)
+  Clock Path Skew:      -0.006ns (0.239 - 0.245)
+  Source Clock:         INST_ADAT_TAKTGEWINNUNG/TAKT rising at 0.000ns
+  Destination Clock:    INST_ADAT_TAKTGEWINNUNG/TAKT rising at 3.333ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: INST_ADAT_TAKTGEWINNUNG/ZEIT_OHNE_AENDERUNG_1 to INST_ADAT_TAKTGEWINNUNG/BITLAENGEN_ZAEHLER_0
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X7Y43.YQ       Tcko                  0.524   INST_ADAT_TAKTGEWINNUNG/ZEIT_OHNE_AENDERUNG<0>
+                                                       INST_ADAT_TAKTGEWINNUNG/ZEIT_OHNE_AENDERUNG_1
+    SLICE_X9Y43.G4       net (fanout=5)        0.398   INST_ADAT_TAKTGEWINNUNG/ZEIT_OHNE_AENDERUNG<1>
+    SLICE_X9Y43.COUT     Topcyg                1.009   INST_ADAT_TAKTGEWINNUNG/SYNC_ADD0000<0>
+                                                       INST_ADAT_TAKTGEWINNUNG/ZEIT_OHNE_AENDERUNG<1>_rt.1
+                                                       INST_ADAT_TAKTGEWINNUNG/MADD_SYNC_ADD0000_CY<1>
+    SLICE_X9Y44.CIN      net (fanout=1)        0.000   INST_ADAT_TAKTGEWINNUNG/MADD_SYNC_ADD0000_CY<1>
+    SLICE_X9Y44.COUT     Tbyp                  0.130   INST_ADAT_TAKTGEWINNUNG/SYNC_ADD0000<2>
+                                                       INST_ADAT_TAKTGEWINNUNG/MADD_SYNC_ADD0000_CY<2>
+                                                       INST_ADAT_TAKTGEWINNUNG/MADD_SYNC_ADD0000_CY<3>
+    SLICE_X9Y45.CIN      net (fanout=1)        0.000   INST_ADAT_TAKTGEWINNUNG/MADD_SYNC_ADD0000_CY<3>
+    SLICE_X9Y45.COUT     Tbyp                  0.130   INST_ADAT_TAKTGEWINNUNG/SYNC_ADD0000<4>
+                                                       INST_ADAT_TAKTGEWINNUNG/MADD_SYNC_ADD0000_CY<4>
+                                                       INST_ADAT_TAKTGEWINNUNG/MADD_SYNC_ADD0000_CY<5>
+    SLICE_X9Y46.CIN      net (fanout=1)        0.000   INST_ADAT_TAKTGEWINNUNG/MADD_SYNC_ADD0000_CY<5>
+    SLICE_X9Y46.COUT     Tbyp                  0.130   INST_ADAT_TAKTGEWINNUNG/SYNC_ADD0000<6>
+                                                       INST_ADAT_TAKTGEWINNUNG/MADD_SYNC_ADD0000_CY<6>
+                                                       INST_ADAT_TAKTGEWINNUNG/MADD_SYNC_ADD0000_CY<7>
+    SLICE_X9Y47.CIN      net (fanout=1)        0.000   INST_ADAT_TAKTGEWINNUNG/MADD_SYNC_ADD0000_CY<7>
+    SLICE_X9Y47.X        Tcinx                 0.489   INST_ADAT_TAKTGEWINNUNG/SYNC_ADD0000<8>
+                                                       INST_ADAT_TAKTGEWINNUNG/MADD_SYNC_ADD0000_XOR<8>
+    SLICE_X11Y44.F3      net (fanout=1)        0.469   INST_ADAT_TAKTGEWINNUNG/SYNC_ADD0000<8>
+    SLICE_X11Y44.COUT    Topcyf                1.026   INST_ADAT_TAKTGEWINNUNG/MCOMPAR_SYNC_CMP_EQ0000_CY<1>
+                                                       INST_ADAT_TAKTGEWINNUNG/MCOMPAR_SYNC_CMP_EQ0000_LUT<0>
+                                                       INST_ADAT_TAKTGEWINNUNG/MCOMPAR_SYNC_CMP_EQ0000_CY<0>
+                                                       INST_ADAT_TAKTGEWINNUNG/MCOMPAR_SYNC_CMP_EQ0000_CY<1>
+    SLICE_X11Y45.CIN     net (fanout=1)        0.000   INST_ADAT_TAKTGEWINNUNG/MCOMPAR_SYNC_CMP_EQ0000_CY<1>
+    SLICE_X11Y45.COUT    Tbyp                  0.130   INST_ADAT_TAKTGEWINNUNG/MCOMPAR_SYNC_CMP_EQ0000_CY<3>
+                                                       INST_ADAT_TAKTGEWINNUNG/MCOMPAR_SYNC_CMP_EQ0000_CY<2>
+                                                       INST_ADAT_TAKTGEWINNUNG/MCOMPAR_SYNC_CMP_EQ0000_CY<3>
+    SLICE_X11Y46.CIN     net (fanout=1)        0.000   INST_ADAT_TAKTGEWINNUNG/MCOMPAR_SYNC_CMP_EQ0000_CY<3>
+    SLICE_X11Y46.XB      Tcinxb                0.216   INST_ADAT_TAKTGEWINNUNG/MCOMPAR_SYNC_CMP_EQ0000_CY<4>
+                                                       INST_ADAT_TAKTGEWINNUNG/MCOMPAR_SYNC_CMP_EQ0000_CY<4>
+    SLICE_X12Y44.F3      net (fanout=10)       0.457   INST_ADAT_TAKTGEWINNUNG/MCOMPAR_SYNC_CMP_EQ0000_CY<4>
+    SLICE_X12Y44.X       Tif5x                 0.853   INST_ADAT_TAKTGEWINNUNG/SYNC
+                                                       INST_ADAT_TAKTGEWINNUNG/MXOR_ADAT_TAKT_XOR0000_RESULT1_SW1_G
+                                                       INST_ADAT_TAKTGEWINNUNG/MXOR_ADAT_TAKT_XOR0000_RESULT1_SW1
+    SLICE_X13Y42.G4      net (fanout=2)        0.259   N119
+    SLICE_X13Y42.Y       Tilo                  0.561   INST_ADAT_TAKTGEWINNUNG/BITLAENGEN_ZAEHLER<0>
+                                                       INST_ADAT_TAKTGEWINNUNG/MADD_BITLAENGEN_ZAEHLER_ADD0000_XOR<2>121
+    SLICE_X12Y40.BX      net (fanout=7)        0.407   INST_ADAT_TAKTGEWINNUNG/N2
+    SLICE_X12Y40.X       Tbxx                  0.705   INST_ADAT_TAKTGEWINNUNG/BITLAENGEN_ZAEHLER_OR0000
+                                                       INST_ADAT_TAKTGEWINNUNG/BITLAENGEN_ZAEHLER_OR00001
+    SLICE_X13Y42.SR      net (fanout=3)        0.530   INST_ADAT_TAKTGEWINNUNG/BITLAENGEN_ZAEHLER_OR0000
+    SLICE_X13Y42.CLK     Tsrck                 0.433   INST_ADAT_TAKTGEWINNUNG/BITLAENGEN_ZAEHLER<0>
+                                                       INST_ADAT_TAKTGEWINNUNG/BITLAENGEN_ZAEHLER_0
+    -------------------------------------------------  ---------------------------
+    Total                                      8.856ns (6.336ns logic, 2.520ns route)
+                                                       (71.5% logic, 28.5% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     -5.520ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               INST_ADAT_TAKTGEWINNUNG/ZEIT_OHNE_AENDERUNG_1 (FF)
+  Destination:          INST_ADAT_TAKTGEWINNUNG/BITLAENGEN_ZAEHLER_0 (FF)
+  Requirement:          3.333ns
+  Data Path Delay:      8.847ns (Levels of Logic = 11)(Component delays alone exceeds constraint)
+  Clock Path Skew:      -0.006ns (0.239 - 0.245)
+  Source Clock:         INST_ADAT_TAKTGEWINNUNG/TAKT rising at 0.000ns
+  Destination Clock:    INST_ADAT_TAKTGEWINNUNG/TAKT rising at 3.333ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: INST_ADAT_TAKTGEWINNUNG/ZEIT_OHNE_AENDERUNG_1 to INST_ADAT_TAKTGEWINNUNG/BITLAENGEN_ZAEHLER_0
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X7Y43.YQ       Tcko                  0.524   INST_ADAT_TAKTGEWINNUNG/ZEIT_OHNE_AENDERUNG<0>
+                                                       INST_ADAT_TAKTGEWINNUNG/ZEIT_OHNE_AENDERUNG_1
+    SLICE_X9Y43.G4       net (fanout=5)        0.398   INST_ADAT_TAKTGEWINNUNG/ZEIT_OHNE_AENDERUNG<1>
+    SLICE_X9Y43.COUT     Topcyg                1.009   INST_ADAT_TAKTGEWINNUNG/SYNC_ADD0000<0>
+                                                       INST_ADAT_TAKTGEWINNUNG/ZEIT_OHNE_AENDERUNG<1>_rt.1
+                                                       INST_ADAT_TAKTGEWINNUNG/MADD_SYNC_ADD0000_CY<1>
+    SLICE_X9Y44.CIN      net (fanout=1)        0.000   INST_ADAT_TAKTGEWINNUNG/MADD_SYNC_ADD0000_CY<1>
+    SLICE_X9Y44.COUT     Tbyp                  0.130   INST_ADAT_TAKTGEWINNUNG/SYNC_ADD0000<2>
+                                                       INST_ADAT_TAKTGEWINNUNG/MADD_SYNC_ADD0000_CY<2>
+                                                       INST_ADAT_TAKTGEWINNUNG/MADD_SYNC_ADD0000_CY<3>
+    SLICE_X9Y45.CIN      net (fanout=1)        0.000   INST_ADAT_TAKTGEWINNUNG/MADD_SYNC_ADD0000_CY<3>
+    SLICE_X9Y45.COUT     Tbyp                  0.130   INST_ADAT_TAKTGEWINNUNG/SYNC_ADD0000<4>
+                                                       INST_ADAT_TAKTGEWINNUNG/MADD_SYNC_ADD0000_CY<4>
+                                                       INST_ADAT_TAKTGEWINNUNG/MADD_SYNC_ADD0000_CY<5>
+    SLICE_X9Y46.CIN      net (fanout=1)        0.000   INST_ADAT_TAKTGEWINNUNG/MADD_SYNC_ADD0000_CY<5>
+    SLICE_X9Y46.COUT     Tbyp                  0.130   INST_ADAT_TAKTGEWINNUNG/SYNC_ADD0000<6>
+                                                       INST_ADAT_TAKTGEWINNUNG/MADD_SYNC_ADD0000_CY<6>
+                                                       INST_ADAT_TAKTGEWINNUNG/MADD_SYNC_ADD0000_CY<7>
+    SLICE_X9Y47.CIN      net (fanout=1)        0.000   INST_ADAT_TAKTGEWINNUNG/MADD_SYNC_ADD0000_CY<7>
+    SLICE_X9Y47.Y        Tciny                 0.664   INST_ADAT_TAKTGEWINNUNG/SYNC_ADD0000<8>
+                                                       INST_ADAT_TAKTGEWINNUNG/MADD_SYNC_ADD0000_CY<8>
+                                                       INST_ADAT_TAKTGEWINNUNG/MADD_SYNC_ADD0000_XOR<9>
+    SLICE_X11Y44.F4      net (fanout=1)        0.284   INST_ADAT_TAKTGEWINNUNG/SYNC_ADD0000<9>
+    SLICE_X11Y44.COUT    Topcyf                1.026   INST_ADAT_TAKTGEWINNUNG/MCOMPAR_SYNC_CMP_EQ0000_CY<1>
+                                                       INST_ADAT_TAKTGEWINNUNG/MCOMPAR_SYNC_CMP_EQ0000_LUT<0>
+                                                       INST_ADAT_TAKTGEWINNUNG/MCOMPAR_SYNC_CMP_EQ0000_CY<0>
+                                                       INST_ADAT_TAKTGEWINNUNG/MCOMPAR_SYNC_CMP_EQ0000_CY<1>
+    SLICE_X11Y45.CIN     net (fanout=1)        0.000   INST_ADAT_TAKTGEWINNUNG/MCOMPAR_SYNC_CMP_EQ0000_CY<1>
+    SLICE_X11Y45.COUT    Tbyp                  0.130   INST_ADAT_TAKTGEWINNUNG/MCOMPAR_SYNC_CMP_EQ0000_CY<3>
+                                                       INST_ADAT_TAKTGEWINNUNG/MCOMPAR_SYNC_CMP_EQ0000_CY<2>
+                                                       INST_ADAT_TAKTGEWINNUNG/MCOMPAR_SYNC_CMP_EQ0000_CY<3>
+    SLICE_X11Y46.CIN     net (fanout=1)        0.000   INST_ADAT_TAKTGEWINNUNG/MCOMPAR_SYNC_CMP_EQ0000_CY<3>
+    SLICE_X11Y46.XB      Tcinxb                0.216   INST_ADAT_TAKTGEWINNUNG/MCOMPAR_SYNC_CMP_EQ0000_CY<4>
+                                                       INST_ADAT_TAKTGEWINNUNG/MCOMPAR_SYNC_CMP_EQ0000_CY<4>
+    SLICE_X12Y44.G3      net (fanout=10)       0.458   INST_ADAT_TAKTGEWINNUNG/MCOMPAR_SYNC_CMP_EQ0000_CY<4>
+    SLICE_X12Y44.X       Tif5x                 0.853   INST_ADAT_TAKTGEWINNUNG/SYNC
+                                                       INST_ADAT_TAKTGEWINNUNG/MXOR_ADAT_TAKT_XOR0000_RESULT1_SW1_F
+                                                       INST_ADAT_TAKTGEWINNUNG/MXOR_ADAT_TAKT_XOR0000_RESULT1_SW1
+    SLICE_X13Y42.G4      net (fanout=2)        0.259   N119
+    SLICE_X13Y42.Y       Tilo                  0.561   INST_ADAT_TAKTGEWINNUNG/BITLAENGEN_ZAEHLER<0>
+                                                       INST_ADAT_TAKTGEWINNUNG/MADD_BITLAENGEN_ZAEHLER_ADD0000_XOR<2>121
+    SLICE_X12Y40.BX      net (fanout=7)        0.407   INST_ADAT_TAKTGEWINNUNG/N2
+    SLICE_X12Y40.X       Tbxx                  0.705   INST_ADAT_TAKTGEWINNUNG/BITLAENGEN_ZAEHLER_OR0000
+                                                       INST_ADAT_TAKTGEWINNUNG/BITLAENGEN_ZAEHLER_OR00001
+    SLICE_X13Y42.SR      net (fanout=3)        0.530   INST_ADAT_TAKTGEWINNUNG/BITLAENGEN_ZAEHLER_OR0000
+    SLICE_X13Y42.CLK     Tsrck                 0.433   INST_ADAT_TAKTGEWINNUNG/BITLAENGEN_ZAEHLER<0>
+                                                       INST_ADAT_TAKTGEWINNUNG/BITLAENGEN_ZAEHLER_0
+    -------------------------------------------------  ---------------------------
+    Total                                      8.847ns (6.511ns logic, 2.336ns route)
+                                                       (73.6% logic, 26.4% route)
+
+--------------------------------------------------------------------------------
+
+Hold Paths: TS_INST_SCHNELLERTAKT_CLKFX_BUF = PERIOD TIMEGRP
+        "INST_SCHNELLERTAKT_CLKFX_BUF" TS_in_Platinentakt / 6 HIGH 50%;
+--------------------------------------------------------------------------------
+
+Paths for end point INST_ADAT_TAKTGEWINNUNG/SYNC_BITLAENGE_0 (SLICE_X12Y45.BX), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      1.069ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               INST_ADAT_TAKTGEWINNUNG/SYNC_FRAMELAENGEZAEHLER_8 (FF)
+  Destination:          INST_ADAT_TAKTGEWINNUNG/SYNC_BITLAENGE_0 (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      1.047ns (Levels of Logic = 0)
+  Clock Path Skew:      -0.022ns (0.018 - 0.040)
+  Source Clock:         INST_ADAT_TAKTGEWINNUNG/TAKT rising at 3.333ns
+  Destination Clock:    INST_ADAT_TAKTGEWINNUNG/TAKT rising at 3.333ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path: INST_ADAT_TAKTGEWINNUNG/SYNC_FRAMELAENGEZAEHLER_8 to INST_ADAT_TAKTGEWINNUNG/SYNC_BITLAENGE_0
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X13Y40.XQ      Tcko                  0.396   INST_ADAT_TAKTGEWINNUNG/SYNC_FRAMELAENGEZAEHLER<8>
+                                                       INST_ADAT_TAKTGEWINNUNG/SYNC_FRAMELAENGEZAEHLER_8
+    SLICE_X12Y45.BX      net (fanout=6)        0.549   INST_ADAT_TAKTGEWINNUNG/SYNC_FRAMELAENGEZAEHLER<8>
+    SLICE_X12Y45.CLK     Tckdi       (-Th)    -0.102   INST_ADAT_TAKTGEWINNUNG/SYNC_BITLAENGE<0>
+                                                       INST_ADAT_TAKTGEWINNUNG/SYNC_BITLAENGE_0
+    -------------------------------------------------  ---------------------------
+    Total                                      1.047ns (0.498ns logic, 0.549ns route)
+                                                       (47.6% logic, 52.4% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point INST_ADAT_TAKTGEWINNUNG/SYNC_ERKENNUNGSLAENGE_0 (SLICE_X6Y50.G2), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      1.113ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               INST_ADAT_TAKTGEWINNUNG/ZEIT_OHNE_AENDERUNG_MAX_1 (FF)
+  Destination:          INST_ADAT_TAKTGEWINNUNG/SYNC_ERKENNUNGSLAENGE_0 (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      1.154ns (Levels of Logic = 1)
+  Clock Path Skew:      0.041ns (0.249 - 0.208)
+  Source Clock:         INST_ADAT_TAKTGEWINNUNG/TAKT rising at 3.333ns
+  Destination Clock:    INST_ADAT_TAKTGEWINNUNG/TAKT rising at 3.333ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path: INST_ADAT_TAKTGEWINNUNG/ZEIT_OHNE_AENDERUNG_MAX_1 to INST_ADAT_TAKTGEWINNUNG/SYNC_ERKENNUNGSLAENGE_0
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X5Y50.XQ       Tcko                  0.396   INST_ADAT_TAKTGEWINNUNG/ZEIT_OHNE_AENDERUNG_MAX<1>
+                                                       INST_ADAT_TAKTGEWINNUNG/ZEIT_OHNE_AENDERUNG_MAX_1
+    SLICE_X6Y50.G2       net (fanout=2)        0.308   INST_ADAT_TAKTGEWINNUNG/ZEIT_OHNE_AENDERUNG_MAX<1>
+    SLICE_X6Y50.CLK      Tckg        (-Th)    -0.450   INST_ADAT_TAKTGEWINNUNG/SYNC_ERKENNUNGSLAENGE<0>
+                                                       INST_ADAT_TAKTGEWINNUNG/ZEIT_OHNE_AENDERUNG_MAX_MUX0000<1>1
+                                                       INST_ADAT_TAKTGEWINNUNG/SYNC_ERKENNUNGSLAENGE_0
+    -------------------------------------------------  ---------------------------
+    Total                                      1.154ns (0.846ns logic, 0.308ns route)
+                                                       (73.3% logic, 26.7% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point INST_ADAT_TAKTGEWINNUNG/BITLAENGEN_ZAEHLER_0 (SLICE_X13Y42.F4), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      1.119ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               INST_ADAT_TAKTGEWINNUNG/BITLAENGEN_ZAEHLER_0 (FF)
+  Destination:          INST_ADAT_TAKTGEWINNUNG/BITLAENGEN_ZAEHLER_0 (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      1.119ns (Levels of Logic = 1)
+  Clock Path Skew:      0.000ns
+  Source Clock:         INST_ADAT_TAKTGEWINNUNG/TAKT rising at 3.333ns
+  Destination Clock:    INST_ADAT_TAKTGEWINNUNG/TAKT rising at 3.333ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path: INST_ADAT_TAKTGEWINNUNG/BITLAENGEN_ZAEHLER_0 to INST_ADAT_TAKTGEWINNUNG/BITLAENGEN_ZAEHLER_0
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X13Y42.XQ      Tcko                  0.396   INST_ADAT_TAKTGEWINNUNG/BITLAENGEN_ZAEHLER<0>
+                                                       INST_ADAT_TAKTGEWINNUNG/BITLAENGEN_ZAEHLER_0
+    SLICE_X13Y42.F4      net (fanout=5)        0.317   INST_ADAT_TAKTGEWINNUNG/BITLAENGEN_ZAEHLER<0>
+    SLICE_X13Y42.CLK     Tckf        (-Th)    -0.406   INST_ADAT_TAKTGEWINNUNG/BITLAENGEN_ZAEHLER<0>
+                                                       INST_ADAT_TAKTGEWINNUNG/MADD_BITLAENGEN_ZAEHLER_ADD0000_XOR<0>11
+                                                       INST_ADAT_TAKTGEWINNUNG/BITLAENGEN_ZAEHLER_0
+    -------------------------------------------------  ---------------------------
+    Total                                      1.119ns (0.802ns logic, 0.317ns route)
+                                                       (71.7% logic, 28.3% route)
+
+--------------------------------------------------------------------------------
+
+Component Switching Limit Checks: TS_INST_SCHNELLERTAKT_CLKFX_BUF = PERIOD TIMEGRP
+        "INST_SCHNELLERTAKT_CLKFX_BUF" TS_in_Platinentakt / 6 HIGH 50%;
+--------------------------------------------------------------------------------
+Slack: 2.005ns (period - (min low pulse limit / (low pulse / period)))
+  Period: 3.333ns
+  Low pulse: 1.666ns
+  Low pulse limit: 0.664ns (Tcl)
+  Physical resource: INST_ADAT_TAKTGEWINNUNG/ADAT_TAKT/CLK
+  Logical resource: INST_ADAT_TAKTGEWINNUNG/ADAT_TAKT/CK
+  Location pin: SLICE_X14Y41.CLK
+  Clock network: INST_ADAT_TAKTGEWINNUNG/TAKT
+--------------------------------------------------------------------------------
+Slack: 2.005ns (period - (min high pulse limit / (high pulse / period)))
+  Period: 3.333ns
+  High pulse: 1.666ns
+  High pulse limit: 0.664ns (Tch)
+  Physical resource: INST_ADAT_TAKTGEWINNUNG/ADAT_TAKT/CLK
+  Logical resource: INST_ADAT_TAKTGEWINNUNG/ADAT_TAKT/CK
+  Location pin: SLICE_X14Y41.CLK
+  Clock network: INST_ADAT_TAKTGEWINNUNG/TAKT
+--------------------------------------------------------------------------------
+Slack: 2.005ns (period - (min low pulse limit / (low pulse / period)))
+  Period: 3.333ns
+  Low pulse: 1.666ns
+  Low pulse limit: 0.664ns (Tcl)
+  Physical resource: INST_ADAT_TAKTGEWINNUNG/SYNC_ERKENNUNGSLAENGE<0>/CLK
+  Logical resource: INST_ADAT_TAKTGEWINNUNG/SYNC_ERKENNUNGSLAENGE_0/CK
+  Location pin: SLICE_X6Y50.CLK
+  Clock network: INST_ADAT_TAKTGEWINNUNG/TAKT
+--------------------------------------------------------------------------------
+
+
+Derived Constraint Report
+Derived Constraints for TS_in_Platinentakt
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+|                               |   Period    |       Actual Period       |      Timing Errors        |      Paths Analyzed       |
+|           Constraint          | Requirement |-------------+-------------|-------------+-------------|-------------+-------------|
+|                               |             |   Direct    | Derivative  |   Direct    | Derivative  |   Direct    | Derivative  |
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+|TS_in_Platinentakt             |     20.000ns|      6.000ns|     53.550ns|            0|           79|            0|         9273|
+| TS_INST_SCHNELLERTAKT_CLKFX_BU|      3.333ns|      8.925ns|          N/A|           79|            0|         9273|            0|
+| F                             |             |             |             |             |             |             |             |
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+
+1 constraint not met.
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Clock to Setup on destination clock IN_ADATTAKT
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+IN_ADATTAKT    |   13.497|   10.472|         |    5.391|
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock IN_PLATINENTAKT
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+IN_PLATINENTAKT|    8.925|         |         |         |
+---------------+---------+---------+---------+---------+
+
+
+Timing summary:
+---------------
+
+Timing errors: 79  Score: 233148  (Setup/Max: 233148, Hold: 0)
+
+Constraints cover 18763 paths, 0 nets, and 2406 connections
+
+Design statistics:
+   Minimum period:  20.944ns{1}   (Maximum frequency:  47.746MHz)
+
+
+------------------------------------Footnotes-----------------------------------
+1)  The minimum period statistic assumes all single cycle delays.
+
+Analysis completed Fri Apr 25 14:48:05 2014 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 113 MB
+
+
+

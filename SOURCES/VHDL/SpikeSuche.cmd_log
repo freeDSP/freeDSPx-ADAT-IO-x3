@@ -1,0 +1,351 @@
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/SpikeSuche.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/SpikeSuche.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xXCS3200A-4VQ100_SpikeSuche.ucf -p xc3s200a-vq100-5 "SpikeSuche.ngc" SpikeSuche.ngd  
+map -intstyle ise -p xc3s200a-vq100-5 -timing -logic_opt on -ol high -xe n -t 1 -register_duplication on -cm speed -detail -ir off -ignore_keep_hierarchy -pr b -bp -power off -o SpikeSuche_map.ncd SpikeSuche.ngd SpikeSuche.pcf 
+par -w -intstyle ise -pl high -rl high -xe n -t 1 SpikeSuche_map.ncd SpikeSuche.ncd SpikeSuche.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml SpikeSuche.twx SpikeSuche.ncd -o SpikeSuche.twr SpikeSuche.pcf -ucf xXCS3200A-4VQ100_SpikeSuche.ucf 
+bitgen -intstyle ise -f SpikeSuche.ut SpikeSuche.ncd 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/SpikeSuche.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/SpikeSuche.syr" 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/SpikeSuche.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/SpikeSuche.syr" 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/SpikeSuche.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/SpikeSuche.syr" 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/SpikeSuche.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/SpikeSuche.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xXCS3200A-4VQ100_SpikeSuche.ucf -p xc3s200a-vq100-5 "SpikeSuche.ngc" SpikeSuche.ngd  
+map -intstyle ise -p xc3s200a-vq100-5 -timing -logic_opt on -ol high -xe n -t 1 -register_duplication on -cm speed -detail -ir off -ignore_keep_hierarchy -pr b -bp -power off -o SpikeSuche_map.ncd SpikeSuche.ngd SpikeSuche.pcf 
+par -w -intstyle ise -pl high -rl high -xe n -t 1 SpikeSuche_map.ncd SpikeSuche.ncd SpikeSuche.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml SpikeSuche.twx SpikeSuche.ncd -o SpikeSuche.twr SpikeSuche.pcf -ucf xXCS3200A-4VQ100_SpikeSuche.ucf 
+bitgen -intstyle ise -f SpikeSuche.ut SpikeSuche.ncd 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/SpikeSuche.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/SpikeSuche.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xXCS3200A-4VQ100_SpikeSuche.ucf -p xc3s200a-vq100-5 "SpikeSuche.ngc" SpikeSuche.ngd  
+map -intstyle ise -p xc3s200a-vq100-5 -timing -logic_opt on -ol high -xe n -t 1 -register_duplication on -cm speed -detail -ir off -ignore_keep_hierarchy -pr b -bp -power off -o SpikeSuche_map.ncd SpikeSuche.ngd SpikeSuche.pcf 
+par -w -intstyle ise -pl high -rl high -xe n -t 1 SpikeSuche_map.ncd SpikeSuche.ncd SpikeSuche.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml SpikeSuche.twx SpikeSuche.ncd -o SpikeSuche.twr SpikeSuche.pcf -ucf xXCS3200A-4VQ100_SpikeSuche.ucf 
+bitgen -intstyle ise -f SpikeSuche.ut SpikeSuche.ncd 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/SpikeSuche.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/SpikeSuche.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xXCS3200A-4VQ100_SpikeSuche.ucf -p xc3s200a-vq100-5 "SpikeSuche.ngc" SpikeSuche.ngd  
+map -intstyle ise -p xc3s200a-vq100-5 -timing -logic_opt on -ol high -xe n -t 1 -register_duplication on -cm speed -detail -ir off -ignore_keep_hierarchy -pr b -bp -power off -o SpikeSuche_map.ncd SpikeSuche.ngd SpikeSuche.pcf 
+par -w -intstyle ise -pl high -rl high -xe n -t 1 SpikeSuche_map.ncd SpikeSuche.ncd SpikeSuche.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml SpikeSuche.twx SpikeSuche.ncd -o SpikeSuche.twr SpikeSuche.pcf -ucf xXCS3200A-4VQ100_SpikeSuche.ucf 
+bitgen -intstyle ise -f SpikeSuche.ut SpikeSuche.ncd 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/SpikeSuche.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/SpikeSuche.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xXCS3200A-4VQ100_SpikeSuche.ucf -p xc3s200a-vq100-5 "SpikeSuche.ngc" SpikeSuche.ngd  
+map -intstyle ise -p xc3s200a-vq100-5 -timing -logic_opt on -ol high -xe n -t 1 -register_duplication on -cm speed -detail -ir off -ignore_keep_hierarchy -pr b -bp -power off -o SpikeSuche_map.ncd SpikeSuche.ngd SpikeSuche.pcf 
+par -w -intstyle ise -pl high -rl high -xe n -t 1 SpikeSuche_map.ncd SpikeSuche.ncd SpikeSuche.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml SpikeSuche.twx SpikeSuche.ncd -o SpikeSuche.twr SpikeSuche.pcf -ucf xXCS3200A-4VQ100_SpikeSuche.ucf 
+bitgen -intstyle ise -f SpikeSuche.ut SpikeSuche.ncd 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/SpikeSuche.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/SpikeSuche.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xXCS3200A-4VQ100_SpikeSuche.ucf -p xc3s200a-vq100-5 "SpikeSuche.ngc" SpikeSuche.ngd  
+map -intstyle ise -p xc3s200a-vq100-5 -timing -logic_opt on -ol high -xe n -t 1 -register_duplication on -cm speed -detail -ir off -ignore_keep_hierarchy -pr b -bp -power off -o SpikeSuche_map.ncd SpikeSuche.ngd SpikeSuche.pcf 
+par -w -intstyle ise -pl high -rl high -xe n -t 1 SpikeSuche_map.ncd SpikeSuche.ncd SpikeSuche.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml SpikeSuche.twx SpikeSuche.ncd -o SpikeSuche.twr SpikeSuche.pcf -ucf xXCS3200A-4VQ100_SpikeSuche.ucf 
+bitgen -intstyle ise -f SpikeSuche.ut SpikeSuche.ncd 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/SpikeSuche.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/SpikeSuche.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xXCS3200A-4VQ100_SpikeSuche.ucf -p xc3s200a-vq100-5 "SpikeSuche.ngc" SpikeSuche.ngd  
+map -intstyle ise -p xc3s200a-vq100-5 -timing -logic_opt on -ol high -xe n -t 1 -register_duplication on -cm speed -detail -ir off -ignore_keep_hierarchy -pr b -bp -power off -o SpikeSuche_map.ncd SpikeSuche.ngd SpikeSuche.pcf 
+par -w -intstyle ise -pl high -rl high -xe n -t 1 SpikeSuche_map.ncd SpikeSuche.ncd SpikeSuche.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml SpikeSuche.twx SpikeSuche.ncd -o SpikeSuche.twr SpikeSuche.pcf -ucf xXCS3200A-4VQ100_SpikeSuche.ucf 
+bitgen -intstyle ise -f SpikeSuche.ut SpikeSuche.ncd 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/SpikeSuche.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/SpikeSuche.syr" 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/SpikeSuche.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/SpikeSuche.syr" 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/SpikeSuche.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/SpikeSuche.syr" 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/SpikeSuche.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/SpikeSuche.syr" 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/SpikeSuche.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/SpikeSuche.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xXCS3200A-4VQ100_SpikeSuche.ucf -p xc3s200a-vq100-5 "SpikeSuche.ngc" SpikeSuche.ngd  
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/SpikeSuche.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/SpikeSuche.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xXCS3200A-4VQ100_SpikeSuche.ucf -p xc3s200a-vq100-5 "SpikeSuche.ngc" SpikeSuche.ngd  
+map -intstyle ise -p xc3s200a-vq100-5 -timing -logic_opt on -ol high -xe n -t 1 -register_duplication on -cm speed -detail -ir off -ignore_keep_hierarchy -pr b -bp -power off -o SpikeSuche_map.ncd SpikeSuche.ngd SpikeSuche.pcf 
+par -w -intstyle ise -pl high -rl high -xe n -t 1 SpikeSuche_map.ncd SpikeSuche.ncd SpikeSuche.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml SpikeSuche.twx SpikeSuche.ncd -o SpikeSuche.twr SpikeSuche.pcf -ucf xXCS3200A-4VQ100_SpikeSuche.ucf 
+bitgen -intstyle ise -f SpikeSuche.ut SpikeSuche.ncd 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/SpikeSuche.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/SpikeSuche.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xXCS3200A-4VQ100_SpikeSuche.ucf -p xc3s200a-vq100-5 "SpikeSuche.ngc" SpikeSuche.ngd  
+map -intstyle ise -p xc3s200a-vq100-5 -timing -logic_opt on -ol high -xe n -t 1 -register_duplication on -cm speed -detail -ir off -ignore_keep_hierarchy -pr b -bp -power off -o SpikeSuche_map.ncd SpikeSuche.ngd SpikeSuche.pcf 
+par -w -intstyle ise -pl high -rl high -xe n -t 1 SpikeSuche_map.ncd SpikeSuche.ncd SpikeSuche.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml SpikeSuche.twx SpikeSuche.ncd -o SpikeSuche.twr SpikeSuche.pcf -ucf xXCS3200A-4VQ100_SpikeSuche.ucf 
+bitgen -intstyle ise -f SpikeSuche.ut SpikeSuche.ncd 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/SpikeSuche.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/SpikeSuche.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xXCS3200A-4VQ100_SpikeSuche.ucf -p xc3s200a-vq100-5 "SpikeSuche.ngc" SpikeSuche.ngd  
+map -intstyle ise -p xc3s200a-vq100-5 -timing -logic_opt on -ol high -xe n -t 1 -register_duplication on -cm speed -detail -ir off -ignore_keep_hierarchy -pr b -bp -power off -o SpikeSuche_map.ncd SpikeSuche.ngd SpikeSuche.pcf 
+par -w -intstyle ise -pl high -rl high -xe n -t 1 SpikeSuche_map.ncd SpikeSuche.ncd SpikeSuche.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml SpikeSuche.twx SpikeSuche.ncd -o SpikeSuche.twr SpikeSuche.pcf -ucf xXCS3200A-4VQ100_SpikeSuche.ucf 
+bitgen -intstyle ise -f SpikeSuche.ut SpikeSuche.ncd 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/SpikeSuche.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/SpikeSuche.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xXCS3200A-4VQ100_SpikeSuche.ucf -p xc3s200a-vq100-5 "SpikeSuche.ngc" SpikeSuche.ngd  
+map -intstyle ise -p xc3s200a-vq100-5 -timing -logic_opt on -ol high -xe n -t 1 -register_duplication on -cm speed -detail -ir off -ignore_keep_hierarchy -pr b -bp -power off -o SpikeSuche_map.ncd SpikeSuche.ngd SpikeSuche.pcf 
+par -w -intstyle ise -pl high -rl high -xe n -t 1 SpikeSuche_map.ncd SpikeSuche.ncd SpikeSuche.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml SpikeSuche.twx SpikeSuche.ncd -o SpikeSuche.twr SpikeSuche.pcf -ucf xXCS3200A-4VQ100_SpikeSuche.ucf 
+bitgen -intstyle ise -f SpikeSuche.ut SpikeSuche.ncd 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/SpikeSuche.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/SpikeSuche.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xXCS3200A-4VQ100_SpikeSuche.ucf -p xc3s200a-vq100-5 "SpikeSuche.ngc" SpikeSuche.ngd  
+map -intstyle ise -p xc3s200a-vq100-5 -timing -logic_opt on -ol high -xe n -t 1 -register_duplication on -cm speed -detail -ir off -ignore_keep_hierarchy -pr b -bp -power off -o SpikeSuche_map.ncd SpikeSuche.ngd SpikeSuche.pcf 
+par -w -intstyle ise -pl high -rl high -xe n -t 1 SpikeSuche_map.ncd SpikeSuche.ncd SpikeSuche.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml SpikeSuche.twx SpikeSuche.ncd -o SpikeSuche.twr SpikeSuche.pcf -ucf xXCS3200A-4VQ100_SpikeSuche.ucf 
+bitgen -intstyle ise -f SpikeSuche.ut SpikeSuche.ncd 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/SpikeSuche.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/SpikeSuche.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xXCS3200A-4VQ100_SpikeSuche.ucf -p xc3s200a-vq100-5 "SpikeSuche.ngc" SpikeSuche.ngd  
+map -intstyle ise -p xc3s200a-vq100-5 -timing -logic_opt on -ol high -xe n -t 1 -register_duplication on -cm speed -detail -ir off -ignore_keep_hierarchy -pr b -bp -power off -o SpikeSuche_map.ncd SpikeSuche.ngd SpikeSuche.pcf 
+par -w -intstyle ise -pl high -rl high -xe n -t 1 SpikeSuche_map.ncd SpikeSuche.ncd SpikeSuche.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml SpikeSuche.twx SpikeSuche.ncd -o SpikeSuche.twr SpikeSuche.pcf -ucf xXCS3200A-4VQ100_SpikeSuche.ucf 
+bitgen -intstyle ise -f SpikeSuche.ut SpikeSuche.ncd 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/SpikeSuche.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/SpikeSuche.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xXCS3200A-4VQ100_SpikeSuche.ucf -p xc3s200a-vq100-5 "SpikeSuche.ngc" SpikeSuche.ngd  
+map -intstyle ise -p xc3s200a-vq100-5 -timing -logic_opt on -ol high -xe n -t 1 -register_duplication on -cm speed -detail -ir off -ignore_keep_hierarchy -pr b -bp -power off -o SpikeSuche_map.ncd SpikeSuche.ngd SpikeSuche.pcf 
+par -w -intstyle ise -pl high -rl high -xe n -t 1 SpikeSuche_map.ncd SpikeSuche.ncd SpikeSuche.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml SpikeSuche.twx SpikeSuche.ncd -o SpikeSuche.twr SpikeSuche.pcf -ucf xXCS3200A-4VQ100_SpikeSuche.ucf 
+bitgen -intstyle ise -f SpikeSuche.ut SpikeSuche.ncd 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/SpikeSuche.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/SpikeSuche.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xXCS3200A-4VQ100_SpikeSuche.ucf -p xc3s200a-vq100-5 "SpikeSuche.ngc" SpikeSuche.ngd  
+map -intstyle ise -p xc3s200a-vq100-5 -timing -logic_opt on -ol high -xe n -t 1 -register_duplication on -cm speed -detail -ir off -ignore_keep_hierarchy -pr b -bp -power off -o SpikeSuche_map.ncd SpikeSuche.ngd SpikeSuche.pcf 
+par -w -intstyle ise -pl high -rl high -xe n -t 1 SpikeSuche_map.ncd SpikeSuche.ncd SpikeSuche.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml SpikeSuche.twx SpikeSuche.ncd -o SpikeSuche.twr SpikeSuche.pcf -ucf xXCS3200A-4VQ100_SpikeSuche.ucf 
+bitgen -intstyle ise -f SpikeSuche.ut SpikeSuche.ncd 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/SpikeSuche.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/SpikeSuche.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xXCS3200A-4VQ100_SpikeSuche.ucf -p xc3s200a-vq100-5 "SpikeSuche.ngc" SpikeSuche.ngd  
+map -intstyle ise -p xc3s200a-vq100-5 -timing -logic_opt on -ol high -xe n -t 1 -register_duplication on -cm speed -detail -ir off -ignore_keep_hierarchy -pr b -bp -power off -o SpikeSuche_map.ncd SpikeSuche.ngd SpikeSuche.pcf 
+par -w -intstyle ise -pl high -rl high -xe n -t 1 SpikeSuche_map.ncd SpikeSuche.ncd SpikeSuche.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml SpikeSuche.twx SpikeSuche.ncd -o SpikeSuche.twr SpikeSuche.pcf -ucf xXCS3200A-4VQ100_SpikeSuche.ucf 
+bitgen -intstyle ise -f SpikeSuche.ut SpikeSuche.ncd 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/SpikeSuche.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/SpikeSuche.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xXCS3200A-4VQ100_SpikeSuche.ucf -p xc3s200a-vq100-5 "SpikeSuche.ngc" SpikeSuche.ngd  
+map -intstyle ise -p xc3s200a-vq100-5 -timing -logic_opt on -ol high -xe n -t 1 -register_duplication on -cm speed -detail -ir off -ignore_keep_hierarchy -pr b -bp -power off -o SpikeSuche_map.ncd SpikeSuche.ngd SpikeSuche.pcf 
+par -w -intstyle ise -pl high -rl high -xe n -t 1 SpikeSuche_map.ncd SpikeSuche.ncd SpikeSuche.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml SpikeSuche.twx SpikeSuche.ncd -o SpikeSuche.twr SpikeSuche.pcf -ucf xXCS3200A-4VQ100_SpikeSuche.ucf 
+bitgen -intstyle ise -f SpikeSuche.ut SpikeSuche.ncd 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/SpikeSuche.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/SpikeSuche.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xXCS3200A-4VQ100_SpikeSuche.ucf -p xc3s200a-vq100-5 "SpikeSuche.ngc" SpikeSuche.ngd  
+map -intstyle ise -p xc3s200a-vq100-5 -timing -logic_opt on -ol high -xe n -t 1 -register_duplication on -cm speed -detail -ir off -ignore_keep_hierarchy -pr b -bp -power off -o SpikeSuche_map.ncd SpikeSuche.ngd SpikeSuche.pcf 
+par -w -intstyle ise -pl high -rl high -xe n -t 1 SpikeSuche_map.ncd SpikeSuche.ncd SpikeSuche.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml SpikeSuche.twx SpikeSuche.ncd -o SpikeSuche.twr SpikeSuche.pcf -ucf xXCS3200A-4VQ100_SpikeSuche.ucf 
+bitgen -intstyle ise -f SpikeSuche.ut SpikeSuche.ncd 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/SpikeSuche.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/SpikeSuche.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xXCS3200A-4VQ100_SpikeSuche.ucf -p xc3s200a-vq100-5 "SpikeSuche.ngc" SpikeSuche.ngd  
+map -intstyle ise -p xc3s200a-vq100-5 -timing -logic_opt on -ol high -xe n -t 1 -register_duplication on -cm speed -detail -ir off -ignore_keep_hierarchy -pr b -bp -power off -o SpikeSuche_map.ncd SpikeSuche.ngd SpikeSuche.pcf 
+par -w -intstyle ise -pl high -rl high -xe n -t 1 SpikeSuche_map.ncd SpikeSuche.ncd SpikeSuche.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml SpikeSuche.twx SpikeSuche.ncd -o SpikeSuche.twr SpikeSuche.pcf -ucf xXCS3200A-4VQ100_SpikeSuche.ucf 
+bitgen -intstyle ise -f SpikeSuche.ut SpikeSuche.ncd 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/SpikeSuche.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/SpikeSuche.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xXCS3200A-4VQ100_SpikeSuche.ucf -p xc3s200a-vq100-5 "SpikeSuche.ngc" SpikeSuche.ngd  
+map -intstyle ise -p xc3s200a-vq100-5 -timing -logic_opt on -ol high -xe n -t 1 -register_duplication on -cm speed -detail -ir off -ignore_keep_hierarchy -pr b -bp -power off -o SpikeSuche_map.ncd SpikeSuche.ngd SpikeSuche.pcf 
+par -w -intstyle ise -pl high -rl high -xe n -t 1 SpikeSuche_map.ncd SpikeSuche.ncd SpikeSuche.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml SpikeSuche.twx SpikeSuche.ncd -o SpikeSuche.twr SpikeSuche.pcf -ucf xXCS3200A-4VQ100_SpikeSuche.ucf 
+bitgen -intstyle ise -f SpikeSuche.ut SpikeSuche.ncd 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/SpikeSuche.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/SpikeSuche.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xXCS3200A-4VQ100_SpikeSuche.ucf -p xc3s200a-vq100-5 "SpikeSuche.ngc" SpikeSuche.ngd  
+map -intstyle ise -p xc3s200a-vq100-5 -timing -logic_opt on -ol high -xe n -t 1 -register_duplication on -cm speed -detail -ir off -ignore_keep_hierarchy -pr b -bp -power off -o SpikeSuche_map.ncd SpikeSuche.ngd SpikeSuche.pcf 
+par -w -intstyle ise -pl high -rl high -xe n -t 1 SpikeSuche_map.ncd SpikeSuche.ncd SpikeSuche.pcf 
+bitgen -intstyle ise -f SpikeSuche.ut SpikeSuche.ncd 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/SpikeSuche.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/SpikeSuche.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xXCS3200A-4VQ100_SpikeSuche.ucf -p xc3s200a-vq100-5 "SpikeSuche.ngc" SpikeSuche.ngd  
+map -intstyle ise -p xc3s200a-vq100-5 -timing -logic_opt on -ol high -xe n -t 1 -register_duplication on -cm speed -detail -ir off -ignore_keep_hierarchy -pr b -bp -power off -o SpikeSuche_map.ncd SpikeSuche.ngd SpikeSuche.pcf 
+par -w -intstyle ise -pl high -rl high -xe n -t 1 SpikeSuche_map.ncd SpikeSuche.ncd SpikeSuche.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml SpikeSuche.twx SpikeSuche.ncd -o SpikeSuche.twr SpikeSuche.pcf -ucf xXCS3200A-4VQ100_SpikeSuche.ucf 
+bitgen -intstyle ise -f SpikeSuche.ut SpikeSuche.ncd 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/SpikeSuche.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/SpikeSuche.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xXCS3200A-4VQ100_SpikeSuche.ucf -p xc3s200a-vq100-5 "SpikeSuche.ngc" SpikeSuche.ngd  
+map -intstyle ise -p xc3s200a-vq100-5 -timing -logic_opt on -ol high -xe n -t 1 -register_duplication on -cm speed -detail -ir off -ignore_keep_hierarchy -pr b -bp -power off -o SpikeSuche_map.ncd SpikeSuche.ngd SpikeSuche.pcf 
+par -w -intstyle ise -pl high -rl high -xe n -t 1 SpikeSuche_map.ncd SpikeSuche.ncd SpikeSuche.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml SpikeSuche.twx SpikeSuche.ncd -o SpikeSuche.twr SpikeSuche.pcf -ucf xXCS3200A-4VQ100_SpikeSuche.ucf 
+bitgen -intstyle ise -f SpikeSuche.ut SpikeSuche.ncd 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/SpikeSuche.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/SpikeSuche.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xXCS3200A-4VQ100_SpikeSuche.ucf -p xc3s200a-vq100-5 "SpikeSuche.ngc" SpikeSuche.ngd  
+map -intstyle ise -p xc3s200a-vq100-5 -timing -logic_opt on -ol high -xe n -t 1 -register_duplication on -cm speed -detail -ir off -ignore_keep_hierarchy -pr b -bp -power off -o SpikeSuche_map.ncd SpikeSuche.ngd SpikeSuche.pcf 
+par -w -intstyle ise -pl high -rl high -xe n -t 1 SpikeSuche_map.ncd SpikeSuche.ncd SpikeSuche.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml SpikeSuche.twx SpikeSuche.ncd -o SpikeSuche.twr SpikeSuche.pcf -ucf xXCS3200A-4VQ100_SpikeSuche.ucf 
+bitgen -intstyle ise -f SpikeSuche.ut SpikeSuche.ncd 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/SpikeSuche.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/SpikeSuche.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xXCS3200A-4VQ100_SpikeSuche.ucf -p xc3s200a-vq100-5 "SpikeSuche.ngc" SpikeSuche.ngd  
+map -intstyle ise -p xc3s200a-vq100-5 -timing -logic_opt on -ol high -xe n -t 1 -register_duplication on -cm speed -detail -ir off -ignore_keep_hierarchy -pr b -bp -power off -o SpikeSuche_map.ncd SpikeSuche.ngd SpikeSuche.pcf 
+par -w -intstyle ise -pl high -rl high -xe n -t 1 SpikeSuche_map.ncd SpikeSuche.ncd SpikeSuche.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml SpikeSuche.twx SpikeSuche.ncd -o SpikeSuche.twr SpikeSuche.pcf -ucf xXCS3200A-4VQ100_SpikeSuche.ucf 
+bitgen -intstyle ise -f SpikeSuche.ut SpikeSuche.ncd 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/SpikeSuche.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/SpikeSuche.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xXCS3200A-4VQ100_SpikeSuche.ucf -p xc3s200a-vq100-5 "SpikeSuche.ngc" SpikeSuche.ngd  
+map -intstyle ise -p xc3s200a-vq100-5 -timing -logic_opt on -ol high -xe n -t 1 -register_duplication on -cm speed -detail -ir off -ignore_keep_hierarchy -pr b -bp -power off -o SpikeSuche_map.ncd SpikeSuche.ngd SpikeSuche.pcf 
+par -w -intstyle ise -pl high -rl high -xe n -t 1 SpikeSuche_map.ncd SpikeSuche.ncd SpikeSuche.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml SpikeSuche.twx SpikeSuche.ncd -o SpikeSuche.twr SpikeSuche.pcf -ucf xXCS3200A-4VQ100_SpikeSuche.ucf 
+bitgen -intstyle ise -f SpikeSuche.ut SpikeSuche.ncd 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/SpikeSuche.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/SpikeSuche.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xXCS3200A-4VQ100_SpikeSuche.ucf -p xc3s200a-vq100-5 "SpikeSuche.ngc" SpikeSuche.ngd  
+map -intstyle ise -p xc3s200a-vq100-5 -timing -logic_opt on -ol high -xe n -t 1 -register_duplication on -cm speed -detail -ir off -ignore_keep_hierarchy -pr b -bp -power off -o SpikeSuche_map.ncd SpikeSuche.ngd SpikeSuche.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xXCS3200A-4VQ100_SpikeSuche.ucf -p xc3s200a-vq100-5 "SpikeSuche.ngc" SpikeSuche.ngd  
+map -intstyle ise -p xc3s200a-vq100-5 -timing -logic_opt on -ol high -xe n -t 1 -register_duplication on -cm speed -detail -ir off -ignore_keep_hierarchy -pr b -bp -power off -o SpikeSuche_map.ncd SpikeSuche.ngd SpikeSuche.pcf 
+par -w -intstyle ise -pl high -rl high -xe n -t 1 SpikeSuche_map.ncd SpikeSuche.ncd SpikeSuche.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml SpikeSuche.twx SpikeSuche.ncd -o SpikeSuche.twr SpikeSuche.pcf -ucf xXCS3200A-4VQ100_SpikeSuche.ucf 
+bitgen -intstyle ise -f SpikeSuche.ut SpikeSuche.ncd 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/SpikeSuche.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/SpikeSuche.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xXCS3200A-4VQ100_SpikeSuche.ucf -p xc3s200a-vq100-5 "SpikeSuche.ngc" SpikeSuche.ngd  
+map -intstyle ise -p xc3s200a-vq100-5 -timing -logic_opt on -ol high -xe n -t 1 -register_duplication on -cm speed -detail -ir off -ignore_keep_hierarchy -pr b -bp -power off -o SpikeSuche_map.ncd SpikeSuche.ngd SpikeSuche.pcf 
+par -w -intstyle ise -pl high -rl high -xe n -t 1 SpikeSuche_map.ncd SpikeSuche.ncd SpikeSuche.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml SpikeSuche.twx SpikeSuche.ncd -o SpikeSuche.twr SpikeSuche.pcf -ucf xXCS3200A-4VQ100_SpikeSuche.ucf 
+bitgen -intstyle ise -f SpikeSuche.ut SpikeSuche.ncd 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/SpikeSuche.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/SpikeSuche.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xXCS3200A-4VQ100_SpikeSuche.ucf -p xc3s200a-vq100-5 "SpikeSuche.ngc" SpikeSuche.ngd  
+map -intstyle ise -p xc3s200a-vq100-5 -timing -logic_opt on -ol high -xe n -t 1 -register_duplication on -cm speed -detail -ir off -ignore_keep_hierarchy -pr b -bp -power off -o SpikeSuche_map.ncd SpikeSuche.ngd SpikeSuche.pcf 
+par -w -intstyle ise -pl high -rl high -xe n -t 1 SpikeSuche_map.ncd SpikeSuche.ncd SpikeSuche.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml SpikeSuche.twx SpikeSuche.ncd -o SpikeSuche.twr SpikeSuche.pcf -ucf xXCS3200A-4VQ100_SpikeSuche.ucf 
+bitgen -intstyle ise -f SpikeSuche.ut SpikeSuche.ncd 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/SpikeSuche.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/SpikeSuche.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xXCS3200A-4VQ100_SpikeSuche.ucf -p xc3s200a-vq100-5 "SpikeSuche.ngc" SpikeSuche.ngd  
+map -intstyle ise -p xc3s200a-vq100-5 -timing -logic_opt on -ol high -xe n -t 1 -register_duplication on -cm speed -detail -ir off -ignore_keep_hierarchy -pr b -bp -power off -o SpikeSuche_map.ncd SpikeSuche.ngd SpikeSuche.pcf 
+par -w -intstyle ise -pl high -rl high -xe n -t 1 SpikeSuche_map.ncd SpikeSuche.ncd SpikeSuche.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml SpikeSuche.twx SpikeSuche.ncd -o SpikeSuche.twr SpikeSuche.pcf -ucf xXCS3200A-4VQ100_SpikeSuche.ucf 
+bitgen -intstyle ise -f SpikeSuche.ut SpikeSuche.ncd 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/SpikeSuche.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/SpikeSuche.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xXCS3200A-4VQ100_SpikeSuche.ucf -p xc3s200a-vq100-5 "SpikeSuche.ngc" SpikeSuche.ngd  
+map -intstyle ise -p xc3s200a-vq100-5 -timing -logic_opt on -ol high -xe n -t 1 -register_duplication on -cm speed -detail -ir off -ignore_keep_hierarchy -pr b -bp -power off -o SpikeSuche_map.ncd SpikeSuche.ngd SpikeSuche.pcf 
+par -w -intstyle ise -pl high -rl high -xe n -t 1 SpikeSuche_map.ncd SpikeSuche.ncd SpikeSuche.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml SpikeSuche.twx SpikeSuche.ncd -o SpikeSuche.twr SpikeSuche.pcf -ucf xXCS3200A-4VQ100_SpikeSuche.ucf 
+bitgen -intstyle ise -f SpikeSuche.ut SpikeSuche.ncd 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/SpikeSuche.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/SpikeSuche.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xXCS3200A-4VQ100_SpikeSuche.ucf -p xc3s200a-vq100-5 "SpikeSuche.ngc" SpikeSuche.ngd  
+map -intstyle ise -p xc3s200a-vq100-5 -timing -logic_opt on -ol high -xe n -t 1 -register_duplication on -cm speed -detail -ir off -ignore_keep_hierarchy -pr b -bp -power off -o SpikeSuche_map.ncd SpikeSuche.ngd SpikeSuche.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xXCS3200A-4VQ100_SpikeSuche.ucf -p xc3s200a-vq100-5 "SpikeSuche.ngc" SpikeSuche.ngd  
+map -intstyle ise -p xc3s200a-vq100-5 -timing -logic_opt on -ol high -xe n -t 1 -register_duplication on -cm speed -detail -ir off -ignore_keep_hierarchy -pr b -bp -power off -o SpikeSuche_map.ncd SpikeSuche.ngd SpikeSuche.pcf 
+par -w -intstyle ise -pl high -rl high -xe n -t 1 SpikeSuche_map.ncd SpikeSuche.ncd SpikeSuche.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml SpikeSuche.twx SpikeSuche.ncd -o SpikeSuche.twr SpikeSuche.pcf -ucf xXCS3200A-4VQ100_SpikeSuche.ucf 
+bitgen -intstyle ise -f SpikeSuche.ut SpikeSuche.ncd 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/SpikeSuche.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/SpikeSuche.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xXCS3200A-4VQ100_SpikeSuche.ucf -p xc3s200a-vq100-5 "SpikeSuche.ngc" SpikeSuche.ngd  
+map -intstyle ise -p xc3s200a-vq100-5 -timing -logic_opt on -ol high -xe n -t 1 -register_duplication on -cm speed -detail -ir off -ignore_keep_hierarchy -pr b -bp -power off -o SpikeSuche_map.ncd SpikeSuche.ngd SpikeSuche.pcf 
+par -w -intstyle ise -pl high -rl high -xe n -t 1 SpikeSuche_map.ncd SpikeSuche.ncd SpikeSuche.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml SpikeSuche.twx SpikeSuche.ncd -o SpikeSuche.twr SpikeSuche.pcf -ucf xXCS3200A-4VQ100_SpikeSuche.ucf 
+bitgen -intstyle ise -f SpikeSuche.ut SpikeSuche.ncd 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/SpikeSuche.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/SpikeSuche.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xXCS3200A-4VQ100_SpikeSuche.ucf -p xc3s200a-vq100-5 "SpikeSuche.ngc" SpikeSuche.ngd  
+map -intstyle ise -p xc3s200a-vq100-5 -timing -logic_opt on -ol high -xe n -t 1 -register_duplication on -cm speed -detail -ir off -ignore_keep_hierarchy -pr b -bp -power off -o SpikeSuche_map.ncd SpikeSuche.ngd SpikeSuche.pcf 
+par -w -intstyle ise -pl high -rl high -xe n -t 1 SpikeSuche_map.ncd SpikeSuche.ncd SpikeSuche.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml SpikeSuche.twx SpikeSuche.ncd -o SpikeSuche.twr SpikeSuche.pcf -ucf xXCS3200A-4VQ100_SpikeSuche.ucf 
+bitgen -intstyle ise -f SpikeSuche.ut SpikeSuche.ncd 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/SpikeSuche.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/SpikeSuche.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xXCS3200A-4VQ100_SpikeSuche.ucf -p xc3s200a-vq100-5 "SpikeSuche.ngc" SpikeSuche.ngd  
+map -intstyle ise -p xc3s200a-vq100-5 -timing -logic_opt on -ol high -xe n -t 1 -register_duplication on -cm speed -detail -ir off -ignore_keep_hierarchy -pr b -bp -power off -o SpikeSuche_map.ncd SpikeSuche.ngd SpikeSuche.pcf 
+par -w -intstyle ise -pl high -rl high -xe n -t 1 SpikeSuche_map.ncd SpikeSuche.ncd SpikeSuche.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml SpikeSuche.twx SpikeSuche.ncd -o SpikeSuche.twr SpikeSuche.pcf -ucf xXCS3200A-4VQ100_SpikeSuche.ucf 
+bitgen -intstyle ise -f SpikeSuche.ut SpikeSuche.ncd 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/SpikeSuche.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/SpikeSuche.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xXCS3200A-4VQ100_SpikeSuche.ucf -p xc3s200a-vq100-5 "SpikeSuche.ngc" SpikeSuche.ngd  
+map -intstyle ise -p xc3s200a-vq100-5 -timing -logic_opt on -ol high -xe n -t 1 -register_duplication on -cm speed -detail -ir off -ignore_keep_hierarchy -pr b -bp -power off -o SpikeSuche_map.ncd SpikeSuche.ngd SpikeSuche.pcf 
+par -w -intstyle ise -pl high -rl high -xe n -t 1 SpikeSuche_map.ncd SpikeSuche.ncd SpikeSuche.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml SpikeSuche.twx SpikeSuche.ncd -o SpikeSuche.twr SpikeSuche.pcf -ucf xXCS3200A-4VQ100_SpikeSuche.ucf 
+bitgen -intstyle ise -f SpikeSuche.ut SpikeSuche.ncd 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/SpikeSuche.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/SpikeSuche.syr" 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/SpikeSuche.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/SpikeSuche.syr" 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/SpikeSuche.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/SpikeSuche.syr" 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/SpikeSuche.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/SpikeSuche.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xXCS3200A-4VQ100_SpikeSuche.ucf -p xc3s200a-vq100-5 "SpikeSuche.ngc" SpikeSuche.ngd  
+map -intstyle ise -p xc3s200a-vq100-5 -timing -logic_opt on -ol high -xe n -t 1 -register_duplication on -cm speed -detail -ir off -ignore_keep_hierarchy -pr b -bp -power off -o SpikeSuche_map.ncd SpikeSuche.ngd SpikeSuche.pcf 
+par -w -intstyle ise -pl high -rl high -xe n -t 1 SpikeSuche_map.ncd SpikeSuche.ncd SpikeSuche.pcf 
+bitgen -intstyle ise -f SpikeSuche.ut SpikeSuche.ncd 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/SpikeSuche.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/SpikeSuche.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xXCS3200A-4VQ100_SpikeSuche.ucf -p xc3s200a-vq100-5 "SpikeSuche.ngc" SpikeSuche.ngd  
+map -intstyle ise -p xc3s200a-vq100-5 -timing -logic_opt on -ol high -xe n -t 1 -register_duplication on -cm speed -detail -ir off -ignore_keep_hierarchy -pr b -bp -power off -o SpikeSuche_map.ncd SpikeSuche.ngd SpikeSuche.pcf 
+par -w -intstyle ise -pl high -rl high -xe n -t 1 SpikeSuche_map.ncd SpikeSuche.ncd SpikeSuche.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml SpikeSuche.twx SpikeSuche.ncd -o SpikeSuche.twr SpikeSuche.pcf -ucf xXCS3200A-4VQ100_SpikeSuche.ucf 
+bitgen -intstyle ise -f SpikeSuche.ut SpikeSuche.ncd 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/SpikeSuche.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/SpikeSuche.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xXCS3200A-4VQ100_SpikeSuche.ucf -p xc3s200a-vq100-5 "SpikeSuche.ngc" SpikeSuche.ngd  
+map -intstyle ise -p xc3s200a-vq100-5 -timing -logic_opt on -ol high -xe n -t 1 -register_duplication on -cm speed -detail -ir off -ignore_keep_hierarchy -pr b -bp -power off -o SpikeSuche_map.ncd SpikeSuche.ngd SpikeSuche.pcf 
+par -w -intstyle ise -pl high -rl high -xe n -t 1 SpikeSuche_map.ncd SpikeSuche.ncd SpikeSuche.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml SpikeSuche.twx SpikeSuche.ncd -o SpikeSuche.twr SpikeSuche.pcf -ucf xXCS3200A-4VQ100_SpikeSuche.ucf 
+bitgen -intstyle ise -f SpikeSuche.ut SpikeSuche.ncd 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/SpikeSuche.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/SpikeSuche.syr" 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/SpikeSuche.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/SpikeSuche.syr" 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/SpikeSuche.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/SpikeSuche.syr" 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/SpikeSuche.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/SpikeSuche.syr" 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/SpikeSuche.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/SpikeSuche.syr" 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/SpikeSuche.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/SpikeSuche.syr" 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/SpikeSuche.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/SpikeSuche.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xXCS3200A-4VQ100_SpikeSuche.ucf -p xc3s200a-vq100-5 "SpikeSuche.ngc" SpikeSuche.ngd  
+map -intstyle ise -p xc3s200a-vq100-5 -timing -logic_opt on -ol high -xe n -t 1 -register_duplication on -cm speed -detail -ir off -ignore_keep_hierarchy -pr b -bp -power off -o SpikeSuche_map.ncd SpikeSuche.ngd SpikeSuche.pcf 
+par -w -intstyle ise -pl high -rl high -xe n -t 1 SpikeSuche_map.ncd SpikeSuche.ncd SpikeSuche.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml SpikeSuche.twx SpikeSuche.ncd -o SpikeSuche.twr SpikeSuche.pcf -ucf xXCS3200A-4VQ100_SpikeSuche.ucf 
+bitgen -intstyle ise -f SpikeSuche.ut SpikeSuche.ncd 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/SpikeSuche.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/SpikeSuche.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xXCS3200A-4VQ100_SpikeSuche.ucf -p xc3s200a-vq100-5 "SpikeSuche.ngc" SpikeSuche.ngd  
+map -intstyle ise -p xc3s200a-vq100-5 -timing -logic_opt on -ol high -xe n -t 1 -register_duplication on -cm speed -detail -ir off -ignore_keep_hierarchy -pr b -bp -power off -o SpikeSuche_map.ncd SpikeSuche.ngd SpikeSuche.pcf 
+par -w -intstyle ise -pl high -rl high -xe n -t 1 SpikeSuche_map.ncd SpikeSuche.ncd SpikeSuche.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml SpikeSuche.twx SpikeSuche.ncd -o SpikeSuche.twr SpikeSuche.pcf -ucf xXCS3200A-4VQ100_SpikeSuche.ucf 
+bitgen -intstyle ise -f SpikeSuche.ut SpikeSuche.ncd 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/SpikeSuche.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/SpikeSuche.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xXCS3200A-4VQ100_SpikeSuche.ucf -p xc3s200a-vq100-5 "SpikeSuche.ngc" SpikeSuche.ngd  
+map -intstyle ise -p xc3s200a-vq100-5 -timing -logic_opt on -ol high -xe n -t 1 -register_duplication on -cm speed -detail -ir off -ignore_keep_hierarchy -pr b -bp -power off -o SpikeSuche_map.ncd SpikeSuche.ngd SpikeSuche.pcf 
+par -w -intstyle ise -pl high -rl high -xe n -t 1 SpikeSuche_map.ncd SpikeSuche.ncd SpikeSuche.pcf 
+bitgen -intstyle ise -f SpikeSuche.ut SpikeSuche.ncd 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/SpikeSuche.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/SpikeSuche.syr" 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/SpikeSuche.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/SpikeSuche.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xXCS3200A-4VQ100_SpikeSuche.ucf -p xc3s200a-vq100-5 "SpikeSuche.ngc" SpikeSuche.ngd  
+map -intstyle ise -p xc3s200a-vq100-5 -timing -logic_opt on -ol high -xe n -t 1 -register_duplication on -cm speed -detail -ir off -ignore_keep_hierarchy -pr b -bp -power off -o SpikeSuche_map.ncd SpikeSuche.ngd SpikeSuche.pcf 
+par -w -intstyle ise -pl high -rl high -xe n -t 1 SpikeSuche_map.ncd SpikeSuche.ncd SpikeSuche.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml SpikeSuche.twx SpikeSuche.ncd -o SpikeSuche.twr SpikeSuche.pcf -ucf xXCS3200A-4VQ100_SpikeSuche.ucf 
+bitgen -intstyle ise -f SpikeSuche.ut SpikeSuche.ncd 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/SpikeSuche.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/SpikeSuche.syr" 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/SpikeSuche.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/SpikeSuche.syr" 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/SpikeSuche.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/SpikeSuche.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xXCS3200A-4VQ100_SpikeSuche.ucf -p xc3s200a-vq100-5 "SpikeSuche.ngc" SpikeSuche.ngd  
+map -intstyle ise -p xc3s200a-vq100-5 -timing -logic_opt on -ol high -xe n -t 1 -register_duplication on -cm speed -detail -ir off -ignore_keep_hierarchy -pr b -bp -power off -o SpikeSuche_map.ncd SpikeSuche.ngd SpikeSuche.pcf 
+par -w -intstyle ise -pl high -rl high -xe n -t 1 SpikeSuche_map.ncd SpikeSuche.ncd SpikeSuche.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml SpikeSuche.twx SpikeSuche.ncd -o SpikeSuche.twr SpikeSuche.pcf -ucf xXCS3200A-4VQ100_SpikeSuche.ucf 
+bitgen -intstyle ise -f SpikeSuche.ut SpikeSuche.ncd 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/SpikeSuche.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/SpikeSuche.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xXCS3200A-4VQ100_SpikeSuche.ucf -p xc3s200a-vq100-5 "SpikeSuche.ngc" SpikeSuche.ngd  
+map -intstyle ise -p xc3s200a-vq100-5 -timing -logic_opt on -ol high -xe n -t 1 -register_duplication on -cm speed -detail -ir off -ignore_keep_hierarchy -pr b -bp -power off -o SpikeSuche_map.ncd SpikeSuche.ngd SpikeSuche.pcf 
+par -w -intstyle ise -pl high -rl high -xe n -t 1 SpikeSuche_map.ncd SpikeSuche.ncd SpikeSuche.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml SpikeSuche.twx SpikeSuche.ncd -o SpikeSuche.twr SpikeSuche.pcf -ucf xXCS3200A-4VQ100_SpikeSuche.ucf 
+bitgen -intstyle ise -f SpikeSuche.ut SpikeSuche.ncd 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/SpikeSuche.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/SpikeSuche.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xXCS3200A-4VQ100_SpikeSuche.ucf -p xc3s200a-vq100-5 "SpikeSuche.ngc" SpikeSuche.ngd  
+map -intstyle ise -p xc3s200a-vq100-5 -timing -logic_opt on -ol high -xe n -t 1 -register_duplication on -cm speed -detail -ir off -ignore_keep_hierarchy -pr b -bp -power off -o SpikeSuche_map.ncd SpikeSuche.ngd SpikeSuche.pcf 
+par -w -intstyle ise -pl high -rl high -xe n -t 1 SpikeSuche_map.ncd SpikeSuche.ncd SpikeSuche.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml SpikeSuche.twx SpikeSuche.ncd -o SpikeSuche.twr SpikeSuche.pcf -ucf xXCS3200A-4VQ100_SpikeSuche.ucf 
+bitgen -intstyle ise -f SpikeSuche.ut SpikeSuche.ncd 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/SpikeSuche.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/SpikeSuche.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xXCS3200A-4VQ100_SpikeSuche.ucf -p xc3s200a-vq100-5 "SpikeSuche.ngc" SpikeSuche.ngd  
+map -intstyle ise -p xc3s200a-vq100-5 -timing -logic_opt on -ol high -xe n -t 1 -register_duplication on -cm speed -detail -ir off -ignore_keep_hierarchy -pr b -bp -power off -o SpikeSuche_map.ncd SpikeSuche.ngd SpikeSuche.pcf 
+par -w -intstyle ise -pl high -rl high -xe n -t 1 SpikeSuche_map.ncd SpikeSuche.ncd SpikeSuche.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml SpikeSuche.twx SpikeSuche.ncd -o SpikeSuche.twr SpikeSuche.pcf -ucf xXCS3200A-4VQ100_SpikeSuche.ucf 
+bitgen -intstyle ise -f SpikeSuche.ut SpikeSuche.ncd 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/SpikeSuche.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/SpikeSuche.syr" 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/SpikeSuche.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/SpikeSuche.syr" 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/SpikeSuche.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/SpikeSuche.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xXCS3200A-4VQ100_SpikeSuche.ucf -p xc3s200a-vq100-5 "SpikeSuche.ngc" SpikeSuche.ngd  
+map -intstyle ise -p xc3s200a-vq100-5 -timing -logic_opt on -ol high -xe n -t 1 -register_duplication on -cm speed -detail -ir off -ignore_keep_hierarchy -pr b -bp -power off -o SpikeSuche_map.ncd SpikeSuche.ngd SpikeSuche.pcf 
+par -w -intstyle ise -pl high -rl high -xe n -t 1 SpikeSuche_map.ncd SpikeSuche.ncd SpikeSuche.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml SpikeSuche.twx SpikeSuche.ncd -o SpikeSuche.twr SpikeSuche.pcf -ucf xXCS3200A-4VQ100_SpikeSuche.ucf 
+bitgen -intstyle ise -f SpikeSuche.ut SpikeSuche.ncd 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/SpikeSuche.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/SpikeSuche.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xXCS3200A-4VQ100_SpikeSuche.ucf -p xc3s200a-vq100-5 "SpikeSuche.ngc" SpikeSuche.ngd  
+map -intstyle ise -p xc3s200a-vq100-5 -timing -logic_opt on -ol high -xe n -t 1 -register_duplication on -cm speed -detail -ir off -ignore_keep_hierarchy -pr b -bp -power off -o SpikeSuche_map.ncd SpikeSuche.ngd SpikeSuche.pcf 
+par -w -intstyle ise -pl high -rl high -xe n -t 1 SpikeSuche_map.ncd SpikeSuche.ncd SpikeSuche.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml SpikeSuche.twx SpikeSuche.ncd -o SpikeSuche.twr SpikeSuche.pcf -ucf xXCS3200A-4VQ100_SpikeSuche.ucf 
+bitgen -intstyle ise -f SpikeSuche.ut SpikeSuche.ncd 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/SpikeSuche.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/SpikeSuche.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xXCS3200A-4VQ100_SpikeSuche.ucf -p xc3s200a-vq100-5 "SpikeSuche.ngc" SpikeSuche.ngd  
+map -intstyle ise -p xc3s200a-vq100-5 -timing -logic_opt on -ol high -xe n -t 1 -register_duplication on -cm speed -detail -ir off -ignore_keep_hierarchy -pr b -bp -power off -o SpikeSuche_map.ncd SpikeSuche.ngd SpikeSuche.pcf 
+par -w -intstyle ise -pl high -rl high -xe n -t 1 SpikeSuche_map.ncd SpikeSuche.ncd SpikeSuche.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml SpikeSuche.twx SpikeSuche.ncd -o SpikeSuche.twr SpikeSuche.pcf -ucf xXCS3200A-4VQ100_SpikeSuche.ucf 
+bitgen -intstyle ise -f SpikeSuche.ut SpikeSuche.ncd 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/SpikeSuche.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/SpikeSuche.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xXCS3200A-4VQ100_SpikeSuche.ucf -p xc3s200a-vq100-5 "SpikeSuche.ngc" SpikeSuche.ngd  
+map -intstyle ise -p xc3s200a-vq100-5 -timing -logic_opt on -ol high -xe n -t 1 -register_duplication on -cm speed -detail -ir off -ignore_keep_hierarchy -pr b -bp -power off -o SpikeSuche_map.ncd SpikeSuche.ngd SpikeSuche.pcf 
+par -w -intstyle ise -pl high -rl high -xe n -t 1 SpikeSuche_map.ncd SpikeSuche.ncd SpikeSuche.pcf 
+bitgen -intstyle ise -f SpikeSuche.ut SpikeSuche.ncd 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/SpikeSuche.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/SpikeSuche.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xXCS3200A-4VQ100_SpikeSuche.ucf -p xc3s200a-vq100-5 "SpikeSuche.ngc" SpikeSuche.ngd  
+map -intstyle ise -p xc3s200a-vq100-5 -timing -logic_opt on -ol high -xe n -t 1 -register_duplication on -cm speed -detail -ir off -ignore_keep_hierarchy -pr b -bp -power off -o SpikeSuche_map.ncd SpikeSuche.ngd SpikeSuche.pcf 
+par -w -intstyle ise -pl high -rl high -xe n -t 1 SpikeSuche_map.ncd SpikeSuche.ncd SpikeSuche.pcf 
+bitgen -intstyle ise -f SpikeSuche.ut SpikeSuche.ncd 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/SpikeSuche.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/SpikeSuche.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xXCS3200A-4VQ100_SpikeSuche.ucf -p xc3s200a-vq100-5 "SpikeSuche.ngc" SpikeSuche.ngd  
+map -intstyle ise -p xc3s200a-vq100-5 -timing -logic_opt on -ol high -xe n -t 1 -register_duplication on -cm speed -detail -ir off -ignore_keep_hierarchy -pr b -bp -power off -o SpikeSuche_map.ncd SpikeSuche.ngd SpikeSuche.pcf 
+par -w -intstyle ise -pl high -rl high -xe n -t 1 SpikeSuche_map.ncd SpikeSuche.ncd SpikeSuche.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml SpikeSuche.twx SpikeSuche.ncd -o SpikeSuche.twr SpikeSuche.pcf -ucf xXCS3200A-4VQ100_SpikeSuche.ucf 
+bitgen -intstyle ise -f SpikeSuche.ut SpikeSuche.ncd 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/SpikeSuche.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/SpikeSuche.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xXCS3200A-4VQ100_SpikeSuche.ucf -p xc3s200a-vq100-5 "SpikeSuche.ngc" SpikeSuche.ngd  
+map -intstyle ise -p xc3s200a-vq100-5 -timing -logic_opt on -ol high -xe n -t 1 -register_duplication on -cm speed -detail -ir off -ignore_keep_hierarchy -pr b -bp -power off -o SpikeSuche_map.ncd SpikeSuche.ngd SpikeSuche.pcf 
+par -w -intstyle ise -pl high -rl high -xe n -t 1 SpikeSuche_map.ncd SpikeSuche.ncd SpikeSuche.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml SpikeSuche.twx SpikeSuche.ncd -o SpikeSuche.twr SpikeSuche.pcf -ucf xXCS3200A-4VQ100_SpikeSuche.ucf 
+bitgen -intstyle ise -f SpikeSuche.ut SpikeSuche.ncd 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/SpikeSuche.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/SpikeSuche.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xXCS3200A-4VQ100_SpikeSuche.ucf -p xc3s200a-vq100-5 "SpikeSuche.ngc" SpikeSuche.ngd  
+map -intstyle ise -p xc3s200a-vq100-5 -timing -logic_opt off -ol high -xe n -t 1 -register_duplication off -cm area -ir off -pr b -power off -o SpikeSuche_map.ncd SpikeSuche.ngd SpikeSuche.pcf 
+par -w -intstyle ise -pl high -rl high -xe n -t 1 SpikeSuche_map.ncd SpikeSuche.ncd SpikeSuche.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml SpikeSuche.twx SpikeSuche.ncd -o SpikeSuche.twr SpikeSuche.pcf -ucf xXCS3200A-4VQ100_SpikeSuche.ucf 

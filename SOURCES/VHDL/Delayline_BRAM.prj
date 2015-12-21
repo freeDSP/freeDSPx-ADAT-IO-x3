@@ -1,0 +1,2 @@
+vhdl work "DualAdressBRAM.vhd"
+vhdl work "Delayline_BRAM.vhd"

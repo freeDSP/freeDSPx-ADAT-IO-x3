@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<symbol version="7" name="ADAT_Dekoder">
+    <symboltype>BLOCK</symboltype>
+    <timestamp>2013-11-11T9:44:8</timestamp>
+    <pin polarity="Input" x="0" y="-1184" name="clk" />
+    <pin polarity="Input" x="0" y="-32" name="In_ADAT" />
+    <pin polarity="Output" x="608" y="-1184" name="Debug_Sync" />
+    <pin polarity="Output" x="608" y="-1120" name="Debug_Letztes_Bit" />
+    <pin polarity="Output" x="608" y="-1056" name="Out_ADAT_Clock" />
+    <pin polarity="Output" x="608" y="-992" name="Out_FrameOK" />
+    <pin polarity="Output" x="608" y="-928" name="Debug_Takt_Sync_letztesBit" />
+    <pin polarity="Output" x="608" y="-864" name="Debug_Sync_Len(0:11)" />
+    <pin polarity="Output" x="608" y="-800" name="Debug_Sync_BitLaenge(0:11)" />
+    <pin polarity="Output" x="608" y="-736" name="Debug_ADAT_BitNummer(0:7)" />
+    <pin polarity="Output" x="608" y="-672" name="Out_Raw_Audio(0:255)" />
+    <pin polarity="Output" x="608" y="-608" name="Out_UserBits(3:0)" />
+    <pin polarity="Output" x="608" y="-544" name="Out_Kanal_0(23:0)" />
+    <pin polarity="Output" x="608" y="-480" name="Out_Kanal_1(23:0)" />
+    <pin polarity="Output" x="608" y="-416" name="Out_Kanal_2(23:0)" />
+    <pin polarity="Output" x="608" y="-352" name="Out_Kanal_3(23:0)" />
+    <pin polarity="Output" x="608" y="-288" name="Out_Kanal_4(23:0)" />
+    <pin polarity="Output" x="608" y="-224" name="Out_Kanal_5(23:0)" />
+    <pin polarity="Output" x="608" y="-160" name="Out_Kanal_6(23:0)" />
+    <pin polarity="Output" x="608" y="-96" name="Out_Kanal_7(23:0)" />
+    <pin polarity="Output" x="608" y="-32" name="Debug_Takt_BitLaengeZaehler(0:11)" />
+    <graph>
+        <rect width="480" x="64" y="-1216" height="1216" />
+        <attrtext style="alignment:BCENTER;fontsize:56;fontname:Arial" attrname="SymbolName" x="304" y="-1224" type="symbol" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-1184" type="pin clk" />
+        <line x2="0" y1="-1184" y2="-1184" x1="64" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-32" type="pin In_ADAT" />
+        <line x2="0" y1="-32" y2="-32" x1="64" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="536" y="-1184" type="pin Debug_Sync" />
+        <line x2="608" y1="-1184" y2="-1184" x1="544" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="536" y="-1120" type="pin Debug_Letztes_Bit" />
+        <line x2="608" y1="-1120" y2="-1120" x1="544" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="536" y="-1056" type="pin Out_ADAT_Clock" />
+        <line x2="608" y1="-1056" y2="-1056" x1="544" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="536" y="-992" type="pin Out_FrameOK" />
+        <line x2="608" y1="-992" y2="-992" x1="544" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="536" y="-928" type="pin Debug_Takt_Sync_letztesBit" />
+        <line x2="608" y1="-928" y2="-928" x1="544" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="536" y="-864" type="pin Debug_Sync_Len(0:11)" />
+        <rect width="64" x="544" y="-876" height="24" />
+        <line x2="608" y1="-864" y2="-864" x1="544" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="536" y="-800" type="pin Debug_Sync_BitLaenge(0:11)" />
+        <rect width="64" x="544" y="-812" height="24" />
+        <line x2="608" y1="-800" y2="-800" x1="544" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="536" y="-736" type="pin Debug_ADAT_BitNummer(0:7)" />
+        <rect width="64" x="544" y="-748" height="24" />
+        <line x2="608" y1="-736" y2="-736" x1="544" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="536" y="-672" type="pin Out_Raw_Audio(0:255)" />
+        <rect width="64" x="544" y="-684" height="24" />
+        <line x2="608" y1="-672" y2="-672" x1="544" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="536" y="-608" type="pin Out_UserBits(3:0)" />
+        <rect width="64" x="544" y="-620" height="24" />
+        <line x2="608" y1="-608" y2="-608" x1="544" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="536" y="-544" type="pin Out_Kanal_0(23:0)" />
+        <rect width="64" x="544" y="-556" height="24" />
+        <line x2="608" y1="-544" y2="-544" x1="544" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="536" y="-480" type="pin Out_Kanal_1(23:0)" />
+        <rect width="64" x="544" y="-492" height="24" />
+        <line x2="608" y1="-480" y2="-480" x1="544" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="536" y="-416" type="pin Out_Kanal_2(23:0)" />
+        <rect width="64" x="544" y="-428" height="24" />
+        <line x2="608" y1="-416" y2="-416" x1="544" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="536" y="-352" type="pin Out_Kanal_3(23:0)" />
+        <rect width="64" x="544" y="-364" height="24" />
+        <line x2="608" y1="-352" y2="-352" x1="544" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="536" y="-288" type="pin Out_Kanal_4(23:0)" />
+        <rect width="64" x="544" y="-300" height="24" />
+        <line x2="608" y1="-288" y2="-288" x1="544" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="536" y="-224" type="pin Out_Kanal_5(23:0)" />
+        <rect width="64" x="544" y="-236" height="24" />
+        <line x2="608" y1="-224" y2="-224" x1="544" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="536" y="-160" type="pin Out_Kanal_6(23:0)" />
+        <rect width="64" x="544" y="-172" height="24" />
+        <line x2="608" y1="-160" y2="-160" x1="544" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="536" y="-96" type="pin Out_Kanal_7(23:0)" />
+        <rect width="64" x="544" y="-108" height="24" />
+        <line x2="608" y1="-96" y2="-96" x1="544" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="536" y="-32" type="pin Debug_Takt_BitLaengeZaehler(0:11)" />
+        <rect width="64" x="544" y="-44" height="24" />
+        <line x2="608" y1="-32" y2="-32" x1="544" />
+    </graph>
+</symbol>

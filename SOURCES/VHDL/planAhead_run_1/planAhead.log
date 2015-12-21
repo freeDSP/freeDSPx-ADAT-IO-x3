@@ -1,0 +1,68 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7
+# Build 321239 by xbuild on Fri Sep 27 19:31:35 MDT 2013
+# Start of session at: Thu Mar 26 11:41:21 2015
+# Process ID: 2968
+# Log file: D:/ADAT DeEncoder/ADAT_De-Encoder/planAhead_run_1/planAhead.log
+# Journal file: D:/ADAT DeEncoder/ADAT_De-Encoder/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+INFO: [Common 17-78] Attempting to get a license: PlanAhead
+INFO: [Common 17-290] Got license for PlanAhead
+INFO: [Common 17-86] Your PlanAhead license expires in -85 day(s)
+INFO: [Device 21-36] Loading parts and site information from C:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/arch.xml
+Parsing RTL primitives file [C:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+Finished parsing RTL primitives file [C:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+start_gui
+source {D:/ADAT DeEncoder/ADAT_De-Encoder/pa.fromNetlist.tcl}
+# create_project -name ADAT_De-Encoder -dir "D:/ADAT DeEncoder/ADAT_De-Encoder/planAhead_run_2" -part xc3s200avq100-4
+create_project: Time (s): elapsed = 00:00:06 . Memory (MB): peak = 378.633 ; gain = 24.234
+# set_property design_mode GateLvl [get_property srcset [current_run -impl]]
+# set_property edif_top_file "D:/ADAT DeEncoder/ADAT_De-Encoder/Autosync.ngc" [ get_property srcset [ current_run ] ]
+# add_files -norecurse { {D:/ADAT DeEncoder/ADAT_De-Encoder} }
+# set_property target_constrs_file "xXCS3200A-4VQ100_Autosync.ucf" [current_fileset -constrset]
+Adding file 'D:/ADAT DeEncoder/ADAT_De-Encoder/xXCS3200A-4VQ100_Autosync.ucf' to fileset 'constrs_1'
+# add_files [list {xXCS3200A-4VQ100_Autosync.ucf}] -fileset [get_property constrset [current_run]]
+# link_design
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+Design is defaulting to project part: xc3s200avq100-4
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+Release 14.7 - ngc2edif P.20131013 (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Release 14.7 - ngc2edif P.20131013 (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design Autosync.ngc ...
+WARNING:NetListWriters:298 - No output is written to Autosync.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus Mcompar_esLebt_cmp_lt0000_lut<12 : 1> on
+   block Autosync is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus
+   inst_Autosync/temp_negative_max_mux0005<7 : 4> on block Autosync is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus inst_McBSP_Interface/Bitnummer_mux0002<4
+   : 0> on block Autosync is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus inst_McBSP_Interface/DX_varindex0000<23
+   : 1> on block Autosync is not reconstructed, because there are some missing
+   bus signals.
+  finished :Prep
+Writing EDIF netlist file Autosync.edif ...
+ngc2edif: Total memory usage is 47072 kilobytes
+
+Parsing EDIF File [./planAhead_run_2/ADAT_De-Encoder.data/cache/Autosync_ngc_zx.edif]
+INFO: [Common 17-344] 'link_design' was cancelled
+INFO: [Common 17-344] 'source' was cancelled
+exit
+ERROR: [PlanAhead 12-106] *** Exception: ui.h.b: Found deleted key in HTclEventBroker. Verify if the classes listed here call cleanup()
+HTclEvent: DEBUG_CORE_CONFIG_CHANGE   Classes: ui.views.aR 
+HTclEvent: DEBUG_PORT_CONFIG_CHANGE   Classes: ui.views.aR 
+HTclEvent: SIGNAL_BUS_MODIFY   Classes: ui.views.aR 
+HTclEvent: SIGNAL_MODIFY   Classes: ui.views.aR 
+ (See D:/ADAT DeEncoder/ADAT_De-Encoder\planAhead_pid2968.debug)
+ERROR: [Common 17-39] 'stop_gui' failed due to earlier errors.
+INFO: [Common 17-206] Exiting PlanAhead at Thu Mar 26 11:42:20 2015...
+INFO: [Common 17-83] Releasing license: PlanAhead

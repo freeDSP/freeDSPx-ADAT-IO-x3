@@ -1,0 +1,167 @@
+Release 14.7 par P.20131013 (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+WEDASP78::  Tue Jun 24 15:17:16 2014
+
+par -w -intstyle ise -pl high -rl high -xe n -t 1 SpikeSuche_map.ncd
+SpikeSuche.ncd SpikeSuche.pcf 
+
+
+Constraints file: SpikeSuche.pcf.
+Loading device for application Rf_Device from file '3s200a.nph' in environment C:\Xilinx\14.7\ISE_DS\ISE\.
+   "SpikeSuche" is an NCD, version 3.2, device xc3s200a, package vq100, speed -5
+
+Initializing temperature to 85.000 Celsius. (default - Range: 0.000 to 85.000 Celsius)
+Initializing voltage to 1.140 Volts. (default - Range: 1.140 to 1.260 Volts)
+
+
+Device speed data version:  "PRODUCTION 1.42 2013-10-13".
+
+
+
+Design Summary Report:
+
+ Number of External IOBs                          30 out of 68     44%
+
+   Number of External Input IOBs                 12
+
+      Number of External Input IBUFs             12
+        Number of LOCed External Input IBUFs     12 out of 12    100%
+
+
+   Number of External Output IOBs                18
+
+      Number of External Output IOBs             18
+        Number of LOCed External Output IOBs     18 out of 18    100%
+
+
+   Number of External Bidir IOBs                  0
+
+
+   Number of BUFGMUXs                        6 out of 24     25%
+   Number of Slices                       1761 out of 1792   98%
+      Number of SLICEMs                    526 out of 896    58%
+
+
+
+Overall effort level (-ol):   Not applicable because -pl and -rl switches are used
+Router effort level (-rl):    High 
+
+Starting initial Timing Analysis.  REAL time: 6 secs 
+Finished initial Timing Analysis.  REAL time: 6 secs 
+
+WARNING:Par:288 - The signal in_ADAT_Taktflanke<0>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal in_ADAT_Taktwahl<0>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal in_ADAT_Taktwahl<1>_IBUF has no load.  PAR will not attempt to route this signal.
+Starting Router
+
+
+Phase  1  : 12614 unrouted;      REAL time: 8 secs 
+
+Phase  2  : 8564 unrouted;      REAL time: 9 secs 
+
+Phase  3  : 3100 unrouted;      REAL time: 10 secs 
+
+Phase  4  : 3100 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 10 secs 
+
+Phase  5  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 14 secs 
+
+Updating file: SpikeSuche.ncd with current fully routed design.
+
+Phase  6  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 15 secs 
+
+Phase  7  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 15 secs 
+
+Phase  8  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 15 secs 
+
+Total REAL time to Router completion: 15 secs 
+Total CPU time to Router completion: 14 secs 
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+Generating "PAR" statistics.
+
+**************************
+Generating Clock Report
+**************************
+
++---------------------+--------------+------+------+------------+-------------+
+|        Clock Net    |   Resource   |Locked|Fanout|Net Skew(ns)|Max Delay(ns)|
++---------------------+--------------+------+------+------------+-------------+
+|in_Platinentakt_BUFG |              |      |      |            |             |
+|                   P | BUFGMUX_X2Y11| No   |   18 |  0.113     |  0.987      |
++---------------------+--------------+------+------+------------+-------------+
+|    in_AdatTakt_IBUF | BUFGMUX_X1Y11| No   |   54 |  0.082     |  0.954      |
++---------------------+--------------+------+------+------------+-------------+
+| Debug_AdatTakt_OBUF | BUFGMUX_X1Y10| No   |  716 |  0.228     |  1.097      |
++---------------------+--------------+------+------+------------+-------------+
+|DSP_CLKR_FPGA_CLKX_B |              |      |      |            |             |
+|                UFGP |  BUFGMUX_X2Y1| No   |   16 |  0.016     |  0.901      |
++---------------------+--------------+------+------+------------+-------------+
+|DSP_CLKX_FPGA_CLKR_B |              |      |      |            |             |
+|                UFGP |  BUFGMUX_X1Y1| No   |  468 |  0.138     |  1.005      |
++---------------------+--------------+------+------+------------+-------------+
+|inst_BRAM_Puffer_McB |              |      |      |            |             |
+|   SP_Enkoder/BR_clk |  BUFGMUX_X1Y0| No   |  296 |  0.087     |  0.954      |
++---------------------+--------------+------+------+------------+-------------+
+|Adat_Frame_Sync_Enko |              |      |      |            |             |
+|                 der |         Local|      |    1 |  0.000     |  1.080      |
++---------------------+--------------+------+------+------------+-------------+
+
+* Net Skew is the difference between the minimum and maximum routing
+only delays for the net. Note this is different from Clock Skew which
+is reported in TRCE timing report. Clock Skew is the difference between
+the minimum and maximum path delays which includes logic delays.
+
+* The fanout is the number of component pins not the individual BEL loads,
+for example SLICE loads not FF loads.
+
+Timing Score: 0 (Setup: 0, Hold: 0, Component Switching Limit: 0)
+
+Asterisk (*) preceding a constraint indicates it was not met.
+   This may be due to a setup or hold violation.
+
+----------------------------------------------------------------------------------------------------------
+  Constraint                                |    Check    | Worst Case |  Best Case | Timing |   Timing   
+                                            |             |    Slack   | Achievable | Errors |    Score   
+----------------------------------------------------------------------------------------------------------
+  TS_in_Platinentakt = PERIOD TIMEGRP "in_P | SETUP       |    14.502ns|     5.498ns|       0|           0
+  latinentakt" 20 ns HIGH 50%               | HOLD        |     1.109ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  TS_in_AdatTakt = PERIOD TIMEGRP "in_AdatT | SETUP       |    68.026ns|    13.354ns|       0|           0
+  akt" 81.3802 ns HIGH 50%                  | HOLD        |     0.517ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+
+
+All constraints were met.
+
+
+Generating Pad Report.
+
+All signals are completely routed.
+
+WARNING:Par:283 - There are 3 loadless signals in this design. This design will cause Bitgen to issue DRC warnings.
+
+Total REAL time to PAR completion: 16 secs 
+Total CPU time to PAR completion: 15 secs 
+
+Peak Memory Usage:  213 MB
+
+Placer: Placement generated during map.
+Routing: Completed - No errors found.
+Timing: Completed - No errors found.
+
+Number of error messages: 0
+Number of warning messages: 5
+Number of info messages: 0
+
+Writing design to file SpikeSuche.ncd
+
+
+
+PAR done!

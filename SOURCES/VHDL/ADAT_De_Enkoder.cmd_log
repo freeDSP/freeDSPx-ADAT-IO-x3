@@ -1,0 +1,138 @@
+xst -intstyle ise -ifn "Z:/ADAT DeEncoder/ADAT_De-Encoder/ADAT_De_Enkoder.xst" -ofn "Z:/ADAT DeEncoder/ADAT_De-Encoder/ADAT_De_Enkoder.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xXCS3200A-4VQ100.ucf -p xc3s200a-vq100-5 "ADAT_De_Enkoder.ngc" ADAT_De_Enkoder.ngd  
+map -intstyle ise -p xc3s200a-vq100-5 -timing -logic_opt on -ol high -xe n -t 1 -register_duplication on -cm speed -detail -ir off -ignore_keep_hierarchy -pr b -bp -power off -o ADAT_De_Enkoder_map.ncd ADAT_De_Enkoder.ngd ADAT_De_Enkoder.pcf 
+par -w -intstyle ise -pl high -rl high -xe n -t 1 ADAT_De_Enkoder_map.ncd ADAT_De_Enkoder.ncd ADAT_De_Enkoder.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml ADAT_De_Enkoder.twx ADAT_De_Enkoder.ncd -o ADAT_De_Enkoder.twr ADAT_De_Enkoder.pcf -ucf xXCS3200A-4VQ100.ucf 
+xst -intstyle ise -ifn "Z:/ADAT DeEncoder/ADAT_De-Encoder/ADAT_De_Enkoder.xst" -ofn "Z:/ADAT DeEncoder/ADAT_De-Encoder/ADAT_De_Enkoder.syr" 
+xst -intstyle ise -ifn "Z:/ADAT DeEncoder/ADAT_De-Encoder/ADAT_De_Enkoder.xst" -ofn "Z:/ADAT DeEncoder/ADAT_De-Encoder/ADAT_De_Enkoder.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xXCS3200A-4VQ100.ucf -p xc3s200a-vq100-5 "ADAT_De_Enkoder.ngc" ADAT_De_Enkoder.ngd  
+map -intstyle ise -p xc3s200a-vq100-5 -timing -logic_opt on -ol high -xe n -t 1 -register_duplication on -cm speed -detail -ir off -ignore_keep_hierarchy -pr b -bp -power off -o ADAT_De_Enkoder_map.ncd ADAT_De_Enkoder.ngd ADAT_De_Enkoder.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xXCS3200A-4VQ100.ucf -p xc3s200a-vq100-5 "ADAT_De_Enkoder.ngc" ADAT_De_Enkoder.ngd  
+map -intstyle ise -p xc3s200a-vq100-5 -timing -logic_opt on -ol high -xe n -t 1 -register_duplication on -cm speed -detail -ir off -ignore_keep_hierarchy -pr b -bp -power off -o ADAT_De_Enkoder_map.ncd ADAT_De_Enkoder.ngd ADAT_De_Enkoder.pcf 
+par -w -intstyle ise -pl high -rl high -xe n -t 1 ADAT_De_Enkoder_map.ncd ADAT_De_Enkoder.ncd ADAT_De_Enkoder.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml ADAT_De_Enkoder.twx ADAT_De_Enkoder.ncd -o ADAT_De_Enkoder.twr ADAT_De_Enkoder.pcf -ucf xXCS3200A-4VQ100.ucf 
+bitgen -intstyle ise -f ADAT_De_Enkoder.ut ADAT_De_Enkoder.ncd 
+bitgen -intstyle ise -f ADAT_De_Enkoder.ut ADAT_De_Enkoder.ncd 
+xst -intstyle ise -ifn "Z:/ADAT DeEncoder/ADAT_De-Encoder/ADAT_De_Enkoder.xst" -ofn "Z:/ADAT DeEncoder/ADAT_De-Encoder/ADAT_De_Enkoder.syr" 
+xst -intstyle ise -ifn "Z:/ADAT DeEncoder/ADAT_De-Encoder/ADAT_De_Enkoder.xst" -ofn "Z:/ADAT DeEncoder/ADAT_De-Encoder/ADAT_De_Enkoder.syr" 
+xst -intstyle ise -ifn "Z:/ADAT DeEncoder/ADAT_De-Encoder/ADAT_De_Enkoder.xst" -ofn "Z:/ADAT DeEncoder/ADAT_De-Encoder/ADAT_De_Enkoder.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xXCS3200A-4VQ100.ucf -p xc3s200a-vq100-5 "ADAT_De_Enkoder.ngc" ADAT_De_Enkoder.ngd  
+map -intstyle ise -p xc3s200a-vq100-5 -timing -logic_opt on -ol high -xe n -t 1 -register_duplication on -cm speed -detail -ir off -ignore_keep_hierarchy -pr b -bp -power off -o ADAT_De_Enkoder_map.ncd ADAT_De_Enkoder.ngd ADAT_De_Enkoder.pcf 
+par -w -intstyle ise -pl high -rl high -xe n -t 1 ADAT_De_Enkoder_map.ncd ADAT_De_Enkoder.ncd ADAT_De_Enkoder.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml ADAT_De_Enkoder.twx ADAT_De_Enkoder.ncd -o ADAT_De_Enkoder.twr ADAT_De_Enkoder.pcf -ucf xXCS3200A-4VQ100.ucf 
+bitgen -intstyle ise -f ADAT_De_Enkoder.ut ADAT_De_Enkoder.ncd 
+xst -intstyle ise -ifn "Z:/ADAT DeEncoder/ADAT_De-Encoder/ADAT_De_Enkoder.xst" -ofn "Z:/ADAT DeEncoder/ADAT_De-Encoder/ADAT_De_Enkoder.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xXCS3200A-4VQ100.ucf -p xc3s200a-vq100-5 "ADAT_De_Enkoder.ngc" ADAT_De_Enkoder.ngd  
+map -intstyle ise -p xc3s200a-vq100-5 -timing -logic_opt on -ol high -xe n -t 1 -register_duplication on -cm speed -detail -ir off -ignore_keep_hierarchy -pr b -bp -power off -o ADAT_De_Enkoder_map.ncd ADAT_De_Enkoder.ngd ADAT_De_Enkoder.pcf 
+par -w -intstyle ise -pl high -rl high -xe n -t 1 ADAT_De_Enkoder_map.ncd ADAT_De_Enkoder.ncd ADAT_De_Enkoder.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml ADAT_De_Enkoder.twx ADAT_De_Enkoder.ncd -o ADAT_De_Enkoder.twr ADAT_De_Enkoder.pcf -ucf xXCS3200A-4VQ100.ucf 
+bitgen -intstyle ise -f ADAT_De_Enkoder.ut ADAT_De_Enkoder.ncd 
+xst -intstyle ise -ifn "Z:/ADAT DeEncoder/ADAT_De-Encoder/ADAT_De_Enkoder.xst" -ofn "Z:/ADAT DeEncoder/ADAT_De-Encoder/ADAT_De_Enkoder.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xXCS3200A-4VQ100.ucf -p xc3s200a-vq100-5 "ADAT_De_Enkoder.ngc" ADAT_De_Enkoder.ngd  
+map -intstyle ise -p xc3s200a-vq100-5 -timing -logic_opt on -ol high -xe n -t 1 -register_duplication on -cm speed -detail -ir off -ignore_keep_hierarchy -pr b -bp -power off -o ADAT_De_Enkoder_map.ncd ADAT_De_Enkoder.ngd ADAT_De_Enkoder.pcf 
+par -w -intstyle ise -pl high -rl high -xe n -t 1 ADAT_De_Enkoder_map.ncd ADAT_De_Enkoder.ncd ADAT_De_Enkoder.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml ADAT_De_Enkoder.twx ADAT_De_Enkoder.ncd -o ADAT_De_Enkoder.twr ADAT_De_Enkoder.pcf -ucf xXCS3200A-4VQ100.ucf 
+bitgen -intstyle ise -f ADAT_De_Enkoder.ut ADAT_De_Enkoder.ncd 
+xst -intstyle ise -ifn "Z:/D/ADAT DeEncoder/ADAT_De-Encoder/ADAT_De_Enkoder.xst" -ofn "Z:/D/ADAT DeEncoder/ADAT_De-Encoder/ADAT_De_Enkoder.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xXCS3200A-4VQ100.ucf -p xc3s200a-vq100-5 "ADAT_De_Enkoder.ngc" ADAT_De_Enkoder.ngd  
+map -intstyle ise -p xc3s200a-vq100-5 -timing -logic_opt on -ol high -xe n -t 1 -register_duplication on -cm speed -detail -ir off -ignore_keep_hierarchy -pr b -bp -power off -o ADAT_De_Enkoder_map.ncd ADAT_De_Enkoder.ngd ADAT_De_Enkoder.pcf 
+par -w -intstyle ise -pl high -rl high -xe n -t 1 ADAT_De_Enkoder_map.ncd ADAT_De_Enkoder.ncd ADAT_De_Enkoder.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml ADAT_De_Enkoder.twx ADAT_De_Enkoder.ncd -o ADAT_De_Enkoder.twr ADAT_De_Enkoder.pcf -ucf xXCS3200A-4VQ100.ucf 
+bitgen -intstyle ise -f ADAT_De_Enkoder.ut ADAT_De_Enkoder.ncd 
+xst -intstyle ise -ifn "Z:/D/ADAT DeEncoder/ADAT_De-Encoder/ADAT_De_Enkoder.xst" -ofn "Z:/D/ADAT DeEncoder/ADAT_De-Encoder/ADAT_De_Enkoder.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xXCS3200A-4VQ100.ucf -p xc3s200a-vq100-5 "ADAT_De_Enkoder.ngc" ADAT_De_Enkoder.ngd  
+map -intstyle ise -p xc3s200a-vq100-5 -timing -logic_opt on -ol high -xe n -t 1 -register_duplication on -cm speed -detail -ir off -ignore_keep_hierarchy -pr b -bp -power off -o ADAT_De_Enkoder_map.ncd ADAT_De_Enkoder.ngd ADAT_De_Enkoder.pcf 
+par -w -intstyle ise -pl high -rl high -xe n -t 1 ADAT_De_Enkoder_map.ncd ADAT_De_Enkoder.ncd ADAT_De_Enkoder.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml ADAT_De_Enkoder.twx ADAT_De_Enkoder.ncd -o ADAT_De_Enkoder.twr ADAT_De_Enkoder.pcf -ucf xXCS3200A-4VQ100.ucf 
+bitgen -intstyle ise -f ADAT_De_Enkoder.ut ADAT_De_Enkoder.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xXCS3200A-4VQ100.ucf -p xc3s200a-vq100-5 "ADAT_De_Enkoder.ngc" ADAT_De_Enkoder.ngd  
+map -intstyle ise -p xc3s200a-vq100-5 -timing -logic_opt on -ol high -xe n -t 1 -register_duplication on -cm speed -detail -ir off -ignore_keep_hierarchy -pr b -bp -power off -o ADAT_De_Enkoder_map.ncd ADAT_De_Enkoder.ngd ADAT_De_Enkoder.pcf 
+par -w -intstyle ise -pl high -rl high -xe n -t 1 ADAT_De_Enkoder_map.ncd ADAT_De_Enkoder.ncd ADAT_De_Enkoder.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml ADAT_De_Enkoder.twx ADAT_De_Enkoder.ncd -o ADAT_De_Enkoder.twr ADAT_De_Enkoder.pcf -ucf xXCS3200A-4VQ100.ucf 
+bitgen -intstyle ise -f ADAT_De_Enkoder.ut ADAT_De_Enkoder.ncd 
+xst -intstyle ise -ifn "Z:/D/ADAT DeEncoder/ADAT_De-Encoder/ADAT_De_Enkoder.xst" -ofn "Z:/D/ADAT DeEncoder/ADAT_De-Encoder/ADAT_De_Enkoder.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xXCS3200A-4VQ100.ucf -p xc3s200a-vq100-5 "ADAT_De_Enkoder.ngc" ADAT_De_Enkoder.ngd  
+map -intstyle ise -p xc3s200a-vq100-5 -timing -logic_opt on -ol high -xe n -t 1 -register_duplication on -cm speed -detail -ir off -ignore_keep_hierarchy -pr b -bp -power off -o ADAT_De_Enkoder_map.ncd ADAT_De_Enkoder.ngd ADAT_De_Enkoder.pcf 
+par -w -intstyle ise -pl high -rl high -xe n -t 1 ADAT_De_Enkoder_map.ncd ADAT_De_Enkoder.ncd ADAT_De_Enkoder.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml ADAT_De_Enkoder.twx ADAT_De_Enkoder.ncd -o ADAT_De_Enkoder.twr ADAT_De_Enkoder.pcf -ucf xXCS3200A-4VQ100.ucf 
+bitgen -intstyle ise -f ADAT_De_Enkoder.ut ADAT_De_Enkoder.ncd 
+xst -intstyle ise -ifn "Z:/D/ADAT DeEncoder/ADAT_De-Encoder/ADAT_De_Enkoder.xst" -ofn "Z:/D/ADAT DeEncoder/ADAT_De-Encoder/ADAT_De_Enkoder.syr" 
+xst -intstyle ise -ifn "Z:/D/ADAT DeEncoder/ADAT_De-Encoder/ADAT_De_Enkoder.xst" -ofn "Z:/D/ADAT DeEncoder/ADAT_De-Encoder/ADAT_De_Enkoder.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xXCS3200A-4VQ100.ucf -p xc3s200a-vq100-5 "ADAT_De_Enkoder.ngc" ADAT_De_Enkoder.ngd  
+map -intstyle ise -p xc3s200a-vq100-5 -timing -logic_opt on -ol high -xe n -t 1 -register_duplication on -cm speed -detail -ir off -ignore_keep_hierarchy -pr b -bp -power off -o ADAT_De_Enkoder_map.ncd ADAT_De_Enkoder.ngd ADAT_De_Enkoder.pcf 
+par -w -intstyle ise -pl high -rl high -xe n -t 1 ADAT_De_Enkoder_map.ncd ADAT_De_Enkoder.ncd ADAT_De_Enkoder.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml ADAT_De_Enkoder.twx ADAT_De_Enkoder.ncd -o ADAT_De_Enkoder.twr ADAT_De_Enkoder.pcf -ucf xXCS3200A-4VQ100.ucf 
+bitgen -intstyle ise -f ADAT_De_Enkoder.ut ADAT_De_Enkoder.ncd 
+xst -intstyle ise -ifn "Z:/D/ADAT DeEncoder/ADAT_De-Encoder/ADAT_De_Enkoder.xst" -ofn "Z:/D/ADAT DeEncoder/ADAT_De-Encoder/ADAT_De_Enkoder.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xXCS3200A-4VQ100.ucf -p xc3s200a-vq100-5 "ADAT_De_Enkoder.ngc" ADAT_De_Enkoder.ngd  
+map -intstyle ise -p xc3s200a-vq100-5 -timing -logic_opt on -ol high -xe n -t 1 -register_duplication on -cm speed -detail -ir off -ignore_keep_hierarchy -pr b -bp -power off -o ADAT_De_Enkoder_map.ncd ADAT_De_Enkoder.ngd ADAT_De_Enkoder.pcf 
+par -w -intstyle ise -pl high -rl high -xe n -t 1 ADAT_De_Enkoder_map.ncd ADAT_De_Enkoder.ncd ADAT_De_Enkoder.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml ADAT_De_Enkoder.twx ADAT_De_Enkoder.ncd -o ADAT_De_Enkoder.twr ADAT_De_Enkoder.pcf -ucf xXCS3200A-4VQ100.ucf 
+bitgen -intstyle ise -f ADAT_De_Enkoder.ut ADAT_De_Enkoder.ncd 
+xst -intstyle ise -ifn "Z:/D/ADAT DeEncoder/ADAT_De-Encoder/ADAT_De_Enkoder.xst" -ofn "Z:/D/ADAT DeEncoder/ADAT_De-Encoder/ADAT_De_Enkoder.syr" 
+xst -intstyle ise -ifn "Z:/D/ADAT DeEncoder/ADAT_De-Encoder/ADAT_De_Enkoder.xst" -ofn "Z:/D/ADAT DeEncoder/ADAT_De-Encoder/ADAT_De_Enkoder.syr" 
+xst -intstyle ise -ifn "Z:/D/ADAT DeEncoder/ADAT_De-Encoder/ADAT_De_Enkoder.xst" -ofn "Z:/D/ADAT DeEncoder/ADAT_De-Encoder/ADAT_De_Enkoder.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xXCS3200A-4VQ100.ucf -p xc3s200a-vq100-5 "ADAT_De_Enkoder.ngc" ADAT_De_Enkoder.ngd  
+map -intstyle ise -p xc3s200a-vq100-5 -timing -logic_opt on -ol high -xe n -t 1 -register_duplication on -cm speed -detail -ir off -ignore_keep_hierarchy -pr b -bp -power off -o ADAT_De_Enkoder_map.ncd ADAT_De_Enkoder.ngd ADAT_De_Enkoder.pcf 
+par -w -intstyle ise -pl high -rl high -xe n -t 1 ADAT_De_Enkoder_map.ncd ADAT_De_Enkoder.ncd ADAT_De_Enkoder.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml ADAT_De_Enkoder.twx ADAT_De_Enkoder.ncd -o ADAT_De_Enkoder.twr ADAT_De_Enkoder.pcf -ucf xXCS3200A-4VQ100.ucf 
+bitgen -intstyle ise -f ADAT_De_Enkoder.ut ADAT_De_Enkoder.ncd 
+xst -intstyle ise -ifn "Z:/D/ADAT DeEncoder/ADAT_De-Encoder/ADAT_De_Enkoder.xst" -ofn "Z:/D/ADAT DeEncoder/ADAT_De-Encoder/ADAT_De_Enkoder.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xXCS3200A-4VQ100.ucf -p xc3s200a-vq100-5 "ADAT_De_Enkoder.ngc" ADAT_De_Enkoder.ngd  
+map -intstyle ise -p xc3s200a-vq100-5 -timing -logic_opt on -ol high -xe n -t 1 -register_duplication on -cm speed -detail -ir off -ignore_keep_hierarchy -pr b -bp -power off -o ADAT_De_Enkoder_map.ncd ADAT_De_Enkoder.ngd ADAT_De_Enkoder.pcf 
+par -w -intstyle ise -pl high -rl high -xe n -t 1 ADAT_De_Enkoder_map.ncd ADAT_De_Enkoder.ncd ADAT_De_Enkoder.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml ADAT_De_Enkoder.twx ADAT_De_Enkoder.ncd -o ADAT_De_Enkoder.twr ADAT_De_Enkoder.pcf -ucf xXCS3200A-4VQ100.ucf 
+bitgen -intstyle ise -f ADAT_De_Enkoder.ut ADAT_De_Enkoder.ncd 
+xst -intstyle ise -ifn "Z:/D/ADAT DeEncoder/ADAT_De-Encoder/ADAT_De_Enkoder.xst" -ofn "Z:/D/ADAT DeEncoder/ADAT_De-Encoder/ADAT_De_Enkoder.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xXCS3200A-4VQ100.ucf -p xc3s200a-vq100-5 "ADAT_De_Enkoder.ngc" ADAT_De_Enkoder.ngd  
+map -intstyle ise -p xc3s200a-vq100-5 -timing -logic_opt on -ol high -xe n -t 1 -register_duplication on -cm speed -detail -ir off -ignore_keep_hierarchy -pr b -bp -power off -o ADAT_De_Enkoder_map.ncd ADAT_De_Enkoder.ngd ADAT_De_Enkoder.pcf 
+par -w -intstyle ise -pl high -rl high -xe n -t 1 ADAT_De_Enkoder_map.ncd ADAT_De_Enkoder.ncd ADAT_De_Enkoder.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml ADAT_De_Enkoder.twx ADAT_De_Enkoder.ncd -o ADAT_De_Enkoder.twr ADAT_De_Enkoder.pcf -ucf xXCS3200A-4VQ100.ucf 
+bitgen -intstyle ise -f ADAT_De_Enkoder.ut ADAT_De_Enkoder.ncd 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/ADAT_De_Enkoder.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/ADAT_De_Enkoder.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xXCS3200A-4VQ100.ucf -p xc3s200a-vq100-5 "ADAT_De_Enkoder.ngc" ADAT_De_Enkoder.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xXCS3200A-4VQ100.ucf -p xc3s200a-vq100-5 "ADAT_De_Enkoder.ngc" ADAT_De_Enkoder.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xXCS3200A-4VQ100.ucf -p xc3s200a-vq100-5 "ADAT_De_Enkoder.ngc" ADAT_De_Enkoder.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xXCS3200A-4VQ100.ucf -p xc3s200a-vq100-5 "ADAT_De_Enkoder.ngc" ADAT_De_Enkoder.ngd  
+map -intstyle ise -p xc3s200a-vq100-5 -timing -logic_opt on -ol high -xe n -t 1 -register_duplication on -cm speed -detail -ir off -ignore_keep_hierarchy -pr b -bp -power off -o ADAT_De_Enkoder_map.ncd ADAT_De_Enkoder.ngd ADAT_De_Enkoder.pcf 
+par -w -intstyle ise -pl high -rl high -xe n -t 1 ADAT_De_Enkoder_map.ncd ADAT_De_Enkoder.ncd ADAT_De_Enkoder.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml ADAT_De_Enkoder.twx ADAT_De_Enkoder.ncd -o ADAT_De_Enkoder.twr ADAT_De_Enkoder.pcf -ucf xXCS3200A-4VQ100.ucf 
+bitgen -intstyle ise -f ADAT_De_Enkoder.ut ADAT_De_Enkoder.ncd 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/ADAT_De_Enkoder.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/ADAT_De_Enkoder.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xXCS3200A-4VQ100.ucf -p xc3s200a-vq100-5 "ADAT_De_Enkoder.ngc" ADAT_De_Enkoder.ngd  
+map -intstyle ise -p xc3s200a-vq100-5 -timing -logic_opt on -ol high -xe n -t 1 -register_duplication on -cm speed -detail -ir off -ignore_keep_hierarchy -pr b -bp -power off -o ADAT_De_Enkoder_map.ncd ADAT_De_Enkoder.ngd ADAT_De_Enkoder.pcf 
+par -w -intstyle ise -pl high -rl high -xe n -t 1 ADAT_De_Enkoder_map.ncd ADAT_De_Enkoder.ncd ADAT_De_Enkoder.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml ADAT_De_Enkoder.twx ADAT_De_Enkoder.ncd -o ADAT_De_Enkoder.twr ADAT_De_Enkoder.pcf -ucf xXCS3200A-4VQ100.ucf 
+bitgen -intstyle ise -f ADAT_De_Enkoder.ut ADAT_De_Enkoder.ncd 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/ADAT_De_Enkoder.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/ADAT_De_Enkoder.syr" 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/ADAT_De_Enkoder.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/ADAT_De_Enkoder.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xXCS3200A-4VQ100.ucf -p xc3s200a-vq100-5 "ADAT_De_Enkoder.ngc" ADAT_De_Enkoder.ngd  
+map -intstyle ise -p xc3s200a-vq100-5 -timing -logic_opt on -ol high -xe n -t 1 -register_duplication on -cm speed -detail -ir off -ignore_keep_hierarchy -pr b -bp -power off -o ADAT_De_Enkoder_map.ncd ADAT_De_Enkoder.ngd ADAT_De_Enkoder.pcf 
+par -w -intstyle ise -pl high -rl high -xe n -t 1 ADAT_De_Enkoder_map.ncd ADAT_De_Enkoder.ncd ADAT_De_Enkoder.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml ADAT_De_Enkoder.twx ADAT_De_Enkoder.ncd -o ADAT_De_Enkoder.twr ADAT_De_Enkoder.pcf -ucf xXCS3200A-4VQ100.ucf 
+bitgen -intstyle ise -f ADAT_De_Enkoder.ut ADAT_De_Enkoder.ncd 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/ADAT_De_Enkoder.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/ADAT_De_Enkoder.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xXCS3200A-4VQ100.ucf -p xc3s200a-vq100-5 "ADAT_De_Enkoder.ngc" ADAT_De_Enkoder.ngd  
+map -intstyle ise -p xc3s200a-vq100-5 -timing -logic_opt on -ol high -xe n -t 1 -register_duplication on -cm speed -detail -ir off -ignore_keep_hierarchy -pr b -bp -power off -o ADAT_De_Enkoder_map.ncd ADAT_De_Enkoder.ngd ADAT_De_Enkoder.pcf 
+par -w -intstyle ise -pl high -rl high -xe n -t 1 ADAT_De_Enkoder_map.ncd ADAT_De_Enkoder.ncd ADAT_De_Enkoder.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml ADAT_De_Enkoder.twx ADAT_De_Enkoder.ncd -o ADAT_De_Enkoder.twr ADAT_De_Enkoder.pcf -ucf xXCS3200A-4VQ100.ucf 
+bitgen -intstyle ise -f ADAT_De_Enkoder.ut ADAT_De_Enkoder.ncd 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/ADAT_De_Enkoder.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/ADAT_De_Enkoder.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xXCS3200A-4VQ100.ucf -p xc3s200a-vq100-5 "ADAT_De_Enkoder.ngc" ADAT_De_Enkoder.ngd  
+map -intstyle ise -p xc3s200a-vq100-5 -timing -logic_opt on -ol high -xe n -t 1 -register_duplication on -cm speed -detail -ir off -ignore_keep_hierarchy -pr b -bp -power off -o ADAT_De_Enkoder_map.ncd ADAT_De_Enkoder.ngd ADAT_De_Enkoder.pcf 
+par -w -intstyle ise -pl high -rl high -xe n -t 1 ADAT_De_Enkoder_map.ncd ADAT_De_Enkoder.ncd ADAT_De_Enkoder.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml ADAT_De_Enkoder.twx ADAT_De_Enkoder.ncd -o ADAT_De_Enkoder.twr ADAT_De_Enkoder.pcf -ucf xXCS3200A-4VQ100.ucf 
+bitgen -intstyle ise -f ADAT_De_Enkoder.ut ADAT_De_Enkoder.ncd 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/ADAT_De_Enkoder.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/ADAT_De_Enkoder.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xXCS3200A-4VQ100.ucf -p xc3s200a-vq100-5 "ADAT_De_Enkoder.ngc" ADAT_De_Enkoder.ngd  
+map -intstyle ise -p xc3s200a-vq100-5 -timing -logic_opt on -ol high -xe n -t 1 -register_duplication on -cm speed -detail -ir off -ignore_keep_hierarchy -pr b -bp -power off -o ADAT_De_Enkoder_map.ncd ADAT_De_Enkoder.ngd ADAT_De_Enkoder.pcf 
+par -w -intstyle ise -pl high -rl high -xe n -t 1 ADAT_De_Enkoder_map.ncd ADAT_De_Enkoder.ncd ADAT_De_Enkoder.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml ADAT_De_Enkoder.twx ADAT_De_Enkoder.ncd -o ADAT_De_Enkoder.twr ADAT_De_Enkoder.pcf -ucf xXCS3200A-4VQ100.ucf 
+bitgen -intstyle ise -f ADAT_De_Enkoder.ut ADAT_De_Enkoder.ncd 
+xst -intstyle ise -ifn "D:/ADAT DeEncoder/ADAT_De-Encoder/ADAT_De_Enkoder.xst" -ofn "D:/ADAT DeEncoder/ADAT_De-Encoder/ADAT_De_Enkoder.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xXCS3200A-4VQ100.ucf -p xc3s200a-vq100-4 "ADAT_De_Enkoder.ngc" ADAT_De_Enkoder.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xXCS3200A-4VQ100.ucf -p xc3s200a-vq100-4 "ADAT_De_Enkoder.ngc" ADAT_De_Enkoder.ngd  
+map -intstyle ise -p xc3s200a-vq100-4 -timing -logic_opt on -ol high -xe n -t 1 -register_duplication on -cm speed -detail -ir off -ignore_keep_hierarchy -pr b -bp -power off -o ADAT_De_Enkoder_map.ncd ADAT_De_Enkoder.ngd ADAT_De_Enkoder.pcf 
+par -w -intstyle ise -pl high -rl high -xe n -t 1 ADAT_De_Enkoder_map.ncd ADAT_De_Enkoder.ncd ADAT_De_Enkoder.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml ADAT_De_Enkoder.twx ADAT_De_Enkoder.ncd -o ADAT_De_Enkoder.twr ADAT_De_Enkoder.pcf -ucf xXCS3200A-4VQ100.ucf 
+bitgen -intstyle ise -f ADAT_De_Enkoder.ut ADAT_De_Enkoder.ncd 

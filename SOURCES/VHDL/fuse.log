@@ -1,0 +1,29 @@
+Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt\unwrapped\fuse.exe -intstyle ise -incremental -o D:/ADAT DeEncoder/ADAT_De-Encoder/tb_ADAT_Dekoder_isim_beh.exe -prj D:/ADAT DeEncoder/ADAT_De-Encoder/tb_ADAT_Dekoder_beh.prj work.tb_ADAT_Dekoder 
+ISim P.20131013 (signature 0x8ef4fb42)
+Number of CPUs detected in this system: 2
+Turning on mult-threading, number of parallel sub-compilation jobs: 4 
+Determining compilation order of HDL files
+Parsing VHDL file "D:/ADAT DeEncoder/ADAT_De-Encoder/ADAT.vhd" into library work
+Parsing VHDL file "D:/ADAT DeEncoder/ADAT_De-Encoder/ADAT_Taktgewinnung.vhd" into library work
+Parsing VHDL file "D:/ADAT DeEncoder/ADAT_De-Encoder/ADAT_Dekoder.vhd" into library work
+Parsing VHDL file "D:/ADAT DeEncoder/ADAT_De-Encoder/TB__ADAT-Dekoder.vhd" into library work
+WARNING:HDLCompiler:946 - "D:/ADAT DeEncoder/ADAT_De-Encoder/TB__ADAT-Dekoder.vhd" Line 2964: Actual for formal port adat_sync is neither a static name nor a globally static expression
+Starting static elaboration
+Completed static elaboration
+Fuse Memory Usage: 73180 KB
+Fuse CPU Usage: 421 ms
+Compiling package standard
+Compiling package std_logic_1164
+Compiling package numeric_std
+Compiling package adat
+Compiling package vcomponents
+Compiling architecture bufg_v of entity BUFG [bufg_default]
+Compiling architecture verhalten of entity ADAT_Taktgewinnung [\ADAT_Taktgewinnung(3)\]
+Compiling architecture verhalten of entity ADAT_Dekoder [\ADAT_Dekoder(3)\]
+Compiling architecture behavior of entity tb_adat_dekoder
+Time Resolution for simulation is 1ps.
+Waiting for 5 sub-compilation(s) to finish...
+Compiled 12 VHDL Units
+Built simulation executable D:/ADAT DeEncoder/ADAT_De-Encoder/tb_ADAT_Dekoder_isim_beh.exe
+Fuse Memory Usage: 93984 KB
+Fuse CPU Usage: 703 ms

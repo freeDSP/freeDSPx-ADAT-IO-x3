@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="PhysDesignRules" num="812" delta="old" >Dangling pin &lt;<arg fmt="%s" index="1">DOA12</arg>&gt; on block:&lt;<arg fmt="%s" index="2">inst_BRAM_Puffer_McBSP_Enkoder/instADAT_BLOCKRAM/Mram_RAM17</arg>&gt;:&lt;<arg fmt="%s" index="3">RAMB16BWE_RAMB16BWE</arg>&gt;.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="812" delta="old" >Dangling pin &lt;<arg fmt="%s" index="1">DOA13</arg>&gt; on block:&lt;<arg fmt="%s" index="2">inst_BRAM_Puffer_McBSP_Enkoder/instADAT_BLOCKRAM/Mram_RAM17</arg>&gt;:&lt;<arg fmt="%s" index="3">RAMB16BWE_RAMB16BWE</arg>&gt;.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="812" delta="old" >Dangling pin &lt;<arg fmt="%s" index="1">DOA14</arg>&gt; on block:&lt;<arg fmt="%s" index="2">inst_BRAM_Puffer_McBSP_Enkoder/instADAT_BLOCKRAM/Mram_RAM17</arg>&gt;:&lt;<arg fmt="%s" index="3">RAMB16BWE_RAMB16BWE</arg>&gt;.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="812" delta="old" >Dangling pin &lt;<arg fmt="%s" index="1">DOA15</arg>&gt; on block:&lt;<arg fmt="%s" index="2">inst_BRAM_Puffer_McBSP_Enkoder/instADAT_BLOCKRAM/Mram_RAM17</arg>&gt;:&lt;<arg fmt="%s" index="3">RAMB16BWE_RAMB16BWE</arg>&gt;.
+</msg>
+
+</messages>
+

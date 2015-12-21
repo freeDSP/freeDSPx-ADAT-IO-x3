@@ -1,0 +1,94 @@
+Hallo Sebastian,
+
+Sorry für die späte Antwort, leider bin ich im Moment ziemlich beschäftigt, dass mit einem eventuellen Umbau+Optimierung ist von meiner Seite aus also erst mal nicht in Sicht :-(
+Ich kann aber gerne hin und wieder mal Tipps geben...
+
+Im Anhang (siehe Extra-Mail, manchmal kommen große Anhänge ja nicht an) findest du den letzten Stand des Projektordners. Im Projekt sind auch mehrere ältere Varianten vorhanden, die aktuelle Version ist "ADAT_De-Enkoder__Autosync.vhd" (inklusive aller Dateien, auf die dort Bezug genommen wird).
+
+In der Datei "xXCS3200A-4VQ100_Autosync.ucf" werden die FPGA-Signal den FPGA-Pins zugewiesen.
+
+Das Modul zur Kommunikation mit dem DSP sollte "McBSP-Dekoder_1Puffer_Parallel.vhd" sein. Das ganze läuft mit einer einfachen Statemachine und sollte für eure Kommunikation leicht Modifizierbar sein.
+
+Zu fast allen VHDL-Modulen sollten auch noch entsprechende Simulationen vorhanden sein (bin mir aber nicht sicher ob die alle noch laufen). 
+Ihr könntet das DSP-Modul also umschreiben und erst mal in der Simulation testen - das habe ich am Anfang genauso gemacht (das FPGA-Board war ja nicht da), und es hilft sehr beim Verständnis, da man sich alle Signale direkt ansehen kann, was auf dem Oszilloskop je nach Taktrate schon etwas teurere Hardware erfordern würde...
+
+Irgendwo fliegt auch noch ein Programm zum Umwandeln von Oszilloskopaufzeichnungen im Tektronix Format in eine VHDL-Testbench-kompatible Form rum, falls ihr das gebrauchen könnt. Ist zwar langsam, funktioniert aber.
+
+ADAT-Aufzeichnungen wären auch noch vorhanden, in einigen ADAT-Testbenches wie z.B. "tb_ADAT_Taktgewinnung.vhd" (Die Taktgewinnung haben wir dann später raus gelassen - erforderte zu hohe Taktraten) sind solche Aufzeichnungen aber auch direkt enthalten.
+
+mfg, Simon
+
+
+
+
+
+
+
+
+
+
+Am 22.07.2015 um 17:36 schrieb Sebastian Merchel:
+Hallo Simon,
+
+die ersten freeDSPs mit ADAU 1452 laufen bei uns. :-) Wäre super, wenn du uns ein Zeichen geben kannst wie es bei dir aussieht. Hattest du uns schon deinen originalen VDHL Quellcode geschickt? Ich glaube wir haben bisher nur das Leiterplattenlayout bekommen. Aber wie gesagt, da bei uns bisher niemand mit VHDL umgehen kann, wäre deine Unterstützung sehr sehr hilfreich. 
+
+Mit der Bitte um kurze Rückmeldung - am besten mit deiner Kontaktnummer :-) - viele Grüße,
+Sebastian
+
+Am 03.07.2015 um 14:40 schrieb Sebastian Merchel <Sebastian.Merchel@tu-dresden.de>:
+
+Hallo Simon,
+
+erstmal ganz herzlichen Dank für die Quelldaten deines ADAT-FPGA Projektes und alle bisherigen Auskünfte. Ludwig hat ja mit dir schon gemailt und arbeitet zur Zeit eifrig an der neuen freeDSP Version.
+
+Ich finde die ADAT Erweiterung für das Projekt unglaublich gut. Wir haben schon etliche Anfragen in dieser Richtung bekommen. Das Optimum wäre eine Version mit 4 ADAT Ein- und Ausgängen. Du hattest ja geschrieben, das dies durch Codeoptimierung auf dem bisherigen FPGA möglich sein könnte. Leider kennt sich bei uns niemand mit VHDL aus. Daher meine große Bitte an dich: Könntest du dir noch mal für das Projekt Zeit nehmen und dir diese Optimierung vornehmen? Du würdest damit uns und viele DIYler glücklich machen. :-) Ich habe heute mit Christian telefoniert und er meinte der Xilinx Programmieradapter würde noch am Lehrstuhl zur Verfügung stehen. Ebenso können wir dir ein neues freeDSP Board zum testen schicken, sobald es läuft. Nächste Woche wird bei uns bestückt. Da der Lehrstuhl in Wuppertal in genau fünf Wochen geschlossen wird, bleibt leider nicht mehr viel Zeit. Ich würde mich sehr freuen wenn du dir dafür etwas Zeit einrichten kannst. Da ich kein Handy habe, hier noch meine private Festnetznummer : 0351 862 89 89. Könntest du noch eine Telefonnummer von dir schicken?
+
+Danke und schöne Grüße aus Dresden,
+Sebastian 
+
+---------------------------------------------------------------------
+Dr.-Ing. Sebastian Merchel
+  
+Technische Universität Dresden
+Fakultät Elektrotechnik und Informationstechnik
+Lehrstuhl für Kommunikationsakustik
+ 
+Tel.: +49 (351) 463 39890
+E-Mail: sebastian.merchel@tu-dresden.de  
+Homepage: www.ias.et.tu-dresden.de
+Privat: www.sebastianmerchel.de
+---------------------------------------------------------------------
+
+
+-------- Weitergeleitete Nachricht --------
+Betreff:	Re: ADAT & 4CH-D/A
+Datum:	Thu, 21 May 2015 14:28:58 +0200
+Von:	Simon Lohmann <1023814@uni-wuppertal.de>
+An:	Ludwig Kormann <ludwig.kormann@mailbox.tu-dresden.de>
+
+Hallo Ludwig,
+
+„danke für die Bereitstellung der Quelldaten Ihrer beiden Projekte. :-)“
+Gleich mal als Richtigstellung: Der Class D-Verstärker ist nicht von mir, ich habe nur das Eagle-Projekt anhand der späteren Modifikationen der Platine aktualisiert...
+
+Bei meinem ADAT/FPGA/DSP Projekt dagegen kann ich gerne weiterhelfen:
+
+Als Programmer habe ich immer das "Xilinx Platform Cable USB II" benutzt.
+
+Zu den 4 Kanälen habe ich mal einen Synthese&Implementierungs-Test gemacht: Mit 4 ADAT-Kanälen (also 32 Audiokanälen) passt das derzeitige Design nicht mehr in das aktuell verwendeten FPGA-Modell XC3S200A. Man müsste ca. 12% der derzeit verwendeten FlipFlops einsparen. (461 FFs).
+
+Da die aktuelle DSP-Anbindung alle Daten eines Frames zwischenspeichert, damit der DSP sie abholen kann wann er will, bestehen hier definitiv noch Optimierungsmöglichkeiten... 
+
+Optimal wäre es, wenn der FPGA die einzelnen Bits zu "beliebigen" Zeiten senden könnte. Dann wäre es möglich, die Bits direkt nach dem Empfang an euren DSP zu schicken, was nur noch extrem wenig Zwischenspeicherung bedeuten würde. Allerdings wäre es dafür dringend erforderlich, dass die DSP Schnittstelle einen Takteingang hat, der pro Bit einen Takt entgegen nimmt, wobei der Takt auch mal mehrere Takte aussetzen kann (wenn gerade mal keine Audiodaten kommen), also effektiv so eine Art SPI mit zusätzlichem Framesync.
+
+Ich habe mir das TDM-Format noch nicht so genau angeschaut, aber auf den ersten Blick sieht es recht simpel aus - ist hier eine Clock-Konfiguration mit 1 Takt pro Bit möglich?
+
+Alternativ zum Optimieren könntet ihr natürlich auch einen größeren FPGA (Vorsicht, gibts nur noch im BGA-Package) aus der gleichen Reihe nehmen, oder zwei von den aktuellen FPGAs nebeneinander setzen. Eine weitere Möglichkeit wäre das Einbauen einen zusätzlichen RAM-Chips, in den die größeren Puffer ausgelagert werden würden (das war mal für eine dritte Platinenversion angedacht, um Audiolatenzen ausgleichen zu können).
+
+„leider besteht auf unserer Seite jedoch noch wenig Erfahrung mit FPGA-Programmierung.“
+Die Einarbeitung wird etwas Zeit kosten. Zunächst einmal ist das Arbeiten mit FPGAs keine klassische "Programmierung", sondern Hardware-Entwurf mit Hilfe einer sogenannten "Hardware-Beschreibungssprache". Diese hat zwar auch von Programmiersprachen bekannte Konstrukte (if,for, while, Arrays), aber wenn man seine Funktionen einfach blind hineinprogrammiert, ohne an die Realisierung in Hardware mit FlipFlops, Look-Up-Tables und Logikverknüpfungen zu denken, wird man sehr ineffiziente, platz-verschwendende bis gar nicht lauffähige Resultate haben.
+Als Beispiel: Die erste Version des ADAT-Dekoders (Synchronisation, Speicherung und DSP-Interface man völlig außen vor gelassen) passte selbst mit einem ADAT-Kanal zunächst nicht in den FPGA, da ich zu dem Zeitpunkt noch nicht genug an die Hardware gedacht hatte und so unnötig viele Gatter und Speicherstrukturen erstellt wurden. Inzwischen passen fast 4 Instanzen von je einem Dekoder/Enkoder und die dazugehörigen AutoSync, Puffer und McBSP-Interface Strukturen in den selben FPGA. -> Immer in Hardware Denken!
+
+mfg, Simon
+
+

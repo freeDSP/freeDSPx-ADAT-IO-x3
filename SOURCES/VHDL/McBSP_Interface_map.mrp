@@ -1,0 +1,367 @@
+Release 14.6 Map P.68d (nt)
+Xilinx Mapping Report File for Design 'McBSP_Interface'
+
+Design Information
+------------------
+Command Line   : map -intstyle ise -p xc3s200a-vq100-5 -timing -logic_opt on -ol
+high -xe n -t 1 -register_duplication on -cm speed -detail -ir off
+-ignore_keep_hierarchy -pr b -bp -power off -o McBSP_Interface_map.ncd
+McBSP_Interface.ngd McBSP_Interface.pcf 
+Target Device  : xc3s200a
+Target Package : vq100
+Target Speed   : -5
+Mapper Version : spartan3a -- $Revision: 1.55 $
+Mapped Date    : Mon Feb 03 18:38:24 2014
+
+Interim Summary
+---------------
+Logic Utilization:
+  Number of Slice Flip Flops:            49 out of   3,584    1%
+  Number of 4 input LUTs:               515 out of   3,584   14%
+Logic Distribution:
+    Number of Slices containing only related logic:     410 out of     410 100%
+    Number of Slices containing unrelated logic:          0 out of     410   0%
+      *See NOTES below for an explanation of the effects of unrelated logic.
+  Total Number of 4 input LUTs:         515 out of   3,584   14%
+  Number of bonded IOBs:              1,370 out of      68 2014% (OVERMAPPED)
+    IOB Flip Flops:                     613
+  Number of BUFGMUXs:                     2 out of      24    8%
+
+
+Design Summary
+--------------
+Number of errors   :   2
+Number of warnings :  73
+
+Section 1 - Errors
+------------------
+ERROR:Pack:2309 - Too many bonded comps of type "IOB" found to fit this device.
+ERROR:Map:237 - The design is too large to fit the device.  Please check the
+   Design Summary section to see which resource requirement for your design
+   exceeds the resources available in the device. Note that the number of slices
+   reported may not be reflected accurately as their packing might not have been
+   completed.
+
+Section 2 - Warnings
+--------------------
+WARNING:Pack:1543 - The register DATEN_AUSGANG<1>.KANAELE_7_0 has the property
+   IOB=TRUE, but was not packed into the input side of an I/O component. The
+   IFF1 BEL site already contains the register symbol "TEMPFIFO_23".
+   The clock enable signal on the register symbol "DATEN_AUSGANG<1>.KANAELE_7_0"
+   in the IFF2 BEL site conflicts with the clock enable signal on the register
+   symbol "TEMPFIFO_23" in the IFF1 BEL site.
+WARNING:Pack:1543 - The register DATEN_AUSGANG<2>.KANAELE_0_0 has the property
+   IOB=TRUE, but was not packed into the input side of an I/O component. The
+   IFF1 BEL site already contains the register symbol "TEMPFIFO_23".
+   The clock enable signal on the register symbol "DATEN_AUSGANG<2>.KANAELE_0_0"
+   in the IFF2 BEL site conflicts with the clock enable signal on the register
+   symbol "TEMPFIFO_23" in the IFF1 BEL site.
+WARNING:Pack:1543 - The register DATEN_AUSGANG<2>.KANAELE_1_0 has the property
+   IOB=TRUE, but was not packed into the input side of an I/O component. The
+   IFF1 BEL site already contains the register symbol "TEMPFIFO_23".
+   The clock enable signal on the register symbol "DATEN_AUSGANG<2>.KANAELE_1_0"
+   in the IFF2 BEL site conflicts with the clock enable signal on the register
+   symbol "TEMPFIFO_23" in the IFF1 BEL site.
+WARNING:Pack:1543 - The register DATEN_AUSGANG<2>.KANAELE_2_0 has the property
+   IOB=TRUE, but was not packed into the input side of an I/O component. The
+   IFF1 BEL site already contains the register symbol "TEMPFIFO_23".
+   The clock enable signal on the register symbol "DATEN_AUSGANG<2>.KANAELE_2_0"
+   in the IFF2 BEL site conflicts with the clock enable signal on the register
+   symbol "TEMPFIFO_23" in the IFF1 BEL site.
+WARNING:Pack:1543 - The register DATEN_AUSGANG<2>.KANAELE_3_0 has the property
+   IOB=TRUE, but was not packed into the input side of an I/O component. The
+   IFF1 BEL site already contains the register symbol "TEMPFIFO_23".
+   The clock enable signal on the register symbol "DATEN_AUSGANG<2>.KANAELE_3_0"
+   in the IFF2 BEL site conflicts with the clock enable signal on the register
+   symbol "TEMPFIFO_23" in the IFF1 BEL site.
+WARNING:Pack:1543 - The register DATEN_AUSGANG<2>.KANAELE_4_0 has the property
+   IOB=TRUE, but was not packed into the input side of an I/O component. The
+   IFF1 BEL site already contains the register symbol "TEMPFIFO_23".
+   The clock enable signal on the register symbol "DATEN_AUSGANG<2>.KANAELE_4_0"
+   in the IFF2 BEL site conflicts with the clock enable signal on the register
+   symbol "TEMPFIFO_23" in the IFF1 BEL site.
+WARNING:Pack:1543 - The register DATEN_AUSGANG<2>.KANAELE_5_0 has the property
+   IOB=TRUE, but was not packed into the input side of an I/O component. The
+   IFF1 BEL site already contains the register symbol "TEMPFIFO_23".
+   The clock enable signal on the register symbol "DATEN_AUSGANG<2>.KANAELE_5_0"
+   in the IFF2 BEL site conflicts with the clock enable signal on the register
+   symbol "TEMPFIFO_23" in the IFF1 BEL site.
+WARNING:Pack:1543 - The register DATEN_AUSGANG<2>.KANAELE_6_0 has the property
+   IOB=TRUE, but was not packed into the input side of an I/O component. The
+   IFF1 BEL site already contains the register symbol "TEMPFIFO_23".
+   The clock enable signal on the register symbol "DATEN_AUSGANG<2>.KANAELE_6_0"
+   in the IFF2 BEL site conflicts with the clock enable signal on the register
+   symbol "TEMPFIFO_23" in the IFF1 BEL site.
+WARNING:Pack:1543 - The register DATEN_AUSGANG<2>.KANAELE_7_0 has the property
+   IOB=TRUE, but was not packed into the input side of an I/O component. The
+   IFF1 BEL site already contains the register symbol "TEMPFIFO_23".
+   The clock enable signal on the register symbol "DATEN_AUSGANG<2>.KANAELE_7_0"
+   in the IFF2 BEL site conflicts with the clock enable signal on the register
+   symbol "TEMPFIFO_23" in the IFF1 BEL site.
+WARNING:Pack:1543 - The register DATEN_AUSGANG<0>.KANAELE_0_0 has the property
+   IOB=TRUE, but was not packed into the input side of an I/O component. The
+   IFF1 BEL site already contains the register symbol "TEMPFIFO_23".
+   The clock enable signal on the register symbol "DATEN_AUSGANG<0>.KANAELE_0_0"
+   in the IFF2 BEL site conflicts with the clock enable signal on the register
+   symbol "TEMPFIFO_23" in the IFF1 BEL site.
+WARNING:Pack:1543 - The register DATEN_AUSGANG<0>.KANAELE_2_0 has the property
+   IOB=TRUE, but was not packed into the input side of an I/O component. The
+   IFF1 BEL site already contains the register symbol "TEMPFIFO_23".
+   The clock enable signal on the register symbol "DATEN_AUSGANG<0>.KANAELE_2_0"
+   in the IFF2 BEL site conflicts with the clock enable signal on the register
+   symbol "TEMPFIFO_23" in the IFF1 BEL site.
+WARNING:Pack:1543 - The register DATEN_AUSGANG<0>.KANAELE_1_0 has the property
+   IOB=TRUE, but was not packed into the input side of an I/O component. The
+   IFF1 BEL site already contains the register symbol "TEMPFIFO_23".
+   The clock enable signal on the register symbol "DATEN_AUSGANG<0>.KANAELE_1_0"
+   in the IFF2 BEL site conflicts with the clock enable signal on the register
+   symbol "TEMPFIFO_23" in the IFF1 BEL site.
+WARNING:Pack:1543 - The register DATEN_AUSGANG<0>.KANAELE_3_0 has the property
+   IOB=TRUE, but was not packed into the input side of an I/O component. The
+   IFF1 BEL site already contains the register symbol "TEMPFIFO_23".
+   The clock enable signal on the register symbol "DATEN_AUSGANG<0>.KANAELE_3_0"
+   in the IFF2 BEL site conflicts with the clock enable signal on the register
+   symbol "TEMPFIFO_23" in the IFF1 BEL site.
+WARNING:Pack:1543 - The register DATEN_AUSGANG<0>.KANAELE_5_0 has the property
+   IOB=TRUE, but was not packed into the input side of an I/O component. The
+   IFF1 BEL site already contains the register symbol "TEMPFIFO_23".
+   The clock enable signal on the register symbol "DATEN_AUSGANG<0>.KANAELE_5_0"
+   in the IFF2 BEL site conflicts with the clock enable signal on the register
+   symbol "TEMPFIFO_23" in the IFF1 BEL site.
+WARNING:Pack:1543 - The register DATEN_AUSGANG<0>.KANAELE_4_0 has the property
+   IOB=TRUE, but was not packed into the input side of an I/O component. The
+   IFF1 BEL site already contains the register symbol "TEMPFIFO_23".
+   The clock enable signal on the register symbol "DATEN_AUSGANG<0>.KANAELE_4_0"
+   in the IFF2 BEL site conflicts with the clock enable signal on the register
+   symbol "TEMPFIFO_23" in the IFF1 BEL site.
+WARNING:Pack:1543 - The register DATEN_AUSGANG<0>.KANAELE_6_0 has the property
+   IOB=TRUE, but was not packed into the input side of an I/O component. The
+   IFF1 BEL site already contains the register symbol "TEMPFIFO_23".
+   The clock enable signal on the register symbol "DATEN_AUSGANG<0>.KANAELE_6_0"
+   in the IFF2 BEL site conflicts with the clock enable signal on the register
+   symbol "TEMPFIFO_23" in the IFF1 BEL site.
+WARNING:Pack:1543 - The register DATEN_AUSGANG<0>.KANAELE_7_0 has the property
+   IOB=TRUE, but was not packed into the input side of an I/O component. The
+   IFF1 BEL site already contains the register symbol "TEMPFIFO_23".
+   The clock enable signal on the register symbol "DATEN_AUSGANG<0>.KANAELE_7_0"
+   in the IFF2 BEL site conflicts with the clock enable signal on the register
+   symbol "TEMPFIFO_23" in the IFF1 BEL site.
+WARNING:Pack:1543 - The register DATEN_AUSGANG<1>.KANAELE_0_0 has the property
+   IOB=TRUE, but was not packed into the input side of an I/O component. The
+   IFF1 BEL site already contains the register symbol "TEMPFIFO_23".
+   The clock enable signal on the register symbol "DATEN_AUSGANG<1>.KANAELE_0_0"
+   in the IFF2 BEL site conflicts with the clock enable signal on the register
+   symbol "TEMPFIFO_23" in the IFF1 BEL site.
+WARNING:Pack:1543 - The register DATEN_AUSGANG<1>.KANAELE_1_0 has the property
+   IOB=TRUE, but was not packed into the input side of an I/O component. The
+   IFF1 BEL site already contains the register symbol "TEMPFIFO_23".
+   The clock enable signal on the register symbol "DATEN_AUSGANG<1>.KANAELE_1_0"
+   in the IFF2 BEL site conflicts with the clock enable signal on the register
+   symbol "TEMPFIFO_23" in the IFF1 BEL site.
+WARNING:Pack:1543 - The register DATEN_AUSGANG<1>.KANAELE_2_0 has the property
+   IOB=TRUE, but was not packed into the input side of an I/O component. The
+   IFF1 BEL site already contains the register symbol "TEMPFIFO_23".
+   The clock enable signal on the register symbol "DATEN_AUSGANG<1>.KANAELE_2_0"
+   in the IFF2 BEL site conflicts with the clock enable signal on the register
+   symbol "TEMPFIFO_23" in the IFF1 BEL site.
+WARNING:Pack:1543 - The register DATEN_AUSGANG<1>.KANAELE_3_0 has the property
+   IOB=TRUE, but was not packed into the input side of an I/O component. The
+   IFF1 BEL site already contains the register symbol "TEMPFIFO_23".
+   The clock enable signal on the register symbol "DATEN_AUSGANG<1>.KANAELE_3_0"
+   in the IFF2 BEL site conflicts with the clock enable signal on the register
+   symbol "TEMPFIFO_23" in the IFF1 BEL site.
+WARNING:Pack:1543 - The register DATEN_AUSGANG<1>.KANAELE_5_0 has the property
+   IOB=TRUE, but was not packed into the input side of an I/O component. The
+   IFF1 BEL site already contains the register symbol "TEMPFIFO_23".
+   The clock enable signal on the register symbol "DATEN_AUSGANG<1>.KANAELE_5_0"
+   in the IFF2 BEL site conflicts with the clock enable signal on the register
+   symbol "TEMPFIFO_23" in the IFF1 BEL site.
+WARNING:Pack:1543 - The register DATEN_AUSGANG<1>.KANAELE_4_0 has the property
+   IOB=TRUE, but was not packed into the input side of an I/O component. The
+   IFF1 BEL site already contains the register symbol "TEMPFIFO_23".
+   The clock enable signal on the register symbol "DATEN_AUSGANG<1>.KANAELE_4_0"
+   in the IFF2 BEL site conflicts with the clock enable signal on the register
+   symbol "TEMPFIFO_23" in the IFF1 BEL site.
+WARNING:Pack:1543 - The register DATEN_AUSGANG<1>.KANAELE_6_0 has the property
+   IOB=TRUE, but was not packed into the input side of an I/O component. The
+   IFF1 BEL site already contains the register symbol "TEMPFIFO_23".
+   The clock enable signal on the register symbol "DATEN_AUSGANG<1>.KANAELE_6_0"
+   in the IFF2 BEL site conflicts with the clock enable signal on the register
+   symbol "TEMPFIFO_23" in the IFF1 BEL site.
+WARNING:Pack:2780 - The register "TEMPFIFO_1" has the property IOB=TRUE, but it
+   did not join an IO component because it is not connected to any IO element.
+WARNING:Pack:2780 - The register "TEMPFIFO_2" has the property IOB=TRUE, but it
+   did not join an IO component because it is not connected to any IO element.
+WARNING:Pack:2780 - The register "TEMPFIFO_3" has the property IOB=TRUE, but it
+   did not join an IO component because it is not connected to any IO element.
+WARNING:Pack:2780 - The register "TEMPFIFO_4" has the property IOB=TRUE, but it
+   did not join an IO component because it is not connected to any IO element.
+WARNING:Pack:2780 - The register "TEMPFIFO_5" has the property IOB=TRUE, but it
+   did not join an IO component because it is not connected to any IO element.
+WARNING:Pack:2780 - The register "TEMPFIFO_6" has the property IOB=TRUE, but it
+   did not join an IO component because it is not connected to any IO element.
+WARNING:Pack:2780 - The register "TEMPFIFO_7" has the property IOB=TRUE, but it
+   did not join an IO component because it is not connected to any IO element.
+WARNING:Pack:2780 - The register "TEMPFIFO_8" has the property IOB=TRUE, but it
+   did not join an IO component because it is not connected to any IO element.
+WARNING:Pack:2780 - The register "TEMPFIFO_9" has the property IOB=TRUE, but it
+   did not join an IO component because it is not connected to any IO element.
+WARNING:Pack:2780 - The register "TEMPFIFO_10" has the property IOB=TRUE, but it
+   did not join an IO component because it is not connected to any IO element.
+WARNING:Pack:2780 - The register "TEMPFIFO_11" has the property IOB=TRUE, but it
+   did not join an IO component because it is not connected to any IO element.
+WARNING:Pack:2780 - The register "TEMPFIFO_12" has the property IOB=TRUE, but it
+   did not join an IO component because it is not connected to any IO element.
+WARNING:Pack:2780 - The register "TEMPFIFO_20" has the property IOB=TRUE, but it
+   did not join an IO component because it is not connected to any IO element.
+WARNING:Pack:2780 - The register "TEMPFIFO_13" has the property IOB=TRUE, but it
+   did not join an IO component because it is not connected to any IO element.
+WARNING:Pack:2780 - The register "TEMPFIFO_21" has the property IOB=TRUE, but it
+   did not join an IO component because it is not connected to any IO element.
+WARNING:Pack:2780 - The register "TEMPFIFO_14" has the property IOB=TRUE, but it
+   did not join an IO component because it is not connected to any IO element.
+WARNING:Pack:2780 - The register "TEMPFIFO_22" has the property IOB=TRUE, but it
+   did not join an IO component because it is not connected to any IO element.
+WARNING:Pack:2780 - The register "TEMPFIFO_15" has the property IOB=TRUE, but it
+   did not join an IO component because it is not connected to any IO element.
+WARNING:Pack:2780 - The register "TEMPFIFO_16" has the property IOB=TRUE, but it
+   did not join an IO component because it is not connected to any IO element.
+WARNING:Pack:2780 - The register "TEMPFIFO_17" has the property IOB=TRUE, but it
+   did not join an IO component because it is not connected to any IO element.
+WARNING:Pack:2780 - The register "TEMPFIFO_18" has the property IOB=TRUE, but it
+   did not join an IO component because it is not connected to any IO element.
+WARNING:Pack:2780 - The register "TEMPFIFO_19" has the property IOB=TRUE, but it
+   did not join an IO component because it is not connected to any IO element.
+WARNING:Pack:2780 - The register "DX_1" has the property IOB=TRUE, but it did
+   not join an IO component because it is not connected to any IO element.
+WARNING:Pack:2780 - The register "FSX_1" has the property IOB=TRUE, but it did
+   not join an IO component because it is not connected to any IO element.
+WARNING:Pack:2780 - The register "KANALNUMMER_0" has the property IOB=TRUE, but
+   it did not join an IO component because it is not connected to any IO
+   element.
+WARNING:Pack:2780 - The register "KANALNUMMER_1" has the property IOB=TRUE, but
+   it did not join an IO component because it is not connected to any IO
+   element.
+WARNING:Pack:2780 - The register "KANALNUMMER_2" has the property IOB=TRUE, but
+   it did not join an IO component because it is not connected to any IO
+   element.
+WARNING:Pack:2780 - The register "BITNUMMER0_0" has the property IOB=TRUE, but
+   it did not join an IO component because it is not connected to any IO
+   element.
+WARNING:Pack:2780 - The register "BITNUMMER0_1" has the property IOB=TRUE, but
+   it did not join an IO component because it is not connected to any IO
+   element.
+WARNING:Pack:2780 - The register "BITNUMMER0_2" has the property IOB=TRUE, but
+   it did not join an IO component because it is not connected to any IO
+   element.
+WARNING:Pack:2780 - The register "BITNUMMER0_3" has the property IOB=TRUE, but
+   it did not join an IO component because it is not connected to any IO
+   element.
+WARNING:Pack:2780 - The register "BITNUMMER0_4" has the property IOB=TRUE, but
+   it did not join an IO component because it is not connected to any IO
+   element.
+WARNING:Pack:2780 - The register "SCHNITTSTELLENNUMMER_0" has the property
+   IOB=TRUE, but it did not join an IO component because it is not connected to
+   any IO element.
+WARNING:Pack:2780 - The register "SCHNITTSTELLENNUMMER_1" has the property
+   IOB=TRUE, but it did not join an IO component because it is not connected to
+   any IO element.
+WARNING:Pack:2780 - The register "PHASE0_FSM_FFD1" has the property IOB=TRUE,
+   but it did not join an IO component because it is not connected to any IO
+   element.
+WARNING:Pack:2780 - The register "PHASE0_FSM_FFD2" has the property IOB=TRUE,
+   but it did not join an IO component because it is not connected to any IO
+   element.
+WARNING:Pack:2780 - The register "KANALNUMMER0_0" has the property IOB=TRUE, but
+   it did not join an IO component because it is not connected to any IO
+   element.
+WARNING:Pack:2780 - The register "KANALNUMMER0_1" has the property IOB=TRUE, but
+   it did not join an IO component because it is not connected to any IO
+   element.
+WARNING:Pack:2780 - The register "KANALNUMMER0_2" has the property IOB=TRUE, but
+   it did not join an IO component because it is not connected to any IO
+   element.
+WARNING:Pack:2780 - The register "KOMPLETT_EMPFANGEN_1" has the property
+   IOB=TRUE, but it did not join an IO component because it is not connected to
+   any IO element.
+WARNING:Pack:2780 - The register "BITNUMMER_0" has the property IOB=TRUE, but it
+   did not join an IO component because it is not connected to any IO element.
+WARNING:Pack:2780 - The register "BITNUMMER_1" has the property IOB=TRUE, but it
+   did not join an IO component because it is not connected to any IO element.
+WARNING:Pack:2780 - The register "BITNUMMER_2" has the property IOB=TRUE, but it
+   did not join an IO component because it is not connected to any IO element.
+WARNING:Pack:2780 - The register "BITNUMMER_3" has the property IOB=TRUE, but it
+   did not join an IO component because it is not connected to any IO element.
+WARNING:Pack:2780 - The register "BITNUMMER_4" has the property IOB=TRUE, but it
+   did not join an IO component because it is not connected to any IO element.
+WARNING:Pack:2780 - The register "SCHNITTSTELLENNUMMER0_0" has the property
+   IOB=TRUE, but it did not join an IO component because it is not connected to
+   any IO element.
+WARNING:Pack:2780 - The register "SCHNITTSTELLENNUMMER0_1" has the property
+   IOB=TRUE, but it did not join an IO component because it is not connected to
+   any IO element.
+WARNING:Pack:2780 - The register "PHASE_2" has the property IOB=TRUE, but it did
+   not join an IO component because it is not connected to any IO element.
+WARNING:Pack:2780 - The register "PHASE_3" has the property IOB=TRUE, but it did
+   not join an IO component because it is not connected to any IO element.
+
+Section 3 - Informational
+-------------------------
+INFO:MapLib:562 - No environment variables are currently set.
+INFO:LIT:244 - All of the single ended outputs in this design are using slew
+   rate limited output drivers. The delay on speed critical single ended outputs
+   can be dramatically reduced by designating them as fast outputs.
+INFO:Pack:1716 - Initializing temperature to 85.000 Celsius. (default - Range:
+   0.000 to 85.000 Celsius)
+INFO:Pack:1720 - Initializing voltage to 1.140 Volts. (default - Range: 1.140 to
+   1.260 Volts)
+
+Section 4 - Removed Logic Summary
+---------------------------------
+   1 block(s) optimized away
+  18 Block(s) redundant
+
+Section 5 - Removed Logic
+-------------------------
+
+Optimized Block(s):
+TYPE 		BLOCK
+GND 		XST_GND
+
+Redundant Block(s):
+TYPE 		BLOCK
+LOCALBUF 		SCHNITTSTELLENNUMMER_MUX0000<0>1/LUT2_D_BUF
+LOCALBUF 		PHASE_MUX0000<2>1/LUT2_D_BUF
+LOCALBUF 		DATEN_AUSGANG<2>_KANAELE_0_NOT000111/LUT4_D_BUF
+LOCALBUF 		DATEN_AUSGANG<1>_KANAELE_0_NOT000111/LUT4_D_BUF
+LOCALBUF 		DATEN_AUSGANG<0>_KANAELE_0_NOT000111/LUT4_D_BUF
+LOCALBUF 		KANALNUMMER_MUX0002<0>24/LUT4_L_BUF
+LOCALBUF 		DATEN_AUSGANG<0>_USERBITS_0_NOT000111/LUT3_D_BUF
+LOCALBUF 		DX_MUX0004274/LUT4_L_BUF
+LOCALBUF 		DX_MUX0004384/LUT4_L_BUF
+LOCALBUF 		DX_MUX0004508/LUT4_L_BUF
+LOCALBUF 		DX_MUX0004544/LUT4_L_BUF
+LOCALBUF 		SCHNITTSTELLENNUMMER_CMP_EQ000011/LUT4_D_BUF
+LOCALBUF 		KANALNUMMER_MUX0002<2>1/LUT3_D_BUF
+LOCALBUF 		KANALNUMMER0_MUX0001<0>221/LUT3_D_BUF
+LOCALBUF 		KANALNUMMER0_MUX0001<0>_SW0/LUT4_L_BUF
+LOCALBUF 		PHASE_CMP_EQ00001/LUT4_D_BUF
+LOCALBUF 		SCHNITTSTELLENNUMMER_MUX0003<1>11/LUT4_D_BUF
+INV 		KOMPLETT_EMPFANGEN_NOT00031_INV_0
+
+Section 12 - Configuration String Details
+-----------------------------------------
+BUFGMUX "CLKR_BUFGP/BUFG":
+DISABLE_ATTR:LOW
+
+
+
+BUFGMUX "CLKX_BUFGP/BUFG":
+DISABLE_ATTR:LOW
+
+
+
+
+Section 13 - Control Set Information
+------------------------------------
+No control set information for this architecture.

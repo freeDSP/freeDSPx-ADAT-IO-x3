@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="Z:/ADAT DeEncoder/ADAT_De-Encoder/tb_ADAT_Dekoder_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="adat" />
+            <top_module name="numeric_std" />
+            <top_module name="std_logic_1164" />
+            <top_module name="tb_adat_dekoder" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="15" />
+   <wvobject fp_name="/tb_adat_dekoder/tb_clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">tb_clk</obj_property>
+      <obj_property name="ObjectShortName">tb_clk</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#c0c0c0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_adat_dekoder/tb_adat" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">tb_adat</obj_property>
+      <obj_property name="ObjectShortName">tb_adat</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#ffa500</obj_property>
+   </wvobject>
+   <wvobject fp_name="divider25" type="divider">
+      <obj_property name="label">New Divider</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="BkColor">#000000</obj_property>
+      <obj_property name="TextColor">230 230 230</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_adat_dekoder/tb_debug_adat_bitnummer" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">tb_debug_adat_bitnummer</obj_property>
+      <obj_property name="ObjectShortName">tb_debug_adat_bitnummer</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#ffa500</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_adat_dekoder/tb_adat_clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">tb_adat_clk</obj_property>
+      <obj_property name="ObjectShortName">tb_adat_clk</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#ffa500</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_adat_dekoder/tb_debug_sync" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">tb_debug_sync</obj_property>
+      <obj_property name="ObjectShortName">tb_debug_sync</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#ff0000</obj_property>
+   </wvobject>
+   <wvobject fp_name="divider14" type="divider">
+      <obj_property name="label">New Divider</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="BkColor">#000000</obj_property>
+      <obj_property name="TextColor">230 230 230</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_adat_dekoder/tb_out" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">tb_out[0:255]</obj_property>
+      <obj_property name="ObjectShortName">tb_out[0:255]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_adat_dekoder/tb_out_daten" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">tb_out_daten</obj_property>
+      <obj_property name="ObjectShortName">tb_out_daten</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#0000ff</obj_property>
+      <wvobject fp_name="/tb_adat_dekoder/tb_out_daten.kanaele" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">.kanaele</obj_property>
+         <obj_property name="ObjectShortName">tb_out_daten.kanaele</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+         <obj_property name="CustomSignalColor">#000080</obj_property>
+         <wvobject fp_name="/tb_adat_dekoder/tb_out_daten.kanaele[0]" type="array" db_ref_id="1">
+            <obj_property name="ElementShortName">[0]</obj_property>
+            <obj_property name="ObjectShortName">tb_out_daten.kanaele[0]</obj_property>
+            <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+            <obj_property name="UseCustomSignalColor">true</obj_property>
+            <obj_property name="CustomSignalColor">#00ffff</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_adat_dekoder/tb_out_daten.kanaele[1]" type="array" db_ref_id="1">
+            <obj_property name="ElementShortName">[1]</obj_property>
+            <obj_property name="ObjectShortName">tb_out_daten.kanaele[1]</obj_property>
+            <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+            <obj_property name="UseCustomSignalColor">true</obj_property>
+            <obj_property name="CustomSignalColor">#00ffff</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_adat_dekoder/tb_out_daten.kanaele[2]" type="array" db_ref_id="1">
+            <obj_property name="ElementShortName">[2]</obj_property>
+            <obj_property name="ObjectShortName">tb_out_daten.kanaele[2]</obj_property>
+            <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+            <obj_property name="UseCustomSignalColor">true</obj_property>
+            <obj_property name="CustomSignalColor">#00ffff</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_adat_dekoder/tb_out_daten.kanaele[3]" type="array" db_ref_id="1">
+            <obj_property name="ElementShortName">[3]</obj_property>
+            <obj_property name="ObjectShortName">tb_out_daten.kanaele[3]</obj_property>
+            <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+            <obj_property name="UseCustomSignalColor">true</obj_property>
+            <obj_property name="CustomSignalColor">#00ffff</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_adat_dekoder/tb_out_daten.kanaele[4]" type="array" db_ref_id="1">
+            <obj_property name="ElementShortName">[4]</obj_property>
+            <obj_property name="ObjectShortName">tb_out_daten.kanaele[4]</obj_property>
+            <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+            <obj_property name="UseCustomSignalColor">true</obj_property>
+            <obj_property name="CustomSignalColor">#00ffff</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_adat_dekoder/tb_out_daten.kanaele[5]" type="array" db_ref_id="1">
+            <obj_property name="ElementShortName">[5]</obj_property>
+            <obj_property name="ObjectShortName">tb_out_daten.kanaele[5]</obj_property>
+            <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+            <obj_property name="UseCustomSignalColor">true</obj_property>
+            <obj_property name="CustomSignalColor">#00ffff</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_adat_dekoder/tb_out_daten.kanaele[6]" type="array" db_ref_id="1">
+            <obj_property name="ElementShortName">[6]</obj_property>
+            <obj_property name="ObjectShortName">tb_out_daten.kanaele[6]</obj_property>
+            <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+            <obj_property name="UseCustomSignalColor">true</obj_property>
+            <obj_property name="CustomSignalColor">#00ffff</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_adat_dekoder/tb_out_daten.kanaele[7]" type="array" db_ref_id="1">
+            <obj_property name="ElementShortName">[7]</obj_property>
+            <obj_property name="ObjectShortName">tb_out_daten.kanaele[7]</obj_property>
+            <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+            <obj_property name="UseCustomSignalColor">true</obj_property>
+            <obj_property name="CustomSignalColor">#00ffff</obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject fp_name="/tb_adat_dekoder/tb_out_daten.userbits" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">.userbits</obj_property>
+         <obj_property name="ObjectShortName">tb_out_daten.userbits</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+         <obj_property name="CustomSignalColor">#008080</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="/tb_adat_dekoder/tb_out_frameok" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">tb_out_frameok</obj_property>
+      <obj_property name="ObjectShortName">tb_out_frameok</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_adat_dekoder/tb_debug_sync_len" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">tb_debug_sync_len</obj_property>
+      <obj_property name="ObjectShortName">tb_debug_sync_len</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#c0c0c0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_adat_dekoder/tb_debug_sync_bitlaenge" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">tb_debug_sync_bitlaenge</obj_property>
+      <obj_property name="ObjectShortName">tb_debug_sync_bitlaenge</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#c0c0c0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_adat_dekoder/tb_debug_letztes_bit" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">tb_debug_letztes_bit</obj_property>
+      <obj_property name="ObjectShortName">tb_debug_letztes_bit</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#c0c0c0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_adat_dekoder/tb_debug_takt_bitlaengezaehler" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">tb_debug_takt_bitlaengezaehler</obj_property>
+      <obj_property name="ObjectShortName">tb_debug_takt_bitlaengezaehler</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#c0c0c0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_adat_dekoder/tb_debug_takt_sync_letztesbit" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">tb_debug_takt_sync_letztesbit</obj_property>
+      <obj_property name="ObjectShortName">tb_debug_takt_sync_letztesbit</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#808080</obj_property>
+   </wvobject>
+</wave_config>
