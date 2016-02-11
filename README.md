@@ -1,5 +1,7 @@
 # freeDSPx ADAT IO x3
 
+BOARD STATUS: WORK IN PROGRESS - DO NOT BUILT!
+
 The freeDSPx ADAT IO x3 is a digital IO expansion board for the freeDSP family. It uses an FPGA to generate 3 x In & 3 x Out ADAT via Toslink - maybe even 4 IOs. 
 
 ## License
